@@ -22,8 +22,11 @@ export const startTour = (ctx, A, H) => {
   const shot = $('#shot'), stat = $('#stat'), dots = $('#dots'), mark = $('#t-mark'), media = data.storyMedia ?? [];
   const src = (file) => globalThis.__STORY__?.[file] ?? `${globalThis.__ASSETS__ || './'}${file}`;
   const hide = () => shot.classList.remove('on');
+  const pics = new Map();   // each picture loaded and decoded when the story starts, then only shown
   const picture = (m) => {
-    shot.innerHTML = `<img src="${esc(src(m.file))}" alt=""><figcaption>${esc(m.caption)}</figcaption>`;
+    const img = pics.get(m.file) ?? Object.assign(new Image(), { src: src(m.file) });
+    img.alt = '';
+    shot.replaceChildren(img, Object.assign(document.createElement('figcaption'), { textContent: m.caption }));
     shot.style.setProperty('--hold', `${m.for}s`);
     shot.dataset.where = m.where ?? 'right';
     shot.classList.remove('on'); void shot.offsetWidth; shot.classList.add('on');
@@ -35,6 +38,11 @@ export const startTour = (ctx, A, H) => {
   const clearOver = () => { hide(); stat.classList.remove('on'); dots.classList.remove('on'); t.label = null; mark.classList.remove('on'); ctx.cityBar?.present(null); stage.classList.remove('tour-hunt'); if (H) H.state.forced = false; };
   // A name pinned to a place on the globe for as long as its sentence lasts.
   const label = (place, text) => { t.label = place; mark.textContent = text; mark.classList.add('on'); };
+  // A dip to dark (0.24 s down, a beat, 0.36 s up): the view is moved while nothing shows, then `then` sets it moving.
+  const cut = (view, then) => {
+    stage.classList.remove('dip'); void stage.offsetWidth; stage.classList.add('dip');
+    t.later.push(setTimeout(() => { if (!t.on) return; control.jump(view); world.stamp++; then?.(); }, 250));
+  };
   const xy = [0, 0];
   // Once a frame: the pinned name follows its place, and the city goes under when it is sinking.
   const tick = () => {
@@ -42,7 +50,7 @@ export const startTour = (ctx, A, H) => {
     paint();
     if (t.label) { const ok = ctx.project(t.label.lon, t.label.lat, xy, 0); mark.style.opacity = ok ? '' : '0'; if (ok) mark.style.transform = `translate(${xy[0]}px, ${xy[1]}px) translate(-50%, -150%)`; }
     const s = t.sink, g = city.city?.group;
-    if (s && g) { const k = Math.min(1, (performance.now() - s.from) / s.ms); g.position.z = -s.deep * k * k; g.updateMatrixWorld(true); world.stamp++; if (k >= 1) { t.sink = null; city.remove(); g.position.z = 0; g.updateMatrixWorld(true); } }
+    if (s && g) { const k = Math.min(1, (performance.now() - s.from) / s.ms); g.position.z = -s.deep * k * k; g.updateMatrixWorld(true); world.stamp++; if (k >= 1) t.sink = null; }   // left under the sea: the next sentence takes it away
   };
   const afloat = () => { t.sink = null; const g = city.city?.group; if (g && g.position.z) { g.position.z = 0; g.updateMatrixWorld(true); } };
 
@@ -56,9 +64,11 @@ export const startTour = (ctx, A, H) => {
     // What the globe does at each sentence. `len` is how long the sentence takes to say, in seconds.
     const go = {
       // It opens on the city itself, turning slowly: the thing the story is about, before a word of it.
-      legend: () => { clear(); H?.setGlow(0); ctx.setSea(0, false); stand(); const v = city.view(); control.jump({ ...v, range: 7600 }); control.flyTo({ ...v, range: 6200, heading: v.heading + 0.5 }, 9); },
-      tale: () => far(21, 37.5, 5.2e6, 3.4, 8),
-      island: (line, len) => { far(PILLARS.lon - 6, PILLARS.lat, 2.4e6, 3, 16); label(PILLARS, 'The Pillars of Heracles'); after(len * 620, () => { mark.classList.remove('on'); t.label = null; stand(); control.flyTo({ ...city.view(), range: 9000 }, len * 0.36 + 0.6); }); },
+      // It opens on the city itself, already moving: a slow turn and push-in, the thing the story is about before a word of it.
+      legend: (line, len) => { clear(); H?.setGlow(0); ctx.setSea(0, false); stand(); const v = city.view(); control.jump({ ...v, range: 7800, heading: v.heading - 0.35 }); control.flyTo({ ...v, range: 5400, heading: v.heading + 0.55 }, len + 0.6); },
+      // From the city to Greece is a jump of a thousand times in height: a dip to dark, not a flight through half-drawn sea.
+      tale: (line, len) => cut({ lon: 21 * DEG, lat: 37.5 * DEG, range: 5.6e6, tilt: 8 * DEG, heading: 0 }, () => far(19, 37, 4.8e6, len, 10)),
+      island: (line, len) => { far(PILLARS.lon - 6, PILLARS.lat, 2.4e6, 2.6, 16); after(2700, () => label(PILLARS, 'The Pillars of Heracles')); after(len * 640, () => { mark.classList.remove('on'); t.label = null; stand(); const v = city.view(); cut({ ...v, range: 11000 }, () => control.flyTo({ ...v, range: 8600, heading: v.heading + 0.2 }, 2.2)); }); },
       // Three views, as the sentence names them: the rings from the air, the temple with its roof lifted off, the wall of orichalcum.
       city: (line, len) => {
         stand(); const v = city.view(); control.flyTo({ ...v, range: 7000, heading: v.heading + 0.25 }, len * 0.4);
@@ -67,8 +77,8 @@ export const startTour = (ctx, A, H) => {
         after(len * 700, () => { city.cutaway?.(false); part('wall-orichalcum', 200, 1.5); });
       },
       // The city goes under: it is lowered beneath the sea while the view lifts away.
-      fall: (line, len) => { ctx.cityBar?.present(null); stand(); const v = city.view(); control.flyTo({ ...v, range: 8200, tilt: 52 * DEG }, 1.6); ctx.sound?.sfx('rise', 0.3); after(1500, () => { t.sink = { from: performance.now(), ms: Math.max(3000, len * 1000 - 2600), deep: 46 }; control.flyTo({ ...v, range: 15000, tilt: 40 * DEG, heading: v.heading + 0.3 }, len - 1.2); }); },
-      date: () => { afloat(); city.remove(); H?.setGlow(0); A.seaTo(-50); control.flyTo({ lon: 3 * DEG, lat: 54 * DEG, range: 3.2e6, tilt: 16 * DEG, heading: 0 }, 3.6); },
+      fall: (line, len) => { ctx.cityBar?.present(null); stand(); const v = city.view(); control.flyTo({ ...v, range: 8200, tilt: 52 * DEG }, 1.6); ctx.sound?.sfx('rise', 0.3); after(1500, () => { t.sink = { from: performance.now(), ms: Math.max(3000, len * 1000 - 1400), deep: 46 };   /* down until the sentence's last word */ control.flyTo({ ...v, range: 15000, tilt: 40 * DEG, heading: v.heading + 0.3 }, len - 1.2); }); },
+      date: () => { afloat(); city.remove(); H?.setGlow(0); A.seaTo(-50); cut({ lon: 3 * DEG, lat: 54 * DEG, range: 3.6e6, tilt: 16 * DEG, heading: 0 }, () => control.flyTo({ lon: 3 * DEG, lat: 54 * DEG, range: 3.1e6, tilt: 18 * DEG, heading: 0 }, 4)); },
       // The sea comes back up and everything that went under lights up: here, then on the far side of the Earth.
       sank: (line, len) => { A.seaTo(0); H?.setGlow(1); ctx.sound?.sfx('rise', 0.2); after(len * 380, () => far(108, 2, 6.2e6, len * 0.26, 6)); after(len * 690, () => far(-172, 62, 5.6e6, len * 0.28, 6)); },
       // The page's own read-out, on the best match on Earth.
@@ -163,7 +173,7 @@ export const startTour = (ctx, A, H) => {
     // How long each sentence takes: its recording when there is one, a reading pace otherwise.
     for (const s of t.steps) { const clip = data.audio?.narration?.[lineKey(s.say)]; s.len = clip ? clip.seconds : read(s.say, s.least) / 1000; s.total = clip ? Math.max(clip.seconds * 1000 + 700, 1500) : read(s.say, s.least); }
     ctx.sound?.prime(t.steps.map((s) => s.say));
-    for (const m of media) new Image().src = src(m.file);   // fetched ahead, so each appears on its word
+    for (const m of media) if (!pics.has(m.file)) { const img = new Image(); img.decoding = 'sync'; img.src = src(m.file); img.decode?.().catch(() => {}); pics.set(m.file, img); }
     t.on = true; t.paused = false;
     $('#intro').classList.add('gone');
     A.closeBoard();

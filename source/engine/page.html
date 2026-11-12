@@ -578,6 +578,8 @@
   #stage.touring #walk, #stage.touring #meet, #stage.touring #people { display: none !important; }
   #stage::before { content: ''; position: absolute; inset: 0; background: #05070b; opacity: 0; pointer-events: none; z-index: 30; }
   #stage.blink::before { animation: blink 0.9s ease-out; }
+  #stage.dip::before { animation: dip 0.62s linear; }
+  @keyframes dip { 0% { opacity: 0; } 38% { opacity: 1; } 48% { opacity: 1; } 100% { opacity: 0; } }
   @keyframes blink { 0% { opacity: 1; } 35% { opacity: 1; } 100% { opacity: 0; } }
   #walk { position: absolute; inset: 0; pointer-events: none; z-index: 6; }
   #walk > * { pointer-events: auto; }
