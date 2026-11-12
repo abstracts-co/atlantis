@@ -1,6 +1,6 @@
 // The hunt. Every 10 km of the Earth has been scored against the five things Plato says that the shape of the land
 // can answer (build/make-worldfit.mjs writes data/worldfit.png and worldfit.json). Here the sunken land that matches
-// glows on the globe, a reticle reads the score of whatever is under it, and "Score this spot" turns a spot into a
+// glows on the globe, a reticle reads the score of whatever is under it, and "Check this spot" turns a spot into a
 // result a person can post. A match to the landscape is not a city, and the card says so every time.
 import * as THREE from 'three';
 import { DEG, toDir, clamp, formatLatLon } from './geo.js';
@@ -74,7 +74,7 @@ export const startHunt = (ctx) => {
   // One small bar: the score, five lights, one button. Everything else is in the menu.
   const TAG = { sank: 'Sank', atlantic: 'Atlantic', plain: 'Plain', mountains: 'Mountains', island: 'Island' };
   const drawHud = () => {
-    el.innerHTML = `<div class="h-main"><b id="h-score"></b><div class="h-clues">${CLUES.map((c, j) => `<span class="h-c" data-j="${j}"><i></i>${esc(TAG[c.key])}</span>`).join('')}</div><button class="btn primary" data-act="h-claim">Score this spot</button></div>`;
+    el.innerHTML = `<div class="h-main"><b id="h-score"></b><div class="h-clues">${CLUES.map((c, j) => `<span class="h-c" data-j="${j}"><i></i>${esc(TAG[c.key])}</span>`).join('')}</div><button class="btn primary" data-act="h-claim">Check this spot</button></div>`;
   };
   drawHud();
   const tick = () => {

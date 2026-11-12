@@ -127,7 +127,7 @@ const FEATURES = {
     await page.evaluate(([lat, lon]) => world.control.jump({ lat: lat * Math.PI / 180, lon: lon * Math.PI / 180, range: 1.2e6 }), [best.lat, best.lon]); await page.waitForTimeout(400);
     await page.locator('#hunt [data-act="h-claim"]').click(); await page.waitForTimeout(500);
     const text = await page.textContent('#c-share');
-    step('"Score this spot" gives the score, five squares and a link back to the spot', (await page.textContent('#body .c-hero b')) === `${best.top}/5` && (await page.locator('#body .c-row').count()) === 5 && text.includes(`${best.top}/5`) && (text.match(/🟩/g) ?? []).length === best.top && /hunt=/.test(text), text.split('\n').slice(0, 2).join(' '));
+    step('"Check this spot" gives the score, five squares and a link back to the spot', (await page.textContent('#body .c-hero b')) === `${best.top}/5` && (await page.locator('#body .c-row').count()) === 5 && text.includes(`${best.top}/5`) && (text.match(/🟩/g) ?? []).length === best.top && /hunt=/.test(text), text.split('\n').slice(0, 2).join(' '));
     step('the card is labelled for what it is: a landscape match', (await page.textContent('#eyebrow')).trim() === 'Landscape match');
     const link = text.split('\n').pop();
     const second = await page.context().newPage();
@@ -235,14 +235,21 @@ const FEATURES = {
     await page.click('#intro [data-act="tour"]'); await page.waitForTimeout(700);
     const ids = await page.evaluate(() => ui.tour.steps.map((s) => s.id)), n = ids.length;
     const at = () => page.evaluate(() => ui.tour.steps[ui.tour.step]?.id);
-    const until = async (id) => { for (let i = 0; i < n && (await at()) !== id; i++) await page.locator('#tour [data-act="tour-next"]').click(); };
+    const until = async (id) => { for (let i = 0; i < n && (await at()) !== id; i++) await page.evaluate(() => ui.tour.next()); };
     const soon = (f, arg, ms = 9000) => page.waitForFunction(f, arg, { timeout: ms }).then(() => true, () => false);
     const first = await page.evaluate(() => ({ text: document.querySelector('#tour p').textContent, city: world.city.active, range: world.control.range }));
     step('it opens on the city itself, saying it is a story nobody has found', /story Plato told/.test(first.text) && /Nobody has ever found it/.test(await page.evaluate(() => ui.tour.steps[0].say)) && first.city && first.range < 20000, `${n} sentences`);
     await page.locator('#tour [data-act="tour-pause"]').click();
     const held = await page.evaluate(() => ui.tour.step); await page.waitForTimeout(1200);
-    step('"Pause" holds it', (await page.evaluate(() => ui.tour.step)) === held && /Play/.test(await page.textContent('#tour .bar')));
+    step('"Pause" holds it', (await page.evaluate(() => ui.tour.step)) === held && (await page.getAttribute('#tour [data-act="tour-pause"]', 'aria-label')) === 'Play');
     await page.locator('#tour [data-act="tour-pause"]').click();
+    await until('tale');
+    const box = await page.locator('#tour .scrub').boundingBox();
+    await page.mouse.click(box.x + box.width * 0.55, box.y + box.height / 2); await page.waitForTimeout(500);
+    const mid = await page.evaluate(() => ui.tour.steps[ui.tour.step].id);
+    await page.mouse.click(box.x + box.width * 0.02, box.y + box.height / 2); await page.waitForTimeout(500);
+    const back = await page.evaluate(() => ({ id: ui.tour.steps[ui.tour.step].id, city: world.city.active, walk: ui.walk.on }));
+    step('the scrubber goes forward and back to any point', !['legend', 'tale'].includes(mid) && back.id === 'legend' && back.city && !back.walk, `went to "${mid}", then back to "${back.id}"`);
     await until('tale');
     step('a picture of a real thing appears with its caption', await soon(() => document.querySelector('#shot.on img')?.complete && /Plato/.test(document.querySelector('#shot figcaption')?.textContent ?? '')));
     await until('island');
@@ -267,9 +274,9 @@ const FEATURES = {
     await until('hall');
     step('at "we opened it" the view goes inside the hall and turns past the boards', await soon(() => ui.walk.on && ui.walk.state.where === 'The hall' && ui.walk.state.pan !== 0, null, 12000));
     await until('turn'); await page.waitForTimeout(400);
-    await page.locator('#tour [data-act="tour-next"]').click(); await page.waitForTimeout(700);
+    await page.evaluate(() => ui.tour.next()); await page.waitForTimeout(700);
     const e = await page.evaluate(() => ({ tour: ui.tour.on, walk: ui.walk.on, where: ui.walk.state.where, pan: ui.walk.state.pan, hud: !document.querySelector('#walk').hidden, use: document.querySelector('#w-use')?.textContent ?? '' }));
-    step('"Finish" leaves the visitor in the hall, facing the globe, with one thing to do', !e.tour && e.walk && e.hud && e.where === 'The hall' && e.pan === 0 && /Open the globe/.test(e.use), e.use);
+    step('the story\'s end leaves the visitor in the hall, facing the globe, with one thing to do', !e.tour && e.walk && e.hud && e.where === 'The hall' && e.pan === 0 && /Open the globe/.test(e.use), e.use);
     await menu(page, 'story'); await page.waitForTimeout(500);
     await page.locator('#tour [data-act="tour-stop"]').click(); await page.waitForTimeout(700);
     step('"Skip" ends the story at once, on foot in the hall', await page.evaluate(() => !ui.tour.on && ui.walk.on && world.city.active && ui.walk.state.where === 'The hall'));
@@ -295,8 +302,8 @@ const FEATURES = {
     await page.locator('#tour [data-act="tour-pause"]').click(); await page.waitForTimeout(500);
     const back = await page.evaluate(() => ui.sound.voiceState());
     step('it resumes a breath before that point, not from the start', back.playing && back.at > v.at - 0.4 && back.at < v.at + 1.2, `${back.at.toFixed(1)} s`);
-    await page.locator('#tour [data-act="tour-next"]').click(); await page.waitForTimeout(1200);
-    await page.locator('#tour [data-act="tour-next"]').click(); await page.waitForTimeout(1200);
+    await page.evaluate(() => ui.tour.next()); await page.waitForTimeout(1200);
+    await page.evaluate(() => ui.tour.next()); await page.waitForTimeout(1200);
     // Moving on mid-sentence: the voice that was speaking is faded out before the next begins, never cut dead and never two at once.
     const order = await page.evaluate(() => ui.sound.state.log.filter((e) => e.kind === 'say' || e.kind === 'hush').map((e) => e.kind));
     const clean = order.every((kind, i) => kind !== 'say' || i === 0 || order[i - 1] === 'hush');

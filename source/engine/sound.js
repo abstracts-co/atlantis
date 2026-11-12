@@ -77,13 +77,13 @@ export const startSound = (ctx) => {
 
   // ---------- the voice ----------
   // Speak a sentence of the story, if it has been recorded. Returns its length in seconds, or 0.
-  const say = (text) => {
+  const say = (text, from = 0) => {
     hush();
     const clip = index.narration?.[lineKey(text)];
     if (!clip) return 0;
     if (s.on) {
-      const v = s.voice = { clip, at: 0, playing: null, paused: false };
-      load(clip.file).then((buf) => { if (s.voice === v && !v.paused && buf && s.on && running()) { v.playing = start(buf); note('say', { file: clip.file, volume: 1 }); } });
+      const v = s.voice = { clip, at: from, playing: null, paused: false };
+      if (from < clip.seconds - 0.2) load(clip.file).then((buf) => { if (s.voice === v && !v.paused && buf && s.on && running()) { v.playing = start(buf, { offset: from, fadeIn: from ? 0.05 : undefined }); note('say', { file: clip.file, volume: 1, offset: from }); } });
     }
     return clip.seconds;
   };

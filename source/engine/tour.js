@@ -4,17 +4,18 @@
 // and the page's own cards (a part's passage, the hunt's read-out) are shown in place. The sentences come from
 // storytext.js; this file moves the globe to each one and, when there is sound, has it spoken.
 import { DEG } from './geo.js';
-import { storyLines } from './storytext.js';
+import { storyLines, lineKey } from './storytext.js';
 import { OUTCOME } from './board.js';
 
 const PILLARS = { lon: -5.61, lat: 35.95 };   // the Strait of Gibraltar (Wikidata Q36124), where a label is set for "the Pillars of Heracles"
 
 export const startTour = (ctx, A, H) => {
   const { world, data, $, esc, setSheet, st, stage } = ctx, { control } = world, el = $('#tour'), city = world.city;
-  const t = { on: false, i: 0, steps: [], timer: null, paused: false, started: 0, left: 0, later: [], sink: null, label: null };
+  const t = { on: false, i: 0, steps: [], timer: null, paused: false, started: 0, left: 0, later: [], sink: null, label: null, offset: 0, drag: null };
   const read = (text, least = 0) => Math.max(least, 2600 + text.length * 48);
   // Something to do a little into a sentence. Forgotten if the story has moved on or stopped by then.
-  const after = (ms, f) => { const i = t.i; t.later.push(setTimeout(() => { if (t.on && t.i === i) f(); }, ms)); };
+  // When the story is entered part-way through a sentence (the scrubber), what was due before that point happens at once, in order.
+  const after = (ms, f) => { const i = t.i, wait = ms - t.offset * 1000; if (wait <= 0) { f(); return; } t.later.push(setTimeout(() => { if (t.on && t.i === i) f(); }, wait)); };
 
   // ---------- what is laid over the globe ----------
   // A picture of a real thing, with its caption (data/story-media.json): one at a time, at the times the file gives.
@@ -38,6 +39,7 @@ export const startTour = (ctx, A, H) => {
   // Once a frame: the pinned name follows its place, and the city goes under when it is sinking.
   const tick = () => {
     if (!t.on) return;
+    paint();
     if (t.label) { const ok = ctx.project(t.label.lon, t.label.lat, xy, 0); mark.style.opacity = ok ? '' : '0'; if (ok) mark.style.transform = `translate(${xy[0]}px, ${xy[1]}px) translate(-50%, -150%)`; }
     const s = t.sink, g = city.city?.group;
     if (s && g) { const k = Math.min(1, (performance.now() - s.from) / s.ms); g.position.z = -s.deep * k * k; g.updateMatrixWorld(true); world.stamp++; if (k >= 1) { t.sink = null; city.remove(); g.position.z = 0; g.updateMatrixWorld(true); } }
@@ -84,39 +86,82 @@ export const startTour = (ctx, A, H) => {
 
   // A long sentence is shown a part at a time, each part for its share of the time, so the words on screen are the words being said.
   const beats = (text) => text.split(/(?<=[.!?:]”?)\s+(?=[A-Z“])/).filter(Boolean);
+  // ---------- the bar: the words, and a scrubber over the whole story ----------
+  // The scrubber is one track for the whole story, a mark at the start of each sentence. Press or drag anywhere on it to go there.
+  const whole = () => t.steps.reduce((n, s) => n + s.total, 0);
+  const startOf = (i) => t.steps.slice(0, i).reduce((n, s) => n + s.total, 0);
+  const now = () => startOf(t.i) + (t.steps[t.i].total - (t.paused ? t.left : Math.max(0, t.left - (performance.now() - t.started))));
   const draw = (words) => {
     const s = t.steps[t.i];
     if (words !== undefined) t.words = words;
-    el.innerHTML = `<p>${esc(t.words ?? s.say)}</p><div class="bar"><div class="dots">${t.steps.map((_, i) => `<i class="${i < t.i ? 'done' : i === t.i ? 'on' : ''}"><b></b></i>`).join('')}</div><button class="linkish" data-act="tour-pause">${t.paused ? 'Play' : 'Pause'}</button><button class="linkish" data-act="tour-next">${t.i === t.steps.length - 1 ? 'Finish' : 'Next'}</button><button class="linkish" data-act="tour-stop">${t.i === t.steps.length - 1 ? 'Close' : 'Skip'}</button></div>`;
-    const bar = el.querySelector('.dots .on b'), total = s.total, left = Math.max(0, t.paused ? t.left : t.left - (performance.now() - t.started));
-    if (bar && !t.paused) { bar.style.transition = 'none'; bar.style.width = `${(1 - left / total) * 100}%`; requestAnimationFrame(() => { bar.style.transition = `width ${left}ms linear`; bar.style.width = '100%'; }); }
-    else if (bar) bar.style.width = `${(1 - left / total) * 100}%`;
+    const W = whole();
+    el.innerHTML = `<p>${esc(t.words ?? s.say)}</p><div class="bar"><button class="ib t-play" data-act="tour-pause" aria-label="${t.paused ? 'Play' : 'Pause'}">${t.paused ? '<svg width="14" height="14" viewBox="0 0 14 14"><path d="M3.5 2.2v9.6L11.6 7z" fill="currentColor"/></svg>' : '<svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><rect x="3" y="2.4" width="2.8" height="9.2" rx="1"/><rect x="8.2" y="2.4" width="2.8" height="9.2" rx="1"/></svg>'}</button><div class="scrub" role="slider" tabindex="0" aria-label="Story" aria-valuemin="0" aria-valuemax="${Math.round(W / 1000)}" aria-valuenow="${Math.round(now() / 1000)}">${t.steps.slice(1).map((_, k) => `<i style="left:${(startOf(k + 1) / W) * 100}%"></i>`).join('')}<b></b><span></span></div><button class="linkish" data-act="tour-stop">${t.i === t.steps.length - 1 ? 'Close' : 'Skip'}</button></div>`;
+    paint();
+  };
+  // Once a frame while the story runs: the scrubber's fill and knob follow the time.
+  const paint = () => {
+    const bar = el.querySelector('.scrub');
+    if (!bar) return;
+    const k = Math.max(0, Math.min(1, (t.drag ?? now()) / whole()));
+    bar.querySelector('b').style.width = `${k * 100}%`;
+    bar.querySelector('span').style.left = `${k * 100}%`;
   };
   const arm = () => { clearTimeout(t.timer); t.started = performance.now(); if (!t.paused) t.timer = setTimeout(next, t.left); };
-  const show = (i) => {
+  // Go to a sentence, from `from` seconds into it.
+  const show = (i, from = 0) => {
     t.i = i;
     const s = t.steps[i];
     for (const id of t.later) clearTimeout(id);
     t.later = [];
     clearOver();
-    // Spoken, a sentence stays up for as long as it takes to say, and a breath more.
-    const spoken = ctx.sound?.say(s.say), len = spoken || read(s.say, s.least) / 1000;
-    s.total = t.left = spoken ? Math.max(spoken * 1000 + 700, 1500) : read(s.say, s.least);
+    // Gone back to before the walk began: off foot, and the city afloat again.
+    if (!['hall', 'turn'].includes(s.id) && ctx.walkOn?.()) ctx.leaveWalk?.();
+    afloat();
+    const len = s.len;
+    t.offset = Math.max(0, Math.min(from, len - 0.05));
+    ctx.sound?.say(s.say, t.offset);
+    t.left = s.total - t.offset * 1000;
     t.started = performance.now();
     s.go(len);
-    for (const m of media.filter((x) => x.line === s.id)) { after(m.at * 1000, () => picture(m)); after((m.at + m.for) * 1000, hide); }
-    for (const n of s.show ?? []) { if (n.dots) strip(n.dots, len * 620); else { after(n.at * 1000, () => number(n)); after((n.at + n.for) * 1000, () => stat.classList.remove('on')); } }
+    for (const m of media.filter((x) => x.line === s.id)) { if (m.at + m.for > t.offset) { after(m.at * 1000, () => picture(m)); after((m.at + m.for) * 1000, hide); } }
+    for (const n of s.show ?? []) { if (n.dots) strip(n.dots, Math.max(0, len - t.offset) * 620); else if (n.at + n.for > t.offset) { after(n.at * 1000, () => number(n)); after((n.at + n.for) * 1000, () => stat.classList.remove('on')); } }
     const parts = beats(s.say), all = parts.reduce((n, p) => n + p.length, 0);
-    let at = 0;
-    parts.forEach((p, k) => { if (k) after((at / all) * len * 1000, () => draw(p)); at += p.length; });
-    draw(parts[0]);
+    let at = 0, first = parts[0];
+    parts.forEach((p, k) => { const when = (at / all) * len; if (k && when <= t.offset) first = p; else if (k) after(when * 1000, () => draw(p)); at += p.length; });
+    t.offset = 0;
+    draw(first);
+    if (t.paused) { t.paused = false; }
     arm();
   };
+  // Go to a time in the whole story, in milliseconds.
+  const seek = (ms) => {
+    const W = whole(), at = Math.max(0, Math.min(W - 400, ms));
+    let i = 0; while (i < t.steps.length - 1 && startOf(i + 1) <= at) i++;
+    show(i, (at - startOf(i)) / 1000);
+  };
+  el.addEventListener('pointerdown', (e) => {
+    const bar = e.target.closest('.scrub');
+    if (!bar) return;
+    e.preventDefault();
+    bar.setPointerCapture?.(e.pointerId);
+    const at = (x) => { const r = bar.getBoundingClientRect(); return Math.max(0, Math.min(1, (x - r.left) / r.width)) * whole(); };
+    t.drag = at(e.clientX); paint();
+    const move = (ev) => { t.drag = at(ev.clientX); paint(); };
+    const up = (ev) => { bar.removeEventListener('pointermove', move); bar.removeEventListener('pointerup', up); bar.removeEventListener('pointercancel', up); const to = at(ev.clientX); t.drag = null; seek(to); };
+    bar.addEventListener('pointermove', move); bar.addEventListener('pointerup', up); bar.addEventListener('pointercancel', up);
+  });
+  addEventListener('keydown', (e) => {
+    if (!t.on || e.target.closest?.('input, textarea')) return;
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { seek(now() + (e.key === 'ArrowLeft' ? -5000 : 5000)); e.preventDefault(); }
+    else if (e.key === ' ') { el.querySelector('[data-act="tour-pause"]')?.click(); e.preventDefault(); }
+  });
   const next = () => (t.i >= t.steps.length - 1 ? stop() : show(t.i + 1));
   const start = () => {
     if (!A || t.on) return;
     ctx.leaveWalk?.();
     t.steps = build();
+    // How long each sentence takes: its recording when there is one, a reading pace otherwise.
+    for (const s of t.steps) { const clip = data.audio?.narration?.[lineKey(s.say)]; s.len = clip ? clip.seconds : read(s.say, s.least) / 1000; s.total = clip ? Math.max(clip.seconds * 1000 + 700, 1500) : read(s.say, s.least); }
     ctx.sound?.prime(t.steps.map((s) => s.say));
     for (const m of media) new Image().src = src(m.file);   // fetched ahead, so each appears on its word
     t.on = true; t.paused = false;

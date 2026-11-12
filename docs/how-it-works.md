@@ -38,7 +38,7 @@ Five limits:
 
 `tools/make-worldfit.mjs` reads the planet's heights at 10 km a cell and scores every cell that was land at Plato's date on five things he says that the shape of the land can answer: it sank (land with the sea 50 m lower, open sea today), it lay beyond the Pillars (Atlantic water, outside the strait), it had a great plain (level low ground of 3,000 by 2,000 stades), mountains sheltered it from the north, and it was an island. The exact thresholds are in `data/worldfit.json`, with the totals, the best matches and the score of every famous claim. `data/worldfit.png` holds the map, one pixel a cell.
 
-On the globe the sunken land that matches glows: dim for one or two clues, sea-green for three, gold for four. No cell scores five. A ring at the middle of the view reads the score of the spot under it, and `Claim this spot` makes a card with the score, the passage behind each clue, and a block of squares to post.
+On the globe the sunken land that matches glows: dim for one or two clues, sea-green for three, gold for four. No cell scores five. A ring at the middle of the view reads the score of the spot under it, and `Check this spot` makes a card with the score, the passage behind each clue, and a block of squares to post.
 
 The score describes the landscape. It is five clues of the 27 that could be checked, one sea level for the whole planet, no ice, and 10 km a cell. Places beyond 45 degrees north or south are marked, because the land there has risen or sunk a great deal since the ice melted. A high score is not evidence of a city.
 

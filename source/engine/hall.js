@@ -30,15 +30,15 @@ export const startHall = (ctx, { A, H, walk }) => {
     ls.slice(0, rows).forEach((l, i) => g.fillText(i === rows - 1 && ls.length > rows ? `${l.replace(/[ ,;:]+\S*$/, '')}…` : l, x * u, (y + i * px * gap) * u));
     return y + Math.min(rows, ls.length) * px * gap;
   };
+  // A board's head: its name, nothing else. (The kicker is kept only for the reader of this code.)
   const frame = (g, kicker, title) => {
     g.fillStyle = BG; g.fillRect(0, 0, W, Hh);
     g.fillStyle = GOLD; g.fillRect(0, 0, W, 5 * u);
-    g.font = font(21, 700); g.fillStyle = GOLD; g.textBaseline = 'top';
-    g.fillText(kicker.toUpperCase().split('').join(' '), 56 * u, 44 * u);
-    return para(g, title, 56, 78, 1040, 54, { weight: 700, rows: 2, gap: 1.12 }) + 22;
+    return para(g, title, 56, 52, 1040, 58, { weight: 700, rows: 2, gap: 1.1 }) + 30;
   };
   const foot = (g, text) => { g.font = font(20, 500); g.fillStyle = DIM; g.textBaseline = 'alphabetic'; g.fillText(text, 56 * u, Hh - 30 * u); g.fillStyle = LINE; g.fillRect(56 * u, Hh - 66 * u, W - 112 * u, 1.5 * u); };
   const dot = (g, x, y, r, colour) => { g.fillStyle = colour; g.beginPath(); g.arc(x * u, y * u, r * u, 0, 7); g.fill(); };
+  const pips = (g, x, y, n, r = 9) => { for (let i = 0; i < 5; i++) dot(g, x + r + i * (r * 2 + 6), y, r, i < n ? SCORE[4] : '#2a3442'); };
   const squares = (g, x, y, clues, size = 22) => clues.forEach((on, i) => { g.fillStyle = on ? SCORE[4] : '#2a3442'; g.fillRect((x + i * (size + 5)) * u, y * u, size * u, size * u); });
 
   // ---------- what each board says ----------
@@ -47,101 +47,101 @@ export const startHall = (ctx, { A, H, walk }) => {
   const scored = new Set((H?.CLUES ?? []).map((c) => c.claim)), unscored = (cas?.claims ?? []).filter((c) => !scored.has(c.id));
   const lost = sites.flatMap((x) => (x.not_located ?? []).map((n) => ({ site: x.name, what: typeof n === 'string' ? n : n.what ?? n.name ?? n.id ?? '' }))).filter((x) => x.what);
   const best = (wf?.best ?? []).filter((b) => !b.near_old_ice);
+  // The best matches that have a place's name, one row for each name.
+  const named = (n) => { const seen = new Set(); return best.filter((b) => b.near?.name && !/^off /.test(b.near.name) && !seen.has(b.near.name) && seen.add(b.near.name)).slice(0, n); };
   const work = open?.work?.filter((t) => (t.status ?? 'open') !== 'done') ?? [];
   const pairs = []; for (let i = 0; i < sites.length; i += 2) pairs.push(sites.slice(i, i + 2));
 
   const boards = [];
   boards.push({ id: 'welcome', label: 'The hall', draw: (g) => {
-    let y = frame(g, 'The hall', 'The one closed place in the story, opened');
-    y = para(g, 'Plato wrote that the shrine at the centre was holy ground with a wall of gold round it. He says nothing of what was inside. So this is where the search is kept.', 56, y, 1040, 30, { colour: DIM, rows: 3 }) + 26;
-    for (const [n, t] of [['1', 'Follow the wall to your left: his words, then what the Earth says, then every place people named.'], ['2', 'Past the far side: what is still unknown, and work you can pick up, with or without an AI.'], ['3', 'The globe in the middle opens the whole Earth. Hunt for it yourself.']]) {
-      dot(g, 74, y + 20, 19, '#1b2532'); g.font = font(22, 700); g.fillStyle = GOLD; g.textBaseline = 'middle'; g.textAlign = 'center'; g.fillText(n, 74 * u, (y + 21) * u); g.textAlign = 'left';
-      y = para(g, t, 112, y, 980, 29, { rows: 2 }) + 16;
-    }
-    foot(g, 'Signed in, you can talk here: text for the room, voice for whoever stands near you.');
+    const y = frame(g, 'The hall', 'The hall');
+    const names = ['His words', 'Earth scores', 'Top scores', 'Places named', 'Searches', 'Unknown', 'Help build'];
+    names.forEach((n, i) => { const col = i % 2, row = i >> 1; dot(g, 66 + col * 532, y + 18 + row * 62, 8, GOLD); para(g, n, 92 + col * 532, y + row * 62, 440, 34, { weight: 600, rows: 1 }); });
   }, sheet: () => `<h2>The hall</h2><div class="hl-index">${[['text', 'His words'], ['earth', 'Earth scores'], ['best', 'Top scores'], ['claims-1', 'Places named'], ['searches', 'Searches'], ['unknown', 'Unknown'], ['work', 'Help build']].map(([id, name]) => `<button class="btn" data-act="hl-open" data-id="${id}">${name}</button>`).join('')}</div><div class="row c-acts"><button class="btn primary" data-act="hl-globe">Open the globe</button></div>` });
 
   boards.push({ id: 'text', label: 'His words', draw: (g) => {
-    let y = frame(g, 'His words', `${cas?.claims.length ?? ''} things Plato says that can be checked`);
+    let y = frame(g, 'His words', 'His words');
     const cl = (H?.CLUES ?? []).map((c) => cas?.claims.find((x) => x.id === c.claim)).filter(Boolean);
     for (const c of cl.slice(0, 5)) { dot(g, 66, y + 17, 8, SCORE[4]); g.font = font(21, 600); g.fillStyle = DIM; g.textBaseline = 'top'; g.textAlign = 'right'; g.fillText(c.ref.split(';')[0], (W / u - 56) * u, (y + 5) * u); g.textAlign = 'left'; y = para(g, c.label, 92, y, 760, 27, { rows: 2 }) + 12; }
-    foot(g, `The ${cl.length} with a gold dot are scored on the globe. The other ${unscored.length} are waiting for someone.`);
+
   }, sheet: () => `<h2>What Plato wrote</h2>${(cas?.claims ?? []).map((c) => `<div class="known"><span>${scored.has(c.id) ? '<i class="cdot on"></i>' : '<i class="cdot"></i>'}${esc(c.label)}</span><small>${esc(c.ref ?? '')}</small></div>`).join('')}<div class="row"><button class="btn" data-act="h-rules">How it's scored</button></div>` });
 
   boards.push({ id: 'earth', label: 'Earth scores', draw: (g) => {
-    let y = frame(g, 'The Earth', 'Nothing on Earth scores 5 of 5');
-    const by = wf?.totals.by_score ?? [], max = Math.max(1, ...by.map((b) => b.km2));
-    y = para(g, `${((wf?.totals.land_that_sank_km2 ?? 0) / 1e6).toFixed(1)} million km² of land have gone under the sea since Plato's date. Every 10 km of it was scored against his words.`, 56, y, 1040, 29, { colour: DIM, rows: 2 }) + 28;
+    let y = frame(g, 'The Earth', 'Earth scores') + 6;
+    const by = [...(wf?.totals.by_score ?? [])].sort((a, b) => b.score - a.score), max = Math.max(1, ...by.map((b) => b.km2));
     for (const b of by) {
-      g.font = font(26, 700); g.fillStyle = INK; g.textBaseline = 'middle'; g.fillText(`${b.score} of 5`, 56 * u, (y + 17) * u);
+      pips(g, 56, y + 17, b.score, 8);
       g.fillStyle = '#16202c'; g.fillRect(190 * u, y * u, 640 * u, 34 * u);
       g.fillStyle = SCORE[b.score]; g.fillRect(190 * u, y * u, Math.max(b.km2 ? 3 : 0, (640 * b.km2) / max) * u, 34 * u);
       g.font = font(23, 500); g.fillStyle = b.km2 ? DIM : TONE.bad; g.fillText(b.km2 ? `${Math.round(b.km2).toLocaleString('en')} km²` : 'none', 850 * u, (y + 17) * u);
       y += 48;
     }
-    foot(g, 'A score is a match in the landscape. It is not evidence of a city.');
+
   }, sheet: () => { const by = [...(wf?.totals.by_score ?? [])].sort((a, b) => b.score - a.score), max = Math.max(1, ...by.map((b) => b.km2)), short = (v) => (v >= 1e6 ? `${(v / 1e6).toFixed(1)} M km²` : v >= 1000 ? `${Math.round(v / 1000)} K km²` : v ? `${Math.round(v)} km²` : 'None'); return `<h2>Earth scores</h2>${by.map((b) => `<div class="hbar"><span class="pips" aria-label="${b.score} of 5">${[0, 1, 2, 3, 4].map((i) => `<i class="${i < b.score ? 'on' : ''}"></i>`).join('')}</span><span class="track"><b style="width:${(b.km2 / max) * 100}%;background:${SCORE[b.score]}"></b></span><small>${short(b.km2)}</small></div>`).join('')}<div class="row c-acts"><button class="btn primary" data-act="hl-globe">Open the globe</button></div>`; } });
 
   boards.push({ id: 'best', label: 'Top scores', draw: (g) => {
-    let y = frame(g, 'The leaderboard', 'The closest matches so far');
-    best.slice(0, 6).forEach((b, i) => {
+    let y = frame(g, 'The leaderboard', 'Top scores');
+    named(5).forEach((b, i) => {
       g.font = font(26, 700); g.fillStyle = DIM; g.textBaseline = 'top'; g.fillText(String(i + 1), 56 * u, (y + 2) * u);
       g.font = font(28, 600); g.fillStyle = INK; g.fillText(short(b.near?.name ?? `${b.lat.toFixed(1)}, ${b.lon.toFixed(1)}`, 40), 104 * u, y * u);
       squares(g, 800, y + 4, (H?.CLUES ?? []).map((c) => b.clues.includes(c.key)));
       g.font = font(26, 700); g.fillStyle = SCORE[b.top]; g.textAlign = 'right'; g.fillText(`${b.top}/5`, (W / u - 56) * u, (y + 2) * u); g.textAlign = 'left';
       y += 50;
     });
-    foot(g, 'Find a better spot on the globe and claim it.');
-  }, sheet: () => { const named = best.filter((b) => b.near?.name && !/^off /.test(b.near.name)).slice(0, 5); return `<h2>Top scores</h2>${named.map((b) => `<div class="hbar"><span class="pips" aria-label="${b.top} of 5">${[0, 1, 2, 3, 4].map((i) => `<i class="${i < b.top ? 'on' : ''}"></i>`).join('')}</span><span>${esc(b.near.name)}</span><small>${Math.round(b.km2).toLocaleString('en')} km²</small></div>`).join('')}<div class="row c-acts"><button class="btn primary" data-act="hl-globe">Open the globe</button></div>`; } });
+
+  }, sheet: () => { const named = named(5); return `<h2>Top scores</h2>${named.map((b) => `<div class="hbar"><span class="pips" aria-label="${b.top} of 5">${[0, 1, 2, 3, 4].map((i) => `<i class="${i < b.top ? 'on' : ''}"></i>`).join('')}</span><span>${esc(b.near.name)}</span><small>${Math.round(b.km2).toLocaleString('en')} km²</small></div>`).join('')}<div class="row c-acts"><button class="btn primary" data-act="hl-globe">Open the globe</button></div>`; } });
 
   pairs.forEach((pair, n) => boards.push({ id: `claims-${n + 1}`, label: pair.map((x) => x.name.split(',')[0].replace(/\s*\(.*?\)/g, '')).join(' · '), draw: (g) => {
-    frame(g, `Places people named · ${n + 1} of ${pairs.length}`, pair.map((x) => x.name.split(',')[0]).join('  ·  '));
+    frame(g, 'Places people named', pair.map((x) => x.name.split(',')[0].replace(/\s*\(.*?\)/g, '')).join('  ·  '));
     pair.forEach((x, i) => {
       const x0 = 56 + i * 532, sc = placeScore(x.place ?? x.id);
       let y = 196;
       g.font = font(20, 700); g.fillStyle = TONE.warn; g.textBaseline = 'top'; g.fillText('CLAIMED', x0 * u, y * u);
       y = para(g, x.claimed?.line ?? '', x0, y + 28, 480, 24, { rows: 4 }) + 18;
-      g.font = font(20, 700); g.fillStyle = TONE.good; g.fillText('FOUND', x0 * u, y * u);
+      g.font = font(20, 700); g.fillStyle = TONE.good; g.fillText('EVIDENCE', x0 * u, y * u);
       y = para(g, x.found?.line ?? '', x0, y + 28, 480, 24, { rows: 5 }) + 14;
-      if (sc) { g.font = font(22, 600); g.fillStyle = DIM; g.fillText(`By the hunt's rules: ${sc.score} of 5`, x0 * u, (Hh / u - 112) * u); }
+      if (sc) pips(g, x0, Hh / u - 60, sc.score, 8);
     });
     g.fillStyle = LINE; g.fillRect((W / 2) - 1, 196 * u, 1.5 * u, Hh - 290 * u);
-    foot(g, 'Each has a scene on the globe: what was claimed and what was found, drawn on the ground.');
+
   }, sheet: () => pair.map((x) => `<h2>${esc(x.name)}</h2><p><span class="tag t-fringe">Claimed</span> ${esc(x.claimed?.line ?? '')}</p><p><span class="tag">Evidence</span> ${esc(x.found?.line ?? '')}</p><div class="row"><button class="btn" data-act="hl-place" data-id="${esc(x.place ?? x.id)}">See it on the globe</button></div>`).join('') }));
 
   boards.push({ id: 'searches', label: 'Searches', draw: (g) => {
-    const all = cas?.searches ?? [], y0 = frame(g, 'The searches', `${all.length} searches, ${Math.min(...all.map((x) => x.year))} to ${Math.max(...all.map((x) => x.year))}`);
+    const all = cas?.searches ?? [], y0 = frame(g, 'The searches', 'Searches');
     // A line of years. Before 1950 the line is squeezed, since most of the looking is recent.
     const xs = (yr) => (yr < 1950 ? 70 + ((yr - 1650) / 300) * 250 : 320 + ((yr - 1950) / 80) * 770), base = y0 + 150;
     g.fillStyle = LINE; g.fillRect(56 * u, base * u, (W / u - 112) * u, 2 * u);
     g.font = font(19, 500); g.fillStyle = DIM; g.textBaseline = 'top'; g.textAlign = 'center';
-    for (const yr of [1700, 1800, 1900, 1950, 1975, 2000, 2025]) { g.fillRect(xs(yr) * u, (base - 6) * u, 1.5 * u, 14 * u); g.fillText(String(yr), xs(yr) * u, (base + 16) * u); }
+    for (const yr of [1700, 1800, 1950, 1975, 2000, 2025]) { g.fillRect(xs(yr) * u, (base - 6) * u, 1.5 * u, 14 * u); g.fillText(String(yr), xs(yr) * u, (base + 16) * u); }
     g.textAlign = 'left';
     const stack = new Map();
     for (const x of all) { const k = Math.round(xs(x.year) / 15), n = stack.get(k) ?? 0; stack.set(k, n + 1); dot(g, k * 15, base - 20 - n * 24, 9, TONE[OUTCOME[x.status]?.tone ?? 'mut']); }
     let x = 56; const y = base + 78;
     for (const [status, o] of Object.entries(OUTCOME)) { const n = all.filter((v) => v.status === status).length; if (!n) continue; dot(g, x + 9, y + 14, 9, TONE[o.tone]); g.font = font(22, 500); g.fillStyle = INK; g.textBaseline = 'top'; const t = `${n} ${o.short.toLowerCase()}`; g.fillText(t, (x + 26) * u, y * u); x += 44 + g.measureText(t).width / u; }
-    foot(g, 'Not one has found the city.');
+
   }, sheet: () => `<h2>Searches</h2>${[...(cas?.searches ?? [])].sort((a, b) => a.year - b.year).map((x) => `<div class="known"><span><span class="yr">${x.year}</span>${esc(x.title)}</span><small style="color:${TONE[OUTCOME[x.status]?.tone ?? 'mut']}">${esc(OUTCOME[x.status]?.short ?? x.status)}</small></div>`).join('')}<div class="row"><button class="btn primary" data-act="hl-board">Open the board</button></div>` });
 
   boards.push({ id: 'unknown', label: 'Unknown', draw: (g) => {
-    let y = frame(g, 'Still unknown', `${openSearches.length} searches with no answer yet`);
+    let y = frame(g, 'Still unknown', 'Unknown');
     for (const x of openSearches.slice(0, 6)) { dot(g, 66, y + 15, 8, TONE[OUTCOME[x.status]?.tone ?? 'mut']); g.font = font(20, 600); g.fillStyle = DIM; g.textBaseline = 'top'; g.textAlign = 'right'; g.fillText(String(x.year), (W / u - 56) * u, (y + 3) * u); g.textAlign = 'left'; y = para(g, x.title, 92, y, 880, 25, { rows: 1 }) + 11; }
-    foot(g, `Also open: ${unscored.length} of Plato's claims not scored, and ${lost.length} things claimed at a place with no published position.`);
+
   }, sheet: () => `<h2>Unknown</h2><h3>Searches</h3>${openSearches.map((x) => `<div class="known"><span>${esc(x.title)}${x.source ? ` ${link(typeof x.source === 'string' ? x.source : x.source.url ?? '', 'source')}` : ''}</span><small>${esc(String(x.date ?? x.year))} · ${esc(OUTCOME[x.status]?.short ?? '')}</small></div>`).join('')}<h3>Not scored yet</h3>${unscored.map((c) => `<div class="known"><span>${esc(c.label)}</span><small>${esc(c.ref ?? '')}</small></div>`).join('')}${lost.length ? `<h3>No published position</h3>${lost.map((x) => `<div class="known"><span>${esc(x.what)}</span><small>${esc(x.site.split(',')[0])}</small></div>`).join('')}` : ''}<div class="row"><button class="btn primary" data-act="hl-work">Work to pick up</button></div>` });
 
   boards.push({ id: 'work', label: 'Help build', draw: (g) => {
-    let y = frame(g, 'Open work', `${work.length} things to pick up`);
+    let y = frame(g, 'Open work', 'Help build');
     const cols = [work.slice(0, Math.ceil(Math.min(work.length, 10) / 2)), work.slice(Math.ceil(Math.min(work.length, 10) / 2), 10)];
     cols.forEach((col, i) => { let yy = y; for (const t of col) { g.font = font(18, 700); g.fillStyle = GOLD; g.textBaseline = 'top'; g.fillText(t.area.toUpperCase(), (56 + i * 532) * u, yy * u); yy = para(g, t.title, 56 + i * 532, yy + 24, 480, 25, { rows: 1 }) + 13; } });
-    foot(g, 'Each comes with a prompt to hand to your AI. Press to see them all.');
+
   }, sheet: () => workSheet() });
 
-  boards.push({ id: 'help', label: 'Help build', draw: (g) => {
-    let y = frame(g, 'Bring your AI', 'Anyone can add to this');
-    (open?.how ?? []).slice(0, 5).forEach((t, i) => { dot(g, 74, y + 18, 17, '#1b2532'); g.font = font(20, 700); g.fillStyle = GOLD; g.textBaseline = 'middle'; g.textAlign = 'center'; g.fillText(String(i + 1), 74 * u, (y + 19) * u); g.textAlign = 'left'; y = para(g, t, 110, y + 2, 990, 24, { rows: 2 }) + 13; });
-    foot(g, 'Better graphics, more research, new data, sound, things to do: all of it is open.');
-  }, sheet: () => workSheet() });
+  boards.push({ id: 'map', label: 'Kircher, 1664', draw: (g, redraw) => {
+    g.fillStyle = BG; g.fillRect(0, 0, W, Hh); g.fillStyle = GOLD; g.fillRect(0, 0, W, 5 * u);
+    const m = (data.storyMedia ?? []).find((x) => /kircher/.test(x.file));
+    if (!m) return;
+    const img = new Image();
+    img.onload = () => { const k = Math.min((W - 80 * u) / img.width, (Hh - 110 * u) / img.height), w = img.width * k, h = img.height * k; g.drawImage(img, (W - w) / 2, 30 * u, w, h); para(g, m.caption.split('.')[0], 56, (30 * u + h) / u + 14, 1040, 22, { colour: DIM, rows: 1 }); redraw?.(); };
+    img.src = globalThis.__STORY__?.[m.file] ?? `${globalThis.__ASSETS__ || './'}${m.file}`;
+  }, sheet: () => { const m = (data.storyMedia ?? []).find((x) => /kircher/.test(x.file)); return m ? `<h2>${esc(m.caption.split('.')[0])}</h2><p>${link(m.source, m.by)} · ${esc(m.licence)}</p>` : ''; } });
   while (boards.length < 12) boards.push(null);
 
   // ---------- the prompt a person hands to their AI ----------
@@ -213,7 +213,7 @@ Done when: ${t.done_when}` : `Read data/open.json and show me the open tasks, gr
       if (!b) return;
       const c = document.createElement('canvas'); c.width = W; c.height = Hh;
       const g = c.getContext('2d'); g.textAlign = 'left';
-      b.draw(g);
+      b.draw(g, () => { s.boards.find((x) => x.canvas === c).tex.needsUpdate = true; world.stamp++; });
       const tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 4;
       const mesh = new THREE.Mesh(new THREE.PlaneGeometry(p.w, p.h), new THREE.MeshBasicMaterial({ map: tex }));
       const normal = new THREE.Vector3(-Math.cos(p.a), -Math.sin(p.a), 0), up = new THREE.Vector3(0, 0, 1), right = new THREE.Vector3().crossVectors(up, normal);

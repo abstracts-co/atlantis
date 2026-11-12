@@ -56,7 +56,7 @@ export const buildHall = (M, plan, tier) => {
 
   // Where the research hangs: twelve places on the inside of the wall, in order from the left of the door, round to its right.
   const NP = 12, clear = 0.44, panels = [];
-  for (let i = 0; i < NP; i++) { const a = SEA - clear - (i * (TAU - 2 * clear)) / (NP - 1), r = RI - 0.32; panels.push({ x: r * Math.cos(a), y: r * Math.sin(a), z: floor + 3.15, w: 7.2, h: 4.0, a }); }
+  for (let i = 0; i < NP; i++) { const a = SEA - clear - (i * (TAU - 2 * clear)) / (NP - 1), r = Math.sqrt(RI * RI - (7.2 / 2 + 0.3) ** 2) - 0.12; panels.push({ x: r * Math.cos(a), y: r * Math.sin(a), z: floor + 3.15, w: 7.2, h: 4.0, a }); }   // a flat board on a curved wall: set in until its corners clear it
   return {
     RG, RH, RI, RC, RS, RO, floor, height: HW, panels,
     door: { a: SEA, half: DOOR }, gate: { a: SEA, half: GATE },

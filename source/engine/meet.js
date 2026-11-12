@@ -34,7 +34,7 @@ export const startMeet = (ctx, { walk }) => {
         : m.state === 'signed-out' ? '<button class="btn glass" data-act="mt-signin">Sign in to meet people</button>'
         : m.state === 'ask' ? '<button class="btn glass" data-act="mt-join">Meet people</button>'
         : m.state === 'elsewhere' ? `<a class="btn glass" href="https://abstracts.co/a/${esc(ctx.data.open?.community ?? 'atlantis')}?a_hall=1" target="_blank" rel="noopener">Meet people on abstracts.co</a>`
-        : m.state === 'joining' ? '<span class="mt-state">Joining…</span>'
+        : m.state === 'joining' ? '<button class="btn glass" data-act="mt-join">Meet people</button>'
         : m.state === 'full' ? '<span class="mt-state">Rooms are full</span>'
         : '';
     }
@@ -89,7 +89,9 @@ export const startMeet = (ctx, { walk }) => {
     return bridge('roomToken', { room: ROOMS[m.room] });
   };
   const join = async (asked = false) => {
-    if (m.state === 'on' || m.state === 'joining') return;
+    if (m.state === 'on') return;
+    // Pressed while the quiet first try is still out: ask once that one has answered.
+    if (m.state === 'joining') { if (asked) m.wantAsk = true; return; }
     m.state = 'joining'; draw();
     try {
       if (!dev && asked) await bridge('viewer');   // the page around this one asks the member, once: "… wants to know it's you"
@@ -110,6 +112,7 @@ export const startMeet = (ctx, { walk }) => {
       };
     } catch (e) {
       m.state = e?.code === 'signed_out' ? 'signed-out' : e?.code === 'unsupported' ? 'off' : 'ask';
+      if (!asked && m.wantAsk && m.state === 'ask') { m.wantAsk = false; return join(true); }
       if (asked && e?.code && !['denied', 'cancelled', 'signed_out'].includes(e.code)) toast('The room is not answering');
       draw();
     }

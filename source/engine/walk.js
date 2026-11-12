@@ -110,12 +110,11 @@ export const startWalk = (ctx) => {
     }
     if (w.stick) { f -= w.stick.dy; s += w.stick.dx; }
     // The right stick turns the head at a rate; the story may turn it slowly too (pan).
-    if (w.turn) { w.dir += w.turn.dx * dt * 2.6; w.pitch = clamp(w.pitch - w.turn.dy * dt * 1.7, -1.25, 1.35); }
     if (w.pan) w.dir += w.pan * dt;
     const push = Math.hypot(f, s);
     if (push > 1) { f /= push; s /= push; }
-    let run = !typing && (K.has('ShiftLeft') || K.has('ShiftRight')) || (w.stick && Math.hypot(w.stick.dx, w.stick.dy) > 0.93);
-    const [fx, fy] = forward(), k = 1 - Math.exp(-dt * 10);
+    let run = !typing && (K.has('ShiftLeft') || K.has('ShiftRight')) || (w.stick && Math.hypot(w.stick.dx, w.stick.dy) > 0.97);
+    const [fx, fy] = forward(), k = 1 - Math.exp(-dt * (w.stick ? 16 : 10));
     let want = [(fx * f + fy * s), (fy * f - fx * s)];
     // Going to where the ground was clicked: straight there, until it is reached, something is in the way, or a key or the stick takes over.
     if (w.goal) {
@@ -167,8 +166,11 @@ export const startWalk = (ctx) => {
   });
   addEventListener('keyup', (e) => w.keys.delete(e.code));
   addEventListener('blur', () => w.keys.clear());
-  const fingers = new Map(), sticks = { move: $('#w-stick'), look: $('#w-look') };
+  // Fingers, as in phone games: a thumb anywhere on the left half is a stick that appears under it (it moves with the
+  // thumb if the thumb goes past its edge); a drag on the right half turns the head directly. A tap anywhere acts.
+  const fingers = new Map(), stickEl = $('#w-stick'), R_STICK = 44, DEAD = 0.14;
   const centre = () => { const r = canvas.getBoundingClientRect(); return [r.width / 2, r.height / 2]; };
+  const placeStick = (x, y) => { stickEl.style.left = `${x}px`; stickEl.style.top = `${y}px`; };
   canvas.addEventListener('pointerdown', (e) => {
     if (!w.on) return;
     const r = canvas.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
@@ -177,12 +179,9 @@ export const startWalk = (ctx) => {
       fingers.set(e.pointerId, { kind: 'look', x, y, x0: x, y0: y, t: performance.now(), mouse: true });
     } else {
       if (!el.classList.contains('touch')) el.classList.add('touch');
-      // A touch that starts on a stick drives that stick.
-      const on = (stick) => { const b = stick.getBoundingClientRect(); return Math.hypot(e.clientX - (b.left + b.width / 2), e.clientY - (b.top + b.height / 2)) < b.width * 0.85; };
-      const kind = !w.stick && on(sticks.move) ? 'move' : !w.turn && on(sticks.look) ? 'turn' : 'look';
-      fingers.set(e.pointerId, { kind, x, y, x0: x, y0: y, t: performance.now() });
-      if (kind === 'move') { w.stick = { dx: 0, dy: 0 }; w.goal = null; sticks.move.classList.add('on'); }
-      if (kind === 'turn') { w.turn = { dx: 0, dy: 0 }; sticks.look.classList.add('on'); }
+      const kind = x < r.width / 2 && !w.stick ? 'move' : 'look';
+      fingers.set(e.pointerId, { kind, x, y, x0: x, y0: y, cx: x, cy: y, t: performance.now() });
+      if (kind === 'move') { w.stick = { dx: 0, dy: 0 }; placeStick(x, y); stickEl.classList.add('on'); }
     }
     canvas.setPointerCapture?.(e.pointerId);
   });
@@ -190,20 +189,26 @@ export const startWalk = (ctx) => {
     const p = fingers.get(e.pointerId);
     if (!w.on || !p) return;
     const r = canvas.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
-    if (p.kind === 'move' || p.kind === 'turn') {
-      const dx = (x - p.x0) / 52, dy = (y - p.y0) / 52, l = Math.hypot(dx, dy), m = l > 1 ? 1 / l : 1, v = { dx: dx * m, dy: dy * m };
-      if (p.kind === 'move') w.stick = v; else w.turn = v;
-      sticks[p.kind === 'move' ? 'move' : 'look'].firstElementChild.style.transform = `translate(${v.dx * 28}px, ${v.dy * 28}px)`;
-    } else turnBy(x - p.x, y - p.y, p.mouse ? 0.004 : 0.0055);
+    if (p.kind === 'move') {
+      let dx = x - p.cx, dy = y - p.cy;
+      const l = Math.hypot(dx, dy);
+      // Past the edge, the stick follows the thumb, so the thumb never has to come back to find it.
+      if (l > R_STICK) { p.cx = x - (dx / l) * R_STICK; p.cy = y - (dy / l) * R_STICK; placeStick(p.cx, p.cy); dx = x - p.cx; dy = y - p.cy; }
+      const m = Math.min(1, Math.hypot(dx, dy) / R_STICK), k = m < DEAD ? 0 : ((m - DEAD) / (1 - DEAD)) ** 1.4, a = Math.atan2(dy, dx);
+      w.stick = { dx: Math.cos(a) * k, dy: Math.sin(a) * k };
+      if (m > 0.2) w.goal = null;
+      stickEl.firstElementChild.style.transform = `translate(${dx}px, ${dy}px)`;
+    } else if (p.mouse) turnBy(x - p.x, y - p.y, 0.004);
+    else { w.dir += (x - p.x) * 0.0062; w.pitch = clamp(w.pitch - (y - p.y) * 0.0045, -1.1, 1.2); }
     p.x = x; p.y = y;
   });
   const up = (e) => {
     const p = fingers.get(e.pointerId);
     if (!p) return;
     fingers.delete(e.pointerId);
-    if (p.kind === 'move') { w.stick = null; sticks.move.classList.remove('on'); sticks.move.firstElementChild.style.transform = ''; return; }
-    if (p.kind === 'turn') { w.turn = null; sticks.look.classList.remove('on'); sticks.look.firstElementChild.style.transform = ''; return; }
-    if (!w.on || !(Math.hypot(p.x - p.x0, p.y - p.y0) < 7 && performance.now() - p.t < 400)) return;
+    const tap = Math.hypot(p.x - p.x0, p.y - p.y0) < 9 && performance.now() - p.t < 350;
+    if (p.kind === 'move') { w.stick = null; stickEl.classList.remove('on'); stickEl.firstElementChild.style.transform = ''; stickEl.style.left = ''; stickEl.style.top = ''; if (tap && w.on) point(p.x, p.y); return; }
+    if (!w.on || !tap) return;
     // A plain click with a mouse takes the pointer for looking. If the browser refuses, it acts where it landed instead.
     if (p.mouse && canvas.requestPointerLock) { lock(); setTimeout(() => { if (w.on && !w.locked) point(p.x, p.y); }, 180); } else point(p.x, p.y);
   };

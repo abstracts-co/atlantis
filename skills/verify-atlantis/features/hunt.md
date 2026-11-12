@@ -15,9 +15,9 @@ The page opens as a hunt. Every 10 km of land that has gone under since Plato's 
 
 - Open the page and press `Start hunting`, or just move the globe.
 - Drag the globe so a spot sits under the ring. Read the five clue lights and the score.
-- Press `Claim this spot`.
-- Open the menu at the top left for `Best on Earth` and `How it's scored`.
-- On a claim, press `Share my claim`, or the copy, X and save buttons beside it. `More to do here` has the fit test and Plato's city.
+- Press `Check this spot`.
+- Open the menu at the top left for `Top scores` and `How it's scored`.
+- On a claim, press `Share`, or the copy, X and save buttons beside it. `More to do here` has the fit test and Plato's city.
 
 ## Driving it with verify.mjs
 
@@ -30,10 +30,10 @@ Run `node source/build/verify.mjs drive hunt`.
 - **Glow and reticle.** Press `Start hunting`: the ring and its read-out show, and the glow is on.
 - **Read-out.** Put the best match in `worldfit.json` under the ring: the score and the number of clues lit equal the data.
 - **Dry land.** Put the Richat Structure under the ring: the read-out says it never sank.
-- **Claim.** Press `Claim this spot` on the best match: the card gives the score, five rows, a block with as many green squares as the score, and a link that carries the spot.
+- **Claim.** Press `Check this spot` on the best match: the card gives the score, five rows, a block with as many green squares as the score, and a link that carries the spot.
 - **Honest.** The card is labelled `Landscape match`: the label says what a score is, so no disclaimer is needed. (That a match is not evidence of a city is said in the story, on the hall's boards and in the docs.)
 - **Link.** Open the link in a new tab: the same claim is shown.
-- **Best.** Press `Best on Earth`: the best matches and all the famous claims are listed, and it says nothing scores 5.
+- **Best.** Press `Top scores`: the best matches and all the famous claims are listed, and it says nothing scores 5.
 - **Rules.** Press `How it's scored`: five rules, and what the score cannot tell.
 
 ## Gotchas

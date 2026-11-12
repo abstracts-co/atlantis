@@ -585,18 +585,16 @@
   #w-where { position: absolute; left: 50%; top: 64px; transform: translateX(-50%); font: 600 13px/1 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: #fff; text-shadow: 0 1px 12px rgba(0, 0, 0, 0.8); opacity: 0; pointer-events: none; white-space: nowrap; }
   #w-where.show { animation: where 3.6s ease-out; }
   @keyframes where { 0% { opacity: 0; transform: translate(-50%, 6px); } 12% { opacity: 1; transform: translate(-50%, 0); } 75% { opacity: 1; } 100% { opacity: 0; } }
-  #w-use { position: absolute; left: 50%; top: calc(50% + 34px); transform: translateX(-50%); display: flex; align-items: center; gap: 9px; height: 40px; padding: 0 16px 0 12px; border-radius: 13px; color: #fff; font: 600 14px/1 var(--sans); cursor: pointer; white-space: nowrap; max-width: calc(100% - 32px); }
+  #w-use { position: absolute; left: 50%; bottom: 76px; transform: translateX(-50%); display: flex; align-items: center; gap: 9px; height: 40px; padding: 0 16px 0 12px; border-radius: 13px; color: #fff; font: 600 14px/1 var(--sans); cursor: pointer; white-space: nowrap; max-width: calc(100% - 32px); }
   #w-use[hidden] { display: none; }
   #w-use span { overflow: hidden; text-overflow: ellipsis; }
   kbd { display: inline-grid; place-items: center; min-width: 22px; height: 22px; padding: 0 5px; border-radius: 6px; background: rgba(255, 255, 255, 0.16); border: 1px solid rgba(255, 255, 255, 0.22); font: 600 11px/1 var(--sans); color: #fff; }
-  /* Two faint sticks for fingers: the left walks, the right looks. Shown on a touch screen only. */
-  #w-stick, #w-look { position: absolute; bottom: 74px; width: 104px; height: 104px; border-radius: 50%; background: rgba(255, 255, 255, 0.07); border: 1.5px solid rgba(255, 255, 255, 0.22); display: none; pointer-events: none; }
-  #w-stick { left: 26px; }
-  #w-look { right: 26px; }
-  #w-stick i, #w-look i { position: absolute; left: 50%; top: 50%; width: 42px; height: 42px; margin: -21px 0 0 -21px; border-radius: 50%; background: rgba(255, 255, 255, 0.3); transition: background-color 120ms ease; }
-  #w-stick.on i, #w-look.on i { background: rgba(255, 255, 255, 0.6); }
-  #walk.touch #w-stick, #walk.touch #w-look { display: block; }
-  @media (pointer: coarse) { #w-stick, #w-look { display: block; } }
+  /* The stick for fingers: faint at rest in the lower left, and under the thumb wherever it lands on the left half. */
+  #w-stick { position: absolute; left: 76px; top: calc(100% - 150px); width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(255, 255, 255, 0.06); border: 1.5px solid rgba(255, 255, 255, 0.2); display: none; pointer-events: none; opacity: 0.55; transition: opacity 120ms ease; }
+  #w-stick.on { opacity: 1; }
+  #w-stick i { position: absolute; left: 50%; top: 50%; width: 42px; height: 42px; margin: -21px 0 0 -21px; border-radius: 50%; background: rgba(255, 255, 255, 0.4); }
+  #walk.touch #w-stick { display: block; }
+  @media (pointer: coarse) { #w-stick { display: block; } }
   #w-aim { display: none; }
   #walk.locked #w-aim { display: block; }
   @media (pointer: coarse) { #meet { top: 62px; bottom: auto; left: 12px; width: min(300px, calc(100% - 24px)); } }
@@ -638,7 +636,7 @@
   .hbar small { text-align: right; color: var(--dim); font-size: 13px; font-variant-numeric: tabular-nums; }
   .hl-index { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 6px; } .hl-index .btn { justify-content: flex-start; height: 44px; }
   .known .yr { color: var(--dim); font-variant-numeric: tabular-nums; margin-right: 10px; }
-  @media (max-width: 760px) { #stage.sheet-open #w-bar, #stage.sheet-open #w-use, #stage.sheet-open #w-stick, #stage.sheet-open #w-look { display: none; } }
+  @media (max-width: 760px) { #stage.sheet-open #w-bar, #stage.sheet-open #w-use, #stage.sheet-open #w-stick { display: none; } }
   /* ---------- the hall's sheets ---------- */
   #sheet[data-kind="hall"] h3 { margin: 18px 0 6px; font: 600 13px/1.2 var(--sans); letter-spacing: 0.04em; color: var(--ink); }
   #sheet[data-kind="hall"] h3 small { font-weight: 400; color: var(--dim); letter-spacing: 0; margin-left: 6px; }
@@ -681,6 +679,17 @@
   #stage.touring.tour-hunt #hunt .btn { display: none; }
   #stage.touring.tour-hunt #reticle { display: block; }
   @media (max-width: 620px) { #shot, #shot[data-where="left"], #shot[data-where="low-left"] { right: 50%; left: auto; top: 64px; bottom: auto; width: min(64%, 260px); transform: translateX(50%) scale(0.97); transform-origin: 50% 0; } #shot.on { transform: translateX(50%); } #shot img { max-height: 200px; margin-inline: auto; } #shot figcaption, #shot[data-where="left"] figcaption, #shot[data-where="low-left"] figcaption { text-align: center; font-size: 13px; } #stat { left: 5%; top: 30%; } #stage.touring #citybar.present { left: 12px; right: 12px; top: 60px; width: auto; } #dots { bottom: 170px; } }
+  /* the story's scrubber */
+  #tour .bar { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
+  #tour .t-play { width: 34px; height: 34px; flex: none; display: grid; place-items: center; border-radius: 50%; background: rgba(255, 255, 255, 0.14); color: #fff; }
+  #tour .scrub { position: relative; flex: 1; height: 24px; cursor: pointer; touch-action: none; }
+  #tour .scrub::before { content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 4px; margin-top: -2px; border-radius: 2px; background: rgba(255, 255, 255, 0.22); }
+  #tour .scrub b { position: absolute; left: 0; top: 50%; height: 4px; margin-top: -2px; border-radius: 2px; background: #fff; }
+  #tour .scrub i { position: absolute; top: 50%; width: 2px; height: 8px; margin: -4px 0 0 -1px; background: rgba(5, 7, 11, 0.7); }
+  #tour .scrub span { position: absolute; top: 50%; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; background: #fff; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); }
+  #tour .scrub:focus-visible { outline: 2px solid rgba(255, 255, 255, 0.9); outline-offset: 4px; border-radius: 4px; }
+  #tour .bar .linkish { flex: none; }
+  @media (pointer: coarse) { #tour .scrub { height: 36px; } #tour .scrub span { width: 18px; height: 18px; margin: -9px 0 0 -9px; } #tour .t-play { width: 44px; height: 44px; } }
   /* ---------- quiet: the Abstracts design system's rules for everything here that is not the 3D scene ---------- */
   /* (packages/ui/README.md in the site's repository: its type, radii and motion; the layout explains itself, so no hint lines or tooltips; build/check-quiet.mjs guards it) */
   :root { --sans: Figtree, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; --serif: var(--sans); --ease-out: cubic-bezier(0.23, 1, 0.32, 1); --r-md: 10px; --r-lg: 14px; --r-xl: 20px; }
@@ -759,7 +768,6 @@
     <i id="w-aim"></i>
     <button id="w-use" class="glass" hidden></button>
     <div id="w-stick"><i></i></div>
-    <div id="w-look"><i></i></div>
     <div id="w-bar"><button class="glass" data-act="w-hall">The hall</button><button class="glass" data-act="w-globe">The globe</button><button class="glass" data-act="w-up">Overview</button></div>
   </div>
   <div id="meet" class="glass" hidden></div>
