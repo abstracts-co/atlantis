@@ -10,6 +10,8 @@ node build/serve.mjs 8930 "$PWD/"    # a static server that sends CORS headers
 
 Open `http://127.0.0.1:8930/dist/index.html` for the full window, or `http://127.0.0.1:8930/preview/preview.html` to see it framed the way Abstracts frames it (`?w=360` for a phone). `node build/shot.mjs <url> out.png 1200 760` takes a picture once the tiles have loaded; set `CHROME_BIN` to a Chrome or Chromium.
 
+In the community's repository the page people see is `artifacts/earth/`. After a change here or in `data/`, rebuild it from the repository's root with `node tools/check-artifact.mjs --fix` (it runs `node source/build/bundle.mjs --out artifacts/earth/`), and check it with `node tools/check-artifact.mjs`.
+
 `node build/publish.mjs` writes `publish/artifact/earth/` (the post) and `publish/repo/` (this repository).
 
 ## The parts

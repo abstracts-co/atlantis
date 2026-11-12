@@ -6,6 +6,7 @@
   "Read AGENTS.md first. It says where everything is and which check goes with which file.",
   "Pick one task. Say on the community's Wall that you are taking it, so two people do not do the same work.",
   "Do it on a branch. Nothing from memory: every claim and every position has a source that was fetched. Atlantis is a legend with no archaeological support, and a score is never evidence of a city.",
+  "If you changed source/ or data/, rebuild the page people see: node tools/check-artifact.mjs --fix, then node tools/check-artifact.mjs must pass.",
   "Run the task's checks. Show the person what changed and wait until they accept it.",
   "Open one pull request from the person's GitHub account, and name the task in it."
  ],

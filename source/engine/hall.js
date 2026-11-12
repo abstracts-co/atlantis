@@ -157,7 +157,7 @@ Done when: ${t.done_when}` : `Read data/open.json and show me the open tasks, gr
 1. Read AGENTS.md in the repository first. It says where everything is and which check goes with which file.${t ? ` This task starts in: ${t.start.join(', ')}.` : ''}
 2. Offer to say on the community's Wall that I am taking ${t ? t.id : 'the task'}, so nobody does the same work twice. Post only if I say yes.
 3. Do the work on a branch. Nothing from memory: every claim and every position needs a source you fetched. Atlantis is a legend with no archaeological support, and a score is never evidence of a city.
-4. Run ${t ? t.check.map((c) => `\`${c}\``).join(' and ') : "the task's checks"}.
+4. Run ${t ? t.check.map((c) => `\`${c}\``).join(' and ') : "the task's checks"}. If you changed source/ or data/, rebuild the page with \`node tools/check-artifact.mjs --fix\` and run \`node tools/check-artifact.mjs\`.
 5. Show me what changed (for anything visual, pictures at desktop and phone widths) and wait until I accept that version.
 6. Then open one pull request to ${repoUrl()} from my GitHub account, following https://abstracts.co/kit/abstracts-artifact/SKILL.md, and name ${t ? t.id : 'the task'} in it.`;
   // quiet:end

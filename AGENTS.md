@@ -29,6 +29,7 @@ Read the community with `get_community` (slug `atlantis`) and follow the [Abstra
 | Other people in the city: figures, text, voice | `source/engine/meet.js`; the room is Abstracts' own (kit: web-artifacts, "Live rooms") | `node source/build/verify.mjs drive meet` |
 | The pictures shown while the story is told | [data/story-media.json](data/story-media.json), files in `data/story/`, each one's record in `research/story-media/commons.json` | `node tools/check-story.mjs` |
 | The page's own controls (everything that is not the 3D scene) | `source/engine/page.html` and the scripts that write into it. They stay quiet: no hint lines, tooltips or explainer text | `node tools/check-quiet.mjs` |
+| The page people see, built from `source/` and `data/` | `artifacts/earth/` (never edited by hand) | `node tools/check-artifact.mjs` |
 | Work that is open for anyone to pick up | [data/open.json](data/open.json) | `node tools/check-open.mjs` |
 | The globe's code | [source/README.md](source/README.md) | `node source/build/verify.mjs drive all` |
 | Formats of every data file | [data/README.md](data/README.md) | |
@@ -46,7 +47,10 @@ Every work in `indexes/<id>/` is a tree: `index.json` has titles and short summa
 
 1. Find the row above. Change that one file.
 2. Run its check. For anything a person sees on the globe, also run the matching journey in [skills/verify-atlantis](skills/verify-atlantis/SKILL.md) and keep its evidence.
-3. Show the member the result and wait for them to accept it. One pull request, one kind of change.
+3. If you changed anything in `source/` or `data/`, rebuild the page people see: `cd source && npm ci && cd .. && node tools/check-artifact.mjs --fix`. It writes `artifacts/earth/` from `source/` and `data/`; `node tools/check-artifact.mjs` must then pass. The live page changes when the pull request is merged.
+4. Show the member the result and wait for them to accept it. One pull request, one kind of change.
+
+To try a different idea without changing the page everyone sees (another way to draw the city, a new set of viewpoints), post it as its own artifact: a copy of the page in `artifacts/<your-id>/` with your change, built the same way with `node source/build/bundle.mjs --out artifacts/<your-id>/`. It is on the community's Artifacts tab as soon as it is posted, under the member's name. The owner can then pin it, make it the community's About page in its place, or fold it into the main page. To make folding it in one step, send the same change to `source/` and `data/` as a pull request too, with `artifacts/earth/` rebuilt (step 3), and link the two.
 
 Guides for the common jobs: [add a scene: the research at a place](docs/guides/add-a-scene.md), [add a proposal or correct one](docs/guides/add-a-legend.md), [add a data source](docs/guides/add-a-source.md), [survey a place](docs/guides/search-a-place.md), [check a find](docs/guides/check-a-find.md), [post](docs/publish.md).
 
