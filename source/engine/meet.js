@@ -11,7 +11,8 @@
 import * as THREE from 'three';
 import { bridge, embedded } from './host.js';
 
-const ROOMS = ['HALL22', 'HALL23', 'HALL24', 'HALL25', 'HALL26', 'HALL27', 'HALL28', 'HALL29'];
+// Room codes are 6 characters from A-H J-N P-Z 2-9. HALL22 to HALL99: 64 rooms, so even rooms of 8 hold 512 people.
+const ROOMS = [...'23456789'].flatMap((a) => [...'23456789'].map((b) => `HALL${a}${b}`)).sort();
 const HEAR = 30, DROP = 38, PEERS = 8;      // metres within which voices connect and beyond which they let go; the most calls at once
 const SAY_EVERY = 900, LONGEST = 280;
 const hue = (id) => { let h = 0; for (const ch of String(id)) h = (h * 31 + ch.charCodeAt(0)) % 360; return h; };
