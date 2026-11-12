@@ -1,13 +1,13 @@
 // Records a short film of the page: the story, then on foot through the gate into the hall, where someone else is
 // standing, then up to the globe and a claim.
-// Usage: node build/tour.mjs <url> <out-dir> [width] [height] [--no-story]
+// Usage: node build/tour.mjs <url> <out-dir> [width] [height] [--no-story | --story-only]
 // It writes <out-dir>/film.mp4, with the page's own sound: the page notes every sound it starts and stops, and the
 // same files are laid under the picture at the same moments, faded and looped the way the page does it (sound.js).
 import { chromium } from 'playwright-core';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { readFileSync } from 'node:fs';
 import { spawn, spawnSync } from 'node:child_process';
-const args = process.argv.slice(2).filter((a) => !a.startsWith('--')), [url, dir, w = '1280', h = '720'] = args, story = !process.argv.includes('--no-story');
+const args = process.argv.slice(2).filter((a) => !a.startsWith('--')), [url, dir, w = '1280', h = '720'] = args, story = !process.argv.includes('--no-story'), storyOnly = process.argv.includes('--story-only');
 const here = new URL('.', import.meta.url).pathname;
 const exe = process.env.CHROME_BIN ?? `${process.env.HOME}/Library/Caches/ms-playwright/chromium-1200/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing`;
 // A stand-in room on this machine, so a second person can be in the hall.
@@ -46,6 +46,7 @@ if (story) {
   await page.waitForFunction(() => !ui.tour.on, null, { timeout: 200000 }).catch(() => {});
 } else await page.click('#intro [data-act="enter"]');
 await wait(1200);
+if (!storyOnly) {
 // Someone else is in the hall already.
 const other = await context.newPage();
 await other.goto(`${url}${url.includes('?') ? '&' : '?'}${room}&as=Ben&hall=1`, { waitUntil: 'load' });
@@ -62,8 +63,10 @@ await page.keyboard.press('KeyE');                                         // th
 await wait(4200); await settle(600);
 await page.evaluate(([to]) => world.control.flyTo(to, 4.5), [{ lon: -77.51 * rad, lat: 22.91 * rad, range: 1.3e6, tilt: 30 * rad, heading: 0 }]); await settle(1500);   // the best match on Earth
 await page.locator('#hunt [data-act="h-claim"]').click(); await wait(4200);                                                                                           // claim it
+}
 console.log(`recorded ${((await mark()) - t0).toFixed(1)} s, ${frames.length} frames`);
 const heard = await page.evaluate(() => ({ now: performance.now(), epoch: Date.now(), log: globalThis.ui?.sound?.state.log ?? [] }));
+const told = await page.evaluate(() => (globalThis.ui?.tour.steps ?? []).map((x) => ({ id: x.id, say: x.say })));
 await cdp.send('Page.stopScreencast');
 await wait(300);
 await writeFile(`${dir}/frames.txt`, frames.map((f, i) => `file '${f.file.split('/').pop()}'\nduration ${Math.max(0.01, (frames[i + 1]?.t ?? f.t + 0.04) - f.t).toFixed(4)}`).join('\n') + '\n');
@@ -107,6 +110,7 @@ log.forEach((e, i) => {
   else if (e.kind === 'loop-off' && open.has(e.file)) { const from = open.get(e.file); round(e.file, at(from), at(e), from.volume, from.cross ?? 2.5); open.delete(e.file); }
 });
 for (const from of open.values()) round(from.file, at(from), length, from.volume, from.cross ?? 2.5);
+await writeFile(`${dir}/timeline.json`, `${JSON.stringify({ length, lines: told, sounds: log.filter((e) => e.kind === 'say' || e.kind === 'sfx').map((e) => ({ at: Number(at(e).toFixed(2)), kind: e.kind, file: e.file })) }, null, 1)}\n`);
 const out = `${dir}/film.mp4`;
 // The page passes everything through one limiter; so does the film.
 if (outs.length) run(['-i', `${dir}/silent.mp4`, ...inputs, '-filter_complex', `${chains.join(';')};${outs.join('')}amix=inputs=${outs.length}:normalize=0:duration=longest,alimiter=limit=0.89:attack=3:release=220[mix]`, '-map', '0:v', '-map', '[mix]', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '160k', '-t', length.toFixed(2), '-movflags', '+faststart', out]);

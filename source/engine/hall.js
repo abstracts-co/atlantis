@@ -10,6 +10,8 @@ const INK = '#eef2f6', DIM = '#9aa7b4', GOLD = '#e9bd62', BG = '#0b1016', LINE =
 const TONE = { good: '#5fd0a0', bad: '#f0766a', warn: '#e9bd62', info: '#6fb6f0', mut: '#7c8794' };
 const SCORE = ['#16324a', '#1f6f78', '#2b9a8f', '#58c08a', '#e9bd62', '#fff3c4'];   // what a score of 0..5 is painted in
 const bitsOf = (n) => { let c = 0; for (let b = n; b; b >>= 1) c += b & 1; return c; };
+// The turn that brings longitude 30°W to face the door (-Y) of the hall: the sphere's seam is at 180°, its 0° meridian towards +X before any turn.
+const ATLANTIC = -Math.PI / 2 + (30 * Math.PI) / 180;
 const short = (t, n) => (t.length > n ? `${t.slice(0, n - 1).replace(/[ ,;:]+\S*$/, '')}…` : t);
 
 export const startHall = (ctx, { A, H, walk }) => {
@@ -49,7 +51,7 @@ export const startHall = (ctx, { A, H, walk }) => {
   const pairs = []; for (let i = 0; i < sites.length; i += 2) pairs.push(sites.slice(i, i + 2));
 
   const boards = [];
-  boards.push({ id: 'welcome', label: 'Read: what this room is', draw: (g) => {
+  boards.push({ id: 'welcome', label: 'The hall', draw: (g) => {
     let y = frame(g, 'The hall', 'The one closed place in the story, opened');
     y = para(g, 'Plato wrote that the shrine at the centre was holy ground with a wall of gold round it. He says nothing of what was inside. So this is where the search is kept.', 56, y, 1040, 30, { colour: DIM, rows: 3 }) + 26;
     for (const [n, t] of [['1', 'Follow the wall to your left: his words, then what the Earth says, then every place people named.'], ['2', 'Past the far side: what is still unknown, and work you can pick up, with or without an AI.'], ['3', 'The globe in the middle opens the whole Earth. Hunt for it yourself.']]) {
@@ -57,16 +59,16 @@ export const startHall = (ctx, { A, H, walk }) => {
       y = para(g, t, 112, y, 980, 29, { rows: 2 }) + 16;
     }
     foot(g, 'Signed in, you can talk here: text for the room, voice for whoever stands near you.');
-  }, sheet: () => `<h2>The hall</h2><div class="row"><button class="btn primary" data-act="hl-globe">Open the globe</button><button class="btn" data-act="hl-work">Work to pick up</button></div>` });
+  }, sheet: () => `<h2>The hall</h2><div class="hl-index">${[['text', 'His words'], ['earth', 'Earth scores'], ['best', 'Top scores'], ['claims-1', 'Places named'], ['searches', 'Searches'], ['unknown', 'Unknown'], ['work', 'Help build']].map(([id, name]) => `<button class="btn" data-act="hl-open" data-id="${id}">${name}</button>`).join('')}</div><div class="row c-acts"><button class="btn primary" data-act="hl-globe">Open the globe</button></div>` });
 
-  boards.push({ id: 'text', label: 'Read: what Plato wrote', draw: (g) => {
+  boards.push({ id: 'text', label: 'His words', draw: (g) => {
     let y = frame(g, 'His words', `${cas?.claims.length ?? ''} things Plato says that can be checked`);
     const cl = (H?.CLUES ?? []).map((c) => cas?.claims.find((x) => x.id === c.claim)).filter(Boolean);
     for (const c of cl.slice(0, 5)) { dot(g, 66, y + 17, 8, SCORE[4]); g.font = font(21, 600); g.fillStyle = DIM; g.textBaseline = 'top'; g.textAlign = 'right'; g.fillText(c.ref.split(';')[0], (W / u - 56) * u, (y + 5) * u); g.textAlign = 'left'; y = para(g, c.label, 92, y, 760, 27, { rows: 2 }) + 12; }
     foot(g, `The ${cl.length} with a gold dot are scored on the globe. The other ${unscored.length} are waiting for someone.`);
   }, sheet: () => `<h2>What Plato wrote</h2>${(cas?.claims ?? []).map((c) => `<div class="known"><span>${scored.has(c.id) ? '<i class="cdot on"></i>' : '<i class="cdot"></i>'}${esc(c.label)}</span><small>${esc(c.ref ?? '')}</small></div>`).join('')}<div class="row"><button class="btn" data-act="h-rules">How it's scored</button></div>` });
 
-  boards.push({ id: 'earth', label: 'Read: what the Earth says', draw: (g) => {
+  boards.push({ id: 'earth', label: 'Earth scores', draw: (g) => {
     let y = frame(g, 'The Earth', 'Nothing on Earth scores 5 of 5');
     const by = wf?.totals.by_score ?? [], max = Math.max(1, ...by.map((b) => b.km2));
     y = para(g, `${((wf?.totals.land_that_sank_km2 ?? 0) / 1e6).toFixed(1)} million km² of land have gone under the sea since Plato's date. Every 10 km of it was scored against his words.`, 56, y, 1040, 29, { colour: DIM, rows: 2 }) + 28;
@@ -78,9 +80,9 @@ export const startHall = (ctx, { A, H, walk }) => {
       y += 48;
     }
     foot(g, 'A score is a match in the landscape. It is not evidence of a city.');
-  }, sheet: () => `<h2>What the Earth says</h2>${(wf?.totals.by_score ?? []).map((b) => `<div class="known"><span>${b.score} of 5</span><small>${Math.round(b.km2).toLocaleString('en')} km²</small></div>`).join('')}<div class="row"><button class="btn primary" data-act="hl-globe">Open the globe</button><button class="btn" data-act="h-rules">How it's scored</button></div>` });
+  }, sheet: () => { const by = [...(wf?.totals.by_score ?? [])].sort((a, b) => b.score - a.score), max = Math.max(1, ...by.map((b) => b.km2)), short = (v) => (v >= 1e6 ? `${(v / 1e6).toFixed(1)} M km²` : v >= 1000 ? `${Math.round(v / 1000)} K km²` : v ? `${Math.round(v)} km²` : 'None'); return `<h2>Earth scores</h2>${by.map((b) => `<div class="hbar"><span class="pips" aria-label="${b.score} of 5">${[0, 1, 2, 3, 4].map((i) => `<i class="${i < b.score ? 'on' : ''}"></i>`).join('')}</span><span class="track"><b style="width:${(b.km2 / max) * 100}%;background:${SCORE[b.score]}"></b></span><small>${short(b.km2)}</small></div>`).join('')}<div class="row c-acts"><button class="btn primary" data-act="hl-globe">Open the globe</button></div>`; } });
 
-  boards.push({ id: 'best', label: 'Read: the best matches on Earth', draw: (g) => {
+  boards.push({ id: 'best', label: 'Top scores', draw: (g) => {
     let y = frame(g, 'The leaderboard', 'The closest matches so far');
     best.slice(0, 6).forEach((b, i) => {
       g.font = font(26, 700); g.fillStyle = DIM; g.textBaseline = 'top'; g.fillText(String(i + 1), 56 * u, (y + 2) * u);
@@ -90,9 +92,9 @@ export const startHall = (ctx, { A, H, walk }) => {
       y += 50;
     });
     foot(g, 'Find a better spot on the globe and claim it.');
-  }, sheet: () => `<h2>Closest landscape matches</h2>${best.slice(0, 12).map((b, i) => `<div class="known"><span>${i + 1}. ${esc(b.near?.name ?? `${b.lat.toFixed(1)}, ${b.lon.toFixed(1)}`)}</span><small>${b.top} of 5 · ${Math.round(b.km2).toLocaleString('en')} km²</small></div>`).join('')}<div class="row"><button class="btn primary" data-act="hl-globe">Open the globe</button></div>` });
+  }, sheet: () => { const named = best.filter((b) => b.near?.name && !/^off /.test(b.near.name)).slice(0, 5); return `<h2>Top scores</h2>${named.map((b) => `<div class="hbar"><span class="pips" aria-label="${b.top} of 5">${[0, 1, 2, 3, 4].map((i) => `<i class="${i < b.top ? 'on' : ''}"></i>`).join('')}</span><span>${esc(b.near.name)}</span><small>${Math.round(b.km2).toLocaleString('en')} km²</small></div>`).join('')}<div class="row c-acts"><button class="btn primary" data-act="hl-globe">Open the globe</button></div>`; } });
 
-  pairs.forEach((pair, n) => boards.push({ id: `claims-${n + 1}`, label: `Read: ${pair.map((x) => x.name.split(',')[0]).join(' and ')}`, draw: (g) => {
+  pairs.forEach((pair, n) => boards.push({ id: `claims-${n + 1}`, label: pair.map((x) => x.name.split(',')[0].replace(/\s*\(.*?\)/g, '')).join(' · '), draw: (g) => {
     frame(g, `Places people named · ${n + 1} of ${pairs.length}`, pair.map((x) => x.name.split(',')[0]).join('  ·  '));
     pair.forEach((x, i) => {
       const x0 = 56 + i * 532, sc = placeScore(x.place ?? x.id);
@@ -105,9 +107,9 @@ export const startHall = (ctx, { A, H, walk }) => {
     });
     g.fillStyle = LINE; g.fillRect((W / 2) - 1, 196 * u, 1.5 * u, Hh - 290 * u);
     foot(g, 'Each has a scene on the globe: what was claimed and what was found, drawn on the ground.');
-  }, sheet: () => pair.map((x) => `<h2>${esc(x.name)}</h2><p><span class="tag t-fringe">Claimed</span> ${esc(x.claimed?.line ?? '')}</p><p><span class="tag t-confirmed">Found</span> ${esc(x.found?.line ?? '')}</p><div class="row"><button class="btn" data-act="hl-place" data-id="${esc(x.place ?? x.id)}">See it on the globe</button></div>`).join('') }));
+  }, sheet: () => pair.map((x) => `<h2>${esc(x.name)}</h2><p><span class="tag t-fringe">Claimed</span> ${esc(x.claimed?.line ?? '')}</p><p><span class="tag">Evidence</span> ${esc(x.found?.line ?? '')}</p><div class="row"><button class="btn" data-act="hl-place" data-id="${esc(x.place ?? x.id)}">See it on the globe</button></div>`).join('') }));
 
-  boards.push({ id: 'searches', label: 'Read: every search on record', draw: (g) => {
+  boards.push({ id: 'searches', label: 'Searches', draw: (g) => {
     const all = cas?.searches ?? [], y0 = frame(g, 'The searches', `${all.length} searches, ${Math.min(...all.map((x) => x.year))} to ${Math.max(...all.map((x) => x.year))}`);
     // A line of years. Before 1950 the line is squeezed, since most of the looking is recent.
     const xs = (yr) => (yr < 1950 ? 70 + ((yr - 1650) / 300) * 250 : 320 + ((yr - 1950) / 80) * 770), base = y0 + 150;
@@ -120,22 +122,22 @@ export const startHall = (ctx, { A, H, walk }) => {
     let x = 56; const y = base + 78;
     for (const [status, o] of Object.entries(OUTCOME)) { const n = all.filter((v) => v.status === status).length; if (!n) continue; dot(g, x + 9, y + 14, 9, TONE[o.tone]); g.font = font(22, 500); g.fillStyle = INK; g.textBaseline = 'top'; const t = `${n} ${o.short.toLowerCase()}`; g.fillText(t, (x + 26) * u, y * u); x += 44 + g.measureText(t).width / u; }
     foot(g, 'Not one has found the city.');
-  }, sheet: () => `<h2>Every search on record</h2>${(cas?.searches ?? []).map((x) => `<div class="known"><span>${esc(x.title)}</span><small>${esc(String(x.date ?? x.year))} · ${esc(OUTCOME[x.status]?.short ?? x.status)}</small></div>`).join('')}<div class="row"><button class="btn primary" data-act="hl-board">Open the board</button></div>` });
+  }, sheet: () => `<h2>Searches</h2>${[...(cas?.searches ?? [])].sort((a, b) => a.year - b.year).map((x) => `<div class="known"><span><span class="yr">${x.year}</span>${esc(x.title)}</span><small style="color:${TONE[OUTCOME[x.status]?.tone ?? 'mut']}">${esc(OUTCOME[x.status]?.short ?? x.status)}</small></div>`).join('')}<div class="row"><button class="btn primary" data-act="hl-board">Open the board</button></div>` });
 
-  boards.push({ id: 'unknown', label: 'Read: what is still unknown', draw: (g) => {
+  boards.push({ id: 'unknown', label: 'Unknown', draw: (g) => {
     let y = frame(g, 'Still unknown', `${openSearches.length} searches with no answer yet`);
     for (const x of openSearches.slice(0, 6)) { dot(g, 66, y + 15, 8, TONE[OUTCOME[x.status]?.tone ?? 'mut']); g.font = font(20, 600); g.fillStyle = DIM; g.textBaseline = 'top'; g.textAlign = 'right'; g.fillText(String(x.year), (W / u - 56) * u, (y + 3) * u); g.textAlign = 'left'; y = para(g, x.title, 92, y, 880, 25, { rows: 1 }) + 11; }
     foot(g, `Also open: ${unscored.length} of Plato's claims not scored, and ${lost.length} things claimed at a place with no published position.`);
-  }, sheet: () => `<h2>What is still unknown</h2><h3>Searches with no answer yet</h3>${openSearches.map((x) => `<div class="known"><span>${esc(x.title)}${x.source ? ` ${link(typeof x.source === 'string' ? x.source : x.source.url ?? '', 'source')}` : ''}</span><small>${esc(String(x.date ?? x.year))} · ${esc(OUTCOME[x.status]?.short ?? '')}</small></div>`).join('')}<h3>Claims of Plato's not scored yet</h3>${unscored.map((c) => `<div class="known"><span>${esc(c.label)}</span><small>${esc(c.ref ?? '')}</small></div>`).join('')}${lost.length ? `<h3>Claimed at a place, with no published position</h3>${lost.map((x) => `<div class="known"><span>${esc(x.what)}</span><small>${esc(x.site.split(',')[0])}</small></div>`).join('')}` : ''}<div class="row"><button class="btn primary" data-act="hl-work">Work to pick up</button></div>` });
+  }, sheet: () => `<h2>Unknown</h2><h3>Searches</h3>${openSearches.map((x) => `<div class="known"><span>${esc(x.title)}${x.source ? ` ${link(typeof x.source === 'string' ? x.source : x.source.url ?? '', 'source')}` : ''}</span><small>${esc(String(x.date ?? x.year))} · ${esc(OUTCOME[x.status]?.short ?? '')}</small></div>`).join('')}<h3>Not scored yet</h3>${unscored.map((c) => `<div class="known"><span>${esc(c.label)}</span><small>${esc(c.ref ?? '')}</small></div>`).join('')}${lost.length ? `<h3>No published position</h3>${lost.map((x) => `<div class="known"><span>${esc(x.what)}</span><small>${esc(x.site.split(',')[0])}</small></div>`).join('')}` : ''}<div class="row"><button class="btn primary" data-act="hl-work">Work to pick up</button></div>` });
 
-  boards.push({ id: 'work', label: 'Read: work you can pick up', draw: (g) => {
+  boards.push({ id: 'work', label: 'Help build', draw: (g) => {
     let y = frame(g, 'Open work', `${work.length} things to pick up`);
     const cols = [work.slice(0, Math.ceil(Math.min(work.length, 10) / 2)), work.slice(Math.ceil(Math.min(work.length, 10) / 2), 10)];
     cols.forEach((col, i) => { let yy = y; for (const t of col) { g.font = font(18, 700); g.fillStyle = GOLD; g.textBaseline = 'top'; g.fillText(t.area.toUpperCase(), (56 + i * 532) * u, yy * u); yy = para(g, t.title, 56 + i * 532, yy + 24, 480, 25, { rows: 1 }) + 13; } });
     foot(g, 'Each comes with a prompt to hand to your AI. Press to see them all.');
   }, sheet: () => workSheet() });
 
-  boards.push({ id: 'help', label: 'Read: how to help, with your AI', draw: (g) => {
+  boards.push({ id: 'help', label: 'Help build', draw: (g) => {
     let y = frame(g, 'Bring your AI', 'Anyone can add to this');
     (open?.how ?? []).slice(0, 5).forEach((t, i) => { dot(g, 74, y + 18, 17, '#1b2532'); g.font = font(20, 700); g.fillStyle = GOLD; g.textBaseline = 'middle'; g.textAlign = 'center'; g.fillText(String(i + 1), 74 * u, (y + 19) * u); g.textAlign = 'left'; y = para(g, t, 110, y + 2, 990, 24, { rows: 2 }) + 13; });
     foot(g, 'Better graphics, more research, new data, sound, things to do: all of it is open.');
@@ -159,7 +161,7 @@ Done when: ${t.done_when}` : `Read data/open.json and show me the open tasks, gr
 5. Show me what changed (for anything visual, pictures at desktop and phone widths) and wait until I accept that version.
 6. Then open one pull request to ${repoUrl()} from my GitHub account, following https://abstracts.co/kit/abstracts-artifact/SKILL.md, and name ${t ? t.id : 'the task'} in it.`;
   // quiet:end
-  const workSheet = () => `<h2>Work you can pick up</h2>${Object.entries(open?.areas ?? {}).map(([area, what]) => { const ts = work.filter((t) => t.area === area); return ts.length ? `<h3>${esc(area[0].toUpperCase() + area.slice(1))}</h3>${ts.map((t) => `<details class="hl-task"><summary><b>${esc(t.title)}</b><small>${esc(t.size)}</small></summary><p>${esc(t.why)}</p><p><span class="tag t-confirmed">Done when</span> ${esc(t.done_when)}</p><div class="row"><button class="btn primary" data-act="hl-prompt" data-id="${esc(t.id)}">Copy the prompt for my AI</button></div></details>`).join('')}` : ''; }).join('')}`;
+  const workSheet = () => `<h2>Help build</h2>${Object.entries(open?.areas ?? {}).map(([area, what]) => { const ts = work.filter((t) => t.area === area); return ts.length ? `<h3>${esc(area[0].toUpperCase() + area.slice(1))}</h3>${ts.map((t) => `<details class="hl-task"><summary><b>${esc(t.title)}</b><small>${esc(t.size)}</small></summary><p>${esc(t.why)}</p><div class="row"><button class="btn primary" data-act="hl-prompt" data-id="${esc(t.id)}">Copy the prompt for my AI</button></div></details>`).join('')}` : ''; }).join('')}`;
 
   // ---------- showing a board's detail ----------
   const show = (id) => {
@@ -173,6 +175,7 @@ Done when: ${t.done_when}` : `Read data/open.json and show me the open tasks, gr
     if (!b) return;
     const act = b.dataset.act;
     if (act === 'hl-work') show('work');
+    else if (act === 'hl-open') show(b.dataset.id);
     else if (act === 'hl-globe') ctx.openGlobe?.();
     else if (act === 'hl-board') { ctx.openGlobe?.(false); A?.openBoard(); }
     else if (act === 'hl-place') { const p = A?.atlantis.places.find((x) => x.id === b.dataset.id); ctx.openGlobe?.(false); if (p) A.openPlace(p, true); }
@@ -242,13 +245,14 @@ Done when: ${t.done_when}` : `Read data/open.json and show me the open tasks, gr
         const hl = city.city.hall;
         walk.hotspots.length = 0;
         for (const b of s.boards) walk.hotspots.push({ id: b.id, x: b.at.x, y: b.at.y, z: b.at.z, reach: 15, size: b.at.w, label: b.label, act: () => show(b.id) });
-        walk.hotspots.push({ id: 'globe', x: hl.globe.x, y: hl.globe.y, z: hl.globe.z, reach: 13, size: hl.globe.r * 2.4, label: 'Open the globe: hunt for it yourself', act: () => ctx.openGlobe?.() });
+        walk.hotspots.push({ id: 'globe', x: hl.globe.x, y: hl.globe.y, z: hl.globe.z, reach: 13, size: hl.globe.r * 2.4, label: 'Open the globe', act: () => ctx.openGlobe?.() });
       }
     }
     if (!s.group || !city.active) return;
     // The score map arrives a moment after the page: paint the globe again when it has.
     if (s.globe && !s.globe.painted && H?.state.ready) { s.globe.tex.image = globeMap(); s.globe.tex.needsUpdate = true; s.globe.painted = true; world.stamp++; }
-    if (walk.on && Math.hypot(walk.state.x, walk.state.y) < city.city.hall.RG) { s.spin.rotation.z = world.time * 0.12; world.stamp++; }
+    // It turns slowly, and starts with the Atlantic towards the door.
+    if (walk.on && Math.hypot(walk.state.x, walk.state.y) < city.city.hall.RG) { s.spin.rotation.z = ATLANTIC + (world.time - (s.since ??= world.time)) * 0.05; world.stamp++; }
   };
   return { sync, show, boards, promptFor, state: s, counts: { work: work.length, openSearches: openSearches.length, unscored: unscored.length, lost: lost.length } };
 };

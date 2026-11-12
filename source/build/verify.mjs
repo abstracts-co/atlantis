@@ -123,11 +123,11 @@ const FEATURES = {
     const lit = await page.locator('#hunt .h-c.on').count();
     step('on the best match on Earth the read-out gives the score in the data', (await page.textContent('#h-score')) === `${best.top}/5` && lit === best.clues.length, `${await page.textContent('#h-score')}, ${lit} clues lit, ${best.near?.name ?? ''}`);
     await page.evaluate(() => world.control.jump({ lat: 21.12 * Math.PI / 180, lon: -11.4 * Math.PI / 180, range: 1.2e6 })); await page.waitForTimeout(500);
-    step('on land that never sank the first light, "sank", stays off, and the read-out says so to a screen reader', /never sank/.test(await page.getAttribute('#h-score', 'aria-label')) && !(await page.locator('#hunt .h-c').first().getAttribute('class')).includes('on') && /sank/.test(await page.locator('#hunt .h-c').first().textContent()));
+    step('on land that never sank the first light, "sank", stays off, and the read-out says so to a screen reader', /never sank/.test(await page.getAttribute('#h-score', 'aria-label')) && !(await page.locator('#hunt .h-c').first().getAttribute('class')).includes('on') && /sank/i.test(await page.locator('#hunt .h-c').first().textContent()));
     await page.evaluate(([lat, lon]) => world.control.jump({ lat: lat * Math.PI / 180, lon: lon * Math.PI / 180, range: 1.2e6 }), [best.lat, best.lon]); await page.waitForTimeout(400);
     await page.locator('#hunt [data-act="h-claim"]').click(); await page.waitForTimeout(500);
     const text = await page.textContent('#c-share');
-    step('"Claim this spot" gives the score, five squares and a link back to the spot', (await page.textContent('#body .c-hero b')) === `${best.top}/5` && (await page.locator('#body .c-row').count()) === 5 && text.includes(`${best.top}/5`) && (text.match(/🟩/g) ?? []).length === best.top && /hunt=/.test(text), text.split('\n').slice(0, 2).join(' '));
+    step('"Score this spot" gives the score, five squares and a link back to the spot', (await page.textContent('#body .c-hero b')) === `${best.top}/5` && (await page.locator('#body .c-row').count()) === 5 && text.includes(`${best.top}/5`) && (text.match(/🟩/g) ?? []).length === best.top && /hunt=/.test(text), text.split('\n').slice(0, 2).join(' '));
     step('the card is labelled for what it is: a landscape match', (await page.textContent('#eyebrow')).trim() === 'Landscape match');
     const link = text.split('\n').pop();
     const second = await page.context().newPage();
@@ -138,7 +138,7 @@ const FEATURES = {
     await page.click('#sheet .x');
     await menu(page, 'best');
     const rows = await page.locator('#body .prow').count();
-    step('"Best on Earth" lists the best matches and every famous claim by the same rules', rows >= wf.places.length + 3 && /Nothing scores 5/.test(await page.textContent('#body')), `${rows} rows`);
+    step('"Top scores" lists the best matches and every famous claim by the same rules', rows >= wf.places.length + 3 && /Nothing scores 5/.test(await page.textContent('#body')), `${rows} rows`);
     await menu(page, 'rules');
     step('"How it\'s scored" gives the rule for each clue and what the score cannot tell', (await page.locator('#body .c-row').count()) === 5 && /cannot tell/.test(await page.textContent('#body')));
   },
@@ -231,30 +231,48 @@ const FEATURES = {
     step('"Clear the gold lines" removes the plan and the city', !s.city && (await page.evaluate(() => world.evidence.extras.length)) === 0);
   },
   tour: async (page, step) => {
-    await page.click('#intro [data-act="tour"]'); await page.waitForTimeout(600);
+    const wf = read(`${read(STATE).dir}worldfit.json`), cas = read(`${read(STATE).dir}case.json`);
+    await page.click('#intro [data-act="tour"]'); await page.waitForTimeout(700);
     const ids = await page.evaluate(() => ui.tour.steps.map((s) => s.id)), n = ids.length;
     const at = () => page.evaluate(() => ui.tour.steps[ui.tour.step]?.id);
-    const until = async (id) => { for (let i = 0; i < n && (await at()) !== id; i++) await page.locator('#tour [data-act="tour-next"]').click(); await settle(page); };
-    step('the story starts with Plato, in his own words', (await page.locator('#tour.open').count()) === 1 && /Plato/.test(await page.textContent('#tour p')) && /“[^”]+”/.test(await page.textContent('#tour p')), `${n} sentences`);
-    step('it opens on the whole Earth, with no city on it', !(await state(page)).city && (await state(page)).range > 3e6);
+    const until = async (id) => { for (let i = 0; i < n && (await at()) !== id; i++) await page.locator('#tour [data-act="tour-next"]').click(); };
+    const soon = (f, arg, ms = 9000) => page.waitForFunction(f, arg, { timeout: ms }).then(() => true, () => false);
+    const first = await page.evaluate(() => ({ text: document.querySelector('#tour p').textContent, city: world.city.active, range: world.control.range }));
+    step('it opens on the city itself, saying it is a story nobody has found', /story Plato told/.test(first.text) && /Nobody has ever found it/.test(await page.evaluate(() => ui.tour.steps[0].say)) && first.city && first.range < 20000, `${n} sentences`);
     await page.locator('#tour [data-act="tour-pause"]').click();
     const held = await page.evaluate(() => ui.tour.step); await page.waitForTimeout(1200);
     step('"Pause" holds it', (await page.evaluate(() => ui.tour.step)) === held && /Play/.test(await page.textContent('#tour .bar')));
     await page.locator('#tour [data-act="tour-pause"]').click();
+    await until('tale');
+    step('a picture of a real thing appears with its caption', await soon(() => document.querySelector('#shot.on img')?.complete && /Plato/.test(document.querySelector('#shot figcaption')?.textContent ?? '')));
+    await until('island');
+    step('the Pillars of Heracles are named on the globe', await soon(() => document.querySelector('#t-mark.on')?.textContent === 'The Pillars of Heracles'));
     await until('city');
-    const c = await page.evaluate(() => ({ on: world.city.active, lat: world.city.site?.lat, lon: world.city.site?.lon, home: ui.A && world.city.site ? [35.3, -9.9] : null, floor: world.globe.heightAt(world.city.site.lon * Math.PI / 180, world.city.site.lat * Math.PI / 180) }));
-    step('at "a city of rings" the city stands beyond the strait, on open sea', c.on && Math.abs(c.lat - 35.3) < 0.01 && Math.abs(c.lon + 9.9) < 0.01 && c.floor < -1000, `sea floor ${Math.round(c.floor)} m`);
+    const temple = await soon(() => world.city.cut === true && /From the text/.test(document.querySelector('#citybar.present')?.textContent ?? '') && /temple/i.test(document.querySelector('#citybar.present').textContent), null, 12000);
+    step('at "a temple coated with silver" the temple\'s roof lifts, with the passage it comes from', temple, await page.evaluate(() => (document.querySelector('#citybar.present .quote')?.textContent ?? '').slice(0, 70)));
+    step('at "a wall that sparkled like fire" the wall of orichalcum is shown, with its passage', await soon(() => /orichalcum/i.test(document.querySelector('#citybar.present')?.textContent ?? '') && world.city.cut === false, null, 9000));
+    await until('fall');
+    step('the city goes under the sea', await soon(() => (world.city.city?.group.position.z ?? 0) < -8 || !world.city.active, null, 9000), `lowered ${await page.evaluate(() => Math.round(-(world.city.city?.group.position.z ?? 0)))} m when looked at`);
+    await until('date');
+    step('"9600 BCE" is written large as it is said', await soon(() => document.querySelector('#stat.on b')?.textContent === '9600 BCE'));
     await until('sank'); await page.waitForTimeout(2600);
     const k = await page.evaluate(() => ({ sea: world.globe.shared.uSea.value, glow: ui.H.state.glow, city: world.city.active }));
     step('at "gone under" the sea is back at today\'s level and the sunken land glows', Math.abs(k.sea) < 0.6 && k.glow > 0.9 && !k.city, `sea ${k.sea.toFixed(1)} m, glow ${k.glow}`);
-    await until('turn');
-    step('its last sentence is spoken with the visitor already on foot', await page.evaluate(() => ui.tour.on && ui.walk.on));
-    await page.locator('#tour [data-act="tour-next"]').click(); await page.waitForTimeout(500);
-    const e = await page.evaluate(() => ({ tour: ui.tour.on, walk: ui.walk.on, r: Math.hypot(ui.walk.state.x, ui.walk.state.y), gate: world.city.city.hall.RG, hud: !document.querySelector('#walk').hidden }));
-    step('"Finish" leaves them standing before the gate in the wall of gold', !e.tour && e.walk && e.hud && e.r > e.gate && e.r < e.gate + 30, `${e.r.toFixed(0)} m from the centre`);
+    step('the area is written large, from the data', await soon((t) => document.querySelector('#stat.on b')?.textContent === t, `${(wf.totals.land_that_sank_km2 / 1e6).toFixed(1)} million km²`));
+    await until('scored'); await settle(page); await page.waitForTimeout(600);
+    const best = wf.best.find((b) => !b.near_old_ice) ?? wf.best[0];
+    step('at the best match the hunt\'s own read-out shows its score', (await page.evaluate(() => getComputedStyle(document.querySelector('#hunt')).display !== 'none' && document.querySelector('#h-score').textContent)) === `${best.top}/5`, `${await page.textContent('#h-score')} on screen`);
+    await until('search');
+    step('every search on record is a dot, and a place people named opens with its research drawn', (await page.locator('#dots.on i').count()) === cas.searches.length && await soon(() => !!ui.A.a.scene, null, 6000), `${await page.locator('#dots.on i').count()} dots`);
+    await until('hall');
+    step('at "we opened it" the view goes inside the hall and turns past the boards', await soon(() => ui.walk.on && ui.walk.state.where === 'The hall' && ui.walk.state.pan !== 0, null, 12000));
+    await until('turn'); await page.waitForTimeout(400);
+    await page.locator('#tour [data-act="tour-next"]').click(); await page.waitForTimeout(700);
+    const e = await page.evaluate(() => ({ tour: ui.tour.on, walk: ui.walk.on, where: ui.walk.state.where, pan: ui.walk.state.pan, hud: !document.querySelector('#walk').hidden, use: document.querySelector('#w-use')?.textContent ?? '' }));
+    step('"Finish" leaves the visitor in the hall, facing the globe, with one thing to do', !e.tour && e.walk && e.hud && e.where === 'The hall' && e.pan === 0 && /Open the globe/.test(e.use), e.use);
     await menu(page, 'story'); await page.waitForTimeout(500);
-    await page.locator('#tour [data-act="tour-stop"]').click(); await page.waitForTimeout(600);
-    step('"Skip to the city" ends the story at once, on foot', await page.evaluate(() => !ui.tour.on && ui.walk.on && world.city.active));
+    await page.locator('#tour [data-act="tour-stop"]').click(); await page.waitForTimeout(700);
+    step('"Skip" ends the story at once, on foot in the hall', await page.evaluate(() => !ui.tour.on && ui.walk.on && world.city.active && ui.walk.state.where === 'The hall'));
   },
   sound: async (page, step) => {
     const ix = read(`${read(STATE).dir}audio/index.json`);
@@ -285,12 +303,12 @@ const FEATURES = {
     step('moving on mid-sentence fades the old voice out before the new one starts', clean && order.filter((x) => x === 'say').length >= 3, order.join(' '));
     await page.locator('#tour [data-act="tour-stop"]').click(); await page.waitForTimeout(2600);
     const air = await page.evaluate(() => ({ walk: ui.walk.on, city: ui.sound.state.loops.has('city'), bed: ui.sound.state.loops.has('bed'), voice: ui.sound.voiceState().playing }));
-    step('on foot the harbour is heard, and the story\'s voice and bed are gone', air.walk && air.city && !air.bed && !air.voice);
+    step('the story over, the visitor is in the hall: its quiet is heard and the voice is gone', air.walk && air.bed && !air.city && !air.voice);
+    await page.evaluate(() => ui.enterCity('gate')); await page.waitForTimeout(2600);
+    step('out of doors the harbour is heard instead', await page.evaluate(() => ui.sound.state.loops.has('city') && !ui.sound.state.loops.has('bed')));
     await page.keyboard.down('KeyW'); await page.waitForTimeout(1500); await page.keyboard.up('KeyW');
     const steps = await page.evaluate((f) => ui.sound.state.log.filter((e) => e.file === f).length, ix.sfx.step.file);
     step('walking is heard as footsteps', steps >= 2, `${steps} in a second and a half`);
-    await page.evaluate(() => ui.enterCity('hall')); await page.waitForTimeout(2600);
-    step('inside the hall the air changes', await page.evaluate(() => ui.sound.state.loops.has('bed') && !ui.sound.state.loops.has('city')));
     await page.evaluate(() => ui.openGlobe()); await page.waitForTimeout(4200);
     await page.evaluate(() => world.control.jump({ lat: 22.91 * Math.PI / 180, lon: -77.51 * Math.PI / 180, range: 1.2e6 })); await page.waitForTimeout(700);
     await page.locator('#hunt [data-act="h-claim"]').click(); await page.waitForTimeout(900);
@@ -304,7 +322,7 @@ const FEATURES = {
   walk: async (page, step) => {
     await page.click('#intro [data-act="enter"]'); await page.waitForTimeout(1200);
     const a = await page.evaluate(() => ({ on: ui.walk.on, city: world.city.active, lat: world.city.site.lat, lon: world.city.site.lon, floor: world.globe.heightAt(world.control.lon, world.control.lat), eye: world.control.altitude, hud: !document.querySelector('#walk').hidden, hunt: getComputedStyle(document.querySelector('#hunt')).display, pins: getComputedStyle(document.querySelector('#pins')).display }));
-    step('"Enter the city" puts the visitor on foot in Plato\'s city', a.on && a.city && a.hud);
+    step('"Walk the city" puts the visitor on foot in Plato\'s city', a.on && a.city && a.hud);
     step('the city stands where the text points, beyond the strait, on open sea', Math.abs(a.lat - 35.3) < 0.01 && Math.abs(a.lon + 9.9) < 0.01 && a.floor < -1000, `the sea floor there is ${Math.round(a.floor)} m`);
     step('the eye is at head height', Math.abs(a.eye - 1.7) < 0.15, `${a.eye.toFixed(2)} m above the paving`);
     step('the globe\'s own controls are put away', a.hunt === 'none' && a.pins === 'none');
@@ -323,9 +341,35 @@ const FEATURES = {
     // No instructions are on screen, so the obvious thing must work: click the ground to go there.
     await page.evaluate(() => { const g = world.city.city.hall; ui.walk.enter({ x: 0, y: -(g.RG + 30), look: [0, 0] }); ui.walk.state.pitch = -0.25; }); await page.waitForTimeout(300);
     const c0 = await page.evaluate(() => ({ x: ui.walk.state.x, y: ui.walk.state.y, words: [...document.querySelectorAll('#walk p, #walk kbd')].length }));
-    await page.mouse.click(box.x + box.width / 2, box.y + box.height * 0.62); await page.waitForTimeout(2600);
+    await page.mouse.click(box.x + box.width / 2, box.y + box.height * 0.62); await page.waitForTimeout(500);
+    const locked = await page.evaluate(() => ui.walk.state.locked);
+    if (locked) {
+      // The click took the pointer, as in a game: now the mouse looks with no button held, and a click acts on the middle of the view.
+      const l0 = await page.evaluate(() => ui.walk.state.dir);
+      await page.mouse.move(box.x + box.width / 2 + 90, box.y + box.height * 0.62, { steps: 5 }); await page.waitForTimeout(200);
+      step('after one click the mouse looks around with no button held', Math.abs((await page.evaluate(() => ui.walk.state.dir)) - l0) > 0.05);
+      await page.evaluate(() => { ui.walk.state.dir = 0; ui.walk.state.pitch = -0.25; const g = world.city.city.hall; ui.walk.enter({ x: 0, y: -(g.RG + 30), look: [0, 0], grab: false }); ui.walk.state.pitch = -0.25; });
+      await page.mouse.click(box.x + box.width / 2, box.y + box.height * 0.62);
+    } else {
+      // A browser with no window will not give the pointer. The page's side of it is checked by telling it the pointer was given:
+      // then moving the mouse, with no button down, must turn the head, and a click must act on the middle of the view.
+      const sim = await page.evaluate(() => {
+        const c = world.renderer.domElement, d0 = ui.walk.state.dir;
+        Object.defineProperty(document, 'pointerLockElement', { configurable: true, get: () => c });
+        document.dispatchEvent(new Event('pointerlockchange'));
+        const m = new MouseEvent('mousemove', { bubbles: true }); Object.defineProperty(m, 'movementX', { value: 90 }); Object.defineProperty(m, 'movementY', { value: 0 });
+        document.dispatchEvent(m);
+        return { locked: ui.walk.state.locked, turned: Math.abs(ui.walk.state.dir - d0), aim: getComputedStyle(document.querySelector('#w-aim')).display };
+      });
+      step('after one click the mouse looks around with no button held', sim.locked && sim.turned > 0.1 && sim.aim !== 'none', `turned ${sim.turned.toFixed(2)} rad with no button down (the pointer's capture was simulated: this browser has no window)`);
+      await page.evaluate(() => { const g = world.city.city.hall; ui.walk.enter({ x: 0, y: -(g.RG + 30), look: [0, 0], grab: false }); ui.walk.state.pitch = -0.25; });
+      await page.mouse.click(box.x + 40, box.y + 120);   // anywhere: with the pointer taken, a click acts on the middle of the view
+      await page.evaluate(() => { delete document.pointerLockElement; document.dispatchEvent(new Event('pointerlockchange')); });
+    }
+    await page.waitForTimeout(2600);
     const c1 = await page.evaluate(() => ({ x: ui.walk.state.x, y: ui.walk.state.y, goal: ui.walk.state.goal }));
     step('clicking the ground walks there, with no line of instructions on screen', c0.words === 0 && Math.hypot(c1.x - c0.x, c1.y - c0.y) > 3 && c1.y > c0.y && c1.goal === null, `${Math.hypot(c1.x - c0.x, c1.y - c0.y).toFixed(1)} m, then stopped`);
+    await page.evaluate(() => ui.walk.unlock());
     // What is solid is solid. From outside the wall of gold, away from its gate, walking at it gets nowhere.
     const hold = async (ms) => { await page.keyboard.down('KeyW'); await page.waitForTimeout(ms); await page.keyboard.up('KeyW'); await page.waitForTimeout(250); };
     await page.evaluate(() => { const g = world.city.city.hall; ui.walk.enter({ x: g.RG + 12, y: 0, look: [0, 0] }); }); await hold(3000);
@@ -353,9 +397,9 @@ const FEATURES = {
     step('every part of the city has ground to stand on near it', lost.length === 0, lost.join(', '));
     await page.locator('#walk [data-act="w-up"]').click(); await page.waitForTimeout(3000);
     const up = await page.evaluate(() => ({ on: ui.walk.on, range: world.control.range, bar: document.querySelector('#citybar').classList.contains('open'), hud: document.querySelector('#walk').hidden }));
-    step('"Fly up" leaves the ground and shows the city from above', !up.on && up.hud && up.range > 200 && up.bar, `${Math.round(up.range)} m up`);
+    step('"Overview" leaves the ground and shows the city from above', !up.on && up.hud && up.range > 200 && up.bar, `${Math.round(up.range)} m up`);
     await page.locator('#citybar [data-act="cb-foot"]').click(); await page.waitForTimeout(800);
-    step('"Go on foot" on the city\'s bar comes back down', await page.evaluate(() => ui.walk.on));
+    step('"Walk" on the city\'s bar comes back down', await page.evaluate(() => ui.walk.on));
   },
   hall: async (page, step) => {
     const dir = read(STATE).dir, open = read(`${dir}open.json`), cas = read(`${dir}case.json`), wf = read(`${dir}worldfit.json`), ev = read(`${dir}evidence.json`);
@@ -371,7 +415,7 @@ const FEATURES = {
     // Face the board of open work, close to it, and use it.
     const look = async (id, back = 6) => { await page.evaluate(([id, back]) => { const b = ui.hall.state.boards.find((x) => x.id === id).at, r = Math.hypot(b.x, b.y); ui.walk.enter({ x: b.x * (1 - back / r), y: b.y * (1 - back / r), look: [b.x, b.y] }); ui.walk.state.pitch = 0.2; }, [id, back]); await page.waitForTimeout(500); };
     await look('work');
-    step('facing a board, a line says what using it will do', (await page.locator('#w-use:not([hidden])').count()) === 1 && /work you can pick up/.test(await page.textContent('#w-use')), await page.textContent('#w-use'));
+    step('facing a board, a line says what using it will do', (await page.locator('#w-use:not([hidden])').count()) === 1 && /Help build/.test(await page.textContent('#w-use')), await page.textContent('#w-use'));
     await page.keyboard.press('KeyE'); await page.waitForTimeout(400);
     const tasks = await page.locator('#body .hl-task').count();
     step('E opens it: every open task, by area', tasks === work, `${tasks} of ${work}`);
@@ -392,7 +436,7 @@ const FEATURES = {
     // Clicking a board, anywhere on it, reads it: no key is needed.
     await look('searches', 7);
     await page.mouse.click(550 + 120, 380 - 40); await page.waitForTimeout(400);
-    step('clicking a board opens it', /Every search on record/.test(await page.textContent('#body')));
+    step('clicking a board opens it', /Searches/.test(await page.textContent('#body h2')));
     await page.click('#sheet .x');
     // The globe on the table opens the whole Earth.
     await page.evaluate(() => { ui.walk.enter({ x: 0, y: -9, look: [0, 0] }); ui.walk.state.pitch = 0.3; }); await page.waitForTimeout(500);
@@ -497,7 +541,7 @@ const FEATURES = {
     const second = await page.evaluate(() => ({ i: ui.cityBar.state.walk, lit: world.city.lit })), after = await state(page);
     step('Next goes to the second part and the view moves', second.i === 1 && second.lit === WALK[1] && (before.lat !== after.lat || before.lon !== after.lon || before.range !== after.range));
     await page.locator('#citybar [data-act="cb-end"]').click(); await settle(page);
-    step('"End the walk" puts the city back as it was', (await page.evaluate(() => ui.cityBar.state.walk === -1 && world.city.lit === null)));
+    step('"Done" puts the city back as it was', (await page.evaluate(() => ui.cityBar.state.walk === -1 && world.city.lit === null)));
     await page.locator('#citybar [data-act="cb-ghost"]').click();
     step('"Text or guess" draws our choices pale', (await page.evaluate(() => world.city.ghost === true && world.city.city.meshes.some((m) => m.userData.ghostable && m.material === world.city.materials.ghost))));
     await page.locator('#citybar [data-act="cb-ghost"]').click();

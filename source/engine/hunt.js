@@ -1,6 +1,6 @@
 // The hunt. Every 10 km of the Earth has been scored against the five things Plato says that the shape of the land
 // can answer (build/make-worldfit.mjs writes data/worldfit.png and worldfit.json). Here the sunken land that matches
-// glows on the globe, a reticle reads the score of whatever is under it, and "Claim this spot" turns a spot into a
+// glows on the globe, a reticle reads the score of whatever is under it, and "Score this spot" turns a spot into a
 // result a person can post. A match to the landscape is not a city, and the card says so every time.
 import * as THREE from 'three';
 import { DEG, toDir, clamp, formatLatLon } from './geo.js';
@@ -21,7 +21,7 @@ export const startHunt = (ctx) => {
   const wf = data.worldfit, cas = data.cas;
   if (!wf) return null;
   const el = $('#hunt'), reticle = $('#reticle');
-  const h = { ready: false, n: 0, score: null, bits: null, state: null, on: false, last: '', claim: null, glow: 1 };
+  const h = { forced: false, ready: false, n: 0, score: null, bits: null, state: null, on: false, last: '', claim: null, glow: 1 };
   const claimOf = (id) => cas?.claims.find((c) => c.id === id);
   const refOf = (c) => (claimOf(c.claim)?.ref ?? '').split(';')[0];
 
@@ -72,13 +72,13 @@ export const startHunt = (ctx) => {
 
   // ---------- the read-out under the reticle ----------
   // One small bar: the score, five lights, one button. Everything else is in the menu.
-  const TAG = { sank: 'sank', atlantic: 'Pillars', plain: 'plain', mountains: 'mountains', island: 'island' };
+  const TAG = { sank: 'Sank', atlantic: 'Atlantic', plain: 'Plain', mountains: 'Mountains', island: 'Island' };
   const drawHud = () => {
-    el.innerHTML = `<div class="h-main"><b id="h-score"></b><div class="h-clues">${CLUES.map((c, j) => `<span class="h-c" data-j="${j}"><i></i>${esc(TAG[c.key])}</span>`).join('')}</div><button class="btn primary" data-act="h-claim">Claim this spot</button></div>`;
+    el.innerHTML = `<div class="h-main"><b id="h-score"></b><div class="h-clues">${CLUES.map((c, j) => `<span class="h-c" data-j="${j}"><i></i>${esc(TAG[c.key])}</span>`).join('')}</div><button class="btn primary" data-act="h-claim">Score this spot</button></div>`;
   };
   drawHud();
   const tick = () => {
-    const show = st.hunt && h.ready && !ctx.busy();
+    const show = st.hunt && h.ready && (!ctx.busy() || h.forced);
     if (show !== h.on) { h.on = show; el.classList.toggle('open', show); reticle.classList.toggle('open', show); stage.classList.toggle('hunting', show); ctx.sound?.deep(show); }
     // The glow stays, fainter, while a scene or a card is open: it is the map everything else sits on.
     const want = st.hunt && h.ready ? (show || st.sheet === 'claim' || !$('#intro').classList.contains('gone') ? h.glow : 0.3 * h.glow) : 0;
@@ -90,7 +90,9 @@ export const startHunt = (ctx) => {
     if (key === h.last) return;
     h.last = key;
     const sc = $('#h-score');
-    sc.innerHTML = f.state === 0 ? '–' : `${f.score}<small>/5</small>`;
+    sc.innerHTML = f.state === 0 ? '' : `${f.score}<small>/5</small>`;
+    // Open sea at Plato's date too: there is nothing to score, so the button rests.
+    el.querySelector('[data-act="h-claim"]').disabled = f.state === 0;
     sc.className = `s${f.state === 2 ? f.score : 0}`;
     // No tooltip: the five lights say it. This is the same thing for someone who cannot see them.
     sc.setAttribute('aria-label', f.state === 0 ? "Open sea at Plato's date too: nothing here to sink" : f.state === 1 ? `${f.score} of 5. Dry land then and now: it never sank` : `${f.score} of 5, on land that has gone under`);
@@ -134,10 +136,9 @@ export const startHunt = (ctx) => {
       <div class="c-hero s${c.state === 2 ? c.score : 0}"><b>${c.state === 0 ? '–' : `${c.score}<small>/5</small>`}</b><div class="sq">${c.clues.map((ok) => `<i class="${ok ? 'y' : 'n'}"></i>`).join('')}</div></div>
       <h2 class="c-name">${esc(c.name ?? formatLatLon(c.lat, c.lon, 2))}</h2>
       <div class="c-sub">${c.name ? formatLatLon(c.lat, c.lon, 2) : c.state === 2 ? 'Sunken land' : c.state === 1 ? 'Dry land' : 'Open sea'}</div>
-      <p class="c-rank">${esc(rank)}</p>
       <div class="c-list">${CLUES.map((x, j) => `<details class="c-row ${c.clues[j] ? 'y' : 'n'}"><summary><i></i>${esc(x.name)}<small>${esc(refOf(x))}</small></summary><p>${esc(c.state === 0 ? 'No land here at that date.' : c.clues[j] ? x.yes : x.no)}${claimOf(x.claim)?.quote ? ` <em class="q">“${esc(claimOf(x.claim).quote)}”</em>` : ''}</p></details>`).join('')}</div>
-      <div class="c-acts"><button class="btn primary" data-act="h-share">Share my claim</button><button class="ib" data-act="h-copy" aria-label="Copy" aria-label="Copy">${ICON.copy}</button><button class="ib" data-act="h-x" aria-label="Post on X" aria-label="Post on X">${ICON.x}</button><button class="ib" data-act="h-pic" aria-label="Save the picture" aria-label="Save the picture">${ICON.save}</button></div>
-      <details class="c-more"><summary>More to do here</summary><div class="row"><button class="btn" data-act="h-fit">Measure the ground</button><button class="btn" data-act="h-city">Stand Plato's city</button><button class="btn" data-act="h-known">Already recorded?</button><button class="btn" data-act="h-rules">How it's scored</button></div></details>
+      <div class="c-acts"><button class="btn primary" data-act="h-share">Share</button><button class="ib" data-act="h-copy" aria-label="Copy" aria-label="Copy">${ICON.copy}</button><button class="ib" data-act="h-x" aria-label="Post on X" aria-label="Post on X">${ICON.x}</button><button class="ib" data-act="h-pic" aria-label="Save the picture" aria-label="Save the picture">${ICON.save}</button></div>
+      <details class="c-more"><summary>More</summary><div class="row"><button class="btn" data-act="h-fit">Measure the ground</button><button class="btn" data-act="h-city">Stand Plato's city</button><button class="btn" data-act="h-known">Already recorded?</button><button class="btn" data-act="h-rules">How it's scored</button></div></details>
 
       <pre class="c-share" id="c-share" hidden>${esc(shareText(c, claimUrl(c)))}</pre>`;
   };
@@ -165,7 +166,7 @@ export const startHunt = (ctx) => {
 
   // ---------- the leaderboard ----------
   const drawBest = () => {
-    eyebrow.textContent = 'Closest landscape matches';
+    eyebrow.textContent = 'Top scores';
     const row = (b, i) => `<button class="prow" data-act="h-go" data-ll="${b.lat},${b.lon}"><b class="lb s${b.top}">${b.top}/5</b><span class="pn">${esc(b.near?.name ? shorten(b.near.name) : formatLatLon(b.lat, b.lon, 1))}</span><small>${b.km2.toLocaleString('en')} km²</small></button>`;
     const sure = wf.best.filter((b) => !b.near_old_ice).slice(0, 8), ice = wf.best.filter((b) => b.near_old_ice).slice(0, 5);
     const t = wf.totals, million = (t.land_that_sank_km2 / 1e6).toFixed(1);

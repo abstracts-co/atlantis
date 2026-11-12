@@ -589,12 +589,20 @@
   #w-use[hidden] { display: none; }
   #w-use span { overflow: hidden; text-overflow: ellipsis; }
   kbd { display: inline-grid; place-items: center; min-width: 22px; height: 22px; padding: 0 5px; border-radius: 6px; background: rgba(255, 255, 255, 0.16); border: 1px solid rgba(255, 255, 255, 0.22); font: 600 11px/1 var(--sans); color: #fff; }
-  #w-stick { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(255, 255, 255, 0.08); border: 1.5px solid rgba(255, 255, 255, 0.28); display: none; pointer-events: none; }
-  #w-stick.on { display: block; }
-  #w-stick i { position: absolute; left: 50%; top: 50%; width: 40px; height: 40px; margin: -20px 0 0 -20px; border-radius: 50%; background: rgba(255, 255, 255, 0.55); }
+  /* Two faint sticks for fingers: the left walks, the right looks. Shown on a touch screen only. */
+  #w-stick, #w-look { position: absolute; bottom: 74px; width: 104px; height: 104px; border-radius: 50%; background: rgba(255, 255, 255, 0.07); border: 1.5px solid rgba(255, 255, 255, 0.22); display: none; pointer-events: none; }
+  #w-stick { left: 26px; }
+  #w-look { right: 26px; }
+  #w-stick i, #w-look i { position: absolute; left: 50%; top: 50%; width: 42px; height: 42px; margin: -21px 0 0 -21px; border-radius: 50%; background: rgba(255, 255, 255, 0.3); transition: background-color 120ms ease; }
+  #w-stick.on i, #w-look.on i { background: rgba(255, 255, 255, 0.6); }
+  #walk.touch #w-stick, #walk.touch #w-look { display: block; }
+  @media (pointer: coarse) { #w-stick, #w-look { display: block; } }
+  #w-aim { display: none; }
+  #walk.locked #w-aim { display: block; }
+  @media (pointer: coarse) { #meet { top: 62px; bottom: auto; left: 12px; width: min(300px, calc(100% - 24px)); } }
   #w-bar { position: absolute; right: 14px; bottom: 16px; display: flex; gap: 8px; }
   #w-bar button { height: 36px; padding: 0 13px; border-radius: 12px; color: #fff; font: 600 13px/1 var(--sans); cursor: pointer; }
-  @media (pointer: coarse) { #w-use { top: auto; bottom: 150px; height: 46px; } #w-stick { display: block; left: 84px; top: calc(100% - 128px); opacity: 0.75; } #w-stick.on { opacity: 1; } }
+  @media (pointer: coarse) { #w-use { top: auto; bottom: 196px; height: 46px; } #w-bar { bottom: 16px; } }
   /* ---------- other people ---------- */
   #people { position: absolute; inset: 0; pointer-events: none; z-index: 5; overflow: hidden; }
   #people[hidden] { display: none; }
@@ -619,7 +627,18 @@
   .mt-mic.muted { background: #f0766a; border-color: #f0766a; color: #1a0907; }
   .mt-n { flex: none; padding: 0 6px 0 2px; font: 600 12px/1 var(--sans); color: var(--dim); white-space: nowrap; }
   @media (max-width: 620px) { #meet { bottom: 64px; } #w-bar { left: 14px; right: 14px; justify-content: flex-end; } }
-  @media (max-width: 760px) { #stage.sheet-open #meet, #stage.sheet-open #w-bar, #stage.sheet-open #w-use, #stage.sheet-open #w-stick { display: none; } }
+  #stage.sheet-open #meet { display: none; }
+  #walk.in-hall [data-act="w-hall"] { display: none; }
+  #hunt .btn:disabled { opacity: 0.35; }
+  .c-acts { justify-content: center; }
+  #citybar .bar .ib { width: 34px; height: 34px; margin-left: auto; background: rgba(255, 255, 255, 0.08); display: grid; place-items: center; }
+  .hbar { display: grid; grid-template-columns: 84px 1fr 96px; align-items: center; gap: 12px; padding: 9px 0; border-top: 1px solid var(--line); }
+  .hbar .pips { display: flex; gap: 4px; } .hbar .pips i { width: 11px; height: 11px; border-radius: 50%; background: rgba(255, 255, 255, 0.14); } .hbar .pips i.on { background: var(--gold); }
+  .hbar .track { height: 10px; border-radius: 5px; background: rgba(255, 255, 255, 0.07); overflow: hidden; } .hbar .track b { display: block; height: 100%; border-radius: 5px; }
+  .hbar small { text-align: right; color: var(--dim); font-size: 13px; font-variant-numeric: tabular-nums; }
+  .hl-index { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 6px; } .hl-index .btn { justify-content: flex-start; height: 44px; }
+  .known .yr { color: var(--dim); font-variant-numeric: tabular-nums; margin-right: 10px; }
+  @media (max-width: 760px) { #stage.sheet-open #w-bar, #stage.sheet-open #w-use, #stage.sheet-open #w-stick, #stage.sheet-open #w-look { display: none; } }
   /* ---------- the hall's sheets ---------- */
   #sheet[data-kind="hall"] h3 { margin: 18px 0 6px; font: 600 13px/1.2 var(--sans); letter-spacing: 0.04em; color: var(--ink); }
   #sheet[data-kind="hall"] h3 small { font-weight: 400; color: var(--dim); letter-spacing: 0; margin-left: 6px; }
@@ -632,14 +651,36 @@
   .cdot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 8px; border: 1.5px solid var(--dim); vertical-align: 1px; }
   .cdot.on { background: var(--gold); border-color: var(--gold); }
 
-  /* ---------- pictures over the story ---------- */
-  #shot { position: absolute; right: 4%; top: 12%; width: min(34%, 380px); margin: 0; z-index: 9; opacity: 0; transform: scale(0.97); transform-origin: 70% 30%; pointer-events: none; transition: opacity 200ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1); }
+  /* ---------- laid over the story: a picture of a real thing, a number written large, the searches as dots, a name on a place ---------- */
+  #shot { position: absolute; right: 4%; top: 11%; width: min(32%, 360px); margin: 0; z-index: 9; opacity: 0; transform: scale(0.97); transform-origin: 70% 30%; pointer-events: none; transition: opacity 200ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1); }
+  #shot[data-where="left"] { right: auto; left: 4%; transform-origin: 30% 30%; }
+  #shot[data-where="low-left"] { right: auto; left: 4%; top: auto; bottom: 30%; width: min(26%, 300px); transform-origin: 30% 70%; }
   #shot.on { opacity: 1; transform: none; transition-duration: 280ms; }
-  #shot img { display: block; width: 100%; max-height: 52vh; object-fit: cover; border-radius: 14px; box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.14); }
+  #shot img { display: block; margin-left: auto; max-width: 100%; max-height: 400px; width: auto; height: auto; border-radius: 14px; box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.14); }
+  #shot[data-where="left"] img, #shot[data-where="low-left"] img { margin-left: 0; }
   #shot.on img { animation: drift var(--hold, 5s) linear both; }
-  @keyframes drift { from { transform: scale(1); } to { transform: scale(1.045); } }
-  #shot figcaption { margin-top: 9px; font: 500 12.5px/1.35 var(--sans); color: rgba(255, 255, 255, 0.86); text-shadow: 0 1px 10px rgba(0, 0, 0, 0.9); text-align: right; }
-  @media (max-width: 620px) { #shot { right: 50%; top: 68px; width: min(72%, 300px); transform: translateX(50%) scale(0.97); transform-origin: 50% 0; } #shot.on { transform: translateX(50%); } #shot img { max-height: 30vh; } #shot figcaption { text-align: center; } }
+  @keyframes drift { from { transform: scale(1); } to { transform: scale(1.04); } }
+  #shot figcaption { margin-top: 9px; font: 500 14px/1.35 var(--sans); color: rgba(255, 255, 255, 0.92); text-shadow: 0 1px 10px rgba(0, 0, 0, 0.9); text-align: right; }
+  #shot[data-where="left"] figcaption, #shot[data-where="low-left"] figcaption { text-align: left; }
+  #stat { position: absolute; left: 6%; top: 20%; z-index: 9; opacity: 0; transform: translateY(8px); pointer-events: none; transition: opacity 220ms ease, transform 260ms cubic-bezier(0.23, 1, 0.32, 1); }
+  #stat.on { opacity: 1; transform: none; }
+  #stat b { display: block; font: 700 clamp(40px, 7vw, 84px)/1 var(--sans); letter-spacing: -0.03em; color: #fff; text-shadow: 0 2px 30px rgba(0, 0, 0, 0.7); }
+  #stat span { display: block; margin-top: 8px; font: 500 15px/1.3 var(--sans); color: rgba(255, 255, 255, 0.85); }
+  #dots { position: absolute; left: 50%; bottom: 150px; transform: translateX(-50%); z-index: 9; display: none; gap: 7px; flex-wrap: wrap; justify-content: center; width: min(560px, calc(100% - 48px)); pointer-events: none; }
+  #dots.on { display: flex; }
+  #dots i { width: 12px; height: 12px; border-radius: 50%; background: #7c8794; opacity: 0; animation: dot 320ms cubic-bezier(0.23, 1, 0.32, 1) both; }
+  #dots i.d-bad { background: #f0766a; } #dots i.d-warn { background: #e9bd62; } #dots i.d-good { background: #5fd0a0; }
+  #dots i.d-info { background: none; box-shadow: inset 0 0 0 2px #fff; }
+  @keyframes dot { from { opacity: 0; transform: scale(0.96) translateY(4px); } to { opacity: 1; transform: none; } }
+  #t-mark { position: absolute; left: 0; top: 0; z-index: 8; padding: 6px 12px; border-radius: 999px; background: rgba(8, 11, 16, 0.78); color: #fff; font: 600 13px/1 var(--sans); white-space: nowrap; pointer-events: none; display: none; }
+  #t-mark.on { display: block; }
+  #t-mark::after { content: ''; position: absolute; left: 50%; top: 100%; width: 2px; height: 22px; margin-left: -1px; background: rgba(255, 255, 255, 0.8); }
+  /* The page's own cards, shown in place during the story: a part of the city with its passage, and the hunt's read-out. */
+  #stage.touring #citybar.present { display: block; left: 4%; top: 13%; bottom: auto; transform: none; width: min(400px, 44%); pointer-events: none; }
+  #stage.touring.tour-hunt #hunt { display: flex; bottom: 132px; pointer-events: none; }
+  #stage.touring.tour-hunt #hunt .btn { display: none; }
+  #stage.touring.tour-hunt #reticle { display: block; }
+  @media (max-width: 620px) { #shot, #shot[data-where="left"], #shot[data-where="low-left"] { right: 50%; left: auto; top: 64px; bottom: auto; width: min(64%, 260px); transform: translateX(50%) scale(0.97); transform-origin: 50% 0; } #shot.on { transform: translateX(50%); } #shot img { max-height: 200px; margin-inline: auto; } #shot figcaption, #shot[data-where="left"] figcaption, #shot[data-where="low-left"] figcaption { text-align: center; font-size: 13px; } #stat { left: 5%; top: 30%; } #stage.touring #citybar.present { left: 12px; right: 12px; top: 60px; width: auto; } #dots { bottom: 170px; } }
   /* ---------- quiet: the Abstracts design system's rules for everything here that is not the 3D scene ---------- */
   /* (packages/ui/README.md in the site's repository: its type, radii and motion; the layout explains itself, so no hint lines or tooltips; build/check-quiet.mjs guards it) */
   :root { --sans: Figtree, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; --serif: var(--sans); --ease-out: cubic-bezier(0.23, 1, 0.32, 1); --r-md: 10px; --r-lg: 14px; --r-xl: 20px; }
@@ -670,7 +711,7 @@
   <div id="pins"></div>
   <div id="intro">
     <h1>Atlantis</h1>
-    <div class="row"><button class="btn primary" data-act="enter" data-atlantis hidden>Enter the city</button><button class="btn" data-act="tour" data-atlantis hidden>Watch the story</button><button class="btn" data-act="hunt" hidden>Hunt on the globe</button><button class="btn" data-act="start">Start with Atlantis</button><button class="btn" data-act="sea">Lower the sea</button></div>
+    <div class="row"><button class="btn primary" data-act="tour" data-atlantis hidden>Watch the story</button><button class="btn" data-act="enter" data-atlantis hidden>Walk the city</button><button class="btn" data-act="hunt" hidden>Search the Earth</button><button class="btn" data-act="start">Start with Atlantis</button><button class="btn" data-act="sea">Lower the sea</button></div>
   </div>
   <div id="timeline"></div>
   <div id="bar">
@@ -687,18 +728,18 @@
   <div id="menu" class="glass" role="menu">
     <button data-menu="city" data-atlantis>Walk the city</button>
     <button data-menu="hall" data-atlantis>The hall</button>
-    <button data-menu="hunt" data-atlantis>Hunt on the globe</button>
+    <button data-menu="hunt" data-atlantis>Search the Earth</button>
     <button data-menu="story" data-atlantis>Watch the story</button>
     <button data-menu="work" data-atlantis>Help build this</button>
     <hr data-atlantis>
-    <button data-menu="best" data-atlantis>Best on Earth</button>
+    <button data-menu="best" data-atlantis>Top scores</button>
     <button data-menu="claims" data-atlantis>Famous claims<small id="m-claims"></small></button>
-    <button data-menu="board" data-atlantis>The board</button>
+    <button data-menu="board" data-atlantis>Claims board</button>
     <button data-menu="rules" data-atlantis>How it's scored</button>
     <hr data-atlantis>
     <button id="b-sea">Sea level</button>
     <button id="b-layers">Layers and view</button>
-    <button id="b-known">Already recorded here?</button>
+    <button id="b-known">Known sites</button>
     <hr>
     <button data-menu="credits">Data credits</button>
   </div>
@@ -718,13 +759,17 @@
     <i id="w-aim"></i>
     <button id="w-use" class="glass" hidden></button>
     <div id="w-stick"><i></i></div>
-    <div id="w-bar"><button class="glass" data-act="w-hall">The hall</button><button class="glass" data-act="w-globe">The globe</button><button class="glass" data-act="w-up">Fly up</button></div>
+    <div id="w-look"><i></i></div>
+    <div id="w-bar"><button class="glass" data-act="w-hall">The hall</button><button class="glass" data-act="w-globe">The globe</button><button class="glass" data-act="w-up">Overview</button></div>
   </div>
   <div id="meet" class="glass" hidden></div>
   <div id="reticle"></div>
   <div id="hunt" class="glass"></div>
   <div id="citybar" class="glass"></div>
   <figure id="shot"></figure>
+  <div id="stat"></div>
+  <div id="dots"></div>
+  <div id="t-mark"></div>
   <div id="tour" class="glass" role="status" aria-live="polite"></div>
   <section id="board" aria-label="The case so far"><header><h2>The case so far</h2><button class="x" data-act="board-x" aria-label="Close"><svg width="12" height="12" viewBox="0 0 12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m2 2 8 8M10 2l-8 8"/></svg></button></header><div id="board-body"></div></section>
   <div id="pop" role="dialog" aria-label="Details"></div>

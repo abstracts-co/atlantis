@@ -673,6 +673,7 @@ export const startUI = (world, data) => {
   world.onFrame = (dt = 0.016) => {
     hall?.sync();
     meet?.tick(dt);
+    tour?.tick();
     if (walk?.on) return;   // on foot nothing of the globe's own read-outs is shown
     placePins();
     A?.placeMarks();
@@ -705,6 +706,7 @@ export const startUI = (world, data) => {
   ctx.tour = () => tour.start();
   ctx.tourOn = () => tour.on;
   cityBar = startCityBar(ctx);
+  ctx.cityBar = cityBar;
   // ---------- on foot: the city, the hall at its centre, and the people in it ----------
   // Where the city stands when nobody has stood it anywhere: on the open sea beyond the strait, where the text points
   // and where there is nothing (reconstruction.json, choice "home-site").
@@ -717,15 +719,16 @@ export const startUI = (world, data) => {
   ctx.leaveWalk = () => { if (walk.on) walk.leave(false); };
   ctx.onWalk = (on) => { if (on) { meet.arrive(); if (st.sheet) setSheet(null); } else meet.leave(); cityBar.sync(); drawTag(); };
   // at: 'gate' (before the wall of gold, looking in) or 'hall' (just inside the door). keep: the story is still telling its last line.
-  ctx.enterCity = (at = 'gate', keep = false) => {
+  ctx.walkPan = (v) => { walk.state.pan = v; };
+  ctx.enterCity = (at = 'gate', keep = false, how = {}) => {
     if (!keep && tour.on) return tour.stop();
     A?.leaveScene(); A?.closeBoard(); st.legend = st.place = null; setSheet(null);
     $('#intro').classList.add('gone'); control.idle = false;
     if (!world.city.active) world.city.place({ lat: HOME.lat, lon: HOME.lon, bearing: HOME.bearing });
     if (Math.abs(S.uSea.value) > 0.6) setSea(0, false);
     const hl = world.city.city.hall;
-    blink();
-    walk.enter(at === 'hall' ? { x: 0, y: -(hl.RI - 6), look: [0, 0] } : { x: 0, y: -(hl.RG + 15), look: [0, 0] });
+    if (!keep) blink();
+    walk.enter({ ...(at === 'hall' ? { x: 0, y: -(hl.RI - 6), look: [0, 0] } : { x: 0, y: -(hl.RG + 15), look: [0, 0] }), grab: !keep, ...how });
   };
   // Out of the city and up to the whole Earth, where the hunt is.
   ctx.openGlobe = (far = true) => {

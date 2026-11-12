@@ -11,7 +11,7 @@ const PLACES = { plateau: 'The citadel', slope: 'The planted slope', island: 'Th
 
 export const startWalk = (ctx) => {
   const { world, $, stage } = ctx, { control } = world, city = world.city, canvas = world.renderer.domElement, el = $('#walk');
-  const w = { on: false, x: 0, y: 0, z: 0, zs: 0, dir: 0, pitch: 0, vel: [0, 0], keys: new Set(), look: null, stick: null, goal: null, hot: null, where: '', place: null, bob: 0, moved: false, hotspots: [], used: false };
+  const w = { on: false, x: 0, y: 0, z: 0, zs: 0, dir: 0, pitch: 0, vel: [0, 0], keys: new Set(), look: null, stick: null, goal: null, turn: null, pan: 0, locked: false, hot: null, where: '', place: null, bob: 0, moved: false, hotspots: [], used: false };
   // Where a click on the ground is taking the walker: a ring on the paving, in the city's own scene.
   const mark = new THREE.Mesh(new THREE.RingGeometry(0.34, 0.5, 28), new THREE.MeshBasicMaterial({ color: new THREE.Color(1.6, 1.6, 1.6), transparent: true, opacity: 0, depthWrite: false }));
   mark.renderOrder = 5;
@@ -78,7 +78,7 @@ export const startWalk = (ctx) => {
     return best;
   };
   const hint = $('#w-use'), whereEl = $('#w-where');
-  const use = (h = w.hot) => { if (h) { w.used = true; w.goal = null; h.act(h); } };
+  const use = (h = w.hot) => { if (h) { w.used = true; w.goal = null; unlock(); h.act(h); } };
   // A click or a tap at a point of the canvas: on a thing that can be used, it is used; on the ground, the walker goes there.
   const point = (px, py) => {
     const f = city.site.frame, r = control.ray(px, py), [dx, dy] = city.toCity(dot(r, f.east), dot(r, f.north)), d = [dx, dy, dot(r, f.up)], e = eye();
@@ -109,6 +109,9 @@ export const startWalk = (ctx) => {
       if (K.has('ArrowLeft')) turn -= 1;
     }
     if (w.stick) { f -= w.stick.dy; s += w.stick.dx; }
+    // The right stick turns the head at a rate; the story may turn it slowly too (pan).
+    if (w.turn) { w.dir += w.turn.dx * dt * 2.6; w.pitch = clamp(w.pitch - w.turn.dy * dt * 1.7, -1.25, 1.35); }
+    if (w.pan) w.dir += w.pan * dt;
     const push = Math.hypot(f, s);
     if (push > 1) { f /= push; s /= push; }
     let run = !typing && (K.has('ShiftLeft') || K.has('ShiftRight')) || (w.stick && Math.hypot(w.stick.dx, w.stick.dy) > 0.93);
@@ -138,6 +141,7 @@ export const startWalk = (ctx) => {
     if (name !== w.where) { w.where = name; whereEl.textContent = name; whereEl.classList.remove('show'); void whereEl.offsetWidth; whereEl.classList.add('show'); }
     const air = name === 'The hall' ? 'hall' : 'city';
     if (air !== w.place) { w.place = air; ctx.sound?.air(air); ctx.onWalkPlace?.(air); }
+    el.classList.toggle('in-hall', air === 'hall');
     const hot = find();
     if (hot !== w.hot) {
       w.hot = hot;
@@ -147,7 +151,15 @@ export const startWalk = (ctx) => {
   };
 
   // ---------- keys, mouse, fingers ----------
+  // With a mouse: the first click takes the pointer, as in a game, and from then on moving the mouse looks, with no
+  // button held. A click then acts on what is in the middle of the view. Esc gives the pointer back. Where a browser
+  // will not give the pointer, a drag looks and a click acts where it lands.
+  // With fingers: two faint sticks, the left to walk and the right to look; a drag anywhere else looks, a tap acts.
   const turnBy = (dx, dy, k) => { w.dir += dx * k; w.pitch = clamp(w.pitch - dy * k, -1.25, 1.35); };
+  const lock = () => { if (w.locked || !canvas.requestPointerLock) return; try { const q = canvas.requestPointerLock(); q?.catch?.(() => {}); } catch { /* not allowed here: dragging still looks */ } };
+  const unlock = () => { if (document.pointerLockElement === canvas) document.exitPointerLock?.(); };
+  document.addEventListener('pointerlockchange', () => { w.locked = document.pointerLockElement === canvas; el.classList.toggle('locked', w.locked); if (!w.locked) w.keys.clear(); });
+  document.addEventListener('mousemove', (e) => { if (w.on && w.locked) turnBy(e.movementX, e.movementY, 0.0022); });
   addEventListener('keydown', (e) => {
     if (!w.on || e.target.closest?.('input, textarea, [contenteditable]')) return;
     if (['KeyW', 'KeyA', 'KeyS', 'KeyD', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ShiftLeft', 'ShiftRight', 'Space'].includes(e.code)) { w.keys.add(e.code); e.preventDefault(); }
@@ -155,24 +167,33 @@ export const startWalk = (ctx) => {
   });
   addEventListener('keyup', (e) => w.keys.delete(e.code));
   addEventListener('blur', () => w.keys.clear());
-  const fingers = new Map(), stickEl = $('#w-stick');
+  const fingers = new Map(), sticks = { move: $('#w-stick'), look: $('#w-look') };
+  const centre = () => { const r = canvas.getBoundingClientRect(); return [r.width / 2, r.height / 2]; };
   canvas.addEventListener('pointerdown', (e) => {
     if (!w.on) return;
     const r = canvas.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
-    // On a phone the lower left of the screen is a stick to walk with. Everywhere else, a drag looks and a tap points.
-    const kind = e.pointerType !== 'mouse' && x < r.width * 0.42 && y > r.height * 0.45 && !w.stick && Math.hypot(x - 84, y - (r.height - 128)) < 110 ? 'stick' : 'look';
-    fingers.set(e.pointerId, { kind, x, y, x0: x, y0: y, t: performance.now(), mouse: e.pointerType === 'mouse' });
-    if (kind === 'stick') { w.stick = { dx: 0, dy: 0 }; w.goal = null; stickEl.classList.add('on'); }
+    if (e.pointerType === 'mouse') {
+      if (w.locked) { point(...centre()); return; }
+      fingers.set(e.pointerId, { kind: 'look', x, y, x0: x, y0: y, t: performance.now(), mouse: true });
+    } else {
+      if (!el.classList.contains('touch')) el.classList.add('touch');
+      // A touch that starts on a stick drives that stick.
+      const on = (stick) => { const b = stick.getBoundingClientRect(); return Math.hypot(e.clientX - (b.left + b.width / 2), e.clientY - (b.top + b.height / 2)) < b.width * 0.85; };
+      const kind = !w.stick && on(sticks.move) ? 'move' : !w.turn && on(sticks.look) ? 'turn' : 'look';
+      fingers.set(e.pointerId, { kind, x, y, x0: x, y0: y, t: performance.now() });
+      if (kind === 'move') { w.stick = { dx: 0, dy: 0 }; w.goal = null; sticks.move.classList.add('on'); }
+      if (kind === 'turn') { w.turn = { dx: 0, dy: 0 }; sticks.look.classList.add('on'); }
+    }
     canvas.setPointerCapture?.(e.pointerId);
   });
   canvas.addEventListener('pointermove', (e) => {
     const p = fingers.get(e.pointerId);
     if (!w.on || !p) return;
     const r = canvas.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
-    if (p.kind === 'stick') {
-      const dx = (x - p.x0) / 56, dy = (y - p.y0) / 56, l = Math.hypot(dx, dy), m = l > 1 ? 1 / l : 1;
-      w.stick = { dx: dx * m, dy: dy * m };
-      stickEl.firstElementChild.style.transform = `translate(${dx * m * 30}px, ${dy * m * 30}px)`;
+    if (p.kind === 'move' || p.kind === 'turn') {
+      const dx = (x - p.x0) / 52, dy = (y - p.y0) / 52, l = Math.hypot(dx, dy), m = l > 1 ? 1 / l : 1, v = { dx: dx * m, dy: dy * m };
+      if (p.kind === 'move') w.stick = v; else w.turn = v;
+      sticks[p.kind === 'move' ? 'move' : 'look'].firstElementChild.style.transform = `translate(${v.dx * 28}px, ${v.dy * 28}px)`;
     } else turnBy(x - p.x, y - p.y, p.mouse ? 0.004 : 0.0055);
     p.x = x; p.y = y;
   });
@@ -180,8 +201,11 @@ export const startWalk = (ctx) => {
     const p = fingers.get(e.pointerId);
     if (!p) return;
     fingers.delete(e.pointerId);
-    if (p.kind === 'stick') { w.stick = null; stickEl.classList.remove('on'); stickEl.firstElementChild.style.transform = ''; return; }
-    if (w.on && Math.hypot(p.x - p.x0, p.y - p.y0) < 7 && performance.now() - p.t < 400) point(p.x, p.y);
+    if (p.kind === 'move') { w.stick = null; sticks.move.classList.remove('on'); sticks.move.firstElementChild.style.transform = ''; return; }
+    if (p.kind === 'turn') { w.turn = null; sticks.look.classList.remove('on'); sticks.look.firstElementChild.style.transform = ''; return; }
+    if (!w.on || !(Math.hypot(p.x - p.x0, p.y - p.y0) < 7 && performance.now() - p.t < 400)) return;
+    // A plain click with a mouse takes the pointer for looking. If the browser refuses, it acts where it landed instead.
+    if (p.mouse && canvas.requestPointerLock) { lock(); setTimeout(() => { if (w.on && !w.locked) point(p.x, p.y); }, 180); } else point(p.x, p.y);
   };
   canvas.addEventListener('pointerup', up);
   canvas.addEventListener('pointercancel', up);
@@ -189,15 +213,16 @@ export const startWalk = (ctx) => {
 
   // ---------- coming and going ----------
   // Stand at (x, y) of the city's frame, or the nearest footing to it, looking along `dir` (compass, radians) or at `look` [x, y].
-  const enter = ({ x = 0, y = -60, dir = null, look = null } = {}) => {
+  const enter = ({ x = 0, y = -60, dir = null, look = null, pan = 0, grab = true } = {}) => {
     if (!city.active || !city.city) return false;
     const at = footing(x, y);
     if (!at) return false;
     [w.x, w.y, w.z] = at; w.zs = w.z;
     if (look) { const [sx, sy] = city.toScene(look[0] - w.x, look[1] - w.y); w.dir = Math.atan2(sx, sy); } else w.dir = dir ?? control.heading;
-    w.pitch = 0; w.vel = [0, 0]; w.keys.clear(); w.goal = null; w.hot = null; w.where = ''; w.place = null; hint.hidden = true;
+    w.pitch = 0; w.vel = [0, 0]; w.keys.clear(); w.goal = null; w.turn = null; w.pan = pan; w.hot = null; w.where = ''; w.place = null; hint.hidden = true;
     control.pointers.clear(); control.fly = null;
     if (!w.on) { w.on = true; el.hidden = false; stage.classList.add('walking'); ctx.onWalk?.(true); }
+    if (grab && !touch && navigator.userActivation?.isActive) lock();
     place();
     world.stamp++;
     return true;
@@ -205,7 +230,7 @@ export const startWalk = (ctx) => {
   const leave = (fly = true) => {
     if (!w.on) return;
     w.on = false;
-    w.goal = null; mark.removeFromParent();
+    w.goal = null; w.pan = 0; unlock(); mark.removeFromParent();
     el.hidden = true; el.classList.remove('went');
     stage.classList.remove('walking');
     const at = control.walk;
@@ -216,5 +241,5 @@ export const startWalk = (ctx) => {
     ctx.onWalk?.(false);
   };
   world.beforeFrame = tick;
-  return { enter, leave, use, footing, canStand, state: w, hotspots: w.hotspots, eye, forward, get on() { return w.on; } };
+  return { enter, leave, use, lock, unlock, footing, canStand, state: w, hotspots: w.hotspots, eye, forward, get on() { return w.on; } };
 };

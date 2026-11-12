@@ -15,6 +15,13 @@ export const startCityBar = (ctx) => {
     if (!n) return '';
     return `<p class="cb-what"><span class="tag ${n.kind === 'text' ? 't-confirmed' : 't-fringe'}">${n.kind === 'text' ? 'From the text' : 'Our choice'}</span> ${esc(n.what ?? id)}${n.ref ? ` <small>${esc(n.ref)}</small>` : ''}</p>${n.quote ? `<p class="quote">“${esc(n.quote)}”</p>` : n.why ? `<p class="cb-why">${esc(n.why)}</p>` : ''}`;
   };
+  // For the story: show one part with what it is and the passage it comes from (and light it), with no buttons. null puts it away.
+  const present = (id) => {
+    b.shown = id && notes.has(id) ? id : null;
+    el.classList.toggle('present', !!b.shown);
+    if (b.shown) { el.innerHTML = partHtml(b.shown); city.highlight?.(null); } else if (!b.open) el.innerHTML = '';
+    world.stamp++;
+  };
   // Called often: it only acts when the city has come or gone.
   const sync = () => {
     // Not while on foot, not from far away, and not during a flight that is leaving for the whole Earth.
@@ -33,8 +40,8 @@ export const startCityBar = (ctx) => {
       <div class="cb-h"><b>Plato's city, drawn from his text</b><span>${walking ? `${b.walk + 1} of ${b.parts.length}` : ''}</span></div>
       ${walking ? partHtml(walking.id, walking) : b.part ? partHtml(b.part.id, b.part) : ''}
       <div class="bar">
-        ${can('parts') && can('viewOf') ? (walking ? '<button class="btn" data-act="cb-prev">‹ Back</button><button class="btn primary" data-act="cb-next">Next ›</button><button class="linkish" data-act="cb-end">End the walk</button>' : '<button class="btn primary" data-act="cb-foot">Go on foot</button><button class="btn" data-act="cb-walk">See each part</button>') : ''}
-        ${walking ? '' : `${can('setGhost') ? `<button class="btn${b.ghost ? ' on' : ''}" data-act="cb-ghost">Text or guess</button>` : ''}${can('cutaway') ? `<button class="btn${b.cut ? ' on' : ''}" data-act="cb-cut">${b.cut ? 'Close the temple' : 'Open the temple'}</button>` : ''}<button class="btn" data-act="cb-notes">Every part</button><button class="linkish" data-act="cb-off">Remove</button>`}
+        ${can('parts') && can('viewOf') ? (walking ? '<button class="btn" data-act="cb-prev">Back</button><button class="btn primary" data-act="cb-next">Next</button><button class="btn" data-act="cb-end">Done</button>' : '<button class="btn primary" data-act="cb-foot">Walk</button><button class="btn" data-act="cb-walk">Tour</button>') : ''}
+        ${walking ? '' : `${can('setGhost') ? `<button class="btn${b.ghost ? ' on' : ''}" data-act="cb-ghost">Text only</button>` : ''}${can('cutaway') ? `<button class="btn${b.cut ? ' on' : ''}" data-act="cb-cut">${b.cut ? 'Close temple' : 'Open temple'}</button>` : ''}<button class="btn" data-act="cb-notes">List</button><button class="ib" data-act="cb-off" aria-label="Remove the city"><svg width="12" height="12" viewBox="0 0 12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m2 2 8 8M10 2l-8 8"/></svg></button>`}
       </div>`;
   };
   const go = (i) => {
@@ -66,5 +73,5 @@ export const startCityBar = (ctx) => {
     draw();
     return !!hit;
   };
-  return { sync, draw, tap, state: b };
+  return { sync, draw, tap, present, state: b };
 };

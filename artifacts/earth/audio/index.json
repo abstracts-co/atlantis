@@ -1,13 +1,6 @@
 {
  "what": "The story spoken, and the sound effects, for the globe. Made by build/make-audio.mjs.",
  "narration": {
-  "477ba9cf": {
-   "file": "story-477ba9cf.mp3",
-   "id": "tale",
-   "text": "It begins with Plato, who has it told as “a tale which, though strange, is certainly true”.",
-   "said": "It begins with Plato, who has it told as “a tale which, though strange, is certainly true”.",
-   "seconds": 7.27
-  },
   "9ee0fb8e": {
    "file": "story-9ee0fb8e.mp3",
    "id": "island",
@@ -50,13 +43,6 @@
    "said": "We tested every 10 kilometres of it against his words. Nothing on Earth scores 5 of 5. The closest, the Great Bahama Bank, scores 4: a match in the landscape, not a city.",
    "seconds": 13.06
   },
-  "bfaff9d6": {
-   "file": "story-bfaff9d6.mp3",
-   "id": "search",
-   "text": "People have gone looking since 1679. Of 32 searches on record, 7 were shown wrong, 5 were corrected, and 8 are still open. Not one has found the city.",
-   "said": "People have gone looking since 1679. Of 32 searches on record, 7 were shown wrong, 5 were corrected, and 8 are still open. Not one has found the city.",
-   "seconds": 13.08
-  },
   "24388c0f": {
    "file": "story-24388c0f.mp3",
    "id": "built",
@@ -77,6 +63,27 @@
    "text": "Walk in. The search is yours now.",
    "said": "Walk in. The search is yours now.",
    "seconds": 2.85
+  },
+  "a81c65aa": {
+   "file": "story-a81c65aa.mp3",
+   "id": "legend",
+   "text": "Atlantis is a story Plato told. Nobody has ever found it.",
+   "said": "Atlantis is a story Plato told. Nobody has ever found it.",
+   "seconds": 4.94
+  },
+  "574f6625": {
+   "file": "story-574f6625.mp3",
+   "id": "tale",
+   "text": "He has it told as “a tale which, though strange, is certainly true”.",
+   "said": "He has it told as “a tale which, though strange, is certainly true”.",
+   "seconds": 5.61
+  },
+  "f2a313bf": {
+   "file": "story-f2a313bf.mp3",
+   "id": "search",
+   "text": "People have gone looking since 1679. 32 searches are on record, and 8 of them are still open. Not one has found the city.",
+   "said": "People have gone looking since 1679. 32 searches are on record, and 8 of them are still open. Not one has found the city.",
+   "seconds": 10.08
   }
  },
  "sfx": {
