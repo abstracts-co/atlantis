@@ -72,7 +72,7 @@ export const startTour = (ctx, A, H) => {
       // The sea comes back up and everything that went under lights up: here, then on the far side of the Earth.
       sank: (line, len) => { A.seaTo(0); H?.setGlow(1); ctx.sound?.sfx('rise', 0.2); after(len * 380, () => far(108, 2, 6.2e6, len * 0.26, 6)); after(len * 690, () => far(-172, 62, 5.6e6, len * 0.28, 6)); },
       // The page's own read-out, on the best match on Earth.
-      scored: (line, len) => { const b = line.best; control.flyTo({ lon: b.lon * DEG, lat: b.lat * DEG, range: 1.0e6, tilt: 30 * DEG, heading: 0 }, 3.8); if (H) { H.state.forced = true; stage.classList.add('tour-hunt'); } after(len * 500, () => { H?.scan(b.lon, b.lat); ctx.sound?.sfx('ping', 0.6); }); },
+      scored: (line, len) => { const b = line.best; control.flyTo({ lon: b.lon * DEG, lat: b.lat * DEG, range: 1.0e6, tilt: 30 * DEG, heading: 0 }, 3.8); after(3900, () => { if (H) { H.state.forced = true; stage.classList.add('tour-hunt'); } });   /* the read-out once there, not on the way */ after(len * 500, () => { H?.scan(b.lon, b.lat); ctx.sound?.sfx('ping', 0.6); }); },
       // Two of the places people named, with what was claimed and what was found drawn on the ground, then back out.
       search: (line, len) => { stage.classList.remove('tour-hunt'); if (H) H.state.forced = false; scene('santorini', 2.6); after(len * 420, () => scene('richat', 2.8)); after(len * 830, () => { clear(); far(-18, 30, 9.5e6, 2.6); }); },
       // The city again, part by part, each with the line of the text it comes from.

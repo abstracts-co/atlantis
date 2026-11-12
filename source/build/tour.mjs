@@ -16,9 +16,13 @@ const relay = spawn('node', [`${here}room-relay.mjs`, String(port)], { stdio: 'i
 const room = `room=${encodeURIComponent(`ws://127.0.0.1:${port}/rooms/atlantis/earth/HALL22`)}`;
 const browser = await chromium.launch({ executablePath: exe, headless: true, args: ['--use-angle=metal', '--enable-gpu', '--ignore-gpu-blocklist', '--autoplay-policy=no-user-gesture-required', '--mute-audio', '--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream'] });
 const size = { width: Number(w), height: Number(h) };
-const context = await browser.newContext({ viewport: size, deviceScaleFactor: 1 });
+// TOUR_DPR=1.5 draws the page larger in the same picture size: words and buttons that read on a phone.
+const dpr = Number(process.env.TOUR_DPR ?? 1);
+const context = await browser.newContext({ viewport: { width: Math.round(size.width / dpr), height: Math.round(size.height / dpr) }, deviceScaleFactor: dpr });
 const page = await context.newPage();
 await page.addInitScript(() => { globalThis.__AUDIOLOG__ = true; });
+// A film has no player: the story's own pause, scrubber and Skip are left out of the picture.
+await page.addInitScript(() => addEventListener('DOMContentLoaded', () => { const st = document.createElement('style'); st.textContent = '#tour .bar { visibility: hidden !important; }'; document.head.append(st); }));
 // Frames come from Chrome's screencast and are joined by the system ffmpeg afterwards, each held for as long as it was on screen.
 await mkdir(dir, { recursive: true });
 const cdp = await context.newCDPSession(page);
@@ -37,7 +41,7 @@ const settle = async (extra = 1200) => { for (let i = 0, quiet = 0; i < 160 && q
 const mark = async () => (await page.evaluate(() => performance.now())) / 1000;
 const hold = async (key, ms) => { await page.keyboard.down(key); await wait(ms); await page.keyboard.up(key); };
 const turn = async (dx, dy = 0, ms = 900) => { const n = Math.round(ms / 30); await page.mouse.move(640, 360); await page.mouse.down(); for (let i = 1; i <= n; i++) { await page.mouse.move(640 + (dx * i) / n, 360 + (dy * i) / n); await wait(30); } await page.mouse.up(); };
-await cdp.send('Page.startScreencast', { format: 'jpeg', quality: 92, everyNthFrame: 1 });
+await cdp.send('Page.startScreencast', { format: 'jpeg', quality: 92, everyNthFrame: 1, maxWidth: size.width, maxHeight: size.height });
 const t0 = await mark();
 const rad = Math.PI / 180;
 await wait(2400);                                                          // the opening
@@ -78,7 +82,7 @@ relay.kill();
 
 // ---------- the film: the frames joined, then the same sounds the page played laid under them ----------
 const run = (a) => { const p = spawnSync('ffmpeg', ['-loglevel', 'error', '-y', ...a], { encoding: 'utf8' }); if (p.status) throw new Error(p.stderr.slice(-800)); };
-run(['-f', 'concat', '-safe', '0', '-i', `${dir}/frames.txt`, '-vf', 'fps=30,format=yuv420p', '-c:v', 'libx264', '-crf', '22', '-preset', 'medium', '-movflags', '+faststart', `${dir}/silent.mp4`]);
+run(['-f', 'concat', '-safe', '0', '-i', `${dir}/frames.txt`, '-vf', `fps=30,scale=${size.width}:${size.height}:flags=lanczos,format=yuv420p`, '-c:v', 'libx264', '-crf', '22', '-preset', 'medium', '-movflags', '+faststart', `${dir}/silent.mp4`]);
 const length = frames.at(-1).t - frames[0].t;
 const at = (e) => (heard.epoch - (heard.now - e.t)) / 1000 - frames[0].t;   // when in the film a sound started
 const audioDir = new URL('../../data/audio/', import.meta.url).pathname;
