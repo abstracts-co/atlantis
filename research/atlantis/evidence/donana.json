@@ -1,0 +1,719 @@
+{
+  "lane": "evidence/donana",
+  "checked": "2026-11-11",
+  "site": {
+    "id": "donana",
+    "hypothesis_id": "donana",
+    "name": "Doñana marshes (Marisma de Hinojos), Spain",
+    "centre": {
+      "lat": 36.95694,
+      "lon": -6.38278,
+      "how": "Position printed by Kühne (2004) for his claimed 'temple' rectangle, 36°57'25'' N, 6°22'58'' W (+/- 6'' and 8''); the S1 core lies 0.45 km away.",
+      "source": "https://doi.org/10.15184/s2978855200905171"
+    },
+    "radius_km": 25,
+    "claimed": {
+      "line": "Two rectangles and ring marks in satellite photos of the Hinojos marsh were read as Plato's temples and rings of Atlantis.",
+      "who": "Werner Wickboldt and Rainer W. Kühne",
+      "year": 2004,
+      "source": "https://news.bbc.co.uk/2/hi/science/nature/3766863.stm",
+      "evidence": "Satellite photos of a salt marsh region known as Marisma de Hinojos near the city of Cadiz show two rectangular structures in the mud and parts of concentric rings that may once have surrounded them.",
+      "kind": "press"
+    },
+    "found": {
+      "line": "Cores beside the shapes show 5,000-year-old marsh mud with sandy sea-wave layers. No published find of Plato's date.",
+      "who": "Hinojos Project (CSIC, Universities of Huelva, Granada, Barcelona)",
+      "year": 2018,
+      "source": "https://doi.org/10.1016/j.jasrep.2018.09.014",
+      "evidence": "According to such a model, the base of the 1200 cm core can be assigned to the Copper Age (~ 5000 cal BP) and the sequence extends up to the present day.",
+      "kind": "peer-reviewed"
+    },
+    "needs_sea_level": null,
+    "best_layers": [
+      "spain-ign-historic-photos",
+      "eox-s2cloudless-2016",
+      "spain-pnoa-lidar-dsm"
+    ]
+  },
+  "features": [
+    {
+      "id": "kuhne-rectangle",
+      "side": "claimed",
+      "kind": "structure",
+      "label": "Claimed 'temple' rectangle, 230 x 140 m",
+      "who": "Werner Wickboldt (spotted), Rainer W. Kühne (published)",
+      "year": 2004,
+      "what": "A rectangle 230 m long and 140 m wide, seen in satellite photos, read as the temple of Poseidon (Critias 116c-d).",
+      "result": "No published test of this rectangle itself; the Hinojos team says shapes of this kind cannot date to Plato's or Tartessian times.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.38278,
+          36.95694
+        ]
+      },
+      "position": {
+        "how": "stated-coordinates",
+        "source": "https://doi.org/10.15184/s2978855200905171",
+        "detail": "Kühne 2004 prints 36°57'25'' +/- 6'' N and 6°22'58'' +/- 8'' W for the rectangle's position. The orientation of the rectangle is not given, so only its centre is drawn.",
+        "error_m": 200
+      },
+      "column": null,
+      "search_id": "kuhne-donana-satellite-2004",
+      "source": "https://doi.org/10.15184/s2978855200905171",
+      "evidence": "One shows a rectangular structure with a length of 230 metres and a width of 140 metres. It could be a remnant of a temple of Poseidon, such as that whose length was one stade (185 metres)",
+      "kind_of_source": "peer-reviewed",
+      "confidence": "medium",
+      "notes": "Antiquity Project Gallery short note; the page does not say how it was reviewed. The web text prints the degrees as '36E°57'25''' and '6E°22'58'''; the stray E is a typesetting artefact (the same note prints Spartel as '35°E55' N and '5°E58' W'). Read as 36° and 6°, which puts the point in the Hinojos marsh, 0.45 km from the S1 core. I did not open the PDF. I could not see a 230 x 140 m rectangle at this point by eye in the 1956-57, 1981-86, 2004 or current IGN photos, or in the PNOA lidar surface model at zoom 16."
+    },
+    {
+      "id": "kuhne-square",
+      "side": "claimed",
+      "kind": "structure",
+      "label": "Claimed 'temple' square, 280 x 240 m",
+      "who": "Werner Wickboldt (spotted), Rainer W. Kühne (published)",
+      "year": 2004,
+      "what": "A near-square structure 280 m by 240 m, read as the temple of Cleito and Poseidon (Critias 116c).",
+      "result": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.386751,
+          36.953747
+        ]
+      },
+      "position": {
+        "how": "from-description",
+        "source": "https://doi.org/10.15184/s2978855200905171",
+        "detail": "Kühne says its centre is 500 m south-west of the rectangle's centre. Offset applied at 225 degrees; 'south-west' is a compass octant, so the bearing is only good to about 22 degrees. Orientation not given.",
+        "error_m": 350
+      },
+      "column": null,
+      "search_id": "kuhne-donana-satellite-2004",
+      "source": "https://doi.org/10.15184/s2978855200905171",
+      "evidence": "The centre of the \"quadratic'' structure is 500 metres in the south-west of the centre of the rectangular structure.",
+      "kind_of_source": "peer-reviewed",
+      "confidence": "low",
+      "notes": "Position depends on the rectangle's position plus a verbal offset. Plato gives no size for this temple."
+    },
+    {
+      "id": "core-s1",
+      "side": "checked",
+      "kind": "core",
+      "label": "Core S1, 12 m, drilled 2016",
+      "who": "Hinojos Project (CSIC, Universities of Huelva, Granada, Barcelona)",
+      "year": 2016,
+      "what": "A 12 m core drilled in July 2016 in the middle of the Hinojos low marsh, 0.45 km from Kühne's rectangle.",
+      "result": "Grey marsh mud from about 5,000 years ago to now, with four sandy layers left by waves from the sea; pollen shows crops and herding in the Copper Age.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.38578,
+          36.96017,
+          1.5
+        ]
+      },
+      "position": {
+        "how": "stated-coordinates",
+        "source": "https://doi.org/10.1016/j.jasrep.2018.09.014",
+        "detail": "Section 3.2: 'S1, 36º 57' 36.62'' N; 6º 23' 8.80'' W, 1.5 m asl'. Printed to 0.01 second.",
+        "error_m": 20
+      },
+      "column": [
+        {
+          "from_m": 0,
+          "to_m": 3.0,
+          "what": "top of the core, not described in the paper (only the lower 900 cm were analysed)",
+          "age": "about 2800 cal BP to present, from the age model"
+        },
+        {
+          "from_m": 3.0,
+          "to_m": 4.8,
+          "what": "grey-ochre silty clays, marsh",
+          "age": "about 3140 to 2800 cal BP"
+        },
+        {
+          "from_m": 4.8,
+          "to_m": 5.0,
+          "what": "sandy muddy layer on an erosive base with marine shells (wave event 4)",
+          "age": "about 3185 to 3140 cal BP"
+        },
+        {
+          "from_m": 5.0,
+          "to_m": 5.9,
+          "what": "grey-green clayey silts, brackish marsh",
+          "age": "about 3435 to 3185 cal BP"
+        },
+        {
+          "from_m": 5.9,
+          "to_m": 6.15,
+          "what": "sand layer, 35% sand, fining upward, marine and estuary shells (wave event 3)",
+          "age": "about 3500 to 3435 cal BP"
+        },
+        {
+          "from_m": 6.15,
+          "to_m": 8.0,
+          "what": "clay-rich silts, closed lagoon",
+          "age": "about 4000 to 3500 cal BP"
+        },
+        {
+          "from_m": 8.0,
+          "to_m": 8.6,
+          "what": "grey heterometric sands, 45% sand (wave event 2)",
+          "age": "about 4200 to 4000 cal BP"
+        },
+        {
+          "from_m": 8.6,
+          "to_m": 9.3,
+          "what": "clayey silts, closed estuary",
+          "age": "about 4450 to 4200 cal BP"
+        },
+        {
+          "from_m": 9.3,
+          "to_m": 9.7,
+          "what": "clayey silty sands with shells of many marine species (wave event 1)",
+          "age": "about 4560 to 4450 cal BP"
+        },
+        {
+          "from_m": 9.7,
+          "to_m": 12.0,
+          "what": "grey-green clayey silts, estuary marsh",
+          "age": "about 5000 to 4560 cal BP; shell dates 3053+/-22 BP at 2 m, 3560+/-40 at 5.8 m, 4286+/-30 at 8.5 m, 4560+/-40 at 10 m (radiocarbon, Marine13, DeltaR 100+/-100)"
+        }
+      ],
+      "search_id": "hinojos-project-donana-2005-2018",
+      "source": "https://doi.org/10.1016/j.jasrep.2018.09.014",
+      "evidence": "A 1200 cm long core (S1, 36º 57’ 36.62’’ N; 6º 23’ 8.80’’ W, 1.5 m asl) was retrieved from the central part of the Doñana marshland (Fig. 1) in July 2016",
+      "kind_of_source": "peer-reviewed",
+      "confidence": "high",
+      "notes": "Journal of Archaeological Science: Reports 22, 58-78, read in the open CSIC copy (digital.csic.es handle 10261/172847). The paper calls the sand layers extreme wave events and does not decide between tsunami and storm. The paper reports pollen of crops and herding in the Copper Age (about 5000 to 4200 cal BP) and says nothing about buildings; a core cannot show a building. Radiocarbon depths 200, 360, 580, 850 and 1000 cm are from Table 1."
+    },
+    {
+      "id": "core-s11",
+      "side": "checked",
+      "kind": "core",
+      "label": "Core S11, 18 m, drilled 2006-09",
+      "who": "Hinojos Project (Rodríguez-Ramírez and others)",
+      "year": 2006,
+      "what": "An 18 m core with continuous sampling, drilled between 2006 and 2009 in the marsh a few km inland of the dunes.",
+      "result": "Marine sand and shells at 11.5 m (about 4,000 years ago) and again near 7 m; shell dates run from 5,300 to 2,700 cal BP.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.37822,
+          36.95509
+        ]
+      },
+      "position": {
+        "how": "digitised-from-figure",
+        "source": "https://doi.org/10.1016/j.yqres.2014.08.005",
+        "detail": "Figure 1 (p. 26), core symbol centred by hand on the 300 dpi render; scale bar 10 km = 411 px; translation-only least-squares fit of the figure's Atlantic coast (170 points) to OpenStreetMap natural=coastline, rms 177 m. The printed 36°54' and 6°15' ticks were not used. Core S11 symbol at px (592, 825). The paper says S11 is 3.5 km north-east of S7; the fit gives 3.2 km.",
+        "error_m": 1000
+      },
+      "column": [
+        {
+          "from_m": 0,
+          "to_m": 7.5,
+          "what": "gray-green clayey silt, under 1% sand near the top; sand layer of event C near 7 m",
+          "age": "about 3670 to 2670 cal BP (dates at 7 m and 4 m)"
+        },
+        {
+          "from_m": 7.5,
+          "to_m": 13.5,
+          "what": "clayey silt with 20 to 30% sand; marine shell and sand layer of event A at 11.5 m",
+          "age": "about 5460 to 3350 cal BP (dates at 12.5, 11.5 and 8.5 m)"
+        },
+        {
+          "from_m": 13.5,
+          "to_m": 18.0,
+          "what": "grey-ochre clayey silts of the pre-Holocene marsh, with roots and carbonate nodules",
+          "age": "older than the Holocene sea; a shell at 13.5 m returned 19,360+/-80 BP, not calibrated"
+        }
+      ],
+      "search_id": "hinojos-project-donana-2005-2018",
+      "source": "https://doi.org/10.1016/j.yqres.2014.08.005",
+      "evidence": "Core S11 is 3.5 km northeast of core S7",
+      "kind_of_source": "peer-reviewed",
+      "confidence": "medium",
+      "notes": "Quaternary Research 83, 24-40. Depths are metres below the surface as printed ('-11.5 m'). The paper prints no coordinates for S7, S9 or S11. Position uncertainty is dominated by the figure scale: fitting the coast at 34 to 46 px/km moves S11 between 36.944 and 36.966 N. In the sister map (López-Sáez 2018, Fig. 6c, schematic) S1 sits next to S11; here the two are 0.9 km apart."
+    },
+    {
+      "id": "core-s7",
+      "side": "checked",
+      "kind": "core",
+      "label": "Core S7, 12 m, drilled 2006-09",
+      "who": "Hinojos Project (Rodríguez-Ramírez and others)",
+      "year": 2006,
+      "what": "A 12 m core on the inner edge of the Doñana spit, drilled between 2006 and 2009.",
+      "result": "Dune sand at the bottom, then a thick sand and shell layer at 8 m from a marine wave event about 4,000 years ago, then marsh mud.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.39572,
+          36.93023
+        ]
+      },
+      "position": {
+        "how": "digitised-from-figure",
+        "source": "https://doi.org/10.1016/j.yqres.2014.08.005",
+        "detail": "Figure 1 (p. 26), core symbol centred by hand on the 300 dpi render; scale bar 10 km = 411 px; translation-only least-squares fit of the figure's Atlantic coast (170 points) to OpenStreetMap natural=coastline, rms 177 m. The printed 36°54' and 6°15' ticks were not used. Core S7 symbol at px (528, 938).",
+        "error_m": 700
+      },
+      "column": [
+        {
+          "from_m": 0,
+          "to_m": 8.0,
+          "what": "gray-green clayey silt, estuary and marsh; shell dates at 2.5 m and 5.5 m",
+          "age": "about 3360 to 2830 cal BP at 2.5 m; 3870 to 3350 at 5.5 m"
+        },
+        {
+          "from_m": 8.0,
+          "to_m": 8.5,
+          "what": "shell-rich sand on an erosive base, washover fan (event A), 40 to 70 cm thick across S7, S9, S11",
+          "age": "3635 to 4231 cal BP (shell at 8 m)"
+        },
+        {
+          "from_m": 8.5,
+          "to_m": 12.0,
+          "what": "white-orange fine to medium dune sand (El Abalario Dune Formation), no fauna",
+          "age": "older than the marsh"
+        }
+      ],
+      "search_id": "hinojos-project-donana-2005-2018",
+      "source": "https://doi.org/10.1016/j.yqres.2014.08.005",
+      "evidence": "In cores S7 and S9 this massive deposit sits erosively upon the aeolian El Abalario Dune Formation",
+      "kind_of_source": "peer-reviewed",
+      "confidence": "medium",
+      "notes": "The sand layer is 40 to 70 cm thick (quote from the paper: 'the thickness of the sandy layer in S7, S9, and S11 (40 to 70 cm)'). Event A is read by the authors as a tsunami or strong storm; the paper does not choose. Layer boundaries between 8.0 and 8.5 m are my reading of the text ('-8 m' event, dune sand from -8.5 m)."
+    },
+    {
+      "id": "core-s9",
+      "side": "checked",
+      "kind": "core",
+      "label": "Core S9, 12 m, drilled 2006-09",
+      "who": "Hinojos Project (Rodríguez-Ramírez and others)",
+      "year": 2006,
+      "what": "A 12 m core placed close to S7 to check that its layers continue sideways.",
+      "result": "Same sequence as S7: dune sand below, a shell-rich wave-event sand at 6 m dated 3,830 to 4,410 cal BP, marsh mud above.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.41021,
+          36.94453
+        ]
+      },
+      "position": {
+        "how": "digitised-from-figure",
+        "source": "https://doi.org/10.1016/j.yqres.2014.08.005",
+        "detail": "Figure 1 (p. 26), core symbol centred by hand on the 300 dpi render; scale bar 10 km = 411 px; translation-only least-squares fit of the figure's Atlantic coast (170 points) to OpenStreetMap natural=coastline, rms 177 m. The printed 36°54' and 6°15' ticks were not used. Core S9 symbol at px (475, 873).",
+        "error_m": 700
+      },
+      "column": [
+        {
+          "from_m": 0,
+          "to_m": 6.0,
+          "what": "gray-green clayey silt, marsh",
+          "age": "younger than about 3830 cal BP"
+        },
+        {
+          "from_m": 6.0,
+          "to_m": 6.5,
+          "what": "shell-rich sand layer of event A on an erosive base",
+          "age": "3832 to 4410 cal BP (shell at 6 m)"
+        },
+        {
+          "from_m": 6.5,
+          "to_m": 12.0,
+          "what": "white-orange fine to medium dune sand, no fauna",
+          "age": "older than the marsh"
+        }
+      ],
+      "search_id": "hinojos-project-donana-2005-2018",
+      "source": "https://doi.org/10.1016/j.yqres.2014.08.005",
+      "evidence": "Point S9 was placed relatively close to S7 in order to verify the lateral continuity of the sedimentary formations",
+      "kind_of_source": "peer-reviewed",
+      "confidence": "medium",
+      "notes": "The paper says detailed analyses were made only for S7 and S11; S9 appears in the radiocarbon table and the text on event A. Sand-layer thickness at S9 is not printed separately, so the 6.0 to 6.5 m split is an assumption from the 40 to 70 cm range for S7, S9 and S11."
+    },
+    {
+      "id": "cerro-del-trigo-dig",
+      "side": "found",
+      "kind": "dig",
+      "label": "Cerro del Trigo, 1920s Tartessos dig",
+      "who": "George Bonsor and Adolf Schulten, with Otto Jessen",
+      "year": 1928,
+      "what": "Excavations in the 1920s at Cerro del Trigo, near the Guadalquivir mouth, looking for Tartessos; Schulten took Tartessos to be Atlantis's core.",
+      "result": "They found Roman remains, graves flooded by sea water, and below them only sand and the water table; no earlier city.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.39248,
+          36.89031
+        ]
+      },
+      "position": {
+        "how": "from-dataset",
+        "source": "https://www.openstreetmap.org/node/10278699430",
+        "detail": "OpenStreetMap node 10278699430, historic=archaeological_site, 'Ruinas Romanas del Cerro del Trigo' (fetched 2026-11-11). A second node, 1241354081 'Cerro del Trigo' (place=locality, source IGN 2010), lies 52 m away. The trench positions inside the site are not published in anything I read.",
+        "error_m": 300
+      },
+      "column": null,
+      "search_id": null,
+      "source": "https://digital.csic.es/bitstream/10261/160087/3/RodriguezVillarias_Ancient%20Greece%20Conference.pdf",
+      "evidence": "They found no city there below the remains of the Roman settlement—only sand and the water table.",
+      "kind_of_source": "book",
+      "confidence": "medium",
+      "notes": "Quoted from Rodríguez-Ramírez and Villarías-Robles, a conference paper by two Hinojos Project members, not from Bonsor (1928) or Schulten (1924), which I did not read. The 1928 year is Bonsor's report ('Tartessos: Excavaciones practicadas en el Cerro del Trigo'), not the dig date. The 'graves flooded' detail is the same paper's account of Jessen's observation. The date of the Roman salting works is not verified here."
+    },
+    {
+      "id": "caracoles-ponds",
+      "side": "found",
+      "kind": "place",
+      "label": "Caracoles: 96 research ponds, 2004-05",
+      "who": "Doñana restoration project; described by Frisch and others",
+      "year": 2005,
+      "what": "96 oval ponds dug in 2004 to 2005 on the Caracoles estate for a zooplankton study; the longest axes are 250 m.",
+      "result": "Critics say the oval 'circles' in Merlin Burrows's 2018 Atlantis claim are these ponds; I found no positions published by the company to test it.",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.51667,
+          37.11667
+        ]
+      },
+      "position": {
+        "how": "stated-coordinates",
+        "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0040205",
+        "detail": "'Caracoles estate (37°07'N, 6°31'W)': the estate, to the nearest minute. The pond block's exact position inside the estate is in Fig. 1 of the paper, which I did not digitise.",
+        "error_m": 2000
+      },
+      "column": null,
+      "search_id": "merlin-burrows-donana-2018",
+      "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0040205",
+      "evidence": "As part of the restoration, a set of experimental ponds was excavated in Caracoles estate (Fig. 1 and [35]) between 2004 and 2005. This experimental pond area (see Fig. 1 for spatial setup) contains 96 elliptically-shaped temporary ponds",
+      "kind_of_source": "peer-reviewed",
+      "confidence": "medium",
+      "notes": "The pond dates and sizes are confirmed by the PLoS ONE paper. That they are what Merlin Burrows drew as circles rests on a blog's comparison of images (ahotcupofjoe.net), not on the company's own coordinates. This point is 21 km from the Kühne rectangle."
+    },
+    {
+      "id": "ctx-matalascanas",
+      "side": "context",
+      "kind": "place",
+      "label": "Matalascañas",
+      "who": "OpenStreetMap",
+      "year": 2026,
+      "what": "Beach town on the Atlantic coast at the west end of the Doñana dunes.",
+      "result": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.54789,
+          36.999
+        ]
+      },
+      "position": {
+        "how": "from-dataset",
+        "source": "https://www.openstreetmap.org/node/486583893",
+        "detail": "OpenStreetMap node 486583893, place=village",
+        "error_m": 500
+      },
+      "column": null,
+      "search_id": null,
+      "source": "https://www.openstreetmap.org/node/486583893",
+      "evidence": "Matalascañas (place=village)",
+      "kind_of_source": "dataset",
+      "confidence": "high",
+      "notes": "Context only."
+    },
+    {
+      "id": "ctx-sanlucar",
+      "side": "context",
+      "kind": "place",
+      "label": "Sanlúcar de Barrameda",
+      "who": "OpenStreetMap",
+      "year": 2026,
+      "what": "Town at the mouth of the Guadalquivir, across the river from the Doñana spit.",
+      "result": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.35348,
+          36.77614
+        ]
+      },
+      "position": {
+        "how": "from-dataset",
+        "source": "https://www.openstreetmap.org/node/1470839111",
+        "detail": "OpenStreetMap node 1470839111, place=town",
+        "error_m": 500
+      },
+      "column": null,
+      "search_id": null,
+      "source": "https://www.openstreetmap.org/node/1470839111",
+      "evidence": "Sanlúcar de Barrameda (place=town)",
+      "kind_of_source": "dataset",
+      "confidence": "high",
+      "notes": "Context only."
+    },
+    {
+      "id": "ctx-el-rocio",
+      "side": "context",
+      "kind": "place",
+      "label": "El Rocío",
+      "who": "OpenStreetMap",
+      "year": 2026,
+      "what": "Village on the north-west edge of the marsh, the usual road gateway to the park.",
+      "result": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.48118,
+          37.1338
+        ]
+      },
+      "position": {
+        "how": "from-dataset",
+        "source": "https://www.openstreetmap.org/node/248483798",
+        "detail": "OpenStreetMap node 248483798, place=village",
+        "error_m": 500
+      },
+      "column": null,
+      "search_id": null,
+      "source": "https://www.openstreetmap.org/node/248483798",
+      "evidence": "El Rocío (place=village)",
+      "kind_of_source": "dataset",
+      "confidence": "high",
+      "notes": "Context only. Hinojos village (37.29 N) is 37 km north of the centre and outside the radius."
+    }
+  ],
+  "measurements": [
+    {
+      "id": "rect-length",
+      "what": "Length of the claimed 'temple of Poseidon' rectangle",
+      "value": 230,
+      "unit": "m",
+      "plato_claim": "temple-of-poseidon",
+      "plato_value": "1 stadion long (Critias 116d), 185 m at 185 m a stadion",
+      "source": "https://doi.org/10.15184/s2978855200905171",
+      "evidence": "a rectangular structure with a length of 230 metres and a width of 140 metres",
+      "kind": "peer-reviewed"
+    },
+    {
+      "id": "rect-width",
+      "what": "Width of the same rectangle",
+      "value": 140,
+      "unit": "m",
+      "plato_claim": "temple-of-poseidon",
+      "plato_value": "3 plethra wide (Critias 116d), about 92 m; Jowett has half a stadion",
+      "source": "https://doi.org/10.15184/s2978855200905171",
+      "evidence": "a rectangular structure with a length of 230 metres and a width of 140 metres",
+      "kind": "peer-reviewed"
+    },
+    {
+      "id": "square-size",
+      "what": "Longer side of the claimed 'temple of Cleito and Poseidon' square (other side 240 m)",
+      "value": 280,
+      "unit": "m",
+      "plato_claim": null,
+      "plato_value": null,
+      "source": "https://doi.org/10.15184/s2978855200905171",
+      "evidence": "A further \"quadratic'' structure of size 280 metres times 240 metres could equate to the temple of Cleito and Poseidon",
+      "kind": "peer-reviewed"
+    },
+    {
+      "id": "dist-to-sea",
+      "what": "Distance from the rectangle's printed position to today's Atlantic coast (nearest OpenStreetMap coastline point, 36.9166 N, 6.4570 W)",
+      "value": 8.0,
+      "unit": "km",
+      "plato_claim": "canal-to-sea",
+      "plato_value": "canal 50 stadia long from the sea to the outermost ring (Critias 115d), about 9.25 km",
+      "source": "https://www.openstreetmap.org",
+      "evidence": "OpenStreetMap natural=coastline ways in box 36.70,-6.65,37.15,-6.05, fetched 2026-11-11; distance computed by me with a flat-earth formula",
+      "kind": "dataset"
+    },
+    {
+      "id": "marsh-height",
+      "what": "Average height of the Doñana marsh above sea level",
+      "value": 1.35,
+      "unit": "m",
+      "plato_claim": "lofty-coast",
+      "plato_value": "the whole region rose sheer out of the sea to a great height (Critias 118a)",
+      "source": "https://doi.org/10.1016/j.jasrep.2018.09.014",
+      "evidence": "This area, which has an average elevation of 1.35 m above sea level (asl), is formed by impermeable silt-clay soils",
+      "kind": "peer-reviewed"
+    },
+    {
+      "id": "s1-base-age",
+      "what": "Age of the oldest marsh mud at the base of core S1",
+      "value": 5000,
+      "unit": "years (cal BP)",
+      "plato_claim": "nine-thousand-years",
+      "plato_value": "9,000 years before Solon's day (Timaeus 23e), about 9600 BCE",
+      "source": "https://doi.org/10.1016/j.jasrep.2018.09.014",
+      "evidence": "the base of the 1200 cm core can be assigned to the Copper Age (~ 5000 cal BP)",
+      "kind": "peer-reviewed"
+    },
+    {
+      "id": "s1-depth-copper-age",
+      "what": "Depth of the top of the Copper Age marsh mud (older than 4,200 years) at S1",
+      "value": 8.6,
+      "unit": "m below the surface",
+      "plato_claim": null,
+      "plato_value": null,
+      "source": "https://doi.org/10.1016/j.jasrep.2018.09.014",
+      "evidence": "A second EWE is record in the lithostratigraphy ~ 4200-4000 cal BP – between 860 and 800 cm (EWE-2; Fig. 2)",
+      "kind": "peer-reviewed"
+    },
+    {
+      "id": "wave-event-age",
+      "what": "Age of the best-matched sea-wave event (event A) in cores S7, S9 and S11",
+      "value": 4000,
+      "unit": "years (cal BP, about 2000 BCE)",
+      "plato_claim": "sank-in-a-day-and-night",
+      "plato_value": "one day and night of earthquakes and floods (Timaeus 25c-d); dated by Plato's 9,000 years to about 9600 BCE",
+      "source": "https://doi.org/10.1016/j.yqres.2014.08.005",
+      "evidence": "three extreme wave events and their facies in the 4th millennium BP (A: ~4000 cal yr BP, B: ~3550 cal yr BP, and C: ~3150 cal yr BP)",
+      "kind": "peer-reviewed"
+    },
+    {
+      "id": "kuhne-to-s1",
+      "what": "Distance from the rectangle's printed position to core S1's printed position",
+      "value": 0.45,
+      "unit": "km",
+      "plato_claim": null,
+      "plato_value": null,
+      "source": "https://doi.org/10.1016/j.jasrep.2018.09.014",
+      "evidence": "S1, 36º 57’ 36.62’’ N; 6º 23’ 8.80’’ W (compare Kühne 2004: 36°57'25'' N, 6°22'58'' W)",
+      "kind": "peer-reviewed"
+    }
+  ],
+  "story": [
+    {
+      "step": 1,
+      "side": "checked",
+      "line": "In the 1920s Bonsor and Schulten dug at Cerro del Trigo for Tartessos. They found Roman remains, and below them only sand and the water table.",
+      "show": [
+        "cerro-del-trigo-dig"
+      ],
+      "search_id": null
+    },
+    {
+      "step": 2,
+      "side": "claimed",
+      "line": "In 2004 Kühne, after Wickboldt, read two rectangles in satellite photos of the Hinojos marsh as Plato's temples, and gave their position.",
+      "show": [
+        "kuhne-rectangle",
+        "kuhne-square"
+      ],
+      "search_id": "kuhne-donana-satellite-2004"
+    },
+    {
+      "step": 3,
+      "side": "checked",
+      "line": "From 2005 the Spanish Hinojos Project drilled cores S7, S9 and S11 to see what lay under the marsh and how old it was.",
+      "show": [
+        "core-s7",
+        "core-s9",
+        "core-s11"
+      ],
+      "search_id": "hinojos-project-donana-2005-2018"
+    },
+    {
+      "step": 4,
+      "side": "found",
+      "line": "The cores show a sea-wave sand layer about 4,000 years ago on top of dune sand and old estuary mud. The marsh is much younger than Plato's date.",
+      "show": [
+        "core-s7",
+        "core-s9",
+        "core-s11"
+      ],
+      "search_id": "hinojos-project-donana-2005-2018"
+    },
+    {
+      "step": 5,
+      "side": "claimed",
+      "line": "In 2011 a National Geographic film said radar and resistivity scans found a buried city flooded by a tsunami. The scan positions are not published.",
+      "show": [],
+      "search_id": "freund-finding-atlantis-donana-2011"
+    },
+    {
+      "step": 6,
+      "side": "checked",
+      "line": "In 2016 core S1 was drilled 0.45 km from Kühne's rectangle: 12 m of marsh mud from 5,000 years ago, with four sandy sea-wave layers.",
+      "show": [
+        "core-s1",
+        "kuhne-rectangle"
+      ],
+      "search_id": "hinojos-project-donana-2005-2018"
+    },
+    {
+      "step": 7,
+      "side": "found",
+      "line": "In 2018 Merlin Burrows named oval 'circles' as Atlantis towers. Critics match them to 96 research ponds dug in 2004 to 2005.",
+      "show": [
+        "caracoles-ponds"
+      ],
+      "search_id": "merlin-burrows-donana-2018"
+    }
+  ],
+  "not_located": [
+    {
+      "what": "Kühne's concentric rings (Wickboldt's 'parts of concentric rings')",
+      "why": "The Antiquity note gives no ring centre, radius or width. BBC says only that the island and rings are 'slightly larger' than Plato's and that Kühne offers a 20% longer stade; the BBC pictures have no grid or scale.",
+      "source": "https://news.bbc.co.uk/2/hi/science/nature/3766863.stm"
+    },
+    {
+      "what": "Orientation and outline of the two claimed rectangles",
+      "why": "Sizes and centre positions are published, bearings are not, so only centre points are drawn.",
+      "source": "https://doi.org/10.15184/s2978855200905171"
+    },
+    {
+      "what": "Freund's 2009 to 2010 radar, resistivity and magnetometer lines, and the claimed 'communal oven' and canals",
+      "why": "No position or map in the press reports I read. A Spanish newspaper names the survey areas Pacil del Mal Tiempo and Los Cardales, where the Guadiamar and the Madre meet; I could not find either name in OpenStreetMap.",
+      "source": "https://www.popsci.com/science/article/2011-03/scientists-say-theyve-found-lost-city-atlantis-swept-away-tsunami"
+    },
+    {
+      "what": "Merlin Burrows's towers, temple and sea wall",
+      "why": "The company published no coordinates in the Live Science interview or elsewhere that I read; only a blog links its circles to the Caracoles ponds.",
+      "source": "https://www.livescience.com/64176-lost-city-atlantis-spain.html"
+    },
+    {
+      "what": "Hinojos Project surface surveys of 'the area where the features are' and the shallow cores CV1 to CV3, M1 to M3, ML, PN, VA, VT, MT1 to MT4",
+      "why": "No coordinates printed. The shallow cores could be digitised from Fig. 1 of Rodríguez-Ramírez and others (2015); left out to keep the scene light.",
+      "source": "https://doi.org/10.1016/j.yqres.2014.08.005"
+    },
+    {
+      "what": "Former Lacus Ligustinus shoreline and the sand spits as mapped outlines",
+      "why": "The papers show them only on schematic figures without a usable grid; the hypothetical paleo-estuary limit in López-Sáez 2018 Fig. 6b is credited to Arteaga and others (2016), whom I did not read.",
+      "source": "https://doi.org/10.1016/j.jasrep.2018.09.014"
+    },
+    {
+      "what": "Trenches inside the Cerro del Trigo dig",
+      "why": "Bonsor 1928 and Schulten 1924 were not read; only the site point is known.",
+      "source": "https://digital.csic.es/bitstream/10261/160087/3/RodriguezVillarias_Ancient%20Greece%20Conference.pdf"
+    }
+  ],
+  "handoffs": [
+    {
+      "lane": "globe layers",
+      "what": "Best open layers here: IGN historic photos (the 1956-57 flight shows the marsh before drainage) and Sentinel-2. PNOA lidar surface model at zoom 16 is flat marsh with a water mask and shows no rectangles.",
+      "url": "https://www.ign.es/wms/pnoa-historico?service=WMS&request=GetCapabilities"
+    },
+    {
+      "lane": "hypotheses",
+      "what": "Schulten's year differs between sources (1922 on Wikipedia, 1927 in Atlantipedia); the Hinojos team cite Schulten 1924 and Bonsor 1922 and 1928.",
+      "url": "https://digital.csic.es/bitstream/10261/160087/3/RodriguezVillarias_Ancient%20Greece%20Conference.pdf"
+    }
+  ],
+  "not_verified": [
+    "Kühne's printed coordinates were read from the Cambridge HTML page, which prints a stray 'E' before each degree sign. I did not open the PDF to confirm the minutes and seconds.",
+    "Cores S7, S9 and S11 have no printed coordinates in the paper; positions are digitised and uncertain by up to 1 km. S11 to S7 is 3.5 km in the text and 3.2 km on my fit.",
+    "The tsunami wording: the CSIC press release (2018) says the marine episode 'coincided with a tsunami'; the 2015 and 2018 papers say 'extreme wave events' (storm surges or tsunamis). I kept the papers' wording.",
+    "Freund's methods come from a Popular Science summary of Reuters and the NatGeo programme text I did not see. I read no paper by Freund. The Villarías-Robles quote about Freund reaches us through Colavito, who cites the Telegraph; neither was fetched here.",
+    "Atlantipedia says Freund spent less than a week on site and implied he led the Hinojos Project; it is a partisan page and I did not confirm it.",
+    "Cerro del Trigo: the date and layout of the Roman fish-salting works were not confirmed from a page I read. The Huelva en su historia (2002) article was not available as text.",
+    "I did not search for the 2023 Chipiona press conference or the 2025 film about offshore walls near Cádiz, so I do not know whether positions were published.",
+    "I looked at the imagery by eye only (IGN 1956-57, 1973-86, 1981-86, 2004, current, and the PNOA lidar tiles at zoom 16, 3 km box around Kühne's point). I did no enhancement or elevation analysis, so absence of a visible rectangle is not a test.",
+    "The Hinojos Project's own publications on its results about the satellite shapes are not itemised in any table I read; the Greece conference paper gives a narrative account only."
+  ]
+}

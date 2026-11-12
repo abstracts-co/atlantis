@@ -1,0 +1,2735 @@
+{
+ "lane": "evidence/helike",
+ "checked": "2026-11-11",
+ "site": {
+  "id": "helike",
+  "hypothesis_id": "helike",
+  "name": "Helike, Gulf of Corinth",
+  "centre": {
+   "lat": 38.222167,
+   "lon": 22.131583,
+   "how": "The Romanos dye-works, the largest excavation, at its published coordinates 38 deg 13.330' N, 22 deg 7.895' E (Table I); within 25 m of the first Wikidata point and the OpenStreetMap 'early Hellenistic settlement' node. Wikidata holds a second point 1.1 km east.",
+   "source": "https://doi.org/10.1002/gea.20366"
+  },
+  "radius_km": 8,
+  "claimed": {
+   "line": "Helike, a Greek city by the sea, sank in a night in 373 BCE; the Helike Project and the BBC call it the likely seed of Atlantis.",
+   "who": "Dora Katsonopoulou and Steven Soter (Helike Project); BBC Horizon",
+   "year": 2002,
+   "source": "https://www.bbc.co.uk/science/horizon/2001/helike.shtml",
+   "evidence": "Its destruction was one of the most appalling tragedies of the classical world and most probably the reality behind the myth of Atlantis.",
+   "kind": "press"
+  },
+  "found": {
+   "line": "Sonar at sea found no city. Classical walls lie 3 m down in lagoon mud 1 km inland; whether they are the 373 BCE city is open.",
+   "who": "Helike Project (Katsonopoulou, Soter)",
+   "year": 2011,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "A Classical site 130m away, buried under 3m of similar sediments, may have been destroyed by the earthquake and tsunami of 373 B.C.",
+   "kind": "peer-reviewed"
+  },
+  "needs_sea_level": null,
+  "best_layers": [
+   "esri-world-imagery",
+   "eox-s2cloudless-2018-2025",
+   "emodnet-bathymetry-multicolour",
+   "copernicus-dem-aws",
+   "osm-overpass",
+   "srtm-hgt-aws-skadi"
+  ]
+ },
+ "features": [
+  {
+   "id": "edgerton-sonar-target",
+   "side": "claimed",
+   "kind": "place",
+   "label": "Edgerton sonar target, 42 m deep",
+   "who": "Harold Edgerton and colleagues",
+   "year": 1966,
+   "what": "A sonar target below the sea floor, under 42 m of water off the Selinous mouth, that Edgerton's team thought might be ruins.",
+   "result": "Three boreholes drilled in 1973 to test it were inconclusive; the 1988 sonar survey found no clear city on or under the sea floor.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.149183,
+     38.240637
+    ]
+   },
+   "position": {
+    "how": "from-description",
+    "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+    "detail": "Text, page 541: 'about 1400 m north of the Selinous River mouth' (the introduction says 'northeast of the Selinous River mouth'). Point placed 1400 m due north of the mouth of the Selinous (OpenStreetMap way 801939054, end node).",
+    "error_m": 800
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+   "evidence": "which lay under water 42 m deep, about 1400 m north of the Selinous River mouth",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "low",
+   "notes": "Edgerton's own reports (1973, 1979, 1981) were not fetched. The two descriptions in one paper differ: 'northeast of' (page 532) and 'about 1400 m north of' (page 541). Wikipedia dates the Edgerton and Throckmorton search to 1967; the 1999 paper says 1966 to 1974."
+  },
+  {
+   "id": "sonar-1988",
+   "side": "checked",
+   "kind": "survey-area",
+   "label": "1988 sonar survey, 8 km2 of sea floor",
+   "who": "Helike Project (Soter, Katsonopoulou, with Kron and others)",
+   "year": 1988,
+   "what": "Sidescan and subbottom sonar survey of about 8 km2 of sea floor off the delta, northwest of the Vouraikos mouth, to test whether Helike lay under the sea.",
+   "result": "Showed geological signs of earthquakes but no clear city on or under the sea floor, apart from one structure that resembles an ancient mole at Elaion; the search moved onto land.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.128763,
+       38.254546
+      ],
+      [
+       22.140534,
+       38.260815
+      ],
+      [
+       22.160485,
+       38.237382
+      ],
+      [
+       22.152704,
+       38.23268
+      ],
+      [
+       22.152704,
+       38.227586
+      ],
+      [
+       22.184626,
+       38.207209
+      ],
+      [
+       22.189315,
+       38.207209
+      ],
+      [
+       22.190113,
+       38.205171
+      ],
+      [
+       22.189349,
+       38.20401
+      ],
+      [
+       22.18419,
+       38.2029
+      ],
+      [
+       22.17961,
+       38.20086
+      ],
+      [
+       22.176532,
+       38.200584
+      ],
+      [
+       22.175249,
+       38.200788
+      ],
+      [
+       22.163416,
+       38.209928
+      ],
+      [
+       22.158619,
+       38.212342
+      ],
+      [
+       22.154472,
+       38.213703
+      ],
+      [
+       22.152447,
+       38.216972
+      ],
+      [
+       22.148494,
+       38.218415
+      ],
+      [
+       22.147764,
+       38.220085
+      ],
+      [
+       22.147433,
+       38.22424
+      ],
+      [
+       22.147785,
+       38.225976
+      ],
+      [
+       22.149162,
+       38.22804
+      ],
+      [
+       22.144702,
+       38.230554
+      ],
+      [
+       22.142572,
+       38.234415
+      ],
+      [
+       22.138466,
+       38.238382
+      ],
+      [
+       22.136754,
+       38.242213
+      ],
+      [
+       22.133361,
+       38.247673
+      ],
+      [
+       22.129793,
+       38.250878
+      ],
+      [
+       22.128171,
+       38.253628
+      ],
+      [
+       22.128763,
+       38.254546
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+    "detail": "Figure 1 (page 532), a 1:50,000 map with two grid ticks (22 deg 10' E at the top, 38 deg 15' N at the right edge) and a 4 km bar. Scale 114.75 px per km (bar). The map prints the offshore boundary only, as a line running from the shore near Digeliotika to the Vouraikos delta. I closed the landward side along the present OpenStreetMap shoreline, which the paper does not draw. Closed polygon area 8.8 km2 against the paper's 8 km2. Check: the Klonis site read off the same figure falls 116 m from its published coordinates.",
+    "error_m": 300
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+   "evidence": "in 1988 the Helike Project carried out a systematic sidescan and subbottom sonar survey of 8 km2 of the seafloor",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "The inshore edge is the 2026 coast, not drawn by the authors; the true inshore limit of the 1988 survey is not published in the papers I read. The first report (Soter and Katsonopoulou 1998a) was not fetched."
+  },
+  {
+   "id": "iokae-offshore-1973",
+   "side": "checked",
+   "kind": "core",
+   "label": "1973 offshore holes at the target (x3)",
+   "who": "IOKAE (now the National Centre for Marine Research), reported by Schwartz and Tziavos",
+   "year": 1973,
+   "what": "Three offshore boreholes drilled to test Edgerton's sonar target in 42 m of water.",
+   "result": "Cores held marine silt with shells and coral over sand and gravel; the results were inconclusive and showed no city.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.149183,
+     38.240637
+    ]
+   },
+   "position": {
+    "how": "from-description",
+    "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+    "detail": "Same point as the Edgerton target (page 541: the holes were drilled to investigate it). The three hole positions are not published in the papers I read.",
+    "error_m": 800
+   },
+   "column": [
+    {
+     "from_m": 0,
+     "to_m": 3,
+     "what": "upper layer: clayey marine silt with shells and coral",
+     "age": "about 1410 BCE (calibrated, error 290 years)"
+    },
+    {
+     "from_m": 5,
+     "to_m": 9,
+     "what": "lower layer: clayey marine silt with shells and coral",
+     "age": "7750 and 8635 BCE (calibrated, errors 200 and 615 years)"
+    }
+   ],
+   "search_id": null,
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+   "evidence": "The offshore cores sampled two layers of clayey marine silt (with shells and coral) alternating with layers of sand and gravel",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "low",
+   "notes": "Depths are those on page 541: the upper silt about 3 m below the sea floor, the lower silt 5 to 9 m. The silts alternate with sand and gravel, so the column lists only the dated silts. Original report: Schwartz and Tziavos 1979 (not fetched)."
+  },
+  {
+   "id": "s4-beach-hole-1973",
+   "side": "checked",
+   "kind": "core",
+   "label": "S4: 50 m hole on the beach (1973)",
+   "who": "IOKAE, reported by Schwartz and Tziavos",
+   "year": 1973,
+   "what": "A 50 m borehole on the beach just north of the Selinous mouth.",
+   "result": "Sand and gravel to 12 m, then silt or clay alternating with gravel and sand; no ancient remains reported.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.144303,
+     38.230798
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 3, symbol S4. Figure 3 (page 588), a 1:5000-based map with no printed grid; fitted by least squares to the nine Table I trench coordinates (RM, PM, PF, KL, BL, ST, KM, KR, DM; residuals 8 to 44 m, rms about 27 m); borehole symbol centre read by eye, about 3 m per pixel",
+    "error_m": 60
+   },
+   "column": [
+    {
+     "from_m": 0,
+     "to_m": 12,
+     "what": "sand and gravel",
+     "age": null
+    },
+    {
+     "from_m": 12,
+     "to_m": 50,
+     "what": "layers of silt or clay alternating with sand and gravel",
+     "age": null
+    }
+   ],
+   "search_id": null,
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+   "evidence": "The top 12 m was sand and gravel, and the rest consisted of layers of silt or clay alternating with clastics",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Described in the 1999 paper (page 541); the symbol position is read from the 2011 paper's Figure 3."
+  },
+  {
+   "id": "g1-g2-1983",
+   "side": "checked",
+   "kind": "core",
+   "label": "G1 and G2: 1983 geotechnical holes",
+   "who": "Leonards, Sotiropoulos and Kavvadas",
+   "year": 1983,
+   "what": "Boreholes near the shore west of the Kerynites mouth, drilled to study how the ground would fail in an earthquake.",
+   "result": "Same layering as S4: gravel and sand at the top, then soft clay and silt; the authors suggested liquefaction or sliding along clay seams could have sunk Helike.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.146089,
+     38.21941
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 3, symbol 'G1,2' (two holes drawn as one symbol). Figure 3 (page 588), a 1:5000-based map with no printed grid; fitted by least squares to the nine Table I trench coordinates (RM, PM, PF, KL, BL, ST, KM, KR, DM; residuals 8 to 44 m, rms about 27 m); borehole symbol centre read by eye, about 3 m per pixel",
+    "error_m": 60
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+   "evidence": "Leonards et al. suggested that the subsidence of ancient Helike was caused either by soil liquefaction or mass sliding along inclined clay seams",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Original: Leonards et al. 1988 (not fetched). Two holes share one symbol, so one point is given."
+  },
+  {
+   "id": "g3-1983",
+   "side": "checked",
+   "kind": "core",
+   "label": "G3: 1983 geotechnical hole",
+   "who": "Leonards, Sotiropoulos and Kavvadas",
+   "year": 1983,
+   "what": "A third geotechnical borehole near the shore west of the Kerynites mouth.",
+   "result": "Stratigraphy very similar to S4 and G1-G2.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.149651,
+     38.217848
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 3, symbol G3. Figure 3 (page 588), a 1:5000-based map with no printed grid; fitted by least squares to the nine Table I trench coordinates (RM, PM, PF, KL, BL, ST, KM, KR, DM; residuals 8 to 44 m, rms about 27 m); borehole symbol centre read by eye, about 3 m per pixel",
+    "error_m": 60
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+   "evidence": "The stratigraphy was very similar to that of S4, with clastics dominant in the top 10 m",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "b1",
+   "side": "checked",
+   "kind": "core",
+   "label": "B1: deep midplain hole",
+   "who": "Helike Project",
+   "year": 1991,
+   "what": "One of the first five boreholes, drilled more than 40 m deep in the midplain at 8 to 9 m above sea level.",
+   "result": "Hit an overpressured water-bearing sand and gravel layer at 11 to 14 m, which forced sand up the drill stem.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.132006,
+     38.221646
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 3, borehole B1. Figure 3 (page 588), a 1:5000-based map with no printed grid; fitted by least squares to the nine Table I trench coordinates (RM, PM, PF, KL, BL, ST, KM, KR, DM; residuals 8 to 44 m, rms about 27 m); borehole symbol centre read by eye, about 3 m per pixel",
+    "error_m": 60
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+   "evidence": "Bore holes B1, B5, and B4 (listed here from north to south) were all located in the midplain at surface elevations of 8–9 m above MSL",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Aquifer depth is from the 1999 paper (page 543). The year is the start of the drilling programme, not a dated record for this hole."
+  },
+  {
+   "id": "b5",
+   "side": "checked",
+   "kind": "core",
+   "label": "B5: deep midplain hole",
+   "who": "Helike Project",
+   "year": 1991,
+   "what": "One of the first five boreholes, drilled more than 40 m deep in the midplain.",
+   "result": "Hit an overpressured aquifer at 16 to 21 m.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.135252,
+     38.215438
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 3, borehole B5. Figure 3 (page 588), a 1:5000-based map with no printed grid; fitted by least squares to the nine Table I trench coordinates (RM, PM, PF, KL, BL, ST, KM, KR, DM; residuals 8 to 44 m, rms about 27 m); borehole symbol centre read by eye, about 3 m per pixel",
+    "error_m": 60
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+   "evidence": "Bore holes B1, B5, and B4 (listed here from north to south) were all located in the midplain at surface elevations of 8–9 m above MSL",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "As B1."
+  },
+  {
+   "id": "b4",
+   "side": "checked",
+   "kind": "core",
+   "label": "B4: 38 m hole, marine mud at depth",
+   "who": "Helike Project",
+   "year": 1991,
+   "what": "Deep midplain borehole, 38.5 m sampled.",
+   "result": "Marine sediment at 38.5 m, about 8,400 years old, shows the sea reached this site before the delta filled in.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.14201,
+     38.212859
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 3, borehole B4. Figure 3 (page 588), a 1:5000-based map with no printed grid; fitted by least squares to the nine Table I trench coordinates (RM, PM, PF, KL, BL, ST, KM, KR, DM; residuals 8 to 44 m, rms about 27 m); borehole symbol centre read by eye, about 3 m per pixel",
+    "error_m": 60
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "B4:16 38.50 %30.5 Sediment",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "The quote is the Table II row as the PDF text gives it (depth 38.50 m, elevation -30.5 m; the minus sign extracts as a percent sign). Radiocarbon age 7490 +/- 40. The marine reading comes from Figure 7 and the paper's text, not a numeric table.",
+   "column": [
+    {
+     "from_m": 38.4,
+     "to_m": 38.6,
+     "what": "sediment sample, marine",
+     "age": "8360 +/- 150 years before 1950, calibrated (Table II, OS-11490)"
+    }
+   ]
+  },
+  {
+   "id": "b14",
+   "side": "checked",
+   "kind": "core",
+   "label": "B14: abraded microfossils at 11.6 m",
+   "who": "Helike Project",
+   "year": 1998,
+   "what": "Borehole in the northwest of the delta where microfossils at 11.6 m are broken and mixed from several environments.",
+   "result": "Mixed, abraded microfossils may reflect tsunami deposition, but the authors call the reading hypothetical.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.131022,
+     38.223611
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 3, borehole B14. Figure 3 (page 588), a 1:5000-based map with no printed grid; fitted by least squares to the nine Table I trench coordinates (RM, PM, PF, KL, BL, ST, KM, KR, DM; residuals 8 to 44 m, rms about 27 m); borehole symbol centre read by eye, about 3 m per pixel",
+    "error_m": 60
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "We found such assemblages in borehole B14 at 11.6m depth, in B16 at 7.7m",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "The asterisk beside 14 in Figure 3 marks 'possible tsunami deposit'. The authors stress that storm surge or earthquake sand blows could give the same signal."
+  },
+  {
+   "id": "b16",
+   "side": "checked",
+   "kind": "core",
+   "label": "B16: abraded microfossils at 7.7 m",
+   "who": "Helike Project",
+   "year": 1998,
+   "what": "Borehole close to the Classical site with broken, mixed microfossils at 7.7 m.",
+   "result": "A possible, not proven, tsunami signal.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.133535,
+     38.218202
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 3, borehole B16. Figure 3 (page 588), a 1:5000-based map with no printed grid; fitted by least squares to the nine Table I trench coordinates (RM, PM, PF, KL, BL, ST, KM, KR, DM; residuals 8 to 44 m, rms about 27 m); borehole symbol centre read by eye, about 3 m per pixel",
+    "error_m": 60
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "We found such assemblages in borehole B14 at 11.6m depth, in B16 at 7.7m",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "See B14."
+  },
+  {
+   "id": "b58",
+   "side": "checked",
+   "kind": "core",
+   "label": "B58: dated cores to 13.65 m",
+   "who": "Helike Project",
+   "year": 1998,
+   "what": "Borehole with two dated samples and abraded, mixed microfossils at 2.65 m and 12 m.",
+   "result": "Carbon and charcoal at 8.25 m and 13.65 m date to about 6,400 and 5,800 years ago; the mixed microfossils are a possible tsunami signal.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.13708,
+     38.21303
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 3, borehole B58. Figure 3 (page 588), a 1:5000-based map with no printed grid; fitted by least squares to the nine Table I trench coordinates (RM, PM, PF, KL, BL, ST, KM, KR, DM; residuals 8 to 44 m, rms about 27 m); borehole symbol centre read by eye, about 3 m per pixel",
+    "error_m": 60
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "B58:14 8.25 0.25 Carbon",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Table II rows are read from the PDF text, where columns run together. The younger age at the greater depth is the scatter the authors attribute to redeposited carbon and uncased drilling.",
+   "column": [
+    {
+     "from_m": 8.25,
+     "to_m": 8.25,
+     "what": "carbon sample",
+     "age": "6410 +/- 100 years before 1950, calibrated (Table II, Beta 125826)"
+    },
+    {
+     "from_m": 13.65,
+     "to_m": 13.65,
+     "what": "charcoal sample",
+     "age": "5830 +/- 80 years before 1950, calibrated (Table II, OS-22694)"
+    }
+   ]
+  },
+  {
+   "id": "b61",
+   "side": "checked",
+   "kind": "core",
+   "label": "B61: marine fibres at 17.55 m",
+   "who": "Helike Project",
+   "year": 1998,
+   "what": "Borehole with dated wood at 10.4 m and sea-grass fibres at 17.55 m.",
+   "result": "Sea-grass fibres at 17.55 m are marine and about 5,800 years old; wood at 10.4 m is about 6,250 years old.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.135764,
+     38.222613
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 3, borehole B61. Figure 3 (page 588), a 1:5000-based map with no printed grid; fitted by least squares to the nine Table I trench coordinates (RM, PM, PF, KL, BL, ST, KM, KR, DM; residuals 8 to 44 m, rms about 27 m); borehole symbol centre read by eye, about 3 m per pixel",
+    "error_m": 60
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "B61:21 17.55 %11.05 Seagrass fibers",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "The wood is older than the sea-grass below it, which the authors attribute to redeposition.",
+   "column": [
+    {
+     "from_m": 10.4,
+     "to_m": 10.4,
+     "what": "wood",
+     "age": "6250 +/- 40 years before 1950, calibrated (Table II, OS-22219)"
+    },
+    {
+     "from_m": 17.55,
+     "to_m": 17.55,
+     "what": "sea-grass fibres, marine reservoir corrected by 380 years",
+     "age": "5825 +/- 65 years before 1950, calibrated (Table II, OS-22236)"
+    }
+   ]
+  },
+  {
+   "id": "b72",
+   "side": "checked",
+   "kind": "core",
+   "label": "B72: dated cores to 13.9 m",
+   "who": "Helike Project",
+   "year": 1998,
+   "what": "Borehole on the higher ground west of the main site with two dated carbon samples.",
+   "result": "Carbon at 10.2 m is about 3,100 years old and at 13.9 m about 6,600 years old.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.123494,
+     38.219066
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 3, borehole B72. Figure 3 (page 588), a 1:5000-based map with no printed grid; fitted by least squares to the nine Table I trench coordinates (RM, PM, PF, KL, BL, ST, KM, KR, DM; residuals 8 to 44 m, rms about 27 m); borehole symbol centre read by eye, about 3 m per pixel",
+    "error_m": 60
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "B72:27 10.20 8.8 Carbon",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "The deeper date has a large error (430 years).",
+   "column": [
+    {
+     "from_m": 10.2,
+     "to_m": 10.2,
+     "what": "carbon sample",
+     "age": "3100 +/- 150 years before 1950, calibrated (Table II, Beta 125828)"
+    },
+    {
+     "from_m": 13.9,
+     "to_m": 13.9,
+     "what": "carbon sample",
+     "age": "6610 +/- 430 years before 1950, calibrated (Table II, OS-23505)"
+    }
+   ]
+  },
+  {
+   "id": "b84",
+   "side": "checked",
+   "kind": "core",
+   "label": "B84: 22 m, did not reach the gravel",
+   "who": "Helike Project",
+   "year": 1998,
+   "what": "Borehole in the deepest part of the basin, drilled to 22 m below a surface 9 m above sea level.",
+   "result": "Did not reach the first coarse gravel layer (horizon C), so the fine lagoon mud there is more than 22 m thick.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.137405,
+     38.211631
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 3, borehole B84. Figure 3 (page 588), a 1:5000-based map with no printed grid; fitted by least squares to the nine Table I trench coordinates (RM, PM, PF, KL, BL, ST, KM, KR, DM; residuals 8 to 44 m, rms about 27 m); borehole symbol centre read by eye, about 3 m per pixel",
+    "error_m": 60
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "9m, but did not penetrate horizon C",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Labelled 84 in Figure 6."
+  },
+  {
+   "id": "b91",
+   "side": "checked",
+   "kind": "core",
+   "label": "B91: occupation horizons at 3.6 to 5.7 m",
+   "who": "Helike Project",
+   "year": 1998,
+   "what": "Borehole 50 m northeast of trench H21 in the Early Bronze Age (Saitis) area.",
+   "result": "Three occupation horizons at 3.6, 4.4 and 5.7 m depth.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.136904,
+     38.217603
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I gives B91 as '50m NE of H21'; H21 is 38 deg 13.037' N, 22 deg 8.190' E. Point offset 50 m at 45 degrees.",
+    "error_m": 40
+   },
+   "column": [
+    {
+     "from_m": 3.6,
+     "to_m": 3.6,
+     "what": "occupation horizon",
+     "age": null
+    },
+    {
+     "from_m": 4.4,
+     "to_m": 4.4,
+     "what": "occupation horizon",
+     "age": null
+    },
+    {
+     "from_m": 5.7,
+     "to_m": 5.7,
+     "what": "occupation horizon",
+     "age": null
+    }
+   ],
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "Occupation horizons at 3.6, 4.4, and 5.7m.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "Offset from a published coordinate. The year is the drilling campaign around B73 and B75; it is not stated for B91."
+  },
+  {
+   "id": "b73-h1-romanos",
+   "side": "found",
+   "kind": "core",
+   "label": "B73 and trench H1: Hellenistic wall",
+   "who": "Helike Project (Katsonopoulou, Soter)",
+   "year": 2000,
+   "what": "Georadar target at 2.4 m, drilled as borehole B73 in 1998 and opened as trench H1 in 2000 on the same spot.",
+   "result": "A well-built Hellenistic wall at about 2.4 m, and below it at 3.85 m a layer of fine sand with abraded microfossils that may be tsunami deposit, or a storm surge.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.13105,
+     38.222467
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I, Romanos site: B73 at 38 deg 13.348' N, 22 deg 7.863' E; the only trench coinciding with a borehole.",
+    "error_m": 20
+   },
+   "column": [
+    {
+     "from_m": 0,
+     "to_m": 1.65,
+     "what": "fine floodplain sediments (Roman road at 1.65 m in neighbouring trench H12)",
+     "age": "Roman"
+    },
+    {
+     "from_m": 2.4,
+     "to_m": 2.5,
+     "what": "well-built wall with pottery",
+     "age": "Hellenistic, 3rd to 2nd century BCE"
+    },
+    {
+     "from_m": 3.85,
+     "to_m": 3.85,
+     "what": "fine stratified sand with abraded brackish and marine ostracods and foraminifera",
+     "age": "possibly the 373 BCE tsunami; storm surge not excluded"
+    }
+   ],
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "Trench H1 revealed a well-built wall at ca. 2.4 m depth, dated to the Hellenistic period (3rd/2nd century B.C.) based on associated finds.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "The text lists ceramic horizons in B73 at 2.1, 2.9 and 4.7 m; Table I lists 2.1 and 2.65 to 3.15 m. Table I puts the H1 wall at 2.5 m, the text at 2.4 m."
+  },
+  {
+   "id": "dyeworks-romanos",
+   "side": "found",
+   "kind": "dig",
+   "label": "Hellenistic dye-works (Romanos)",
+   "who": "Helike Project (Katsonopoulou)",
+   "year": null,
+   "what": "A major textile dye-works, about 39 by 25 m (about 975 m2), with four pebble-floored cisterns, vats, rooms, storage and workshops about 2.3 m down; the largest excavation at Helike.",
+   "result": "Early to Middle Hellenistic pottery and coins date it to after the 373 BCE earthquake, so it belongs to the town rebuilt there, not the destroyed Classical city.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.131583,
+     38.222167
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I, Romanos: 'Rectangular area 39 x 25 m centered at ~38 deg 13.330' N, 22 deg 7.895' E'. The rectangle's orientation is not published, so a point is given. OpenStreetMap node 9160301491 ('early Hellenistic settlement') lies 25 m away and the first Wikidata coordinate 23 m.",
+    "error_m": 25
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "complex of four pebbled floor cisterns with surrounding vats and other structures for washing and dyeing fabrics",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "The 2011 paper gives no year for the dye-works trenches ('a series of trenches about 50 m southeast of H12'), so none is given here. The 2024 Geosciences abstract says a strong earthquake destroyed the dye-works."
+  },
+  {
+   "id": "klonis-roman",
+   "side": "found",
+   "kind": "dig",
+   "label": "Klonis: Roman building (1995)",
+   "who": "Helike Project",
+   "year": 1995,
+   "what": "Two 4 m squares opened over a magnetic anomaly found by the 1994 magnetometer survey.",
+   "result": "A large Late Roman building with standing walls 1.5 to 3.6 m high, destroyed by an earthquake probably in the late 5th century CE; Classical, Geometric and Mycenaean sherds lay deeper but not in place.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.132367,
+     38.217167
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I, Klonis (KL): 38 deg 13.030' N, 22 deg 7.942' E.",
+    "error_m": 20
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "Excavation revealed a large Roman building with walls standing 2 m high constructed with successive layers of unworked stone, baked bricks, and mortar as binding material.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "The BBC page describes this Roman building as one of the false starts."
+  },
+  {
+   "id": "papafilippou-h9",
+   "side": "found",
+   "kind": "dig",
+   "label": "Papafilippou: tile layer, 330-300 BCE",
+   "who": "Helike Project",
+   "year": 2000,
+   "what": "Trench H9 and three neighbours (H11, H29, H35), opened from 2000.",
+   "result": "A thick layer of roof tiles, pottery and coins about 2 m down, dated to about 330 to 300 BCE, after the 373 BCE earthquake; under it a well-built stone wall at 2.1 m.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.130117,
+     38.220167
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I, Papafilippou (PF), trench H9: 38 deg 13.210' N, 22 deg 7.807' E. H11, H29 and H35 are 'same area'.",
+    "error_m": 25
+   },
+   "column": [
+    {
+     "from_m": 2.0,
+     "to_m": 2.9,
+     "what": "destruction layer of roof tiles, pottery, loom weights and bronze coins",
+     "age": "about 330 to 300 BCE"
+    },
+    {
+     "from_m": 2.1,
+     "to_m": 2.1,
+     "what": "well-built stone wall (trench H29, under the destruction layer)",
+     "age": null
+    }
+   ],
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "All trenches revealed a thick destruction layer at about 2.0m depth, containing a large number of plain and painted roof tiles and potsherds",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "papamichalopoulou-graves",
+   "side": "found",
+   "kind": "dig",
+   "label": "Papamichalopoulou: Late Classical graves",
+   "who": "Helike Project",
+   "year": 2002,
+   "what": "Two trenches (2002, 2003) about 200 m northwest of Papafilippou.",
+   "result": "Seven tile-covered graves of the late 4th to early 3rd century BCE at 1.9 m, under a Roman destruction layer at 1.1 m.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.128117,
+     38.220833
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I, Papamichalopoulou (PM), trenches H25 and H33: 38 deg 13.250' N, 22 deg 7.687' E.",
+    "error_m": 25
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "tile-covered graves of the late 4th to early 3rd centuries B.C.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "balalas-h18",
+   "side": "found",
+   "kind": "dig",
+   "label": "Balalas H18: Classical walls, 3.2 m",
+   "who": "Helike Project",
+   "year": 2001,
+   "what": "Trench H18, opened 2001 in the Balalas field about 130 m northwest of the Early Bronze Age area.",
+   "result": "The Roman road at 2.3 m, a Hellenistic wall at 2.9 m and a Classical wall at 3.15 to 3.4 m.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.135483,
+     38.21825
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I, Balalas (BL), trench H18: 38 deg 13.095' N, 22 deg 8.129' E.",
+    "error_m": 20
+   },
+   "column": [
+    {
+     "from_m": 2.3,
+     "to_m": 2.3,
+     "what": "Roman road",
+     "age": "Roman"
+    },
+    {
+     "from_m": 2.9,
+     "to_m": 3.0,
+     "what": "wall with pottery",
+     "age": "Hellenistic"
+    },
+    {
+     "from_m": 3.15,
+     "to_m": 3.4,
+     "what": "wall with pottery",
+     "age": "Classical"
+    }
+   ],
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "revealed the Roman road at 2.3m depth, and the remains of walls at 2.9 and 3.15–3.4m, dated on the basis of associated pottery to Hellenistic and Classical times, respectively",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "Table I gives 'about 3.0 and 3.4 m' for the two walls; the text gives 2.9 and 3.15 to 3.4 m."
+  },
+  {
+   "id": "balalas-h19-classical-corner",
+   "side": "found",
+   "kind": "dig",
+   "label": "H19: Classical building corner, 3 m down",
+   "who": "Helike Project",
+   "year": 2001,
+   "what": "Trench H19, 24 m south of H18 in the same field, opened 2001.",
+   "result": "The corner of a Classical building 3 m down, below the water table; wall stones thrown seaward and worn pottery, a pattern the authors say fits tsunami backwash.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.135483,
+     38.218033
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I: H19 is '24m S of H18'; H18 is 38 deg 13.095' N, 22 deg 8.129' E. Point offset 24 m south.",
+    "error_m": 35
+   },
+   "column": [
+    {
+     "from_m": 1.45,
+     "to_m": 1.45,
+     "what": "abraded mixed microfossils",
+     "age": null
+    },
+    {
+     "from_m": 3.0,
+     "to_m": 3.4,
+     "what": "corner walls of a Classical building with pottery, a bronze coin of Aigina and a silver coin of Sikyon",
+     "age": "Classical; Aigina coin early 4th century, Sikyon coin about 340 to 330 BCE"
+    }
+   ],
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "Trench H19 revealed the corner of a Classical building 3 m below the surface (Figure 9). Only the corner of the building remains in situ; everything else was apparently swept away.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "The authors write that 'evidence based on stratigraphy and archaeological excavation is merely suggestive' of the 373 BCE event. The Sikyon coin is dated about 340 to 330 BCE, after 373 BCE, which the paper does not discuss. Stiros (2020) argues that part of the site was reoccupied within 40 years."
+  },
+  {
+   "id": "saitis-eba-h21",
+   "side": "found",
+   "kind": "dig",
+   "label": "Saitis: Bronze Age town, 3.3 m down",
+   "who": "Helike Project",
+   "year": 2000,
+   "what": "Eight trenches (H7, H21, H22, H26, H38, H43, H51, H61) opened from 2000 to 2007 on the site found by borehole B75.",
+   "result": "Well-preserved stone buildings, cobbled streets and intact pottery of about 2500 to 2200 BCE, with signs of fire, under 3 to 5 m of lagoon mud; 130 m from the Classical site.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.1365,
+     38.217283
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I, Saitis (ST), trench H21: 38 deg 13.037' N, 22 deg 8.190' E. The other trenches are shown only in the plan in Figure 10, which has no coordinates, so only H21 and the offsets B75, B91 and H22 are placed.",
+    "error_m": 20
+   },
+   "column": [
+    {
+     "from_m": 1.8,
+     "to_m": 1.8,
+     "what": "Roman road",
+     "age": "Roman"
+    },
+    {
+     "from_m": 3.3,
+     "to_m": 3.6,
+     "what": "Early Helladic III buildings and complete pottery",
+     "age": "about 2500 to 2200 BCE (diagnostic pottery)"
+    }
+   ],
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "We discovered a well-preserved EBA settlement about 1 km inland from the present shore, buried under 3 to 5 m of fine sediments containing marine, brackish, and freshwater microfossils.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "The authors say the settlement may sit on a tell about 3 m high on the seaward shore of a lagoon, and was abandoned about 2200 or 2150 BCE. They found no evidence of a tsunami for that event."
+  },
+  {
+   "id": "saitis-h22-street",
+   "side": "found",
+   "kind": "dig",
+   "label": "H22: cobbled street, gold and silver",
+   "who": "Helike Project",
+   "year": null,
+   "what": "Trench H22, 23 m north of H21.",
+   "result": "Early Bronze Age cobbled street, rectangular and apsidal buildings, a rare depas cup and items in gold and silver; a long wall shifted sideways by about 25 cm.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.1365,
+     38.217491
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I: H22 is '23m N of H21'; H21 is 38 deg 13.037' N, 22 deg 8.190' E.",
+    "error_m": 30
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "A long wall in H22 is broken by a right lateral offset of about 25cm",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "The authors cannot say whether the 25 cm offset happened when the site drowned or much later. The paper gives no year for this trench."
+  },
+  {
+   "id": "b75-saitis",
+   "side": "found",
+   "kind": "core",
+   "label": "B75: burned layer, 4400 years old",
+   "who": "Helike Project",
+   "year": 1998,
+   "what": "Borehole drilled in 1998, 17 m east of the later trench H21, to 11 m.",
+   "result": "Pottery from 3 m down, then a rich burned layer of pottery, bone and charcoal at 5.2 to 6.6 m; charcoal at 6.4 m dated to about 4400 years ago, Early Bronze Age.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.136694,
+     38.217283
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I: B75 is '17 m E of H21'; H21 is 38 deg 13.037' N, 22 deg 8.190' E. Point offset 17 m east.",
+    "error_m": 30
+   },
+   "column": [
+    {
+     "from_m": 2.0,
+     "to_m": 2.0,
+     "what": "occupation horizon",
+     "age": null
+    },
+    {
+     "from_m": 3.0,
+     "to_m": 3.0,
+     "what": "occupation horizon",
+     "age": null
+    },
+    {
+     "from_m": 5.2,
+     "to_m": 6.6,
+     "what": "burned ceramics, bone and charcoal",
+     "age": "charcoal at 6.4 m: 4400 +/- 120 years before 1950, calibrated (Table II, Beta 125829)"
+    },
+    {
+     "from_m": 7.5,
+     "to_m": 7.5,
+     "what": "occupation horizon",
+     "age": null
+    }
+   ],
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "Charcoal at 6.4m gave a calibrated radiocarbon age of 4400",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "Table I lists horizons at 2.0, 3.0, 5.2 to 6.6 and 7.5 m; the text says 3.0 to 6.6 m. The Table II age is 4400 +/- 120, calibrated."
+  },
+  {
+   "id": "komnenos-h14",
+   "side": "found",
+   "kind": "dig",
+   "label": "Komnenos: Roman store, skeleton",
+   "who": "Helike Project (supervised by R. Stieglitz)",
+   "year": 2001,
+   "what": "Trenches H13, H14 and H16 opened in 2001 over a georadar target under a local road.",
+   "result": "Large Roman buildings and a store with a 2 m deep tank; a human skeleton lay crushed under fallen debris on the steps, a possible sign of a Roman-period earthquake.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.139617,
+     38.211283
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I, Komnenos (KM), trench H14: 38 deg 12.677' N, 22 deg 8.377' E.",
+    "error_m": 25
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "A human skeleton was found crushed under fallen debris on the steps descending into the tank, possible evidence of an earthquake in Roman times.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "karelis-h5",
+   "side": "found",
+   "kind": "dig",
+   "label": "Karelis: five Roman tile graves",
+   "who": "Helike Project",
+   "year": 2000,
+   "what": "Trench H5 opened in 2000 in a vineyard over a strong georadar anomaly.",
+   "result": "Five tile-covered graves of the 2nd to 3rd century CE about 1.5 m down; the roof tiles caused the radar reflections.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.141167,
+     38.210333
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I, Karelis (KR), trench H5: 38 deg 12.620' N, 22 deg 8.470' E.",
+    "error_m": 25
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "Excavation revealed a group of five tile-covered tombs containing grave goods dated to the 2nd to 3rd centuries AD",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "dimopoulou-h58",
+   "side": "found",
+   "kind": "dig",
+   "label": "Nikolaiika: Geometric, Mycenaean",
+   "who": "Helike Project",
+   "year": 2006,
+   "what": "Trench H58 near the Kerynites River in Nikolaiika (2006), then H59 (2007).",
+   "result": "Seven Roman tile-covered tombs at 1.3 to 2.0 m, with Geometric pottery at 2.1 to 2.3 m and Mycenaean pottery at 3.8 to 4.1 m.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.14285,
+     38.20905
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Table I, Dimopoulou (DM), trench H58: 38 deg 12.543' N, 22 deg 8.571' E.",
+    "error_m": 25
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "Excavation of deeper archaeological horizons revealed fine pottery of the Geometric and Mycenaean periods, at 2.1–2.3 and 3.8–4.1m, respectively.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "An OpenStreetMap node labelled 'Geometric temple of Nikolaiika' (node 11972271725) lies about 110 m south-southwest of H58; it cites no paper and I left it out."
+  },
+  {
+   "id": "roman-road-800",
+   "side": "found",
+   "kind": "structure",
+   "label": "Roman road, traced 800 m in 9 trenches",
+   "who": "Helike Project",
+   "year": 2000,
+   "what": "A straight Roman road 5 to 6 m wide, 0.7 m thick, built of cobbles, gravel and packed soil, crossing the Romanos, Balalas and Saitis sites.",
+   "result": "Excavated in nine trenches over a straight course of 800 m; it lies about 1.65 m down at Romanos and 1.8 to 2.3 m down at Balalas and Saitis.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      22.130686,
+      38.222754
+     ],
+     [
+      22.13105,
+      38.222467
+     ],
+     [
+      22.135483,
+      38.21825
+     ],
+     [
+      22.1365,
+      38.217283
+     ]
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Line through four published trench positions on the road: H3 (45 m NW of B73), B73/H1, H18 and H21 (Table I). The paper says the course is straight and 800 m long; the four points are collinear to within 20 m and the line is 0.79 km long.",
+    "error_m": 40
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "The road was excavated in nine trenches, which allowed us to trace its straight course for 800 m",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "Built in the Augustan period, centuries after 373 BCE; it fixes the line of the excavated strip."
+  },
+  {
+   "id": "roman-road-1300",
+   "side": "found",
+   "kind": "structure",
+   "label": "Roman road, 1.3 km (tomography)",
+   "who": "Tsokas and others",
+   "year": 2009,
+   "what": "Electrical resistivity tomography detected the road and extended its known length to 1300 m.",
+   "result": "The straight line drawn in Figure 3 runs from Romanos southeast to borehole 92.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      22.13105,
+      38.222467
+     ],
+     [
+      22.139516,
+      38.214484
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 3: the black line. North end taken at the published B73/H1 position (the line starts at the RM symbol), south end read at the centre of borehole symbol 92. Figure 3 (page 588), a 1:5000-based map with no printed grid; fitted by least squares to the nine Table I trench coordinates (RM, PM, PF, KL, BL, ST, KM, KR, DM; residuals 8 to 44 m, rms about 27 m); borehole symbol centre read by eye, about 3 m per pixel",
+    "error_m": 70
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "Tsokas et al. (2009) detected the road with electrical tomography and extended its known length to 1300m",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "The line as drawn measures about 1.2 km, a little short of 1300 m. Tsokas and others 2009 itself was not fetched."
+  },
+  {
+   "id": "lagoon-outline",
+   "side": "found",
+   "kind": "outline",
+   "label": "Ancient lagoon basin (modelled)",
+   "who": "Helike Project (Soter, Katsonopoulou)",
+   "year": 2011,
+   "what": "Dotted contour enclosing where the top of the first coarse gravel (horizon C) lies below today's sea level, which the authors read as the site of an ancient lagoon behind a beach barrier.",
+   "result": "The buried Classical and Early Bronze Age sites sit at the lagoon margin; the lagoon is a model drawn from borehole depths, not a mapped shoreline.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.125239,
+       38.222464
+      ],
+      [
+       22.125227,
+       38.219823
+      ],
+      [
+       22.126327,
+       38.218977
+      ],
+      [
+       22.128532,
+       38.218458
+      ],
+      [
+       22.130001,
+       38.217917
+      ],
+      [
+       22.130737,
+       38.217734
+      ],
+      [
+       22.131838,
+       38.21724
+      ],
+      [
+       22.132939,
+       38.21654
+      ],
+      [
+       22.133855,
+       38.215688
+      ],
+      [
+       22.134404,
+       38.215118
+      ],
+      [
+       22.134582,
+       38.21395
+      ],
+      [
+       22.134393,
+       38.212917
+      ],
+      [
+       22.134941,
+       38.211907
+      ],
+      [
+       22.135487,
+       38.210751
+      ],
+      [
+       22.136591,
+       38.210638
+      ],
+      [
+       22.137698,
+       38.211406
+      ],
+      [
+       22.13954,
+       38.211873
+      ],
+      [
+       22.142486,
+       38.212287
+      ],
+      [
+       22.143226,
+       38.213043
+      ],
+      [
+       22.143048,
+       38.214358
+      ],
+      [
+       22.141765,
+       38.215345
+      ],
+      [
+       22.140481,
+       38.216186
+      ],
+      [
+       22.139569,
+       38.217918
+      ],
+      [
+       22.13884,
+       38.219363
+      ],
+      [
+       22.138108,
+       38.22022
+      ],
+      [
+       22.136639,
+       38.220909
+      ],
+      [
+       22.135171,
+       38.221597
+      ],
+      [
+       22.134255,
+       38.222449
+      ],
+      [
+       22.13297,
+       38.223143
+      ],
+      [
+       22.132238,
+       38.224
+      ],
+      [
+       22.130768,
+       38.224336
+      ],
+      [
+       22.12856,
+       38.224386
+      ],
+      [
+       22.127086,
+       38.223988
+      ],
+      [
+       22.125795,
+       38.223361
+      ],
+      [
+       22.125239,
+       38.222464
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 6 (page 597), the dotted contour. Figure 6 has the same base map and scale as Figure 3 but is shifted by (+17, +180) px, found by cross-correlating the two maps' line-work (match score 3.7 times the next best). Then as for Figure 3. The loop was traced by hand along the printed dots; error widened for the thin dotted line.",
+    "error_m": 120
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "The dotted contour in Figure 6 encloses the area where horizon C lies below nominal sea level, which suggests the location of an ancient lagoon, bounded by a barrier beach.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Defined against the 1:5000 military map's 1966 'nominal' elevations; recent surveys find ground west of the Kerynites up to 2.5 m lower than that map. Enclosed area as digitised: about 1.1 km2; the paper gives no figure."
+  },
+  {
+   "id": "black-clay-marsh",
+   "side": "found",
+   "kind": "outline",
+   "label": "Black clay layer (Byzantine marsh)",
+   "who": "Helike Project",
+   "year": 2011,
+   "what": "Shaded zone in Figure 6 where a 20 to 40 cm layer of black clay lies 1 to 3 m below ground.",
+   "result": "Freshwater microfossils only; it lies over the Roman road, so a shallow marsh covered the Classical and Early Bronze Age sites in Byzantine times.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.132529,
+       38.223276
+      ],
+      [
+       22.135441,
+       38.224334
+      ],
+      [
+       22.137465,
+       38.224367
+      ],
+      [
+       22.138274,
+       38.224098
+      ],
+      [
+       22.140398,
+       38.221993
+      ],
+      [
+       22.140982,
+       38.220925
+      ],
+      [
+       22.141309,
+       38.220114
+      ],
+      [
+       22.141711,
+       38.219569
+      ],
+      [
+       22.142255,
+       38.217884
+      ],
+      [
+       22.142616,
+       38.216369
+      ],
+      [
+       22.142651,
+       38.215989
+      ],
+      [
+       22.142612,
+       38.215489
+      ],
+      [
+       22.141203,
+       38.213362
+      ],
+      [
+       22.139841,
+       38.213173
+      ],
+      [
+       22.137561,
+       38.213573
+      ],
+      [
+       22.13261,
+       38.217146
+      ],
+      [
+       22.131044,
+       38.220589
+      ],
+      [
+       22.131273,
+       38.222327
+      ],
+      [
+       22.132529,
+       38.223276
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1002/gea.20366",
+    "detail": "Figure 6, grey fill 'Dark Clay'. Same transform as the lagoon outline. Outline taken from the shaded fill and smoothed to a convex shape. My polygon is about 0.87 km2; the paper's text gives about 0.7 km2.",
+    "error_m": 120
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "we found a shallow layer of black clay, about 0.7km2 in area, shown by the shaded region in Figure 6",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "The digitised area is about 20 per cent larger than the number in the text; I kept the figure's shape and note the gap."
+  },
+  {
+   "id": "shoreline-now",
+   "side": "context",
+   "kind": "outline",
+   "label": "Present shoreline",
+   "who": "OpenStreetMap contributors",
+   "year": 2026,
+   "what": "Today's coast of the Gulf of Corinth between Aigio and the Vouraikos mouth.",
+   "result": "The excavated Classical and Early Bronze Age sites are 1.0 to 1.7 km inland of it; the authors say no occupation horizons were found within 800 m of the shore.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      22.211055,
+      38.186713
+     ],
+     [
+      22.209299,
+      38.190915
+     ],
+     [
+      22.207506,
+      38.193114
+     ],
+     [
+      22.203649,
+      38.195679
+     ],
+     [
+      22.20314,
+      38.196788
+     ],
+     [
+      22.202574,
+      38.196442
+     ],
+     [
+      22.201939,
+      38.197333
+     ],
+     [
+      22.202251,
+      38.197616
+     ],
+     [
+      22.202863,
+      38.196878
+     ],
+     [
+      22.202335,
+      38.197688
+     ],
+     [
+      22.201689,
+      38.197681
+     ],
+     [
+      22.199252,
+      38.199741
+     ],
+     [
+      22.195558,
+      38.201835
+     ],
+     [
+      22.191608,
+      38.202091
+     ],
+     [
+      22.188896,
+      38.204053
+     ],
+     [
+      22.18419,
+      38.2029
+     ],
+     [
+      22.180135,
+      38.200985
+     ],
+     [
+      22.175658,
+      38.200657
+     ],
+     [
+      22.174241,
+      38.201319
+     ],
+     [
+      22.163416,
+      38.209928
+     ],
+     [
+      22.160984,
+      38.211335
+     ],
+     [
+      22.154373,
+      38.213777
+     ],
+     [
+      22.152447,
+      38.216972
+     ],
+     [
+      22.148839,
+      38.218232
+     ],
+     [
+      22.148116,
+      38.218917
+     ],
+     [
+      22.147422,
+      38.222297
+     ],
+     [
+      22.147785,
+      38.225976
+     ],
+     [
+      22.149162,
+      38.22804
+     ],
+     [
+      22.144702,
+      38.230554
+     ],
+     [
+      22.142572,
+      38.234415
+     ],
+     [
+      22.138466,
+      38.238382
+     ],
+     [
+      22.136754,
+      38.242213
+     ],
+     [
+      22.132948,
+      38.248152
+     ],
+     [
+      22.129793,
+      38.250878
+     ],
+     [
+      22.128188,
+      38.253619
+     ],
+     [
+      22.124217,
+      38.256446
+     ],
+     [
+      22.121766,
+      38.256687
+     ],
+     [
+      22.12013,
+      38.257458
+     ],
+     [
+      22.118251,
+      38.26028
+     ],
+     [
+      22.113384,
+      38.262148
+     ],
+     [
+      22.110609,
+      38.265271
+     ],
+     [
+      22.109083,
+      38.266231
+     ],
+     [
+      22.108432,
+      38.266143
+     ],
+     [
+      22.10162,
+      38.26124
+     ],
+     [
+      22.098285,
+      38.260323
+     ],
+     [
+      22.09673,
+      38.258957
+     ],
+     [
+      22.09387,
+      38.257609
+     ],
+     [
+      22.094066,
+      38.257418
+     ],
+     [
+      22.093232,
+      38.256932
+     ],
+     [
+      22.092972,
+      38.257309
+     ],
+     [
+      22.093809,
+      38.257854
+     ],
+     [
+      22.093327,
+      38.257818
+     ],
+     [
+      22.092568,
+      38.257241
+     ],
+     [
+      22.093,
+      38.256733
+     ],
+     [
+      22.089552,
+      38.255044
+     ],
+     [
+      22.083221,
+      38.253633
+     ],
+     [
+      22.083084,
+      38.254466
+     ],
+     [
+      22.082781,
+      38.253685
+     ],
+     [
+      22.080091,
+      38.25369
+     ],
+     [
+      22.080147,
+      38.254058
+     ],
+     [
+      22.077559,
+      38.25433
+     ],
+     [
+      22.077337,
+      38.254045
+     ],
+     [
+      22.076097,
+      38.255376
+     ],
+     [
+      22.075783,
+      38.256945
+     ],
+     [
+      22.076781,
+      38.256931
+     ],
+     [
+      22.077057,
+      38.258804
+     ],
+     [
+      22.076736,
+      38.259137
+     ],
+     [
+      22.075082,
+      38.259219
+     ],
+     [
+      22.074594,
+      38.260445
+     ],
+     [
+      22.074935,
+      38.26104
+     ],
+     [
+      22.074493,
+      38.261023
+     ],
+     [
+      22.074403,
+      38.261766
+     ],
+     [
+      22.074846,
+      38.261763
+     ],
+     [
+      22.075385,
+      38.26082
+     ],
+     [
+      22.074296,
+      38.263464
+     ],
+     [
+      22.072899,
+      38.264679
+     ],
+     [
+      22.071227,
+      38.265259
+     ],
+     [
+      22.06927,
+      38.26873
+     ],
+     [
+      22.067286,
+      38.270986
+     ],
+     [
+      22.065677,
+      38.271977
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/way/164055241",
+    "detail": "OpenStreetMap natural=coastline ways, joined and simplified to 25 m, clipped to 8 km of the site centre. Fetched 2026-11-11 with the Overpass API.",
+    "error_m": 30
+   },
+   "search_id": null,
+   "source": "https://www.openstreetmap.org/way/164055241",
+   "evidence": "natural=coastline",
+   "kind_of_source": "dataset",
+   "confidence": "high",
+   "notes": "The coast has moved seaward since antiquity by sediment and uplift: 'A house built on the shore between the Selinous and Kerynites Rivers in the 1890s is now about 350 m from the sea' (Soter and Katsonopoulou 1999). Joined from several OSM ways; the id shown is one of them."
+  },
+  {
+   "id": "selinous-river",
+   "side": "context",
+   "kind": "outline",
+   "label": "Selinous River (today's course)",
+   "who": "OpenStreetMap contributors",
+   "year": 2026,
+   "what": "The river that bounds the delta to the north and west.",
+   "result": null,
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      22.052394,
+      38.187034
+     ],
+     [
+      22.052909,
+      38.18791
+     ],
+     [
+      22.055577,
+      38.189138
+     ],
+     [
+      22.057522,
+      38.190697
+     ],
+     [
+      22.05878,
+      38.190914
+     ],
+     [
+      22.060684,
+      38.192464
+     ],
+     [
+      22.063616,
+      38.193181
+     ],
+     [
+      22.065566,
+      38.1953
+     ],
+     [
+      22.066363,
+      38.19561
+     ],
+     [
+      22.067348,
+      38.197067
+     ],
+     [
+      22.069595,
+      38.198301
+     ],
+     [
+      22.068489,
+      38.200326
+     ],
+     [
+      22.068271,
+      38.201561
+     ],
+     [
+      22.067071,
+      38.203067
+     ],
+     [
+      22.067108,
+      38.204116
+     ],
+     [
+      22.068597,
+      38.205824
+     ],
+     [
+      22.068252,
+      38.207684
+     ],
+     [
+      22.069565,
+      38.20753
+     ],
+     [
+      22.070599,
+      38.20915
+     ],
+     [
+      22.070407,
+      38.209604
+     ],
+     [
+      22.071037,
+      38.210239
+     ],
+     [
+      22.071158,
+      38.211007
+     ],
+     [
+      22.073467,
+      38.214033
+     ],
+     [
+      22.073741,
+      38.215007
+     ],
+     [
+      22.072912,
+      38.216508
+     ],
+     [
+      22.074653,
+      38.218878
+     ],
+     [
+      22.076784,
+      38.220459
+     ],
+     [
+      22.078744,
+      38.221054
+     ],
+     [
+      22.080098,
+      38.222576
+     ],
+     [
+      22.08125,
+      38.222808
+     ],
+     [
+      22.082007,
+      38.223322
+     ],
+     [
+      22.083627,
+      38.223439
+     ],
+     [
+      22.08521,
+      38.223954
+     ],
+     [
+      22.087636,
+      38.225515
+     ],
+     [
+      22.088983,
+      38.225966
+     ],
+     [
+      22.096064,
+      38.227426
+     ],
+     [
+      22.098893,
+      38.226948
+     ],
+     [
+      22.100187,
+      38.227356
+     ],
+     [
+      22.102347,
+      38.2268
+     ],
+     [
+      22.108371,
+      38.227812
+     ],
+     [
+      22.113773,
+      38.228175
+     ],
+     [
+      22.121715,
+      38.227827
+     ],
+     [
+      22.131275,
+      38.226732
+     ],
+     [
+      22.137304,
+      38.226511
+     ],
+     [
+      22.143039,
+      38.22748
+     ],
+     [
+      22.147986,
+      38.227649
+     ],
+     [
+      22.149183,
+      38.227975
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/way/801939054",
+    "detail": "OpenStreetMap way 801939054 (named Selinountas), simplified to 20 m and clipped to 8 km of the site centre.",
+    "error_m": 30
+   },
+   "search_id": null,
+   "source": "https://www.openstreetmap.org/way/801939054",
+   "evidence": "waterway=river; name=Σελινούντας",
+   "kind_of_source": "dataset",
+   "confidence": "high",
+   "notes": "Walled with levees from the 1930s, and the rivers moved often before; this is not the ancient course ('Abandoned Roman and Turkish bridges show that the rivers of the Helike Delta have frequently changed course')."
+  },
+  {
+   "id": "kerynites-river",
+   "side": "context",
+   "kind": "outline",
+   "label": "Kerynites River (today's course)",
+   "who": "OpenStreetMap contributors",
+   "year": 2026,
+   "what": "The river on the east side of the excavated area.",
+   "result": null,
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      22.130914,
+      38.172981
+     ],
+     [
+      22.131422,
+      38.173481
+     ],
+     [
+      22.135446,
+      38.175282
+     ],
+     [
+      22.135493,
+      38.175693
+     ],
+     [
+      22.136229,
+      38.176045
+     ],
+     [
+      22.138326,
+      38.176374
+     ],
+     [
+      22.139769,
+      38.1775
+     ],
+     [
+      22.140964,
+      38.180366
+     ],
+     [
+      22.142781,
+      38.18136
+     ],
+     [
+      22.143736,
+      38.18297
+     ],
+     [
+      22.146546,
+      38.184921
+     ],
+     [
+      22.146929,
+      38.18601
+     ],
+     [
+      22.151121,
+      38.192732
+     ],
+     [
+      22.152447,
+      38.196563
+     ],
+     [
+      22.15022,
+      38.200111
+     ],
+     [
+      22.146446,
+      38.204051
+     ],
+     [
+      22.145753,
+      38.206883
+     ],
+     [
+      22.147428,
+      38.209697
+     ],
+     [
+      22.149132,
+      38.211776
+     ],
+     [
+      22.149606,
+      38.213415
+     ],
+     [
+      22.15144,
+      38.216321
+     ],
+     [
+      22.152447,
+      38.216972
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/way/1224974907",
+    "detail": "OpenStreetMap way 1224974907 (named Kerynitis), simplified to 20 m, clipped to 8 km of the site centre.",
+    "error_m": 30
+   },
+   "search_id": null,
+   "source": "https://www.openstreetmap.org/way/1224974907",
+   "evidence": "waterway=river; name=Κερυνίτης",
+   "kind_of_source": "dataset",
+   "confidence": "high",
+   "notes": "As for the Selinous."
+  },
+  {
+   "id": "aigio",
+   "side": "context",
+   "kind": "place",
+   "label": "Aigio (Aigion)",
+   "who": "OpenStreetMap contributors",
+   "year": 2026,
+   "what": "The city from which Pausanias measured; the Helike delta is about 5 km southeast of its centre.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.085291,
+     38.25057
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/node/300808140",
+    "detail": "OpenStreetMap node 300808140.",
+    "error_m": 50
+   },
+   "search_id": null,
+   "source": "https://www.openstreetmap.org/node/300808140",
+   "evidence": "place=city",
+   "kind_of_source": "dataset",
+   "confidence": "high",
+   "notes": "Pausanias says about 40 stades (about 7.4 km at 185 m a stade); the straight distance from this node to the Romanos dye-works is 5.1 km."
+  },
+  {
+   "id": "eliki",
+   "side": "context",
+   "kind": "place",
+   "label": "Eliki (village)",
+   "who": "OpenStreetMap contributors",
+   "year": 2026,
+   "what": "The modern village whose name keeps the old one; the ceramic-bearing ground lies around Eliki, Rizomylos and Nikolaiika.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.123152,
+     38.216084
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/node/1754769490",
+    "detail": "OpenStreetMap node 1754769490.",
+    "error_m": 50
+   },
+   "search_id": null,
+   "source": "https://www.openstreetmap.org/node/1754769490",
+   "evidence": "place=hamlet",
+   "kind_of_source": "dataset",
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rizomylos",
+   "side": "context",
+   "kind": "place",
+   "label": "Rizomylos (village)",
+   "who": "OpenStreetMap contributors",
+   "year": 2026,
+   "what": "Village next to the 2001 Classical finds.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.133939,
+     38.212183
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/node/1754769537",
+    "detail": "OpenStreetMap node 1754769537.",
+    "error_m": 50
+   },
+   "search_id": null,
+   "source": "https://www.openstreetmap.org/node/1754769537",
+   "evidence": "place=hamlet",
+   "kind_of_source": "dataset",
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "nikolaiika",
+   "side": "context",
+   "kind": "place",
+   "label": "Nikolaiika (village)",
+   "who": "OpenStreetMap contributors",
+   "year": 2026,
+   "what": "Village on the Kerynites River, next to the Dimopoulou trenches.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.141827,
+     38.208257
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/node/1754769531",
+    "detail": "OpenStreetMap node 1754769531.",
+    "error_m": 50
+   },
+   "search_id": null,
+   "source": "https://www.openstreetmap.org/node/1754769531",
+   "evidence": "place=village",
+   "kind_of_source": "dataset",
+   "confidence": "high",
+   "notes": ""
+  }
+ ],
+ "measurements": [
+  {
+   "id": "date-of-destruction",
+   "what": "Year of the earthquake and wave that destroyed Helike, as the ancient writers date it (two years before the battle of Leuctra)",
+   "value": 373,
+   "unit": "BCE",
+   "plato_claim": "nine-thousand-years",
+   "plato_value": "9,000 years before the telling, about 9600 BCE (Timaeus 23e; Critias 108e, 111a-b)",
+   "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/2C*.html",
+   "evidence": "Helicê was submerged by the sea two years before the battle at Leuctra.",
+   "kind": "book"
+  },
+  {
+   "id": "plato-lifetime",
+   "what": "Years between the Helike earthquake (373 BCE) and the writing of the Timaeus, about 360 BCE; Plato lived c. 428 to 347 BCE",
+   "value": 13,
+   "unit": "years",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://en.wikipedia.org/wiki/Timaeus_(dialogue)",
+   "evidence": "written c. 360 BC",
+   "kind": "press"
+  },
+  {
+   "id": "helike-distance-from-sea",
+   "what": "How far the city lay from the sea before the disaster, as Heraclides reported it",
+   "value": 12,
+   "unit": "stades (about 2.2 km at 185 m)",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/2C*.html",
+   "evidence": "although the city was twelve stadia distant from the sea",
+   "kind": "book"
+  },
+  {
+   "id": "pausanias-distance",
+   "what": "Distance from Aigion to the coastal site called Helike, as Pausanias gives it",
+   "value": 40,
+   "unit": "stades (about 7.4 km at 185 m); straight line today from Aigio to the Romanos site: 5.1 km",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://www.gutenberg.org/ebooks/68680",
+   "evidence": "about 40 stades from Ægium is a place called Helice near the sea",
+   "kind": "book"
+  },
+  {
+   "id": "trees-subsidence",
+   "what": "Least drop of the land needed for only the treetops of the sacred grove to show, as the authors reason from Pausanias",
+   "value": 3,
+   "unit": "m",
+   "plato_claim": "sank-in-a-day-and-night",
+   "plato_value": "'in a single day and night' the island 'disappeared in the depths of the sea' (Timaeus 25c-d)",
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "Allowing 1m of surface elevation at the grove before the earthquake suggests a total subsidence of at least 3m.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "burial-classical",
+   "what": "Depth of the Classical building corner (trench H19) below today's ground",
+   "value": 3.0,
+   "unit": "m (3.0 to 3.4 m)",
+   "plato_claim": "impassable-mud",
+   "plato_value": "the sea there 'impassable and impenetrable, because there is a shoal of mud in the way' (Timaeus 25d)",
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "Trench H19 revealed the corner of a Classical building 3 m below the surface (Figure 9).",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "burial-eba",
+   "what": "Depth of the Early Bronze Age wall foundations (about 2500 to 2200 BCE) below today's ground",
+   "value": 4,
+   "unit": "m (3.3 to 4.5 m)",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "The wall foundations are 3.3 to 4.5m below ground.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "site-inland",
+   "what": "How far inland of the present shore the Early Bronze Age site lies (published)",
+   "value": 1,
+   "unit": "km",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "We discovered a well-preserved EBA settlement about 1 km inland from the present shore",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "shore-advance",
+   "what": "How far the shore moved out at one house between the Selinous and Kerynites rivers in about a century",
+   "value": 350,
+   "unit": "m since the 1890s",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+   "evidence": "A house built on the shore between the Selinous and Kerynites Rivers in the 1890s is now about 350 m from the sea.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "uplift-rate",
+   "what": "Average Holocene uplift rate of the footwall of the Helike Fault, from raised shorelines (Stewart and Vita-Finzi give 1.5 mm per year)",
+   "value": 2.4,
+   "unit": "mm per year",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "has risen at a average rate of about 2.4m per kyr during the Holocene",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "uplift-after-373",
+   "what": "Footwall uplift between 450 BCE and 150 CE, a span that includes 373 BCE",
+   "value": 2,
+   "unit": "m",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "about 2 m of footwall uplift occurred between 450 B.C. and A.D. 150",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "subsidence-1861",
+   "what": "How much the delta subsided in the 1861 earthquake on the same fault, a modern comparison",
+   "value": 2,
+   "unit": "m or less (1 to 2 m), along a strip 13 km long and up to 200 m wide",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "the delta subsided by 1–2m, drowning a coastal strip 13 km long and up to 200 m wide",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "occupied-area",
+   "what": "Area of ground in which boreholes found ceramics or occupation horizons",
+   "value": 2,
+   "unit": "km2",
+   "plato_claim": "central-island-diameter",
+   "plato_value": "central island 5 stades across, about 925 m, so about 0.7 km2 (Critias 116a)",
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+   "evidence": "concentrated in an area of some 2 km2 on the upper part of the delta between the Selinous and Kerynites Rivers",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "delta-width",
+   "what": "Distance between the Vouraikos and Selinous river mouths, the width of the Helike delta",
+   "value": 4.5,
+   "unit": "km",
+   "plato_claim": "great-plain",
+   "plato_value": "a plain 3,000 stades by 2,000 stades, about 555 km by 370 km (Critias 118a)",
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+   "evidence": "The distance between the Vouraikos and Selinous River mouths is 4.5 km.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "dye-works-size",
+   "what": "Floor area of the Hellenistic dye-works, the largest excavation",
+   "value": 975,
+   "unit": "m2 (about 39 by 25 m)",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "dye-works site in RM, which was ca. 975m2",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "road-length",
+   "what": "Length of the Roman road traced by excavation (800 m; 1300 m by tomography), 5 to 6 m wide",
+   "value": 800,
+   "unit": "m",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "The road is 5–6m wide, 0.7m thick, and consists of three layers, made of cobbles, gravel, and packed soil.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "boreholes",
+   "what": "Boreholes drilled by the Helike Project on the delta, 1991 to 2002 (depth 7 to 51 m, average 16 m)",
+   "value": 99,
+   "unit": "boreholes",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://doi.org/10.1002/gea.20366",
+   "evidence": "From 1991 to 2002, we drilled 99 boreholes on the delta",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "sonar-area",
+   "what": "Sea floor covered by the 1988 sidescan and subbottom sonar survey",
+   "value": 8,
+   "unit": "km2",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+   "evidence": "systematic sidescan and subbottom sonar survey of 8 km2 of the seafloor",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "edgerton-target-depth",
+   "what": "Water depth over Edgerton's sonar target",
+   "value": 42,
+   "unit": "m",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X",
+   "evidence": "which lay under water 42 m deep, about 1400 m north of the Selinous River mouth",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "earthquake-recurrence",
+   "what": "How often severe earthquakes struck this plain between Geometric and Roman times, from the Helike Project's 2025 paper",
+   "value": 300,
+   "unit": "years (approximately)",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://doi.org/10.3390/land14071392",
+   "evidence": "disasters in the area increased between the Geometric and Roman times due to severe earthquakes that occurred approximately every 300 years",
+   "kind": "peer-reviewed"
+  }
+ ],
+ "story": [
+  {
+   "step": 1,
+   "side": "claimed",
+   "line": "Ancient writers say a city called Helike, 12 stades from the sea, sank in a winter night in 373 BCE; Pausanias saw drowned ruins.",
+   "show": [
+    "aigio",
+    "shoreline-now"
+   ],
+   "search_id": null
+  },
+  {
+   "step": 2,
+   "side": "claimed",
+   "line": "From 1966 Harold Edgerton's sonar found a target under 42 m of water; three holes drilled in 1973 settled nothing.",
+   "show": [
+    "edgerton-sonar-target",
+    "iokae-offshore-1973"
+   ],
+   "search_id": null
+  },
+  {
+   "step": 3,
+   "side": "checked",
+   "line": "In 1988 the Helike Project swept 8 km2 of sea floor with sonar and saw no clear city, so it moved onto land.",
+   "show": [
+    "sonar-1988"
+   ],
+   "search_id": null
+  },
+  {
+   "step": 4,
+   "side": "checked",
+   "line": "On land, 99 boreholes from 1991 found pottery under about 2 km2 of delta between the Selinous and Kerynites rivers.",
+   "show": [
+    "b73-h1-romanos",
+    "b75-saitis",
+    "b4",
+    "b58",
+    "b61",
+    "b84"
+   ],
+   "search_id": null
+  },
+  {
+   "step": 5,
+   "side": "found",
+   "line": "Digging from 2000 found a Classical building corner 3 m down at Balalas, an Early Bronze Age town 130 m away, and a Roman road.",
+   "show": [
+    "balalas-h19-classical-corner",
+    "balalas-h18",
+    "saitis-eba-h21",
+    "roman-road-800"
+   ],
+   "search_id": null
+  },
+  {
+   "step": 6,
+   "side": "found",
+   "line": "The finds lie in old lagoon mud now above sea level: the city was buried, then lifted, not found under the sea.",
+   "show": [
+    "lagoon-outline",
+    "black-clay-marsh",
+    "shoreline-now"
+   ],
+   "search_id": null
+  },
+  {
+   "step": 7,
+   "side": "checked",
+   "line": "The link to Atlantis stays a proposal: the 373 BCE tsunami layer is only suggestive, and Stiros argues for inland mudflows.",
+   "show": [
+    "balalas-h19-classical-corner",
+    "dyeworks-romanos"
+   ],
+   "search_id": null
+  }
+ ],
+ "not_located": [
+  {
+   "what": "Marinatos's 1950s and 1960s search and his 1960 article 'Helice: a submerged town of classical Greece' (Archaeology 13, 186-193)",
+   "why": "No open copy found; the papers I read cite it for history only, with no positions",
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X"
+  },
+  {
+   "what": "The 1979 'sunken town' filmed by Alexis Papadopoulos at 25 to 45 m depth in the Gulf of Corinth",
+   "why": "Wikipedia summary only; no position or scale, and whether it is Helike is open",
+   "source": "https://en.wikipedia.org/wiki/Helike"
+  },
+  {
+   "what": "The submerged structure that 'resembles an ancient harbor mole at Elaion' seen in the 1988 sonar survey",
+   "why": "One sentence in the 1999 paper, no position or size; Elaion is a village (OpenStreetMap node 1754769493) but the structure's offshore position is not given",
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X"
+  },
+  {
+   "what": "Jacques Cousteau's searches (1967, 1976), said by Wikipedia to have found nothing",
+   "why": "Secondary source only; no tracks or positions",
+   "source": "https://en.wikipedia.org/wiki/Helike"
+  },
+  {
+   "what": "The Helike Fault trace and the 1861 scarp (13 to 15 km long)",
+   "why": "Drawn only as a schematic dashed line without a grid in Figure 2 of the 2011 paper; the 2024 and 2025 papers that map it could not be opened (MDPI returned 403)",
+   "source": "https://doi.org/10.1002/gea.20366"
+  },
+  {
+   "what": "Palaeoseismological trenches across the Helike Fault (Koukouvelas and others 2001, 2005; Katsonopoulou and Koukouvelas 2024, 2025)",
+   "why": "Read only as Crossref abstracts; the 2005 Terra Nova abstract gives slip rates of 0.3 then 2.0 mm per year but no coordinates",
+   "source": "https://doi.org/10.1111/j.1365-3121.2005.00603.x"
+  },
+  {
+   "what": "Plan of the Early Bronze Age trenches H26, H38, H43, H51 and H61 (Figure 10)",
+   "why": "A plan with no coordinates or grid; only H21, H22, B75 and B91 can be fixed from Table I offsets",
+   "source": "https://doi.org/10.1002/gea.20366"
+  },
+  {
+   "what": "The ancient shoreline",
+   "why": "The authors put it 'near the nominal 5-m elevation contour' (2011) or near the present railway line (1999); neither is published as a traced line with coordinates",
+   "source": "https://doi.org/10.1002/gea.20366"
+  },
+  {
+   "what": "The ancient poros (lagoon or strait) and the grove of Poseidon",
+   "why": "The ancient texts give no distances to fix them; the authors say only that the sanctuary was low ground that subsided a few metres",
+   "source": "https://doi.org/10.1002/(SICI)1520-6548(199908)14:6<531::AID-GEA4>3.0.CO;2-X"
+  },
+  {
+   "what": "About 85 of the 99 boreholes",
+   "why": "They are on Figure 3 and could be digitised the same way; I drew the 14 that carry a dated sample, a tsunami flag or a published depth, to stay light",
+   "source": "https://doi.org/10.1002/gea.20366"
+  }
+ ],
+ "handoffs": [
+  {
+   "lane": "evidence/helike",
+   "what": "Fault and trench positions: open the 2025 Land and 2024 Geosciences papers from a machine MDPI allows, and take the trench and fault coordinates",
+   "url": "https://doi.org/10.3390/land14071392"
+  },
+  {
+   "lane": "library",
+   "what": "Add Soter and Katsonopoulou 1999 and 2011 (both fetched here from ancientportsantiques.com) to the catalogue as stored text",
+   "url": "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/GreecePeloponnesus/Helike-Soter2011.pdf"
+  },
+  {
+   "lane": "plato",
+   "what": "Plato's account is told by an Egyptian priest and does not name Helike; the link is a proposal (Giovannini, then the Helike Project)",
+   "url": "https://www.bbc.co.uk/science/horizon/2001/helike.shtml"
+  }
+ ],
+ "not_verified": [
+  "Marinatos 1960, Edgerton 1973, 1979 and 1981, Schwartz and Tziavos 1979, Leonards and others 1988, Soter and Katsonopoulou 1998a: cited as the 1999 and 2011 papers describe them; none fetched.",
+  "Alvarez-Zarikian, Soter and Katsonopoulou 2008 (microfossils): Crossref gave the title only and the open copy on journals.flvc.org returned 403; the lagoon reading is taken from the 2011 paper.",
+  "MDPI papers (Land 2025, Geosciences 2024) returned 403 to scripted requests; I read their Crossref abstracts only. The 'about every 300 years' number is from that abstract.",
+  "Stiros 2020 (The Holocene) and the 2022 Seismological Research Letters comment and reply: Crossref abstracts only; Stiros's 2022 original paper was not located.",
+  "helikeproject.gr home page is a frame set; the pages inside were not read.",
+  "Aelian, On Animals 11.19 and Ovid: quoted only as the 1999 and 2011 papers quote them (the papers cite Aelian as 11.9 and 11.19); our library holds only Aelian's Various History 3.18.",
+  "Plato's dates and the c. 360 BCE date of the Timaeus come from Wikipedia; no scholarly source was fetched for the Timaeus date.",
+  "The datum of the Table I coordinates is not stated; they agree with Wikidata and OpenStreetMap to about 25 m, so I treat them as WGS84.",
+  "Excavations after 2008 (the Late Classical to Hellenistic settlement in the western plain, the 2012 destruction layer) are named by Wikipedia and the Geosciences abstract, but their positions are not published in anything I could open."
+ ]
+}

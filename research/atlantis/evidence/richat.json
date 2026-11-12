@@ -1,0 +1,4197 @@
+{
+ "lane": "evidence/richat",
+ "checked": "2026-11-11",
+ "site": {
+  "id": "richat",
+  "hypothesis_id": "richat",
+  "name": "Richat Structure (Eye of the Sahara)",
+  "centre": {
+   "lat": 21.1185,
+   "lon": -11.3975,
+   "how": "Common centre of the traced ring ridges 2 and 3 (fitted ellipses) in the 30 m Copernicus elevation model. Wikidata Q744591 gives 21.124, -11.402 (0.8 km away) and Wikipedia 21.1147, -11.3943 (0.5 km away).",
+   "source": "https://registry.opendata.aws/copernicus-dem/"
+  },
+  "radius_km": 32,
+  "claimed": {
+   "line": "The Richat's rings are Plato's ringed city, 127 stades (about 23.5 km) across, with mountains to the north and the sea at the south.",
+   "who": "Bright Insight (Jimmy Corsetti) 2018; earlier Sarantitis, Alexander and Rosen",
+   "year": 2018,
+   "source": "https://www.ancient-origins.net/node/16927",
+   "evidence": "Atlantis was supposedly 127 stadia, or 23 kilometers (14 miles) across, which matches a portion of the Richat. Jimmy does note that he used Google Earth to measure the distance, which may not be completely accurate.",
+   "kind": "press"
+  },
+  "found": {
+   "line": "A natural dome 40 km or more across, about 99 million years old, eroded into rock ridges; no settlement, canal or built ring has been found.",
+   "who": "Matton, Jébrak and Lee",
+   "year": 2005,
+   "source": "https://archipel.uqam.ca/272/1/Matton_etal05.pdf",
+   "evidence": "The circular Richat structure and its breccia core thus represent the superficial expression of a Cretaceous alkaline complex with an exceptionally well preserved hydrothermal karst infilling at its summit.",
+   "kind": "peer-reviewed"
+  },
+  "needs_sea_level": {
+   "m": 420,
+   "when": "about 9600 BCE (Plato) or about 12,000 years ago (the video)",
+   "why": "For the rings to hold sea water the Atlantic would have to stand about 420 m above today, and reach 500 km inland; the sea was then lower, not higher.",
+   "source": "https://theness.com/neurologicablog/no-atlantis-has-not-been-discovered-in-north-africa/",
+   "evidence": "He has to imagine that this part of the Sahara was flooded by the Atlantic 12,000 years ago."
+  },
+  "best_layers": [
+   "copernicus-dem-aws",
+   "eox-s2cloudless-2016",
+   "eox-s2cloudless-2018-2025",
+   "aws-terrain-tiles-terrarium",
+   "macrostrat-geology",
+   "dlr-tandemx-90m"
+  ]
+ },
+ "features": [
+  {
+   "id": "claimed-city-centre",
+   "side": "claimed",
+   "kind": "place",
+   "label": "Claimed centre of the Atlantis city",
+   "who": "George Sarantitis (and later proposers)",
+   "year": 2008,
+   "what": "Proposers say the central part of the Richat is the royal island and the rings around it are Plato's rings of land and water.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.3975,
+     21.1185
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://registry.opendata.aws/copernicus-dem/",
+    "detail": "Common centre of the traced ring ridges B and C (fitted ellipses), Copernicus GLO-30. No proposer prints coordinates for a centre point; this is the centre of the structure they point to.",
+    "error_m": 700
+   },
+   "search_id": "corsetti-richat-video-2018",
+   "source": "https://web.archive.org/web/20220128214243/https://platoproject.gr/faqs/",
+   "evidence": "Atlantis is the name by which Plato refers to a continent, an island and an island city-state, the latter being the concentric wheel system of Richat",
+   "kind_of_source": "proponent-site",
+   "confidence": "medium",
+   "notes": "Wikidata puts the structure at 21.124, -11.402 (0.8 km from this point); Wikipedia at 21.1147, -11.3943 (0.5 km). Sarantitis first published the idea in 2008 (Atlantipedia). The Plato Project FAQ is an archived 2022 copy."
+  },
+  {
+   "id": "ouadane",
+   "side": "context",
+   "kind": "place",
+   "label": "Ouadane (town)",
+   "who": "OpenStreetMap contributors (names from the US GNS gazetteer)",
+   "year": 2026,
+   "what": "The nearest town, about 31 km south-west of the centre; a UNESCO World Heritage site.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.6174,
+     20.9337
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/node/330513843",
+    "detail": "OpenStreetMap node 330513843, fetched 2026-11-11 through Overpass",
+    "error_m": 300
+   },
+   "search_id": null,
+   "source": "https://www.openstreetmap.org/node/330513843",
+   "evidence": "Ouadane",
+   "kind_of_source": "dataset",
+   "confidence": "medium",
+   "notes": "https://en.wikipedia.org/wiki/Ouadane"
+  },
+  {
+   "id": "peak",
+   "side": "context",
+   "kind": "place",
+   "label": "Peak of the Richat (485 m)",
+   "who": "OpenStreetMap contributors (names from the US GNS gazetteer)",
+   "year": 2026,
+   "what": "Highest named point tagged on the structure in OpenStreetMap.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.4047,
+     21.1242
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/node/6003910356",
+    "detail": "OpenStreetMap node 6003910356, fetched 2026-11-11 through Overpass",
+    "error_m": 300
+   },
+   "search_id": null,
+   "source": "https://www.openstreetmap.org/node/6003910356",
+   "evidence": "Peak of Richat Structure",
+   "kind_of_source": "dataset",
+   "confidence": "medium",
+   "notes": "Tagged ele=485 in OSM; not checked against another source. The 30 m elevation model gives 419 m at the structure centre and up to 630 m in the 50 km box."
+  },
+  {
+   "id": "hassi-akerdil",
+   "side": "context",
+   "kind": "place",
+   "label": "Hassi Akerdil (well)",
+   "who": "OpenStreetMap contributors (names from the US GNS gazetteer)",
+   "year": 2026,
+   "what": "A well named in the Acheulean fieldwork papers; about 12 km north of the centre.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.4165,
+     21.2237
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/node/7739399377",
+    "detail": "OpenStreetMap node 7739399377, fetched 2026-11-11 through Overpass",
+    "error_m": 500
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1016/j.anthro.2008.01.001",
+   "evidence": "Hassi Akerdil",
+   "kind_of_source": "dataset",
+   "confidence": "medium",
+   "notes": "The wadi Akerdil of the 2008 paper is a different object (see Oued Akerdil). Whether the dig sites are near this well is not stated in any source we could read."
+  },
+  {
+   "id": "hassi-bamoure",
+   "side": "context",
+   "kind": "place",
+   "label": "Hassi Bamouré (well)",
+   "who": "OpenStreetMap contributors (names from the US GNS gazetteer)",
+   "year": 2026,
+   "what": "A well near the wadi Bamouéré, about 12 km west-north-west of the centre.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.5025,
+     21.1588
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/node/7739399474",
+    "detail": "OpenStreetMap node 7739399474, fetched 2026-11-11 through Overpass",
+    "error_m": 500
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1016/j.anthro.2008.01.001",
+   "evidence": "Hassi Bamouré",
+   "kind_of_source": "dataset",
+   "confidence": "medium",
+   "notes": "GNS names this well; the paper's wadi Bamouéré is a separate feature."
+  },
+  {
+   "id": "oued-akerdil-mouth",
+   "side": "context",
+   "kind": "place",
+   "label": "Oued Akerdil (wadi mouth)",
+   "who": "OpenStreetMap contributors (names from the US GNS gazetteer)",
+   "year": 2026,
+   "what": "Mouth of wadi Akerdil, one of the two wadis where the Acheulean sites were studied.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.2343,
+     21.0885
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/node/7739412485",
+    "detail": "OpenStreetMap node 7739412485, fetched 2026-11-11 through Overpass",
+    "error_m": 1500
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1016/j.anthro.2008.01.001",
+   "evidence": "Oued Akerdil",
+   "kind_of_source": "dataset",
+   "confidence": "medium",
+   "notes": "OSM note on this node: \"the node is in mouth of wadi\". The sites lie upstream, in the outer ring depression, so this is where the wadi leaves the structure, not a site."
+  },
+  {
+   "id": "oued-bamoure-mouth",
+   "side": "context",
+   "kind": "place",
+   "label": "Oued Bamouéré (wadi mouth)",
+   "who": "OpenStreetMap contributors (names from the US GNS gazetteer)",
+   "year": 2026,
+   "what": "Mouth of wadi Bamouéré, the other wadi of the Acheulean fieldwork.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.5138,
+     21.1111
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/node/7739412519",
+    "detail": "OpenStreetMap node 7739412519, fetched 2026-11-11 through Overpass",
+    "error_m": 1500
+   },
+   "search_id": null,
+   "source": "https://doi.org/10.1016/j.anthro.2008.01.001",
+   "evidence": "Oued Bamoure",
+   "kind_of_source": "dataset",
+   "confidence": "medium",
+   "notes": "Same caveat: the node marks the wadi mouth, not a site."
+  },
+  {
+   "id": "ring-1",
+   "side": "found",
+   "kind": "outline",
+   "label": "Ring ridge 1: about 6 km across",
+   "who": "Matton, Jébrak and Lee (rings described); crest line traced here from elevation data",
+   "year": 2005,
+   "what": "Innermost traced ridge ring, the edge of the central depression.",
+   "result": "About 6.0 km across (mean), 5.8 by 6.3 km as an ellipse; crest height 387-447 m. Strong ridge signal on about 80% of its length.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.39755,
+      21.15186
+     ],
+     [
+      -11.3957,
+      21.15154
+     ],
+     [
+      -11.39392,
+      21.15087
+     ],
+     [
+      -11.39212,
+      21.15065
+     ],
+     [
+      -11.39028,
+      21.1506
+     ],
+     [
+      -11.3885,
+      21.1502
+     ],
+     [
+      -11.38692,
+      21.1492
+     ],
+     [
+      -11.38543,
+      21.14812
+     ],
+     [
+      -11.38392,
+      21.14724
+     ],
+     [
+      -11.38233,
+      21.14653
+     ],
+     [
+      -11.38079,
+      21.14575
+     ],
+     [
+      -11.37929,
+      21.14488
+     ],
+     [
+      -11.37819,
+      21.14351
+     ],
+     [
+      -11.37737,
+      21.14189
+     ],
+     [
+      -11.37628,
+      21.14067
+     ],
+     [
+      -11.37528,
+      21.1394
+     ],
+     [
+      -11.37436,
+      21.1381
+     ],
+     [
+      -11.37375,
+      21.13659
+     ],
+     [
+      -11.37394,
+      21.1346
+     ],
+     [
+      -11.3738,
+      21.13297
+     ],
+     [
+      -11.37353,
+      21.13151
+     ],
+     [
+      -11.37284,
+      21.13031
+     ],
+     [
+      -11.373,
+      21.12875
+     ],
+     [
+      -11.37327,
+      21.12724
+     ],
+     [
+      -11.37337,
+      21.12587
+     ],
+     [
+      -11.37355,
+      21.12453
+     ],
+     [
+      -11.37353,
+      21.12328
+     ],
+     [
+      -11.37301,
+      21.12214
+     ],
+     [
+      -11.37198,
+      21.12101
+     ],
+     [
+      -11.37158,
+      21.11977
+     ],
+     [
+      -11.37155,
+      21.11849
+     ],
+     [
+      -11.37158,
+      21.11721
+     ],
+     [
+      -11.37198,
+      21.11597
+     ],
+     [
+      -11.37272,
+      21.1148
+     ],
+     [
+      -11.37324,
+      21.11364
+     ],
+     [
+      -11.37411,
+      21.11259
+     ],
+     [
+      -11.37474,
+      21.11153
+     ],
+     [
+      -11.3757,
+      21.11061
+     ],
+     [
+      -11.37696,
+      21.10988
+     ],
+     [
+      -11.37798,
+      21.10913
+     ],
+     [
+      -11.37878,
+      21.10832
+     ],
+     [
+      -11.37962,
+      21.10756
+     ],
+     [
+      -11.38025,
+      21.10669
+     ],
+     [
+      -11.38093,
+      21.10585
+     ],
+     [
+      -11.38187,
+      21.10524
+     ],
+     [
+      -11.38263,
+      21.10449
+     ],
+     [
+      -11.38343,
+      21.10377
+     ],
+     [
+      -11.38427,
+      21.1031
+     ],
+     [
+      -11.38515,
+      21.10247
+     ],
+     [
+      -11.38606,
+      21.10188
+     ],
+     [
+      -11.387,
+      21.10134
+     ],
+     [
+      -11.38797,
+      21.10084
+     ],
+     [
+      -11.38897,
+      21.1004
+     ],
+     [
+      -11.38999,
+      21.1
+     ],
+     [
+      -11.39103,
+      21.09965
+     ],
+     [
+      -11.39209,
+      21.09936
+     ],
+     [
+      -11.39316,
+      21.09912
+     ],
+     [
+      -11.39425,
+      21.09893
+     ],
+     [
+      -11.39534,
+      21.09879
+     ],
+     [
+      -11.39641,
+      21.09817
+     ],
+     [
+      -11.39755,
+      21.09787
+     ],
+     [
+      -11.39871,
+      21.09763
+     ],
+     [
+      -11.39993,
+      21.09717
+     ],
+     [
+      -11.40116,
+      21.09705
+     ],
+     [
+      -11.40235,
+      21.09726
+     ],
+     [
+      -11.4036,
+      21.09726
+     ],
+     [
+      -11.40487,
+      21.09733
+     ],
+     [
+      -11.40614,
+      21.09747
+     ],
+     [
+      -11.40742,
+      21.09767
+     ],
+     [
+      -11.40869,
+      21.09794
+     ],
+     [
+      -11.41011,
+      21.09805
+     ],
+     [
+      -11.41186,
+      21.09778
+     ],
+     [
+      -11.41385,
+      21.09742
+     ],
+     [
+      -11.41536,
+      21.09783
+     ],
+     [
+      -11.41726,
+      21.09792
+     ],
+     [
+      -11.4192,
+      21.09815
+     ],
+     [
+      -11.4203,
+      21.09925
+     ],
+     [
+      -11.42135,
+      21.10039
+     ],
+     [
+      -11.42232,
+      21.10159
+     ],
+     [
+      -11.42323,
+      21.10283
+     ],
+     [
+      -11.42407,
+      21.10411
+     ],
+     [
+      -11.42483,
+      21.10543
+     ],
+     [
+      -11.42552,
+      21.10679
+     ],
+     [
+      -11.42614,
+      21.10818
+     ],
+     [
+      -11.42667,
+      21.1096
+     ],
+     [
+      -11.42713,
+      21.11105
+     ],
+     [
+      -11.4275,
+      21.11251
+     ],
+     [
+      -11.42779,
+      21.11399
+     ],
+     [
+      -11.428,
+      21.11548
+     ],
+     [
+      -11.42813,
+      21.11698
+     ],
+     [
+      -11.42817,
+      21.11849
+     ],
+     [
+      -11.42813,
+      21.12
+     ],
+     [
+      -11.428,
+      21.1215
+     ],
+     [
+      -11.42779,
+      21.12299
+     ],
+     [
+      -11.4275,
+      21.12447
+     ],
+     [
+      -11.42796,
+      21.12614
+     ],
+     [
+      -11.43024,
+      21.12847
+     ],
+     [
+      -11.43018,
+      21.13025
+     ],
+     [
+      -11.42948,
+      21.13184
+     ],
+     [
+      -11.42844,
+      21.13327
+     ],
+     [
+      -11.42707,
+      21.1345
+     ],
+     [
+      -11.42565,
+      21.13563
+     ],
+     [
+      -11.42466,
+      21.13699
+     ],
+     [
+      -11.42359,
+      21.1383
+     ],
+     [
+      -11.4231,
+      21.14009
+     ],
+     [
+      -11.42206,
+      21.14151
+     ],
+     [
+      -11.42074,
+      21.14268
+     ],
+     [
+      -11.41936,
+      21.14379
+     ],
+     [
+      -11.41809,
+      21.14505
+     ],
+     [
+      -11.41674,
+      21.14625
+     ],
+     [
+      -11.41531,
+      21.14739
+     ],
+     [
+      -11.41368,
+      21.14822
+     ],
+     [
+      -11.412,
+      21.14898
+     ],
+     [
+      -11.41028,
+      21.14964
+     ],
+     [
+      -11.40844,
+      21.14997
+     ],
+     [
+      -11.40659,
+      21.1502
+     ],
+     [
+      -11.40481,
+      21.1506
+     ],
+     [
+      -11.40315,
+      21.15172
+     ],
+     [
+      -11.40129,
+      21.15195
+     ],
+     [
+      -11.39942,
+      21.15209
+     ],
+     [
+      -11.39755,
+      21.15186
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://registry.opendata.aws/copernicus-dem/",
+    "detail": "Crest line traced by this lane from Copernicus GLO-30 tiles N20/N21 W012 (30 m): ridge filter (second derivative, 120 m smoothing), then the strongest connected crest per 1 degree of azimuth around the centre (dynamic programming, 3 degree output spacing). Checked by overlay on the 2024 geological map: it follows the unit boundaries.",
+    "error_m": 250
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://archipel.uqam.ca/272/1/Matton_etal05.pdf",
+   "evidence": "Erosion has created circular cuestas represented by three nested rings dipping outward from the structure.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Matton et al. say \"three nested rings\" but give no radius for each, so which of our traced ridges are their three is our reading. Ridges are rock: the strata dip outward at 10-20 degrees, there is no water in them."
+  },
+  {
+   "id": "ring-2",
+   "side": "found",
+   "kind": "outline",
+   "label": "Ring ridge 2: about 13 km across",
+   "who": "Matton, Jébrak and Lee (rings described); crest line traced here from elevation data",
+   "year": 2005,
+   "what": "Middle ridge ring (cuesta crest).",
+   "result": "About 13.2 km across (mean), 12.8 by 13.6 km as an ellipse; crest height 406-486 m.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.39755,
+      21.18035
+     ],
+     [
+      -11.39411,
+      21.17999
+     ],
+     [
+      -11.39069,
+      21.17974
+     ],
+     [
+      -11.38724,
+      21.17959
+     ],
+     [
+      -11.38373,
+      21.17953
+     ],
+     [
+      -11.38012,
+      21.17955
+     ],
+     [
+      -11.37675,
+      21.17861
+     ],
+     [
+      -11.37404,
+      21.17599
+     ],
+     [
+      -11.37134,
+      21.17376
+     ],
+     [
+      -11.3683,
+      21.1724
+     ],
+     [
+      -11.36562,
+      21.17042
+     ],
+     [
+      -11.36293,
+      21.16855
+     ],
+     [
+      -11.36019,
+      21.16678
+     ],
+     [
+      -11.35755,
+      21.16488
+     ],
+     [
+      -11.35502,
+      21.16285
+     ],
+     [
+      -11.35301,
+      21.16031
+     ],
+     [
+      -11.35074,
+      21.15807
+     ],
+     [
+      -11.34905,
+      21.15537
+     ],
+     [
+      -11.3473,
+      21.15278
+     ],
+     [
+      -11.34448,
+      21.15085
+     ],
+     [
+      -11.33975,
+      21.14983
+     ],
+     [
+      -11.33783,
+      21.14707
+     ],
+     [
+      -11.33579,
+      21.14431
+     ],
+     [
+      -11.33443,
+      21.14124
+     ],
+     [
+      -11.33325,
+      21.13811
+     ],
+     [
+      -11.33225,
+      21.13492
+     ],
+     [
+      -11.33199,
+      21.13158
+     ],
+     [
+      -11.3342,
+      21.12791
+     ],
+     [
+      -11.33405,
+      21.12476
+     ],
+     [
+      -11.33379,
+      21.12163
+     ],
+     [
+      -11.33457,
+      21.11849
+     ],
+     [
+      -11.33523,
+      21.11542
+     ],
+     [
+      -11.33606,
+      21.11242
+     ],
+     [
+      -11.33648,
+      21.10941
+     ],
+     [
+      -11.33764,
+      21.10653
+     ],
+     [
+      -11.3395,
+      21.10388
+     ],
+     [
+      -11.34095,
+      21.10122
+     ],
+     [
+      -11.34199,
+      21.09846
+     ],
+     [
+      -11.34423,
+      21.0962
+     ],
+     [
+      -11.34606,
+      21.09386
+     ],
+     [
+      -11.34776,
+      21.09149
+     ],
+     [
+      -11.34957,
+      21.08923
+     ],
+     [
+      -11.35127,
+      21.08691
+     ],
+     [
+      -11.35309,
+      21.08468
+     ],
+     [
+      -11.35504,
+      21.08254
+     ],
+     [
+      -11.3573,
+      21.0807
+     ],
+     [
+      -11.35946,
+      21.07877
+     ],
+     [
+      -11.36173,
+      21.07695
+     ],
+     [
+      -11.36409,
+      21.07525
+     ],
+     [
+      -11.36623,
+      21.07321
+     ],
+     [
+      -11.36866,
+      21.0715
+     ],
+     [
+      -11.37118,
+      21.0699
+     ],
+     [
+      -11.37381,
+      21.06842
+     ],
+     [
+      -11.37653,
+      21.06707
+     ],
+     [
+      -11.37933,
+      21.06585
+     ],
+     [
+      -11.38222,
+      21.06477
+     ],
+     [
+      -11.38523,
+      21.06409
+     ],
+     [
+      -11.38815,
+      21.06275
+     ],
+     [
+      -11.39111,
+      21.06102
+     ],
+     [
+      -11.3943,
+      21.06024
+     ],
+     [
+      -11.39755,
+      21.05989
+     ],
+     [
+      -11.40089,
+      21.05861
+     ],
+     [
+      -11.40428,
+      21.05832
+     ],
+     [
+      -11.40772,
+      21.0582
+     ],
+     [
+      -11.4116,
+      21.05639
+     ],
+     [
+      -11.41504,
+      21.05717
+     ],
+     [
+      -11.4187,
+      21.05734
+     ],
+     [
+      -11.42219,
+      21.05821
+     ],
+     [
+      -11.42551,
+      21.0595
+     ],
+     [
+      -11.42758,
+      21.06313
+     ],
+     [
+      -11.43063,
+      21.06468
+     ],
+     [
+      -11.43358,
+      21.06638
+     ],
+     [
+      -11.43575,
+      21.0691
+     ],
+     [
+      -11.43773,
+      21.07189
+     ],
+     [
+      -11.44027,
+      21.07393
+     ],
+     [
+      -11.44269,
+      21.07609
+     ],
+     [
+      -11.44435,
+      21.07891
+     ],
+     [
+      -11.44649,
+      21.08127
+     ],
+     [
+      -11.4485,
+      21.08372
+     ],
+     [
+      -11.45061,
+      21.08613
+     ],
+     [
+      -11.45234,
+      21.08878
+     ],
+     [
+      -11.45392,
+      21.09152
+     ],
+     [
+      -11.45535,
+      21.09432
+     ],
+     [
+      -11.45607,
+      21.09739
+     ],
+     [
+      -11.45717,
+      21.1003
+     ],
+     [
+      -11.45782,
+      21.10332
+     ],
+     [
+      -11.45859,
+      21.10631
+     ],
+     [
+      -11.45918,
+      21.10932
+     ],
+     [
+      -11.45961,
+      21.11236
+     ],
+     [
+      -11.45986,
+      21.11542
+     ],
+     [
+      -11.45995,
+      21.11849
+     ],
+     [
+      -11.46131,
+      21.12163
+     ],
+     [
+      -11.46334,
+      21.12498
+     ],
+     [
+      -11.46289,
+      21.12821
+     ],
+     [
+      -11.46226,
+      21.13141
+     ],
+     [
+      -11.46145,
+      21.13457
+     ],
+     [
+      -11.46047,
+      21.13769
+     ],
+     [
+      -11.45931,
+      21.14076
+     ],
+     [
+      -11.45798,
+      21.14376
+     ],
+     [
+      -11.45624,
+      21.14657
+     ],
+     [
+      -11.45409,
+      21.14915
+     ],
+     [
+      -11.45206,
+      21.15174
+     ],
+     [
+      -11.45013,
+      21.15437
+     ],
+     [
+      -11.44806,
+      21.15691
+     ],
+     [
+      -11.44607,
+      21.15952
+     ],
+     [
+      -11.44371,
+      21.16185
+     ],
+     [
+      -11.44123,
+      21.16406
+     ],
+     [
+      -11.43864,
+      21.16614
+     ],
+     [
+      -11.43592,
+      21.1681
+     ],
+     [
+      -11.43311,
+      21.16991
+     ],
+     [
+      -11.4299,
+      21.17112
+     ],
+     [
+      -11.42693,
+      21.17264
+     ],
+     [
+      -11.42387,
+      21.17401
+     ],
+     [
+      -11.42074,
+      21.17523
+     ],
+     [
+      -11.41754,
+      21.17629
+     ],
+     [
+      -11.41459,
+      21.17824
+     ],
+     [
+      -11.41124,
+      21.179
+     ],
+     [
+      -11.40785,
+      21.17959
+     ],
+     [
+      -11.40443,
+      21.18001
+     ],
+     [
+      -11.40101,
+      21.18054
+     ],
+     [
+      -11.39755,
+      21.18035
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://registry.opendata.aws/copernicus-dem/",
+    "detail": "Crest line traced by this lane from Copernicus GLO-30 tiles N20/N21 W012 (30 m): ridge filter (second derivative, 120 m smoothing), then the strongest connected crest per 1 degree of azimuth around the centre (dynamic programming, 3 degree output spacing). Checked by overlay on the 2024 geological map: it follows the unit boundaries.",
+    "error_m": 250
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://archipel.uqam.ca/272/1/Matton_etal05.pdf",
+   "evidence": "Erosion has created circular cuestas represented by three nested rings dipping outward from the structure.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "Matton et al. say \"three nested rings\" but give no radius for each, so which of our traced ridges are their three is our reading. Ridges are rock: the strata dip outward at 10-20 degrees, there is no water in them."
+  },
+  {
+   "id": "ring-3",
+   "side": "found",
+   "kind": "outline",
+   "label": "Ring ridge 3: about 20 km across",
+   "who": "Matton, Jébrak and Lee (rings described); crest line traced here from elevation data",
+   "year": 2005,
+   "what": "Outer of the three closed ridge rings (cuesta crest).",
+   "result": "About 19.9 km across (mean), 18.5 by 21.5 km as an ellipse (minor/major 0.86, matching the 0.87-0.88 Matton gives); crest height 388-481 m.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.39755,
+      21.20694
+     ],
+     [
+      -11.39262,
+      21.20682
+     ],
+     [
+      -11.38767,
+      21.20672
+     ],
+     [
+      -11.38277,
+      21.20612
+     ],
+     [
+      -11.37772,
+      21.20607
+     ],
+     [
+      -11.3728,
+      21.20523
+     ],
+     [
+      -11.36791,
+      21.20416
+     ],
+     [
+      -11.36276,
+      21.2036
+     ],
+     [
+      -11.35795,
+      21.20202
+     ],
+     [
+      -11.35282,
+      21.20092
+     ],
+     [
+      -11.348,
+      21.19908
+     ],
+     [
+      -11.34326,
+      21.19699
+     ],
+     [
+      -11.33862,
+      21.19465
+     ],
+     [
+      -11.33409,
+      21.19208
+     ],
+     [
+      -11.32911,
+      21.18986
+     ],
+     [
+      -11.32523,
+      21.1864
+     ],
+     [
+      -11.32176,
+      21.18257
+     ],
+     [
+      -11.31829,
+      21.17876
+     ],
+     [
+      -11.31551,
+      21.17446
+     ],
+     [
+      -11.3125,
+      21.17036
+     ],
+     [
+      -11.30998,
+      21.16597
+     ],
+     [
+      -11.30822,
+      21.16123
+     ],
+     [
+      -11.30623,
+      21.15667
+     ],
+     [
+      -11.30423,
+      21.15213
+     ],
+     [
+      -11.30248,
+      21.1475
+     ],
+     [
+      -11.30044,
+      21.14293
+     ],
+     [
+      -11.29836,
+      21.13829
+     ],
+     [
+      -11.29654,
+      21.13351
+     ],
+     [
+      -11.29555,
+      21.12856
+     ],
+     [
+      -11.29772,
+      21.1234
+     ],
+     [
+      -11.30019,
+      21.11849
+     ],
+     [
+      -11.30061,
+      21.11372
+     ],
+     [
+      -11.29986,
+      21.10885
+     ],
+     [
+      -11.30253,
+      21.10436
+     ],
+     [
+      -11.30401,
+      21.09982
+     ],
+     [
+      -11.30574,
+      21.09539
+     ],
+     [
+      -11.3088,
+      21.09141
+     ],
+     [
+      -11.31124,
+      21.08738
+     ],
+     [
+      -11.31415,
+      21.08362
+     ],
+     [
+      -11.31775,
+      21.08031
+     ],
+     [
+      -11.32074,
+      21.07684
+     ],
+     [
+      -11.32341,
+      21.07327
+     ],
+     [
+      -11.32603,
+      21.06969
+     ],
+     [
+      -11.32795,
+      21.06556
+     ],
+     [
+      -11.33099,
+      21.06221
+     ],
+     [
+      -11.33401,
+      21.05883
+     ],
+     [
+      -11.33704,
+      21.05538
+     ],
+     [
+      -11.34046,
+      21.05228
+     ],
+     [
+      -11.34423,
+      21.04957
+     ],
+     [
+      -11.34783,
+      21.04659
+     ],
+     [
+      -11.35161,
+      21.04377
+     ],
+     [
+      -11.35584,
+      21.04162
+     ],
+     [
+      -11.35983,
+      21.03893
+     ],
+     [
+      -11.36431,
+      21.03718
+     ],
+     [
+      -11.36871,
+      21.03515
+     ],
+     [
+      -11.37325,
+      21.03332
+     ],
+     [
+      -11.37784,
+      21.03144
+     ],
+     [
+      -11.38259,
+      21.02979
+     ],
+     [
+      -11.38746,
+      21.02837
+     ],
+     [
+      -11.39239,
+      21.0261
+     ],
+     [
+      -11.39755,
+      21.02543
+     ],
+     [
+      -11.40276,
+      21.02502
+     ],
+     [
+      -11.40809,
+      21.02432
+     ],
+     [
+      -11.41345,
+      21.02416
+     ],
+     [
+      -11.41893,
+      21.02401
+     ],
+     [
+      -11.42439,
+      21.02441
+     ],
+     [
+      -11.4296,
+      21.02586
+     ],
+     [
+      -11.43554,
+      21.02553
+     ],
+     [
+      -11.44185,
+      21.02505
+     ],
+     [
+      -11.44726,
+      21.02687
+     ],
+     [
+      -11.45172,
+      21.03038
+     ],
+     [
+      -11.45655,
+      21.03316
+     ],
+     [
+      -11.46055,
+      21.03706
+     ],
+     [
+      -11.46282,
+      21.0428
+     ],
+     [
+      -11.46463,
+      21.04853
+     ],
+     [
+      -11.46823,
+      21.05211
+     ],
+     [
+      -11.47183,
+      21.05568
+     ],
+     [
+      -11.47523,
+      21.05941
+     ],
+     [
+      -11.47842,
+      21.06331
+     ],
+     [
+      -11.48138,
+      21.06736
+     ],
+     [
+      -11.48411,
+      21.07155
+     ],
+     [
+      -11.48661,
+      21.07587
+     ],
+     [
+      -11.4886,
+      21.08042
+     ],
+     [
+      -11.49033,
+      21.08504
+     ],
+     [
+      -11.49124,
+      21.0899
+     ],
+     [
+      -11.49159,
+      21.09483
+     ],
+     [
+      -11.49278,
+      21.09948
+     ],
+     [
+      -11.49228,
+      21.1044
+     ],
+     [
+      -11.4915,
+      21.10922
+     ],
+     [
+      -11.48987,
+      21.11395
+     ],
+     [
+      -11.48884,
+      21.11849
+     ],
+     [
+      -11.48727,
+      21.12291
+     ],
+     [
+      -11.48547,
+      21.12717
+     ],
+     [
+      -11.48401,
+      21.13135
+     ],
+     [
+      -11.48232,
+      21.13541
+     ],
+     [
+      -11.4807,
+      21.13942
+     ],
+     [
+      -11.4786,
+      21.14322
+     ],
+     [
+      -11.47657,
+      21.14698
+     ],
+     [
+      -11.47488,
+      21.15082
+     ],
+     [
+      -11.47323,
+      21.1547
+     ],
+     [
+      -11.47185,
+      21.15878
+     ],
+     [
+      -11.47023,
+      21.16282
+     ],
+     [
+      -11.46836,
+      21.16681
+     ],
+     [
+      -11.46558,
+      21.17022
+     ],
+     [
+      -11.46238,
+      21.17332
+     ],
+     [
+      -11.45924,
+      21.17643
+     ],
+     [
+      -11.45573,
+      21.17918
+     ],
+     [
+      -11.45227,
+      21.18196
+     ],
+     [
+      -11.45002,
+      21.18631
+     ],
+     [
+      -11.44805,
+      21.19153
+     ],
+     [
+      -11.44391,
+      21.19391
+     ],
+     [
+      -11.43952,
+      21.19585
+     ],
+     [
+      -11.43503,
+      21.19756
+     ],
+     [
+      -11.43047,
+      21.19904
+     ],
+     [
+      -11.42594,
+      21.20054
+     ],
+     [
+      -11.42132,
+      21.20183
+     ],
+     [
+      -11.41671,
+      21.20315
+     ],
+     [
+      -11.41196,
+      21.20397
+     ],
+     [
+      -11.4073,
+      21.20564
+     ],
+     [
+      -11.40248,
+      21.20682
+     ],
+     [
+      -11.39755,
+      21.20694
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://registry.opendata.aws/copernicus-dem/",
+    "detail": "Crest line traced by this lane from Copernicus GLO-30 tiles N20/N21 W012 (30 m): ridge filter (second derivative, 120 m smoothing), then the strongest connected crest per 1 degree of azimuth around the centre (dynamic programming, 3 degree output spacing). Checked by overlay on the 2024 geological map: it follows the unit boundaries.",
+    "error_m": 250
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://archipel.uqam.ca/272/1/Matton_etal05.pdf",
+   "evidence": "Erosion has created circular cuestas represented by three nested rings dipping outward from the structure.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "Matton et al. say \"three nested rings\" but give no radius for each, so which of our traced ridges are their three is our reading. Ridges are rock: the strata dip outward at 10-20 degrees, there is no water in them."
+  },
+  {
+   "id": "ring-outer-rim",
+   "side": "found",
+   "kind": "outline",
+   "label": "Outer rim ridge: east and south arc",
+   "who": "Matton, Jébrak and Lee (structure at least 40 km across); crest traced here",
+   "year": 2005,
+   "what": "The outermost cuesta ridge, traced only where it is a clear ridge, from north-east round the east and south to the south-west.",
+   "result": "It lies 21.5 to 24.2 km from the centre, so the structure is at least 43 km across if symmetric; crest height 364-515 m.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.23923,
+      21.26717
+     ],
+     [
+      -11.23116,
+      21.25919
+     ],
+     [
+      -11.22085,
+      21.25286
+     ],
+     [
+      -11.21454,
+      21.24336
+     ],
+     [
+      -11.20953,
+      21.23316
+     ],
+     [
+      -11.2044,
+      21.22322
+     ],
+     [
+      -11.19908,
+      21.21346
+     ],
+     [
+      -11.19723,
+      21.20225
+     ],
+     [
+      -11.19365,
+      21.192
+     ],
+     [
+      -11.19148,
+      21.18137
+     ],
+     [
+      -11.18909,
+      21.17094
+     ],
+     [
+      -11.18532,
+      21.16085
+     ],
+     [
+      -11.18126,
+      21.15066
+     ],
+     [
+      -11.17775,
+      21.14019
+     ],
+     [
+      -11.17684,
+      21.12935
+     ],
+     [
+      -11.17307,
+      21.11849
+     ],
+     [
+      -11.16992,
+      21.10729
+     ],
+     [
+      -11.16741,
+      21.09577
+     ],
+     [
+      -11.16756,
+      21.08428
+     ],
+     [
+      -11.17289,
+      21.07364
+     ],
+     [
+      -11.17905,
+      21.06351
+     ],
+     [
+      -11.18159,
+      21.05259
+     ],
+     [
+      -11.18447,
+      21.04168
+     ],
+     [
+      -11.19063,
+      21.03197
+     ],
+     [
+      -11.19677,
+      21.02242
+     ],
+     [
+      -11.20265,
+      21.01281
+     ],
+     [
+      -11.20977,
+      21.00397
+     ],
+     [
+      -11.21641,
+      20.9949
+     ],
+     [
+      -11.22377,
+      20.98634
+     ],
+     [
+      -11.23309,
+      20.97943
+     ],
+     [
+      -11.2427,
+      20.97307
+     ],
+     [
+      -11.25314,
+      20.96788
+     ],
+     [
+      -11.26301,
+      20.96246
+     ],
+     [
+      -11.27274,
+      20.95716
+     ],
+     [
+      -11.28221,
+      20.9517
+     ],
+     [
+      -11.29253,
+      20.94767
+     ],
+     [
+      -11.30193,
+      20.94226
+     ],
+     [
+      -11.31188,
+      20.9378
+     ],
+     [
+      -11.32145,
+      20.93232
+     ],
+     [
+      -11.33175,
+      20.92832
+     ],
+     [
+      -11.34289,
+      20.92692
+     ],
+     [
+      -11.35388,
+      20.92556
+     ],
+     [
+      -11.36478,
+      20.92421
+     ],
+     [
+      -11.3755,
+      20.92152
+     ],
+     [
+      -11.38648,
+      20.92016
+     ],
+     [
+      -11.39755,
+      20.91989
+     ],
+     [
+      -11.40852,
+      20.92179
+     ],
+     [
+      -11.41923,
+      20.92476
+     ],
+     [
+      -11.43,
+      20.92609
+     ],
+     [
+      -11.44067,
+      20.92795
+     ],
+     [
+      -11.45123,
+      20.93033
+     ],
+     [
+      -11.46227,
+      20.93142
+     ],
+     [
+      -11.47261,
+      20.93485
+     ],
+     [
+      -11.48274,
+      20.93879
+     ],
+     [
+      -11.49264,
+      20.94323
+     ],
+     [
+      -11.50227,
+      20.94814
+     ],
+     [
+      -11.51162,
+      20.95352
+     ],
+     [
+      -11.52066,
+      20.95936
+     ],
+     [
+      -11.52936,
+      20.96562
+     ],
+     [
+      -11.53789,
+      20.97211
+     ],
+     [
+      -11.54586,
+      20.97921
+     ],
+     [
+      -11.55341,
+      20.98669
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://registry.opendata.aws/copernicus-dem/",
+    "detail": "Same method as the ring ridges, azimuth 45 to 230 degrees only. North and west of that the outer edge runs along the Adrar plateau escarpment, which a ridge filter cannot tell from the ring, so it is left out.",
+    "error_m": 300
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://archipel.uqam.ca/272/1/Matton_etal05.pdf",
+   "evidence": "The Richat structure (Sahara, Mauritania) appears as a large dome at least 40 km in diameter within a Late Proterozoic to Ordovician sequence.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Wikipedia and the IUGS site say about 40 km; the east and south arcs we traced are 21.5-24.2 km from the centre (see measurements)."
+  },
+  {
+   "id": "gabbro-outer",
+   "side": "found",
+   "kind": "outline",
+   "label": "Outer gabbro ring (Tin Jouker)",
+   "who": "Matton and Jébrak; Abdeina and others",
+   "year": 2024,
+   "what": "The outer of two rings of dark igneous rock (gabbro), drawn on the 2024 map as a ring about 7 km from the centre.",
+   "result": "The 2024 paper argues the two gabbro rings are sills of about 200-230 million years old rock, not ring dykes, and not Cretaceous.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.36588,
+      21.17531
+     ],
+     [
+      -11.36156,
+      21.17318
+     ],
+     [
+      -11.3571,
+      21.17099
+     ],
+     [
+      -11.35279,
+      21.16844
+     ],
+     [
+      -11.34863,
+      21.16554
+     ],
+     [
+      -11.34504,
+      21.16208
+     ],
+     [
+      -11.34187,
+      21.15825
+     ],
+     [
+      -11.33933,
+      21.15403
+     ],
+     [
+      -11.33705,
+      21.14967
+     ],
+     [
+      -11.33515,
+      21.14515
+     ],
+     [
+      -11.33376,
+      21.14047
+     ],
+     [
+      -11.33291,
+      21.13568
+     ],
+     [
+      -11.33248,
+      21.13085
+     ],
+     [
+      -11.33268,
+      21.12602
+     ],
+     [
+      -11.33371,
+      21.12127
+     ],
+     [
+      -11.33484,
+      21.11664
+     ],
+     [
+      -11.33655,
+      21.11218
+     ],
+     [
+      -11.33842,
+      21.10788
+     ],
+     [
+      -11.34081,
+      21.10382
+     ],
+     [
+      -11.34344,
+      21.1
+     ],
+     [
+      -11.34614,
+      21.09633
+     ],
+     [
+      -11.34893,
+      21.09282
+     ],
+     [
+      -11.35183,
+      21.08946
+     ],
+     [
+      -11.35475,
+      21.08618
+     ],
+     [
+      -11.35766,
+      21.08292
+     ],
+     [
+      -11.36087,
+      21.0799
+     ],
+     [
+      -11.36436,
+      21.0772
+     ],
+     [
+      -11.36795,
+      21.07461
+     ],
+     [
+      -11.37155,
+      21.07201
+     ],
+     [
+      -11.37524,
+      21.06945
+     ],
+     [
+      -11.37932,
+      21.06748
+     ],
+     [
+      -11.3836,
+      21.06592
+     ],
+     [
+      -11.38796,
+      21.06459
+     ],
+     [
+      -11.39239,
+      21.06343
+     ],
+     [
+      -11.39686,
+      21.06227
+     ],
+     [
+      -11.40143,
+      21.06131
+     ],
+     [
+      -11.40609,
+      21.06044
+     ],
+     [
+      -11.41087,
+      21.05993
+     ],
+     [
+      -11.41569,
+      21.05989
+     ],
+     [
+      -11.42056,
+      21.0601
+     ],
+     [
+      -11.42551,
+      21.0604
+     ],
+     [
+      -11.43052,
+      21.06096
+     ],
+     [
+      -11.43568,
+      21.06158
+     ],
+     [
+      -11.4405,
+      21.06321
+     ],
+     [
+      -11.44536,
+      21.06496
+     ],
+     [
+      -11.44971,
+      21.06758
+     ],
+     [
+      -11.45405,
+      21.07027
+     ],
+     [
+      -11.45824,
+      21.07321
+     ],
+     [
+      -11.46243,
+      21.07627
+     ],
+     [
+      -11.46656,
+      21.07953
+     ],
+     [
+      -11.46983,
+      21.08349
+     ],
+     [
+      -11.47235,
+      21.08791
+     ],
+     [
+      -11.47469,
+      21.09239
+     ],
+     [
+      -11.47565,
+      21.09739
+     ],
+     [
+      -11.47621,
+      21.10236
+     ],
+     [
+      -11.4768,
+      21.10717
+     ],
+     [
+      -11.47704,
+      21.11195
+     ],
+     [
+      -11.47675,
+      21.1167
+     ],
+     [
+      -11.47645,
+      21.12134
+     ],
+     [
+      -11.47582,
+      21.1259
+     ],
+     [
+      -11.47506,
+      21.1304
+     ],
+     [
+      -11.47356,
+      21.13474
+     ],
+     [
+      -11.47214,
+      21.139
+     ],
+     [
+      -11.47043,
+      21.14314
+     ],
+     [
+      -11.46854,
+      21.14718
+     ],
+     [
+      -11.46631,
+      21.15105
+     ],
+     [
+      -11.46404,
+      21.15486
+     ],
+     [
+      -11.46155,
+      21.15855
+     ],
+     [
+      -11.45888,
+      21.16213
+     ],
+     [
+      -11.45595,
+      21.16554
+     ],
+     [
+      -11.4527,
+      21.16869
+     ],
+     [
+      -11.44931,
+      21.17171
+     ],
+     [
+      -11.44578,
+      21.17463
+     ],
+     [
+      -11.44196,
+      21.17722
+     ],
+     [
+      -11.43792,
+      21.1795
+     ],
+     [
+      -11.43387,
+      21.18188
+     ],
+     [
+      -11.4295,
+      21.18367
+     ],
+     [
+      -11.42496,
+      21.18505
+     ],
+     [
+      -11.42039,
+      21.18644
+     ],
+     [
+      -11.41572,
+      21.18759
+     ],
+     [
+      -11.41096,
+      21.18854
+     ],
+     [
+      -11.40609,
+      21.18884
+     ],
+     [
+      -11.40119,
+      21.18907
+     ],
+     [
+      -11.39625,
+      21.18902
+     ],
+     [
+      -11.39129,
+      21.18868
+     ],
+     [
+      -11.3863,
+      21.18807
+     ],
+     [
+      -11.3813,
+      21.18724
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Blue line digitised by colour in 4 degree steps; a 13 degree gap in the NNE is left open.",
+    "error_m": 500
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "The ca. 70 m-wide outer ring (Tin Jouker) is located 7–8 km from the centre, while the 30 m-wide inner one (Guelb Richat) is only 3 km from the centre.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Width: Matton et al. 2005 and the 2008 thesis give about 50 m (outer) and 20 m (inner); the 2024 paper gives 70 m and 30 m. The map shows the ring as a dashed line where the dyke is hidden under sand, so some of the line is inferred from magnetic data."
+  },
+  {
+   "id": "gabbro-inner-west",
+   "side": "found",
+   "kind": "outline",
+   "label": "Inner gabbro ring, west arc",
+   "who": "Matton and Jébrak; Abdeina and others",
+   "year": 2024,
+   "what": "West and north part of the inner gabbro ring, about 3 km from the centre.",
+   "result": "Same finding as the outer ring: the 2024 paper reads it as a sill, not a ring dyke.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.42783,
+      21.11966
+     ],
+     [
+      -11.42832,
+      21.12134
+     ],
+     [
+      -11.42854,
+      21.12306
+     ],
+     [
+      -11.42868,
+      21.1248
+     ],
+     [
+      -11.42927,
+      21.12655
+     ],
+     [
+      -11.42856,
+      21.12827
+     ],
+     [
+      -11.42831,
+      21.12999
+     ],
+     [
+      -11.42791,
+      21.13169
+     ],
+     [
+      -11.42739,
+      21.13335
+     ],
+     [
+      -11.42671,
+      21.13497
+     ],
+     [
+      -11.42592,
+      21.13654
+     ],
+     [
+      -11.42503,
+      21.13806
+     ],
+     [
+      -11.42393,
+      21.13945
+     ],
+     [
+      -11.42284,
+      21.14084
+     ],
+     [
+      -11.42157,
+      21.14209
+     ],
+     [
+      -11.42028,
+      21.1433
+     ],
+     [
+      -11.41895,
+      21.14448
+     ],
+     [
+      -11.41749,
+      21.14552
+     ],
+     [
+      -11.41596,
+      21.14647
+     ],
+     [
+      -11.41436,
+      21.14731
+     ],
+     [
+      -11.41275,
+      21.14812
+     ],
+     [
+      -11.41104,
+      21.14877
+     ],
+     [
+      -11.40929,
+      21.14928
+     ],
+     [
+      -11.40749,
+      21.1496
+     ],
+     [
+      -11.40569,
+      21.14993
+     ],
+     [
+      -11.40387,
+      21.15018
+     ],
+     [
+      -11.40204,
+      21.15029
+     ],
+     [
+      -11.40019,
+      21.15033
+     ],
+     [
+      -11.39834,
+      21.15025
+     ],
+     [
+      -11.39649,
+      21.15003
+     ],
+     [
+      -11.39465,
+      21.14973
+     ],
+     [
+      -11.3928,
+      21.14937
+     ],
+     [
+      -11.39101,
+      21.14879
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Green line digitised by colour, azimuth about 256 to 24 degrees around the ring centre.",
+    "error_m": 500
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "The ca. 70 m-wide outer ring (Tin Jouker) is located 7–8 km from the centre, while the 30 m-wide inner one (Guelb Richat) is only 3 km from the centre.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Its centre sits about 1 km east of the outer gabbro ring's centre on this map. Matton 2005 says the two dykes are \"almost centered\" on the structure."
+  },
+  {
+   "id": "gabbro-inner-south-east",
+   "side": "found",
+   "kind": "outline",
+   "label": "Inner gabbro ring, south-east arc",
+   "who": "Matton and Jébrak; Abdeina and others",
+   "year": 2024,
+   "what": "South-east part of the inner gabbro ring.",
+   "result": "Sample SR025 was taken from this inner gabbro and gave no usable argon age.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.37635,
+      21.11397
+     ],
+     [
+      -11.37765,
+      21.11252
+     ],
+     [
+      -11.37934,
+      21.11137
+     ],
+     [
+      -11.38059,
+      21.11002
+     ],
+     [
+      -11.38195,
+      21.10878
+     ],
+     [
+      -11.38335,
+      21.1076
+     ],
+     [
+      -11.38486,
+      21.10655
+     ],
+     [
+      -11.38639,
+      21.10556
+     ],
+     [
+      -11.38804,
+      21.10476
+     ],
+     [
+      -11.3897,
+      21.104
+     ],
+     [
+      -11.39141,
+      21.10338
+     ],
+     [
+      -11.39313,
+      21.10282
+     ],
+     [
+      -11.39488,
+      21.10235
+     ],
+     [
+      -11.39668,
+      21.10212
+     ],
+     [
+      -11.39845,
+      21.10185
+     ],
+     [
+      -11.40024,
+      21.10171
+     ],
+     [
+      -11.40204,
+      21.10175
+     ],
+     [
+      -11.40381,
+      21.10195
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Green line digitised by colour, azimuth about 116 to 187 degrees.",
+    "error_m": 500
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "The ca. 70 m-wide outer ring (Tin Jouker) is located 7–8 km from the centre, while the 30 m-wide inner one (Guelb Richat) is only 3 km from the centre.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Short gaps between the arcs are where the map has no green line."
+  },
+  {
+   "id": "breccia",
+   "side": "found",
+   "kind": "outline",
+   "label": "Central breccia (dark grey on the map)",
+   "who": "Matton, Jébrak and Lee",
+   "year": 2005,
+   "what": "The core of broken, silica-cemented rock at the centre of the dome.",
+   "result": "A hot-water karst collapse breccia; its internal sediment gave an argon age of 98.2 +/- 2.6 million years.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -11.40288,
+       21.14855
+      ],
+      [
+       -11.40059,
+       21.14939
+      ],
+      [
+       -11.39832,
+       21.14905
+      ],
+      [
+       -11.39767,
+       21.14397
+      ],
+      [
+       -11.39622,
+       21.14295
+      ],
+      [
+       -11.39498,
+       21.14177
+      ],
+      [
+       -11.39202,
+       21.14294
+      ],
+      [
+       -11.39059,
+       21.14173
+      ],
+      [
+       -11.38595,
+       21.14322
+      ],
+      [
+       -11.38225,
+       21.14298
+      ],
+      [
+       -11.38006,
+       21.14129
+      ],
+      [
+       -11.37752,
+       21.13953
+      ],
+      [
+       -11.37624,
+       21.13707
+      ],
+      [
+       -11.38108,
+       21.13331
+      ],
+      [
+       -11.38087,
+       21.13115
+      ],
+      [
+       -11.38118,
+       21.12899
+      ],
+      [
+       -11.37749,
+       21.12649
+      ],
+      [
+       -11.37791,
+       21.12403
+      ],
+      [
+       -11.38001,
+       21.12205
+      ],
+      [
+       -11.38499,
+       21.12155
+      ],
+      [
+       -11.38742,
+       21.12065
+      ],
+      [
+       -11.38905,
+       21.1196
+      ],
+      [
+       -11.39005,
+       21.11819
+      ],
+      [
+       -11.39082,
+       21.11647
+      ],
+      [
+       -11.39206,
+       21.11508
+      ],
+      [
+       -11.39334,
+       21.11354
+      ],
+      [
+       -11.39503,
+       21.11252
+      ],
+      [
+       -11.39637,
+       21.11027
+      ],
+      [
+       -11.39823,
+       21.10857
+      ],
+      [
+       -11.40062,
+       21.1089
+      ],
+      [
+       -11.40288,
+       21.10763
+      ],
+      [
+       -11.40519,
+       21.10852
+      ],
+      [
+       -11.40684,
+       21.11159
+      ],
+      [
+       -11.40843,
+       21.11306
+      ],
+      [
+       -11.40998,
+       21.11411
+      ],
+      [
+       -11.41245,
+       21.11351
+      ],
+      [
+       -11.41403,
+       21.11466
+      ],
+      [
+       -11.41561,
+       21.11579
+      ],
+      [
+       -11.41745,
+       21.11674
+      ],
+      [
+       -11.41911,
+       21.11798
+      ],
+      [
+       -11.42146,
+       21.11897
+      ],
+      [
+       -11.42371,
+       21.12033
+      ],
+      [
+       -11.42456,
+       21.12241
+      ],
+      [
+       -11.42601,
+       21.12439
+      ],
+      [
+       -11.42652,
+       21.12667
+      ],
+      [
+       -11.42722,
+       21.12899
+      ],
+      [
+       -11.42655,
+       21.13131
+      ],
+      [
+       -11.42596,
+       21.13356
+      ],
+      [
+       -11.42494,
+       21.13567
+      ],
+      [
+       -11.42407,
+       21.13779
+      ],
+      [
+       -11.42237,
+       21.13949
+      ],
+      [
+       -11.42078,
+       21.14112
+      ],
+      [
+       -11.41886,
+       21.14242
+      ],
+      [
+       -11.41705,
+       21.14368
+      ],
+      [
+       -11.41121,
+       21.13968
+      ],
+      [
+       -11.41022,
+       21.14085
+      ],
+      [
+       -11.40927,
+       21.14239
+      ],
+      [
+       -11.40877,
+       21.1459
+      ],
+      [
+       -11.407,
+       21.14708
+      ],
+      [
+       -11.40502,
+       21.14797
+      ],
+      [
+       -11.40288,
+       21.14855
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Envelope of the dark grey \"Richat Guelb, Breccia\" colour in the map, 6 degree steps around its centroid. The map draws the breccia in patches; the envelope joins them and covers about 14 km2, wider than the 3 km diameter in the text.",
+    "error_m": 700
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "The centre of the depression is occupied by a breccia 3 km in diameter and up to 40 m thick.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "low",
+   "notes": "Treat this as the rough area of the mapped breccia, not its edge. Matton 2005: \"The center of the Richat structure is occupied by a breccia body ~3 km in diameter and at least 40 m thick.\""
+  },
+  {
+   "id": "kimberlite",
+   "side": "found",
+   "kind": "outline",
+   "label": "Kimberlite body under the north rim",
+   "who": "Ashton Mining (trench); Matton and Jébrak; Abdeina and others",
+   "year": 2014,
+   "what": "A kimberlite plug and sills in the north, no longer visible at the surface; the map outlines them as a buried body.",
+   "result": "Dated by the mining company to about 99 million years (method and error not published).",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -11.43532,
+       21.20728
+      ],
+      [
+       -11.43462,
+       21.20914
+      ],
+      [
+       -11.43335,
+       21.2107
+      ],
+      [
+       -11.43195,
+       21.212
+      ],
+      [
+       -11.43017,
+       21.21278
+      ],
+      [
+       -11.4286,
+       21.21347
+      ],
+      [
+       -11.42703,
+       21.21393
+      ],
+      [
+       -11.42547,
+       21.21416
+      ],
+      [
+       -11.42396,
+       21.21423
+      ],
+      [
+       -11.42247,
+       21.21422
+      ],
+      [
+       -11.42097,
+       21.21411
+      ],
+      [
+       -11.41944,
+       21.21384
+      ],
+      [
+       -11.41787,
+       21.21342
+      ],
+      [
+       -11.41636,
+       21.21269
+      ],
+      [
+       -11.41464,
+       21.2119
+      ],
+      [
+       -11.41326,
+       21.21062
+      ],
+      [
+       -11.41208,
+       21.20908
+      ],
+      [
+       -11.41137,
+       21.20726
+      ],
+      [
+       -11.41123,
+       21.20531
+      ],
+      [
+       -11.41187,
+       21.20345
+      ],
+      [
+       -11.41308,
+       21.20188
+      ],
+      [
+       -11.4144,
+       21.20053
+      ],
+      [
+       -11.41618,
+       21.19972
+      ],
+      [
+       -11.41774,
+       21.19899
+      ],
+      [
+       -11.41934,
+       21.19853
+      ],
+      [
+       -11.42093,
+       21.19832
+      ],
+      [
+       -11.42245,
+       21.19817
+      ],
+      [
+       -11.42398,
+       21.19813
+      ],
+      [
+       -11.42551,
+       21.19829
+      ],
+      [
+       -11.42711,
+       21.1985
+      ],
+      [
+       -11.42875,
+       21.19891
+      ],
+      [
+       -11.4303,
+       21.19967
+      ],
+      [
+       -11.43211,
+       21.20048
+      ],
+      [
+       -11.43351,
+       21.20181
+      ],
+      [
+       -11.43469,
+       21.20342
+      ],
+      [
+       -11.4354,
+       21.2053
+      ],
+      [
+       -11.43532,
+       21.20728
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Red dashed ellipse labelled \"Veria Taleb\" in the legend as \"Kimberlite sub-surface\", 10 degree steps.",
+    "error_m": 500
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "Kimberlitic rocks described from a trench made by Ashton Mining in the northern part of the Richat Structure",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "The 2024 paper adds that the presence at shallow depth \"has been recently confirmed by magnetic records\". The 99 Ma age is an unpublished company result quoted in Matton and Jébrak 2014 (read here through the thesis and the 2024 paper; the 2014 paper itself is paywalled and was not read)."
+  },
+  {
+   "id": "sebkha-sw",
+   "side": "found",
+   "kind": "outline",
+   "label": "Salt flat in the south-west crater",
+   "who": "Matton and Jébrak",
+   "year": 2014,
+   "what": "A flat of salt crust at the foot of the south-west volcanic crater, 2.5 km across in the thesis.",
+   "result": "The crater is the remains of a small volcanic explosion pit (maar), younger than the dome.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -11.4254,
+       21.11253
+      ],
+      [
+       -11.424,
+       21.11314
+      ],
+      [
+       -11.42238,
+       21.1135
+      ],
+      [
+       -11.4208,
+       21.1132
+      ],
+      [
+       -11.41938,
+       21.11245
+      ],
+      [
+       -11.41802,
+       21.11154
+      ],
+      [
+       -11.41712,
+       21.11023
+      ],
+      [
+       -11.41747,
+       21.10846
+      ],
+      [
+       -11.41726,
+       21.1071
+      ],
+      [
+       -11.41783,
+       21.10576
+      ],
+      [
+       -11.4181,
+       21.10456
+      ],
+      [
+       -11.41869,
+       21.10348
+      ],
+      [
+       -11.41887,
+       21.10225
+      ],
+      [
+       -11.41967,
+       21.10128
+      ],
+      [
+       -11.42077,
+       21.10061
+      ],
+      [
+       -11.42186,
+       21.10004
+      ],
+      [
+       -11.42294,
+       21.09946
+      ],
+      [
+       -11.42417,
+       21.09926
+      ],
+      [
+       -11.4254,
+       21.09884
+      ],
+      [
+       -11.42663,
+       21.09925
+      ],
+      [
+       -11.42744,
+       21.10051
+      ],
+      [
+       -11.42861,
+       21.10056
+      ],
+      [
+       -11.4316,
+       21.09886
+      ],
+      [
+       -11.43283,
+       21.09994
+      ],
+      [
+       -11.43355,
+       21.10137
+      ],
+      [
+       -11.4333,
+       21.10308
+      ],
+      [
+       -11.4332,
+       21.10448
+      ],
+      [
+       -11.43366,
+       21.10576
+      ],
+      [
+       -11.43341,
+       21.10708
+      ],
+      [
+       -11.43308,
+       21.10838
+      ],
+      [
+       -11.43215,
+       21.1094
+      ],
+      [
+       -11.43111,
+       21.11024
+      ],
+      [
+       -11.43008,
+       21.11098
+      ],
+      [
+       -11.42876,
+       21.11121
+      ],
+      [
+       -11.42688,
+       21.10956
+      ],
+      [
+       -11.42636,
+       21.11089
+      ],
+      [
+       -11.4254,
+       21.11253
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. White \"Sabkha\" fill south-west of the breccia, 10 degree steps. Its centroid is within 0.2 km of the flattest ground found independently in the 30 m elevation model.",
+    "error_m": 400
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://archipel.uqam.ca/1201/1/D1684.pdf",
+   "evidence": "a ~2.5 km diameter volcanic crater that crosscuts the inner basaltic ring dike, forming a circular depression filled by a sebkha.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "The salt flat on the map covers about 1.8 km2, smaller than the whole 2.5 km crater. Thesis text read; the crater circle in its figure 2 has no graticule."
+  },
+  {
+   "id": "carbonatite-dyke-1",
+   "side": "found",
+   "kind": "outline",
+   "label": "Carbonatite dyke 1 of 10 longest",
+   "who": "Matton and Jébrak; Abdeina and others",
+   "year": 2024,
+   "what": "A narrow sheet of carbonate-rich igneous rock cutting the ring strata, about 1.5 km long on the map.",
+   "result": "Fission tracks in apatite from carbonatite (one neck and two dykes, Poupeau and others 1996) gave 99 +/- 5 million years.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.4258,
+      21.05597
+     ],
+     [
+      -11.42938,
+      21.04277
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Red line on the map, end points of its main axis. The map draws dykes wider than they are (they are 0.3-1.5 m thick).",
+    "error_m": 400
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "Most of them occurred in the southern half of the structure.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Ten of the ~40 red lines on the map are shown. The paper counts more than 60 dykes; the map length is a drawn length, Matton says they are about 300 m long."
+  },
+  {
+   "id": "carbonatite-dyke-2",
+   "side": "found",
+   "kind": "outline",
+   "label": "Carbonatite dyke 2 of 10 longest",
+   "who": "Matton and Jébrak; Abdeina and others",
+   "year": 2024,
+   "what": "A narrow sheet of carbonate-rich igneous rock cutting the ring strata, about 1.5 km long on the map.",
+   "result": "Fission tracks in apatite from carbonatite (one neck and two dykes, Poupeau and others 1996) gave 99 +/- 5 million years.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.45791,
+      21.13941
+     ],
+     [
+      -11.47196,
+      21.13585
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Red line on the map, end points of its main axis. The map draws dykes wider than they are (they are 0.3-1.5 m thick).",
+    "error_m": 400
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "Most of them occurred in the southern half of the structure.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Ten of the ~40 red lines on the map are shown. The paper counts more than 60 dykes; the map length is a drawn length, Matton says they are about 300 m long."
+  },
+  {
+   "id": "carbonatite-dyke-3",
+   "side": "found",
+   "kind": "outline",
+   "label": "Carbonatite dyke 3 of 10 longest",
+   "who": "Matton and Jébrak; Abdeina and others",
+   "year": 2024,
+   "what": "A narrow sheet of carbonate-rich igneous rock cutting the ring strata, about 1.5 km long on the map.",
+   "result": "Fission tracks in apatite from carbonatite (one neck and two dykes, Poupeau and others 1996) gave 99 +/- 5 million years.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.44318,
+      21.05454
+     ],
+     [
+      -11.44838,
+      21.04201
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Red line on the map, end points of its main axis. The map draws dykes wider than they are (they are 0.3-1.5 m thick).",
+    "error_m": 400
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "Most of them occurred in the southern half of the structure.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Ten of the ~40 red lines on the map are shown. The paper counts more than 60 dykes; the map length is a drawn length, Matton says they are about 300 m long."
+  },
+  {
+   "id": "carbonatite-dyke-4",
+   "side": "found",
+   "kind": "outline",
+   "label": "Carbonatite dyke 4 of 10 longest",
+   "who": "Matton and Jébrak; Abdeina and others",
+   "year": 2024,
+   "what": "A narrow sheet of carbonate-rich igneous rock cutting the ring strata, about 1.4 km long on the map.",
+   "result": "Fission tracks in apatite from carbonatite (one neck and two dykes, Poupeau and others 1996) gave 99 +/- 5 million years.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.41749,
+      21.05271
+     ],
+     [
+      -11.42175,
+      21.04093
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Red line on the map, end points of its main axis. The map draws dykes wider than they are (they are 0.3-1.5 m thick).",
+    "error_m": 400
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "Most of them occurred in the southern half of the structure.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Ten of the ~40 red lines on the map are shown. The paper counts more than 60 dykes; the map length is a drawn length, Matton says they are about 300 m long."
+  },
+  {
+   "id": "carbonatite-dyke-5",
+   "side": "found",
+   "kind": "outline",
+   "label": "Carbonatite dyke 5 of 10 longest",
+   "who": "Matton and Jébrak; Abdeina and others",
+   "year": 2024,
+   "what": "A narrow sheet of carbonate-rich igneous rock cutting the ring strata, about 1.3 km long on the map.",
+   "result": "Fission tracks in apatite from carbonatite (one neck and two dykes, Poupeau and others 1996) gave 99 +/- 5 million years.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.45619,
+      21.16363
+     ],
+     [
+      -11.44936,
+      21.15339
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Red line on the map, end points of its main axis. The map draws dykes wider than they are (they are 0.3-1.5 m thick).",
+    "error_m": 400
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "Most of them occurred in the southern half of the structure.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Ten of the ~40 red lines on the map are shown. The paper counts more than 60 dykes; the map length is a drawn length, Matton says they are about 300 m long."
+  },
+  {
+   "id": "carbonatite-dyke-6",
+   "side": "found",
+   "kind": "outline",
+   "label": "Carbonatite dyke 6 of 10 longest",
+   "who": "Matton and Jébrak; Abdeina and others",
+   "year": 2024,
+   "what": "A narrow sheet of carbonate-rich igneous rock cutting the ring strata, about 1.1 km long on the map.",
+   "result": "Fission tracks in apatite from carbonatite (one neck and two dykes, Poupeau and others 1996) gave 99 +/- 5 million years.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.4245,
+      21.05186
+     ],
+     [
+      -11.42696,
+      21.04202
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Red line on the map, end points of its main axis. The map draws dykes wider than they are (they are 0.3-1.5 m thick).",
+    "error_m": 400
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "Most of them occurred in the southern half of the structure.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Ten of the ~40 red lines on the map are shown. The paper counts more than 60 dykes; the map length is a drawn length, Matton says they are about 300 m long."
+  },
+  {
+   "id": "carbonatite-dyke-7",
+   "side": "found",
+   "kind": "outline",
+   "label": "Carbonatite dyke 7 of 10 longest",
+   "who": "Matton and Jébrak; Abdeina and others",
+   "year": 2024,
+   "what": "A narrow sheet of carbonate-rich igneous rock cutting the ring strata, about 1 km long on the map.",
+   "result": "Fission tracks in apatite from carbonatite (one neck and two dykes, Poupeau and others 1996) gave 99 +/- 5 million years.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.42808,
+      21.05628
+     ],
+     [
+      -11.43218,
+      21.04837
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Red line on the map, end points of its main axis. The map draws dykes wider than they are (they are 0.3-1.5 m thick).",
+    "error_m": 400
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "Most of them occurred in the southern half of the structure.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Ten of the ~40 red lines on the map are shown. The paper counts more than 60 dykes; the map length is a drawn length, Matton says they are about 300 m long."
+  },
+  {
+   "id": "carbonatite-dyke-8",
+   "side": "found",
+   "kind": "outline",
+   "label": "Carbonatite dyke 8 of 10 longest",
+   "who": "Matton and Jébrak; Abdeina and others",
+   "year": 2024,
+   "what": "A narrow sheet of carbonate-rich igneous rock cutting the ring strata, about 1 km long on the map.",
+   "result": "Fission tracks in apatite from carbonatite (one neck and two dykes, Poupeau and others 1996) gave 99 +/- 5 million years.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.46133,
+      21.1698
+     ],
+     [
+      -11.46093,
+      21.16114
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Red line on the map, end points of its main axis. The map draws dykes wider than they are (they are 0.3-1.5 m thick).",
+    "error_m": 400
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "Most of them occurred in the southern half of the structure.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Ten of the ~40 red lines on the map are shown. The paper counts more than 60 dykes; the map length is a drawn length, Matton says they are about 300 m long."
+  },
+  {
+   "id": "carbonatite-dyke-9",
+   "side": "found",
+   "kind": "outline",
+   "label": "Carbonatite dyke 9 of 10 longest",
+   "who": "Matton and Jébrak; Abdeina and others",
+   "year": 2024,
+   "what": "A narrow sheet of carbonate-rich igneous rock cutting the ring strata, about 0.9 km long on the map.",
+   "result": "Fission tracks in apatite from carbonatite (one neck and two dykes, Poupeau and others 1996) gave 99 +/- 5 million years.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.3791,
+      21.1015
+     ],
+     [
+      -11.38207,
+      21.09363
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Red line on the map, end points of its main axis. The map draws dykes wider than they are (they are 0.3-1.5 m thick).",
+    "error_m": 400
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "Most of them occurred in the southern half of the structure.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Ten of the ~40 red lines on the map are shown. The paper counts more than 60 dykes; the map length is a drawn length, Matton says they are about 300 m long."
+  },
+  {
+   "id": "carbonatite-dyke-10",
+   "side": "found",
+   "kind": "outline",
+   "label": "Carbonatite dyke 10 of 10 longest",
+   "who": "Matton and Jébrak; Abdeina and others",
+   "year": 2024,
+   "what": "A narrow sheet of carbonate-rich igneous rock cutting the ring strata, about 0.9 km long on the map.",
+   "result": "Fission tracks in apatite from carbonatite (one neck and two dykes, Poupeau and others 1996) gave 99 +/- 5 million years.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -11.46078,
+      21.1577
+     ],
+     [
+      -11.46041,
+      21.14977
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Red line on the map, end points of its main axis. The map draws dykes wider than they are (they are 0.3-1.5 m thick).",
+    "error_m": 400
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "Most of them occurred in the southern half of the structure.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Ten of the ~40 red lines on the map are shown. The paper counts more than 60 dykes; the map length is a drawn length, Matton says they are about 300 m long."
+  },
+  {
+   "id": "sample-sr037",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Gabbro sample SR037",
+   "who": "Abdeina, Jourdan, Chazot, Bertrand and Le Gall",
+   "year": 2024,
+   "what": "Rock sample from the outer gabbro ring, cut for thin sections and analysis.",
+   "result": "Dated by argon; no accurate age; the data point to about 200 to 230 million years.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.47412,
+     21.13223
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Centre of the circle marking SR037 on the map.",
+    "error_m": 300
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "The sample numbers refer to the gabbros analysed in this study.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Only SR037 and SR025 were chosen for argon dating (lowest loss on ignition): \"None of the two samples yielded an accurate age\". No coordinate table is printed."
+  },
+  {
+   "id": "sample-sr035",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Gabbro sample SR035",
+   "who": "Abdeina, Jourdan, Chazot, Bertrand and Le Gall",
+   "year": 2024,
+   "what": "Rock sample from the outer gabbro ring, cut for thin sections and analysis.",
+   "result": "Analysed for chemistry; not dated.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.47603,
+     21.10113
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Centre of the circle marking SR035 on the map.",
+    "error_m": 300
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "The sample numbers refer to the gabbros analysed in this study.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Only SR037 and SR025 were chosen for argon dating (lowest loss on ignition): \"None of the two samples yielded an accurate age\". No coordinate table is printed."
+  },
+  {
+   "id": "sample-sr021",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Gabbro sample SR021",
+   "who": "Abdeina, Jourdan, Chazot, Bertrand and Le Gall",
+   "year": 2024,
+   "what": "Rock sample from the gabbro ring, cut for thin sections and analysis.",
+   "result": "Analysed for chemistry in the 2024 study; not dated.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.38392,
+     21.14307
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Centre of the circle marking SR021 on the map.",
+    "error_m": 300
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "The sample numbers refer to the gabbros analysed in this study.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Only SR037 and SR025 were chosen for argon dating (lowest loss on ignition): \"None of the two samples yielded an accurate age\". No coordinate table is printed."
+  },
+  {
+   "id": "sample-sr022",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Gabbro sample SR022",
+   "who": "Abdeina, Jourdan, Chazot, Bertrand and Le Gall",
+   "year": 2024,
+   "what": "Rock sample from the gabbro ring, cut for thin sections and analysis.",
+   "result": "Analysed for chemistry; not dated.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.38222,
+     21.14258
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Centre of the circle marking SR022 on the map.",
+    "error_m": 300
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "The sample numbers refer to the gabbros analysed in this study.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Only SR037 and SR025 were chosen for argon dating (lowest loss on ignition): \"None of the two samples yielded an accurate age\". No coordinate table is printed."
+  },
+  {
+   "id": "sample-sr023",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Gabbro sample SR023",
+   "who": "Abdeina, Jourdan, Chazot, Bertrand and Le Gall",
+   "year": 2024,
+   "what": "Rock sample from the gabbro ring, cut for thin sections and analysis.",
+   "result": "Analysed for chemistry; not dated.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.37743,
+     21.1323
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Centre of the circle marking SR023 on the map.",
+    "error_m": 300
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "The sample numbers refer to the gabbros analysed in this study.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Only SR037 and SR025 were chosen for argon dating (lowest loss on ignition): \"None of the two samples yielded an accurate age\". No coordinate table is printed."
+  },
+  {
+   "id": "sample-sr025",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Gabbro sample SR025",
+   "who": "Abdeina, Jourdan, Chazot, Bertrand and Le Gall",
+   "year": 2024,
+   "what": "Rock sample from the inner gabbro ring, cut for thin sections and analysis.",
+   "result": "Dated by argon; the age spectrum is too messy to read.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -11.37543,
+     21.11512
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+    "detail": "Figure 1 of Abdeina et al. 2024 (CC BY). Control points: its printed graticule lines, one every 0.04 degrees (2 min 24 s) both ways, found at x = 242, 548, 855, 1160, 1467, 1772 px and y = 164, 491, 819, 1147, 1475 px of the 1896 x 2268 px figure, taken as lon -11.48 to -11.28 W and lat 21.20 to 21.04 N. The printed 2.5 km scale bar (183 px) gives the same scale as the grid (73.8 px/km). The corner labels are not on grid lines, so the grid lines were numbered by hand; the numbering was checked against the 30 m elevation model (south-west salt flat within 0.2 km) and ring traces. Centre of the circle marking SR025 on the map.",
+    "error_m": 300
+   },
+   "search_id": "matton-richat-geology-2005",
+   "source": "https://doi.org/10.1016/j.lithos.2024.107698",
+   "evidence": "The sample numbers refer to the gabbros analysed in this study.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Only SR037 and SR025 were chosen for argon dating (lowest loss on ignition): \"None of the two samples yielded an accurate age\". No coordinate table is printed."
+  }
+ ],
+ "measurements": [
+  {
+   "id": "structure-diameter",
+   "what": "Diameter of the whole domed structure",
+   "value": 40,
+   "unit": "km (at least)",
+   "plato_claim": "ring-widths",
+   "plato_value": "Rings and central island together 27 stades across (Critias 115e-116a: 5 + 2 x (1+2+2+3+3)); about 5.0 km at 185 m a stade",
+   "source": "https://archipel.uqam.ca/272/1/Matton_etal05.pdf",
+   "evidence": "a large dome at least 40 km in diameter",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "outer-rim-radius",
+   "what": "Distance from the centre to the outer rim ridge on its east and south arc",
+   "value": 22.5,
+   "unit": "km (range 21.5 to 24.2)",
+   "plato_claim": "outer-wall-50-stades",
+   "plato_value": "Outer wall 50 stades beyond the largest ring, 127 stades across in all (our sum: 27 + 2 x 50); about 23.5 km at 185 m",
+   "source": "https://registry.opendata.aws/copernicus-dem/",
+   "evidence": "Copernicus GLO-30 (30 m), traced by this lane: outer rim ridge 21,540 to 24,180 m from the fitted centre over azimuth 45 to 230 degrees",
+   "kind": "dataset"
+  },
+  {
+   "id": "ring3-diameter",
+   "what": "Diameter of the third ridge ring (traced)",
+   "value": 19.9,
+   "unit": "km",
+   "plato_claim": "ring-widths",
+   "plato_value": "27 stades across, about 5.0 km (4.3 to 5.6 km for stades of 157.5 to 209 m)",
+   "source": "https://registry.opendata.aws/copernicus-dem/",
+   "evidence": "Copernicus GLO-30 (30 m), traced by this lane: mean radius 9,928 m (8,790 to 11,400 m)",
+   "kind": "dataset"
+  },
+  {
+   "id": "ring2-diameter",
+   "what": "Diameter of the second ridge ring (traced)",
+   "value": 13.2,
+   "unit": "km",
+   "plato_claim": "ring-widths",
+   "plato_value": "27 stades across, about 5.0 km",
+   "source": "https://registry.opendata.aws/copernicus-dem/",
+   "evidence": "Copernicus GLO-30 (30 m), traced by this lane: mean radius 6,591 m (5,910 to 7,140 m)",
+   "kind": "dataset"
+  },
+  {
+   "id": "ring1-diameter",
+   "what": "Diameter of the innermost ridge ring (traced)",
+   "value": 6,
+   "unit": "km",
+   "plato_claim": "central-island-diameter",
+   "plato_value": "The central island is 5 stades across (Critias 116a), about 0.9 km at 185 m",
+   "source": "https://registry.opendata.aws/copernicus-dem/",
+   "evidence": "Copernicus GLO-30 (30 m), traced by this lane: mean radius 2,976 m (2,190 to 3,720 m)",
+   "kind": "dataset"
+  },
+  {
+   "id": "ring-spacing",
+   "what": "Distance between neighbouring ridge crests (ring 1 to 2, then 2 to 3)",
+   "value": 3.5,
+   "unit": "km (3.6, then 3.3)",
+   "plato_claim": "ring-widths",
+   "plato_value": "Rings are 1 to 3 stades wide, at most about 0.56 km",
+   "source": "https://registry.opendata.aws/copernicus-dem/",
+   "evidence": "Copernicus GLO-30 (30 m), traced by this lane: mean radii 2,976 m, 6,591 m, 9,928 m",
+   "kind": "dataset"
+  },
+  {
+   "id": "breccia-diameter",
+   "what": "Diameter of the central breccia",
+   "value": 3,
+   "unit": "km",
+   "plato_claim": "central-island-diameter",
+   "plato_value": "The island with the palace is 5 stades across, about 0.9 km",
+   "source": "https://archipel.uqam.ca/272/1/Matton_etal05.pdf",
+   "evidence": "a breccia body ~3 km in diameter and at least 40 m thick",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "gabbro-ring-radius",
+   "what": "Distance of the two gabbro rings from the centre",
+   "value": 7.5,
+   "unit": "km outer (7-8) and 3 km inner",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://archimer.ifremer.fr/doc/00937/104938/117238.pdf",
+   "evidence": "The ca. 70 m-wide outer ring (Tin Jouker) is located 7–8 km from the centre, while the 30 m-wide inner one (Guelb Richat) is only 3 km from the centre.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "ellipticity",
+   "what": "Shape: shorter axis divided by longer axis, for the central depression and for the whole structure",
+   "value": 0.875,
+   "unit": "ratio (0.87 to 0.88), long axis NE-SW",
+   "plato_claim": "ringed-city",
+   "plato_value": "Each ring has its circumference \"equidistant every way from the centre\" (Critias 113d), a true circle",
+   "source": "https://archipel.uqam.ca/1201/1/D1684.pdf",
+   "evidence": "give values ranging from 0.87-0.88 for both the central depression",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "ridge-dip",
+   "what": "Dip of the layers away from the centre (the rings are rock ridges, not water channels)",
+   "value": 15,
+   "unit": "degrees (10 to 20)",
+   "plato_claim": "ringed-city",
+   "plato_value": "Three rings of water and two of land (Critias 113d)",
+   "source": "https://archipel.uqam.ca/272/1/Matton_etal05.pdf",
+   "evidence": "Erosion has created circular cuestas represented by three nested rings dipping outward from the structure.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "height-centre",
+   "what": "Height of the structure centre above today's sea",
+   "value": 419,
+   "unit": "m",
+   "plato_claim": "canal-to-sea",
+   "plato_value": "A canal 50 stades long runs from the sea to the outer ring, so the rings sit at sea level",
+   "source": "https://registry.opendata.aws/copernicus-dem/",
+   "evidence": "Copernicus GLO-30 (30 m) smoothed elevation at the fitted centre: 419 m (raw 419 m); Wikidata Q744591 gives 423 metre",
+   "kind": "dataset"
+  },
+  {
+   "id": "ring-crest-height",
+   "what": "Height of the ring ridge crests above today's sea",
+   "value": 445,
+   "unit": "m (mean 421, 465, 445 for rings 1 to 3; range 387 to 486)",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://registry.opendata.aws/copernicus-dem/",
+   "evidence": "Copernicus GLO-30 (30 m), traced crest lines: ring 1 mean 421 m, ring 2 465 m, ring 3 445 m",
+   "kind": "dataset"
+  },
+  {
+   "id": "coast-today",
+   "what": "Distance from the centre to the nearest Atlantic sea cell today",
+   "value": 509,
+   "unit": "km (559 km due west)",
+   "plato_claim": "canal-to-sea",
+   "plato_value": "Sea to outermost ring 50 stades, about 9 km at 185 m",
+   "source": "https://www.gmrt.org/services/GridServer?minlongitude=-19&maxlongitude=-11.3&minlatitude=19.5&maxlatitude=23.0&format=esriascii&resolution=low&layer=topo",
+   "evidence": "GMRT GridServer, topo layer, about 1 km cells, ocean-connected cells at or below 0 m: nearest to 21.1185 N, 11.3975 W is at 20.236 N, 16.194 W; due west 16.783 W",
+   "kind": "dataset"
+  },
+  {
+   "id": "coast-low-sea",
+   "what": "Distance to the Atlantic when the sea stood about 125 m lower (last ice age low)",
+   "value": 605,
+   "unit": "km (636 km due west)",
+   "plato_claim": "canal-to-sea",
+   "plato_value": "Sea to outermost ring 50 stades, about 9 km at 185 m",
+   "source": "https://www.gmrt.org/services/GridServer?minlongitude=-19&maxlongitude=-11.3&minlatitude=19.5&maxlatitude=23.0&format=esriascii&resolution=low&layer=topo",
+   "evidence": "GMRT GridServer, topo layer: nearest ocean cell at or below -125 m is at 19.647 N, 16.985 W; due west 17.521 W. Sea level then: \"about 125 meters (410 ft) lower than today\" (USGS, quoted by Wikipedia, Last Glacial Maximum)",
+   "kind": "dataset"
+  },
+  {
+   "id": "age-carbonatite",
+   "what": "Age of the carbonatite dykes (fission tracks in apatite)",
+   "value": 99,
+   "unit": "million years, +/- 5",
+   "plato_claim": "nine-thousand-years",
+   "plato_value": "9,000 years before the priest spoke to Solon (Timaeus 23e), about 9600 BCE",
+   "source": "https://archipel.uqam.ca/1201/1/D1684.pdf",
+   "evidence": "Fission-track dating of apatite in the carbonatite yielded a Mid-Cretaceous age (99 ± 5 Ma; Poupeau et al., 1996).",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "age-breccia",
+   "what": "Age of the hot-water sediment in the central breccia (argon, K-feldspar)",
+   "value": 98.2,
+   "unit": "million years, +/- 2.6",
+   "plato_claim": "nine-thousand-years",
+   "plato_value": "9,000 years",
+   "source": "https://archipel.uqam.ca/1201/1/D1684.pdf",
+   "evidence": "Breccia; 98.2 ± 2.6 Ma (Matton et al, 2005);",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "age-gabbro",
+   "what": "Age of the two gabbro rings (modelled, no robust age)",
+   "value": 215,
+   "unit": "million years (230 to 200)",
+   "plato_claim": "nine-thousand-years",
+   "plato_value": "9,000 years",
+   "source": "https://archimer.ifremer.fr/doc/00937/104938/117238.pdf",
+   "evidence": "Although no robust age was obtained, numerical modelling of our results suggests that the gabbros were intruded between 230 and 200 Ma.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "corsetti-127-stades",
+   "what": "The span the 2018 video gave for Atlantis: 127 stades converted to km",
+   "value": 23.5,
+   "unit": "km (20.0 to 26.5 for stades of 157.5 to 209 m)",
+   "plato_claim": "outer-wall-50-stades",
+   "plato_value": "27 + 2 x 50 = 127 stades is the whole city inside its outer wall (our sum from Critias 115e-117e); the rings themselves are 27",
+   "source": "https://www.ancient-origins.net/node/16927",
+   "evidence": "Atlantis was supposedly 127 stadia, or 23 kilometers (14 miles) across, which matches a portion of the Richat.",
+   "kind": "press"
+  }
+ ],
+ "story": [
+  {
+   "step": 1,
+   "side": "claimed",
+   "line": "From 2008, writers and a film said the Richat's rings are Plato's rings of land and water, with the city at the centre.",
+   "show": [
+    "claimed-city-centre"
+   ],
+   "search_id": "corsetti-richat-video-2018"
+  },
+  {
+   "step": 2,
+   "side": "claimed",
+   "line": "A 2018 video added numbers: Atlantis 127 stades or about 23.5 km across, mountains to the north, rivers and a flood from the sea.",
+   "show": [
+    "claimed-city-centre",
+    "ring-3"
+   ],
+   "search_id": "corsetti-richat-video-2018"
+  },
+  {
+   "step": 3,
+   "side": "checked",
+   "line": "Geologists had first read the circle as a meteorite crater; fieldwork in the 1960s found no shock rock and the idea was dropped.",
+   "show": [],
+   "search_id": "matton-richat-geology-2005"
+  },
+  {
+   "step": 4,
+   "side": "found",
+   "line": "The rings are rock ridges, 6, 13 and 20 km across, in a dome over 40 km wide that stands about 420 m above the sea.",
+   "show": [
+    "ring-1",
+    "ring-2",
+    "ring-3",
+    "ring-outer-rim"
+   ],
+   "search_id": "matton-richat-geology-2005"
+  },
+  {
+   "step": 5,
+   "side": "found",
+   "line": "Matton and colleagues mapped a 3 km breccia core and dated it, and the carbonate dykes, to about 99 million years ago.",
+   "show": [
+    "breccia",
+    "kimberlite",
+    "sebkha-sw",
+    "carbonatite-dyke-1",
+    "carbonatite-dyke-2",
+    "carbonatite-dyke-3"
+   ],
+   "search_id": "matton-richat-geology-2005"
+  },
+  {
+   "step": 6,
+   "side": "checked",
+   "line": "In 2024 six gabbro samples were analysed and two dated by argon: no sharp age, but about 230 to 200 million years, not 99.",
+   "show": [
+    "gabbro-outer",
+    "gabbro-inner-west",
+    "gabbro-inner-south-east",
+    "sample-sr037",
+    "sample-sr025",
+    "sample-sr021",
+    "sample-sr022",
+    "sample-sr023",
+    "sample-sr035"
+   ],
+   "search_id": "matton-richat-geology-2005"
+  },
+  {
+   "step": 7,
+   "side": "found",
+   "line": "Stone tool makers visited long ago: tools lie along the wadis of the outer ring, but no house, wall or canal has been reported.",
+   "show": [
+    "oued-akerdil-mouth",
+    "oued-bamoure-mouth",
+    "hassi-akerdil",
+    "hassi-bamoure"
+   ],
+   "search_id": null
+  }
+ ],
+ "not_located": [
+  {
+   "what": "The rings and city as the proposers drew them (Corsetti 2018 video; Alexander and Rosen film; Sarantitis)",
+   "why": "The video and film overlay Plato's rings on satellite images but publish no coordinates, centre or scale. Only the diameter number (127 stades, 23.5 km) is stated, so no outline can be drawn from them. The scene can draw Plato's rings at true scale from plato.json around the structure centre and say so.",
+   "source": "https://www.ancient-origins.net/node/16927"
+  },
+  {
+   "what": "Acheulean and pre-Acheulean tool sites (Sao, Giresse and others 2008; Monod)",
+   "why": "Site positions are in the 2008 paper (L'Anthropologie 112), which is paywalled and was not read. Wikipedia says only that the main sites lie \"along the northwest of the outer ring\" between wadis Akerdil and Bamouéré. No coordinates found in any open source.",
+   "source": "https://doi.org/10.1016/j.anthro.2008.01.001"
+  },
+  {
+   "what": "Sample point of the 98.2 Ma K-feldspar sediment in the breccia (Matton et al. 2005)",
+   "why": "The paper gives no coordinates; it only says the sediment fills cavities in the centre of the breccia body.",
+   "source": "https://doi.org/10.1130/g21542ar.1"
+  },
+  {
+   "what": "Dietz, Fudali and Cassidy 1969 sample and thin-section sites (no-impact check)",
+   "why": "The paper (GSA Bulletin 80:1367) was not open; no abstract or coordinates were found.",
+   "source": "https://doi.org/10.1130/0016-7606(1969)80[1367:RASDMN]2.0.CO;2"
+  },
+  {
+   "what": "Rivers and valley the 2018 video says flow from northern mountains, and a flood channel",
+   "why": "No map or coordinates published; the video itself was not fetched. Critics describe a sand drift to the south-west, not a river.",
+   "source": "https://theness.com/neurologicablog/no-atlantis-has-not-been-discovered-in-north-africa/"
+  },
+  {
+   "what": "Adrar plateau edge",
+   "why": "The escarpment north and west of the structure shows in the elevation model but our ridge filter cannot separate it from the outer ring, so no outline was kept.",
+   "source": "https://registry.opendata.aws/copernicus-dem/"
+  },
+  {
+   "what": "Semsiyat Dome, a smaller circular structure about 50 km west-south-west",
+   "why": "Named by Atlantipedia and Dietz 1969; not part of the Richat claims, no position fetched.",
+   "source": "https://atlantipedia.ie/samples/richat-structure-the-n/"
+  }
+ ],
+ "handoffs": [
+  {
+   "lane": "scene builder",
+   "what": "Draw Plato's rings (5 stades island; water 1, 2, 3; land 2, 3; 27 stades across; wall at 127) at true scale on this centre, with a switch for stade length 157.5 to 209 m. Our measured ridge rings are 6, 13 and 20 km across.",
+   "url": "https://github.com/AGZ-TX/abstracts.co"
+  },
+  {
+   "lane": "sources/layers",
+   "what": "Use copernicus-dem-aws hillshade and eox-s2cloudless-2016 for the ring ridges; macrostrat-geology for rock units.",
+   "url": "https://registry.opendata.aws/copernicus-dem/"
+  },
+  {
+   "lane": "searches",
+   "what": "Add the 2024 Lithos paper (Abdeina et al.) to searches.json: first argon age on the Richat gabbros, 230 to 200 Ma modelled, sills not ring dykes. It is CC BY and open.",
+   "url": "https://doi.org/10.1016/j.lithos.2024.107698"
+  },
+  {
+   "lane": "library",
+   "what": "The 2024 Lithos paper is open (CC BY): it could be stored as text. So could the Matton 2008 thesis (UQAM open copy, 172 pages, French and English).",
+   "url": "https://archipel.uqam.ca/1201/1/D1684.pdf"
+  }
+ ],
+ "not_verified": [
+  "The 2018 video itself was not watched; every claim is as reported by Colavito (14 Sept 2018), Ancient Origins and Novella (19 Nov 2018). Hypotheses.json dates the video to Nov 2018; Colavito's post shows it was circulating by 14 Sept 2018.",
+  "The \"flood from the east\" lead: no source says this. Novella says the video has the Atlantic flooding the Sahara and an opening to the south-west.",
+  "Matton and Jébrak 2014 (J. African Earth Sci. 97:109-124, doi:10.1016/j.jafrearsci.2014.04.006) is paywalled and was not read. Its content is known here only through Matton's open 2008 thesis (which holds the same paper as a chapter in draft), the 2024 Lithos paper and Wikipedia.",
+  "Dietz et al. 1969: no text or abstract fetched. That it argued \"not astroblemes\" and that coesite was barite is from Wikipedia and Matton et al. 2005 (which cite it), not from the paper.",
+  "Sao, Giresse et al. 2008: Crossref and OpenAlex have no abstract. The statement about sites along the wadis of the outer ring is from Wikipedia, which cites it.",
+  "Giuliani's book (2008, self-published) and Alexander and Rosen's 2006 idea and late-2008 visit are from Atlantipedia (a sceptical reference site) and the film's own site; their text was not seen.",
+  "Seven features on the 2024 map (Fig. 1) were located by the printed graticule, but the corner labels do not sit on grid lines, so grid lines were numbered by hand. Check: the independent 30 m elevation model puts the flattest ground in the south-west crater within 0.2 km of the map's salt flat. Against that, the map's well \"Hassi Thiba\" plots 2.1 km east of the OSM/GNS position (21.0041 N, 11.4309 W); one of the two is off.",
+  "Elevation: the Copernicus model is a surface model; on bare rock this is the ground. OSM tags the peak at 485 m; the model gives up to about 515 m on ring crests and 630 m in the 50 km box.",
+  "Wikipedia says the breccia covers \"an area that is at least 30 kilometres in diameter\" in one sentence, against 3 km in the sources read; treated as a typo."
+ ]
+}

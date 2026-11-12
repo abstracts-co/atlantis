@@ -1,0 +1,34 @@
+{
+  "id": "thucydides-3-89-crawley",
+  "title": "Thucydides, History of the Peloponnesian War 3.89 (English, Richard Crawley, 1874)",
+  "source": {
+    "url": "https://www.gutenberg.org/ebooks/7142",
+    "publisher": "Project Gutenberg (ebook #7142)",
+    "date": "1874",
+    "pages": 1,
+    "file": "work/pg/pg7142.txt",
+    "sha256": "b7df28eabde17b252e38e808c5d9c287ac69d9503e2958ba74bd316922963b14",
+    "license": "Public domain (Crawley died 1893; Project Gutenberg text)",
+    "license_url": "https://www.gutenberg.org/policy/permission.html"
+  },
+  "language": "en",
+  "kind": "ancient-text",
+  "summary": "Thucydides on the earthquakes and tidal waves of 426 BCE, including the wave that struck Atalanta off the Locrian coast. A first-hand ancient account of a quake-driven sea wave on the Greek coast, with his own explanation of the cause.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "Hand-built tree. The passage was cut from the source file by its own section anchors or line range; one leaf per passage, titled with the citation. No language model was used."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Thucydides 3.89: earthquakes, and the sea wave at Orobiae and Atalanta (426 BCE)",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "The Peloponnesian invasion of Attica turns back because of earthquakes. At Orobiae in Euboea the sea retreats and returns in a huge wave, flooding part of the town. A similar flood hits the island of Atalanta. Thucydides concludes the cause is the earthquake driving back the sea.",
+      "nodes": []
+    }
+  ]
+}

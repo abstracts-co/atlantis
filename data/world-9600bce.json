@@ -1,0 +1,1660 @@
+{
+  "lane": "world-9600bce",
+  "checked": "2026-11-11",
+  "sea_level": {
+    "global": [
+      {
+        "source": "Spratt and Lisiecki 2016, \"A Late Pleistocene sea level stack\", Climate of the Past 12 (stack of 7 records, NOAA archive)",
+        "kind": "peer-reviewed",
+        "level_m": -45,
+        "uncertainty_m": 12,
+        "at_years_bp": 11600,
+        "stated_or_derived": "derived",
+        "evidence": "Table rows (age in cal ka BP, short stack, 1 sigma, 95% low, 95% high): \"11  -35.85  11.93  -63.99  -17.59\" and \"12  -51.05  12.3  -76.8  -28.6\". The long stack gives -36.19 and -49.72. Straight-line interpolation to 11.6 ka gives -44.97 m (short) and -44.31 m (long). The file has 1,000-year steps only. Caveat: the stack is not pinned to zero today; its own 0 ka row reads +8.49 m and its 5 ka row reads 0, so read against \"today\" the 11.6 ka value could be nearer -53 m.",
+        "url": "https://www1.ncdc.noaa.gov/pub/data/paleo/contributions_by_author/spratt2016/spratt2016.txt"
+      },
+      {
+        "source": "Lambeck, Rouby, Purcell, Sun and Sambridge 2014, PNAS 111:15296 (the paper behind the globe's current presets)",
+        "kind": "peer-reviewed",
+        "level_m": null,
+        "uncertainty_m": null,
+        "at_years_bp": 11600,
+        "stated_or_derived": "derived",
+        "evidence": "The text states no level for 11.6 ka. It states rates: \"A period from ~11.4-8.2 ka BP of near-uniform global rise. The average rate of rise during this 3.3 ka interval was ~15 m/ka\", and \"no evidence for a global MWP-1B event at ~11.3 ka BP\". The level table (SI Appendix Table S3) is behind a bot block (PMC, PNAS and Europe PMC all returned 403), so the globe's -60 m at 11.4 ka could not be reproduced from the text I read. It is plausible: 3.3 ka x 15 m/ka is about 50 m of rise to the 8.2 ka level.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217469/"
+      },
+      {
+        "source": "Abdul, Mortlock, Wright and Fairbanks 2016, Paleoceanography 31:330 (Barbados Acropora palmata, U-Th dated). Local record, uplift corrected at 0.34 mm/yr",
+        "kind": "peer-reviewed",
+        "level_m": -58,
+        "uncertainty_m": null,
+        "at_years_bp": 11650,
+        "stated_or_derived": "read from table",
+        "evidence": "\"Had the rate of sea level rise at Barbados increased uniformly at the rates observed from 13.9 to 13 kyr B.P., sea level would be predicted to have been higher by about 8 m by the end of the Younger Dryas (i.e., 50 rather than 58 mbsl).\" The Younger Dryas ends at 11.65 kyr B.P. in the same paper. Then MWP-1B at Barbados: \"beginning by 11.45 kyr B.P. and ending at 11.1 kyr B.P. during which time sea level rose 14 +/- 2 m\". This is a local value at a far-field site, not a global mean. No uncertainty is given for the -58.",
+        "url": "https://eps.rutgers.edu/images/documents/research/Abdul_et_al-2016-Paleoceanography.pdf"
+      },
+      {
+        "source": "Liu and Milliman 2004 as summarised by Wikipedia, \"Meltwater pulse 1B\" (second source only; the original paper was not fetched)",
+        "kind": "press",
+        "level_m": -58,
+        "uncertainty_m": null,
+        "at_years_bp": 11500,
+        "stated_or_derived": "stated",
+        "evidence": "\"They concluded that meltwater pulse 1B occurred between 11,500 and 11,200 years ago, a 300-year interval, during which sea level rose 13 meters (43 ft) from -58 meters (-190 ft) to -45 meters (-148 ft)\". The same article lists other work that cut the pulse to 7.5 m or under 6 m.",
+        "url": "https://en.wikipedia.org/wiki/Meltwater_pulse_1B"
+      },
+      {
+        "source": "Lambeck 1996, Antiquity 70:588, \"Sea-level change and shore-line evolution in Aegean Greece since Upper Palaeolithic time\" (older model; ages in radiocarbon years, so 10,000 14C BP is about 11,500 cal BP)",
+        "kind": "peer-reviewed",
+        "level_m": -43,
+        "uncertainty_m": null,
+        "at_years_bp": 11500,
+        "stated_or_derived": "stated",
+        "evidence": "\"At 10,000 years ago the predicted sea-levels over the region vary from -43 to -55 m, compared to a eustatic level of about -43 m.\" Also \"All ages are in conventional radiocarbon years unless otherwise specified.\" Eustatic here means the global ice-volume term of that 1996 model.",
+        "url": "https://resolve.cambridge.org/core/services/aop-cambridge-core/content/view/CBB0E870C8C9D9A0224F7CACF5CCF7E3/S0003598X00083733a.pdf/sea-level-change-and-shore-line-evolution-in-aegean-greece-since-upper-palaeolithic-time.pdf"
+      },
+      {
+        "source": "Bard, Hamelin and Delanghe-Sabatier 2010, Science 327:1235 (Tahiti boreholes, U-Th dated)",
+        "kind": "peer-reviewed",
+        "level_m": null,
+        "uncertainty_m": null,
+        "at_years_bp": 11600,
+        "stated_or_derived": "stated",
+        "evidence": "No level at 11.6 ka was read (it is in the figures). Rates are stated: \"7.5 +/- 1.1 mm/year during the YD, compared with 11.7 +/- 0.4 mm/year after and 12.1 +/- 0.6 mm/year before\". And \"None of these reconstructions shows an abrupt 15-m step around 11,300 cal yr B.P., in contrast to the Barbados record.\"",
+        "url": "https://www.college-de-france.fr/media/edouard-bard/UPL6798839879760186634_Bard10Science_SI.pdf"
+      }
+    ],
+    "local": [
+      {
+        "place": "Aegean Sea, Cyclades",
+        "lat": 37.4,
+        "lon": 25.2,
+        "level_m": -49,
+        "at_years_bp": 11500,
+        "difference_from_global_m": -6,
+        "range_m": [
+          -55,
+          -43
+        ],
+        "why": "Lambeck 1996 added hydro-isostatic and glacio-isostatic terms to the global ice-volume level. The result varied across the region from the same as global (-43) to 12 m lower (-55). The -49 here is the middle of that range, not a stated value. Ages are radiocarbon years.",
+        "source": "Lambeck 1996, Antiquity 70:588 (peer-reviewed)",
+        "url": "https://resolve.cambridge.org/core/services/aop-cambridge-core/content/view/CBB0E870C8C9D9A0224F7CACF5CCF7E3/S0003598X00083733a.pdf/sea-level-change-and-shore-line-evolution-in-aegean-greece-since-upper-palaeolithic-time.pdf",
+        "quote": "\"At 10,000 years ago the predicted sea-levels over the region vary from -43 to -55 m\". Also: \"By 11,000 b.p., the time of the oldest obsidian finds recorded so far, the Cycladean Island had broken up into northern and southern parts\"."
+      },
+      {
+        "place": "Black Sea (a lake or brackish basin, not connected to the ocean at this date on most accounts)",
+        "lat": 43.5,
+        "lon": 34,
+        "level_m": -30,
+        "at_years_bp": 11600,
+        "difference_from_global_m": null,
+        "range_m": [
+          -105,
+          -30
+        ],
+        "why": "A basin behind a sill does not follow the ocean. Ryan and colleagues read a rise of the lake from -105 m to about -30 m during the Younger Dryas (10-11 ka in radiocarbon years, about 11.5-12.9 cal ka), spilling over the Bosphorus sill into the Marmara. Soulet and colleagues date the final reconnection to the ocean at about 9,000 cal BP. Others (Aksu, Hiscott and co-workers) argue for slow, staged reconnection. The -30 m is the top of Ryan's flooding surface, not a measured level at 11.6 ka.",
+        "source": "Ryan, Major, Lericolais and Goldstein 2003, Annual Review of Earth and Planetary Sciences 31:525 (review, peer-reviewed); Soulet and others 2011, Quaternary Science Reviews 30:1019",
+        "url": "https://www.ancientportsantiques.com/wp-content/uploads/Documents/ETUDESarchivees/BlackSeaInfill/BlackSeaLevel-Ryan2003.pdf",
+        "quote": "\"Two transgressions occurred. The first produced a flooding surface during the Younger Dryas (10-11 kyBP) that extended from -105 to circa -30 m. The second produced a flooding surface at 8.4 ky BP, extending from -95 to circa -30 m.\""
+      },
+      {
+        "place": "Barbados (far-field coral control site, not a proposed place)",
+        "lat": 13.17,
+        "lon": -59.5525,
+        "level_m": -58,
+        "at_years_bp": 11650,
+        "difference_from_global_m": -13,
+        "range_m": null,
+        "why": "Compared with the Spratt stack value of -45 m. Barbados sits on the outer edge of the bulge of sea surface raised around the North American ice sheet, so the rise there is smaller than the global mean in pulses (the Lambeck model gives about 14 m for MWP-1A at Barbados against about 20 m at Tahiti). Uplift of the island (0.34 mm/yr) is corrected in the paper; Bard and co-workers dispute the correction for the two sides of a fault.",
+        "source": "Abdul and others 2016, Paleoceanography; Lambeck and others 2014",
+        "url": "https://eps.rutgers.edu/images/documents/research/Abdul_et_al-2016-Paleoceanography.pdf",
+        "quote": "\"50 rather than 58 mbsl\" at the end of the Younger Dryas."
+      },
+      {
+        "place": "Strait of Gibraltar, Spartel Bank",
+        "lat": 35.917,
+        "lon": -5.967,
+        "level_m": null,
+        "at_years_bp": 11600,
+        "difference_from_global_m": null,
+        "range_m": null,
+        "why": "No local relative sea-level value for 11.6 ka was found in what could be fetched (the Cadiz papers returned 403). Far from the ice sheets, so likely within a few metres of the global value, but that is our expectation, not a source. What matters: the bank's top is 56 m below today's sea. At -45 m the sea would stand 11 m above it; at -60 m the top would be 4 m dry. The published global range straddles the bank top, so whether Spartel was an island at this date depends on which curve is used.",
+        "source": "Wikipedia \"Spartel\" (top of bank 56 m below the surface; second source only)",
+        "url": "https://en.wikipedia.org/wiki/Spartel",
+        "quote": "\"Its highest point is currently 56 metres (184 ft) below the surface\""
+      },
+      {
+        "place": "Gulf of Cadiz and Guadalquivir mouth (Donana)",
+        "lat": 36.9,
+        "lon": -6.4,
+        "level_m": null,
+        "at_years_bp": null,
+        "difference_from_global_m": null,
+        "range_m": null,
+        "why": "Not found. The Gracia (Universidad de Cadiz) and Goy 1996 papers returned 403 or were not opened. A search summary says relative sea-level rise slowed in southern Iberia at about 10,000 14C years BP, not read in the source.",
+        "source": "none fetched",
+        "url": null,
+        "quote": null
+      },
+      {
+        "place": "North Sea (Doggerland)",
+        "lat": 54.9,
+        "lon": 2.5,
+        "level_m": null,
+        "at_years_bp": 11000,
+        "difference_from_global_m": null,
+        "range_m": null,
+        "why": "Not found as a number. Here the land was pressed down under the Scandinavian and British ice and was rising back (forebulge collapse), so the local record differs a lot from the global one. Sturt, Garrow and Bradley (2013) give palaeogeographic maps every 500 years from 11,000 cal BP to now, built from a GIA model, but I did not read a level from them.",
+        "source": "Sturt, Garrow and Bradley 2013, Journal of Archaeological Science 40:3963 (peer-reviewed)",
+        "url": "https://seascapes.webspace.durham.ac.uk/wp-content/uploads/S-H5-Sturt-et-al.-2013.pdf",
+        "quote": "\"The Dover Straits are breached and Britain separates from the continent at some point between 8000 and 7500 BP.\""
+      },
+      {
+        "place": "Sunda Shelf",
+        "lat": 5,
+        "lon": 108,
+        "level_m": null,
+        "at_years_bp": null,
+        "difference_from_global_m": null,
+        "range_m": null,
+        "why": "Not found for 11.6 ka. Hanebuth, Stattegger and Grootes (2000) is a tectonically stable shelf record that \"generally confirms\" coral curves and shows MWP-1A at \"as much as 16 meters within 300 years (14.6 to 14.3 thousand years ago)\"; I read only the abstract.",
+        "source": "Hanebuth and others 2000, Science 288:1033 (abstract via Europe PMC)",
+        "url": "https://doi.org/10.1126/science.288.5468.1033",
+        "quote": "\"The rise of sea level during meltwater pulse 1A was as much as 16 meters within 300 years (14.6 to 14.3 thousand years ago).\""
+      },
+      {
+        "place": "Bahamas banks",
+        "lat": 24.5,
+        "lon": -77.5,
+        "level_m": null,
+        "at_years_bp": null,
+        "difference_from_global_m": null,
+        "range_m": null,
+        "why": "Not found. A search turned up a Cay Sal Bank paper (Purkis and others 2014) that cites Toscano and Macintyre (2003) for the Holocene curve; neither was read.",
+        "source": "none fetched",
+        "url": null,
+        "quote": null
+      },
+      {
+        "place": "Azores plateau",
+        "lat": 38.6,
+        "lon": -28,
+        "level_m": null,
+        "at_years_bp": null,
+        "difference_from_global_m": null,
+        "range_m": null,
+        "why": "Not found. Submerged terraces on Santa Maria lie between about -40 and -140 m and were formed before the Last Glacial Maximum (Ricchi and others 2018); the islands are volcanoes that have moved vertically, so no Holocene curve could be read.",
+        "source": "Ricchi and others 2018, Marine Geology (seen through a search summary only)",
+        "url": "https://cris.unibo.it/bitstream/11585/659934/5/Mar%20Geol%202018%20-%20Marine%20terrace%20development.pdf",
+        "quote": null
+      }
+    ],
+    "disputes": [
+      {
+        "about": "What the global mean sea level was at 11.6 ka",
+        "a": "Spratt and Lisiecki 2016 (marine-core stack): about -45 m by interpolation, 1 sigma 12 m. Lambeck 1996 model: about -43 m at 10,000 14C BP.",
+        "b": "Coral-based curves: Barbados -58 m at 11.65 ka (local), Liu and Milliman -58 m at 11.5 ka, and the globe's -60 m (derived from Lambeck and others 2014 rates).",
+        "sources": [
+          "https://www1.ncdc.noaa.gov/pub/data/paleo/contributions_by_author/spratt2016/spratt2016.txt",
+          "https://eps.rutgers.edu/images/documents/research/Abdul_et_al-2016-Paleoceanography.pdf",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217469/"
+        ],
+        "note": "The spread is about 15 m. At the 15 m per thousand years that Lambeck and others give, 15 m is 1,000 years of sea-level rise, so the dating of Plato's \"9,000 years\" does not matter next to this."
+      },
+      {
+        "about": "Was Meltwater Pulse 1B a real jump in global sea level?",
+        "a": "Fairbanks 1989 (15 m, later quoted as 28 m, at Barbados about 11.3 ka) and Abdul and others 2016 (14 +/- 2 m between 11.45 and 11.1 ka, 40 mm/yr, a lagged response to the end of the Younger Dryas).",
+        "b": "Bard and others 2010 (Tahiti): no step; the Barbados step is an artefact of uplift between two groups of cores. Lambeck and others 2014: \"no evidence for a global MWP-1B event\", only about 16.5 mm/yr for 500 years after the Younger Dryas. Abdul and others answer that the uplift error would be about 1.7 m. A search summary (not the paper) says Bard, Hamelin, Deschamps and Camoin replied in a 2016 Paleoceanography comment that the Barbados cores straddle a tectonic feature.",
+        "sources": [
+          "https://eps.rutgers.edu/images/documents/research/Abdul_et_al-2016-Paleoceanography.pdf",
+          "https://www.college-de-france.fr/media/edouard-bard/UPL6798839879760186634_Bard10Science_SI.pdf",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217469/",
+          "https://en.wikipedia.org/wiki/Meltwater_pulse_1B"
+        ]
+      },
+      {
+        "about": "How the Black Sea joined the ocean and how low it stood",
+        "a": "Ryan and co-workers: a lowstand near -105 m, a Younger Dryas rise to about -30 m, a drop to about -95 m, then a catastrophic reconnection about 8.4 ka 14C (about 9.4 cal ka in Ryan's calibration).",
+        "b": "Aksu, Hiscott and co-workers: slow, staged reconnection, outflow to the Marmara during the Younger Dryas. Soulet and others 2011: recalibrated age of first marine inflow about 9,000 cal BP, with the lake below the Bosphorus sill at the time. Ryan 2003 itself reports the objection that \"the Black Sea did outflow during the Younger Dryas\".",
+        "sources": [
+          "https://www.ancientportsantiques.com/wp-content/uploads/Documents/ETUDESarchivees/BlackSeaInfill/BlackSeaLevel-Ryan2003.pdf",
+          "https://archimer.ifremer.fr/doc/00038/14909"
+        ]
+      },
+      {
+        "about": "Calendar years versus radiocarbon years",
+        "a": "Dalton and others 2020 label ice margins in uncalibrated radiocarbon years (their 10 ka line is about 11.5 cal ka; the 10.25 ka line about 11.8 cal ka). Lambeck 1996 also uses radiocarbon years.",
+        "b": "Lambeck and others 2014, Spratt and Lisiecki 2016, NADI-1 and DATED-1 use calendar years. Plato's \"9,000 years\" is a count of years, not a radiocarbon age.",
+        "sources": [
+          "https://www.glyfac.buffalo.edu/Faculty/briner/buf/pubs/Dalton_et_al_2020_w_maps.pdf"
+        ],
+        "note": "The globe should pick ice maps in calendar years (NADI-1, DATED-1) so they match the sea-level date."
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Younger Dryas (Greenland Stadial 1)",
+      "kind": "peer-reviewed",
+      "start_years_bp": 12900,
+      "end_years_bp": 11700,
+      "what": "The last cold phase of the ice age in the North Atlantic region. Global sea level kept rising but slower.",
+      "evidence": "Wikipedia gives \"around 12,900 to 11,700 years Before Present (c. 10,900 - c. 9,700 BC)\". On sea level: Tahiti \"7.5 +/- 1.1 mm/year during the YD\" against 11.7 and 12.1 mm/yr after and before (Bard 2010); Lambeck and others 2014 call 12.5-11.5 ka a period of \"lesser\" rates.",
+      "url": "https://en.wikipedia.org/wiki/Younger_Dryas"
+    },
+    {
+      "name": "End of the Younger Dryas and base of the Holocene (Greenland ice)",
+      "kind": "peer-reviewed",
+      "start_years_bp": 11750,
+      "end_years_bp": 11690,
+      "what": "Greenland warmed by more than 10 K, mostly within about 50-60 years. The moisture-source marker flipped in 1-3 years. The International Union of Geological Sciences fixed the base of the Holocene at this point in the NGRIP core.",
+      "evidence": "Steffensen and others 2008: \"The deuterium excess ... switched mode within 1 to 3 years over these transitions and initiated a more gradual change (over 50 years) of the Greenland air temperature\"; \"the warming transition at 11.7 ka lasted 60 years; both correspond to a warming of more than 10 K\". Walker and others 2009: \"an age of 11 700 calendar yr b2k (before AD 2000) for the base of the Holocene, with a maximum counting error of 99 yr\", at 1492.45 m depth. b2k means years before AD 2000, so 11,700 b2k is about 9,700 BCE.",
+      "url": "https://www.whoi.edu/cms/files/steffensen08sci_279004.pdf"
+    },
+    {
+      "name": "Plato's date",
+      "kind": "primary-text (date taken from the brief, not re-derived)",
+      "start_years_bp": 11650,
+      "end_years_bp": 11550,
+      "what": "9,000 years before Solon is about 9600 BCE. That falls about 100 to 150 years after the Greenland end of the Younger Dryas (11,700 b2k, about 9700 BCE), inside the dating error (99 years, 2 sigma).",
+      "evidence": "Arithmetic only. Solon's own dates were not fetched here; the plato lane owns that.",
+      "url": null
+    },
+    {
+      "name": "Meltwater Pulse 1B (disputed)",
+      "kind": "disputed",
+      "start_years_bp": 11450,
+      "end_years_bp": 11100,
+      "what": "Claimed rapid rise of 14 +/- 2 m at Barbados; not seen at Tahiti or in the global stack as a jump. See sea_level.disputes.",
+      "evidence": "Abdul 2016: \"beginning by 11.45 kyr B.P. and ending at 11.1 kyr B.P. during which time sea level rose 14 +/- 2 m and rates of sea level rise reached 40 mm yr-1\". Lambeck 2014: \"no evidence for a global MWP-1B event at ~11.3 ka BP\".",
+      "url": "https://eps.rutgers.edu/images/documents/research/Abdul_et_al-2016-Paleoceanography.pdf"
+    },
+    {
+      "name": "Near-uniform global rise after the Younger Dryas",
+      "kind": "peer-reviewed",
+      "start_years_bp": 11400,
+      "end_years_bp": 8200,
+      "what": "About 15 m per thousand years, so about 1.5 m per century.",
+      "evidence": "Lambeck and others 2014: \"A period from ~11.4-8.2 ka BP of near-uniform global rise. The average rate of rise during this 3.3 ka interval was ~15 m/ka\".",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217469/"
+    },
+    {
+      "name": "Meltwater Pulse 1A (context)",
+      "kind": "peer-reviewed",
+      "start_years_bp": 14500,
+      "end_years_bp": 14000,
+      "what": "About 20 m of global rise in about 500 years; this is the big pulse, 2,500 years before Plato's date.",
+      "evidence": "Lambeck and others 2014: \"the globally averaged rise in sea level of ~20 m occurs at a rate of ~40 mm/y or greater\".",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217469/"
+    },
+    {
+      "name": "Black Sea reconnection to the ocean",
+      "kind": "disputed",
+      "start_years_bp": 9400,
+      "end_years_bp": 8000,
+      "what": "About 2,000 to 2,500 years after Plato's date, so not the event in the story, though it is often compared with a \"flood\".",
+      "evidence": "Soulet and others 2011: \"the reconnection calendar age to be similar to 9000 cal a. BP\"; Ryan 2003 reads 8.4 ka in radiocarbon years.",
+      "url": "https://archimer.ifremer.fr/doc/00038/14909"
+    },
+    {
+      "name": "African Humid Period (\"green Sahara\")",
+      "kind": "peer-reviewed",
+      "start_years_bp": 14800,
+      "end_years_bp": 5500,
+      "what": "North Africa was much wetter. It was interrupted by a dry phase in the Younger Dryas, so at 11.6 ka the Sahara was re-greening.",
+      "evidence": "Shanahan and others 2015: \"During the African Humid Period about 14,800 to 5,500 years ago, changes in incoming solar radiation during Northern Hemisphere summers led to the large-scale expansion and subsequent collapse of the African monsoon.\" The Younger Dryas dry phase comes from Wikipedia \"African humid period\" (second source).",
+      "url": "https://digitalcommons.uri.edu/gsofacpubs/1657"
+    }
+  ],
+  "impact_hypothesis": {
+    "proposed": [
+      {
+        "who": "Firestone, West, Kennett, Becker, Bunch and co-authors",
+        "year": 2007,
+        "kind": "peer-reviewed",
+        "claim": "An extraterrestrial impact or impacts at about 12.9 ka. \"one or more large, low-density ET objects exploded over northern North America, partially destabilizing the Laurentide Ice Sheet and triggering YD cooling.\" Evidence cited: a thin layer with magnetic grains, microspherules, charcoal, soot, carbon spherules, nanodiamonds and fullerenes, overlying Clovis sites. PNAS 104:16016.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1994902/"
+      },
+      {
+        "who": "Kennett, Kennett, Culleton and co-authors",
+        "year": 2015,
+        "kind": "peer-reviewed",
+        "claim": "Bayesian modelling of 354 dates from 23 sections in 12 countries gives a \"modeled YDB age range for this event of 12,835-12,735 Cal B.P. at 95% probability\". PNAS 112:E4344.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4538614/"
+      },
+      {
+        "who": "Israde-Alcantara, Bischoff and co-authors",
+        "year": 2012,
+        "kind": "peer-reviewed",
+        "claim": "Nanodiamonds, carbon spherules and magnetic spherules in a 10-cm black layer dated to 12.9 ka in Lake Cuitzeo, Mexico. PNAS 109:E738.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3324006/"
+      },
+      {
+        "who": "Moore, Kennett, Napier, Bunch, Weaver, LeCompte, Adedeji, Hackley, Kletetschka, Hermes, Wittke, Razink, Gaultois and West",
+        "year": 2020,
+        "kind": "peer-reviewed (corrected 2025)",
+        "claim": "Melted glass at Abu Hureyra, Syria, formed at 1720 to over 2200 C, taken as evidence of a cosmic event \"~12,800 years ago\". Scientific Reports 10:4185. A correction in 2025 says the Supplementary Information \"contains an error\": Table S1 and its caption disagreed with the original data sources and were revised, with a note on geochronological context added.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7060197/"
+      },
+      {
+        "who": "Graham Hancock (popular books: Fingerprints of the Gods 1995, Magicians of the Gods 2015)",
+        "year": 2015,
+        "kind": "book",
+        "claim": "Takes the hypothesis as the cause of the end of a \"lost civilisation\" that is often identified with Atlantis. Wikipedia: Hancock \"seeks an explanation for his catastrophe in the controversial Younger Dryas impact hypothesis, suggesting that around 10,800 BC the fragments of a large comet struck the earth\". The book is not peer-reviewed science; it is listed here because it is how the hypothesis reaches Atlantis readers.",
+        "url": "https://en.wikipedia.org/wiki/Magicians_of_the_Gods"
+      }
+    ],
+    "refuted": [
+      {
+        "who": "Surovell, Holliday, Gingerich and 6 co-authors",
+        "year": 2009,
+        "kind": "peer-reviewed",
+        "claim": "Independent analysis at seven sites, two the same as Firestone and co-authors: \"We were unable to reproduce any results of the Firestone et al. study and find no support for Younger Dryas extraterrestrial impact.\" PNAS 106:18155.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2775309/"
+      },
+      {
+        "who": "Pinter, Scott, Daulton, Podoll, Koeberl, Anderson and Ishman",
+        "year": 2011,
+        "kind": "peer-reviewed",
+        "claim": "Review of the 12 main signatures. One group (including particle tracks in chert, magnetic nodules in bones and the Carolina Bays) was \"largely rejected by the scientific community\"; the other, active group (carbon spheres, magnetic grains, wildfire by-products, nanodiamonds) \"have also seen contrary evidence rather than support\". Earth-Science Reviews 106:247. Abstract read.",
+        "url": "https://experts.nau.edu/en/publications/the-younger-dryas-impact-hypothesis-a-requiem/"
+      },
+      {
+        "who": "van Hoesel, Hoek, Pennock and Drury",
+        "year": 2014,
+        "kind": "peer-reviewed",
+        "claim": "Critical review: \"the evidence presented was either not indicative of an extraterrestrial impact or not reproducible by other groups\", while noting \"New evidence, both in favour and against the hypothesis, continues to be published.\" Quaternary Science Reviews 83.",
+        "url": "https://cosmictusk.com/wp-content/uploads/The-Younger-Dryas-impact-hypothesis-a-critical-review.pdf"
+      },
+      {
+        "who": "Holliday, Daulton, Bartlein, Boslough, Breslawski, Fisher, Jorgeson, Scott, Koeberl, Marlon, Severinghaus, Petaev and Claeys",
+        "year": 2023,
+        "kind": "peer-reviewed",
+        "claim": "Review article titled \"Comprehensive refutation of the Younger Dryas Impact Hypothesis (YDIH)\", Earth-Science Reviews 247:104502 (not the Journal of Geology, as the lane brief said). \"No craters have been identified that date to the onset of the Younger Dryas.\" \"There is no obvious evidence of environmental cataclysm at that time in the vast published geomorphic or paleobotanical records.\" \"We demonstrate that research in numerous fields has shown the YDIH should be rejected.\"",
+        "url": "https://experts.arizona.edu/en/publications/comprehensive-refutation-of-the-younger-dryas-impact-hypothesis-y/"
+      }
+    ],
+    "replies": [
+      {
+        "who": "Sweatman, Powell, West and Young",
+        "year": 2024,
+        "kind": "peer-reviewed (journal run by hypothesis supporters, per Wikipedia)",
+        "claim": "Reply titled \"Rebuttal of Holliday et al.'s comprehensive Gish gallop of the Younger Dryas impact hypothesis\", Airbursts and Cratering Impacts 2(1), 64 pages. They say the hypothesis \"has been corroborated by scores of articles in dozens of peer-reviewed journals\" at \"more than 50 Younger Dryas boundary sites on five continents\", that Holliday and co-authors \"provide no new evidence of their own\", and that the evidence \"now includes shocked quartz\". Wikipedia says the Comet Research Group, founded by proponents, publishes this journal because members say their papers were rejected elsewhere; that is Wikipedia's account of what they say.",
+        "url": "https://www.research.ed.ac.uk/en/publications/rebuttal-of-holliday-et-als-comprehensive-gish-gallop-of-the-youn/"
+      }
+    ],
+    "where_it_stands": "Most of the geoscience literature I read rejects the hypothesis (Surovell 2009, Pinter 2011, van Hoesel 2014, Holliday 2023). A group of proponents (Firestone, Kennett, West, Sweatman and others) keep publishing support and replied in 2024. Wikipedia calls it \"a fringe hypothesis\" that \"has been widely rejected\"; that is a summary, not a vote. Two points for the globe. First, the claimed impact is at the START of the Younger Dryas, about 12.9 ka (about 10,950 BCE), roughly 1,300 years before Plato's date of about 9600 BCE; the cold phase ENDS at 11.7 ka. So even if the impact happened, it does not date to Plato's war and sinking. Second, the Greenland and coral records show no catastrophic sea-level event at 12.9 ka: Barbados finds \"No meltwater pulses ... at the initiation of the Younger Dryas\". Tie to Atlantis: made by Graham Hancock's books, not by the impact papers."
+  },
+  "datasets": [
+    {
+      "name": "NADI-1: North American Deglacial Isochrones, version 1 (Dalton and others 2023)",
+      "kind": "ice-extent",
+      "what": "Ice margins of the Laurentide, Cordilleran and Innuitian ice sheets in calendar years. Each time step has an optimal, a minimum and a maximum margin.",
+      "time_steps": "49 time steps, 25 ka to 1 ka. By count (24 ka over 48 intervals) that is every 0.5 ka, so 11.5 ka and 12 ka should be the two around 11.6 ka. This is an inference: I did not list the file names in the zip.",
+      "format": "ESRI shapefiles (147 shapefiles with .prj, .dbf, .shx; 588 files). Zip.",
+      "size": "54.7 MB (54,725,237 bytes)",
+      "url": "https://zenodo.org/api/records/8161764/files/NADI-1%20shapefiles%20Dalton%20et%20al.%20QSR.zip/content",
+      "record": "https://doi.org/10.5281/zenodo.8161764",
+      "licence": "CC BY 4.0 (Zenodo record)",
+      "share_ok": true,
+      "how_to_draw": "Convert the 11.5 ka and 12 ka shapefiles to GeoJSON (ogr2ogr or mapshaper), simplify to a few hundred KB each, drape as polygons on the sphere, fade between them for 11.6 ka. Static files; no server.",
+      "notes": "Paper: Dalton and others 2023, Quaternary Science Reviews 321:108345. Data page fetched; the zip itself was not downloaded."
+    },
+    {
+      "name": "Dalton and others 2020: updated ice margin chronology (36 isochrones, North America)",
+      "kind": "ice-extent",
+      "what": "Update of Dyke and others 2003. Source of the NADI-1 work.",
+      "time_steps": "36 isochrones, 18 to 1 ka in UNCALIBRATED radiocarbon years. The 10 ka line is about 11.5 cal ka, the 10.25 ka line about 11.8 cal ka (table in the paper).",
+      "format": "PDF and shapefile, plus a spreadsheet of 5,195 radiocarbon ages, in the paper's Supplementary data.",
+      "size": "not read",
+      "url": "https://doi.org/10.1016/j.quascirev.2020.106223",
+      "licence": "not read (journal supplement)",
+      "share_ok": false,
+      "how_to_draw": "Prefer NADI-1, the same group's calendar-year version.",
+      "notes": "Quote: \"The 36 updated isochrones are available in PDF and shape file format, together with a spreadsheet of the expanded radiocarbon dataset (n = 5195 ages)\". I did not open the ScienceDirect supplement."
+    },
+    {
+      "name": "DATED-1: Eurasian ice sheets (Hughes and others 2016)",
+      "kind": "ice-extent",
+      "what": "Margins of the British-Irish, Scandinavian and Svalbard-Barents-Kara ice sheets, with most-credible, minimum and maximum lines.",
+      "time_steps": "Time slices every 1,000 years, 25 to 10 ka, plus earlier periods back to 40 ka (from the Boreas abstract summary). Census date 1 January 2013.",
+      "format": "Shapefile zip and KMZ zip for the time slices; a second pair for the dates database; readme and reference list as PDF.",
+      "size": "Time slices shapefiles 11.5 MB (11,545,303 bytes); database shapefiles 0.76 MB",
+      "url": "https://store.pangaea.de/Publications/HughesA-etal_2015/DATED-1_TimeSlices_shp.zip",
+      "record": "https://doi.org/10.1594/PANGAEA.848117",
+      "licence": "CC BY 3.0 (PANGAEA)",
+      "share_ok": true,
+      "how_to_draw": "Same as NADI-1. Take the 12 ka and 11 ka slices (calendar years) and blend. Scandinavia only matters for the North Sea and the Baltic.",
+      "notes": "Paper: Boreas 45:1-45, doi 10.1111/bor.12142."
+    },
+    {
+      "name": "PaleoMIST 1.0 (Gowan and others 2021)",
+      "kind": "paleotopography",
+      "what": "Global ice-sheet reconstruction with ice thickness, bedrock deformation, sea-level change from SELEN, and global paleotopography.",
+      "time_steps": "Every 2,500 years back to 80 ka. The nearest slices to 11.6 ka are 10 ka and 12.5 ka, so a 11.6 ka view means blending.",
+      "format": "NetCDF at 1 and 0.25 degree grids, plus scripts to compute paleotopography at other resolutions.",
+      "size": "3.5 GB on PANGAEA; a separate Zenodo record of PNG-style plots is 53 MB",
+      "url": "https://doi.org/10.1594/PANGAEA.905800",
+      "record": "https://doi.org/10.5281/zenodo.4559963",
+      "licence": "CC BY 4.0 (PANGAEA and Zenodo)",
+      "share_ok": true,
+      "how_to_draw": "Too coarse in time for 11.6 ka alone. Useful to see how much land was pressed down or lifted. Resample one NetCDF layer to a tile pyramid offline.",
+      "notes": "Paper: Nature Communications 12:1199. Only the dataset pages were read."
+    },
+    {
+      "name": "ICE-6G_C (VM5a) ice and topography (Peltier and others 2015)",
+      "kind": "paleotopography",
+      "what": "Global ice thickness, surface altitude (topography and bathymetry, including the effect of land rising and sinking), land mask and ice mask.",
+      "time_steps": "48 files: every 500 years from 0 to 21 ka, then every 1,000 years to 26 ka. The 11.5 ka file is the nearest to 11.6 ka.",
+      "format": "NetCDF, 10-arc-minute grid (2160 x 1080), one file per time step: I6_C.VM5a_10min.11.5.nc. Variables Topo, Orog, sftlf, sftgif.",
+      "size": "file sizes not shown on the page (it lists md5 sums only)",
+      "url": "https://pmip4.lsce.ipsl.fr/doku.php/data:ice_ice6g_c",
+      "record": "https://www.atmosp.physics.utoronto.ca/~peltier/data.php",
+      "licence": "not stated on the PMIP4 page (the authors ask for citation of Argus 2014 and Peltier 2015)",
+      "share_ok": false,
+      "how_to_draw": "The best single source for \"where was the shoreline at 11.5 ka with the land moved\". At 10 arc-minutes (about 18 km) it is far coarser than our terrain, so use it as a correction: difference = Topo(11.5 ka) minus Topo(0), add to our tile heights when the slider is at this date. Needs one offline pass.",
+      "notes": "The Toronto data page timed out in my fetch, so its terms were not read. The 18 km grid cannot show Spartel Bank."
+    },
+    {
+      "name": "Spratt and Lisiecki 2016 sea-level stack",
+      "kind": "sea-level-curve",
+      "what": "Global mean sea level from marine isotope records, 0 to 800 ka, with bootstrap errors.",
+      "time_steps": "1,000 years",
+      "format": "Tab-delimited text with a header; columns for the 0-430 ka and 0-798 ka stacks",
+      "size": "about 50 KB",
+      "url": "https://www1.ncdc.noaa.gov/pub/data/paleo/contributions_by_author/spratt2016/spratt2016.txt",
+      "record": "https://www.ncdc.noaa.gov/paleo/study/19982",
+      "licence": "NOAA paleoclimatology archive; asks only for citation (no licence text in the file)",
+      "share_ok": true,
+      "how_to_draw": "No drawing. It sets the slider value and the uncertainty band.",
+      "notes": "Resolution too coarse for the 11.6 ka year; interpolated."
+    },
+    {
+      "name": "Lambeck and others 2014, ice-volume equivalent sea level (SI Table S3)",
+      "kind": "sea-level-curve",
+      "what": "The sea-level function the globe's presets come from.",
+      "time_steps": "not read",
+      "format": "PDF supplement (2.9 MB)",
+      "size": "2.9 MB",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4217469/bin/pnas.1411762111.sapp.pdf",
+      "licence": "not read",
+      "share_ok": false,
+      "how_to_draw": "No drawing.",
+      "notes": "Could not be fetched by script (PMC returned a challenge page; the PNAS and Europe PMC copies returned 403). A person with a browser can open it. The globe's -60 m at 11.4 ka should be checked against Table S3."
+    },
+    {
+      "name": "NGRIP annual climate proxy data (Steffensen and others 2008)",
+      "kind": "climate",
+      "what": "Annual layers across the two warmings at the end of the Younger Dryas: deuterium excess, d18O, dust, annual layer thickness.",
+      "time_steps": "sub-annual to annual",
+      "format": "PANGAEA tab-delimited tables",
+      "size": "not read",
+      "url": "https://doi.org/10.1594/PANGAEA.786474",
+      "licence": "CC BY 3.0 (PANGAEA)",
+      "share_ok": true,
+      "how_to_draw": "A small time-series chart beside the slider would show how fast the climate changed. Not a map layer.",
+      "notes": "Only the record page was read."
+    },
+    {
+      "name": "Sturt, Garrow and Bradley 2013: North-West European palaeogeography and inundation",
+      "kind": "shoreline",
+      "what": "Land and sea maps for the North Sea, Channel and Irish Sea every 500 years from 11,000 cal BP to now, from a glacial isostatic model.",
+      "time_steps": "500 years, 11,000 BP to present",
+      "format": "Figures in the paper; the paper says KML versions are available online",
+      "size": "PDF 6.3 MB",
+      "url": "https://seascapes.webspace.durham.ac.uk/wp-content/uploads/S-H5-Sturt-et-al.-2013.pdf",
+      "licence": "not read",
+      "share_ok": false,
+      "how_to_draw": "Only if the KML files can be located; they were not found. Otherwise use ICE-6G_C as the correction.",
+      "notes": "Starts at 11,000 BP, so 11.6 ka is just before the first map."
+    }
+  ],
+  "sites": [
+    {
+      "id": "gobekli-tepe",
+      "name": "Goebekli Tepe",
+      "lat": 37.22361111,
+      "lon": 38.92166667,
+      "country": "TR",
+      "period": "in window",
+      "dates_bce": "9600-8200 BCE (UNESCO); earliest exposed structures 9500-9000 BCE",
+      "dating": "Radiocarbon (Wikipedia: \"Radiocarbon dating shows that the earliest exposed structures at Göbekli Tepe were built between 9500 and 9000 BCE\"); UNESCO states the range from the dating programme.",
+      "what": "Circular compounds 10 to 30 m across, with T-shaped limestone pillars set in thick walls of unworked stone, many carved with animals; built by hunter-gatherers (UNESCO). Whether the circles had roofs is uncertain (Wikipedia). UNESCO: \"probably used in connection with rituals, most likely of a funerary nature\". Whether these are temples is interpretation.",
+      "wikipedia": "Göbekli Tepe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe",
+      "wikidata": "Q214944",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q214944",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Göbekli Tepe\"",
+          "url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+        },
+        {
+          "title": "UNESCO World Heritage List 1572 (official)",
+          "url": "https://whc.unesco.org/en/list/1572"
+        }
+      ]
+    },
+    {
+      "id": "karahan-tepe",
+      "name": "Karahan Tepe",
+      "lat": 37.0925,
+      "lon": 39.30361111,
+      "country": "TR",
+      "period": "in window",
+      "dates_bce": "c. 10,000-9,400 BCE (Wikipedia gives 10,000-9500 BC in the lead and 9750-9400 BCE in the infobox)",
+      "dating": "Excavation dating, method not stated in the article lines read. Sources disagree by a few centuries.",
+      "what": "Stone-pillared T-shaped stelae and buildings 46 km east of Goebekli Tepe, in the same culture. Wikipedia says it \"may be the earliest known human village\".",
+      "wikipedia": "Karahan Tepe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Karahan_Tepe",
+      "wikidata": "Q5996986",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q5996986",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Karahan Tepe\"",
+          "url": "https://en.wikipedia.org/wiki/Karahan_Tepe"
+        }
+      ]
+    },
+    {
+      "id": "sayburc",
+      "name": "Sayburc",
+      "lat": 37.11123889,
+      "lon": 38.62069722,
+      "country": "TR",
+      "period": "in window",
+      "dates_bce": "9th millennium BCE (PPNA)",
+      "dating": "Stated by period only in the article; method not given.",
+      "what": "A relief that \"seems to depict a narrative scene with multiple actors\", in the same region as Goebekli Tepe.",
+      "wikipedia": "Sayburç",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saybur%C3%A7",
+      "wikidata": "Q115679382",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q115679382",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Sayburç\"",
+          "url": "https://en.wikipedia.org/wiki/Saybur%C3%A7"
+        }
+      ]
+    },
+    {
+      "id": "nevali-cori",
+      "name": "Nevali Cori",
+      "lat": 37.51833333,
+      "lon": 38.60555556,
+      "country": "TR",
+      "period": "after window",
+      "dates_bce": "8400-8100 BCE (PPNB)",
+      "dating": "Period dating from the article; method not stated.",
+      "what": "Wikipedia: \"some of the world's oldest known temples and monumental sculpture\". The oldest domesticated einkorn wheat was found there.",
+      "wikipedia": "Nevalı Çori",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Neval%C4%B1_%C3%87ori",
+      "wikidata": "Q1151606",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1151606",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Nevalı Çori\"",
+          "url": "https://en.wikipedia.org/wiki/Neval%C4%B1_%C3%87ori"
+        }
+      ]
+    },
+    {
+      "id": "boncuklu-tarla",
+      "name": "Boncuklu Tarla",
+      "lat": 37.529444,
+      "lon": 41.832361,
+      "country": "TR",
+      "period": "in window",
+      "dates_bce": "from c. 9000 BCE",
+      "dating": "Period dating; method not stated.",
+      "what": "Late Epipalaeolithic to PPNB settlement with a large communal building with stone pillars (reported 2019) and early rectangular architecture.",
+      "wikipedia": "Boncuklu Tarla",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Boncuklu_Tarla",
+      "wikidata": "Q104823057",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q104823057",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Boncuklu Tarla\"",
+          "url": "https://en.wikipedia.org/wiki/Boncuklu_Tarla"
+        }
+      ]
+    },
+    {
+      "id": "hallan-cemi",
+      "name": "Hallan Cemi",
+      "lat": 38.22416667,
+      "lon": 41.24166667,
+      "country": "TR",
+      "period": "in window",
+      "dates_bce": "c. 9500 BCE (founded)",
+      "dating": "Stated as \"more than 11,000 years old\"; method not stated.",
+      "what": "Protoneolithic village. Wikipedia reports imported malachite (a copper ore), which suggests trade, and that people kept pigs before sheep and goats.",
+      "wikipedia": "Hallan Çemi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hallan_%C3%87emi",
+      "wikidata": "Q1340632",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1340632",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Hallan Çemi\"",
+          "url": "https://en.wikipedia.org/wiki/Hallan_%C3%87emi"
+        }
+      ]
+    },
+    {
+      "id": "kortik-tepe",
+      "name": "Kortik Tepe",
+      "lat": 37.81441667,
+      "lon": 40.98389444,
+      "country": "TR",
+      "period": "in window",
+      "dates_bce": "c. 10,400-9250 BCE",
+      "dating": "Period dating; method not stated in the lines read.",
+      "what": "Wikipedia: settled \"throughout much of the Younger Dryas\", with \"trade, art, food production, religious ritual, and social complexity\". One of three securely dated sedentary sites in Upper Mesopotamia in the Younger Dryas.",
+      "wikipedia": "Körtik Tepe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/K%C3%B6rtik_Tepe",
+      "wikidata": "Q124937040",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q124937040",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Körtik Tepe\"",
+          "url": "https://en.wikipedia.org/wiki/K%C3%B6rtik_Tepe"
+        }
+      ]
+    },
+    {
+      "id": "cayonu",
+      "name": "Cayonu",
+      "lat": 38.21638889,
+      "lon": 39.72638889,
+      "country": "TR",
+      "period": "in window",
+      "dates_bce": "c. 8630-6800 BCE",
+      "dating": "Period dating; method not stated.",
+      "what": "PPNB village in the Taurus foothills, early agriculture, in the monumental tradition of the Tas Tepeler.",
+      "wikipedia": "Çayönü",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%87ay%C3%B6n%C3%BC",
+      "wikidata": "Q272720",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q272720",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Çayönü\"",
+          "url": "https://en.wikipedia.org/wiki/%C3%87ay%C3%B6n%C3%BC"
+        }
+      ]
+    },
+    {
+      "id": "asikli-hoyuk",
+      "name": "Asikli Hoyuk",
+      "lat": 38.34888889,
+      "lon": 34.23,
+      "country": "TR",
+      "period": "after window",
+      "dates_bce": "from c. 8200 BCE",
+      "dating": "Period dating; method not stated.",
+      "what": "Early settled village in central Anatolia on volcanic tuff, a few centuries after the Taurus sites.",
+      "wikipedia": "Aşıklı Höyük",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A%C5%9F%C4%B1kl%C4%B1_H%C3%B6y%C3%BCk",
+      "wikidata": "Q794830",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q794830",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Aşıklı Höyük\"",
+          "url": "https://en.wikipedia.org/wiki/A%C5%9F%C4%B1kl%C4%B1_H%C3%B6y%C3%BCk"
+        }
+      ]
+    },
+    {
+      "id": "tell-qaramel",
+      "name": "Tell Qaramel",
+      "lat": 36.378,
+      "lon": 37.275,
+      "country": "SY",
+      "period": "in window",
+      "dates_bce": "10,650-9,650 BCE (towers); dates disputed",
+      "dating": "Radiocarbon by the Gliwice laboratory. Wikipedia: \"The dating is not without problems ... the very early dates at Tell Qaramel appear too old as compared to dating of similar cultural phases at other sites.\"",
+      "what": "Several circular stone towers. Wikipedia calls them \"the oldest such structures in the world\". If the early dates are too old, the towers fall later in the Natufian-PPNA range.",
+      "wikipedia": "Tell Qaramel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tell_Qaramel",
+      "wikidata": "Q4178402",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4178402",
+      "coord_source": "Wikidata P625 for this item (Wikipedia page has no coordinates)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Tell Qaramel\"",
+          "url": "https://en.wikipedia.org/wiki/Tell_Qaramel"
+        }
+      ]
+    },
+    {
+      "id": "jerf-el-ahmar",
+      "name": "Jerf el-Ahmar",
+      "lat": 36.38333333,
+      "lon": 38.18055556,
+      "country": "SY",
+      "period": "in window",
+      "dates_bce": "c. 9500-8700 BCE",
+      "dating": "Period dating; method not stated.",
+      "what": "Neolithic site in northern Syria (the article gives only the date range in its lead).",
+      "wikipedia": "Jerf el Ahmar",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jerf_el_Ahmar",
+      "wikidata": "Q928706",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q928706",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Jerf el Ahmar\"",
+          "url": "https://en.wikipedia.org/wiki/Jerf_el_Ahmar"
+        }
+      ]
+    },
+    {
+      "id": "mureybet",
+      "name": "Mureybet",
+      "lat": 36.0434,
+      "lon": 38.1287,
+      "country": "SY",
+      "period": "in window",
+      "dates_bce": "10,200-8000 BCE",
+      "dating": "Occupation range stated in the article; excavated 1964-1974, now under Euphrates Lake.",
+      "what": "Type site of the Mureybetian PPNA culture. Wikipedia: \"Hunting was important and crops were first gathered and later cultivated, but they remained wild.\"",
+      "wikipedia": "Mureybet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mureybet",
+      "wikidata": "Q1427189",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1427189",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Mureybet\"",
+          "url": "https://en.wikipedia.org/wiki/Mureybet"
+        }
+      ]
+    },
+    {
+      "id": "tell-abu-hureyra",
+      "name": "Tell Abu Hureyra",
+      "lat": 35.866,
+      "lon": 38.4,
+      "country": "SY",
+      "period": "in window",
+      "dates_bce": "13,300-7,800 cal BP (about 11,350-5850 BCE)",
+      "dating": "Calibrated radiocarbon (as written in the article).",
+      "what": "Sedentary hunter-gatherers (phase 1), then \"some of the world's first farmers\" (phase 2). Also the site where the Younger Dryas impact claim of Moore and others 2020 was made.",
+      "wikipedia": "Tell Abu Hureyra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tell_Abu_Hureyra",
+      "wikidata": "Q1754526",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1754526",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Tell Abu Hureyra\"",
+          "url": "https://en.wikipedia.org/wiki/Tell_Abu_Hureyra"
+        },
+        {
+          "title": "Moore and others 2020, Scientific Reports 10:4185 (peer-reviewed; corrected 2025)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7060197/"
+        }
+      ]
+    },
+    {
+      "id": "tell-es-sultan",
+      "name": "Tell es-Sultan (ancient Jericho)",
+      "lat": 31.87111111,
+      "lon": 35.44388889,
+      "country": "PS",
+      "period": "in window",
+      "dates_bce": "PPNA c. 8500-7500 BCE; wall and tower c. 8000 BCE",
+      "dating": "Wikipedia says the wall and tower were \"built around 8000 BCE\" and cites radiocarbon dating for the tower; UNESCO: \"By the 9th to 8th millennium BC ... a wall with a ditch and a tower.\"",
+      "what": "A stone wall about 3.6 m high with a ditch and a stone tower. Wikipedia: \"the oldest city wall discovered by archaeologists anywhere in the world\" if read as a fortification; the Bar-Yosef 1986 view is that it may have been flood protection.",
+      "wikipedia": "Tell es-Sultan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tell_es-Sultan",
+      "wikidata": "Q2402267",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2402267",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Tell es-Sultan\"",
+          "url": "https://en.wikipedia.org/wiki/Tell_es-Sultan"
+        },
+        {
+          "title": "UNESCO World Heritage List 1687, Ancient Jericho/Tell es-Sultan (official)",
+          "url": "https://whc.unesco.org/en/list/1687"
+        }
+      ]
+    },
+    {
+      "id": "ain-mallaha",
+      "name": "Ain Mallaha (Eynan)",
+      "lat": 33.086975,
+      "lon": 35.579159,
+      "country": "IL",
+      "period": "before window",
+      "dates_bce": "14,326-12,180 cal BP (about 12,376-10,230 BCE)",
+      "dating": "Calibrated radiocarbon.",
+      "what": "Natufian settlement, an early example of hunter-gatherers living in one place. Wikipedia: \"one of the earliest known archaeological evidence of dog domestication\".",
+      "wikipedia": "ʿAin Mallaha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%CA%BFAin_Mallaha",
+      "wikidata": "Q2915013",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2915013",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"ʿAin Mallaha\"",
+          "url": "https://en.wikipedia.org/wiki/%CA%BFAin_Mallaha"
+        }
+      ]
+    },
+    {
+      "id": "hilazon-tachtit",
+      "name": "Hilazon Tachtit Cave",
+      "lat": 32.898694,
+      "lon": 35.262972,
+      "country": "IL",
+      "period": "in window",
+      "dates_bce": "about 12,000 years ago (about 10,000 BCE); Natufian is 15,000-11,500 cal BP",
+      "dating": "Described in the paper as \"12,000-year-old\"; method in the full text, not the abstract.",
+      "what": "A grave built for an elderly disabled woman, with 50 tortoise shells and parts of a boar, an eagle, a cow, a leopard and martens. Read by the authors as a shaman burial.",
+      "wikipedia": "Hilazon Tachtit Cave",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hilazon_Tachtit_Cave",
+      "wikidata": "Q1618127",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1618127",
+      "coord_source": "Wikidata P625 for this item (Wikipedia page has no coordinates)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Hilazon Tachtit Cave\"",
+          "url": "https://en.wikipedia.org/wiki/Hilazon_Tachtit_Cave"
+        },
+        {
+          "title": "Grosman, Munro and Belfer-Cohen 2008, PNAS 105:17665 (peer-reviewed, abstract read)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2584673/"
+        }
+      ]
+    },
+    {
+      "id": "gilgal-i",
+      "name": "Gilgal I",
+      "lat": 32.032778,
+      "lon": 35.475556,
+      "country": "PS",
+      "period": "in window",
+      "dates_bce": "11,400-11,200 years ago (about 9,450-9,250 BCE)",
+      "dating": "Stated in the paper abstract; dating method in the full text.",
+      "what": "Early Neolithic village. Carbonised figs, hundreds of them, from trees \"grown from intentionally planted branches\", proposed as the earliest domesticated plant.",
+      "wikipedia": "Gilgal I",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gilgal_I",
+      "wikidata": "Q5561775",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q5561775",
+      "coord_source": "Wikidata P625 for this item (Wikipedia page has no coordinates)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Gilgal I\"",
+          "url": "https://en.wikipedia.org/wiki/Gilgal_I"
+        },
+        {
+          "title": "Kislev, Hartmann and Bar-Yosef 2006, Science 312:1372 (peer-reviewed, abstract read)",
+          "url": "https://doi.org/10.1126/science.1125910"
+        }
+      ]
+    },
+    {
+      "id": "aetokremnos",
+      "name": "Aetokremnos rock shelter",
+      "lat": 34.57055556,
+      "lon": 32.99055556,
+      "country": "CY",
+      "period": "before window",
+      "dates_bce": "about 12,500-12,000 years ago (about 10,500 BCE)",
+      "dating": "31 radiocarbon dates on bones. Whether people made the bone beds is disputed.",
+      "what": "Rock shelter on a Cyprus cliff with bones of over 370 pygmy hippos, at least 3 dwarf elephants and about 1,000 flints. If the human link holds, it shows a sea crossing to Cyprus.",
+      "wikipedia": "Aetokremnos",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aetokremnos",
+      "wikidata": "Q1752701",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1752701",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Aetokremnos\"",
+          "url": "https://en.wikipedia.org/wiki/Aetokremnos"
+        }
+      ]
+    },
+    {
+      "id": "klimonas",
+      "name": "Klimonas",
+      "lat": 34.71255,
+      "lon": 33.13374,
+      "country": "CY",
+      "period": "in window",
+      "dates_bce": "11,100-10,600 years ago (about 9,150-8,650 BCE)",
+      "dating": "Radiocarbon (abstract: \"established villagers were living on Cyprus between 11,100 and 10,600 y ago\").",
+      "what": "Village with a 10 m wide communal building. Cereals were brought from the Levant, which needs repeated crossings of open sea to Cyprus.",
+      "wikipedia": "Klimonas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Klimonas",
+      "wikidata": "Q2180041",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2180041",
+      "coord_source": "Wikidata P625 for this item (Wikipedia page has no coordinates)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Klimonas\"",
+          "url": "https://en.wikipedia.org/wiki/Klimonas"
+        },
+        {
+          "title": "Vigne and others 2012, PNAS 109:8445 (peer-reviewed, abstract read)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3365171/"
+        }
+      ]
+    },
+    {
+      "id": "franchthi-cave",
+      "name": "Franchthi Cave",
+      "lat": 37.42333333,
+      "lon": 23.13222222,
+      "country": "GR",
+      "period": "before window",
+      "dates_bce": "Melos obsidian from about 13,000 BCE (Wikipedia); a break in use in the Younger Dryas; farming remains from about 7000 BCE",
+      "dating": "Obsidian hydration (SIMS-SS) per Laskaris and others 2011, cited by Wikipedia; Lambeck 1996 gives \"11,000 b.p.\" (radiocarbon years) for the \"oldest obsidian finds\".",
+      "what": "Cave on the Aegean coast whose people carried obsidian from the island of Melos. Wikipedia: \"offering the earliest evidence of seafaring and navigational skills by anatomically modern humans in Greece\". The two sources differ by about 2,000 years.",
+      "wikipedia": "Franchthi Cave",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Franchthi_Cave",
+      "wikidata": "Q1441331",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1441331",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Franchthi Cave\"",
+          "url": "https://en.wikipedia.org/wiki/Franchthi_Cave"
+        },
+        {
+          "title": "Lambeck 1996, Antiquity 70:588, section on the Cyclades",
+          "url": "https://resolve.cambridge.org/core/services/aop-cambridge-core/content/view/CBB0E870C8C9D9A0224F7CACF5CCF7E3/S0003598X00083733a.pdf/sea-level-change-and-shore-line-evolution-in-aegean-greece-since-upper-palaeolithic-time.pdf"
+        }
+      ]
+    },
+    {
+      "id": "fukui-cave",
+      "name": "Fukui Cave",
+      "lat": 33.292444,
+      "lon": 129.697,
+      "country": "JP",
+      "period": "before window",
+      "dates_bce": "pottery about 12,700 years ago (about 10,750 BCE)",
+      "dating": "Stated in the article; method not given.",
+      "what": "Cave in Kyushu with some of the world's oldest pottery, from foragers of the Incipient Jomon.",
+      "wikipedia": "Fukui cave",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fukui_cave",
+      "wikidata": "Q11591408",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11591408",
+      "coord_source": "Wikidata P625 for this item (Wikipedia page has no coordinates)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Fukui cave\"",
+          "url": "https://en.wikipedia.org/wiki/Fukui_cave"
+        }
+      ]
+    },
+    {
+      "id": "odai-yamamoto-i",
+      "name": "Odai Yamamoto I",
+      "lat": 41.06722222,
+      "lon": 140.555,
+      "country": "JP",
+      "period": "before window",
+      "dates_bce": "pottery as early as 14,500 BCE (about 16,500 years ago)",
+      "dating": "Radiocarbon on 46 earthenware sherds (excavated 1998).",
+      "what": "Earthenware fragments among the earliest pottery known, from the Incipient Jomon.",
+      "wikipedia": "Ōdai Yamamoto I Site",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C5%8Cdai_Yamamoto_I_Site",
+      "wikidata": "Q7077228",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q7077228",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Ōdai Yamamoto I Site\"",
+          "url": "https://en.wikipedia.org/wiki/%C5%8Cdai_Yamamoto_I_Site"
+        }
+      ]
+    },
+    {
+      "id": "blackwater-draw",
+      "name": "Blackwater Draw (Clovis type site)",
+      "lat": 34.277874,
+      "lon": -103.32458,
+      "country": "US",
+      "period": "before window",
+      "dates_bce": "Clovis culture 13,050-12,750 BP (about 11,100-10,800 BCE)",
+      "dating": "Radiocarbon; Rasmussen and others 2014 state Clovis as \"11,100 to 10,700 (14)C years before present (13,000 to 12,600 calendar years bp)\".",
+      "what": "Type locality for the Clovis culture, the first widespread archaeological complex in North America, known for fluted stone points. Clovis ended about 12,750 years ago, around the start of the Younger Dryas, long before Plato's date.",
+      "wikipedia": "Blackwater Draw",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Blackwater_Draw",
+      "wikidata": "Q14705945",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q14705945",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Blackwater Draw\"",
+          "url": "https://en.wikipedia.org/wiki/Blackwater_Draw"
+        },
+        {
+          "title": "Rasmussen and others 2014, Nature 506:225 (peer-reviewed)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4878442/"
+        },
+        {
+          "title": "Wikipedia, \"Clovis culture\"",
+          "url": "https://en.wikipedia.org/wiki/Clovis_culture"
+        }
+      ]
+    },
+    {
+      "id": "folsom-site",
+      "name": "Folsom site",
+      "lat": 36.8817,
+      "lon": -104.071,
+      "country": "US",
+      "period": "in window",
+      "dates_bce": "Folsom tradition 11,000-10,000 BCE",
+      "dating": "Period dating from the article.",
+      "what": "Bison kill site by a marsh: 32 bison killed with fluted Folsom points. First site where human-made tools were firmly tied to extinct animals.",
+      "wikipedia": "Folsom site",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Folsom_site",
+      "wikidata": "Q5464869",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q5464869",
+      "coord_source": "Wikidata P625 for this item (Wikipedia page has no coordinates)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Folsom site\"",
+          "url": "https://en.wikipedia.org/wiki/Folsom_site"
+        }
+      ]
+    },
+    {
+      "id": "monte-verde",
+      "name": "Monte Verde II",
+      "lat": -41.50472222,
+      "lon": -73.20444444,
+      "country": "CL",
+      "period": "before window",
+      "dates_bce": "about 14,500 years ago (about 12,550 BCE)",
+      "dating": "Radiocarbon; \"generally suggested to date to 14,500 years ago\", with a more disputed older layer.",
+      "what": "Settlement in Chile taken as showing people lived in the Americas at least 1,000 years before Clovis (Wikipedia: the \"Clovis first\" idea is \"now discredited\").",
+      "wikipedia": "Monte Verde",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monte_Verde",
+      "wikidata": "Q975775",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q975775",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Monte Verde\"",
+          "url": "https://en.wikipedia.org/wiki/Monte_Verde"
+        },
+        {
+          "title": "Dillehay and others 2015, PLoS ONE 10:e0141923 (peer-reviewed)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4651426/"
+        }
+      ]
+    },
+    {
+      "id": "paisley-caves",
+      "name": "Paisley Caves",
+      "lat": 42.7613,
+      "lon": -120.5514,
+      "country": "US",
+      "period": "before window",
+      "dates_bce": "deposits 12,450 to 2,295 14C years old; Western Stemmed points 11,070-11,340 14C years BP",
+      "dating": "More than 100 high-precision radiocarbon dates.",
+      "what": "Caves in Oregon with human DNA in coprolites and stemmed stone points as old as or older than Clovis.",
+      "wikipedia": "Paisley Caves",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paisley_Caves",
+      "wikidata": "Q837970",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q837970",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Paisley Caves\"",
+          "url": "https://en.wikipedia.org/wiki/Paisley_Caves"
+        },
+        {
+          "title": "Jenkins and others 2012, Science 337:223 (peer-reviewed, abstract read)",
+          "url": "https://doi.org/10.1126/science.1218443"
+        }
+      ]
+    },
+    {
+      "id": "anzick",
+      "name": "Anzick site",
+      "lat": 45.985,
+      "lon": -110.65166667,
+      "country": "US",
+      "period": "before window",
+      "dates_bce": "Clovis burial, about 12,600 cal BP (about 10,650 BCE)",
+      "dating": "Radiocarbon and genome study; the abstract gives the Clovis range 13,000-12,600 cal BP.",
+      "what": "The only known Clovis burial in the New World (Wikipedia). Its genome was published in Nature in 2014.",
+      "wikipedia": "Anzick site",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anzick_site",
+      "wikidata": "Q19864463",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q19864463",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Anzick site\"",
+          "url": "https://en.wikipedia.org/wiki/Anzick_site"
+        },
+        {
+          "title": "Rasmussen and others 2014, Nature 506:225 (peer-reviewed)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4878442/"
+        }
+      ]
+    },
+    {
+      "id": "gault",
+      "name": "Gault site",
+      "lat": 30.89222222,
+      "lon": -97.70972222,
+      "country": "US",
+      "period": "before window",
+      "dates_bce": "human use from over 14,000 years ago to Clovis and later",
+      "dating": "Stated in the article lead.",
+      "what": "Large multi-period site in Texas with evidence of people from over 14,000 years ago, before Clovis (Wikipedia).",
+      "wikipedia": "Gault (archaeological site)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gault_(archaeological_site)",
+      "wikidata": "Q1496228",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1496228",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Gault (archaeological site)\"",
+          "url": "https://en.wikipedia.org/wiki/Gault_(archaeological_site)"
+        }
+      ]
+    },
+    {
+      "id": "nabta-playa",
+      "name": "Nabta Playa",
+      "lat": 22.507967,
+      "lon": 30.7256,
+      "country": "EG",
+      "period": "after window",
+      "dates_bce": "settlement from about 7500 BCE; stone \"calendar circle\" about 4000 BC",
+      "dating": "Period dating from the article.",
+      "what": "Sahara basin with deep wells and huts built in straight rows by the 7th millennium BC, and later megaliths (Wikipedia), in the African Humid Period.",
+      "wikipedia": "Nabta Playa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nabta_Playa",
+      "wikidata": "Q1535226",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1535226",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Nabta Playa\"",
+          "url": "https://en.wikipedia.org/wiki/Nabta_Playa"
+        }
+      ]
+    },
+    {
+      "id": "gobero",
+      "name": "Gobero",
+      "lat": 17.08333333,
+      "lon": 9.51666667,
+      "country": "NE",
+      "period": "after window",
+      "dates_bce": "from about 8000 BCE (oldest known Sahara cemetery)",
+      "dating": "78 direct AMS radiocarbon dates and 9 OSL dates (abstract).",
+      "what": "About 200 burials on the shore of a palaeolake in Niger: two occupation phases that match the humid intervals.",
+      "wikipedia": "Gobero",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gobero",
+      "wikidata": "Q849269",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q849269",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Gobero\"",
+          "url": "https://en.wikipedia.org/wiki/Gobero"
+        },
+        {
+          "title": "Sereno and others 2008, PLoS ONE 3:e2995 (peer-reviewed)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2515196/"
+        }
+      ]
+    },
+    {
+      "id": "takarkori",
+      "name": "Takarkori rock shelter",
+      "lat": 24.88333333,
+      "lon": 10.33333333,
+      "country": "LY",
+      "period": "after window",
+      "dates_bce": "10,170-4,650 cal BP (about 8220-2700 BCE)",
+      "dating": "Calibrated radiocarbon (as in the article).",
+      "what": "Rock shelter in the Acacus Mountains with pottery, bone and wood tools, figurines, and the first ancient DNA from the Sahara.",
+      "wikipedia": "Takarkori",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Takarkori",
+      "wikidata": "Q124881312",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q124881312",
+      "coord_source": "Wikidata P625 for this item (Wikipedia page has no coordinates)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Takarkori\"",
+          "url": "https://en.wikipedia.org/wiki/Takarkori"
+        },
+        {
+          "title": "Dunne and others 2012, Nature 486:390 (peer-reviewed, abstract read)",
+          "url": "https://doi.org/10.1038/nature11186"
+        }
+      ]
+    },
+    {
+      "id": "taforalt",
+      "name": "Taforalt (Grotte des Pigeons)",
+      "lat": 34.81055556,
+      "lon": -2.40833333,
+      "country": "MA",
+      "period": "before window",
+      "dates_bce": "occupied 23,200-12,600 cal BP; cemetery 15,100-14,000 cal BP",
+      "dating": "Calibrated radiocarbon.",
+      "what": "Moroccan cave with at least 34 burials of the Iberomaurusian, a hunter-gatherer culture. Genomes of 7 people about 15,000 years old show Near Eastern and sub-Saharan ancestry. These are among the best-studied people of north-west Africa near this date, and they were foragers. The cave is in north-east Morocco, not on the Atlantic coast.",
+      "wikipedia": "Taforalt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taforalt",
+      "wikidata": "Q167862",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q167862",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Taforalt\"",
+          "url": "https://en.wikipedia.org/wiki/Taforalt"
+        },
+        {
+          "title": "van de Loosdrecht and others 2018, Science 360:548 (peer-reviewed, abstract read)",
+          "url": "https://doi.org/10.1126/science.aar8380"
+        }
+      ]
+    },
+    {
+      "id": "star-carr",
+      "name": "Star Carr",
+      "lat": 54.21416667,
+      "lon": -0.42333333,
+      "country": "GB",
+      "period": "in window",
+      "dates_bce": "first occupied 9335-9275 BCE, to 8525-8440 BCE",
+      "dating": "Radiocarbon.",
+      "what": "Lake-shore camp on what was then dry land joined to Europe. A timber platform split from aspen and willow is \"the earliest known example of carpentry in Europe\", and a hut about 3.5 m wide.",
+      "wikipedia": "Star Carr",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Star_Carr",
+      "wikidata": "Q2299200",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2299200",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Star Carr\"",
+          "url": "https://en.wikipedia.org/wiki/Star_Carr"
+        }
+      ]
+    },
+    {
+      "id": "dufuna-canoe",
+      "name": "Dufuna canoe",
+      "lat": 12.28138889,
+      "lon": 11.18111111,
+      "country": "NG",
+      "period": "after window",
+      "dates_bce": "8,500-8,000 years old (about 6500-6000 BCE)",
+      "dating": "Radiocarbon on charcoal near the canoe.",
+      "what": "A dugout canoe 8.4 m long, found near Lake Chad. The second oldest known boat. See firsts for the oldest.",
+      "wikipedia": "Dufuna canoe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dufuna_canoe",
+      "wikidata": "Q5312423",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q5312423",
+      "coord_source": "Wikidata P625 for this item (Wikipedia page has no coordinates)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Dufuna canoe\"",
+          "url": "https://en.wikipedia.org/wiki/Dufuna_canoe"
+        }
+      ]
+    },
+    {
+      "id": "xianrendong",
+      "name": "Xianrendong Cave",
+      "lat": 28.73611111,
+      "lon": 117.17361111,
+      "country": "CN",
+      "period": "before window",
+      "dates_bce": "pottery 20,000-19,000 cal BP (about 18,000-17,000 BCE)",
+      "dating": "Radiocarbon on the contexts of the earliest sherds.",
+      "what": "The earliest dated pottery in the sources read: \"pottery was produced by mobile foragers who hunted and gathered during the Late Glacial Maximum\".",
+      "wikipedia": "Xianren Cave",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xianren_Cave",
+      "wikidata": "Q2812194",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q2812194",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Xianren Cave\"",
+          "url": "https://en.wikipedia.org/wiki/Xianren_Cave"
+        },
+        {
+          "title": "Wu and others 2012, Science 336:1696 (peer-reviewed, abstract read)",
+          "url": "https://doi.org/10.1126/science.1218643"
+        }
+      ]
+    },
+    {
+      "id": "ohalo-ii",
+      "name": "Ohalo II",
+      "lat": 32.722093,
+      "lon": 35.572143,
+      "country": "IL",
+      "period": "before window",
+      "dates_bce": "about 23,000 cal BP (about 21,000 BCE)",
+      "dating": "Radiocarbon, calibrated.",
+      "what": "Brushwood huts on the shore of the Sea of Galilee. Snir and others report \"proto-weeds\" and small-scale trial cultivation 11,000 years before farming. An unusual claim; it is one peer-reviewed paper.",
+      "wikipedia": "Ohalo II",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ohalo_II",
+      "wikidata": "Q1517652",
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1517652",
+      "coord_source": "Wikipedia API coordinates for this title (from Wikidata P625)",
+      "sources": [
+        {
+          "title": "Wikipedia, \"Ohalo II\"",
+          "url": "https://en.wikipedia.org/wiki/Ohalo_II"
+        },
+        {
+          "title": "Snir and others 2015, PLoS ONE 10:e0131422 (peer-reviewed)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4511808/"
+        }
+      ]
+    }
+  ],
+  "firsts": [
+    {
+      "what": "Domesticated or managed plants (farming)",
+      "earliest": "Trial cultivation claimed at Ohalo II about 23,000 cal BP; the oldest domesticated crop claim is the fig at Gilgal I, 11,400-11,200 years ago; \"initial steps toward plant and animal domestication in the Eastern Mediterranean can now be pushed back to the 12th millennium cal B.P.\" (Zeder 2008).",
+      "where": "Israel / Jordan Valley; Fertile Crescent",
+      "evidence": "Kislev 2006: \"carbonized fig fruits ... stored in Gilgal I ... which dates to 11,400 to 11,200 years ago\". Zeder 2008 (PNAS 105:11597). At 9600 BCE farming was just starting, not an economy of two harvests a year.",
+      "url": "https://doi.org/10.1126/science.1125910",
+      "kind": "peer-reviewed",
+      "claims_touched": [
+        "two-harvests"
+      ]
+    },
+    {
+      "what": "Domesticated animals",
+      "earliest": "Dog: Wikipedia puts the first long-term wolf-human association at \"more than 17,500 years ago\", with early dog evidence at Ain Mallaha (14,326-12,180 cal BP). Sheep, goats, cattle and pigs: not before about 11,400 years ago, \"people living in the Near East formed relationships with wild populations of aurochs, boar, sheep, and goats\".",
+      "where": "Near East (dogs: debated, several regions)",
+      "evidence": "Wikipedia \"Domestication of the dog\" (second source; the dog origin is debated there); Zeder 2008.",
+      "url": "https://en.wikipedia.org/wiki/Domestication_of_the_dog",
+      "kind": "press",
+      "claims_touched": [
+        "elephants"
+      ]
+    },
+    {
+      "what": "Pottery",
+      "earliest": "World: Xianrendong, 20,000-19,000 cal BP. Japan: Odai Yamamoto I about 14,500 BCE, Fukui Cave about 12,700 years ago. Near East: the Pre-Pottery Neolithic periods are named for the lack of pottery; the first Near Eastern pots were not found in my sources (not verified).",
+      "where": "Jiangxi, China",
+      "evidence": "Wu 2012: \"The radiocarbon ages of the archaeological contexts of the earliest sherds are 20,000 to 19,000 calendar years before the present\".",
+      "url": "https://doi.org/10.1126/science.1218643",
+      "kind": "peer-reviewed",
+      "claims_touched": []
+    },
+    {
+      "what": "Copper smelting",
+      "earliest": "Belovode, 5,000 BCE: \"the world's oldest reliably dated evidence of copper smelting at high temperature\". Before that, copper ore was traded: malachite at Hallan Cemi about 9500 BCE.",
+      "where": "Rudnik mountain, Serbia",
+      "evidence": "Wikipedia \"Belovode\" (second source; the paper by Radivojevic and others 2010 was not opened).",
+      "url": "https://en.wikipedia.org/wiki/Belovode",
+      "kind": "press",
+      "claims_touched": [
+        "orichalcum-and-metals"
+      ]
+    },
+    {
+      "what": "Bronze",
+      "earliest": "The Bronze Age is dated \"c. 3000 BC - c. 1200 BC\" in the Wikipedia infobox I read, which does not say where. Tin-bronze objects from the Balkans may be older; not verified.",
+      "where": "Near East / Europe",
+      "evidence": "Wikipedia \"Bronze Age\".",
+      "url": "https://en.wikipedia.org/wiki/Bronze_Age",
+      "kind": "press",
+      "claims_touched": [
+        "orichalcum-and-metals"
+      ]
+    },
+    {
+      "what": "Writing",
+      "earliest": "Proto-cuneiform \"emerged in Mesopotamia c. 3350-3200 BC (during the Uruk period)\".",
+      "where": "Uruk, Iraq",
+      "evidence": "Wikipedia \"Proto-cuneiform\". About 6,000 years after Plato's date.",
+      "url": "https://en.wikipedia.org/wiki/Proto-cuneiform",
+      "kind": "press",
+      "claims_touched": []
+    },
+    {
+      "what": "Cities",
+      "earliest": "Proto-cities: Jericho PPNA (8500-7500 BCE, \"one of the world's first major proto-cities\") and Catalhoyuk (7500-5600 BCE). A true city: Uruk, \"up to 50,000 residents\" around 3100 BC.",
+      "where": "Jordan Valley; Anatolia; Mesopotamia",
+      "evidence": "Wikipedia \"Tell es-Sultan\", \"Çatalhöyük\", \"Uruk\".",
+      "url": "https://en.wikipedia.org/wiki/Uruk",
+      "kind": "press",
+      "claims_touched": [
+        "ringed-city",
+        "ten-kings"
+      ]
+    },
+    {
+      "what": "Boats",
+      "earliest": "Pesse canoe, Netherlands, \"constructed during the early Mesolithic period between 8040 BC and 7510 BC\", the oldest known boat. Dufuna canoe, Nigeria, 8,500-8,000 years old, 8.4 m.",
+      "where": "Netherlands; Nigeria",
+      "evidence": "Wikipedia \"Pesse canoe\" and \"Dufuna canoe\" (second sources). Both are dugouts. Older boats must have existed, since people reached Cyprus and Melos earlier, but none survive in my sources.",
+      "url": "https://en.wikipedia.org/wiki/Pesse_canoe",
+      "kind": "press",
+      "claims_touched": [
+        "fleet-and-harbours"
+      ]
+    },
+    {
+      "what": "Evidence of open-sea crossings",
+      "earliest": "Melos obsidian at Franchthi from about 13,000 BCE (Wikipedia) or \"11,000 b.p.\" in radiocarbon years (Lambeck 1996), a disagreement of about 2,000 years. Cyprus reached by about 12,500-12,000 years ago (Aetokremnos, if people made the bone beds) and settled by 11,100-10,600 years ago (Klimonas).",
+      "where": "Aegean; Cyprus",
+      "evidence": "Vigne 2012: \"established villagers were living on Cyprus between 11,100 and 10,600 y ago\" with cereals \"introduced from the Levant\". Crossings of 50 to 100 km without land in sight, in small craft.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3365171/",
+      "kind": "peer-reviewed",
+      "claims_touched": [
+        "fleet-and-harbours",
+        "islands-and-opposite-continent"
+      ]
+    },
+    {
+      "what": "Sea-going plank ships",
+      "earliest": "Khufu ship \"c. 2500 BC\", 43.4 m, Lebanon cedar. The Abydos boats are royal boats of the Early Dynastic period.",
+      "where": "Giza; Abydos, Egypt",
+      "evidence": "Wikipedia \"Khufu ship\", \"Abydos boats\" (dates for Abydos not read).",
+      "url": "https://en.wikipedia.org/wiki/Khufu_ship",
+      "kind": "press",
+      "claims_touched": [
+        "fleet-and-harbours"
+      ]
+    },
+    {
+      "what": "Horse domestication",
+      "earliest": "Botai, Kazakhstan, about 3500 BC (bridling and mare's milk); Librado and others 2021 place the origin of modern domestic horses in the lower Volga-Don steppe and say Iberia and Anatolia \"have also recently been challenged\".",
+      "where": "Central Asian steppe",
+      "evidence": "Outram 2009 (Science 323:1332) abstract; Librado 2021 (Nature 598:634) abstract.",
+      "url": "https://doi.org/10.1126/science.1168594",
+      "kind": "peer-reviewed",
+      "claims_touched": []
+    },
+    {
+      "what": "Chariot",
+      "earliest": "Sintashta burials \"c. 1950-1880 BC\".",
+      "where": "Chelyabinsk, Russia",
+      "evidence": "Wikipedia \"Chariot\".",
+      "url": "https://en.wikipedia.org/wiki/Chariot",
+      "kind": "press",
+      "claims_touched": []
+    },
+    {
+      "what": "Monumental stone buildings with ritual use",
+      "earliest": "Already present: Goebekli Tepe, 9600-8200 BCE; Nevali Cori 8400-8100 BCE. UNESCO: \"probably used in connection with rituals, most likely of a funerary nature\". Built by hunter-gatherers, with no metal.",
+      "where": "Anatolia",
+      "evidence": "UNESCO 1572 (official).",
+      "url": "https://whc.unesco.org/en/list/1572",
+      "kind": "official",
+      "claims_touched": [
+        "temple-of-poseidon"
+      ]
+    },
+    {
+      "what": "Irrigation canals",
+      "earliest": "Choga Mami, Iraq, \"the first canal irrigation in operation around 6000 BCE\".",
+      "where": "Diyala, Iraq",
+      "evidence": "Wikipedia \"Choga Mami\" (second source).",
+      "url": "https://en.wikipedia.org/wiki/Choga_Mami",
+      "kind": "press",
+      "claims_touched": [
+        "canal-to-sea",
+        "plain-ditch",
+        "two-harvests"
+      ]
+    },
+    {
+      "what": "Group violence and war",
+      "earliest": "Jebel Sahaba cemetery (Nile valley): a 2021 reanalysis found over 100 more lesions and \"Most trauma appears to be the result of projectile weapons\"; its old date of 14,979-18,568 BP was rejected by later authors. Nataruk, Kenya: ten of twelve skeletons \"show evidence of having died violently\", late Pleistocene or early Holocene. These are killings of small groups, not armies or fleets.",
+      "where": "Sudan/Egypt; Kenya",
+      "evidence": "Crevecoeur 2021 (Scientific Reports 11:9991) abstract; Lahr 2016 (Nature 529:394) abstract.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8159958/",
+      "kind": "peer-reviewed",
+      "claims_touched": [
+        "war-with-athens"
+      ]
+    },
+    {
+      "what": "States and kings",
+      "earliest": "Not before the 4th millennium BC in the sources read (Uruk period, proto-cuneiform administration). Goebekli Tepe was built by \"groups of hunter-gatherers\" (UNESCO).",
+      "where": "Mesopotamia",
+      "evidence": "UNESCO 1572; Wikipedia \"Proto-cuneiform\" and \"Uruk\".",
+      "url": "https://whc.unesco.org/en/list/1572",
+      "kind": "official",
+      "claims_touched": [
+        "ten-kings",
+        "empire-to-egypt-and-tyrrhenia"
+      ]
+    }
+  ],
+  "animals_and_climate": [
+    {
+      "what": "Straight-tusked elephant in Europe",
+      "finding": "Gone from Europe long before 11.6 ka. Wikipedia: it may have \"survived until around 28,000 years ago in the southern Iberian Peninsula based on footprints\", and one molar from the North Sea has a date near 37,400 years ago needing confirmation.",
+      "evidence": "Wikipedia \"Straight-tusked elephant\", Extinction section (second source; both late dates are marked as uncertain there).",
+      "url": "https://en.wikipedia.org/wiki/Straight-tusked_elephant",
+      "claims_touched": [
+        "elephants"
+      ]
+    },
+    {
+      "what": "Dwarf elephants on Mediterranean islands",
+      "finding": "Cyprus dwarf elephant \"survived at least until 12,000 years ago\", about the time humans arrived; Tilos elephant dated by 1970s radiocarbon to about 3,500 years ago, \"tentative\" and awaiting confirmation; Sardinia dwarf mammoth until at least 60-30,000 years ago; woolly mammoth on Wrangel Island until about 2000 BCE. Wikipedia: extinction \"has not been correlated with the arrival of humans to the islands, with the exception of Palaeoloxodon cypriotes on Cyprus\".",
+      "evidence": "Wikipedia \"Dwarf elephant\" (second source). Primary papers not opened.",
+      "url": "https://en.wikipedia.org/wiki/Dwarf_elephant",
+      "claims_touched": [
+        "elephants"
+      ]
+    },
+    {
+      "what": "Elephants in north-west Africa",
+      "finding": "The North African elephant (Loxodonta africana pharaohensis) lived north of the Sahara \"until it died out in Roman times\"; the article gives the 4th century AD for the end. I found no source on how many lived there at 11.6 ka. So Plato's \"elephants\" is not impossible for a Moroccan or Mauritanian coast; it does not tell us anything about a city.",
+      "evidence": "Wikipedia \"North African elephant\" (second source; the subspecies is not widely recognised, per the article).",
+      "url": "https://en.wikipedia.org/wiki/North_African_elephant",
+      "claims_touched": [
+        "elephants"
+      ]
+    },
+    {
+      "what": "African Humid Period and the Sahara",
+      "finding": "14,800 to 5,500 years ago; \"abrupt onset and termination\" in arid North Africa, later and more gradual toward the equator. At 11.6 ka the Sahara had just re-greened after a Younger Dryas dry phase, with lakes and grassland. People lived at Gobero (from about 8000 BCE) and Takarkori (from about 8200 BCE). The Richat Structure lies in this belt, but geologists (Matton and others 2005, already in legends.json) read it as a natural dome.",
+      "evidence": "Shanahan 2015 abstract: \"During the African Humid Period about 14,800 to 5,500 years ago ... the monsoon responded synchronously and predictably to glacial reorganizations ... but the response to the relatively weaker radiative forcing during the African Humid Period was more spatially and temporally complex.\"",
+      "url": "https://digitalcommons.uri.edu/gsofacpubs/1657",
+      "claims_touched": [
+        "elephants",
+        "two-harvests",
+        "great-plain"
+      ]
+    },
+    {
+      "what": "Greenland temperature at the end of the Younger Dryas",
+      "finding": "Warming of more than 10 K, mostly within 50-60 years, at 11.7 ka b2k; the moisture-source marker flipped in 1-3 years.",
+      "evidence": "Steffensen 2008, Science 321:680.",
+      "url": "https://www.whoi.edu/cms/files/steffensen08sci_279004.pdf",
+      "claims_touched": [
+        "nine-thousand-years"
+      ]
+    },
+    {
+      "what": "Sea-level rise rate after the Younger Dryas",
+      "finding": "About 15 m per thousand years (1.5 m per century) between 11.4 and 8.2 ka, so coasts retreated fast in flat places: a generation could see the shore move. On a shelf with a 1:1000 slope, 1.5 m a century is 1.5 km a century.",
+      "evidence": "Lambeck 2014 for the rate; the slope sum is our arithmetic.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217469/",
+      "claims_touched": [
+        "sank-in-a-day-and-night"
+      ]
+    }
+  ],
+  "handoffs": [
+    {
+      "lane": "drowned-lands",
+      "what": "General survey of sea-level curves and submerged landscapes, and of coastline datasets other than ICE-6G_C, PaleoMIST and Sturt 2013. Local relative sea level for Gibraltar, Cadiz, Azores, Bahamas, Sunda and the North Sea at 11.6 ka was not found here.",
+      "url": null
+    },
+    {
+      "lane": "plato",
+      "what": "Check the \"9,000 years before Solon\" arithmetic and which year count Plato uses; my 9600 BCE is the brief's figure. Also whether \"orichalcum\" means copper-zinc brass, which would date to a much later period than anything at 9600 BCE.",
+      "url": null
+    },
+    {
+      "lane": "hypotheses",
+      "what": "The Younger Dryas impact link to Atlantis comes through Graham Hancock's books (Fingerprints of the Gods, Magicians of the Gods), not through the impact papers. The claimed impact (12.9 ka) is about 1,300 years before Plato's date.",
+      "url": "https://en.wikipedia.org/wiki/Magicians_of_the_Gods"
+    },
+    {
+      "lane": "site-data",
+      "what": "Spartel Bank top is 56 m below today's sea; whether it was an island at 11.6 ka depends on a global level between about -45 and -60 m. A 1 m multibeam grid there would settle how much of it stood above each level.",
+      "url": "https://en.wikipedia.org/wiki/Spartel"
+    },
+    {
+      "lane": "searches",
+      "what": "Goebekli Tepe is the site most often shown with Atlantis in documentaries. UNESCO text for it is quoted in firsts.",
+      "url": "https://whc.unesco.org/en/list/1572"
+    }
+  ],
+  "not_verified": [
+    "Lambeck and others 2014 SI Appendix Table S3 (the actual sea-level numbers): PMC, PNAS and Europe PMC all blocked scripted download. The globe's -134 m is stated in the paper abstract; its -60 m at 11.4 ka is a derived number I could not reproduce from the text.",
+    "Yokoyama and others (Great Barrier Reef and Tahiti IODP), Peltier and Fairbanks 2006, Deschamps 2012, Stanford and others 2011: named in the brief or in sources, not fetched. Stanford 2011 and Liu and Milliman 2004 appear here only through Wikipedia.",
+    "A local sea level for 11.6 ka at Gibraltar and the Gulf of Cadiz, the Azores, the Bahamas, the Sunda Shelf and the North Sea: no number found. Gracia (Cadiz) and Goy 1996 returned 403.",
+    "Hanebuth and others 2011 and the Singapore paper (Shaw and others): the Shaw PDF was read but gave no 11.6 ka figure that I could match.",
+    "Dalton 2020 shapefile download address: the paper says shapefiles are in the supplement; the ScienceDirect supplement was not opened.",
+    "NADI-1 file names inside the zip (so that 11.5 ka and 12 ka exist is an inference from 49 steps over 24 ka).",
+    "ICE-6G_C: file sizes, download address behind the PMIP4 page, and the licence. The Toronto page timed out.",
+    "GLAC-1D (Tarasov), ICE-7G_NA and other global ice models: not looked at.",
+    "Wikipedia is the main source for dates at most archaeological sites. Primary papers were read (abstract only) for Gilgal I, Klimonas, Hilazon Tachtit, Monte Verde, Paisley, Anzick, Gobero, Takarkori, Taforalt, Xianrendong, Ohalo II. Excavation reports for Goebekli Tepe, Karahan Tepe, Jerf el-Ahmar, Mureybet and Abu Hureyra were not opened. Goebekli Tepe and Jericho were checked against UNESCO.",
+    "Tell Qaramel: Wikipedia flags its early dates as inconsistent with other sites; I did not open the excavators' papers.",
+    "Sites with no usable dating or coordinates in what I read, so left out: Tell Aswad, Cafer Hoyuk, Shillourokambos, Wadi Faynan 16, Ifri n'Ammar, the Caves of Nerja, Muge shell middens, Parpallo, Kamikuroiwa, Uan Afuda, Kfar HaHoresh (Wikipedia page is the kibbutz), Netiv Hagdud (page is the moshav).",
+    "Iberia and north-west Africa: I found no securely dated monumental or metal-working site there for 10,500-8,500 BCE. Taforalt (foragers) ends about 12,600 cal BP. This is an absence in what I searched, not proof of absence.",
+    "Whether pottery appears in the Near East before about 7000 BCE: not checked.",
+    "Pinter 2011, van Hoesel 2014, Holliday 2023 and Sweatman 2024: abstracts only (I did not read the full papers). Holliday 2023 is 96,000 words per its critics.",
+    "The first Near-Eastern tin bronze and the Balkan tin-bronze foil: not verified.",
+    "Sea-crossing dates for Sahul and Wallacea (tens of thousands of years ago) were not looked up; the brief asked for the earliest open-sea crossings, and I give only the Mediterranean cases."
+  ],
+  "datasets_existing_ids_to_pair": [
+    "gmrt-wms",
+    "gmrt-point-and-grid",
+    "emodnet-bathymetry-multicolour",
+    "srtm15-plus",
+    "gebco-wms"
+  ],
+  "datasets_coastline_handoff": "Surveying general shoreline sets belongs to the drowned-lands lane (written to research/prior). This file covers only ICE-6G_C, PaleoMIST and Sturt 2013 for the date."
+}

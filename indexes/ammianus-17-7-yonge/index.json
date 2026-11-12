@@ -1,0 +1,34 @@
+{
+  "id": "ammianus-17-7-yonge",
+  "title": "Ammianus Marcellinus, Roman History 17.7.9-14 (English, C. D. Yonge, 1862)",
+  "source": {
+    "url": "https://www.gutenberg.org/ebooks/28587",
+    "publisher": "Project Gutenberg (ebook #28587)",
+    "date": "1862",
+    "pages": 1,
+    "file": "work/pg/pg28587.txt",
+    "sha256": "39e403f4e612cec9ef963c160e3c946b50c9da73e9e96fdba80c2db4608fa9bf",
+    "license": "Public domain (Yonge died 1891; Project Gutenberg text)",
+    "license_url": "https://www.gutenberg.org/policy/permission.html"
+  },
+  "language": "en",
+  "kind": "ancient-text",
+  "summary": "Ammianus (4th century CE) on the causes of earthquakes. In 17.7.13 he says an island in the Atlantic was swallowed in a chasm-type quake, without naming Atlantis. A late-antique echo of the story.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "Hand-built tree. The passage was cut from the source file by its own section anchors or line range; one leaf per passage, titled with the citation. No language model was used."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Ammianus Marcellinus 17.7.12-14: Anaximander on quakes; four kinds of earthquake and the Atlantic island",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "Ammianus gives Anaximander's theory of earthquakes, then four kinds. Under the gaping kind he lists the swallowing of a large island on the European coast of the Atlantic, Helice and Bura in the Gulf of Corinth, and the town of Saccumum in Italy.",
+      "nodes": []
+    }
+  ]
+}

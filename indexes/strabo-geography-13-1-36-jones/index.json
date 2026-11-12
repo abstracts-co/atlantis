@@ -1,0 +1,34 @@
+{
+  "id": "strabo-geography-13-1-36-jones",
+  "title": "Strabo, Geography 13.1.36 (English, H. L. Jones, Loeb, 1929)",
+  "source": {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/13A2*.html",
+    "publisher": "LacusCurtius (Bill Thayer), from the Loeb Classical Library vol. VI (1929)",
+    "date": "1929",
+    "pages": 1,
+    "file": "work/lc/Strabo_13A2.html",
+    "sha256": "19bae189af6fc5e28a3133bc782c2864d005a9ecb9df62febb82dd4d63d26f45",
+    "license": "Public domain (the host marks the page public domain; Loeb 1929)",
+    "license_url": "https://penelope.uchicago.edu/Thayer/E/HELP/Copyright/home.html"
+  },
+  "language": "en",
+  "kind": "ancient-text",
+  "summary": "Strabo on the Achaean wall at Troy: Homer built it and then \"abolished\" it, as Aristotle says. This is the saying that Strabo (2.3.6) says Posidonius applied to Plato's Atlantis: the inventor made it disappear. The Atlantis link is in 2.3.6, not here.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "Hand-built tree. The passage was cut from the source file by its own section anchors or line range; one leaf per passage, titled with the citation. No language model was used."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Strabo, Geography 13.1.36: the Achaean wall \"fabricated and then abolished by the poet, as Aristotle says\"",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "Strabo argues the Greek naval station at Troy would have been exposed for a long time, and says the wall was either built only recently or never built, \"fabricated and then abolished by the poet, as Aristotle says\". The Atlantis connection comes from 2.3.6.",
+      "nodes": []
+    }
+  ]
+}

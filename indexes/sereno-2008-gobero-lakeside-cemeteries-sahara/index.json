@@ -1,0 +1,125 @@
+{
+  "id": "sereno-2008-gobero-lakeside-cemeteries-sahara",
+  "title": "Lakeside Cemeteries in the Sahara: 5000 Years of Holocene Population and Environmental Change (Sereno and others, 2008)",
+  "source": {
+    "url": "https://doi.org/10.1371/journal.pone.0002995",
+    "publisher": "Public Library of Science",
+    "date": "2008",
+    "pages": 22,
+    "file": "work/pdf/sereno-2008-gobero.pdf",
+    "sha256": "98c10ed4c9bdea0be409e200c50101f9d37a19a1a78e4146bb4bb5546066940c",
+    "license": "CC BY (Creative Commons Attribution License, as stated in the PDF and on the PLoS ONE page)",
+    "license_url": "https://creativecommons.org/licenses/by/2.5/"
+  },
+  "language": "en",
+  "kind": "paper",
+  "summary": "Describes about two hundred burials at Gobero, on the edge of a palaeolake in Niger, covering human occupation of the southern Sahara from about 8000 BCE and its change under severe climate swings.",
+  "tool": {
+    "name": "PageIndex",
+    "version": "0.5.3",
+    "models": [
+      "claude-code/haiku"
+    ],
+    "method": "PageIndex Flash mode run through Claude Code (claude-code/haiku; doc_id pi-4c64cee9af92415da94ba4952c56264e; store in out/pageindex). The tree follows the paper's own headings. I replaced PageIndex's model-written summaries, which contained numbers I could not stand behind, with short summaries of what each section covers, and tidied titles. Text is the PDF text layer by page."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Abstract",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "The authors' summary: about two hundred burials on the edge of a palaeolake at Gobero, Niger, that record rapid change in southern Saharan people under severe climate swings from about 8000 BCE.",
+      "nodes": []
+    },
+    {
+      "node_id": "0002",
+      "title": "Introduction",
+      "start_page": 2,
+      "end_page": 2,
+      "summary": "Sets out the question and earlier work behind the Gobero burials.",
+      "nodes": []
+    },
+    {
+      "node_id": "0003",
+      "title": "Results and Discussion",
+      "start_page": 2,
+      "end_page": 12,
+      "summary": "The results of the Gobero burials, with the evidence behind them.",
+      "nodes": []
+    },
+    {
+      "node_id": "0004",
+      "title": "Materials and Methods",
+      "start_page": 12,
+      "end_page": 21,
+      "summary": "How the Gobero burials was done: samples, measurements and analysis.",
+      "nodes": [
+        {
+          "node_id": "0005",
+          "title": "Discovery and Excavation",
+          "start_page": 12,
+          "end_page": 13,
+          "summary": "Method: discovery and excavation, as used in the Gobero burials.",
+          "nodes": []
+        },
+        {
+          "node_id": "0006",
+          "title": "Optically Stimulated Luminescence Dating of Paleodune Sand",
+          "start_page": 13,
+          "end_page": 13,
+          "summary": "Method: optically stimulated luminescence dating of paleodune sand, as used in the Gobero burials.",
+          "nodes": []
+        },
+        {
+          "node_id": "0007",
+          "title": "Direct 14 C AMS Dating of Enamel and Bone",
+          "start_page": 13,
+          "end_page": 16,
+          "summary": "Method: direct 14 c ams dating of enamel and bone, as used in the Gobero burials.",
+          "nodes": []
+        },
+        {
+          "node_id": "0008",
+          "title": "Comparative Craniometric Analysis",
+          "start_page": 16,
+          "end_page": 16,
+          "summary": "Method: comparative craniometric analysis, as used in the Gobero burials.",
+          "nodes": []
+        },
+        {
+          "node_id": "0009",
+          "title": "Strontium Isotope Analysis",
+          "start_page": 16,
+          "end_page": 19,
+          "summary": "Method: strontium isotope analysis, as used in the Gobero burials.",
+          "nodes": []
+        },
+        {
+          "node_id": "0010",
+          "title": "Pollen Analysis",
+          "start_page": 19,
+          "end_page": 21,
+          "summary": "Method: pollen analysis, as used in the Gobero burials.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0011",
+      "title": "Saharan Lakeside Cemeteries: Isotope Data, Pollen Sampling, Acknowledgments, Contributions",
+      "start_page": 21,
+      "end_page": 21,
+      "summary": "Section on saharan lakeside cemeteries: isotope data, pollen sampling, acknowledgments, contributions in the Gobero burials.",
+      "nodes": []
+    },
+    {
+      "node_id": "0012",
+      "title": "References",
+      "start_page": 21,
+      "end_page": 22,
+      "summary": "The reference list.",
+      "nodes": []
+    }
+  ]
+}

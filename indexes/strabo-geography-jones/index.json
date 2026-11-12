@@ -1,0 +1,42 @@
+{
+  "id": "strabo-geography-jones",
+  "title": "Strabo, Geography 2.3.6 and 8.7.2 (English, H. L. Jones, Loeb, 1917 and 1927)",
+  "source": {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/2C*.html",
+    "publisher": "LacusCurtius (Bill Thayer), from the Loeb Classical Library: vol. I (1917) and vol. IV (1927)",
+    "date": "1917-1927",
+    "pages": 2,
+    "file": "work/lc/Strabo_2C_.html",
+    "sha256": "e81da02eaa898058fbda5ae9da975eb9d5057b0f37535f7bf36a4cefc3b86583",
+    "license": "Public domain (the host marks the pages public domain; Loeb 1917 and 1927)",
+    "license_url": "https://penelope.uchicago.edu/Thayer/E/HELP/Copyright/home.html"
+  },
+  "language": "en",
+  "kind": "ancient-text",
+  "summary": "Two passages of Strabo: his report that Posidonius used Plato's Atlantis as an example of land that sinks, and his account of Helike, the Greek city swallowed by the sea in 373 BCE.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "Hand-built tree. The passage was cut from the source file by its own section anchors or line range; one leaf per passage, titled with the citation. No language model was used."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Strabo, Geography 2.3.6: Posidonius on earthquakes, Plato's Atlantis and the Cimbrians",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "Strabo says Posidonius rightly notes that land rises and settles, and cites Plato that the Atlantis story may not be a fiction. Posidonius prefers that to saying the inventor \"made it disappear\" like Homer's Achaean wall. Strabo also reports his idea that a sudden flood drove the Cimbrians out.",
+      "nodes": []
+    },
+    {
+      "node_id": "0002",
+      "title": "Strabo, Geography 8.7.2: the sea swallows Helike",
+      "start_page": 2,
+      "end_page": 2,
+      "summary": "Strabo reports that an earthquake lifted the sea and submerged Helike and the temple of Poseidon, two years before Leuctra. Eratosthenes saw the site, ferrymen showed a bronze Poseidon in the strait, and Heracleides gives the Achaean version of Poseidon's anger.",
+      "nodes": []
+    }
+  ]
+}

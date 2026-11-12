@@ -1,0 +1,265 @@
+{
+ "what": "Work that is open in this community, for a person and their AI to pick up. The hall at the centre of the city shows this list on its wall, and each task there gives a prompt to hand to an AI. Open questions of the research itself are not typed here: the hall takes them from the data (searches still open in case.json, things claimed but never given a position in evidence.json, clues not yet scored in worldfit.json). File names are as they are in the community's repository.",
+ "community": "atlantis",
+ "repository": "https://github.com/abstracts-co/atlantis",
+ "how": [
+  "Read AGENTS.md first. It says where everything is and which check goes with which file.",
+  "Pick one task. Say on the community's Wall that you are taking it, so two people do not do the same work.",
+  "Do it on a branch. Nothing from memory: every claim and every position has a source that was fetched. Atlantis is a legend with no archaeological support, and a score is never evidence of a city.",
+  "Run the task's checks. Show the person what changed and wait until they accept it.",
+  "Open one pull request from the person's GitHub account, and name the task in it."
+ ],
+ "areas": {
+  "graphics": "How the city and the globe look",
+  "research": "What is known, and from where",
+  "data": "The numbers under the hunt",
+  "sound": "The voice, the effects, the air of the city",
+  "play": "Walking, meeting, things to do",
+  "hall": "What the hall shows, and how"
+ },
+ "work": [
+  {
+   "id": "g-figures",
+   "area": "graphics",
+   "size": "medium",
+   "title": "The statues are blocky",
+   "why": "Poseidon, his six winged horses and the hundred Nereids are plain lofted shapes. Up close, on foot, they read as chess pieces.",
+   "start": [
+    "source/engine/city/forms.js",
+    "source/engine/city/citadel.js"
+   ],
+   "check": [
+    "node tools/check-reconstruction.mjs",
+    "node source/build/verify.mjs drive platos-city"
+   ],
+   "done_when": "From 10 m, on foot, each reads as what the text names, the city still builds in under two seconds, and the temple view in citylab.mjs costs no more than a tenth more time a frame."
+  },
+  {
+   "id": "g-street",
+   "area": "graphics",
+   "size": "medium",
+   "title": "Walls and paving are flat at arm's length",
+   "why": "The materials were made to be seen from the air. On foot, a wall a metre away is one blurred picture.",
+   "start": [
+    "source/engine/city/materials.js",
+    "source/engine/city/textures.js",
+    "source/engine/city/assets/CREDITS.md"
+   ],
+   "check": [
+    "node source/build/citylab.mjs --round street --views street,temple --perf",
+    "node source/build/verify.mjs drive walk"
+   ],
+   "done_when": "Stone and paving keep their grain within 2 m of the eye, any new picture is CC0 and credited, and the artifact stays under 10 MB."
+  },
+  {
+   "id": "g-sky",
+   "area": "graphics",
+   "size": "small",
+   "title": "Stars show in the day sky near the ground",
+   "why": "Where no ground is drawn the globe's sky pass draws stars whatever the sun's height. The city hides this with its own dome (see source/engine/city/HANDOFF.md, request 1).",
+   "start": [
+    "source/engine/shaders.js",
+    "source/engine/cityscene.js"
+   ],
+   "check": [
+    "node source/build/verify.mjs drive walk",
+    "node source/build/verify.mjs drive move-the-globe"
+   ],
+   "done_when": "The sky by day is a day sky from street level and from orbit with the city's dome removed."
+  },
+  {
+   "id": "g-plain",
+   "area": "graphics",
+   "size": "large",
+   "title": "The great plain and its canals are not built",
+   "why": "Critias 118a-e describes a plain 3,000 by 2,000 stadia with a ditch a stadion wide round it and canals across it. The record lists it as still to do (reconstruction.json, choice \"plain\").",
+   "start": [
+    "data/reconstruction.json",
+    "source/engine/city/plan.js",
+    "source/engine/city/ground.js"
+   ],
+   "check": [
+    "node tools/check-reconstruction.mjs",
+    "node source/build/verify.mjs drive platos-city"
+   ],
+   "done_when": "The plain, its ditch and its canals are drawn at Plato's sizes, each as an entry with its passage and quote found in the text."
+  },
+  {
+   "id": "g-phone",
+   "area": "graphics",
+   "size": "small",
+   "title": "Nobody has measured the city on a real phone",
+   "why": "Frame times so far come from a laptop. The phone build draws fewer columns and smaller shadows, by guess.",
+   "start": [
+    "source/build/citylab.mjs",
+    "source/engine/cityscene.js",
+    "source/engine/walk.js"
+   ],
+   "check": [
+    "node source/build/citylab.mjs --phone --perf"
+   ],
+   "done_when": "Frame times on two named phones are written into docs/how-it-works.md, and walking holds 30 frames a second on both or the phone build is cut until it does."
+  },
+  {
+   "id": "r-clues",
+   "area": "research",
+   "size": "large",
+   "title": "Score more of Plato's clues",
+   "why": "The hunt scores five things the shape of the land can answer. The hall's wall lists the checkable claims that are not scored yet.",
+   "start": [
+    "tools/make-worldfit.mjs",
+    "data/case.json",
+    "docs/how-it-works.md"
+   ],
+   "check": [
+    "node tools/check-data.mjs",
+    "node source/build/verify.mjs drive hunt"
+   ],
+   "done_when": "A new clue has a rule that needs only open data, is written up with its limits, and the leaderboard is made again with it."
+  },
+  {
+   "id": "r-scene",
+   "area": "research",
+   "size": "medium",
+   "title": "Give a claimed place its scene",
+   "why": "Eight of the places people have named have their research drawn on the ground. The others are a pin and a paragraph.",
+   "start": [
+    "docs/guides/add-a-scene.md",
+    "research/atlantis/evidence/BRIEF.md",
+    "data/legends.json"
+   ],
+   "check": [
+    "node tools/check-evidence.mjs",
+    "node source/build/verify.mjs drive scenes"
+   ],
+   "done_when": "One more place has a scene whose every feature has a position from a published source, with what was claimed and what was found side by side."
+  },
+  {
+   "id": "r-open-search",
+   "area": "research",
+   "size": "small",
+   "title": "Close a search that is still open",
+   "why": "Some searches on record never published a result, or their claim was never tested. The hall lists them.",
+   "start": [
+    "data/searches.json",
+    "data/case.json"
+   ],
+   "check": [
+    "node tools/check-data.mjs",
+    "node source/build/verify.mjs drive the-board"
+   ],
+   "done_when": "One open search has a published outcome with its source, or a note saying where you looked and found none."
+  },
+  {
+   "id": "r-ice",
+   "area": "research",
+   "size": "large",
+   "title": "Places near the old ice are only flagged",
+   "why": "The hunt lowers one sea for the whole planet. Where ice sheets pressed the land down, the old shore was somewhere else, so results beyond 45 degrees are marked and listed apart.",
+   "start": [
+    "tools/make-worldfit.mjs",
+    "data/worldfit.json"
+   ],
+   "check": [
+    "node tools/check-data.mjs"
+   ],
+   "done_when": "The old shore near the ice comes from a published model of how the land moved, named with its source, and the flag is gone."
+  },
+  {
+   "id": "d-finer",
+   "area": "data",
+   "size": "medium",
+   "title": "Finer sea floor under the best matches",
+   "why": "The best match on Earth is scored on a 10 km grid from elevation tiles whose sea floor is coarse (data/README.md says how coarse). Five claimed places already have finer grids.",
+   "start": [
+    "tools/make-patches.mjs",
+    "data/patches/index.json",
+    "data/worldfit.json"
+   ],
+   "check": [
+    "node tools/check-data.mjs",
+    "node source/build/verify.mjs drive scenes"
+   ],
+   "done_when": "The three best matches each have a finer grid from an open survey, credited, and the fit test reads them."
+  },
+  {
+   "id": "s-languages",
+   "area": "sound",
+   "size": "medium",
+   "title": "The story in another language",
+   "why": "The story is spoken in English only. The voice model speaks many languages; the words must be translated by someone who can check them, quotations from a published translation.",
+   "start": [
+    "source/engine/storytext.js",
+    "tools/make-audio.mjs"
+   ],
+   "check": [
+    "node tools/make-audio.mjs --check",
+    "node source/build/verify.mjs drive sound"
+   ],
+   "done_when": "One more language has every sentence, each quotation taken from a named published translation, recorded and checked."
+  },
+  {
+   "id": "s-city",
+   "area": "sound",
+   "size": "small",
+   "title": "The city has one sound",
+   "why": "On foot there is the harbour's air and a footstep. The springs, the temple and the bridges are silent.",
+   "start": [
+    "tools/make-audio.mjs",
+    "source/engine/sound.js",
+    "source/engine/walk.js"
+   ],
+   "check": [
+    "node tools/make-audio.mjs --check",
+    "node source/build/verify.mjs drive sound"
+   ],
+   "done_when": "Three places have their own sound that fades in as you come near, each with its prompt in the index, and the artifact stays under 10 MB."
+  },
+  {
+   "id": "p-finds",
+   "area": "play",
+   "size": "medium",
+   "title": "Something to do on foot",
+   "why": "You can walk the forty parts of the city, but nothing marks which you have found.",
+   "start": [
+    "source/engine/walk.js",
+    "source/engine/citybar.js",
+    "source/engine/city/surfaces.js"
+   ],
+   "check": [
+    "node source/build/verify.mjs drive walk"
+   ],
+   "done_when": "Reaching a part on foot marks it found and shows its passage, the count is kept for a signed-in member, and all forty can be reached."
+  },
+  {
+   "id": "p-people",
+   "area": "play",
+   "size": "small",
+   "title": "Other people are plain figures",
+   "why": "Someone else in the city is a pale figure with a name. It should be light to draw for a hundred people and still read as a person.",
+   "start": [
+    "source/engine/meet.js"
+   ],
+   "check": [
+    "node source/build/verify.mjs drive meet"
+   ],
+   "done_when": "A hundred figures cost under a millisecond a frame on a laptop and each shows which way it faces and whether it is speaking."
+  },
+  {
+   "id": "h-tables",
+   "area": "hall",
+   "size": "large",
+   "title": "A table for each claimed place",
+   "why": "The hall shows the eight studied places as words on the wall. A small relief of each, with what was claimed and what was found on it, would show them at a glance.",
+   "start": [
+    "source/engine/hall.js",
+    "source/engine/dem.js",
+    "data/evidence.json"
+   ],
+   "check": [
+    "node source/build/verify.mjs drive hall"
+   ],
+   "done_when": "Each studied place stands in the hall as a relief made from the same heights the globe uses, with its features drawn from evidence.json."
+  }
+ ]
+}

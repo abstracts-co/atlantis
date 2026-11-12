@@ -1,0 +1,14 @@
+{
+  "title": "Atlantis",
+  "description": "Walk Plato's city as he wrote it, meet people in the hall at its centre, and hunt the whole Earth for the place that fits his words. Every claim, search and open question is on its walls.",
+  "kind": "web",
+  "entry": "index.html",
+  "poster": "preview.webp",
+  "category": "tools",
+  "permissions": [
+    "microphone"
+  ],
+  "rooms": {
+    "seats": 100
+  }
+}

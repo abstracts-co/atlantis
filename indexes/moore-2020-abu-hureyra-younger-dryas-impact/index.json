@@ -1,0 +1,248 @@
+{
+  "id": "moore-2020-abu-hureyra-younger-dryas-impact",
+  "title": "Evidence of Cosmic Impact at Abu Hureyra, Syria at the Younger Dryas Onset (~12.8 ka): High-temperature melting at >2200 °C (Moore and others, 2020)",
+  "source": {
+    "url": "https://doi.org/10.1038/s41598-020-60867-w",
+    "publisher": "Springer Nature (Scientific Reports)",
+    "date": "2020",
+    "pages": 22,
+    "file": "work/pdf/moore-2020-abu-hureyra.pdf",
+    "sha256": "2d8caee5e434feffdd888edf53c893c30dacf0248775485c58ebceeca0370faa",
+    "license": "CC BY 4.0 (stated in the PDF and on the Nature page)",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "language": "en",
+  "kind": "paper",
+  "summary": "Presents evidence from Abu Hureyra in Syria for a cosmic impact at the start of the Younger Dryas, including meltglass, nanodiamonds and microspherules. A strongly disputed claim that the world lane records, since an impact is sometimes tied to Plato's flood.",
+  "tool": {
+    "name": "PageIndex",
+    "version": "0.5.3",
+    "models": [
+      "claude-code/haiku"
+    ],
+    "method": "PageIndex Flash mode run through Claude Code (claude-code/haiku; doc_id pi-dae72c20f8d74d439653408bfc2c783c; store in out/pageindex). The tree follows the paper's own headings. I replaced PageIndex's model-written summaries, which contained numbers I could not stand behind, with short summaries of what each section covers, and tidied titles. Text is the PDF text layer by page."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Evidence of Cosmic Impact at Abu Hureyra, Syria at the Younger Dryas Onset (~12.8 ka): High-temperature melting at >2200 °C ...",
+      "start_page": 1,
+      "end_page": 22,
+      "summary": "The whole paper: meltglass, nanodiamonds, microspherules and charcoal in the 12,800-year-old Younger Dryas boundary layer at Abu Hureyra, read by the authors as evidence of a cosmic impact.",
+      "nodes": [
+        {
+          "node_id": "0002",
+          "title": "Authors and affiliations",
+          "start_page": 1,
+          "end_page": 2,
+          "summary": "The author list and affiliations on the first pages.",
+          "nodes": []
+        },
+        {
+          "node_id": "0003",
+          "title": "Site Setting, Geology, and Age",
+          "start_page": 2,
+          "end_page": 2,
+          "summary": "Section on site setting, geology, and age in the Abu Hureyra study.",
+          "nodes": []
+        },
+        {
+          "node_id": "0004",
+          "title": "Results and Interpretations",
+          "start_page": 2,
+          "end_page": 16,
+          "summary": "The results of the Abu Hureyra study, with the evidence behind them.",
+          "nodes": [
+            {
+              "node_id": "0005",
+              "title": "Abu Hureyra meltglass.",
+              "start_page": 2,
+              "end_page": 3,
+              "summary": "Result: abu hureyra meltglass, from the Abu Hureyra study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0006",
+              "title": "Furnace and torch heating experiments.",
+              "start_page": 3,
+              "end_page": 4,
+              "summary": "Result: furnace and torch heating experiments, from the Abu Hureyra study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0007",
+              "title": "AH meltglass with carbon-rich siliceous plant imprints.",
+              "start_page": 4,
+              "end_page": 5,
+              "summary": "Result: ah meltglass with carbon-rich siliceous plant imprints, from the Abu Hureyra study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0008",
+              "title": "Silicon-rich minerals as temperature indicators.",
+              "start_page": 5,
+              "end_page": 5,
+              "summary": "Result: silicon-rich minerals as temperature indicators, from the Abu Hureyra study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0009",
+              "title": "Melted amorphous silica (SiO2 as lechatelierite).",
+              "start_page": 5,
+              "end_page": 9,
+              "summary": "Result: melted amorphous silica (sio2 as lechatelierite), from the Abu Hureyra study.",
+              "nodes": [
+                {
+                  "node_id": "0010",
+                  "title": "Silicon-rich minerals as temperature indicators.",
+                  "start_page": 5,
+                  "end_page": 7,
+                  "summary": "Result: silicon-rich minerals as temperature indicators, from the Abu Hureyra study.",
+                  "nodes": []
+                },
+                {
+                  "node_id": "0011",
+                  "title": "Melted quartz grains (SiO2).",
+                  "start_page": 7,
+                  "end_page": 9,
+                  "summary": "Result: melted quartz grains (sio2), from the Abu Hureyra study.",
+                  "nodes": []
+                },
+                {
+                  "node_id": "0012",
+                  "title": "Ca silicate (wollastonite).",
+                  "start_page": 9,
+                  "end_page": 9,
+                  "summary": "Result: ca silicate (wollastonite), from the Abu Hureyra study.",
+                  "nodes": []
+                }
+              ]
+            },
+            {
+              "node_id": "0013",
+              "title": "Zirconium-rich minerals.",
+              "start_page": 9,
+              "end_page": 9,
+              "summary": "Result: zirconium-rich minerals, from the Abu Hureyra study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0014",
+              "title": "Chromium-rich minerals.",
+              "start_page": 9,
+              "end_page": 10,
+              "summary": "Result: chromium-rich minerals, from the Abu Hureyra study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0015",
+              "title": "Iron-rich minerals.",
+              "start_page": 10,
+              "end_page": 14,
+              "summary": "Result: iron-rich minerals, from the Abu Hureyra study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0016",
+              "title": "Sulfide minerals.",
+              "start_page": 14,
+              "end_page": 14,
+              "summary": "Result: sulfide minerals, from the Abu Hureyra study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0017",
+              "title": "Rare-earth-rich phosphate (monazite).",
+              "start_page": 14,
+              "end_page": 15,
+              "summary": "Result: rare-earth-rich phosphate (monazite), from the Abu Hureyra study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0018",
+              "title": "Remanent magnetism as a formation criterion.",
+              "start_page": 15,
+              "end_page": 15,
+              "summary": "Result: remanent magnetism as a formation criterion, from the Abu Hureyra study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0019",
+              "title": "Water content as a temperature indicator.",
+              "start_page": 15,
+              "end_page": 16,
+              "summary": "Result: water content as a temperature indicator, from the Abu Hureyra study.",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "node_id": "0020",
+          "title": "Discussion and Implications",
+          "start_page": 16,
+          "end_page": 19,
+          "summary": "What the authors make of the results of the Abu Hureyra study and how they compare them with other work.",
+          "nodes": [
+            {
+              "node_id": "0021",
+              "title": "Laboratory experiments.",
+              "start_page": 16,
+              "end_page": 17,
+              "summary": "Discussion point: laboratory experiments, from the Abu Hureyra study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0022",
+              "title": "Potential formation by non-impact processes.",
+              "start_page": 17,
+              "end_page": 18,
+              "summary": "Discussion point: potential formation by non-impact processes, from the Abu Hureyra study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0023",
+              "title": "Comparison to known impact meltglass.",
+              "start_page": 18,
+              "end_page": 18,
+              "summary": "Discussion point: comparison to known impact meltglass, from the Abu Hureyra study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0024",
+              "title": "Similar proxies from other YDB sites.",
+              "start_page": 18,
+              "end_page": 19,
+              "summary": "Discussion point: similar proxies from other ydb sites, from the Abu Hureyra study.",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "node_id": "0025",
+          "title": "Conclusions",
+          "start_page": 19,
+          "end_page": 20,
+          "summary": "The authors' conclusions from the Abu Hureyra study.",
+          "nodes": []
+        },
+        {
+          "node_id": "0026",
+          "title": "Methods",
+          "start_page": 20,
+          "end_page": 22,
+          "summary": "How the Abu Hureyra study was done: samples, measurements and analysis.",
+          "nodes": []
+        },
+        {
+          "node_id": "0027",
+          "title": "Acknowledgements",
+          "start_page": 22,
+          "end_page": 22,
+          "summary": "Thanks and funding notes.",
+          "nodes": []
+        }
+      ]
+    }
+  ]
+}

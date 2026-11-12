@@ -1,0 +1,1931 @@
+{
+ "lane": "searches",
+ "checked": "2026-11-11",
+ "searches": [
+  {
+   "id": "rudbeck-atlantica-1679",
+   "title": "Olof Rudbeck's Atlantica: Sweden as Atlantis",
+   "kind": "book",
+   "who": [
+    "Olof Rudbeck (Olaus Rudbeck the Elder), professor of medicine at Uppsala"
+   ],
+   "date_start": "1679",
+   "date_end": "1702",
+   "place": {
+    "name": "Sweden (Uppsala region)",
+    "hypothesis_id": "gamla-uppsala",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "A literary and linguistic argument. No survey, excavation or instrument work is described in the source I read.",
+   "data": [],
+   "announced": {
+    "text": "A four-volume, 3,000-page treatise argued that Sweden was Atlantis, the cradle of civilization, and that Swedish was the original language of Adam.",
+    "where": "book (Atlantica), published in volumes from 1679",
+    "evidence": "Between 1679 and 1702, Rudbeck dedicated himself to contributions in historical-linguistics patriotism, writing a 3,000-page treatise in four volumes called Atlantica where he purported to prove that Sweden was Atlantis",
+    "source": "https://en.wikipedia.org/wiki/Olaus_Rudbeck"
+   },
+   "outcome": {
+    "status": "never-tested",
+    "text": "The argument was made from texts, so nobody ran a physical test. It was criticised by contemporaries, including the Danish professor Ludvig Holberg.",
+    "evidence": "His work was criticized by several Scandinavian authors, including the Danish professor Ludvig Holberg",
+    "source": "https://en.wikipedia.org/wiki/Olaus_Rudbeck"
+   },
+   "replies": [
+    {
+     "who": "Ludvig Holberg and other Scandinavian authors",
+     "year": null,
+     "what": "Criticised the work (Wikipedia names Holberg only; I did not read the criticisms themselves).",
+     "source": "https://en.wikipedia.org/wiki/Olaus_Rudbeck"
+    }
+   ],
+   "claims_touched": [
+    "beyond-pillars"
+   ],
+   "check_that_settled_it": null,
+   "sources": [
+    {
+     "title": "Wikipedia, Olaus Rudbeck",
+     "url": "https://en.wikipedia.org/wiki/Olaus_Rudbeck"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Source is Wikipedia only, so volume dates (1679 to 1702) are as Wikipedia gives them. I could not fetch a primary text of Atlantica or a library catalogue entry. A 1689 illustration from the book is described on the same page."
+  },
+  {
+   "id": "donnelly-antediluvian-world-1882",
+   "title": "Ignatius Donnelly, Atlantis: The Antediluvian World",
+   "kind": "book",
+   "who": [
+    "Ignatius L. Donnelly"
+   ],
+   "date_start": "1882",
+   "date_end": "1882",
+   "place": {
+    "name": "Mid-Atlantic, Azores",
+    "hypothesis_id": "azores",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Comparison of ancient civilisations and myths across the Old and New Worlds (hyperdiffusionism, per Wikipedia). No sea-floor work.",
+   "data": [],
+   "announced": {
+    "text": "Atlantis was real, was a large island in the Atlantic and the source of all later civilizations, and the Azores are its remnant.",
+    "where": "book (Harper & Brothers, New York)",
+    "evidence": "There once existed in the Atlantic Ocean, opposite the Mediterranean Sea, a large island, which was the remnant of an Atlantic continent, and known to the ancients as Atlantis.",
+    "source": "https://en.wikipedia.org/wiki/Atlantis:_The_Antediluvian_World"
+   },
+   "outcome": {
+    "status": "refuted",
+    "text": "Swedish oceanographer Hans Pettersson argued in 1944 that no island in the Atlantic could have sunk in the time Plato gives, because continents do not sink and the Mid-Atlantic Ridge is building volcanic crust. Plate tectonics later became accepted.",
+    "evidence": "Thus, there never was a larger island in the Atlantic which sank.",
+    "source": "https://atlantis-scout.de/atlantis-pettersson-english.htm"
+   },
+   "replies": [
+    {
+     "who": "Arvid Gustaf Högbom",
+     "year": 1938,
+     "what": "Wrote 'Die Atlantislitteratur unserer Zeit: Betrachtungen eines Geologen' against the geological case for an Atlantic Atlantis (as described by Franke's page, not read directly).",
+     "source": "https://atlantis-scout.de/atlantis-pettersson-english.htm"
+    },
+    {
+     "who": "Hans Pettersson",
+     "year": 1944,
+     "what": "Atlantis och Atlanten: argued no sunken Atlantic land fits Plato's date.",
+     "source": "https://atlantis-scout.de/atlantis-pettersson-english.htm"
+    }
+   ],
+   "claims_touched": [
+    "beyond-pillars",
+    "sank-in-a-day-and-night"
+   ],
+   "check_that_settled_it": "Plate tectonics and sea-floor geology: the ridge is erupting crust, not sinking land (Pettersson's argument, 1944).",
+   "sources": [
+    {
+     "title": "Wikipedia, Atlantis: The Antediluvian World",
+     "url": "https://en.wikipedia.org/wiki/Atlantis:_The_Antediluvian_World"
+    },
+    {
+     "title": "Atlantis-Scout (Thorwald Franke), Pettersson 1944",
+     "url": "https://atlantis-scout.de/atlantis-pettersson-english.htm"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "The refutation source is Franke's Atlantis-Scout page, a scholarly but individual website that summarises Pettersson. I did not read Pettersson's 1944 text."
+  },
+  {
+   "id": "termier-azores-tachylite-1913",
+   "title": "Termier's Atlantis lecture and the Azores lava glass",
+   "kind": "scientific-test",
+   "who": [
+    "Pierre-Marie Termier (French geologist)",
+    "Arvid Gustaf Högbom (Swedish geologist, reply)"
+   ],
+   "date_start": "1913",
+   "date_end": "1938",
+   "place": {
+    "name": "Azores plateau, Mid-Atlantic",
+    "hypothesis_id": "azores",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Examination of a piece of volcanic glass (tachylite) hauled up in 1898 during cable work, to ask whether the sea floor there had once been dry land.",
+   "data": [],
+   "announced": {
+    "text": "Termier argued the tachylite could only have cooled to glass in air, so the sea floor it came from was land not more than about 25,000 years ago.",
+    "where": "lecture, 1913",
+    "evidence": "he concluded that the sea floor from which the tachylite came once lay above water... this happened not more than 25000 years ago since the sea water affected the lava's surface only little",
+    "source": "https://atlantis-scout.de/atlantis-pettersson-english.htm"
+   },
+   "outcome": {
+    "status": "refuted",
+    "text": "Högbom said in 1938 that lava can cool to glass under water, and that rocks rafted by Ice Age icebergs to the Azores all settled near today's coast, which means land and sea levels there have been about the same since the last Ice Age. Pettersson adopted both points in 1944.",
+    "evidence": "The rocks which were transported by icebergs during the ice age to the Azores all settled down near today's coast line. This means that the level of land and sea since the last ice age was approximately the same as it is today.",
+    "source": "https://atlantis-scout.de/atlantis-pettersson-english.htm"
+   },
+   "replies": [
+    {
+     "who": "Arvid Gustaf Högbom",
+     "year": 1938,
+     "what": "Judged Termier too credulous; lava can form glass under water.",
+     "source": "https://atlantis-scout.de/atlantis-pettersson-english.htm"
+    }
+   ],
+   "claims_touched": [
+    "beyond-pillars",
+    "sank-in-a-day-and-night"
+   ],
+   "check_that_settled_it": "An already published explanation of the lava glass, plus iceberg-rafted rocks that mark the old shoreline at today's level.",
+   "sources": [
+    {
+     "title": "Atlantis-Scout (Thorwald Franke), Pettersson 1944",
+     "url": "https://atlantis-scout.de/atlantis-pettersson-english.htm"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "All details come from Franke's summary of Pettersson. I did not read Termier's lecture, Högbom's 1938 paper or the cable-work report. The legends.json Azores entry says cores show the plateau has been underwater; I did not find a primary source for drilling in this lane (see not_verified)."
+  },
+  {
+   "id": "frost-critias-minoan-crete-1913",
+   "title": "K. T. Frost: the Critias and Minoan Crete",
+   "kind": "book",
+   "who": [
+    "K. T. Frost"
+   ],
+   "date_start": "1913-11",
+   "date_end": "1913-11",
+   "place": {
+    "name": "Minoan Crete (Knossos)",
+    "hypothesis_id": "crete",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Literary argument, reading the Critias against what was then known of Minoan civilisation. No fieldwork.",
+   "data": [],
+   "announced": {
+    "text": "Plato's Atlantis story is best understood as a memory of Minoan Crete. A first version of the idea dates to 1909, according to Colavito.",
+    "where": "paper, Journal of Hellenic Studies 33 (1913)",
+    "evidence": "The attempt to answer these questions involves a consideration of the truth of Solon's visit to Egypt, a review of the whole problem of Atlantis and a glance at the relationship between Solon, Plato, and Critias.",
+    "source": "https://doi.org/10.2307/624108"
+   },
+   "outcome": {
+    "status": "never-tested",
+    "text": "The identification is a literary argument, and I found no survey or excavation reported as a test of it as Atlantis. Plato puts the island in the Atlantic and 9,000 years before Solon, which Crete does not match.",
+    "evidence": "nothing has been added to it since Frost's academic version of the argument in his 1913 journal article following up on his 1909 proposal",
+    "source": "https://www.jasoncolavito.com/blog/nat-geos-atlantis-rising-a-stew-of-fake-experts-motivated-reasoning-and-weird-claims-that-judaism-contains-atlantean-theology"
+   },
+   "replies": [],
+   "claims_touched": [
+    "nine-thousand-years",
+    "bull-ritual",
+    "fleet-and-harbours"
+   ],
+   "check_that_settled_it": null,
+   "sources": [
+    {
+     "title": "Crossref record and abstract, Frost 1913",
+     "url": "https://doi.org/10.2307/624108"
+    },
+    {
+     "title": "Jason Colavito, review of Atlantis Rising (2017)",
+     "url": "https://www.jasoncolavito.com/blog/nat-geos-atlantis-rising-a-stew-of-fake-experts-motivated-reasoning-and-weird-claims-that-judaism-contains-atlantean-theology"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "I read only the Crossref abstract, which does not itself say 'Minoan Crete is Atlantis'; the title and Colavito's description carry that. The 'Crete matches Plato' reading is the one named in our legends.json entry."
+  },
+  {
+   "id": "whoi-atlantis-azores-cruise-1931",
+   "title": "Bigelow and Iselin's Azores cruise on the ketch Atlantis",
+   "kind": "expedition",
+   "who": [
+    "Henry Bryant Bigelow",
+    "Columbus Iselin",
+    "Woods Hole Oceanographic Institution"
+   ],
+   "date_start": "1931",
+   "date_end": "1931",
+   "place": {
+    "name": "Azores, North Atlantic",
+    "hypothesis_id": "azores",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "A 42-day research cruise to study currents, with sounding and sampling gear also meant to probe the sea floor for signs of the 'Atlantean Plateau'.",
+   "data": [],
+   "announced": {
+    "text": "Newspapers reported that scientists would probe for Atlantis on the cruise; the scientists' stated aim was to study large currents.",
+    "where": "press (Minneapolis Sunday Tribune, October 1931) and WHOI history article",
+    "evidence": "scientists plan to probe for Atlantis by breaking through a thin submarine crust under which the legendary land is declared to be hidden.",
+    "source": "https://www.whoi.edu/news-insights/content/how-a-newly-established-oceanographic-institution-in-woods-hole-searched-for-the-lost-city-of-atlantis/"
+   },
+   "outcome": {
+    "status": "no-claim",
+    "text": "The crew found nothing and made no claim.",
+    "evidence": "the crew returned home empty-handed.",
+    "source": "https://www.whoi.edu/news-insights/content/how-a-newly-established-oceanographic-institution-in-woods-hole-searched-for-the-lost-city-of-atlantis/"
+   },
+   "replies": [],
+   "claims_touched": [
+    "beyond-pillars"
+   ],
+   "check_that_settled_it": "A sea-floor sampling cruise: nothing found; no published finding of land-surface rock.",
+   "sources": [
+    {
+     "title": "WHOI, 'How a newly established oceanographic institution in Woods Hole searched for the lost city of Atlantis'",
+     "url": "https://www.whoi.edu/news-insights/content/how-a-newly-established-oceanographic-institution-in-woods-hole-searched-for-the-lost-city-of-atlantis/"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "The WHOI page frames the Atlantis search as a side aim of a currents cruise. The quoted newspaper line is the Tribune as quoted by WHOI, not seen directly."
+  },
+  {
+   "id": "marinatos-volcanic-destruction-1939",
+   "title": "Marinatos: volcanic destruction of Minoan Crete",
+   "kind": "book",
+   "who": [
+    "Spyridon Marinatos"
+   ],
+   "date_start": "1939-12",
+   "date_end": "1939-12",
+   "place": {
+    "name": "Santorini (Thera) and Crete",
+    "hypothesis_id": "santorini",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "A reading of Minoan palace destruction layers across Crete, proposing one volcanic cause.",
+   "data": [],
+   "announced": {
+    "text": "The Minoan palace catastrophes on Crete were contemporaneous and caused by the Thera eruption. The abstract does not mention Atlantis.",
+    "where": "paper, Antiquity 13 (1939)",
+    "evidence": "Everywhere the catastrophes are seen to be contemporaneous.",
+    "source": "https://doi.org/10.1017/s0003598x00028088"
+   },
+   "outcome": {
+    "status": "corrected",
+    "text": "The Antiquity editors added a postscript saying the evidence was insufficient for the claim that the eruption destroyed Minoan civilisation, and the hypothesis has since been rejected as stated. The eruption itself is real; Marinatos then dug Akrotiri.",
+    "evidence": "The editors of Antiquity appended a postscript to his 1939 publication about the Thera eruption, stating that they believed the evidence currently insufficient to support Marinatos's hypothesis that the eruption had destroyed Minoan civilisation.",
+    "source": "https://en.wikipedia.org/wiki/Spyridon_Marinatos"
+   },
+   "replies": [
+    {
+     "who": "Editors of Antiquity",
+     "year": 1939,
+     "what": "Postscript doubting the evidence (reported by Wikipedia; I did not read the postscript).",
+     "source": "https://en.wikipedia.org/wiki/Spyridon_Marinatos"
+    }
+   ],
+   "claims_touched": [
+    "sank-in-a-day-and-night"
+   ],
+   "check_that_settled_it": "Excavation of Akrotiri from 1967 and radiocarbon dating of the eruption (2006).",
+   "sources": [
+    {
+     "title": "Crossref record and abstract, Marinatos 1939",
+     "url": "https://doi.org/10.1017/s0003598x00028088"
+    },
+    {
+     "title": "Wikipedia, Spyridon Marinatos",
+     "url": "https://en.wikipedia.org/wiki/Spyridon_Marinatos"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Our legends.json says later writers tied the eruption to Plato. Marinatos's 1939 abstract does not itself name Atlantis, so this entry is a turning point in the Thera story, not an Atlantis claim by Marinatos. I read only the abstract."
+  },
+  {
+   "id": "pettersson-atlantis-och-atlanten-1944",
+   "title": "Pettersson's geophysical case against an Atlantic Atlantis",
+   "kind": "scientific-test",
+   "who": [
+    "Hans Pettersson (Swedish oceanographer)"
+   ],
+   "date_start": "1944",
+   "date_end": "1944",
+   "place": {
+    "name": "Atlantic Ocean, Azores and Mid-Atlantic Ridge",
+    "hypothesis_id": "azores",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Review of the geology of the Atlantic, land-bridge theories, the Azores plateau and the 1913 Termier claim, against Plato's date.",
+   "data": [],
+   "announced": {
+    "text": "No Atlantic land could have sunk in the last ice age or since; continents do not sink, and the Mid-Atlantic Ridge is erupting new crust.",
+    "where": "book (Atlantis och Atlanten, 1944)",
+    "evidence": "Continents do not just sink, too, as can be seen e.g. in the lack of deep ocean sediments on land, they only move horicontally on the earths surface.",
+    "source": "https://atlantis-scout.de/atlantis-pettersson-english.htm"
+   },
+   "outcome": {
+    "status": "confirmed",
+    "text": "Franke notes that continental drift was accepted only in the 1960s and 1970s, which supports Pettersson's reasoning. I read no later paper in this lane.",
+    "evidence": "the theory of continental drift ... was accepted only very late, namely in the 1960s and 1970s.",
+    "source": "https://atlantis-scout.de/atlantis-pettersson-english.htm"
+   },
+   "replies": [],
+   "claims_touched": [
+    "beyond-pillars",
+    "sank-in-a-day-and-night"
+   ],
+   "check_that_settled_it": "Plate tectonics: no sunken Atlantic continent, and the Azores sit on volcanic ridge crust.",
+   "sources": [
+    {
+     "title": "Atlantis-Scout (Thorwald Franke), Pettersson 1944",
+     "url": "https://atlantis-scout.de/atlantis-pettersson-english.htm"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Secondary summary only; Pettersson's book was not available. Franke's own phrasing 'sufficiently evidenced' is his judgement."
+  },
+  {
+   "id": "whoi-mavor-thera-1966",
+   "title": "Mavor's search for Atlantis off Thera",
+   "kind": "expedition",
+   "who": [
+    "James Mavor (WHOI engineer)",
+    "Edward Zarudski",
+    "Dr. Hatzikakides"
+   ],
+   "date_start": "1966",
+   "date_end": "1966",
+   "place": {
+    "name": "Santorini (Thera), Aegean",
+    "hypothesis_id": "santorini",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Underwater survey from a small boat off Thera, looking for a drowned Minoan town.",
+   "data": [],
+   "announced": {
+    "text": "WHOI says Mavor and colleagues found evidence of a Minoan city, and that the site seemed to mirror Plato's account.",
+    "where": "WHOI history article (the 1966 announcement itself was not read)",
+    "evidence": "Off the coast of the island Thera in the Aegean Sea, Mavor and fellow researchers found evidence of a Minoan city dating to 1,400 B.C.E.",
+    "source": "https://www.whoi.edu/news-insights/content/how-a-newly-established-oceanographic-institution-in-woods-hole-searched-for-the-lost-city-of-atlantis/"
+   },
+   "outcome": {
+    "status": "unresolved",
+    "text": "WHOI says a long dispute over credit left the findings in doubt. The best-documented Minoan town on Thera, Akrotiri, was found by land excavation from 1967 and dated to the 16th to 17th century BCE.",
+    "evidence": "years of disputing over who deserved credit for the discovery left Mavor's findings mired in doubt and skepticism among the public.",
+    "source": "https://www.whoi.edu/news-insights/content/how-a-newly-established-oceanographic-institution-in-woods-hole-searched-for-the-lost-city-of-atlantis/"
+   },
+   "replies": [],
+   "claims_touched": [
+    "sank-in-a-day-and-night",
+    "nine-thousand-years"
+   ],
+   "check_that_settled_it": null,
+   "sources": [
+    {
+     "title": "WHOI history article",
+     "url": "https://www.whoi.edu/news-insights/content/how-a-newly-established-oceanographic-institution-in-woods-hole-searched-for-the-lost-city-of-atlantis/"
+    }
+   ],
+   "confidence": "low",
+   "notes": "Only the WHOI summary, written decades later, and it gives a 1,400 BCE date that differs from the later radiocarbon range for the eruption (1627 to 1600 BCE, Friedrich 2006). I did not find Mavor's book or contemporary reports."
+  },
+  {
+   "id": "akrotiri-excavation-1967",
+   "title": "Akrotiri excavations on Thera begin",
+   "kind": "expedition",
+   "who": [
+    "Spyridon Marinatos"
+   ],
+   "date_start": "1967",
+   "date_end": "1974",
+   "place": {
+    "name": "Akrotiri, Thera",
+    "hypothesis_id": "santorini",
+    "lat": 36.35139,
+    "lon": 25.40361,
+    "bbox": null
+   },
+   "method": "Land excavation of a Bronze Age town buried by pumice and ash, following up Marinatos's volcanic hypothesis.",
+   "data": [],
+   "announced": {
+    "text": "Marinatos's choice of the site paid off within hours: a buried Minoan town with frescoes was found.",
+    "where": "excavation reports and Wikipedia summary",
+    "evidence": "Marinatos's choice of the site proved to be correct and a few hours into the excavation, the remains of the buried city began to be discovered.",
+    "source": "https://en.wikipedia.org/wiki/Akrotiri_(prehistoric_city)"
+   },
+   "outcome": {
+    "status": "confirmed",
+    "text": "The town is real and was destroyed in the Theran eruption in the 16th century BCE per Wikipedia; radiocarbon work gives 1627 to 1600 BCE. That is about 8,000 years after Plato's date, and the site is inside the Aegean. It confirms a real buried town, not Atlantis.",
+    "evidence": "The settlement was destroyed during the Theran eruption sometime in the 16th century BC, and was buried in volcanic ash, which helped preserve its fine frescoes.",
+    "source": "https://en.wikipedia.org/wiki/Akrotiri_(prehistoric_city)"
+   },
+   "replies": [],
+   "claims_touched": [
+    "nine-thousand-years",
+    "beyond-pillars"
+   ],
+   "check_that_settled_it": "Excavation and dating: a real town, wrong date and wrong place for Plato's story.",
+   "sources": [
+    {
+     "title": "Wikipedia, Akrotiri (prehistoric city)",
+     "url": "https://en.wikipedia.org/wiki/Akrotiri_(prehistoric_city)"
+    },
+    {
+     "title": "Wikipedia, Spyridon Marinatos",
+     "url": "https://en.wikipedia.org/wiki/Spyridon_Marinatos"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Coordinates 36.35139 N, 25.40361 E are from the Wikipedia Akrotiri page, which I fetched. 'About 8,000 years' is my arithmetic (9,600 BCE minus about 1,600 BCE)."
+  },
+  {
+   "id": "bimini-road-discovery-1968",
+   "title": "Bimini Road found; Cayce's Atlantis readings",
+   "kind": "expedition",
+   "who": [
+    "Joseph Manson Valentine",
+    "Jacques Mayol",
+    "Robert Angove"
+   ],
+   "date_start": "1968-09",
+   "date_end": "1968-09",
+   "place": {
+    "name": "Bimini, Bahamas",
+    "hypothesis_id": "bimini-road",
+    "lat": 25.766967,
+    "lon": -79.278826,
+    "bbox": null
+   },
+   "method": "Diving observation in 5.5 m of water off North Bimini. Edgar Cayce's 1930s trance readings had already named Bimini as a mountaintop of Atlantis.",
+   "data": [],
+   "announced": {
+    "text": "Divers reported a pavement of rounded stones that they thought might be man-made, which became known as the Bimini Road.",
+    "where": "dive report; Valentine, Muse News (Miami Museum of Science), 1969",
+    "evidence": "On September 2, 1968, while diving in 5.5 meters (18 feet) of water off the northwest coast of North Bimini, Joseph Manson Valentine, Jacques Mayol and Robert Angove encountered what they called a \"pavement\"",
+    "source": "https://en.wikipedia.org/wiki/Bimini_Road"
+   },
+   "outcome": {
+    "status": "refuted",
+    "text": "Geologists who studied it found beachrock jointed into blocks. See the 1977 to 1980 coring and dating entry.",
+    "evidence": "The consensus among geologists and archaeologists is that the Bimini Road is a natural feature composed of beachrock",
+    "source": "https://en.wikipedia.org/wiki/Bimini_Road"
+   },
+   "replies": [],
+   "claims_touched": [
+    "beyond-pillars"
+   ],
+   "check_that_settled_it": "Coring and radiocarbon dating of the stones, plus the geology of jointed beachrock.",
+   "sources": [
+    {
+     "title": "Wikipedia, Bimini Road",
+     "url": "https://en.wikipedia.org/wiki/Bimini_Road"
+    },
+    {
+     "title": "Wikipedia, Edgar Cayce",
+     "url": "https://en.wikipedia.org/wiki/Edgar_Cayce"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Coordinates from the Wikipedia Bimini Road page. Wikipedia says Cayce's readings described Bimini as 'a mountaintop of Atlantis' in 1931 coverage. I did not read the 1969 Valentine article."
+  },
+  {
+   "id": "ampere-seamount-soviet-photos-1974",
+   "title": "Soviet photographs of a 'wall' on Ampère Seamount",
+   "kind": "expedition",
+   "who": [
+    "Soviet research ship Academician Petrovsky",
+    "Vladimir Marakuyev (photographer)",
+    "Andrei Aksyonov (Institute of Oceanology)"
+   ],
+   "date_start": "1974-03",
+   "date_end": "1979",
+   "place": {
+    "name": "Ampère Seamount, Atlantic, about 410 km SW of Portugal",
+    "hypothesis_id": null,
+    "lat": 35.067,
+    "lon": -12.95,
+    "bbox": null
+   },
+   "method": "Underwater photography on the shallow summit (a 6 by 3 km plateau at about 120 m, with a peak at 55 m).",
+   "data": [],
+   "announced": {
+    "text": "Photographs seemed to show cut blocks and steps on the summit, which led to Atlantis speculation. Aksyonov publicised the photos in 1979 and thought the stones had stood on dry land, but did not himself call them Atlantean.",
+    "where": "press, 1979 (New York Times, 21 May 1979 is cited by Wikipedia; not read)",
+    "evidence": "Underwater photographs taken during this expedition revealed a stone wall which included cut stone blocks scattered on both sides... This was the grounds for speculation that it may have been the location of the legendary Atlantis.",
+    "source": "https://en.wikipedia.org/wiki/Amp%C3%A8re_Seamount"
+   },
+   "outcome": {
+    "status": "corrected",
+    "text": "Atlantipedia says that when better images were obtained, Aksyonov declared the features natural. This rests on a secondary and fringe-friendly site.",
+    "evidence": "a couple of years later when better quality images were obtained, Akysonov declared that the original features were natural, ruling out an Atlantean explanation.",
+    "source": "https://atlantipedia.ie/samples/?p=16277"
+   },
+   "replies": [],
+   "claims_touched": [
+    "beyond-pillars",
+    "sank-in-a-day-and-night"
+   ],
+   "check_that_settled_it": "Better-quality photographs of the same features (as reported by Atlantipedia).",
+   "sources": [
+    {
+     "title": "Wikipedia, Ampère Seamount",
+     "url": "https://en.wikipedia.org/wiki/Amp%C3%A8re_Seamount"
+    },
+    {
+     "title": "Atlantipedia, Andrei Aksyonov",
+     "url": "https://atlantipedia.ie/samples/?p=16277"
+    }
+   ],
+   "confidence": "low",
+   "notes": "Coordinates 35 04 N, 12 57 W from the Wikipedia page. I could not open the 1979 NYT article (blocked) or the 'Atlantis Rising' article Atlantipedia cites, so the natural-features outcome is second-hand. Ampère Seamount is not in our 15 places; suggest the hypotheses lane add it."
+  },
+  {
+   "id": "bimini-cores-and-dating-1977-1980",
+   "title": "Cores and dating of the Bimini Road",
+   "kind": "scientific-test",
+   "who": [
+    "Eugene A. Shinn (US Geological Survey)",
+    "Marshall McKusick",
+    "Gifford and Ball (National Geographic-funded)",
+    "David Zink (book, 1978)"
+   ],
+   "date_start": "1977",
+   "date_end": "1980",
+   "place": {
+    "name": "Bimini, Bahamas",
+    "hypothesis_id": "bimini-road",
+    "lat": 25.766967,
+    "lon": -79.278826,
+    "bbox": null
+   },
+   "method": "A core from the stones taken in 1977 and radiocarbon dated at the University of Miami, uranium-thorium dating of the limestone under the stones, and field description of the blocks.",
+   "data": [],
+   "announced": {
+    "text": "Proponents held the stones were a worked road or wall. Cores from the stones gave seven radiocarbon ages between 2,750 and 3,510 radiocarbon years BP, on whole rock, shells and cement, and the stones are beachrock.",
+    "where": "Calvert, Introne and Stipp, Radiocarbon 21 (1979); McKusick and Shinn, Nature 287 (1980)",
+    "evidence": "dated as whole rock and in separated components of shell material and cement, to determine maximum age of \"road-like\" formation.",
+    "source": "https://doi.org/10.1017/s0033822200004239"
+   },
+   "outcome": {
+    "status": "refuted",
+    "text": "The published consensus is natural beachrock broken by joints. Proponents argued the dates came from whole-rock samples open to young carbon; Wikipedia says the background data show not all were whole-rock.",
+    "evidence": "The consensus among geologists and archaeologists is that the Bimini Road is a natural feature composed of beachrock that orthogonal and other joints have broken up into roughly rectangular, polygonal, and irregular blocks.",
+    "source": "https://en.wikipedia.org/wiki/Bimini_Road"
+   },
+   "replies": [
+    {
+     "who": "Eugene Shinn",
+     "year": 2004,
+     "what": "Shinn, 'A Geologist's Adventures with Bimini Beachrock and Atlantis True Believers', Skeptical Inquirer 28 (1).",
+     "source": "https://en.wikipedia.org/wiki/Bimini_Road"
+    },
+    {
+     "who": "Greg Little",
+     "year": 2004,
+     "what": "Published a rebuttal of the beachrock report (title as cited by Wikipedia; not read).",
+     "source": "https://en.wikipedia.org/wiki/Bimini_Road"
+    },
+    {
+     "who": "McKusick and Shinn",
+     "year": 1980,
+     "what": "'Bahamian Atlantis reconsidered', Nature 287.",
+     "source": "https://doi.org/10.1038/287011a0"
+    }
+   ],
+   "claims_touched": [
+    "beyond-pillars"
+   ],
+   "check_that_settled_it": "Radiocarbon dates of the stones (2,750 to 3,510 radiocarbon years BP, not calibrated) and the beachrock geology.",
+   "sources": [
+    {
+     "title": "Calvert, Introne and Stipp, 'University of Miami Radiocarbon Dates XIV', Radiocarbon 21 (1979)",
+     "url": "https://doi.org/10.1017/s0033822200004239"
+    },
+    {
+     "title": "Wikipedia, Bimini Road",
+     "url": "https://en.wikipedia.org/wiki/Bimini_Road"
+    },
+    {
+     "title": "Crossref record, McKusick and Shinn, Nature 1980",
+     "url": "https://doi.org/10.1038/287011a0"
+    },
+    {
+     "title": "Crossref record, Harrison, 'Atlantis Undiscovered - Bimini, Bahamas', Nature 1971",
+     "url": "https://doi.org/10.1038/230287a0"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "The Christian Science Monitor piece 'Another Atlantis myth exploded' (24 September 1980) appears in search results, but my fetch returned no article text, so I did not use it. I saw only titles for the Nature items. Uranium-thorium date on underlying limestone, 14,992 +/- 258 BP, comes from Gifford and Ball via Wikipedia. Corrected 2026-11-11 from the table printed in Radiocarbon 21: UM-1359 whole rock 2780 ± 70, UM-1360 3500 ± 80, UM-1361 3350 ± 90, UM-1362 shells 3510 ± 70, UM-1363 cement 2750 ± 80, UM-1364 2770 ± 80, UM-1365 2840 ± 70. Wikipedia's Bimini Road article, used before, gives UM-1362 as 2780 and UM-1365 as 2770 (research/atlantis/evidence/bimini-road.md)."
+  },
+  {
+   "id": "zelitsky-cuba-sonar-2000-2001",
+   "title": "Sonar images of structures off western Cuba (ADC survey)",
+   "kind": "sonar-claim",
+   "who": [
+    "Paulina Zelitsky",
+    "Paul Weinzweig",
+    "Ernesto Tapanes (Advanced Digital Communications)",
+    "Manuel Iturralde (Cuban Natural History Museum geologist)"
+   ],
+   "date_start": "2000",
+   "date_end": "2001-12",
+   "place": {
+    "name": "Off the tip of the Guanahacabibes Peninsula, Cuba, more than 650 m deep",
+    "hypothesis_id": null,
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Sonar during a survey for sunken Spanish ships, in a joint venture with the Cuban government, then (per Ancient Origins) a July 2001 return visit with an ROV and video.",
+   "data": [],
+   "announced": {
+    "text": "The company said it had found stone structures that might be a drowned city. Zelitsky declined to name them until there was evidence, and did not link them to Atlantis.",
+    "where": "BBC News Online and Globe and Mail, 7 December 2001",
+    "evidence": "\"It's a really wonderful structure which really looks like it could have been a large urban centre,\" ADC explorer Paulina Zelitsky told the Reuters news agency. \"However, it would be totally irresponsible to say what it was before we have evidence.\"",
+    "source": "https://www.cubanet.org/htdocs/CNews/y01/dec01/07e6.htm"
+   },
+   "outcome": {
+    "status": "unresolved",
+    "text": "Experts quoted at the time were cautious and no published follow-up survey was found in the 2014 summary I read. Critics noted the depth, about 650 m, is far below any Ice Age sea level.",
+    "evidence": "there have been no reported follow-up investigations and news outlets have gone deathly silent on the matter.",
+    "source": "https://www.ancient-origins.net/ancient-places-americas/what-happened-sunken-city-cuba-001883?nopaging=1"
+   },
+   "replies": [
+    {
+     "who": "Manuel Iturralde",
+     "year": 2002,
+     "what": "\"If I had to explain this geologically, I would have a hard time.\" (as quoted by Ancient Origins from National Geographic News, 28 May 2002; the NatGeo page would not load)",
+     "source": "https://www.ancient-origins.net/ancient-places-americas/what-happened-sunken-city-cuba-001883?nopaging=1"
+    },
+    {
+     "who": "Keith Fitzpatrick-Matthews (Bad Archaeology)",
+     "year": 2012,
+     "what": "Depth is the main problem: Ice Age sea level fell about 100 m, not 600 m.",
+     "source": "https://www.ancient-origins.net/ancient-places-americas/what-happened-sunken-city-cuba-001883?nopaging=1"
+    }
+   ],
+   "claims_touched": [
+    "beyond-pillars"
+   ],
+   "check_that_settled_it": null,
+   "sources": [
+    {
+     "title": "BBC News Online, 'Lost city found beneath Cuban waters', 7 December 2001 (copy on CubaNet)",
+     "url": "https://www.cubanet.org/htdocs/CNews/y01/dec01/07e6.htm"
+    },
+    {
+     "title": "Globe and Mail, 7 December 2001 (copy on CubaNet)",
+     "url": "https://www.cubanet.org/htdocs/CNews/y01/dec01/07e3.htm"
+    },
+    {
+     "title": "Ancient Origins, 'What happened to the sunken city of Cuba?' (2014)",
+     "url": "https://www.ancient-origins.net/ancient-places-americas/what-happened-sunken-city-cuba-001883?nopaging=1"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "BBC says the team first spotted the structures 'last year' (2000); Ancient Origins says 2001. The Globe and Mail says 'may be a 6,000-year-old city'; Weinzweig is quoted there saying 'nobody has suggested they are natural'. No coordinates are given in these sources. The 2014 summary is secondary, so 'no follow-up' is as of its date. Not one of our 15 places."
+  },
+  {
+   "id": "collina-girard-spartel-2001",
+   "title": "Collina-Girard proposes Spartel Bank",
+   "kind": "scientific-test",
+   "who": [
+    "Jacques Collina-Girard"
+   ],
+   "date_start": "2001-08",
+   "date_end": "2001-09",
+   "place": {
+    "name": "Spartel Bank, Strait of Gibraltar",
+    "hypothesis_id": "spartel-bank",
+    "lat": 35.916667,
+    "lon": -5.966667,
+    "bbox": null
+   },
+   "method": "Reconstruction of the Ice Age shoreline of the Strait of Gibraltar from sea-level and sea-floor depth data, as summarised by Wikipedia; I did not read the paper.",
+   "data": [],
+   "announced": {
+    "text": "At the ice-age low a 14 by 5 km island stood off Cape Spartel, in a sheltered sea 77 km long. The rising sea drowned it for good about 11,300 years ago.",
+    "where": "his open follow-up article (2002) to the 2001 paper in Comptes Rendus de l'Académie des Sciences",
+    "evidence": "formait alors une île (14 km de long sur 5 km de large)",
+    "source": "https://doi.org/10.4000/pm.248"
+   },
+   "outcome": {
+    "status": "refuted",
+    "text": "A Bryn Mawr Classical Review (2009) of his book found real prehistory but not Atlantis. Gutscher, who mapped the bank, later said it could not have supported Plato's Bronze Age society.",
+    "evidence": "he \"has certainly succeeded in throwing some light upon some momentous developments in human prehistory in the area west of Gibraltar. Just as certainly, however, he has not found Plato's Atlantis.\"",
+    "source": "https://en.wikipedia.org/wiki/Location_hypotheses_of_Atlantis"
+   },
+   "replies": [
+    {
+     "who": "Heinz-Günther Nesselrath",
+     "year": 2009,
+     "what": "Bryn Mawr Classical Review of Collina-Girard's book L'Atlantide retrouvée?, noting date discrepancies and coincidences.",
+     "source": "https://en.wikipedia.org/wiki/Spartel"
+    }
+   ],
+   "claims_touched": [
+    "beyond-pillars",
+    "nine-thousand-years",
+    "sank-in-a-day-and-night"
+   ],
+   "check_that_settled_it": "A multibeam map and habitability review (Gutscher, 2005) showed a small island and no settlement; reviewers noted date and size mismatches.",
+   "sources": [
+    {
+     "title": "Crossref record, Collina-Girard 2001",
+     "url": "https://doi.org/10.1016/s1251-8050(01)01629-9"
+    },
+    {
+     "title": "Wikipedia, Location hypotheses of Atlantis",
+     "url": "https://en.wikipedia.org/wiki/Location_hypotheses_of_Atlantis"
+    },
+    {
+     "title": "Wikipedia, Spartel",
+     "url": "https://en.wikipedia.org/wiki/Spartel"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Crossref gives August 2001; Wikipedia says September 2001. Coordinates are from the Wikipedia Spartel page. I could not read the paper or the BMCR review directly. Wikipedia also says Georgeos Díaz-Montexano published a Spartel proposal in April 2000 (not read). Corrected 2026-11-11 from his 2002 article: an earlier version of this entry, from Wikipedia's summary, gave an island 10 to 12 km across drowned by meltwater pulse 1A around 9400 BCE. The article has the sea at -55 m at 11,300 years ago, which it calls meltwater pulse 1B, and puts pulse 1A at about 14,000 years ago (research/atlantis/evidence/spartel-bank.md)."
+  },
+  {
+   "id": "gutscher-spartel-multibeam-2005",
+   "title": "Gutscher's survey and earthquake test of the Spartel Bank",
+   "kind": "scientific-test",
+   "who": [
+    "Marc-André Gutscher"
+   ],
+   "date_start": "2003",
+   "date_end": "2005-08",
+   "place": {
+    "name": "Spartel Bank, Strait of Gibraltar",
+    "hypothesis_id": "spartel-bank",
+    "lat": 35.916667,
+    "lon": -5.966667,
+    "bbox": null
+   },
+   "method": "High-resolution multibeam bathymetry of the paleo-island, plus Gulf of Cádiz tsunami and turbidite records, to test whether a great earthquake and tsunami could have sunk it.",
+   "data": [],
+   "announced": {
+    "text": "A great earthquake and tsunami like 1755 could explain a sudden sinking about 11,600 years ago, and an unusually thick turbidite about 12 ka may fit. The bank's shape and the case for human habitation were reported.",
+    "where": "paper, Geology 33 (2005) 685 to 688",
+    "evidence": "An unusually thick turbidite dated as ca. 12 ka may coincide with the destructive event in Plato's account. The detailed morphology of Spartel paleoisland, as determined from recently acquired high-resolution bathymetric data, is reported here.",
+    "source": "https://doi.org/10.1130/G21597AR.1"
+   },
+   "outcome": {
+    "status": "corrected",
+    "text": "In follow-up correspondence Gutscher said the island could not have been Atlantis, since Spartel could not have supported the Bronze Age society Plato describes.",
+    "evidence": "In follow-up correspondence, however, Gutscher indicated that the island could not have been Atlantis, referring to Plato's description of a Bronze Age society, which Spartel could not have supported at the time.",
+    "source": "https://en.wikipedia.org/wiki/Spartel"
+   },
+   "replies": [
+    {
+     "who": "Heinz-Günther Nesselrath",
+     "year": 2009,
+     "what": "BMCR: not Plato's Atlantis (reviewing Collina-Girard).",
+     "source": "https://en.wikipedia.org/wiki/Spartel"
+    }
+   ],
+   "claims_touched": [
+    "beyond-pillars",
+    "sank-in-a-day-and-night",
+    "nine-thousand-years",
+    "larger-than-libya-and-asia"
+   ],
+   "check_that_settled_it": "The multibeam map: a small island, with no evidence of a city, and Gutscher's own later statement.",
+   "sources": [
+    {
+     "title": "Crossref record and abstract, Gutscher 2005",
+     "url": "https://doi.org/10.1130/G21597AR.1"
+    },
+    {
+     "title": "Wikipedia, Spartel",
+     "url": "https://en.wikipedia.org/wiki/Spartel"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "The survey years 2003 to 2005 come from the task brief. The abstract says only 'recently acquired'. I found Gulf of Cádiz cruises (R/V Sonne SO175, November to December 2003; Le Suroît, 2004 and 2005) in a search result but could not tie them to Spartel, so they are not used. The Gutscher statement is as reported by Wikipedia citing an archived ThoughtCo page; I did not read it."
+  },
+  {
+   "id": "kuhne-donana-satellite-2004",
+   "title": "Kühne and Wickboldt: rings in satellite photos of the Doñana marshes",
+   "kind": "satellite-claim",
+   "who": [
+    "Rainer W. Kühne",
+    "Werner Wickboldt"
+   ],
+   "date_start": "2004-06",
+   "date_end": "2004-06",
+   "place": {
+    "name": "Marisma de Hinojos, Doñana, near Cádiz",
+    "hypothesis_id": "donana",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Visual inspection of satellite photographs for rectangles and ring shapes in the mud.",
+   "data": [],
+   "announced": {
+    "text": "Satellite photos of the Marisma de Hinojos show two rectangles and parts of concentric rings that Kühne reads as Plato's temples and ring system. Wickboldt first spotted them.",
+    "where": "Antiquity Project Gallery (online), reported by BBC News 6 June 2004",
+    "evidence": "\"We have in the photos concentric rings just as Plato described,\" Dr Kuehne told BBC News Online.",
+    "source": "https://news.bbc.co.uk/2/hi/science/nature/3766863.stm"
+   },
+   "outcome": {
+    "status": "unresolved",
+    "text": "The Spanish Hinojos Project later worked in the same marsh. It found a settlement about 5,000 years old under metres of sediment, which is a different date from Plato's, but I found no published test of the specific rectangles and rings.",
+    "evidence": "It is not known if any of these shapes are natural or manmade and archaeological excavations are planned.",
+    "source": "https://en.wikipedia.org/wiki/Location_hypotheses_of_Atlantis"
+   },
+   "replies": [
+    {
+     "who": "Tony Wilkinson (University of Edinburgh)",
+     "year": 2004,
+     "what": "\"What we need here is a date range. Otherwise, you're just dealing with morphology.\" He also said \"you've got several leaps of faith here.\"",
+     "source": "https://news.bbc.co.uk/2/hi/science/nature/3766863.stm"
+    }
+   ],
+   "claims_touched": [
+    "ringed-city",
+    "temple-of-poseidon",
+    "orichalcum-and-metals",
+    "great-plain"
+   ],
+   "check_that_settled_it": null,
+   "sources": [
+    {
+     "title": "BBC News, 'Satellite images show Atlantis' (Rincon, 6 June 2004)",
+     "url": "https://news.bbc.co.uk/2/hi/science/nature/3766863.stm"
+    },
+    {
+     "title": "Crossref record, Kühne, Antiquity Project Gallery 2004",
+     "url": "https://doi.org/10.15184/s2978855200905171"
+    },
+    {
+     "title": "Wikipedia, Location hypotheses of Atlantis",
+     "url": "https://en.wikipedia.org/wiki/Location_hypotheses_of_Atlantis"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "I did not open the Antiquity page itself. BBC says the sizes in the photos are slightly larger than Plato's and gives two explanations, including a 20% longer stade. No coordinates in the BBC article."
+  },
+  {
+   "id": "sarmast-cyprus-sonar-2004",
+   "title": "Sarmast's expedition and the 'Atlantis' hill off Cyprus",
+   "kind": "sonar-claim",
+   "who": [
+    "Robert Sarmast"
+   ],
+   "date_start": "2004-11",
+   "date_end": "2004-11",
+   "place": {
+    "name": "Cyprus Basin, about 80 km off southeast Cyprus, about 1.5 km deep",
+    "hypothesis_id": "cyprus-basin",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Deep-water side-scan sonar from a ship, read as a walled hill, a 3 km wall and trenches.",
+   "data": [],
+   "announced": {
+    "text": "Sarmast said his team had definitely found Atlantis. At the news conference in Limassol he showed only animated simulations of the hill.",
+    "where": "news conference, Limassol, Sunday 14 November 2004 (Reuters, 15 November)",
+    "evidence": "\"We have definitely found it,\" said Sarmast... \"We cannot yet provide tangible proof in the form of bricks and mortar, as the artifacts are still buried under several meters of sediment, but the circumstantial and other evidence is irrefutable,\" he claimed.",
+    "source": "https://www.nbcnews.com/news/amp/wbna6489620"
+   },
+   "outcome": {
+    "status": "refuted",
+    "text": "A German geophysicist and others said the feature was a mud volcano or natural salt-tectonic fold. Later published surveys by Hübscher and colleagues described a natural compressional fold and a slide scar.",
+    "evidence": "the features that Sarmast interprets to be Atlantis consist only of a natural compressional fold caused by local salt tectonics and a slide scar with surficial compressional folds at the downslope end and sides of the slide.",
+    "source": "https://en.wikipedia.org/wiki/Location_hypotheses_of_Atlantis"
+   },
+   "replies": [
+    {
+     "who": "A German physicist and two other scientists (not named by Cyprus Mail)",
+     "year": 2004,
+     "what": "Said it was a 100,000-year-old mud volcano and that they had surveyed the same area the year before.",
+     "source": "https://archive.cyprus-mail.com/?p=672792"
+    },
+    {
+     "who": "Ulf Erlingsson",
+     "year": 2004,
+     "what": "\"the real killer of the hypothesis is that 100,000-year-old mud volcanoes exist on the spot.\"",
+     "source": "https://archive.cyprus-mail.com/?p=672792"
+    },
+    {
+     "who": "Robert Sarmast",
+     "year": 2004,
+     "what": "Said it was a 'table top mountain', not a mud volcano, and challenged critics to prove their claims.",
+     "source": "https://archive.cyprus-mail.com/?p=672792"
+    }
+   ],
+   "claims_touched": [
+    "beyond-pillars",
+    "ringed-city",
+    "larger-than-libya-and-asia"
+   ],
+   "check_that_settled_it": "Published multibeam and seismic work on salt tectonics and mud volcanoes in the Cyprus Basin, and the age of the basin sediments.",
+   "sources": [
+    {
+     "title": "Reuters via NBC News, 15 November 2004",
+     "url": "https://www.nbcnews.com/news/amp/wbna6489620"
+    },
+    {
+     "title": "Cyprus Mail, 'Another scientist casts doubt on Atlantis theory', 20 November 2004",
+     "url": "https://archive.cyprus-mail.com/?p=672792"
+    },
+    {
+     "title": "Wikipedia, Location hypotheses of Atlantis (Cyprus section)",
+     "url": "https://en.wikipedia.org/wiki/Location_hypotheses_of_Atlantis"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "The Hübscher result is as described by Wikipedia; I confirmed the paper's title and journal through Crossref but saw no abstract. Wikipedia also says the Mediterranean last dried 5.59 to 5.33 million years ago, so there was no Ice Age dry land there. Sarmast published a book in 2006."
+  },
+  {
+   "id": "hinojos-project-donana-2005-2018",
+   "title": "Spanish Hinojos Project in the Doñana marsh",
+   "kind": "scientific-test",
+   "who": [
+    "CSIC, Universities of Huelva, Granada and Barcelona, FUHEM",
+    "Juan Villarías-Robles",
+    "Antonio Rodríguez-Ramírez",
+    "José Antonio López-Sáez"
+   ],
+   "date_start": "2005",
+   "date_end": "2018-11",
+   "place": {
+    "name": "Marisma de Hinojos, Doñana National Park",
+    "hypothesis_id": "donana",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Boreholes through the marsh sediments, with pollen and microscopic traces of human and animal activity, geological and chronological dating.",
+   "data": [],
+   "announced": {
+    "text": "The marsh was inhabited about 5,000 years ago by farmers and herders. A marine flood between 2200 and 2000 BCE, coinciding with a Gulf of Cádiz tsunami, ended that community. Further Atlantic tsunamis followed around 1450 BCE and about 300 years later.",
+    "where": "CSIC press release, 13 November 2018, on a paper in Journal of Archaeological Science: Reports",
+    "evidence": "La marisma de Hinojos, en el Espacio Natural de Doñana, estuvo poblada hace 5.000 años. (The Hinojos marsh in the Doñana Natural Space was inhabited 5,000 years ago.)",
+    "source": "https://ih.csic.es/sites/default/files/np%20do%C3%B1ana%20Proyecto_Hinojos%20131118.pdf"
+   },
+   "outcome": {
+    "status": "confirmed",
+    "text": "The release does not mention Atlantis. It dates a real settlement in the marsh to the third millennium BCE, more than 6,000 years after Plato's date. It also says the coast sank progressively until the first centuries CE.",
+    "evidence": "Este episodio geológico, que coincidió con un tsunami en el Golfo de Cádiz, puso fin repentino a esa comunidad y a su cultura (This geological episode, which coincided with a tsunami in the Gulf of Cádiz, brought a sudden end to that community and its culture)",
+    "source": "https://ih.csic.es/sites/default/files/np%20do%C3%B1ana%20Proyecto_Hinojos%20131118.pdf"
+   },
+   "replies": [],
+   "claims_touched": [
+    "nine-thousand-years",
+    "sank-in-a-day-and-night"
+   ],
+   "check_that_settled_it": "Coring and dating: a third-millennium BCE settlement buried under metres of sediment, on a coast that was inland sea until recently.",
+   "sources": [
+    {
+     "title": "CSIC press release, 'Halladas pruebas de poblamiento humano durante la prehistoria reciente en las marismas de Doñana' (13 November 2018)",
+     "url": "https://ih.csic.es/sites/default/files/np%20do%C3%B1ana%20Proyecto_Hinojos%20131118.pdf"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Translations are mine. The release says the project started in 2005 with support from the Doñana Biological Station of CSIC. I did not read the journal paper, so the quoted numbers are the press release's. The marsh is where Kühne (2004), Freund (2011) and Merlin Burrows (2018) placed Atlantis."
+  },
+  {
+   "id": "milos-conference-2005-24-criteria",
+   "title": "Milos conference and the 24 criteria",
+   "kind": "conference",
+   "who": [
+    "M. Fytikas",
+    "A. Kontaratos",
+    "Stavros Papamarinopoulos (organisers)"
+   ],
+   "date_start": "2005-07-11",
+   "date_end": "2005-07-13",
+   "place": {
+    "name": "Milos, Greece",
+    "hypothesis_id": null,
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "A three-day international conference of speakers holding competing theories; a majority supported a list of 24 criteria a candidate site must meet.",
+   "data": [],
+   "announced": {
+    "text": "A list of 24 criteria, including: outside the Pillars of Hercules; alternating concentric rings of land and water; sunk entirely or partly; destroyed 9,000 Egyptian years before the 6th century BCE; elephants present; hot and cold springs; black, white and red rocks.",
+    "where": "conference conclusion, proceedings edited by S. Papamarinopoulos",
+    "evidence": "The conference concluded with agreement on a list of 24 criteria, which any proposed site must meet to qualify as a site where Atlantis could have existed",
+    "source": "https://atlantipedia.ie/samples/?p=2589"
+   },
+   "outcome": {
+    "status": "unresolved",
+    "text": "No site has been shown to meet the list. The Atlantipedia author calls its main flaw the assumption that all of Plato's account is factual, and Jim Allen expanded it to 50 points and used it to favour his Bolivian site.",
+    "evidence": "I see the principal flaw with the list is that it is built on the assumption that all of what Plato wrote is factual and not mythological and does not contain any errors or embellishments.",
+    "source": "https://atlantipedia.ie/samples/?p=2589"
+   },
+   "replies": [
+    {
+     "who": "Jim Allen",
+     "year": null,
+     "what": "Expanded the list by 26 criteria to 50 and applied it to 24 theories (as described by Atlantipedia).",
+     "source": "https://atlantipedia.ie/samples/?p=2589"
+    }
+   ],
+   "claims_touched": [
+    "beyond-pillars",
+    "larger-than-libya-and-asia",
+    "nine-thousand-years",
+    "war-with-athens",
+    "sank-in-a-day-and-night",
+    "impassable-mud",
+    "ringed-city",
+    "great-plain",
+    "mountains-shelter-north",
+    "red-white-black-stone",
+    "hot-and-cold-springs",
+    "elephants",
+    "bull-ritual"
+   ],
+   "check_that_settled_it": null,
+   "sources": [
+    {
+     "title": "Atlantipedia, 'Atlantis Conference 2005'",
+     "url": "https://atlantipedia.ie/samples/?p=2589"
+    },
+    {
+     "title": "Atlantis-Scout, Greek Atlantis conferences",
+     "url": "https://atlantis-scout.de/atlantis_conference.htm"
+    },
+    {
+     "title": "George Pararas-Carayannis, paper abstract for the Milos conference",
+     "url": "https://www.drgeorgepc.com/Atlantis2005.html"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "Dates 11 to 13 July 2005 come from the Pararas-Carayannis conference paper abstract (drgeorgepc.com), which I fetched. The 24 criteria as listed by Atlantipedia say Atlantis was 'greater than Libya and Anatolia and Middle East and Sinai (combined)', not Plato's 'Libya and Asia'. I read all 24 as Atlantipedia prints them; the list is its transcription and the proceedings volume was not seen."
+  },
+  {
+   "id": "matton-richat-geology-2005",
+   "title": "Geology of the Richat Structure (Matton et al.)",
+   "kind": "scientific-test",
+   "who": [
+    "G. Matton",
+    "M. Jebrak",
+    "J. K. W. Lee"
+   ],
+   "date_start": "2005-08",
+   "date_end": "2005-08",
+   "place": {
+    "name": "Richat Structure, Mauritania",
+    "hypothesis_id": "richat",
+    "lat": 21.1147,
+    "lon": -11.3943,
+    "bbox": null
+   },
+   "method": "Field geology of the breccia, ring dykes and sediments of the dome, to explain how it formed.",
+   "data": [],
+   "announced": {
+    "text": "The structure is a Cretaceous alkaline complex that domed the rocks and was hollowed by hot-water karst, with erosion forming the rings.",
+    "where": "paper, Geology 33 (2005)",
+    "evidence": "The circular Richat structure and its breccia core thus represent the superficial expression of a Cretaceous alkaline complex with an exceptionally well preserved hydrothermal karst infilling at its summit.",
+    "source": "https://doi.org/10.1130/G21542AR.1"
+   },
+   "outcome": {
+    "status": "confirmed",
+    "text": "The IUGS listed it in 2022 among 100 geological heritage sites as 'a spectacular example of a magmatic concentric alkaline complex'. This is a geology paper, not an Atlantis test; it sets the age and origin that Atlantis proposals must answer.",
+    "evidence": "In respect of it being \"a spectacular example of a magmatic concentric alkaline complex\", the International Union of Geological Sciences (IUGS) included the Richat Structure in its assemblage of 100 geological heritage sites around the world, in October 2022.",
+    "source": "https://en.wikipedia.org/wiki/Richat_Structure"
+   },
+   "replies": [],
+   "claims_touched": [
+    "ringed-city",
+    "beyond-pillars"
+   ],
+   "check_that_settled_it": "Natural geology and age: a Cretaceous dome far inland, not a built or recently drowned site.",
+   "sources": [
+    {
+     "title": "Crossref record and abstract, Matton et al. 2005",
+     "url": "https://doi.org/10.1130/G21542AR.1"
+    },
+    {
+     "title": "Wikipedia, Richat Structure",
+     "url": "https://en.wikipedia.org/wiki/Richat_Structure"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Coordinates 21.1147 N, 11.3943 W from the Wikipedia page. The paper is not about Atlantis. The 40 km diameter and Late Proterozoic to Ordovician rocks are from the abstract and Wikipedia."
+  },
+  {
+   "id": "thera-eruption-radiocarbon-2006",
+   "title": "Radiocarbon dating of the Thera eruption",
+   "kind": "scientific-test",
+   "who": [
+    "Walter Friedrich and colleagues (Friedrich et al.)",
+    "Sturt Manning and colleagues (Manning et al.)"
+   ],
+   "date_start": "2006-04",
+   "date_end": "2006-04",
+   "place": {
+    "name": "Santorini (Thera)",
+    "hypothesis_id": "santorini",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Radiocarbon wiggle-matching of tree-ring segments of an olive tree buried alive by the tephra, and Bayesian analysis of 127 short-lived samples across the Aegean.",
+   "data": [],
+   "announced": {
+    "text": "The eruption dates to 1627 to 1600 BCE (95.4% probability), a century before the date from traditional Egyptian chronology. Manning's team put it in the late 17th century BCE.",
+    "where": "two papers, Science, 28 April 2006",
+    "evidence": "constrain the eruption date to the range 1627-1600 B.C. with 95.4% probability. ... it is a century earlier than the date derived from traditional Egyptian chronologies.",
+    "source": "https://doi.org/10.1126/science.1125087"
+   },
+   "outcome": {
+    "status": "corrected",
+    "text": "The date moved about a century earlier than archaeology had held, but stays about 8,000 years after Plato's. The Egyptian-linked chronology remains debated among archaeologists, per the search summaries I saw; I did not read the debate itself.",
+    "evidence": "Radiocarbon (carbon-14) data from the Aegean Bronze Age 1700-1400 B.C. show that the Santorini (Thera) eruption must have occurred in the late 17th century B.C.",
+    "source": "https://doi.org/10.1126/science.1125682"
+   },
+   "replies": [],
+   "claims_touched": [
+    "nine-thousand-years",
+    "sank-in-a-day-and-night"
+   ],
+   "check_that_settled_it": "Direct radiocarbon dating of an olive branch buried by the eruption.",
+   "sources": [
+    {
+     "title": "Crossref abstract, Friedrich et al., Science 2006",
+     "url": "https://doi.org/10.1126/science.1125087"
+    },
+    {
+     "title": "Crossref abstract, Manning et al., Science 2006",
+     "url": "https://doi.org/10.1126/science.1125682"
+    }
+   ],
+   "confidence": "high",
+   "notes": "The 8,000 years gap is my arithmetic. A 2018 Antiquity supplement (seen in search results only) says the calibration is sensitive to assumptions; not read."
+  },
+  {
+   "id": "atlantis-hypothesis-conferences-2008-2011",
+   "title": "Atlantis Hypothesis conferences in Athens and Santorini",
+   "kind": "conference",
+   "who": [
+    "M. Fytikas",
+    "A. Kontaratos (died 2009)",
+    "Stavros Papamarinopoulos"
+   ],
+   "date_start": "2008",
+   "date_end": "2011",
+   "place": {
+    "name": "Athens and Santorini, Greece",
+    "hypothesis_id": null,
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Second and third meetings of the 'Atlantis Hypothesis: Searching for a Lost Land' series.",
+   "data": [],
+   "announced": {
+    "text": "The series ran as 2005 on Milos, 2008 in Athens, 2011 on Santorini.",
+    "where": "Atlantis-Scout conference page",
+    "evidence": "International Conference 2005 on Milos / 2008 in Athens / 2011 on Santorini",
+    "source": "https://atlantis-scout.de/atlantis_conference.htm"
+   },
+   "outcome": {
+    "status": "no-claim",
+    "text": "No criteria or finding from these two meetings were fetched. Franke notes he did not attend the 2011 conference and lists reports only in German.",
+    "evidence": "Thorwald C. Franke: Did not attend the conference in 2011.",
+    "source": "https://atlantis-scout.de/atlantis_conference.htm"
+   },
+   "replies": [],
+   "claims_touched": [],
+   "check_that_settled_it": null,
+   "sources": [
+    {
+     "title": "Atlantis-Scout, 'Series of Greek Atlantis Conferences'",
+     "url": "https://atlantis-scout.de/atlantis_conference.htm"
+    }
+   ],
+   "confidence": "low",
+   "notes": "Exact dates for 2008 and 2011 are not given in the pages I fetched; the page title says Santorini 2010 while the body says 2011. A search summary gave 10 to 11 November 2008 and 25 to 26 June or 11 July 2011, not verified. A PDF report on the 2008 conference (Franke) returned no readable text."
+  },
+  {
+   "id": "hubscher-cyprus-basin-salt-tectonics-2009",
+   "title": "Cyprus Basin salt tectonics and mud volcanoes (Hübscher et al.)",
+   "kind": "scientific-test",
+   "who": [
+    "Christian Hübscher and colleagues, Hamburg"
+   ],
+   "date_start": "2009",
+   "date_end": "2009",
+   "place": {
+    "name": "Latakia and Cyprus Basins, eastern Mediterranean",
+    "hypothesis_id": "cyprus-basin",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Marine geophysical study of salt tectonics and mud volcanism, published in Tectonophysics 470 (2009). Survey dates not seen.",
+   "data": [],
+   "announced": {
+    "text": "Wikipedia cites this 2009 paper for the finding that the features Sarmast read as walls are a natural fold and a slide scar. A German physicist and two colleagues told Cyprus Mail in 2004 they had surveyed the area the year before; I could not show they are the paper's authors.",
+    "where": "paper, Tectonophysics 470 (2009) 173 to 182",
+    "evidence": "Salt tectonics and mud volcanism in the Latakia and Cyprus Basins, eastern Mediterranean",
+    "source": "https://doi.org/10.1016/j.tecto.2008.08.019"
+   },
+   "outcome": {
+    "status": "confirmed",
+    "text": "The natural reading has not been contested in anything I found.",
+    "evidence": "demonstrated that the features which Sarmast interprets to be Atlantis consist only of a natural compressional fold caused by local salt tectonics and a slide scar",
+    "source": "https://en.wikipedia.org/wiki/Location_hypotheses_of_Atlantis"
+   },
+   "replies": [],
+   "claims_touched": [
+    "ringed-city"
+   ],
+   "check_that_settled_it": "Marine seismic and multibeam data: a salt-tectonic fold and slide scar.",
+   "sources": [
+    {
+     "title": "Crossref record, Hübscher et al. 2009",
+     "url": "https://doi.org/10.1016/j.tecto.2008.08.019"
+    },
+    {
+     "title": "Wikipedia, Location hypotheses of Atlantis",
+     "url": "https://en.wikipedia.org/wiki/Location_hypotheses_of_Atlantis"
+    },
+    {
+     "title": "Cyprus Mail, 20 November 2004",
+     "url": "https://archive.cyprus-mail.com/?p=672792"
+    }
+   ],
+   "confidence": "low",
+   "notes": "No abstract was available to me. Wikipedia says a History Channel programme also used reflection seismology to show natural landforms; not verified."
+  },
+  {
+   "id": "google-ocean-atlantis-grid-2009",
+   "title": "The 'Atlantis' grid in Google Ocean",
+   "kind": "sonar-claim",
+   "who": [
+    "British tabloid (The Sun, per TechCrunch)",
+    "Google",
+    "David Sandwell (Scripps)",
+    "Walter Smith (NOAA)"
+   ],
+   "date_start": "2009-02",
+   "date_end": "2012-02",
+   "place": {
+    "name": "About 600 miles (970 km) off northern Africa, near the Canary Islands",
+    "hypothesis_id": null,
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "A grid of straight lines in the Google Ocean sea-floor layer was read as streets. The layer mixed ship sonar depths with satellite-derived depths.",
+   "data": [
+    {
+     "name": "Atlantis_Ship_Tracks.kmz (Sandwell and Smith)",
+     "url": "ftp://topex.ucsd.edu/pub/srtm30_plus/Atlantis_Ship_Tracks.kmz",
+     "open": null,
+     "note": "Link as printed by PCWorld, 24 February 2009; not fetched. Related catalogue id: srtm15-plus."
+    }
+   ],
+   "announced": {
+    "text": "A tabloid asked 'Is This Atlantis?' and quoted an aeronautical engineer saying the grid must be man-made.",
+    "where": "British tabloid, February 2009, reported by TechCrunch on 20 February 2009",
+    "evidence": "A British tabloid ran a boldfaced headline: \"Is This Atlantis?\" and quoted an aeronautical engineer as saying, \"It must be man-made.\"",
+    "source": "https://abcnews.go.com/blogs/technology/2012/02/atlantis-in-google-earth-eliminated-by-new-data/"
+   },
+   "outcome": {
+    "status": "corrected",
+    "text": "Google said the lines were the tracks of a survey ship. In 2012 a data update removed the grid, and Sandwell explained a velocity error on one grid-pattern survey cruise.",
+    "evidence": "The particular cruise that created the 'Atlantis' problem was a systematic mow-the-lawn type survey in a regular grid pattern, so the resulting depth errors looked like a regular grid.",
+    "source": "https://abcnews.go.com/blogs/technology/2012/02/atlantis-in-google-earth-eliminated-by-new-data/"
+   },
+   "replies": [
+    {
+     "who": "Google spokesperson",
+     "year": 2009,
+     "what": "\"The lines reflect the path of the boat as it gathers the data.\"",
+     "source": "https://techcrunch.com/2009/02/20/lost-city-of-atlantis-found-on-google-earth"
+    },
+    {
+     "who": "David Sandwell and Walter Smith",
+     "year": 2009,
+     "what": "Some squares are about 8 miles long, about 50 times a New York block; the pattern would vanish in the next Google Earth.",
+     "source": "https://www.pcworld.com/article/527576/google_explains_atlantis.html"
+    },
+    {
+     "who": "David Sandwell",
+     "year": 2012,
+     "what": "\"Of course it is nonsense, but in a way brings public attention to the deep ocean.\"",
+     "source": "https://abcnews.go.com/blogs/technology/2012/02/atlantis-in-google-earth-eliminated-by-new-data/"
+    }
+   ],
+   "claims_touched": [
+    "ringed-city",
+    "beyond-pillars"
+   ],
+   "check_that_settled_it": "A published explanation from the data's makers, and the corrected 2012 data layer.",
+   "sources": [
+    {
+     "title": "TechCrunch, 20 February 2009",
+     "url": "https://techcrunch.com/2009/02/20/lost-city-of-atlantis-found-on-google-earth"
+    },
+    {
+     "title": "PCWorld, 'Google's Atlantis Discovery Explained', 24 February 2009",
+     "url": "https://www.pcworld.com/article/527576/google_explains_atlantis.html"
+    },
+    {
+     "title": "ABC News, Ned Potter, 7 February 2012",
+     "url": "https://abcnews.go.com/blogs/technology/2012/02/atlantis-in-google-earth-eliminated-by-new-data/"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Distances: TechCrunch says 620 miles west of Morocco near the Canary Islands, ABC says about 600 miles off northern Africa. No coordinates in the sources. Gizmodo called Google's first explanation 'dubious' (search result only); the 2012 Scripps account is the stronger one. The tabloid is named only by TechCrunch."
+  },
+  {
+   "id": "freund-finding-atlantis-donana-2011",
+   "title": "Freund's 'Finding Atlantis' at Doñana",
+   "kind": "documentary",
+   "who": [
+    "Richard Freund (University of Hartford)",
+    "National Geographic Channel"
+   ],
+   "date_start": "2011-03",
+   "date_end": "2011-03",
+   "place": {
+    "name": "Doñana National Park, southern Spain",
+    "hypothesis_id": "donana",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Ground-penetrating radar, electrical resistivity tomography, magnetometers and spectrometers across the marsh, with radiocarbon dating.",
+   "data": [],
+   "announced": {
+    "text": "The team said it found a communal oven and canal systems buried in the park, evidence of a roughly 4,000-year-old civilisation flooded by a tsunami, and suggested the site was Atlantis and also the biblical Tarshish.",
+    "where": "National Geographic Channel film 'Finding Atlantis', broadcast 13 March 2011",
+    "evidence": "Scientists say they have found proof of a 4,000-year-old civilization that was buried by a tsunami.",
+    "source": "https://www.popsci.com/science/article/2011-03/scientists-say-theyve-found-lost-city-atlantis-swept-away-tsunami"
+   },
+   "outcome": {
+    "status": "unresolved",
+    "text": "Members of the Spanish team working there since 2005 criticised the claim. Their own results point to a third-millennium BCE settlement. Critics note the dates and size do not fit Plato.",
+    "evidence": "Other researchers criticized the results, however, including members of a Spanish team who have been studying the site since 2005.",
+    "source": "https://www.popsci.com/science/article/2011-03/scientists-say-theyve-found-lost-city-atlantis-swept-away-tsunami"
+   },
+   "replies": [
+    {
+     "who": "Juan Villarías-Robles (CSIC)",
+     "year": 2011,
+     "what": "\"Richard Freund was a newcomer to our project and appeared to be involved in his own very controversial issue concerning King Solomon's search for ivory and gold in Tartessos\" (quoted from the Telegraph by Colavito; the Telegraph piece was not fetched).",
+     "source": "https://www.jasoncolavito.com/blog/natgeos-shameful-atlantis-documentary-more-atlantis-bible-nonsense"
+    },
+    {
+     "who": "Jason Colavito",
+     "year": 2011,
+     "what": "Says initial radiocarbon dates put the site at 5,000 to 2,400 years old, and that Plato's island was larger than Libya and Asia together.",
+     "source": "https://www.jasoncolavito.com/blog/natgeos-shameful-atlantis-documentary-more-atlantis-bible-nonsense"
+    }
+   ],
+   "claims_touched": [
+    "ringed-city",
+    "sank-in-a-day-and-night",
+    "nine-thousand-years",
+    "larger-than-libya-and-asia"
+   ],
+   "check_that_settled_it": null,
+   "sources": [
+    {
+     "title": "Popular Science (via Vancouver Sun), March 2011",
+     "url": "https://www.popsci.com/science/article/2011-03/scientists-say-theyve-found-lost-city-atlantis-swept-away-tsunami"
+    },
+    {
+     "title": "Jason Colavito, review of 'Finding Atlantis', 14 March 2011",
+     "url": "https://www.jasoncolavito.com/blog/natgeos-shameful-atlantis-documentary-more-atlantis-bible-nonsense"
+    },
+    {
+     "title": "CSIC press release, 13 November 2018",
+     "url": "https://ih.csic.es/sites/default/files/np%20do%C3%B1ana%20Proyecto_Hinojos%20131118.pdf"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "An Atlantipedia profile of Villarías-Robles (search result, not fetched) says Freund offered geophysics help in 2009. Colavito's page is a personal blog. I did not see the film or any paper by Freund, and the Telegraph article was not available, so Freund's own words are not quoted. The film also covered a 'carved shield' map claim per Colavito."
+  },
+  {
+   "id": "atlantis-rising-natgeo-2017",
+   "title": "'Atlantis Rising' (James Cameron, Simcha Jacobovici)",
+   "kind": "documentary",
+   "who": [
+    "James Cameron",
+    "Simcha Jacobovici",
+    "Richard Freund",
+    "Georgeos Díaz-Montexano",
+    "National Geographic"
+   ],
+   "date_start": "2017-01",
+   "date_end": "2017-01",
+   "place": {
+    "name": "Several: Santorini, Malta, southern Spain (Doñana), Sardinia",
+    "hypothesis_id": null,
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "On-screen visits to candidate sites with expert interviews, including Freund's Spanish geophysics and Jacobovici's Sardinian Nuragic towers.",
+   "data": [],
+   "announced": {
+    "text": "Per Colavito: Atlantis might be a real Bronze Age Mediterranean power. The film looked at Thera, Malta, southern Spain and Sardinia, and Jacobovici presented Sardinia as a candidate.",
+    "where": "National Geographic Channel film, January 2017 (Colavito's review is dated 30 January 2017)",
+    "evidence": "Jacobovici claims that Nuragic architecture matches that of Plato's description of the houses of Atlantis.",
+    "source": "https://www.jasoncolavito.com/blog/nat-geos-atlantis-rising-a-stew-of-fake-experts-motivated-reasoning-and-weird-claims-that-judaism-contains-atlantean-theology"
+   },
+   "outcome": {
+    "status": "never-tested",
+    "text": "The film announced no new dated find of its own that I could see. Colavito's published review disputes its method and the fit with Plato.",
+    "evidence": "Jacobovici and Cameron both strategically leave out Plato's claim that Atlantis occupied a massive island beyond the Pillars of Hercules",
+    "source": "https://www.jasoncolavito.com/blog/nat-geos-atlantis-rising-a-stew-of-fake-experts-motivated-reasoning-and-weird-claims-that-judaism-contains-atlantean-theology"
+   },
+   "replies": [
+    {
+     "who": "Jason Colavito",
+     "year": 2017,
+     "what": "Detailed criticism of the film's method and its use of Plato's dates and size.",
+     "source": "https://www.jasoncolavito.com/blog/nat-geos-atlantis-rising-a-stew-of-fake-experts-motivated-reasoning-and-weird-claims-that-judaism-contains-atlantean-theology"
+    }
+   ],
+   "claims_touched": [
+    "beyond-pillars",
+    "nine-thousand-years",
+    "larger-than-libya-and-asia"
+   ],
+   "check_that_settled_it": null,
+   "sources": [
+    {
+     "title": "Jason Colavito, 'Nat Geo's Atlantis Rising' review (2017)",
+     "url": "https://www.jasoncolavito.com/blog/nat-geos-atlantis-rising-a-stew-of-fake-experts-motivated-reasoning-and-weird-claims-that-judaism-contains-atlantean-theology"
+    }
+   ],
+   "confidence": "low",
+   "notes": "I did not see the film or any National Geographic page for it; every claim here is as described by Colavito, a critic, whose page is a personal blog. The 'anchor stones off Cádiz' lead did not appear in the Colavito text or any other page I fetched, so it is unverified (see not_verified)."
+  },
+  {
+   "id": "corsetti-richat-video-2018",
+   "title": "Jimmy Corsetti's Richat video ('Bright Insight')",
+   "kind": "documentary",
+   "who": [
+    "Jimmy Corsetti (Bright Insight)"
+   ],
+   "date_start": "2018",
+   "date_end": "2018-11",
+   "place": {
+    "name": "Richat Structure, Mauritania",
+    "hypothesis_id": "richat",
+    "lat": 21.1147,
+    "lon": -11.3943,
+    "bbox": null
+   },
+   "method": "A video argument comparing the Richat's rings with Plato's description of the city, as summarised by Novella; the video was not fetched.",
+   "data": [],
+   "announced": {
+    "text": "Per neurologist and sceptic Steven Novella: the Richat's concentric rings match Plato's city, and the Atlanteans built into the natural dome.",
+    "where": "online video, 2018 (summarised in a NeuroLogica Blog post of 19 November 2018)",
+    "evidence": "Jimmy admits that it is a natural structure, but gets around this massive problem by simply claiming that the Atlantians built their city into the natural formation.",
+    "source": "https://theness.com/neurologicablog/no-atlantis-has-not-been-discovered-in-north-africa/"
+   },
+   "outcome": {
+    "status": "never-tested",
+    "text": "Nobody has reported excavating for a city at the site. The dome's origin is settled geology. Novella notes there is no archaeology of a city there.",
+    "evidence": "there is absolutely no evidence of a city in the Richat structure 12,000 years ago.",
+    "source": "https://theness.com/neurologicablog/no-atlantis-has-not-been-discovered-in-north-africa/"
+   },
+   "replies": [
+    {
+     "who": "Steven Novella",
+     "year": 2018,
+     "what": "Calls the video 'crank pseudoscience' and says the rings are a general match, not a specific one.",
+     "source": "https://theness.com/neurologicablog/no-atlantis-has-not-been-discovered-in-north-africa/"
+    }
+   ],
+   "claims_touched": [
+    "ringed-city",
+    "beyond-pillars",
+    "canal-to-sea"
+   ],
+   "check_that_settled_it": "Natural geology (Matton et al., 2005): an eroded Cretaceous dome.",
+   "sources": [
+    {
+     "title": "NeuroLogica Blog, 'No - Atlantis Has Not Been Discovered in North Africa'",
+     "url": "https://theness.com/neurologicablog/no-atlantis-has-not-been-discovered-in-north-africa/"
+    }
+   ],
+   "confidence": "low",
+   "notes": "I did not watch or fetch the video, so I do not quote Corsetti himself. The date comes from the Novella post. Corsetti also discussed it on a podcast (search result only, not fetched)."
+  },
+  {
+   "id": "merlin-burrows-donana-2018",
+   "title": "Merlin Burrows: 'towers' and a sea wall at Doñana",
+   "kind": "satellite-claim",
+   "who": [
+    "Merlin Burrows (North Yorkshire search company)",
+    "Bruce Blackburn (CEO)"
+   ],
+   "date_start": "2018-11",
+   "date_end": "2018-11",
+   "place": {
+    "name": "Doñana National Park, southern Spain",
+    "hypothesis_id": "donana",
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Satellite images and surveys to find 'large circles', a sea wall and what the company called early concrete, with samples taken.",
+   "data": [],
+   "announced": {
+    "text": "The company said it had found remains of temples and towers and a long sea wall, with material thought to be early concrete dated to 10,000 to 12,000 years. A film titled 'Atlantica' was announced.",
+    "where": "press interviews (Live Science, quoted by BGR, 28 November 2018)",
+    "evidence": "Dating of the material, which is thought to be early concrete, suggested it was between 10,000 and 12,000 years old, which would fit the rough timeline of when Atlantis is said to have existed.",
+    "source": "https://bgr.com/2018/11/28/atlantis-found-2018-discovery-merlin-burrows/"
+   },
+   "outcome": {
+    "status": "refuted",
+    "text": "A critic found the oval 'circles' were experimental ponds dug in 2004 to 2005 for a zooplankton study, and that they are absent from older Google Earth imagery. The ponds' construction is confirmed by the published paper.",
+    "evidence": "As part of the restoration, a set of experimental ponds was excavated in Caracoles estate (Fig. 1 and [35]) between 2004 and 2005. This experimental pond area ... contains 96 elliptically-shaped temporary ponds",
+    "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0040205"
+   },
+   "replies": [
+    {
+     "who": "A Hot Cup of Joe (archaeologist blog, 2019)",
+     "year": 2019,
+     "what": "Says the circles disappear if you move the Google Earth timeline back, and that the company later withdrew links to 'Towers of Poseidon' claims. Blog author unnamed in the text I read.",
+     "source": "https://ahotcupofjoe.net/2019/01/how-the-discovery-of-atlantis-made-big-news-then-faded-away/"
+    }
+   ],
+   "claims_touched": [
+    "ringed-city",
+    "temple-of-poseidon",
+    "nine-thousand-years"
+   ],
+   "check_that_settled_it": "Earlier satellite imagery plus the published description of the pond experiment (Frisch et al., PLoS ONE 2012).",
+   "sources": [
+    {
+     "title": "BGR, 'High-Tech Search Company Claims To Have Discovered Atlantis', 28 November 2018",
+     "url": "https://bgr.com/2018/11/28/atlantis-found-2018-discovery-merlin-burrows/"
+    },
+    {
+     "title": "A Hot Cup of Joe, 'How the Discovery of Atlantis Made Big News Then Faded Away'",
+     "url": "https://ahotcupofjoe.net/2019/01/how-the-discovery-of-atlantis-made-big-news-then-faded-away/"
+    },
+    {
+     "title": "Frisch et al., PLoS ONE 7(7): e40205 (2012)",
+     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0040205"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "I confirmed from the PLoS paper that 96 elliptical ponds were excavated in Caracoles estate between 2004 and 2005, at 37 07 N, 6 31 W. I did not confirm that the company's 'circles' are those ponds, which rests on the blog's image comparison, and did not see the company's own report or the film. 'Withdrew' is the blog's claim, not checked. The BGR piece cites Live Science, which I did not fetch. A different 2025 film by Michael Donnellan has the same title 'Atlantica'."
+  },
+  {
+   "id": "ancient-apocalypse-netflix-2022",
+   "title": "Graham Hancock's 'Ancient Apocalypse' and the SAA letter",
+   "kind": "documentary",
+   "who": [
+    "Graham Hancock",
+    "Netflix",
+    "ITN Productions",
+    "Society for American Archaeology"
+   ],
+   "date_start": "2022-11-10",
+   "date_end": "2024-10-16",
+   "place": {
+    "name": "Many sites worldwide; no single Atlantis location named",
+    "hypothesis_id": null,
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Documentary visits to monumental sites to argue for an advanced Ice Age civilisation destroyed about 12,000 years ago (Younger Dryas).",
+   "data": [],
+   "announced": {
+    "text": "Hancock presents a theory that an advanced civilisation was destroyed around 12,000 years ago by meteor impacts. Wikipedia's account of the series does not mention Atlantis in its text.",
+    "where": "Netflix series, season 1 on 10 November 2022 and season 2 on 16 October 2024",
+    "evidence": "Hancock presents his pseudoarcheological theory that there was an advanced civilization during the last ice age and that it was destroyed as a result of meteor impacts around 12,000 years ago.",
+    "source": "https://en.wikipedia.org/wiki/Ancient_Apocalypse"
+   },
+   "outcome": {
+    "status": "no-claim",
+    "text": "The series names no Atlantis site that I could find. The Society for American Archaeology asked Netflix to reclassify it as science fiction; Wikipedia quotes the letter. Some featured archaeologists said their interviews were taken out of context.",
+    "evidence": "the series devalues the archaeological profession on the basis of false claims and disinformation;",
+    "source": "https://en.wikipedia.org/wiki/Ancient_Apocalypse"
+   },
+   "replies": [
+    {
+     "who": "Society for American Archaeology",
+     "year": 2022,
+     "what": "Open letter asking Netflix to reclassify the series; quoted in Wikipedia (the SAA PDF could not be read).",
+     "source": "https://en.wikipedia.org/wiki/Ancient_Apocalypse"
+    },
+    {
+     "who": "Katya Stroud and Necmi Karul",
+     "year": 2022,
+     "what": "Said their interviews were manipulated and presented out of context.",
+     "source": "https://en.wikipedia.org/wiki/Ancient_Apocalypse"
+    },
+    {
+     "who": "Robin McKie (The Guardian)",
+     "year": 2022,
+     "what": "Article titled 'Lost city of Atlantis rises again to fuel a dangerous myth', 27 November 2022 (title from Wikipedia's reference list; the article would not load).",
+     "source": "https://en.wikipedia.org/wiki/Ancient_Apocalypse"
+    }
+   ],
+   "claims_touched": [],
+   "check_that_settled_it": null,
+   "sources": [
+    {
+     "title": "Wikipedia, Ancient Apocalypse",
+     "url": "https://en.wikipedia.org/wiki/Ancient_Apocalypse"
+    }
+   ],
+   "confidence": "low",
+   "notes": "Included because the brief asked for it and the press linked it to Atlantis. It does not announce a testable Atlantis location in my sources, so it is a context entry. The SAA letter date (30 November 2022) appears only in a search summary, not in a page I fetched; the PDF at documents.saa.org gave no text. Hancock's reply (via Colavito) was not read."
+  },
+  {
+   "id": "donnellan-chipiona-press-conference-2023",
+   "title": "Cádiz coast 'walls': Chipiona press conference",
+   "kind": "sonar-claim",
+   "who": [
+    "Michael Donnellan (Ingenio Films)",
+    "Mercedes de Caso Bernal (archaeologist)",
+    "divers Boris Martínez Abad and Antonio Fernández Olivero",
+    "surveyors Sergio and Alejandro Aleu Ruiz"
+   ],
+   "date_start": "2023-09-30",
+   "date_end": "2023-09-30",
+   "place": {
+    "name": "Off Chipiona, Gulf of Cádiz (Salmedina area); location withheld",
+    "hypothesis_id": null,
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Divers noted sonar anomalies about 10 years earlier; surveyors then ran bathymetric surveys and detected structures up to 5 m high and up to 450 m long.",
+   "data": [],
+   "announced": {
+    "text": "A team reported large concentric circular structures like walls, resembling Plato's description. Donnellan said the match to Plato was perfect but that the team could not say it was Atlantis.",
+    "where": "press conference, Chipiona, 30 September 2023 (reported by Euro Weekly News)",
+    "evidence": "We cannot say that it is that place, we are simply saying that it is very curious and that we are in the process of continuing our research",
+    "source": "https://euroweeklynews.com/2023/10/01/divers-archaeologists-lost-city-atlantis-off-coast-chipiona-cadiz/"
+   },
+   "outcome": {
+    "status": "unresolved",
+    "text": "The archaeologist called it 'the first data'. A Huelva stratigraphy professor said the coastal formations he has studied show no human action, though he was speaking about the region, not this site.",
+    "evidence": "Juan Antonio Morales, a stratigraphy professor at the University of Huelva in southern Spain, told local outlet Cádiz Directo there's \"no evidence of human action in this area,\" meaning in the coastal formations he has studied. ... His comments were about the region in general, not Donnellan's site specifically.",
+    "source": "https://www.foxnews.com/travel/massive-underwater-ruins-could-evidence-platos-lost-atlantis-researcher-insists"
+   },
+   "replies": [
+    {
+     "who": "Juan Antonio Morales (University of Huelva)",
+     "year": null,
+     "what": "'no evidence of human action in this area' (regional comment, as reported by Fox News).",
+     "source": "https://www.foxnews.com/travel/massive-underwater-ruins-could-evidence-platos-lost-atlantis-researcher-insists"
+    }
+   ],
+   "claims_touched": [
+    "ringed-city",
+    "beyond-pillars",
+    "sank-in-a-day-and-night"
+   ],
+   "check_that_settled_it": null,
+   "sources": [
+    {
+     "title": "Euro Weekly News, 'Has the lost city of Atlantis been discovered off the coast of Chipiona in Cádiz?' (1 October 2023)",
+     "url": "https://euroweeklynews.com/2023/10/01/divers-archaeologists-lost-city-atlantis-off-coast-chipiona-cadiz/"
+    },
+    {
+     "title": "Fox News, 'Ancient ruins found off Spanish coast could be 11,000-year-old Atlantis'",
+     "url": "https://www.foxnews.com/travel/massive-underwater-ruins-could-evidence-platos-lost-atlantis-researcher-insists"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "The location was deliberately not revealed at the press conference. Fox puts the stones at Salmedina Island off Chipiona. A Spanish article (Noticias de Navarra) said to carry the topographers' own doubts about natural or artificial rock could not be fetched, so that is not used. The Fox page shows no publication date."
+  },
+  {
+   "id": "atlantica-donnellan-film-2025",
+   "title": "'Atlantica' film and the Cádiz concentric-wall claim",
+   "kind": "documentary",
+   "who": [
+    "Michael Donnellan (Ingenio Films)"
+   ],
+   "date_start": "2025-07",
+   "date_end": "2025-09",
+   "place": {
+    "name": "Bay of Cádiz: Chipiona, Sanlúcar de Barrameda, Rota; about 20 m depth",
+    "hypothesis_id": null,
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "Multi-year sonar and LiDAR work with more than 20 dives, satellite imagery and aerial photography, and 3D renderings.",
+   "data": [],
+   "announced": {
+    "text": "Donnellan said sonar showed concentric circular walls each 6.096 m high, with a central rectangular ruin he compared to the Temple of Poseidon, and tied the destruction to the Younger Dryas.",
+    "where": "documentary 'Atlantica' and conference talk (Cosmic Summit, North Carolina, July 2025); Jerusalem Post, 6 July and 7 September 2025",
+    "evidence": "He said straight carved structures were visible on the ocean floor, set out as huge concentric circular walls with each wall standing 6.096 meters high.",
+    "source": "https://www.jpost.com/archaeology/article-866627"
+   },
+   "outcome": {
+    "status": "unresolved",
+    "text": "The Jerusalem Post says Donnellan did not convince the scientific community, and he says geologists date the structures to 10,000 to 12,000 years. No published paper or independent survey was found.",
+    "evidence": "Despite the publicity and the new imagery, Donnellan did not convince the scientific community.",
+    "source": "https://www.jpost.com/archaeology/article-866627"
+   },
+   "replies": [
+    {
+     "who": "Juan Antonio Morales (University of Huelva)",
+     "year": null,
+     "what": "'no evidence of human action in this area' (regional comment, per Fox News).",
+     "source": "https://www.foxnews.com/travel/massive-underwater-ruins-could-evidence-platos-lost-atlantis-researcher-insists"
+    }
+   ],
+   "claims_touched": [
+    "ringed-city",
+    "temple-of-poseidon",
+    "beyond-pillars",
+    "sank-in-a-day-and-night",
+    "canal-to-sea"
+   ],
+   "check_that_settled_it": null,
+   "sources": [
+    {
+     "title": "Jerusalem Post, 7 September 2025",
+     "url": "https://www.jpost.com/archaeology/article-866627"
+    },
+    {
+     "title": "Jerusalem Post (Spanish), 6 July 2025",
+     "url": "https://www.jpost.com/spanish/noticias-de-arqueologia/article-860042"
+    },
+    {
+     "title": "Fox News interview with Donnellan",
+     "url": "https://www.foxnews.com/travel/massive-underwater-ruins-could-evidence-platos-lost-atlantis-researcher-insists"
+    }
+   ],
+   "confidence": "medium",
+   "notes": "The Jerusalem Post pages say they were 'produced with the assistance of a news-analysis system', so they are weak sources for exact wording. I did not see the film or the sonar data. Merlin Burrows's 2018 film is also titled 'Atlantica', which can cause confusion."
+  },
+  {
+   "id": "pash-codex-atlantis-2026",
+   "title": "'Codex running for 26 days searching for Atlantis' (pash, OpenAI)",
+   "kind": "ai-search",
+   "who": [
+    "pash (@pashmerepat on X; bio 'codex / dots @openai')",
+    "OpenAI Codex (agent)"
+   ],
+   "date_start": "2026-10",
+   "date_end": "2026-11-11",
+   "place": {
+    "name": "Faroe Plateau (north-east Atlantic), named as 'best bet'",
+    "hypothesis_id": null,
+    "lat": null,
+    "lon": null,
+    "bbox": null
+   },
+   "method": "None stated. The post does not say what data, prompts, tools or checks the agent used.",
+   "data": [],
+   "announced": {
+    "text": "pash says an AI agent has searched for Atlantis for 26 days and the best candidate is the Faroe Plateau, but it needs more time. The post gives no data, method, map or repository.",
+    "where": "post on X, 11 November 2026 05:41 UTC (10 November, 21:41 in San Francisco), 1,419 likes and 62,367 views when fetched",
+    "evidence": "I’ve had codex running for 26 days searching for atlantis. Best bet right now is faraoe plateau but needs more time",
+    "source": "https://x.com/pashmerepat/status/2120391336801235053"
+   },
+   "outcome": {
+    "status": "unresolved",
+    "text": "No write-up, data or follow-up claim was found in pash's replies of that day. pash joked 'heinrich schliemann moment' to one reply and, replying to Polymarket, asked 'okay where's the \"Atlantis discovered by ____\" market'.",
+    "evidence": "okay where's the \"Atlantis discovered by ____\" market",
+    "source": "https://x.com/pashmerepat/status/2120591619200360760"
+   },
+   "replies": [
+    {
+     "who": "Polymarket",
+     "year": 2026,
+     "what": "Reposted it: 'JUST IN: OpenAI engineer reveals he's had Codex running for 26 days straight searching for the lost city of Atlantis, as \"vibe archaeology\" emerges as a new use for AI agents.'",
+     "source": "https://x.com/Polymarket/status/2120521818058752054"
+    },
+    {
+     "who": "pash",
+     "year": 2026,
+     "what": "Replied 'heinrich schliemann moment' to @boneGPT.",
+     "source": "https://x.com/pashmerepat/status/2120429698954281281"
+    }
+   ],
+   "claims_touched": [
+    "beyond-pillars"
+   ],
+   "check_that_settled_it": null,
+   "sources": [
+    {
+     "title": "pash on X, via fxtwitter API",
+     "url": "https://api.fxtwitter.com/pashmerepat/status/2120391336801235053"
+    },
+    {
+     "title": "Polymarket on X, Atlantis post",
+     "url": "https://x.com/Polymarket/status/2120521818058752054"
+    }
+   ],
+   "confidence": "high",
+   "notes": "The task brief dated the post 10 November; the API timestamp is 11 November 05:41 UTC, which is the evening of 10 November in San Francisco (pash lists 'sf'). The 26-day start is my subtraction (about 16 October), not stated. Two images in a pash reply that day were unrelated (a ship sinking engraving and a portrait). A KratosBrief post described the Faroe Plateau as a volcanic shelf about 55 million years old; not verified. I found no earlier 2025 or 2026 AI-agent Atlantis searches: an August 2026 post joked about using Claude for deep research on where Atlantis was, with no result. A GitHub repository posted on 11 November 2026 (Arquitecto54/atlantis-yucatan-chicxulub) is a Spanish-language thesis placing Atlantis at Chicxulub; it states no AI method and is only handed off."
+  }
+ ],
+ "handoffs": [
+  {
+   "lane": "hypotheses",
+   "what": "Faroe Plateau is now named as an Atlantis candidate by an AI-agent run (pash, 11 Nov 2026); no prior literature found for it. Check before adding.",
+   "url": "https://x.com/pashmerepat/status/2120391336801235053"
+  },
+  {
+   "lane": "hypotheses",
+   "what": "Ampère Seamount (Soviet photos, 1974 to 1979) is not among our 15 places; Wikipedia gives 35 04 N, 12 57 W and a 55 m summit.",
+   "url": "https://en.wikipedia.org/wiki/Amp%C3%A8re_Seamount"
+  },
+  {
+   "lane": "hypotheses",
+   "what": "Western Cuba sonar site (Guanahacabibes, over 650 m deep, 2000 to 2001) and the Cádiz coast 'concentric walls' (Donnellan, Chipiona and Salmedina, 2023 and 2025) are not among our 15 places.",
+   "url": "https://www.cubanet.org/htdocs/CNews/y01/dec01/07e6.htm"
+  },
+  {
+   "lane": "hypotheses",
+   "what": "A same-day (11 Nov 2026) GitHub thesis puts Atlantis at the Chicxulub crater and Campeche Bank, Yucatán. It states no AI method and no data analysis.",
+   "url": "https://github.com/Arquitecto54/atlantis-yucatan-chicxulub"
+  },
+  {
+   "lane": "site-data",
+   "what": "Faroe Plateau: bathymetry for the candidate (EMODnet or GEBCO via our catalogued ids) so the globe can show it next to the AI claim.",
+   "url": null
+  },
+  {
+   "lane": "site-data",
+   "what": "Google Ocean grid area (about 600 miles off northern Africa): Sandwell and Smith ship-track KMZ, plus SRTM15+ (our id srtm15-plus), shows the artefact in the data.",
+   "url": "ftp://topex.ucsd.edu/pub/srtm30_plus/Atlantis_Ship_Tracks.kmz"
+  },
+  {
+   "lane": "site-data",
+   "what": "Doñana: the CSIC Hinojos Project sediment results (settlement about 5,000 years old, marine flood 2200 to 2000 BCE, tsunamis about 1450 BCE and about 1150 BCE) and the Frisch et al. pond map for the Caracoles estate (37 07 N, 6 31 W).",
+   "url": "https://ih.csic.es/sites/default/files/np%20do%C3%B1ana%20Proyecto_Hinojos%20131118.pdf"
+  },
+  {
+   "lane": "site-data",
+   "what": "Cyprus Basin: Hübscher et al. 2009 (Tectonophysics 470) is the test that should be loaded beside Sarmast's claim.",
+   "url": "https://doi.org/10.1016/j.tecto.2008.08.019"
+  },
+  {
+   "lane": "site-data",
+   "what": "Bimini: Shinn's 1977 core and the dates in Calvert et al., Radiocarbon 21 (1979), as the test of the stones.",
+   "url": "https://en.wikipedia.org/wiki/Bimini_Road"
+  },
+  {
+   "lane": "world-9600bce",
+   "what": "Collina-Girard's sea level figures for Spartel: 135 m below present at the glacial low, and meltwater pulse 1A near 9400 BCE at about 4 m per century, per Wikipedia's summary. Check against a primary sea-level source.",
+   "url": "https://en.wikipedia.org/wiki/Location_hypotheses_of_Atlantis"
+  },
+  {
+   "lane": "plato",
+   "what": "The Milos 2005 list (as printed by Atlantipedia) says Atlantis was larger than 'Libya and Anatolia and Middle East and Sinai', and 'Libya and Anatolia' is not Plato's 'Libya and Asia'. Check the Greek and the proceedings.",
+   "url": "https://atlantipedia.ie/samples/?p=2589"
+  }
+ ],
+ "not_verified": [
+  "Jürgen Spanuth's Heligoland work (1950 reconnaissance, 1953 book, echograms of the Steingrund, diving) was left out: the Germania review, the 1956 Spectator review and the Nachrichten aus Niedersachsens Urgeschichte review would not load (an anti-bot page or empty reply), and the Atlantipedia page gave no dates.",
+  "The Society for American Archaeology letter on Ancient Apocalypse: the PDF at documents.saa.org gave no readable text and Artnet and the Guardian pages did not load. The quoted lines come from Wikipedia. The letter date of 30 November 2022 appears only in a search summary.",
+  "Graham Hancock's reply to the SAA letter (Colavito page): the page text I extracted was navigation only.",
+  "'Atlantis Rising' (2017): no National Geographic page was fetched; everything is as Colavito describes it. The lead about 'anchor stones off Cádiz' was not found in Colavito's review or in any page I fetched.",
+  "Jimmy Corsetti's Richat video itself, and his podcast remarks: not fetched; only Steven Novella's summary was read.",
+  "The Telegraph interview with Juan Villarías-Robles (2011) and Richard Freund's own statements: not fetched. The Villarías-Robles quote is as quoted by Colavito. Aren Maeir's comment (Jerusalem Post) was seen only in a search summary.",
+  "The Antiquity project gallery page for Kühne (2004) and Werner Wickboldt's own pages: not opened; BBC News was used.",
+  "The 1979 New York Times article on Ampère Seamount (blocked) and the Atlantis Rising Research Report cited by Atlantipedia. The natural-features outcome rests on Atlantipedia alone.",
+  "Science news item 'Atlantis Rises Again' (Ornekas, 22 July 2005) and the Bryn Mawr Classical Review (Nesselrath 2009): cited by Wikipedia but not read. Gutscher's survey cruise dates for Spartel are unconfirmed; Gulf of Cádiz cruises SO175 (Nov to Dec 2003) and Le Suroît (2004, 2005) appeared in search results but were not tied to Spartel.",
+  "Deep-sea drilling on the Azores Plateau and the Mid-Atlantic Ridge: I did not find a primary drilling report (DSDP or IODP) in this lane. The sea-floor evidence used here is Pettersson's 1944 argument as summarised by Atlantis-Scout, which is not drilling. A 2026 Scientific Reports paper on the Azores Plateau and IODP Expedition 398 appeared in search results and was not read. Charles Schuchert's 1916 and 1917 papers (PNAS and American Journal of Science) were found in Crossref with no abstract and no Atlantis mention seen, so they are not used.",
+  "Any AI-agent Atlantis search before 10 November 2026: the fxtwitter search tool shows posts mentioning Atlantis with AI terms since 2025 and I found none that report a search. Search through that tool is partial. GitHub repository search for 'atlantis' with bathymetry, lidar or Faroe returned no matching AI-search project; one Chicxulub thesis (11 November 2026) is handed off.",
+  "The claim was unconfirmed by Mexico's INAH as of the search summaries.",
+  "Soviet and Russian expeditions beyond Ampère, the Edgar Cayce foundation's own Bimini expeditions, and any university Atlantis project: not found or not fetched. Cayce's Bimini links come from Wikipedia only.",
+  "Exact dates of the Athens 2008 and Santorini 2011 conferences, and the content of their proceedings.",
+  "Whether Merlin Burrows returned with a new claim in 2025 (seen in a search summary only).",
+  "The Dutch, Spanish and other early Atlantis localisers (Pellicer 1673; Fernández Amador de los Ríos 1911) are in Wikipedia's reference list only."
+ ]
+}

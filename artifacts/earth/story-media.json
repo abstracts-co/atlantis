@@ -1,0 +1,94 @@
+{
+ "what": "Pictures shown over the globe while the story is told: each a real object or a real photograph, with where it comes from. Times are seconds into the sentence named by `line` (the ids in source/engine/storytext.js). Every picture is in the public domain; the record of each, as Wikimedia Commons gave it on the day named, is in research/story-media/commons.json.",
+ "checked": "2026-11-12",
+ "media": [
+  {
+   "line": "tale",
+   "file": "story/plato.webp",
+   "at": 0.4,
+   "for": 6.6,
+   "caption": "Plato, on the left, in Raphael's School of Athens, 1509",
+   "by": "Raphael",
+   "licence": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Sanzio_01_Plato_Aristotle.jpg",
+   "date": "1509"
+  },
+  {
+   "line": "island",
+   "file": "story/kircher.webp",
+   "at": 1.0,
+   "for": 6.2,
+   "caption": "Athanasius Kircher's map of Atlantis, 1664",
+   "by": "Athanasius Kircher",
+   "licence": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Atlantis_Kircher_Mundus_subterraneus_1678.jpg",
+   "date": "1664"
+  },
+  {
+   "line": "date",
+   "file": "story/timaeus.webp",
+   "at": 0.5,
+   "for": 7.6,
+   "caption": "Plato's Timaeus in Latin: a manuscript of the tenth century",
+   "by": "Calcidius",
+   "licence": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Timaeus_trans_calcidius_med_manuscript.jpg",
+   "date": "First half of the tenth century"
+  },
+  {
+   "line": "scored",
+   "file": "story/bahama.webp",
+   "at": 6.2,
+   "for": 6.4,
+   "caption": "The Great Bahama Bank from orbit, 2020",
+   "by": "NASA",
+   "licence": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Great_Bahama_Bank_2020.jpeg",
+   "date": "2020-02-15"
+  },
+  {
+   "line": "search",
+   "file": "story/rudbeck.webp",
+   "at": 0.3,
+   "for": 3.1,
+   "caption": "Olof Rudbeck's Atlantica, 1679",
+   "by": "Engraving by Dionysius Padt-Brügge (1629-1680)",
+   "licence": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Olof_Rudbeck_den_%C3%A4ldre_Atlantica_SP132.jpg",
+   "date": "1679"
+  },
+  {
+   "line": "search",
+   "file": "story/donnelly.webp",
+   "at": 3.5,
+   "for": 3.0,
+   "caption": "Ignatius Donnelly's map of an Atlantean empire, 1882",
+   "by": "Ignatius Donnelly",
+   "licence": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Atlantis_map_1882_crop.jpg",
+   "date": "1882"
+  },
+  {
+   "line": "search",
+   "file": "story/santorini.webp",
+   "at": 6.6,
+   "for": 3.0,
+   "caption": "Santorini from the space station, 2022",
+   "by": "NASA",
+   "licence": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Crop_of_ISS067-E-153820_Santorini_caldera.jpg",
+   "date": "2022-06-24"
+  },
+  {
+   "line": "search",
+   "file": "story/richat.webp",
+   "at": 9.7,
+   "for": 3.1,
+   "caption": "The Richat Structure from the space station, 2011",
+   "by": "NASA",
+   "licence": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Richat_Structure_ISS030-E-12516.jpg",
+   "date": "Taken on 17 December 2011, 17:28:02"
+  }
+ ]
+}

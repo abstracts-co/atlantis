@@ -1,0 +1,2263 @@
+{
+  "lane": "plato",
+  "checked": "2026-11-11",
+  "texts": [
+    {
+      "work": "Timaeus",
+      "greek_url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0179%3Atext%3DTim.",
+      "english_url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.",
+      "translator": "R. G. Bury (Loeb Classical Library 234, 1929), as printed by Perseus. Perseus's own page credits \"Plato in Twelve Volumes, Vol. 9 translated by W.R.M. Lamb, 1925\". Library records found by search name Bury as translator of the Loeb volume that holds Timaeus and Critias; the Perseus credit looks like a catalogue slip, but I did not resolve it.",
+      "licence": "Perseus page states Creative Commons Attribution-ShareAlike 3.0 United States. Greek edition not identified on the page I read.",
+      "sections_fetched": "Timaeus 20a-26e (English and Greek)"
+    },
+    {
+      "work": "Critias",
+      "greek_url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0179%3Atext%3DCriti.",
+      "english_url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.",
+      "translator": "R. G. Bury (see Timaeus entry for the Lamb/Bury credit problem)",
+      "licence": "Same as Timaeus.",
+      "sections_fetched": "Critias 106a-121c (English and Greek). Perseus returns no text for 106d-e and 121d-e; the dialogue ends at 121c."
+    },
+    {
+      "work": "Timaeus (second translation)",
+      "greek_url": null,
+      "english_url": "https://www.gutenberg.org/ebooks/1572",
+      "translator": "Benjamin Jowett (19th century; the Gutenberg file does not name the edition on the lines I read). Jowett's long Introduction and Analysis is in the same file; only his translation proper is quoted here.",
+      "licence": "Public domain in the United States (Project Gutenberg #1572).",
+      "sections_fetched": "whole file"
+    },
+    {
+      "work": "Critias (second translation)",
+      "greek_url": null,
+      "english_url": "https://www.gutenberg.org/ebooks/1571",
+      "translator": "Benjamin Jowett",
+      "licence": "Public domain in the United States (Project Gutenberg #1571).",
+      "sections_fetched": "whole file. Jowett prints no Stephanus numbers, so references in this file are from the Perseus text."
+    }
+  ],
+  "conventions": {
+    "quote": "Jowett (public domain). quote_bury is the Loeb text by R. G. Bury as printed by Perseus. Quotes were checked by machine against the files fetched today; \"…\" joins separate pieces of one passage.",
+    "greek": "Greek phrases are copied from the Perseus Greek text and checked by machine.",
+    "ref": "Stephanus numbers (Perseus). Jowett prints none.",
+    "test_strength": "strong = a specific number or shape that data could confirm or rule out; weak = a direction, a resource or a trace too small or too common to pick a site; absent = not a physical claim."
+  },
+  "claims": [
+    {
+      "id": "beyond-pillars",
+      "label": "The island lay in the Atlantic, in front of the strait the Greeks call the Pillars of Heracles.",
+      "category": "location",
+      "ref": "Timaeus 24e; Critias 108e",
+      "quote": "there was an island situated in front of the straits which are by you called the Pillars of Heracles",
+      "translator": "Jowett",
+      "quote_bury": "for in front of the mouth which you Greeks call, as you say, 'the pillars of Heracles,' there lay an island",
+      "greek": "νῆσον γὰρ πρὸ τοῦ στόματος εἶχεν ὃ καλεῖτε, ὥς φατε, ὑμεῖς Ἡρακλέους στήλας",
+      "greek_terms": [
+        {
+          "greek": "στόμα",
+          "transliteration": "stoma",
+          "meaning": "mouth (Bury); Jowett has \"straits\"",
+          "note": "Plato says \"mouth\", the entrance to the inner sea. Bury glosses the Pillars as the Straits of Gibraltar; Plato does not name the strait."
+        },
+        {
+          "greek": "πρὸ τοῦ στόματος",
+          "transliteration": "pro tou stomatos",
+          "meaning": "in front of the mouth",
+          "note": "Does not say how far out. Critias 114b puts one end of the island next to the Pillars."
+        },
+        {
+          "greek": "Ἀτλαντικοῦ πελάγους",
+          "transliteration": "Atlantikou pelagous",
+          "meaning": "the Atlantic sea",
+          "note": "Critias 114a says the sea took its name from Atlas, the first king."
+        }
+      ],
+      "numbers": [],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "Only a direction and a neighbour, not a distance. Any proposed site can be checked against it: is it in the open ocean outside the strait? The sea-floor and shoreline layers answer that (sea-floor depth grids (emodnet-bathymetry-multicolour, srtm15-plus, gmrt-point-and-grid, gebco-wms) and, where a survey exists, noaa-ncei-multibeam-mosaic).",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.%3Asection%3D24e"
+    },
+    {
+      "id": "atlantic-navigable-then",
+      "label": "At that time the ocean beyond the strait could be sailed.",
+      "category": "location",
+      "ref": "Timaeus 24e",
+      "quote": "This power came forth out of the Atlantic Ocean, for in those days the Atlantic was navigable",
+      "translator": "Jowett",
+      "greek": "τότε γὰρ πορεύσιμον ἦν τὸ ἐκεῖ πέλαγος",
+      "greek_terms": [
+        {
+          "greek": "πορεύσιμον",
+          "transliteration": "poreusimon",
+          "meaning": "passable, navigable",
+          "note": "Set against the present \"impassable\" mud in 25d."
+        }
+      ],
+      "numbers": [],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.%3Asection%3D24e"
+    },
+    {
+      "id": "larger-than-libya-and-asia",
+      "label": "The island was larger than Libya and Asia together.",
+      "category": "size",
+      "ref": "Timaeus 24e; Critias 108e",
+      "quote": "the island was larger than Libya and Asia put together",
+      "translator": "Jowett",
+      "quote_bury": "there lay an island which was larger than Libya and Asia together",
+      "greek": "ἡ δὲ νῆσος ἅμα Λιβύης ἦν καὶ Ἀσίας μείζων",
+      "greek_terms": [
+        {
+          "greek": "Λιβύης",
+          "transliteration": "Libyes",
+          "meaning": "Libya, the Greek name for Africa",
+          "note": "Bury glosses it \"i.e., Africa\". Herodotus 4.42 divides the known world into Libya, Asia and Europe, so Plato's \"Libya and Asia\" are the Greeks' known Africa and Asia, not a measured area."
+        },
+        {
+          "greek": "ἅμα",
+          "transliteration": "hama",
+          "meaning": "together, at once",
+          "note": "Both translators read it as \"together\", so larger than the two added up."
+        },
+        {
+          "greek": "μείζων",
+          "transliteration": "meizon",
+          "meaning": "greater, larger",
+          "note": "Could mean greater in extent; Plato gives no figure in stades for the whole island."
+        }
+      ],
+      "numbers": [],
+      "testable": true,
+      "test_strength": "strong",
+      "how_to_test": "A landmass of that size would have to show as a continental shelf or plateau in the Atlantic that was dry at some past sea level. Compare sea-floor depth grids (emodnet-bathymetry-multicolour, srtm15-plus, gmrt-point-and-grid, gebco-wms) and, where a survey exists, noaa-ncei-multibeam-mosaic with the lowered-sea slider (the globe's presets go to -134 m). Nothing is run here; this is the test, not its result.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.%3Asection%3D24e"
+    },
+    {
+      "id": "islands-and-opposite-continent",
+      "label": "From the island one could pass to other islands, and from them to the whole continent on the far side of the true ocean.",
+      "category": "location",
+      "ref": "Timaeus 24e-25a",
+      "quote": "and was the way to other islands, and from these you might pass to the whole of the opposite continent which surrounded the true ocean",
+      "translator": "Jowett",
+      "quote_bury": "it was possible for the travellers of that time to cross from it to the other islands, and from the islands to the whole of the continent over against them which encompasses that veritable ocean",
+      "greek": "ἐξ ἧς ἐπιβατὸν ἐπὶ τὰς ἄλλας νήσους τοῖς τότε ἐγίγνετο πορευομένοις, ἐκ δὲ τῶν νήσων ἐπὶ τὴν καταντικρὺ πᾶσαν ἤπειρον",
+      "greek_terms": [
+        {
+          "greek": "ἐπιβατὸν",
+          "transliteration": "epibaton",
+          "meaning": "Bury \"possible to cross\"; Jowett \"the way to\"",
+          "note": "The two translations differ on whether this is a route or a possibility. A dictionary entry was not fetched."
+        }
+      ],
+      "numbers": [],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "Plato names no island and gives no distance. A chain of islands leading to a far continent would show as shallow ridges on sea-floor depth grids (emodnet-bathymetry-multicolour, srtm15-plus, gmrt-point-and-grid, gebco-wms) and, where a survey exists, noaa-ncei-multibeam-mosaic; the claim fits any ocean crossing, so it cannot pick a site on its own.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.%3Asection%3D24e"
+    },
+    {
+      "id": "mediterranean-is-a-harbour",
+      "label": "The sea inside the strait is only a harbour with a narrow entrance; the outer sea is the real ocean, and the land around it a true continent.",
+      "category": "location",
+      "ref": "Timaeus 25a",
+      "quote": "for this sea which is within the Straits of Heracles is only a harbour, having a narrow entrance, but that other is a real sea, and the surrounding land may be most truly called a boundless continent",
+      "translator": "Jowett",
+      "greek": "τάδε μὲν γάρ, ὅσα ἐντὸς τοῦ στόματος οὗ λέγομεν, φαίνεται λιμὴν στενόν τινα ἔχων εἴσπλουν",
+      "greek_terms": [
+        {
+          "greek": "ἤπειρος",
+          "transliteration": "epeiros",
+          "meaning": "mainland, continent",
+          "note": "Used for the land that rings the outer ocean; Plato gives it no name."
+        }
+      ],
+      "numbers": [],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.%3Asection%3D25a"
+    },
+    {
+      "id": "gadeirus-end-of-island",
+      "label": "The twin of Atlas, Gadeirus, got the far end of the island toward the Pillars of Heracles, in the region now called Gadeira.",
+      "category": "location",
+      "ref": "Critias 114b",
+      "quote": "To his twin brother, who was born after him, and obtained as his lot the extremity of the island towards the pillars of Heracles, facing the country which is now called the region of Gades in that part of the world",
+      "translator": "Jowett",
+      "quote_bury": "who had for his portion the extremity of the island near the pillars of Heracles up to the part of the country now called Gadeira after the name of that region, was Eumelus in Greek, but in the native tongue Gadeirus",
+      "greek": "λῆξιν δὲ ἄκρας τῆς νήσου πρὸς Ἡρακλείων στηλῶν εἰληχότι ἐπὶ τὸ τῆς Γαδειρικῆς νῦν χώρας κατ᾽ ἐκεῖνον τὸν τόπον ὀνομαζομένης",
+      "greek_terms": [
+        {
+          "greek": "Γαδειρικῆς",
+          "transliteration": "Gadeirikes",
+          "meaning": "of Gadeira (Cádiz, in the Greek usage)",
+          "note": "Plato names the region only; the modern identification with Cádiz is the usual reading and is not fetched here."
+        },
+        {
+          "greek": "ἐπὶ τὸ",
+          "transliteration": "epi to",
+          "meaning": "Bury \"up to\"; Jowett \"facing\"",
+          "note": "The preposition decides whether the island reached Gadeira or merely faced it. See \"Where translations disagree\"."
+        }
+      ],
+      "numbers": [],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "If the island reached or faced the Gadeira coast, a site close to the Gulf of Cádiz fits and one far from it does not. A map test only (sea-floor depth grids (emodnet-bathymetry-multicolour, srtm15-plus, gmrt-point-and-grid, gebco-wms) and, where a survey exists, noaa-ncei-multibeam-mosaic).",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D114b"
+    },
+    {
+      "id": "atlantic-named-for-atlas",
+      "label": "The island and the Atlantic sea were both named after Atlas, the first king.",
+      "category": "people",
+      "ref": "Critias 114a",
+      "quote": "the eldest, who was the first king, he named Atlas, and after him the whole island and the ocean were called Atlantic",
+      "translator": "Jowett",
+      "greek": "ὅτι τοὔνομ᾽ ἦν τῷ πρώτῳ βασιλεύσαντι τότε Ἄτλας",
+      "greek_terms": [
+        {
+          "greek": "Ἀτλαντικὸν",
+          "transliteration": "Atlantikon",
+          "meaning": "Atlantic",
+          "note": "Herodotus 1.202 already calls the sea beyond the Pillars \"Atlantic\" (Godley), so the sea-name is older than Plato; only the island is new."
+        }
+      ],
+      "numbers": [],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D114a"
+    },
+    {
+      "id": "nine-thousand-years",
+      "label": "The war with Athens and the sinking happened 9,000 years before the time of the telling.",
+      "category": "chronology",
+      "ref": "Timaeus 23e; Critias 108e, 111a-b",
+      "quote": "nine thousand was the sum of years which had elapsed since the war which was said to have taken place between those who dwelt outside the pillars of Heracles and all who dwelt within them",
+      "translator": "Jowett",
+      "quote_bury": "Of the citizens, then, who lived 9000 years ago, I will declare to you briefly certain of their laws and the noblest of the deeds they performed",
+      "greek": "περὶ δὴ τῶν ἐνακισχίλια γεγονότων ἔτη πολιτῶν σοι δηλώσω διὰ βραχέων νόμους",
+      "greek_terms": [
+        {
+          "greek": "ἐνακισχίλια",
+          "transliteration": "enakischilia",
+          "meaning": "nine thousand",
+          "note": "Spelled out in words in 23e, 108e and 111a. No variant reading was seen in the Perseus text."
+        }
+      ],
+      "numbers": [
+        {
+          "what": "years from the war to the priest's speech to Solon (Athens' citizens of that age)",
+          "value": 9000,
+          "unit": "years",
+          "ref": "Timaeus 23e",
+          "variant": null
+        },
+        {
+          "what": "years from the war to Critias' present, as Critias says it",
+          "value": 9000,
+          "unit": "years",
+          "ref": "Critias 108e, 111a-b",
+          "variant": "Timaeus 23e counts from the priest's words to Solon (about 590 BCE); Critias 108e and 111b say \"from that time to this\" in the dialogue's own day. Plato does not reconcile the two starting points."
+        }
+      ],
+      "testable": true,
+      "test_strength": "strong",
+      "how_to_test": "A date, so it can be set against the past-world record: sea level, ice and climate at about 9600 BCE (the world-9600bce lane), and any dated sediment layer or tsunami deposit near a proposed site (cores, open-context).",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D108e"
+    },
+    {
+      "id": "claimed-true-story",
+      "label": "The speakers say the story is true, not an invented tale.",
+      "category": "chronology",
+      "ref": "Timaeus 20d, 26c-e",
+      "quote": "a tale which, though strange, is certainly true, having been attested by Solon",
+      "translator": "Jowett",
+      "quote_bury": "a tale which, though passing strange, is yet wholly true, as Solon, the wisest of the Seven, once upon a time declared",
+      "greek": "λόγου μάλα μὲν ἀτόπου, παντάπασί γε μὴν ἀληθοῦς",
+      "greek_terms": [
+        {
+          "greek": "ἀληθινὸν λόγον",
+          "transliteration": "alethinon logon",
+          "meaning": "a true account",
+          "note": "Socrates in 26e: \"μὴ πλασθέντα μῦθον ἀλλ᾽ ἀληθινὸν λόγον\", Bury \"no invented fable but genuine history\", Jowett \"a fact and not a fiction\"."
+        },
+        {
+          "greek": "πλασθέντα μῦθον",
+          "transliteration": "plasthenta mython",
+          "meaning": "a fashioned (made-up) story",
+          "note": "πλάσσω is to mould or fashion. Critias also calls Socrates' own city of yesterday a story (\"ἐν μύθῳ\", 26c) that will be moved \"to the truth\"."
+        }
+      ],
+      "numbers": [],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.%3Asection%3D26e"
+    },
+    {
+      "id": "republic-city-made-real",
+      "label": "Critias says he will treat the ideal city Socrates described yesterday as the ancient Athens of the priest's story.",
+      "category": "chronology",
+      "ref": "Timaeus 26c-d",
+      "quote": "The city and citizens, which you yesterday described to us in fiction, we will now transfer to the world of reality.",
+      "translator": "Jowett",
+      "quote_bury": "And the city with its citizens which you described to us yesterday, as it were in a fable, we will now transport hither into the realm of fact",
+      "greek": "τοὺς δὲ πολίτας καὶ τὴν πόλιν ἣν χθὲς ἡμῖν ὡς ἐν μύθῳ διῄεισθα σύ, νῦν μετενεγκόντες ἐπὶ τἀληθὲς δεῦρο θήσομεν",
+      "greek_terms": [
+        {
+          "greek": "μετενεγκόντες ἐπὶ τἀληθὲς",
+          "transliteration": "metenegkontes epi talethes",
+          "meaning": "carrying over to the truth",
+          "note": "Nesselrath (2002) reads this as a deliberate matching, not a match found in history."
+        }
+      ],
+      "numbers": [],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.%3Asection%3D26c"
+    },
+    {
+      "id": "names-translated-by-solon",
+      "label": "Solon found the Egyptian names had been translated into Egyptian, and rendered each into Greek; the writings were kept in Critias' family.",
+      "category": "chronology",
+      "ref": "Critias 113a-b",
+      "quote": "Solon, who was intending to use the tale for his poem, enquired into the meaning of the names, and found that the early Egyptians in writing them down had translated them into their own language",
+      "translator": "Jowett",
+      "quote_bury": "those Egyptians who had first written them down had translated them into their own tongue. So he himself in turn recovered the original sense of each name and, rendering it into our tongue, wrote it down so",
+      "greek": "ηὗρεν τούς τε Αἰγυπτίους τοὺς πρώτους ἐκείνους αὐτὰ γραψαμένους εἰς τὴν αὑτῶν φωνὴν μετενηνοχότας",
+      "greek_terms": [
+        {
+          "greek": "πάππῳ",
+          "transliteration": "pappoi",
+          "meaning": "grandfather",
+          "note": "Bury: \"in the possession of my grandfather\". Jowett has \"My great-grandfather, Dropides\". The Greek word is \"grandfather\". See \"Where translations disagree\"."
+        }
+      ],
+      "numbers": [],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D113a"
+    },
+    {
+      "id": "empire-to-egypt-and-tyrrhenia",
+      "label": "Atlantis ruled Libya as far as Egypt and Europe as far as Tyrrhenia.",
+      "category": "people",
+      "ref": "Timaeus 25a-b",
+      "quote": "Now in this island of Atlantis there existed a confederation of kings, of great and marvellous power, which held sway over all the island, and over many other islands also and parts of the continent; and, moreover, of the lands here within the Straits they ruled over Libya as far as Egypt , and over Europe as far as Tuscany .",
+      "translator": "Bury",
+      "greek_terms": [],
+      "numbers": [],
+      "testable": false,
+      "test_strength": "none",
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.%3Asection%3D25a",
+      "added_by": "merge-atlantis.mjs, from the Perseus text"
+    },
+    {
+      "id": "war-with-athens",
+      "label": "The Atlantean power, gathered into one, tried to enslave Europe and Asia inside the strait, and Athens defeated it.",
+      "category": "destruction",
+      "ref": "Timaeus 24e-25c; Critias 108e",
+      "quote": "This vast power, gathered into one, endeavoured to subdue at a blow our country and yours and the whole of the region within the straits … she defeated and triumphed over the invaders",
+      "translator": "Jowett",
+      "greek": "τόν τε παρ᾽ ὑμῖν καὶ τὸν παρ᾽ ἡμῖν καὶ τὸν ἐντὸς τοῦ στόματος πάντα τόπον μιᾷ ποτὲ ἐπεχείρησεν ὁρμῇ δουλοῦσθαι",
+      "greek_terms": [],
+      "numbers": [],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.%3Asection%3D25b"
+    },
+    {
+      "id": "sank-in-a-day-and-night",
+      "label": "Violent earthquakes and floods came; in one grievous day and night the Athenian warriors were swallowed by the earth and the island sank under the sea.",
+      "category": "destruction",
+      "ref": "Timaeus 25c-d",
+      "quote": "But afterwards there occurred violent earthquakes and floods; and in a single day and night of misfortune all your warlike men in a body sank into the earth, and the island of Atlantis in like manner disappeared in the depths of the sea.",
+      "translator": "Jowett",
+      "quote_bury": "But at a later time there occurred portentous earthquakes and floods, and one grievous day and night befell them",
+      "greek": "ὑστέρῳ δὲ χρόνῳ σεισμῶν ἐξαισίων καὶ κατακλυσμῶν γενομένων, μιᾶς ἡμέρας καὶ νυκτὸς χαλεπῆς ἐπελθούσης",
+      "greek_terms": [
+        {
+          "greek": "σεισμῶν ἐξαισίων",
+          "transliteration": "seismon exaision",
+          "meaning": "extraordinary earthquakes",
+          "note": "Bury \"portentous\", Jowett \"violent\"."
+        },
+        {
+          "greek": "κατακλυσμῶν",
+          "transliteration": "kataklysmon",
+          "meaning": "floods, deluges",
+          "note": "The word later used for the flood of Deucalion."
+        },
+        {
+          "greek": "μιᾶς ἡμέρας καὶ νυκτὸς χαλεπῆς",
+          "transliteration": "mias hemeras kai nyktos chalepes",
+          "meaning": "one hard day and night",
+          "note": "Bury \"one grievous day and night\", Jowett \"a single day and night of misfortune\". Neither says \"terrible\"; χαλεπός is hard or grievous."
+        },
+        {
+          "greek": "κατὰ γῆς ἔδυ … κατὰ τῆς θαλάττης δῦσα ἠφανίσθη",
+          "transliteration": "kata ges edy … kata tes thalattes dysa ephanisthe",
+          "meaning": "went down beneath the earth … sank beneath the sea and was made to vanish",
+          "note": "Two outcomes: the Athenian fighting force goes under the ground; the island goes under the sea."
+        }
+      ],
+      "numbers": [
+        {
+          "what": "duration of the destruction",
+          "value": 1,
+          "unit": "day and night",
+          "ref": "Timaeus 25d",
+          "variant": null
+        }
+      ],
+      "testable": true,
+      "test_strength": "strong",
+      "how_to_test": "A sudden drowning leaves a dated event layer: a tsunami deposit or turbidite in cores, a collapse scar or fault scarp in sea-floor depth grids (emodnet-bathymetry-multicolour, srtm15-plus, gmrt-point-and-grid, gebco-wms) and, where a survey exists, noaa-ncei-multibeam-mosaic, and an earthquake source in plate-boundaries-pb2002 and usgs-earthquakes-geojson. The text says \"island\", so the trace must be on the sea floor, not a coastal plain.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.%3Asection%3D25d"
+    },
+    {
+      "id": "impassable-mud",
+      "label": "The sea at that spot is now impassable and unsearchable because of a shoal of mud left by the sinking island.",
+      "category": "aftermath",
+      "ref": "Timaeus 25d; Critias 108e-109a",
+      "quote": "For which reason the sea in those parts is impassable and impenetrable, because there is a shoal of mud in the way; and this was caused by the subsidence of the island.",
+      "translator": "Jowett",
+      "quote_bury": "wherefore also the ocean at that spot has now become impassable and unsearchable, being blocked up by the shoal mud which the island created as it settled down",
+      "greek": "διὸ καὶ νῦν ἄπορον καὶ ἀδιερεύνητον γέγονεν τοὐκεῖ πέλαγος, πηλοῦ κάρτα βραχέος ἐμποδὼν ὄντος, ὃν ἡ νῆσος ἱζομένη παρέσχετο",
+      "greek_terms": [
+        {
+          "greek": "ἄπορον",
+          "transliteration": "aporon",
+          "meaning": "without passage, impassable",
+          "note": "Critias 108e: \"ἄπορον πηλὸν\", an impassable mud."
+        },
+        {
+          "greek": "ἀδιερεύνητον",
+          "transliteration": "adiereuneton",
+          "meaning": "not to be searched through",
+          "note": "Bury \"unsearchable\", Jowett \"impenetrable\"."
+        },
+        {
+          "greek": "πηλοῦ κάρτα βραχέος",
+          "transliteration": "peloy karta brachéos",
+          "meaning": "very shallow mud",
+          "note": "βραχύς is short or shallow. Bury and Jowett both say \"shoal\". Jowett's own introduction calls it \"shallows\". It is a mud bank near the surface, not a deep deposit."
+        }
+      ],
+      "numbers": [],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "A broad, shallow fine-sediment bank in the open Atlantic near the strait, shallow enough to stop ships. It is a claim about Plato's own day, not 9600 BCE. Check sea-floor depth grids (emodnet-bathymetry-multicolour, srtm15-plus, gmrt-point-and-grid, gebco-wms) and, where a survey exists, noaa-ncei-multibeam-mosaic; sediment maps and cores would be needed to tell mud from rock.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.%3Asection%3D25d"
+    },
+    {
+      "id": "periodic-catastrophes",
+      "label": "The Egyptian priest says mankind is destroyed again and again, mostly by fire and by water, and that Egypt is spared by the Nile.",
+      "category": "destruction",
+      "ref": "Timaeus 22b-23b",
+      "quote": "There have been, and will be again, many destructions of mankind arising out of many causes; the greatest have been brought about by the agencies of fire and water",
+      "translator": "Jowett",
+      "greek": "πολλαὶ κατὰ πολλὰ φθοραὶ γεγόνασιν ἀνθρώπων καὶ ἔσονται, πυρὶ μὲν καὶ ὕδατι μέγισται",
+      "greek_terms": [],
+      "numbers": [],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.%3Asection%3D22c"
+    },
+    {
+      "id": "attica-eroded-after-deluges",
+      "label": "Critias says many great deluges in the 9,000 years since stripped Attica to \"the bones of a sick man\".",
+      "category": "aftermath",
+      "ref": "Critias 111a-b",
+      "quote": "Many great deluges have taken place during the nine thousand years, for that is the number of years which have elapsed since the time of which I am speaking",
+      "translator": "Jowett",
+      "quote_bury": "since many great convulsions took place during the 9000 years—for such was the number of years from that time to this",
+      "greek": "πολλῶν οὖν γεγονότων καὶ μεγάλων κατακλυσμῶν ἐν τοῖς ἐνακισχιλίοις ἔτεσι",
+      "greek_terms": [],
+      "numbers": [
+        {
+          "what": "years of erosion in Attica",
+          "value": 9000,
+          "unit": "years",
+          "ref": "Critias 111a-b",
+          "variant": null
+        }
+      ],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "This is about Athens, not Atlantis. It is the one place where Plato makes a claim about the landscape of the 9,000 years in between. Attic soil and valley-fill records would show whether the land lost soil in big episodes; not something the globe can draw.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D111a"
+    },
+    {
+      "id": "poseidon-cleito-hill",
+      "label": "Poseidon married Cleito, the only daughter of the native Evenor, and walled her hill with rings; the hill stood about 50 stades from the plain's centre.",
+      "category": "city",
+      "ref": "Critias 113c-d",
+      "quote": "Looking towards the sea, but in the centre of the whole island, there was a plain which is said to have been the fairest of all plains and very fertile. Near the plain again, and also in the centre of the island at a distance of about fifty stadia, there was a mountain not very high on any side.",
+      "translator": "Jowett",
+      "quote_bury": "Bordering on the sea and extending through the center of the whole island there was a plain, which is said to have been the fairest of all plains and highly fertile; and, moreover, near the plain, over against its center, at a distance of about 50 stades, there stood a mountain that was low on all sides.",
+      "greek": "πρὸς θαλάττης μέν, κατὰ δὲ μέσον πάσης πεδίον ἦν, ὃ δὴ πάντων πεδίων κάλλιστον ἀρετῇ τε ἱκανὸν γενέσθαι λέγεται, πρὸς τῷ πεδίῳ δὲ αὖ κατὰ μέσον σταδίους ὡς πεντήκοντα ἀφεστὸς ἦν ὄρος βραχὺ πάντῃ",
+      "greek_terms": [
+        {
+          "greek": "πρὸς θαλάττης",
+          "transliteration": "pros thalattes",
+          "meaning": "toward the sea",
+          "note": "Bury \"bordering on the sea\", Jowett \"looking towards the sea\". Whether the plain touches the coast or only faces it is a real difference."
+        },
+        {
+          "greek": "κατὰ μέσον",
+          "transliteration": "kata meson",
+          "meaning": "in the middle",
+          "note": "Used twice: the plain is \"in the middle\" of the whole island, and the hill is \"in the middle\" of the plain."
+        },
+        {
+          "greek": "ὄρος βραχὺ",
+          "transliteration": "oros brachy",
+          "meaning": "a low mountain, a small hill",
+          "note": "Bury \"low on all sides\". 113d calls the same place a γήλοφος, \"hill\"."
+        }
+      ],
+      "numbers": [
+        {
+          "what": "distance from the plain to the hill",
+          "value": 50,
+          "unit": "stadia",
+          "ref": "Critias 113c",
+          "variant": "Bury has the hill 50 stades from the plain \"over against its center\"; Jowett has it \"also in the centre of the island\" 50 stadia from the plain."
+        }
+      ],
+      "testable": true,
+      "test_strength": "strong",
+      "how_to_test": "A low natural hill about 50 stades (about 9 km at 185 m) from the middle of a large plain, with the sea on one side of the plain. Terrain from copernicus-dem-aws or aws-terrain-tiles-terrarium shows it today; if the site is now under water, sea-floor depth grids (emodnet-bathymetry-multicolour, srtm15-plus, gmrt-point-and-grid, gebco-wms) and, where a survey exists, noaa-ncei-multibeam-mosaic.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D113c"
+    },
+    {
+      "id": "ringed-city",
+      "label": "Poseidon cut the hill into rings: three of sea and two of land, alternating and equally spaced, so that nobody could cross.",
+      "category": "city",
+      "ref": "Critias 113d-e",
+      "quote": "making alternate zones of sea and land larger and smaller, encircling one another; there were two of land and three of water, which he turned as with a lathe, each having its circumference equidistant every way from the centre, so that no man could get to the island",
+      "translator": "Jowett",
+      "quote_bury": "he made circular belts of sea and land enclosing one another alternately, some greater, some smaller, two being of land and three of sea, which he carved as it were out of the midst of the island",
+      "greek": "θαλάττης γῆς τε ἐναλλὰξ ἐλάττους μείζους τε περὶ ἀλλήλους ποιῶν τροχούς, δύο μὲν γῆς, θαλάττης δὲ τρεῖς οἷον τορνεύων ἐκ μέσης τῆς νήσου",
+      "greek_terms": [
+        {
+          "greek": "τροχούς",
+          "transliteration": "trochous",
+          "meaning": "wheels, rings",
+          "note": "Bury \"belts\" or \"circles\", Jowett \"zones\". The word is \"wheel\", and says the shape is round."
+        },
+        {
+          "greek": "τορνεύων",
+          "transliteration": "torneuon",
+          "meaning": "turning on a lathe",
+          "note": "The rings are circles drawn with a compass-like precision, as the text says."
+        }
+      ],
+      "numbers": [
+        {
+          "what": "rings of sea",
+          "value": 3,
+          "unit": "rings",
+          "ref": "Critias 113d",
+          "variant": null
+        },
+        {
+          "what": "rings of land",
+          "value": 2,
+          "unit": "rings",
+          "ref": "Critias 113d",
+          "variant": null
+        }
+      ],
+      "testable": true,
+      "test_strength": "strong",
+      "how_to_test": "Concentric, near-circular, equally spaced rings around a low hill: about 5.0 km across the outer water ring at 185 m a stade, up to about 23 km across the outer wall. This is the first thing lidar, radar and the bare-earth view (aws-terrain-tiles-terrarium, copernicus-dem-aws, eox-s2cloudless-2016, nasa-gibs-opera-sentinel1-rtc) and sea-floor sonar (sea-floor depth grids (emodnet-bathymetry-multicolour, srtm15-plus, gmrt-point-and-grid, gebco-wms) and, where a survey exists, noaa-ncei-multibeam-mosaic) would show.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D113d"
+    },
+    {
+      "id": "ring-widths",
+      "label": "Water rings are 3, 2 and 1 stades wide, land rings 3 and 2, around a central island 5 stades across.",
+      "category": "city",
+      "ref": "Critias 115e-116a",
+      "quote": "Now the largest of the zones into which a passage was cut from the sea was three stadia in breadth, and the zone of land which came next of equal breadth; but the next two zones, the one of water, the other of land, were two stadia, and the one which surrounded the central island was a stadium only in width.",
+      "translator": "Jowett",
+      "quote_bury": "The greatest of the circles into which a boring was made for the sea was three stades in breadth, and the circle of land next to it was of equal breadth; and of the second pair of circles that of water was two stades in breadth and that of dry land equal again to the preceding one of water; and the circle which ran round the central island itself was of a stade's breadth.",
+      "greek": "ἦν δὲ ὁ μὲν μέγιστος τῶν τροχῶν, εἰς ὃν ἡ θάλαττα συνετέτρητο, τριστάδιος τὸ πλάτος, ὁ δ᾽ ἑξῆς τῆς γῆς ἴσος ἐκείνῳ: τοῖν δὲ δευτέροιν ὁ μὲν ὑγρὸς δυοῖν σταδίοιν πλάτος, ὁ δὲ ξηρὸς ἴσος αὖ πάλιν τῷ πρόσθεν ὑγρῷ",
+      "greek_terms": [
+        {
+          "greek": "τριστάδιος",
+          "transliteration": "tristadios",
+          "meaning": "three stades wide",
+          "note": "One compound word; no variant seen in the Perseus Greek."
+        }
+      ],
+      "numbers": [
+        {
+          "what": "outermost ring of water (outermost ring, the harbour ring)",
+          "value": 3,
+          "unit": "stadia",
+          "ref": "Critias 115e",
+          "variant": null
+        },
+        {
+          "what": "outer ring of land",
+          "value": 3,
+          "unit": "stadia",
+          "ref": "Critias 115e",
+          "variant": null
+        },
+        {
+          "what": "middle ring of water",
+          "value": 2,
+          "unit": "stadia",
+          "ref": "Critias 115e",
+          "variant": null
+        },
+        {
+          "what": "inner ring of land",
+          "value": 2,
+          "unit": "stadia",
+          "ref": "Critias 115e",
+          "variant": null
+        },
+        {
+          "what": "innermost ring of water, around the central island",
+          "value": 1,
+          "unit": "stadia",
+          "ref": "Critias 115e",
+          "variant": null
+        }
+      ],
+      "testable": true,
+      "test_strength": "strong",
+      "how_to_test": "Measure the ring widths in a candidate and compare the 3:3:2:2:1 pattern, and the 5-stade island, not just \"rings\". Any site needs radial distances in that ratio: the width of the outer water belt is 60 percent of the island's diameter. High-resolution relief and bathymetry only (sea-floor depth grids (emodnet-bathymetry-multicolour, srtm15-plus, gmrt-point-and-grid, gebco-wms) and, where a survey exists, noaa-ncei-multibeam-mosaic).",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D115e"
+    },
+    {
+      "id": "central-island-diameter",
+      "label": "The island with the royal palace was five stades across.",
+      "category": "city",
+      "ref": "Critias 116a",
+      "quote": "The island in which the palace was situated had a diameter of five stadia.",
+      "translator": "Jowett",
+      "quote_bury": "And this island, wherein stood the royal palace, was of five stades in diameter.",
+      "greek": "ἡ δὲ νῆσος, ἐν ᾗ τὰ βασίλεια ἦν, πέντε σταδίων τὴν διάμετρον εἶχεν",
+      "greek_terms": [],
+      "numbers": [
+        {
+          "what": "diameter of the central island",
+          "value": 5,
+          "unit": "stadia",
+          "ref": "Critias 116a",
+          "variant": null
+        }
+      ],
+      "testable": true,
+      "test_strength": "strong",
+      "how_to_test": "About 925 m at 185 m a stade (790 to 1,050 m across the range of stadion lengths). A flat circle of that size inside the innermost ring.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D116a"
+    },
+    {
+      "id": "canal-to-sea",
+      "label": "A canal 3 plethra wide, 100 feet deep and 50 stades long ran from the sea to the outermost ring, wide enough for the largest ships.",
+      "category": "city",
+      "ref": "Critias 115d",
+      "quote": "And beginning from the sea they bored a canal of three hundred feet in width and one hundred feet in depth and fifty stadia in length, which they carried through to the outermost zone",
+      "translator": "Jowett",
+      "quote_bury": "a channel right through to the outermost circle, which was three plethra in breadth, one hundred feet in depth, and fifty stades in length",
+      "greek": "διώρυχα μὲν γὰρ ἐκ τῆς θαλάττης ἀρχόμενοι τρίπλεθρον τὸ πλάτος, ἑκατὸν δὲ ποδῶν βάθος, μῆκος δὲ πεντήκοντα σταδίων, ἐπὶ τὸν ἐξωτάτω τροχὸν συνέτρησαν",
+      "greek_terms": [
+        {
+          "greek": "τρίπλεθρον",
+          "transliteration": "triplethron",
+          "meaning": "three plethra wide",
+          "note": "Bury keeps \"three plethra\"; Jowett converts to \"three hundred feet\". Same value if a plethron is 100 feet, which Bury's note and Jowett both assume."
+        },
+        {
+          "greek": "διώρυχα",
+          "transliteration": "diorycha",
+          "meaning": "a dug channel, canal",
+          "note": ""
+        }
+      ],
+      "numbers": [
+        {
+          "what": "canal width",
+          "value": 3,
+          "unit": "plethra",
+          "ref": "Critias 115d",
+          "variant": "Jowett: 300 feet."
+        },
+        {
+          "what": "canal depth",
+          "value": 100,
+          "unit": "feet",
+          "ref": "Critias 115d",
+          "variant": null
+        },
+        {
+          "what": "canal length, sea to outermost ring",
+          "value": 50,
+          "unit": "stadia",
+          "ref": "Critias 115d",
+          "variant": null
+        }
+      ],
+      "testable": true,
+      "test_strength": "strong",
+      "how_to_test": "A straight cut about 9 km long (at 185 m), about 90 m wide and 30 m deep, joining the sea to the outer ring. In sea-floor data a straight, flat-floored trench in sediment, in lidar a straight channel or a line of different soil. Sonar tracks: noaa-ncei-survey-coverage, emodnet-bathymetry-wms.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D115d"
+    },
+    {
+      "id": "bridges-and-trireme-channels",
+      "label": "Bridges one plethron wide crossed the water rings; a roofed channel through each land ring let a single trireme pass.",
+      "category": "city",
+      "ref": "Critias 115c-116a",
+      "quote": "they divided at the bridges the zones of land which parted the zones of sea, leaving room for a single trireme to pass out of one zone into another, and they covered over the channels so as to leave a way underneath for the ships",
+      "translator": "Jowett",
+      "quote_bury": "the bridges … a road towards and from the royal palace",
+      "greek": "τὴν γέφυραν πλεθριαίαν τὸ πλάτος οὖσαν",
+      "greek_terms": [
+        {
+          "greek": "πλεθριαίαν",
+          "transliteration": "plethriaian",
+          "meaning": "one plethron wide",
+          "note": "Bury \"a plethrum in breadth\", Jowett \"the sixth part of a stadium in width\". Same value."
+        }
+      ],
+      "numbers": [
+        {
+          "what": "bridge width",
+          "value": 1,
+          "unit": "plethron",
+          "ref": "Critias 116a",
+          "variant": "Jowett: one sixth of a stadium."
+        }
+      ],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "Too small for most global data (about 31 m). Only high-resolution lidar or a site survey would show it, and only if the site is on land today.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D115d"
+    },
+    {
+      "id": "stone-walls-and-metals",
+      "label": "The rings and the island were enclosed by a stone wall with towers and gates; the walls were coated with brass, tin and orichalcum.",
+      "category": "city",
+      "ref": "Critias 116a-c",
+      "quote": "The entire circuit of the wall, which went round the outermost zone, they covered with a coating of brass, and the circuit of the next wall they coated with tin, and the third, which encompassed the citadel, flashed with the red light of orichalcum.",
+      "translator": "Jowett",
+      "greek": "τοῦ μὲν περὶ τὸν ἐξωτάτω τροχὸν τείχους χαλκῷ περιελάμβανον πάντα τὸν περίδρομον, οἷον ἀλοιφῇ προσχρώμενοι, τοῦ δ᾽ ἐντὸς καττιτέρῳ περιέτηκον, τὸν δὲ περὶ αὐτὴν τὴν ἀκρόπολιν ὀρειχάλκῳ μαρμαρυγὰς ἔχοντι πυρώδεις",
+      "greek_terms": [
+        {
+          "greek": "ὀρείχαλκος",
+          "transliteration": "oreichalkos",
+          "meaning": "orichalcum (\"mountain copper\")",
+          "note": "Bury notes it is a metal \"hard to identify\". Plato says it is known only by name in his day (114e)."
+        }
+      ],
+      "numbers": [],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "Metal coatings do not survive underwater for long; the test is the stone walls themselves, as straight, regular edges in high-resolution relief.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D116b"
+    },
+    {
+      "id": "red-white-black-stone",
+      "label": "The stone for the buildings was white, black and red, quarried from under the central island and the rings; the quarries became roofed double docks.",
+      "category": "city",
+      "ref": "Critias 116a-b",
+      "quote": "The stone which was used in the work they quarried from underneath the centre island, and from underneath the zones, on the outer as well as the inner side. One kind was white, another black, and a third red, and as they quarried, they at the same time hollowed out double docks, having roofs formed out of the native rock.",
+      "translator": "Jowett",
+      "greek": "τὸν μὲν λευκόν, τὸν δὲ μέλανα, τὸν δὲ ἐρυθρὸν ὄντα, τέμνοντες δὲ ἅμ᾽ ἠργάζοντο νεωσοίκους κοίλους διπλοῦς ἐντός, κατηρεφεῖς αὐτῇ τῇ πέτρᾳ",
+      "greek_terms": [
+        {
+          "greek": "νεωσοίκους",
+          "transliteration": "neosoikous",
+          "meaning": "ship-sheds, docks",
+          "note": ""
+        }
+      ],
+      "numbers": [],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "Three colours of workable rock in one small area, one of them cut from beneath the site itself. Geological maps and the Macrostrat layer (macrostrat-geology) show rock type; colour is not in the data, so this narrows candidates only a little.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D116a"
+    },
+    {
+      "id": "outer-wall-50-stades",
+      "label": "A wall began at the sea, ran round the whole city at a constant 50 stades from the largest ring, and closed on the mouth of the canal; it was crowded with houses and harbour traffic.",
+      "category": "city",
+      "ref": "Critias 117d-e",
+      "quote": "you came to a wall which began at the sea and went all round: this was everywhere distant fifty stadia from the largest zone or harbour, and enclosed the whole, the ends meeting at the mouth of the channel which led to the sea",
+      "translator": "Jowett",
+      "quote_bury": "one found a wall which began at the sea and ran round in a circle, at a uniform distance of fifty stades from the largest circle and harbor, and its ends converged at the seaward mouth of the channel",
+      "greek": "ἀρξάμενον ἀπὸ τῆς θαλάττης ᾔειν ἐν κύκλῳ τεῖχος, πεντήκοντα σταδίους τοῦ μεγίστου τροχοῦ τε καὶ λιμένος ἀπέχον πανταχῇ, καὶ συνέκλειεν εἰς ταὐτὸν πρὸς τὸ τῆς διώρυχος στόμα τὸ πρὸς θαλάττης",
+      "greek_terms": [
+        {
+          "greek": "τεῖχος",
+          "transliteration": "teichos",
+          "meaning": "wall",
+          "note": ""
+        }
+      ],
+      "numbers": [
+        {
+          "what": "distance of the outer wall from the largest ring",
+          "value": 50,
+          "unit": "stadia",
+          "ref": "Critias 117e",
+          "variant": null
+        }
+      ],
+      "testable": true,
+      "test_strength": "strong",
+      "how_to_test": "The wall circle has a radius of 63.5 stades from the centre (arithmetic, see dimensions): about 11.7 km at 185 m, a circle some 23.5 km across with the canal meeting it at the coast. A circle of that size is the largest, most visible feature of the city in satellite and elevation data.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D117e"
+    },
+    {
+      "id": "temple-of-poseidon",
+      "label": "The temple of Poseidon, on the central island, was a stade long and three plethra wide, covered in silver and gold, with a golden statue of the god in a six-horse chariot.",
+      "category": "city",
+      "ref": "Critias 116c-e",
+      "quote": "Here was Poseidon's own temple which was a stadium in length, and half a stadium in width, and of a proportionate height, having a strange barbaric appearance.",
+      "translator": "Jowett",
+      "quote_bury": "And the temple of Poseidon himself was a stade in length, three plethra in breadth, and of a height which appeared symmetrical therewith; and there was something of the barbaric in its appearance.",
+      "greek": "τοῦ δὲ Ποσειδῶνος αὐτοῦ νεὼς ἦν, σταδίου μὲν μῆκος, εὖρος δὲ τρίπλεθρος, ὕψος δ᾽ ἐπὶ τούτοις σύμμετρον ἰδεῖν",
+      "greek_terms": [
+        {
+          "greek": "τρίπλεθρος",
+          "transliteration": "triplethros",
+          "meaning": "three plethra wide",
+          "note": "Bury \"three plethra\"; Jowett \"half a stadium\". The same length, if 1 stadion = 6 plethra."
+        }
+      ],
+      "numbers": [
+        {
+          "what": "temple length",
+          "value": 1,
+          "unit": "stadion",
+          "ref": "Critias 116d",
+          "variant": null
+        },
+        {
+          "what": "temple width",
+          "value": 3,
+          "unit": "plethra",
+          "ref": "Critias 116d",
+          "variant": "Jowett: half a stadium."
+        },
+        {
+          "what": "number of Nereids on dolphins round the god's statue",
+          "value": 100,
+          "unit": "statues",
+          "ref": "Critias 116e",
+          "variant": null
+        }
+      ],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "A building about 185 m by 92 m at 185 m a stade (a stade long, three plethra wide). Only an excavation or ground-penetrating survey could show it, and only after the rings are found.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D116c"
+    },
+    {
+      "id": "hot-and-cold-springs",
+      "label": "There were two springs, one warm and one cold, with baths and a sacred grove.",
+      "category": "resources",
+      "ref": "Critias 113e, 117a-b",
+      "quote": "bringing up two springs of water from beneath the earth, one of warm water and the other of cold",
+      "translator": "Jowett",
+      "quote_bury": "bringing up from beneath the earth two springs of waters, the one flowing warm from its source, the other cold",
+      "greek": "ὕδατα μὲν διττὰ ὑπὸ γῆς ἄνω πηγαῖα κομίσας, τὸ μὲν θερμόν, ψυχρὸν δὲ ἐκ κρήνης ἀπορρέον ἕτερον",
+      "greek_terms": [
+        {
+          "greek": "θερμόν",
+          "transliteration": "thermon",
+          "meaning": "warm, hot",
+          "note": "Jowett 117a \"hot\", 113e \"warm\". Not a boiling spring."
+        }
+      ],
+      "numbers": [],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "A warm spring beside a cold one is a local feature. Volcano and fault layers (smithsonian-gvp-volcanoes, plate-boundaries-pb2002) and geology can say whether a candidate has thermal water; many places do, so this narrows little.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D113e"
+    },
+    {
+      "id": "race-course-and-gardens",
+      "label": "The ring islands had temples, gardens and exercise grounds; the larger land ring held a race-course a stade wide running all the way round.",
+      "category": "city",
+      "ref": "Critias 117c",
+      "quote": "in the centre of the larger of the two there was set apart a race-course of a stadium in width, and in length allowed to extend all round the island, for horses to race in",
+      "translator": "Jowett",
+      "greek": "κατὰ μέσην τὴν μείζω τῶν νήσων ἐξῃρημένος ἱππόδρομος ἦν αὐτοῖς, σταδίου τὸ πλάτος ἔχων",
+      "greek_terms": [],
+      "numbers": [
+        {
+          "what": "race-course width",
+          "value": 1,
+          "unit": "stadion",
+          "ref": "Critias 117c",
+          "variant": null
+        }
+      ],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D117c"
+    },
+    {
+      "id": "fleet-and-harbours",
+      "label": "The shipyards were full of triremes; the harbour was crowded night and day; the military levy supplied 1,200 ships.",
+      "category": "city",
+      "ref": "Critias 117d-e, 119a-b",
+      "quote": "The docks were full of triremes and naval stores, and all things were quite ready for use.",
+      "translator": "Jowett",
+      "quote_bury": "and four sailors towards the manning of twelve hundred ships",
+      "greek": "ναύτας δὲ τέτταρας εἰς πλήρωμα διακοσίων καὶ χιλίων νεῶν",
+      "greek_terms": [
+        {
+          "greek": "διακοσίων καὶ χιλίων",
+          "transliteration": "diakosion kai chilion",
+          "meaning": "1,200 (literally two hundred and a thousand)",
+          "note": ""
+        }
+      ],
+      "numbers": [
+        {
+          "what": "ships",
+          "value": 1200,
+          "unit": "ships",
+          "ref": "Critias 119b",
+          "variant": null
+        },
+        {
+          "what": "sailors from each allotment",
+          "value": 4,
+          "unit": "men",
+          "ref": "Critias 119b",
+          "variant": null
+        }
+      ],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D119b"
+    },
+    {
+      "id": "lofty-coast",
+      "label": "The whole region rose high and steep out of the sea.",
+      "category": "landscape",
+      "ref": "Critias 118a",
+      "quote": "The whole country was said by him to be very lofty and precipitous on the side of the sea",
+      "translator": "Jowett",
+      "quote_bury": "the whole region rose sheer out of the sea to a great height",
+      "greek": "ὁ τόπος ἅπας ἐλέγετο σφόδρα τε ὑψηλὸς καὶ ἀπότομος ἐκ θαλάττης",
+      "greek_terms": [
+        {
+          "greek": "ἀπότομος",
+          "transliteration": "apotomos",
+          "meaning": "sheer, cut off",
+          "note": ""
+        }
+      ],
+      "numbers": [],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "A steep coast with high ground behind it, with the plain lying in a recess. Visible as a steep shelf edge in sea-floor depth grids (emodnet-bathymetry-multicolour, srtm15-plus, gmrt-point-and-grid, gebco-wms) and, where a survey exists, noaa-ncei-multibeam-mosaic or as cliffs in the terrain tiles.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D118a"
+    },
+    {
+      "id": "great-plain",
+      "label": "Beside the city lay a smooth, level, oblong plain, 3,000 stades one way and 2,000 stades inland from the sea at its middle, ringed by mountains that ran down to the sea.",
+      "category": "landscape",
+      "ref": "Critias 118a",
+      "quote": "the country immediately about and surrounding the city was a level plain, itself surrounded by mountains which descended towards the sea; it was smooth and even, and of an oblong shape, extending in one direction three thousand stadia, but across the centre inland it was two thousand stadia",
+      "translator": "Jowett",
+      "quote_bury": "this plain had a level surface and was as a whole rectangular in shape, being 3000 stades long on either side and 2000 stades wide at its center, reckoning upwards from the sea",
+      "greek": "λεῖον καὶ ὁμαλές, πρόμηκες δὲ πᾶν, ἐπὶ μὲν θάτερα τρισχιλίων σταδίων, κατὰ δὲ μέσον ἀπὸ θαλάττης ἄνω δισχιλίων",
+      "greek_terms": [
+        {
+          "greek": "ἐπὶ μὲν θάτερα",
+          "transliteration": "epi men thatera",
+          "meaning": "in the one direction (literally \"toward the other\")",
+          "note": "Jowett \"in one direction\"; Bury \"on either side\". Bury reads both long sides as 3,000."
+        },
+        {
+          "greek": "κατὰ δὲ μέσον ἀπὸ θαλάττης ἄνω",
+          "transliteration": "kata de meson apo thalattes ano",
+          "meaning": "at the middle, going up from the sea",
+          "note": "The 2,000 is measured inland from the sea, at the centre."
+        },
+        {
+          "greek": "πρόμηκες",
+          "transliteration": "promekes",
+          "meaning": "elongated, oblong",
+          "note": ""
+        }
+      ],
+      "numbers": [
+        {
+          "what": "plain length",
+          "value": 3000,
+          "unit": "stadia",
+          "ref": "Critias 118a",
+          "variant": "Jowett: \"in one direction\"; Bury: \"on either side\"."
+        },
+        {
+          "what": "plain width, inland from the sea at the middle",
+          "value": 2000,
+          "unit": "stadia",
+          "ref": "Critias 118a",
+          "variant": null
+        }
+      ],
+      "testable": true,
+      "test_strength": "strong",
+      "how_to_test": "A plain of about 555 by 370 km at 185 m a stade (470 by 315 km at 157.5 m; 576 by 384 km at 192 m). If it was dry land at a lowered sea, it would show as a vast flat shelf in sea-floor depth grids (emodnet-bathymetry-multicolour, srtm15-plus, gmrt-point-and-grid, gebco-wms) and, where a survey exists, noaa-ncei-multibeam-mosaic. The strongest test of scale in the text.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D118a"
+    },
+    {
+      "id": "mountains-shelter-north",
+      "label": "This region faced south and was sheltered from the north; the mountains around it were more numerous and beautiful than any now.",
+      "category": "landscape",
+      "ref": "Critias 118a-b",
+      "quote": "This part of the island looked towards the south, and was sheltered from the north.",
+      "translator": "Jowett",
+      "quote_bury": "And this region, all along the island, faced towards the South and was sheltered from the Northern blasts.",
+      "greek": "ὁ δὲ τόπος οὗτος ὅλης τῆς νήσου πρὸς νότον ἐτέτραπτο, ἀπὸ τῶν ἄρκτων κατάβορρος",
+      "greek_terms": [
+        {
+          "greek": "ὅλης τῆς νήσου",
+          "transliteration": "holes tes nesou",
+          "meaning": "of the whole island",
+          "note": "Jowett: this part of the island faces south. Bury: the region faced south \"all along the island\". Does the plain take up the south side, or does the whole island face south?"
+        },
+        {
+          "greek": "κατάβορρος",
+          "transliteration": "katáborros",
+          "meaning": "sheltered from the north",
+          "note": "Perseus word tool gives \"sheltered from the north\". Both translations agree."
+        }
+      ],
+      "numbers": [],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "A south-facing plain with high ground on its north side that blocks the wind: elevation data (copernicus-dem-aws) tells whether a candidate faces south and has mountains behind it.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D118b"
+    },
+    {
+      "id": "mountains-around-plain",
+      "label": "The mountains around the plain held rich villages, streams, lakes and meadows, and much timber.",
+      "category": "landscape",
+      "ref": "Critias 118b",
+      "quote": "The surrounding mountains were celebrated for their number and size and beauty, far beyond any which still exist, having in them also many wealthy villages of country folk, and rivers, and lakes, and meadows supplying food enough for every animal, wild or tame, and much wood of various sorts",
+      "translator": "Jowett",
+      "greek": "πολλὰς μὲν κώμας καὶ πλουσίας περιοίκων ἐν ἑαυτοῖς ἔχοντα, ποταμοὺς δὲ καὶ λίμνας καὶ λειμῶνας",
+      "greek_terms": [],
+      "numbers": [],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D118b"
+    },
+    {
+      "id": "plain-ditch",
+      "label": "A man-made ditch ran round the whole plain, a stade wide and a plethron (100 feet) deep, 10,000 stades long, collecting the mountain streams and emptying into the sea by the city.",
+      "category": "landscape",
+      "ref": "Critias 118c-d",
+      "quote": "It was excavated to the depth of a hundred feet, and its breadth was a stadium everywhere; it was carried round the whole of the plain, and was ten thousand stadia in length.",
+      "translator": "Jowett",
+      "quote_bury": "it was dug out to the depth of a plethrum and to a uniform breadth of a stade, and since it was dug round the whole plain its consequent length was 10,000 stades",
+      "greek": "πλέθρου μὲν γὰρ βάθος ὀρώρυκτο, τὸ δὲ πλάτος ἁπάντῃ σταδίου, περὶ δὲ πᾶν τὸ πεδίον ὀρυχθεῖσα συνέβαινεν εἶναι τὸ μῆκος σταδίων μυρίων",
+      "greek_terms": [
+        {
+          "greek": "τάφρου",
+          "transliteration": "taphrou",
+          "meaning": "ditch, trench",
+          "note": ""
+        },
+        {
+          "greek": "πλέθρου",
+          "transliteration": "plethrou",
+          "meaning": "a plethron (about 100 feet)",
+          "note": "Bury \"a plethrum\"; Jowett \"a hundred feet\". Same value."
+        },
+        {
+          "greek": "ἄπιστον",
+          "transliteration": "apiston",
+          "meaning": "unbelievable",
+          "note": "Critias says the size \"seems incredible\" (118c) for a hand-dug work, \"but none the less we must report what we heard\"."
+        }
+      ],
+      "numbers": [
+        {
+          "what": "ditch width",
+          "value": 1,
+          "unit": "stadion",
+          "ref": "Critias 118c",
+          "variant": null
+        },
+        {
+          "what": "ditch depth",
+          "value": 1,
+          "unit": "plethron",
+          "ref": "Critias 118c",
+          "variant": "Jowett: 100 feet."
+        },
+        {
+          "what": "ditch length",
+          "value": 10000,
+          "unit": "stadia",
+          "ref": "Critias 118d",
+          "variant": "Equals the perimeter of a 3,000 by 2,000 stade rectangle: 2 x (3,000 + 2,000) = 10,000."
+        }
+      ],
+      "testable": true,
+      "test_strength": "strong",
+      "how_to_test": "A ring ditch about 185 m wide and 31 m deep that encloses a rectangle, 1,850 km round at 185 m a stade, running to the sea at the city. It would show in relief and in sea-floor depth as a continuous rectilinear trench; sea-floor depth grids (emodnet-bathymetry-multicolour, srtm15-plus, gmrt-point-and-grid, gebco-wms) and, where a survey exists, noaa-ncei-multibeam-mosaic, aws-terrain-tiles-terrarium.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D118c"
+    },
+    {
+      "id": "plain-canals",
+      "label": "Straight canals about 100 feet wide cut across the plain, 100 stades apart, ran into the ditch on the seaward side and carried timber and crops to the city.",
+      "category": "landscape",
+      "ref": "Critias 118d-e",
+      "quote": "Further inland, likewise, straight canals of a hundred feet in width were cut from it through the plain, and again let off into the ditch leading to the sea: these canals were at intervals of a hundred stadia",
+      "translator": "Jowett",
+      "greek": "τὸ πλάτος μάλιστα ἑκατὸν ποδῶν διώρυχες εὐθεῖαι τετμημέναι κατὰ τὸ πεδίον πάλιν εἰς τὴν τάφρον τὴν πρὸς θαλάττης ἀφεῖντο, ἑτέρα δὲ ἀφ᾽ ἑτέρας αὐτῶν σταδίους ἑκατὸν ἀπεῖχεν",
+      "greek_terms": [
+        {
+          "greek": "μάλιστα",
+          "transliteration": "malista",
+          "meaning": "about, at most",
+          "note": "Bury \"of about 100 feet in width\". Jowett drops the \"about\"."
+        }
+      ],
+      "numbers": [
+        {
+          "what": "canal width",
+          "value": 100,
+          "unit": "feet",
+          "ref": "Critias 118d",
+          "variant": "Bury: \"about 100 feet\"."
+        },
+        {
+          "what": "spacing between canals",
+          "value": 100,
+          "unit": "stadia",
+          "ref": "Critias 118d",
+          "variant": null
+        }
+      ],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "A grid of parallel straight channels 100 stades (18.5 km) apart over a plain of 555 by 370 km. The text does not say which direction they run. The best test is satellite and relief data over a candidate plain.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D118d"
+    },
+    {
+      "id": "two-harvests",
+      "label": "The land gave two harvests a year, using winter rain and summer irrigation from the canals.",
+      "category": "resources",
+      "ref": "Critias 118e",
+      "quote": "Twice in the year they gathered the fruits of the earth … in winter having the benefit of the rains of heaven, and in summer the water which the land supplied by introducing streams from the canals",
+      "translator": "Jowett",
+      "greek": "καὶ δὶς δὴ τοῦ ἐνιαυτοῦ τὴν γῆν ἐκαρποῦντο, χειμῶνος μὲν τοῖς ἐκ Διὸς ὕδασι χρώμενοι, θέρους δὲ ὅσα γῆ φέρει τὰ ἐκ τῶν διωρύχων ἐπάγοντες νάματα",
+      "greek_terms": [],
+      "numbers": [
+        {
+          "what": "harvests per year",
+          "value": 2,
+          "unit": "harvests",
+          "ref": "Critias 118e",
+          "variant": null
+        }
+      ],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "A climate with winter rain and a dry summer needing irrigation (a Mediterranean-type climate). It excludes a rain-all-year or a rainless site. Climate reconstruction for 9600 BCE belongs to the world-9600bce lane.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D118e"
+    },
+    {
+      "id": "forests-and-animals",
+      "label": "The island supplied timber and plenty of tame and wild animals.",
+      "category": "resources",
+      "ref": "Critias 114e",
+      "quote": "There was an abundance of wood for carpenter's work, and sufficient maintenance for tame and wild animals.",
+      "translator": "Jowett",
+      "greek": "τά τε αὖ περὶ τὰ ζῷα ἱκανῶς ἥμερα καὶ ἄγρια τρέφουσα",
+      "greek_terms": [],
+      "numbers": [],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D114e"
+    },
+    {
+      "id": "elephants",
+      "label": "There were very many elephants on the island, with food for every other animal.",
+      "category": "resources",
+      "ref": "Critias 114e-115a",
+      "quote": "Moreover, there were a great number of elephants in the island",
+      "translator": "Jowett",
+      "quote_bury": "Moreover, it contained a very large stock of elephants",
+      "greek": "καὶ δὴ καὶ ἐλεφάντων ἦν ἐν αὐτῇ γένος πλεῖστον",
+      "greek_terms": [
+        {
+          "greek": "ἐλεφάντων γένος πλεῖστον",
+          "transliteration": "elephanton genos pleiston",
+          "meaning": "a very great race of elephants",
+          "note": ""
+        }
+      ],
+      "numbers": [],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "Elephant or proboscidean remains of the right age at a site: a fossil record question (open-context or museum data), not a map. Not a map layer.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D114e"
+    },
+    {
+      "id": "orichalcum-and-metals",
+      "label": "The island yielded every kind of metal, including orichalcum, which was dug in many places and was the most precious metal after gold.",
+      "category": "resources",
+      "ref": "Critias 114e",
+      "quote": "that which is now only a name and was then something more than a name, orichalcum, was dug out of the earth in many parts of the island, being more precious in those days than anything except gold",
+      "translator": "Jowett",
+      "greek": "καὶ τὸ νῦν ὀνομαζόμενον μόνον—τότε δὲ πλέον ὀνόματος ἦν τὸ γένος ἐκ γῆς ὀρυττόμενον ὀρειχάλκου κατὰ τόπους πολλοὺς τῆς νήσου, πλὴν χρυσοῦ τιμιώτατον ἐν τοῖς τότε ὄν",
+      "greek_terms": [
+        {
+          "greek": "ὀρειχάλκου",
+          "transliteration": "oreichalkou",
+          "meaning": "orichalcum",
+          "note": "A metal Plato says is only a name in his time; the identity is unsettled (Bury)."
+        }
+      ],
+      "numbers": [],
+      "testable": true,
+      "test_strength": "weak",
+      "how_to_test": "Ore districts with copper, tin, silver and gold in one place (macrostrat-geology). The metal \"orichalcum\" cannot be tested, because it is not identified.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D114e"
+    },
+    {
+      "id": "fruits-and-scents",
+      "label": "Scented plants, cultivated grains and pulses, tree fruits and orchard fruits all grew in great variety.",
+      "category": "resources",
+      "ref": "Critias 115a-b",
+      "quote": "Also whatever fragrant things there now are in the earth, whether roots, or herbage, or woods, or essences which distil from fruit and flower, grew and thrived in that land",
+      "translator": "Jowett",
+      "greek": "ὅσα εὐώδη τρέφει που γῆ τὰ νῦν, ῥιζῶν ἢ χλόης ἢ ξύλων ἢ χυλῶν στακτῶν εἴτε ἀνθῶν ἢ καρπῶν",
+      "greek_terms": [
+        {
+          "greek": "ξύλινος καρπός",
+          "transliteration": "xylinos karpos",
+          "meaning": "woody fruit, nut",
+          "note": "Jowett adds \"chestnuts\" in this passage. The word is not in the Perseus Greek (searched for κάστανα, none). Bury annotates the fruit as \"perhaps the olive, or coco-palm\"."
+        }
+      ],
+      "numbers": [],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D115a"
+    },
+    {
+      "id": "ten-kings",
+      "label": "Ten kings, descended from Poseidon and Cleito through five pairs of twin sons, each ruled a tenth of the island; Atlas, the eldest, was the overlord.",
+      "category": "people",
+      "ref": "Critias 113e-114c, 119c-120d",
+      "quote": "dividing the island of Atlantis into ten portions, he gave to the first-born of the eldest pair his mother's dwelling and the surrounding allotment, which was the largest and best, and made him king over the rest",
+      "translator": "Jowett",
+      "greek": "τὴν νῆσον τὴν Ἀτλαντίδα πᾶσαν δέκα μέρη κατανείμας",
+      "greek_terms": [],
+      "numbers": [
+        {
+          "what": "kings, and districts of the island",
+          "value": 10,
+          "unit": "kings",
+          "ref": "Critias 113e",
+          "variant": null
+        },
+        {
+          "what": "pairs of twin sons",
+          "value": 5,
+          "unit": "pairs",
+          "ref": "Critias 113e",
+          "variant": null
+        }
+      ],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D113e"
+    },
+    {
+      "id": "bull-ritual",
+      "label": "Every fifth and sixth year the ten kings met at the temple, hunted bulls with staves and nooses, and cut the throat of one over the orichalcum pillar of laws.",
+      "category": "people",
+      "ref": "Critias 119c-120c",
+      "quote": "There were bulls who had the range of the temple of Poseidon; and the ten kings, being left alone in the temple, after they had offered prayers to the god that they might capture the victim which was acceptable to him, hunted the bulls, without weapons, but with staves and nooses; and the bull which they caught they led up to the pillar and cut its throat over the top of it so that the blood fell upon the sacred inscription.",
+      "translator": "Jowett",
+      "greek": "ἄνευ σιδήρου ξύλοις καὶ βρόχοις ἐθήρευον",
+      "greek_terms": [],
+      "numbers": [
+        {
+          "what": "interval of the kings' council",
+          "value": 5,
+          "unit": "years (alternating with 6)",
+          "ref": "Critias 119d",
+          "variant": "Jowett: \"every fifth and every sixth year alternately\"."
+        }
+      ],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D119d"
+    },
+    {
+      "id": "army-and-allotments",
+      "label": "The plain was split into 60,000 allotments of 10 by 10 stades; the royal city's levy was 10,000 chariots and 1,200 ships.",
+      "category": "people",
+      "ref": "Critias 118e-119b",
+      "quote": "the size of a lot was a square of ten stadia each way, and the total number of all the lots was sixty thousand",
+      "translator": "Jowett",
+      "quote_bury": "the size of the allotment was about ten times ten stades, and the total number of all the allotments was 60,000",
+      "greek": "τὸ δὲ τοῦ κλήρου μέγεθος εἰς δέκα δεκάκις ἦν στάδια, μυριάδες δὲ συμπάντων τῶν κλήρων ἦσαν ἕξ",
+      "greek_terms": [
+        {
+          "greek": "εἰς δέκα δεκάκις",
+          "transliteration": "eis deka dekakis",
+          "meaning": "ten times ten",
+          "note": "Bury \"about ten times ten\". Jowett \"a square of ten stadia each way\"."
+        }
+      ],
+      "numbers": [
+        {
+          "what": "allotments in the plain",
+          "value": 60000,
+          "unit": "allotments",
+          "ref": "Critias 119a",
+          "variant": "Check: 3,000 x 2,000 = 6,000,000 square stades; each lot is 100; 6,000,000 / 100 = 60,000."
+        },
+        {
+          "what": "size of each allotment",
+          "value": 10,
+          "unit": "stadia a side",
+          "ref": "Critias 119a",
+          "variant": "Bury: \"about\"."
+        },
+        {
+          "what": "war-chariots (one sixth of a chariot per allotment)",
+          "value": 10000,
+          "unit": "chariots",
+          "ref": "Critias 119a",
+          "variant": null
+        },
+        {
+          "what": "ships",
+          "value": 1200,
+          "unit": "ships",
+          "ref": "Critias 119b",
+          "variant": null
+        }
+      ],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D119a"
+    },
+    {
+      "id": "critias-breaks-off",
+      "label": "The Critias ends as Zeus calls the gods together to punish the decayed kings; Plato gives no account of the war or the sinking there.",
+      "category": "destruction",
+      "ref": "Critias 120e-121c",
+      "quote": "And when he had called them together, he spake as follows",
+      "translator": "Jowett",
+      "quote_bury": "and when he had assembled them, he spake thus:",
+      "greek": "καὶ συναγείρας εἶπεν",
+      "greek_terms": [],
+      "numbers": [],
+      "testable": false,
+      "how_to_test": null,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D121c"
+    }
+  ],
+  "dimensions": {
+    "stadion": [
+      {
+        "name": "Attic (also called Ptolemaic) stadion",
+        "metres": 185,
+        "source": {
+          "title": "Wikipedia, \"Stadion (unit)\", table of named stadia (Otto Cuntz 1923; D. R. Dicks 1960 as cited there). Cross-check: Encyclopaedia Britannica 11th ed., \"Stadium\": 6 plethra of 100 Greek feet, \"equivalent to about 606 Eng. ft.\" (= 184.7 m, our arithmetic). Russo (2013): \"the most widely accepted nowadays is 185 meters, which is the length of the so-called 'Attic stadion'\".",
+          "url": "https://en.wikipedia.org/wiki/Stadion_(unit)"
+        },
+        "other_urls": [
+          "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Stadium",
+          "https://doi.org/10.2140/memocs.2013.1.67"
+        ],
+        "note": "The default used on the draft diagrams here. Neither the lane nor any source I fetched says Plato meant this one."
+      },
+      {
+        "name": "Olympic stadion",
+        "metres": 192,
+        "source": {
+          "title": "Nemea Games site: foot at Olympia \"about 0.32 m\", \"192 m for Olympia\"; Wikipedia table gives 192 m, \"200 Heracles steps\" (Lehmann-Haupt 1929).",
+          "url": "https://nemeangames.org/?p=2189"
+        },
+        "note": "The measured track at Olympia."
+      },
+      {
+        "name": "Nemea and Delphi stadion",
+        "metres": 178,
+        "source": {
+          "title": "Nemea Games site: foot at Nemea \"roughly 0.297 m (also roughly the length of the foot at Delphi)\", so \"about 178 m\".",
+          "url": "https://nemeangames.org/?p=2189"
+        },
+        "note": "Shows the spread among real tracks: the same word, 600 feet, gives 178 to 192 m."
+      },
+      {
+        "name": "Itinerary or Egyptian stadion",
+        "metres": 157.5,
+        "source": {
+          "title": "Russo (2013), Mathematics and Mechanics of Complex Systems 1: \"Hultsch, in 1882, had determined it as 157.5 meters and this measure was accepted by most of the scholars till the first half of the twentieth century.\" Wikipedia also gives 157 m (Letronne 1816) and an empirical 157.7 m (Firsov).",
+          "url": "https://doi.org/10.2140/memocs.2013.1.67"
+        },
+        "note": "Proposed for the distances of Eratosthenes and geographers, not for Plato. It gives the smallest version of every figure."
+      },
+      {
+        "name": "Babylonian-Persian stadion",
+        "metres": 196,
+        "source": {
+          "title": "Wikipedia table, \"Stadion (unit)\": 196 m, 600 x 327 mm, Lehmann-Haupt 1929 (cited via Gulbekian 1987, which I did not read).",
+          "url": "https://en.wikipedia.org/wiki/Stadion_(unit)"
+        },
+        "note": ""
+      },
+      {
+        "name": "Phoenician-Egyptian stadion",
+        "metres": 209,
+        "source": {
+          "title": "Wikipedia table, \"Stadion (unit)\": 209 m, 600 x 349 mm, Lehmann-Haupt 1929 (cited via Gulbekian 1987, which I did not read).",
+          "url": "https://en.wikipedia.org/wiki/Stadion_(unit)"
+        },
+        "note": "The largest proposed value."
+      }
+    ],
+    "other_units": [
+      {
+        "name": "pous (foot)",
+        "in_stadia_or_feet": "1/600 stadion",
+        "metres": 0.308,
+        "source": {
+          "title": "Wikipedia, \"Ancient Greek units of measurement\", table: 0.308 m. The same article says in its text that the Athenian foot was about 296 mm and the Aegina foot about 333 mm, so its own table and prose disagree. Nemea site: Olympia 0.32 m, Nemea and Delphi about 0.297 m.",
+          "url": "https://en.wikipedia.org/wiki/Ancient_Greek_units_of_measurement"
+        }
+      },
+      {
+        "name": "plethron",
+        "in_stadia_or_feet": "100 feet = 1/6 stadion",
+        "metres": 30.8,
+        "source": {
+          "title": "Bury's note to Critias 115d: \"The plethron was about 100 ft; the stade (=6 plethra) about 600 ft.\" Encyclopaedia Britannica 1911 gives the same 6 plethra to the stade. The 30.8 m is from the Wikipedia table (100 x 0.308 m). Plato's own text agrees: Jowett has 3 plethra = half a stadium (Critias 116d) and 1 plethron = a sixth of a stadium (116a).",
+          "url": "https://en.wikipedia.org/wiki/Ancient_Greek_units_of_measurement"
+        }
+      },
+      {
+        "name": "orgyia (fathom)",
+        "in_stadia_or_feet": "6 feet",
+        "metres": 1.85,
+        "source": {
+          "title": "Herodotus 2.149 (Godley): \"a hundred fathoms equal a furlong of six hundred feet, the fathom measuring six feet\". Metres from Wikipedia table.",
+          "url": "https://www.perseus.tufts.edu/hopper/text?doc=Hdt.+2.149"
+        }
+      }
+    ],
+    "city": {
+      "centre_note": "Rings are listed outward from the centre. Order follows Critias 115e: the largest ring of water (3) is outermost with land of equal width (3) inside it; then water 2 and land 2; then water 1 around the central island.",
+      "central_island_diameter_stadia": 5,
+      "rings_outward": [
+        {
+          "kind": "water",
+          "width_stadia": 1,
+          "ref": "Critias 115e"
+        },
+        {
+          "kind": "land",
+          "width_stadia": 2,
+          "ref": "Critias 115e"
+        },
+        {
+          "kind": "water",
+          "width_stadia": 2,
+          "ref": "Critias 115e"
+        },
+        {
+          "kind": "land",
+          "width_stadia": 3,
+          "ref": "Critias 115e"
+        },
+        {
+          "kind": "water",
+          "width_stadia": 3,
+          "ref": "Critias 115e"
+        }
+      ],
+      "canal_from_sea": {
+        "length_stadia": 50,
+        "width": "3 plethra (Jowett: 300 feet)",
+        "depth": "100 feet",
+        "ref": "Critias 115d"
+      },
+      "outer_wall": {
+        "distance_from_outer_ring_stadia": 50,
+        "ref": "Critias 117e"
+      },
+      "temple_of_poseidon": {
+        "length": "1 stadion",
+        "width": "3 plethra (Jowett: half a stadium)",
+        "ref": "Critias 116d"
+      },
+      "bridges_and_tunnels": "Bridges one plethron wide over the water rings, with towers and gates where the sea passes (116a). A channel through each land ring, wide enough for one trireme, roofed over so the sea-way runs underneath (115d-e). A stone wall round the island and each ring (116a). Double docks cut under the rings and roofed with native rock (116a-b).",
+      "notes": "Plato gives no height for the temple beyond \"symmetrical\". He gives the race-course as a stadion wide (117c). The plain, the city and the outer wall are tied together: the outer wall is 50 stades from the largest ring, and the canal from the sea is also 50 stades, so the circle of the wall meets the sea at the canal's mouth (117e).",
+      "derived": {
+        "note": "Arithmetic by this lane, not Plato. Radius from the centre of the island: island 2.5, +1 water = 3.5, +2 land = 5.5, +2 water = 7.5, +3 land = 10.5, +3 water = 13.5 stades. The outer wall is 50 stades beyond that: 63.5 stades.",
+        "outer_edge_of_outer_water_ring_radius_stadia": 13.5,
+        "outer_edge_diameter_stadia": 27,
+        "outer_wall_radius_stadia": 63.5,
+        "outer_wall_diameter_stadia": 127,
+        "canal_width_stadia": 0.5,
+        "canal_depth_stadia": 0.16666666666666666,
+        "checks": [
+          "Ring widths 3:3:2:2:1 and island 5 sum to a diameter of 27 stades.",
+          "Canal length (50) = distance of the outer wall from the largest ring (50), so the wall meets the sea at the canal mouth.",
+          "Plain 3,000 x 2,000 = 6,000,000 square stades = 60,000 lots of 10 x 10 (119a).",
+          "Ditch length 10,000 = 2 x (3,000 + 2,000)."
+        ]
+      }
+    },
+    "plain": {
+      "length_stadia": 3000,
+      "width_stadia": 2000,
+      "orientation": "The 2,000 is measured inland from the sea at the middle (κατὰ μέσον ἀπὸ θαλάττης ἄνω). The 3,000 is \"in one direction\" (Jowett) or \"on either side\" (Bury). Plato does not say the 3,000 runs along the coast, though the inland measure implies it. The region faces south and is sheltered from the north (118b).",
+      "ditch": {
+        "width": "1 stadion",
+        "depth": "1 plethron (100 feet)",
+        "length_stadia": 10000,
+        "ref": "Critias 118c-d"
+      },
+      "canals": "Straight canals about 100 feet wide, 100 stades apart, cut across the plain inland of the city and discharging into the ditch on the seaward side; cross-cuts joined one canal to the next and to the city (118d-e).",
+      "allotments": {
+        "count": 60000,
+        "side_stadia": 10,
+        "ref": "Critias 119a",
+        "check": "3,000 x 2,000 = 6,000,000 square stades, divided by 100 = 60,000. The ditch is 10,000 stades = 2 x (3,000 + 2,000). Both figures agree with the plain's dimensions."
+      },
+      "ref": "Critias 118a-119a"
+    },
+    "island": {
+      "size_statement": "Larger than Libya and Asia together (Timaeus 24e; Critias 108e). Plato gives no measure of the whole island. The plain, 3,000 by 2,000 stades, lies inside it, and the region of the plain is called \"turned to the south\" of the whole island.",
+      "ref": "Timaeus 24e; Critias 108e, 118a-b"
+    },
+    "forces": [
+      {
+        "what": "allotments in the plain, each supplying one leader",
+        "value": 60000,
+        "ref": "Critias 119a"
+      },
+      {
+        "what": "war-chariots from the royal city (one sixth of a chariot from each allotment)",
+        "value": 10000,
+        "ref": "Critias 119a"
+      },
+      {
+        "what": "ships (four sailors from each allotment)",
+        "value": 1200,
+        "ref": "Critias 119b"
+      },
+      {
+        "what": "sailors per ship (arithmetic: 60,000 x 4 / 1,200)",
+        "value": 200,
+        "ref": "Critias 119b, derived"
+      },
+      {
+        "what": "per allotment: horses with riders",
+        "value": 2,
+        "ref": "Critias 119a-b"
+      },
+      {
+        "what": "per allotment: heavy infantry (hoplites)",
+        "value": 2,
+        "ref": "Critias 119b"
+      },
+      {
+        "what": "per allotment: archers",
+        "value": 2,
+        "ref": "Critias 119b"
+      },
+      {
+        "what": "per allotment: slingers",
+        "value": 2,
+        "ref": "Critias 119b"
+      },
+      {
+        "what": "per allotment: stone-throwers (light-armed)",
+        "value": 3,
+        "ref": "Critias 119b"
+      },
+      {
+        "what": "per allotment: javelin-men (light-armed)",
+        "value": 3,
+        "ref": "Critias 119b"
+      },
+      {
+        "what": "ancient Athens: fighting citizens kept constant, men and women together",
+        "value": 20000,
+        "ref": "Critias 112d"
+      },
+      {
+        "what": "ten kings' council: interval of meeting, years (alternately 5 and 6)",
+        "value": 5,
+        "ref": "Critias 119d"
+      },
+      {
+        "what": "Nereids on dolphins round the god's statue",
+        "value": 100,
+        "ref": "Critias 116e"
+      }
+    ],
+    "derived_metres": {
+      "note": "Arithmetic by this lane: Plato's figure in stadia (or plethra and feet turned into stadia at 6 plethra = 1 stadion = 600 feet) times each stadion length. Metres, rounded to 0.1 m. It says nothing about which stadion Plato meant.",
+      "columns": [
+        "Attic 185 m",
+        "Olympic 192 m",
+        "Nemea/Delphi 178 m",
+        "Itinerary 157.5 m",
+        "Babylonian-Persian 196 m",
+        "Phoenician-Egyptian 209 m"
+      ],
+      "rows": [
+        {
+          "what": "central island diameter",
+          "stadia": 5,
+          "metres": {
+            "Attic 185 m": 925,
+            "Olympic 192 m": 960,
+            "Nemea/Delphi 178 m": 890,
+            "Itinerary 157.5 m": 787.5,
+            "Babylonian-Persian 196 m": 980,
+            "Phoenician-Egyptian 209 m": 1045
+          }
+        },
+        {
+          "what": "innermost water ring width",
+          "stadia": 1,
+          "metres": {
+            "Attic 185 m": 185,
+            "Olympic 192 m": 192,
+            "Nemea/Delphi 178 m": 178,
+            "Itinerary 157.5 m": 157.5,
+            "Babylonian-Persian 196 m": 196,
+            "Phoenician-Egyptian 209 m": 209
+          }
+        },
+        {
+          "what": "inner land ring width",
+          "stadia": 2,
+          "metres": {
+            "Attic 185 m": 370,
+            "Olympic 192 m": 384,
+            "Nemea/Delphi 178 m": 356,
+            "Itinerary 157.5 m": 315,
+            "Babylonian-Persian 196 m": 392,
+            "Phoenician-Egyptian 209 m": 418
+          }
+        },
+        {
+          "what": "middle water ring width",
+          "stadia": 2,
+          "metres": {
+            "Attic 185 m": 370,
+            "Olympic 192 m": 384,
+            "Nemea/Delphi 178 m": 356,
+            "Itinerary 157.5 m": 315,
+            "Babylonian-Persian 196 m": 392,
+            "Phoenician-Egyptian 209 m": 418
+          }
+        },
+        {
+          "what": "outer land ring width",
+          "stadia": 3,
+          "metres": {
+            "Attic 185 m": 555,
+            "Olympic 192 m": 576,
+            "Nemea/Delphi 178 m": 534,
+            "Itinerary 157.5 m": 472.5,
+            "Babylonian-Persian 196 m": 588,
+            "Phoenician-Egyptian 209 m": 627
+          }
+        },
+        {
+          "what": "outer water ring width",
+          "stadia": 3,
+          "metres": {
+            "Attic 185 m": 555,
+            "Olympic 192 m": 576,
+            "Nemea/Delphi 178 m": 534,
+            "Itinerary 157.5 m": 472.5,
+            "Babylonian-Persian 196 m": 588,
+            "Phoenician-Egyptian 209 m": 627
+          }
+        },
+        {
+          "what": "outer water ring, outer edge: diameter",
+          "stadia": 27,
+          "metres": {
+            "Attic 185 m": 4995,
+            "Olympic 192 m": 5184,
+            "Nemea/Delphi 178 m": 4806,
+            "Itinerary 157.5 m": 4252.5,
+            "Babylonian-Persian 196 m": 5292,
+            "Phoenician-Egyptian 209 m": 5643
+          }
+        },
+        {
+          "what": "canal length, sea to outer ring",
+          "stadia": 50,
+          "metres": {
+            "Attic 185 m": 9250,
+            "Olympic 192 m": 9600,
+            "Nemea/Delphi 178 m": 8900,
+            "Itinerary 157.5 m": 7875,
+            "Babylonian-Persian 196 m": 9800,
+            "Phoenician-Egyptian 209 m": 10450
+          }
+        },
+        {
+          "what": "canal width (3 plethra)",
+          "stadia": 0.5,
+          "metres": {
+            "Attic 185 m": 92.5,
+            "Olympic 192 m": 96,
+            "Nemea/Delphi 178 m": 89,
+            "Itinerary 157.5 m": 78.8,
+            "Babylonian-Persian 196 m": 98,
+            "Phoenician-Egyptian 209 m": 104.5
+          }
+        },
+        {
+          "what": "canal depth (100 feet = 1 plethron)",
+          "stadia": 0.1667,
+          "metres": {
+            "Attic 185 m": 30.8,
+            "Olympic 192 m": 32,
+            "Nemea/Delphi 178 m": 29.7,
+            "Itinerary 157.5 m": 26.3,
+            "Babylonian-Persian 196 m": 32.7,
+            "Phoenician-Egyptian 209 m": 34.8
+          }
+        },
+        {
+          "what": "bridge width (1 plethron)",
+          "stadia": 0.1667,
+          "metres": {
+            "Attic 185 m": 30.8,
+            "Olympic 192 m": 32,
+            "Nemea/Delphi 178 m": 29.7,
+            "Itinerary 157.5 m": 26.3,
+            "Babylonian-Persian 196 m": 32.7,
+            "Phoenician-Egyptian 209 m": 34.8
+          }
+        },
+        {
+          "what": "temple length",
+          "stadia": 1,
+          "metres": {
+            "Attic 185 m": 185,
+            "Olympic 192 m": 192,
+            "Nemea/Delphi 178 m": 178,
+            "Itinerary 157.5 m": 157.5,
+            "Babylonian-Persian 196 m": 196,
+            "Phoenician-Egyptian 209 m": 209
+          }
+        },
+        {
+          "what": "temple width (3 plethra)",
+          "stadia": 0.5,
+          "metres": {
+            "Attic 185 m": 92.5,
+            "Olympic 192 m": 96,
+            "Nemea/Delphi 178 m": 89,
+            "Itinerary 157.5 m": 78.8,
+            "Babylonian-Persian 196 m": 98,
+            "Phoenician-Egyptian 209 m": 104.5
+          }
+        },
+        {
+          "what": "race-course width",
+          "stadia": 1,
+          "metres": {
+            "Attic 185 m": 185,
+            "Olympic 192 m": 192,
+            "Nemea/Delphi 178 m": 178,
+            "Itinerary 157.5 m": 157.5,
+            "Babylonian-Persian 196 m": 196,
+            "Phoenician-Egyptian 209 m": 209
+          }
+        },
+        {
+          "what": "distance of hill from plain",
+          "stadia": 50,
+          "metres": {
+            "Attic 185 m": 9250,
+            "Olympic 192 m": 9600,
+            "Nemea/Delphi 178 m": 8900,
+            "Itinerary 157.5 m": 7875,
+            "Babylonian-Persian 196 m": 9800,
+            "Phoenician-Egyptian 209 m": 10450
+          }
+        },
+        {
+          "what": "outer wall: radius",
+          "stadia": 63.5,
+          "metres": {
+            "Attic 185 m": 11747.5,
+            "Olympic 192 m": 12192,
+            "Nemea/Delphi 178 m": 11303,
+            "Itinerary 157.5 m": 10001.3,
+            "Babylonian-Persian 196 m": 12446,
+            "Phoenician-Egyptian 209 m": 13271.5
+          }
+        },
+        {
+          "what": "outer wall: diameter",
+          "stadia": 127,
+          "metres": {
+            "Attic 185 m": 23495,
+            "Olympic 192 m": 24384,
+            "Nemea/Delphi 178 m": 22606,
+            "Itinerary 157.5 m": 20002.5,
+            "Babylonian-Persian 196 m": 24892,
+            "Phoenician-Egyptian 209 m": 26543
+          }
+        },
+        {
+          "what": "plain, long side",
+          "stadia": 3000,
+          "metres": {
+            "Attic 185 m": 555000,
+            "Olympic 192 m": 576000,
+            "Nemea/Delphi 178 m": 534000,
+            "Itinerary 157.5 m": 472500,
+            "Babylonian-Persian 196 m": 588000,
+            "Phoenician-Egyptian 209 m": 627000
+          }
+        },
+        {
+          "what": "plain, depth inland",
+          "stadia": 2000,
+          "metres": {
+            "Attic 185 m": 370000,
+            "Olympic 192 m": 384000,
+            "Nemea/Delphi 178 m": 356000,
+            "Itinerary 157.5 m": 315000,
+            "Babylonian-Persian 196 m": 392000,
+            "Phoenician-Egyptian 209 m": 418000
+          }
+        },
+        {
+          "what": "ditch width",
+          "stadia": 1,
+          "metres": {
+            "Attic 185 m": 185,
+            "Olympic 192 m": 192,
+            "Nemea/Delphi 178 m": 178,
+            "Itinerary 157.5 m": 157.5,
+            "Babylonian-Persian 196 m": 196,
+            "Phoenician-Egyptian 209 m": 209
+          }
+        },
+        {
+          "what": "ditch depth (1 plethron)",
+          "stadia": 0.1667,
+          "metres": {
+            "Attic 185 m": 30.8,
+            "Olympic 192 m": 32,
+            "Nemea/Delphi 178 m": 29.7,
+            "Itinerary 157.5 m": 26.3,
+            "Babylonian-Persian 196 m": 32.7,
+            "Phoenician-Egyptian 209 m": 34.8
+          }
+        },
+        {
+          "what": "ditch length",
+          "stadia": 10000,
+          "metres": {
+            "Attic 185 m": 1850000,
+            "Olympic 192 m": 1920000,
+            "Nemea/Delphi 178 m": 1780000,
+            "Itinerary 157.5 m": 1575000,
+            "Babylonian-Persian 196 m": 1960000,
+            "Phoenician-Egyptian 209 m": 2090000
+          }
+        },
+        {
+          "what": "plain canal width (100 feet)",
+          "stadia": 0.1667,
+          "metres": {
+            "Attic 185 m": 30.8,
+            "Olympic 192 m": 32,
+            "Nemea/Delphi 178 m": 29.7,
+            "Itinerary 157.5 m": 26.3,
+            "Babylonian-Persian 196 m": 32.7,
+            "Phoenician-Egyptian 209 m": 34.8
+          }
+        },
+        {
+          "what": "spacing of plain canals",
+          "stadia": 100,
+          "metres": {
+            "Attic 185 m": 18500,
+            "Olympic 192 m": 19200,
+            "Nemea/Delphi 178 m": 17800,
+            "Itinerary 157.5 m": 15750,
+            "Babylonian-Persian 196 m": 19600,
+            "Phoenician-Egyptian 209 m": 20900
+          }
+        }
+      ]
+    }
+  },
+  "chronology": [
+    {
+      "what": "The 9,000 years",
+      "statement": "The Egyptian priest tells Solon of citizens \"who lived 9000 years ago\" (Bury). Critias later says 9,000 is the number of years since the war (108e), and again \"from that time to this\" (111a-b). The same figure is used in both dialogues.",
+      "ref": "Timaeus 23e; Critias 108e, 111a-b",
+      "note": "The text uses two starting points. In Timaeus 23e the priest is speaking to Solon, so the count runs to about 590 BCE. In Critias 108e and 111b the count runs \"to this day\", the day of the conversation, which Plato sets after Solon. If the first is meant, the date is about 9600 BCE; if the second, later by the unstated gap between Solon and the dialogue. Plato never says which. Cameron (1983) and Nesselrath (2002) both give 9600 BCE."
+    },
+    {
+      "what": "Egyptian records",
+      "statement": "The Egyptian city's civilization is 8,000 years old in the sacred writings, and Athena founded Athens 1,000 years before Sais.",
+      "ref": "Timaeus 23d-e",
+      "note": "Greek: ὀκτακισχιλίων ἐτῶν ἀριθμὸς and ἔτεσιν χιλίοις. 9,000 for Athens, 8,000 for Sais."
+    },
+    {
+      "what": "Who is speaking",
+      "statement": "Critias tells the story in Timaeus 20d-26e, at the festival of Athena the day after Socrates' account of the ideal state. The Loeb note identifies the festival as the Lesser Panathenaea, held in early June. Timaeus and Hermocrates are the other speakers. The story is repeated at length in the Critias, which begins on the same day.",
+      "ref": "Timaeus 20a-21a, 26a-c; Critias 106a-108d",
+      "note": "The dialogue's own year is not given in the text. Scholars date it differently and I did not fetch a source for the year. Gill (via Atack's review) notes that it is uncertain which Critias is meant, and Broadie reads the dialogue as set in a non-historical setting."
+    },
+    {
+      "what": "How old the narrator and his informant were",
+      "statement": "The old Critias was \"nearly ninety\" when he told the story and the narrator was \"about ten\", on the day of the Apaturia called the Registration of Youth (Koureotis).",
+      "ref": "Timaeus 21a-b",
+      "note": "Dates of the elder and younger Critias are not given and not fetched."
+    },
+    {
+      "what": "Solon's dates",
+      "statement": "Plutarch's editor gives Solon's archonship as 594 BCE. Herodotus says that after making laws Solon went abroad for ten years, to see the world. Plutarch (Solon 26) reports that Solon spent time in Egypt with the priests Psenophis of Heliopolis and Sonchis of Sais, and (31) that he began a poem on Atlantis and gave it up from old age.",
+      "ref": "Plutarch, Solon 14, 26, 31; Herodotus 1.29",
+      "note": "If the ten years began with the laws, about 593 BCE, the Egypt visit falls between about 593 and 583 BCE, and 9,000 years earlier is about 9600 BCE (our arithmetic; Plutarch does not date the visit). Plato's Timaeus 21e mentions Sais as the home of King Amasis, and Bury's note gives Amasis' reign as 569-525 BCE, after Solon's likely visit. Whether Solon went to Egypt at all is doubted in Jowett's introduction (\"It is only a legend that Solon went to Egypt\")."
+    },
+    {
+      "what": "The war was already long ago in the Egyptians' telling",
+      "statement": "The land has been wrecked by \"many deluges\" since; the Egyptians say they keep records because the Nile saves them, while Greek writing is lost every time.",
+      "ref": "Timaeus 22b-23b; Critias 109d-110a, 111a-b",
+      "note": "The 9,000 years are a gap during which Plato says Greece forgot."
+    }
+  ],
+  "transmission": [
+    {
+      "step": "Egyptian priests of Sais keep the record in the temple writings (\"sacred writings\", \"sacred registers\"). Plutarch names two of them, Psenophis of Heliopolis and Sonchis of Sais.",
+      "ref": "Timaeus 23e-24a; Plutarch, Solon 26"
+    },
+    {
+      "step": "A very old priest tells it to Solon on his visit to Sais.",
+      "ref": "Timaeus 21e-23d"
+    },
+    {
+      "step": "Solon intends to use the tale in a poem; he translates the Egyptian names into Greek and writes them down. He never finishes the poem, because of civil strife at home.",
+      "ref": "Timaeus 21c-d; Critias 113a-b"
+    },
+    {
+      "step": "Solon tells it to Dropides, his relative and close friend, great-grandfather of the speaker Critias.",
+      "ref": "Timaeus 20e"
+    },
+    {
+      "step": "Dropides tells his son, the elder Critias, the speaker's grandfather. Bury and the Greek have the written record in the grandfather's keeping and now in the speaker's; Jowett has Dropides keeping it.",
+      "ref": "Timaeus 20e; Critias 113b"
+    },
+    {
+      "step": "The elder Critias, nearly ninety, tells it to the narrator Critias, then about ten, at the Apaturia, after boys recited Solon's poems.",
+      "ref": "Timaeus 21a-d"
+    },
+    {
+      "step": "The narrator tells it to Timaeus and Hermocrates the day before and thinks it over in the night; then tells it to Socrates in the dialogue.",
+      "ref": "Timaeus 20c-d, 26a-c"
+    }
+  ],
+  "no_earlier_mention": {
+    "statement": "I found no text from before Plato that names an island or empire of Atlantis. I found two earlier uses of the root: Herodotus calls the sea beyond the Pillars of Heracles \"Atlantic\" (1.202) and names the Atlantes, a people of Libya who take their name from Mount Atlas (4.184). Neither is an island or a kingdom.",
+    "how_checked": [
+      "Read Herodotus 1.202.4 and 4.184 (Godley translation) in Perseus.",
+      "Read Jowett's introduction: \"there is no such legend in any writer previous to Plato; neither in Homer, nor in Pindar, nor in Herodotus is there any mention of an Island of Atlantis, nor any reference to it in Aristotle\". This is a 19th-century scholar's statement, not a search.",
+      "Read Nesselrath (2002), who says the orator Isocrates, in his Panegyricus and his later Panathenaicus, lists Athens' great deeds and says nothing of an Atlantis war, and takes this silence to mean the story was unknown in Athens until Plato.",
+      "Read Cameron (1983, Cambridge extract): the story \"rests entirely on an elaborate Platonic myth\". Read Atack's review of Gill (2017): \"there is one source and one alone for the Atlantis story, and that is Plato's text\"."
+    ],
+    "limits": "I tried to run a full-corpus search for the Greek stem in Perseus; the server replied with a cookie wall (HTTP 403), so no search was run. Many lost works cannot be searched. This is \"no mention found in the texts and scholarship I read\", not a proof that none existed."
+  },
+  "ancient_reception": [
+    {
+      "author": "Herodotus (before Plato)",
+      "date": "5th century BCE (approximate, not looked up)",
+      "work_and_passage": "Histories 1.202.4; 4.184",
+      "what_they_say": "Names the sea beyond the Pillars of Heracles \"Atlantic\" and a people of Libya \"Atlantes\" after a mountain. No island.",
+      "quote": "the sea beyond the pillars of Heracles, which they call Atlantic",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Hdt.+1.202",
+      "note": "Godley translation (Loeb 1920). Nesselrath (BMCR 2008) cites Herodotus 1.202.4 as saying the Red Sea and the Atlantic are one sea. The other passage: \"These men get their name, which is Atlantes, from this mountain\" (4.184, same translation, https://www.perseus.tufts.edu/hopper/text?doc=Hdt.+4.184)."
+    },
+    {
+      "author": "Theopompus of Chios",
+      "date": "mid-4th century BCE (title of Harland's page; not otherwise checked)",
+      "work_and_passage": "Philippica, the Meropis story, as summarised by Aelian, Varia Historia 3.18",
+      "what_they_say": "Nesselrath calls it a parodic pastiche of Plato's Atlantis story and one of the earliest literary reactions to it: a great continent beyond the three known ones, with two cities, Machimos (warlike) and Eusebes (pious).",
+      "quote": "produced what might be called a parodic pastiche … of Plato's Atlantis story and one of the earliest literary reactions to it",
+      "url": "https://bmcr.brynmawr.edu/2008/2008.08.22",
+      "note": "Quote is Nesselrath's words in his review of Vidal-Naquet, not Theopompus. I did not read Aelian or the fragment; Harland's blog (https://www.philipharland.com/Blog/2024/03/peoples-in-an-alternative-world-theopompos-on-pious-and-war-like-peoples-mid-fourth-century-bce/) and Nesselrath's 1998 article on the Meropis were named by search results and not read."
+    },
+    {
+      "author": "Aristotle (as reported by Strabo)",
+      "date": "4th century BCE; Strabo c. 1st century BCE to 1st century CE (approximate)",
+      "work_and_passage": "Strabo, Geography 13.1.36; compare 2.3.6",
+      "what_they_say": "In 13.1.36 Strabo says that, as Aristotle says, the building and destruction of the Achaeans' wall in the Iliad were the poet's invention. In 2.3.6 the same turn of phrase is applied to Atlantis (\"He who brought it into existence can also cause it to disappear, as the poet did the wall of the Achivi\") without naming Aristotle. No surviving text of Aristotle that I read mentions Atlantis.",
+      "quote": "the erection and destruction of it, as Aristotle says, are due to the invention of the poet",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Strab.+13.1.36",
+      "note": "Hamilton and Falconer translation (1903). The link between this line and Atlantis, as an Aristotelian joke at Plato's expense, is an inference from the two Strabo passages together; Strabo 2.3.6 does not name Aristotle. Jowett's introduction says there is no reference to Atlantis in Aristotle. Not checked in Aristotle's own works."
+    },
+    {
+      "author": "Crantor of Soli (as reported by Proclus)",
+      "date": "Crantor: early Academy, about a generation after Plato (Jowett). Proclus: 5th century CE (Jowett).",
+      "work_and_passage": "Proclus, Commentary on the Timaeus, Book 1 (on Timaeus 21a-26e); Taylor 1820 translation, vol. 1, pp. 64-65",
+      "what_they_say": "Proclus says Crantor, \"the first interpreter of Plato\", held the story to be plain history, answered those who mocked Plato for not inventing the Republic, and said the Egyptian prophets testify that the story is written on pillars that still survive.",
+      "quote": "some say, that it is a mere history, which was the opinion of Crantor, the first interpreter of Plato … Crantor adds, that this is testified by the prophets of the Egyptians, who assert that these particulars (which are narrated by Plato) are written on pillars which are still preserved",
+      "url": "https://archive.org/details/proclusontimaeus01procuoft",
+      "note": "Taylor's 1820 translation from an archive.org OCR text; I corrected OCR typos (\"Exyptians\", a brace for a bracket). Cameron (1983) argues the pillars claim is not good evidence; Jowett writes that \"we require better assurance than Proclus can give us\". Whether the sentence about the pillars is Crantor's or Plato's was disputed in the search results I saw; I did not check the Greek (Diehl)."
+    },
+    {
+      "author": "Posidonius (as reported by Strabo)",
+      "date": "Posidonius 1st century BCE; Strabo late 1st century BCE to early 1st century CE (approximate, not looked up)",
+      "work_and_passage": "Strabo, Geography 2.3.6",
+      "what_they_say": "Strabo reports that Posidonius cited Plato's story of Atlantis as a possible record of a real island lost to earthquakes, and thought it better to cite that than to say the maker of a thing can unmake it.",
+      "quote": "He did well, too, in citing the opinion of Plato, 'that the tradition concerning the Island of Atlantis might be received as something more than a mere fiction",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Strab.+2.3.6",
+      "note": "Hamilton and Falconer (1903). The words inside the quotation marks are given as Plato's opinion but are not in Timaeus or Critias; they read as Posidonius's or Strabo's paraphrase. Cameron (1983) argues that this report is not evidence Posidonius believed the story. Vidal-Naquet (via Nesselrath) reads Posidonius as holding that Atlantis once existed; I did not read either in full."
+    },
+    {
+      "author": "Pliny the Elder",
+      "date": "1st century CE (approximate)",
+      "work_and_passage": "Natural History 2.92 (the chapter \"Lands which have been totally changed into seas\")",
+      "what_they_say": "Lists Atlantis first among lands the sea has taken, hedged: \"if we are to believe Plato\".",
+      "quote": "if we are to believe Plato … for an immense space where the Atlantic ocean is now extended",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Plin.+Nat.+2.92",
+      "note": "Bostock and Riley translation (1855). The translator's footnote adds that \"it is, at this time, impossible to determine what part of it was derived from ancient traditions and what from the fertile stores of his own imagination\"."
+    },
+    {
+      "author": "Plutarch",
+      "date": "about 100 CE (approximate)",
+      "work_and_passage": "Life of Solon 26 and 31",
+      "what_they_say": "Says Solon studied with the priests Psenophis of Heliopolis and Sonchis of Sais and heard the story of Atlantis from them. In 31 he says Solon began a poem on it and abandoned it from old age, not for lack of leisure as Plato says. The editor Perrin notes that there is no trace of Solon's work.",
+      "quote": "abandoned it, not for lack of leisure, as Plato says, but rather because of his old age, fearing the magnitude of the task",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Plut.+Sol.+31",
+      "note": "Perrin translation (Loeb, 1914). The Sol. 26 passage: \"He also spent some time in studies with Psenophis of Heliopolis and Sonchis of Sais, who were very learned priests\" (https://www.perseus.tufts.edu/hopper/text?doc=Plut.+Sol.+26). Perrin's footnote to 31: \"There is no trace of any such work of Solon's, and the attribution of it to him is probably a play of Plato's fancy.\" Plutarch cites Plato as his source for Atlantis; he does not give an independent one."
+    },
+    {
+      "author": "Diodorus Siculus",
+      "date": "1st century BCE (approximate)",
+      "work_and_passage": "Library of History 3.54 and 3.56, 3.60",
+      "what_they_say": "Writes of the \"Atlantians\", a civilised people living on the shore of the ocean in Libya, attacked by the Amazons; Atlas ruled the coast. This is a different story from Plato's: no island, no sinking.",
+      "quote": "Atlas received as his part the regions on the coast of the ocean, and he not only gave the name of Atlantians to his peoples but likewise called the greatest mountain in the land Atlas",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/3D*.html#60",
+      "note": "Oldfather translation (Loeb 1935, on LacusCurtius). Nesselrath (BMCR 2008) says Diodorus's source for the Atlantians is Dionysius Scytobrachion, who used Herodotus, Plato and Theopompus's Meropis."
+    },
+    {
+      "author": "Proclus",
+      "date": "5th century CE (Jowett)",
+      "work_and_passage": "Commentary on the Timaeus, Book 1 (Taylor 1820, vol. 1, pp. 64-65)",
+      "what_they_say": "Surveys readings: history (Crantor), fable, the war of opposites in the universe, the stars and planets (Amelius), conflicting demons or souls (Origen, Numenius, Porphyry). He sides with Iamblichus and Syrianus: the war really happened and is also a pattern for the opposition that runs through the cosmos.",
+      "quote": "this contrariety and opposition are not introduced for the purpose of rejecting the narration, since on the contrary, this is to be admitted as an account of transactions that actually happened",
+      "url": "https://archive.org/details/proclusontimaeus01procuoft",
+      "note": "Taylor 1820; OCR corrected (\"actnally\" to \"actually\"). Late antiquity read the story as true and allegorical at the same time."
+    }
+  ],
+  "scholarship": [
+    {
+      "who": "Pierre Vidal-Naquet",
+      "year": 1964,
+      "work": "\"Athènes et l'Atlantide. Structure et signification d'un mythe platonicien\", Revue des Études Grecques 77: 420-444; later in Le chasseur noir (1983); and the book L'Atlantide: petite histoire d'un mythe platonicien (Les Belles Lettres, 2005; English The Atlantis Story, Exeter 2007)",
+      "position": "invented by Plato",
+      "argument": "Athens and Atlantis are a paired opposition in Plato's thought about the city: the story is a structure, not a record. The book follows the myth's afterlife into the age of exploration.",
+      "quote": "his interpretation clearly brought out that the Atlantis story is a Platonic invention pure and simple",
+      "kind": "peer-reviewed",
+      "read": "review only: H.-G. Nesselrath, BMCR 2008.08.22. I did not read the article or the book. Nesselrath accepts the thesis and corrects details, and disagrees on whether Plato meant to end the Critias where it stops.",
+      "url": "https://bmcr.brynmawr.edu/2008/2008.08.22"
+    },
+    {
+      "who": "Christopher Gill",
+      "year": 2017,
+      "work": "Plato's Atlantis Story: Text, Translation and Commentary (Liverpool University Press, 2017; first edition Bristol Classical Press 1980); earlier article \"The Genre of the Atlantis Story\", Classical Philology 72 (1977): 287-304",
+      "position": "invented by Plato",
+      "argument": "The single source is Plato's text. Gill pushes back against a purely political, Athens-centred reading and argues that the contrast between Athens and Atlantis is analytical and philosophical, and that Plato uses myth to carry philosophy forward.",
+      "quote": "Gill begins by reminding readers that there is one source and one alone for the Atlantis story, and that is Plato's text",
+      "kind": "book",
+      "read": "review only: Carol Atack, BMCR 2018.06.40. I did not read the book or the 1977 article.",
+      "url": "https://bmcr.brynmawr.edu/?p=32247"
+    },
+    {
+      "who": "Heinz-Günther Nesselrath",
+      "year": 2002,
+      "work": "Platon und die Erfindung von Atlantis (Lectio Teubneriana XI; K. G. Saur, Munich and Leipzig, 2002), 62 pages",
+      "position": "invented by Plato",
+      "argument": "Searchers make two errors: they change Plato's figures while keeping his authority, and they never ask whether the chain of transmission is real. Using Isocrates' silence, the matching of Socrates' ideal state to ancient Athens (\"a coincidence too good to be true\"), and the remark in the Phaedrus that Socrates can invent tales \"from Egypt\", he concludes that Atlantis is a creation of Plato, built from Plato's own world.",
+      "quote": "Wenn Atlantis also offensichtlich eine Erfindung, eine Fiktion Platons ist",
+      "kind": "book",
+      "read": "full text read (PDF copy hosted on atlantis-scout.de)",
+      "url": "https://www.atlantis-scout.de/NesselrathHG_2002a_PlatonErfindgAtlantis_BUCH.pdf"
+    },
+    {
+      "who": "Alan Cameron",
+      "year": 1983,
+      "work": "\"Crantor and Posidonius on Atlantis\", Classical Quarterly 33(1): 81-91",
+      "position": "invented by Plato",
+      "argument": "That Plato invented the whole story is \"virtually demonstrable\". The paper removes one prop of belief, the report that Crantor and Posidonius vouched for it, by rereading the Proclus and Strabo passages.",
+      "quote": "That Plato himself made the whole story up (fashionable recent theories about Thera notwithstanding) is indeed virtually demonstrable.",
+      "kind": "peer-reviewed",
+      "read": "Cambridge Core extract only (opening paragraph); the argument itself is not read. Later writers dispute his reading of the Proclus sentence (search-result summaries; not checked).",
+      "url": "https://www.cambridge.org/core/journals/classical-quarterly/article/abs/crantor-and-posidonius-on-atlantis/965F3484291FE83491B3E32FC1F678CA"
+    },
+    {
+      "who": "Thomas K. Johansen",
+      "year": 2004,
+      "work": "Plato's Natural Philosophy: A Study of the Timaeus-Critias (Cambridge University Press), chapter 2, \"The status of the Atlantis story\"",
+      "position": "invented by Plato",
+      "argument": "The story is \"history\" only in a special Platonic sense: fabricated about the past to show how ideal citizens, formed on the Republic's model of virtue, would prevail in war.",
+      "quote": "it is a story which is fabricated about the past in order to reflect a general truth about how ideal citizens would fare in war",
+      "kind": "book",
+      "read": "chapter summary on Cambridge Core",
+      "url": "https://doi.org/10.1017/CBO9780511518478.003"
+    },
+    {
+      "who": "Julia Annas",
+      "year": 2010,
+      "work": "\"The Atlantis story: The Republic and the Timaeus\", in Plato's Republic: A Critical Guide (Cambridge University Press), pp. 52-64",
+      "position": "undecided",
+      "argument": "The abstract is about how the Atlantis story links the Republic to the Timaeus; it points out that Timaeus' preface refers to the Republic selectively, and suggests Plato wants to join the argument of the Republic to the cosmology of the Timaeus. The abstract does not state whether she thinks the story is invented.",
+      "quote": "I have no solution to the anomalies in the preface beyond the rather obvious suggestion that Plato wants to link the argument of the Republic with the cosmological project of the Timaeus",
+      "kind": "book",
+      "read": "abstract only (University of Arizona research page)",
+      "url": "https://experts.arizona.edu/en/publications/the-atlantis-story-the-republic-and-the-timaeus/"
+    },
+    {
+      "who": "Sarah Broadie",
+      "year": 2012,
+      "work": "Nature and Divinity in Plato's Timaeus (Cambridge University Press), chapter 5, \"The Timaeus-Critias complex\"",
+      "position": "invented by Plato",
+      "argument": "Reads the Atlantis account as \"pseudo-historiography\": true within the dialogue's world, fictional in the reader's world. She finds significance in the absence of any mention of Marathon, which T. K. Johansen calls an argument from silence in his review.",
+      "quote": "the Atlantis story is an exercise in pseudo-historiography",
+      "kind": "book",
+      "read": "review only: T. K. Johansen, Notre Dame Philosophical Reviews. I did not read the book.",
+      "url": "https://ndpr.nd.edu/reviews/nature-and-divinity-in-plato-s-timaeus/"
+    },
+    {
+      "who": "Jean-François Pradeau",
+      "year": 1997,
+      "work": "Le Monde de la Politique: sur le récit atlante de Platon, Timée (17-27) et Critias (Academia Verlag, Sankt Augustin)",
+      "position": "invented by Plato",
+      "argument": "Shows how Plato draws on historians' methods, above all the structural likeness between Critias' survey of Atlantis and Herodotus' ethnographic and historical sections.",
+      "quote": "whose monograph on the Atlantis story demonstrated Plato's use of historiographical sources",
+      "kind": "book",
+      "read": "review only: Atack's BMCR review of Gill. The Herodotus parallels are discussed there (the rings and Ecbatana, Hdt. 1.98).",
+      "url": "https://bmcr.brynmawr.edu/?p=32247"
+    },
+    {
+      "who": "K. T. Frost",
+      "year": 1913,
+      "work": "\"The Critias and Minoan Crete\", Journal of Hellenic Studies 33",
+      "position": "based on real events",
+      "argument": "Frost's article asks why the Critias gives so much detail on Atlantis and links it to Minoan Crete. The abstract names the questions (the truth of Solon's visit to Egypt, the relation of Solon, Plato and Critias) but not the answer. The Minoan Crete thesis is from the title and the legends.json summary.",
+      "quote": "The attempt to answer these questions involves a consideration of the truth of Solon's visit to Egypt, a review of the whole problem of Atlantis and a glance at the relationship between Solon, Plato, and Critias.",
+      "kind": "peer-reviewed",
+      "read": "abstract only (OpenAlex record). I did not read the article.",
+      "url": "https://doi.org/10.2307/624108"
+    },
+    {
+      "who": "Eberhard Zangger",
+      "year": 1993,
+      "work": "\"Plato's Atlantis account - a distorted recollection of the Trojan War\", Oxford Journal of Archaeology 12(1): 77-87",
+      "position": "based on real events",
+      "argument": "Argues that Plato's tale of a collapse by earthquake and flood fits a Late Bronze Age Greek catastrophe at Tiryns around 1200 BCE, and that the enemy \"Atlantis\" is a distorted Egyptian memory of Troy and the Trojan War. The OJA issue is 1993; earlier (1992) presentations are cited in Nesselrath.",
+      "quote": "the thus far inexplicable story of Atlantis might well represent an Egyptian recollection of Troy and the Trojan War, distorted by transmission and translation",
+      "kind": "peer-reviewed",
+      "read": "summary and opening read in a PDF copy of the article hosted at literature.wolkersdorfer.info (not the publisher). Nesselrath (BMCR 2008) lists the Troy identification among the \"recent popular fantasies\" covered in Vidal-Naquet's introduction and says Vidal-Naquet is \"much too lenient\" on Zangger; I did not find a point-by-point reply.",
+      "url": "https://literature.wolkersdorfer.info/literature/Platos%20Atlantis%20Account%20A%20distorted%20recollection%20of%20the%20Trojan%20War.pdf"
+    },
+    {
+      "who": "Marc-André Gutscher",
+      "year": 2005,
+      "work": "\"Destruction of Atlantis by a great earthquake and tsunami? A geological analysis of the Spartel Bank hypothesis\", Geology 33(8): 685-688",
+      "position": "based on real events",
+      "argument": "Tests the Spartel Bank idea of J. Collina-Girard (2001) with new bathymetry and the Gulf of Cadiz tsunami record: the sudden loss in Plato fits a great earthquake and tsunami, and a paleoisland existed there about 11,600 years ago. He maps the island and discusses whether people could have lived on it.",
+      "quote": "Numerous geographical similarities exist between Plato's descriptions of Atlantis and a paleoisland (Spartel) in the western Straits of Gibraltar.",
+      "kind": "peer-reviewed",
+      "read": "abstract only (OpenAlex record). The hypotheses lane covers replies and the legends.json standing for Spartel Bank is \"rejected\".",
+      "url": "https://doi.org/10.1130/G21597AR.1"
+    },
+    {
+      "who": "Thorwald C. Franke",
+      "year": 2006,
+      "work": "Mit Herodot auf den Spuren von Atlantis: Könnte Atlantis doch ein realer Ort gewesen sein? (Norderstedt, 2006)",
+      "position": "undecided",
+      "argument": "Argues that the Herodotus parallels do not show invention and that Atlantis could have been a real place. A classicist's review calls it a \"painstaking rebuttal\" of Vidal-Naquet's Herodotus thesis, in a book with \"quite a few deficiencies\".",
+      "quote": "its painstaking rebuttal of VN's Herodotus theory is worth reading",
+      "kind": "book",
+      "read": "review only: Nesselrath in BMCR 2008.08.22 footnote 10, where he is also the critic. I did not read the book. Franke runs atlantis-scout.de, the source of the Nesselrath PDF.",
+      "url": "https://bmcr.brynmawr.edu/2008/2008.08.22"
+    }
+  ],
+  "handoffs": [
+    {
+      "lane": "hypotheses",
+      "what": "Scale test for every proposed site, from the text: outer water ring 27 stades across (5.0 km at 185 m), outer wall 127 stades across (23.5 km), plain 3,000 x 2,000 stades (555 x 370 km), canal 50 stades (9.3 km). legends.json gives the Richat Structure as a 40 km ring; 40 km would be 127 stades only if a stade were about 315 m, outside every stadion length found (157.5 to 209 m). Our arithmetic, see dimensions.derived_metres.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D115e"
+    },
+    {
+      "lane": "hypotheses",
+      "what": "The Gadeirus clue (Critias 114b): translations differ on whether the island reaches \"up to\" or only \"faces\" the region of Gadeira. Bears on Spartel Bank, Doñana and every site near Cádiz.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.%3Asection%3D114b"
+    },
+    {
+      "lane": "hypotheses",
+      "what": "Zangger (OJA 12(1), 1993) reads the story as an Egyptian memory of Troy and the Trojan War; Frost (JHS 33, 1913) as Minoan Crete; Gutscher (Geology 33, 2005) tests Spartel Bank. Replies by Nesselrath are in the scholarship list; I did not collect other published replies.",
+      "url": "https://bmcr.brynmawr.edu/2008/2008.08.22"
+    },
+    {
+      "lane": "world-9600bce",
+      "what": "Plato's date is 9,000 years before the priest spoke to Solon (about 590 BCE), so about 9600 BCE; a reading that counts from the conversation puts it later by the gap between Solon and the dialogue, which the text does not date. Ask for sea level, ice and coasts at 9600 BCE and for a window of a few centuries after it. Also two physical claims about climate and the sea: winter rain and summer irrigation (two harvests) and elephants.",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DTim.%3Asection%3D23e"
+    },
+    {
+      "lane": "site-data",
+      "what": "The tests in plato.json \"how_to_test\" name source ids from sources.json: emodnet-bathymetry-multicolour, srtm15-plus, gmrt-point-and-grid, gebco-wms (broken today), noaa-ncei-multibeam-mosaic, noaa-ncei-survey-coverage, macrostrat-geology, plate-boundaries-pb2002, usgs-earthquakes-geojson, smithsonian-gvp-volcanoes, copernicus-dem-aws, aws-terrain-tiles-terrarium, eox-s2cloudless-2016, nasa-gibs-opera-sentinel1-rtc. The globe can draw rings and a plain to scale from dimensions.derived_metres as a ruler overlay (not a find).",
+      "url": ""
+    },
+    {
+      "lane": "searches",
+      "what": "Nesselrath (2002) reports that Der Spiegel (no. 53, 1998) announced Zangger would fly over Troy with a magnetometer and gamma detector to look for Plato's water rings, and says nothing more was heard of it. I did not check whether it was done.",
+      "url": "https://www.atlantis-scout.de/NesselrathHG_2002a_PlatonErfindgAtlantis_BUCH.pdf"
+    }
+  ],
+  "not_verified": [
+    "Which Greek edition Perseus prints, and the Lamb 1925 vs Bury 1929 credit on the Perseus page. Search results and library records name Bury as translator of the Loeb volume with Timaeus and Critias; the Perseus page names Lamb.",
+    "Greek word glosses: I used what Bury and Jowett do, and the Perseus word tool for κατάβορρος (\"sheltered from the north\"). I did not fetch LSJ entries for the other words. Meanings for ἐπιβατόν, πλασθέντα μῦθον, ἀδιερεύνητον, τορνεύων are from context and the translations only.",
+    "The dramatic date (year) of the Timaeus and Critias, and the dates of the two Critiases. Not in the text; not sourced.",
+    "The Greek of Herodotus 1.202; Perseus returned the English only. I did not check the Greek of Strabo 2.3.6, Proclus (Diehl text) or Diodorus.",
+    "Birth and death dates of Herodotus, Theopompus, Crantor, Posidonius, Strabo, Pliny, Plutarch, Diodorus and Proclus: the \"date\" fields are labelled approximate and were not looked up.",
+    "A full search of Greek and Latin literature for the stem Atlant- before Plato: Perseus search returned a 403 cookie wall. The pre-Plato check rests on reading Herodotus and on Jowett, Nesselrath, Cameron and Atack.",
+    "Aelian, Varia Historia 3.18 (Theopompus' Meropis) and Aelian, Nature of Animals 15.2: not read; Nesselrath's review is the only source here. A later claim, which one Atlantis site attributes to Tertullian, that Crantor saw the pillars: not checked.",
+    "Whether the sentence about the pillars in Proclus belongs to Crantor or to Plato: disputed in secondary sources I saw only in search summaries; not checked in Greek.",
+    "Scholarship read only through reviews or abstracts: Vidal-Naquet (Nesselrath's review), Gill (Atack's review), Pradeau (Atack), Broadie (Johansen's review), Johansen (chapter summary), Annas (abstract), Cameron (opening extract), Frost (abstract; its Minoan Crete thesis comes from the title and legends.json), Gutscher (abstract), Franke (Nesselrath's footnote). Only Nesselrath's book and the opening of Zangger's article were read as full text. Zangger was read in a copy hosted at literature.wolkersdorfer.info, not the publisher.",
+    "The other Marinatos (1939), Luce (1969) and Galanopoulos-Bacon (Thera) literature, and Rashed and Auffret 2017 on the Critias' authenticity (named in Atack's review). Left to the hypotheses lane or not read.",
+    "Stadion lengths: the Attic, Babylonian-Persian and Phoenician-Egyptian values come from Wikipedia's table citing Cuntz, Dicks and Lehmann-Haupt (via Gulbekian 1987). I did not read those works, Engels 1985 or the MAA article by Walkup (blocked). Olympia's 192.27 m, quoted in search summaries from EB 1911, was not read on the page; I used \"about 192 m\" from the Nemea site.",
+    "Whether the Pillars of Heracles in Plato's day always meant the Strait of Gibraltar. Bury's note says so; I fetched no source on other ancient locations of the Pillars.",
+    "The elephant, orichalcum and plant claims were not matched to any dataset; they are listed as weak tests."
+  ]
+}

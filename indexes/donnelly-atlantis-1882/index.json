@@ -1,0 +1,538 @@
+{
+  "id": "donnelly-atlantis-1882",
+  "title": "Ignatius Donnelly, Atlantis: The Antediluvian World (1882)",
+  "source": {
+    "url": "https://archive.org/details/atlantisantedilu00donnuoft",
+    "publisher": "Internet Archive (scan of the Harper and Brothers edition, New York 1882, University of Toronto copy)",
+    "date": "1882",
+    "pages": 504,
+    "file": "work/pdf/donnelly-1882.pdf",
+    "sha256": "411c95ba6e72bcea8c0716d95e307cc72f064ee6616303bc6dceeb81741c0d4a",
+    "license": "Public domain (Ignatius Donnelly died 1901; the Internet Archive marks the item \"not in copyright\")",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "language": "en",
+  "kind": "book",
+  "summary": "The book that started the modern Atlantis movement. Donnelly argues that Plato's story is history, that Atlantis lay in the mid-Atlantic near the Azores, and that it was the source of civilisation, myths and alphabets of the Old and New Worlds. Scholars reject the argument.",
+  "tool": {
+    "name": "PageIndex",
+    "version": "0.5.3",
+    "models": [
+      "claude-code/haiku"
+    ],
+    "method": "PageIndex Flash mode ran through Claude Code (claude-code/haiku, 504 pdf pages, doc_id pi-189a034859ec440d850bb428d7618883; the store is in out/pageindex). Its tree followed the page headings and often took running heads for titles. I rebuilt the nesting from the book's own table of contents (five parts, chapters), set chapter start pages by matching the chapter titles to the text layer, split long chapters, and wrote every title and summary by reading the text. Page numbers are pdf positions; the text is the scan's OCR text layer with running heads removed, so OCR errors remain."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Front matter: title pages, preface and table of contents (pdf 1-18)",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "Title pages, the preface and the contents of Donnelly's book, listing its five parts and the chapters in each.",
+      "nodes": []
+    },
+    {
+      "node_id": "0002",
+      "title": "Part I, The History of Atlantis",
+      "start_page": 2,
+      "end_page": 8,
+      "summary": "Plato's story as Donnelly quotes it, and his case that such a catastrophe is geologically possible, with the Azores soundings and shared plants and animals.",
+      "nodes": [
+        {
+          "node_id": "0003",
+          "title": "Part I Ch. I (pdf 19-22): The purpose of the book: twelve propositions",
+          "start_page": 2,
+          "end_page": 2,
+          "summary": "Donnelly lists what he means to prove: Plato's Atlantis was real history, the first civilised land and the source of Old and New World cultures, religions and alphabets, and it sank in a catastrophe. He argues the case through the book.",
+          "nodes": []
+        },
+        {
+          "node_id": "0004",
+          "title": "Part I Ch. II: Plato's History Of Atlantis (pdf 23-39)",
+          "start_page": 3,
+          "end_page": 4,
+          "summary": "Chapter in two leaves; see the leaves for what each covers.",
+          "nodes": [
+            {
+              "node_id": "0005",
+              "title": "Part I Ch. II (pdf 23-31): Plato's history of Atlantis (1 of 2): Solon, the priests of Sais, the island and its first kings",
+              "start_page": 3,
+              "end_page": 3,
+              "summary": "Donnelly introduces Solon, Plutarch and Plato, then quotes the Timaeus story of the priests of Sais and the Critias account of Poseidon's allotment, the plain, the hill and the ten sons, to the names of the third pair of twins.",
+              "nodes": []
+            },
+            {
+              "node_id": "0006",
+              "title": "Part I Ch. II (pdf 32-39): Plato's history of Atlantis (2 of 2): the later kings, the city, plain and army, to the break-off",
+              "start_page": 4,
+              "end_page": 4,
+              "summary": "The rest of Donnelly's quotation of the Critias: the remaining princes, the empire, the metals, the royal city and canal, the great plain and its ditch, the army, the ten kings' laws and their decline, ending with the abrupt break-off.",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "node_id": "0007",
+          "title": "Part I Ch. III (pdf 40-48): The probabilities of Plato's story",
+          "start_page": 5,
+          "end_page": 5,
+          "summary": "Donnelly argues that nothing in Plato's account is improbable for a rich, cultured people, comparing it with Herodotus on Egypt and Prescott on Peru. He then turns to whether a land could be swallowed by the sea.",
+          "nodes": []
+        },
+        {
+          "node_id": "0008",
+          "title": "Part I Ch. IV (pdf 49-63): Was such a catastrophe possible? Geology of rising and sinking land (1 of 2)",
+          "start_page": 6,
+          "end_page": 6,
+          "summary": "Donnelly argues from geology that land rises and falls: coal measures, volcanoes and earthquakes. He gives modern cases of land sinking under the sea, such as the Tomboro eruption on Sumbawa.",
+          "nodes": []
+        },
+        {
+          "node_id": "0009",
+          "title": "Part I Ch. V (pdf 64-71): The testimony of the sea: deep-sea soundings and the Azores plateau",
+          "start_page": 7,
+          "end_page": 7,
+          "summary": "Donnelly argues that deep-sea soundings (including the Challenger and Dolphin findings) show a raised plateau in the mid-Atlantic around the Azores. He reads it as what is left of Atlantis, and as confirming Plato's island beyond the Pillars of Hercules.",
+          "nodes": []
+        },
+        {
+          "node_id": "0010",
+          "title": "Part I Ch. VI (pdf 72-82): The testimony of the flora and fauna",
+          "start_page": 8,
+          "end_page": 8,
+          "summary": "Donnelly argues that plants and animals shared by Europe and America show there was once land between them. He discusses fossils, cultivated plants such as the banana and cereals, and tobacco.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0011",
+      "title": "Part II, The Deluge",
+      "start_page": 9,
+      "end_page": 15,
+      "summary": "Flood legends of the Bible, Chaldea, other nations and America, read as memories of the sinking of Atlantis.",
+      "nodes": [
+        {
+          "node_id": "0012",
+          "title": "Part II Ch. I (pdf 83-85): The destruction of Atlantis described in the Deluge legends",
+          "start_page": 9,
+          "end_page": 9,
+          "summary": "Having argued that Atlantis could have existed and sunk, Donnelly now reads the world's flood stories as memories of its destruction, noting that the Egyptians remembered many partial deluges and called this the great one.",
+          "nodes": []
+        },
+        {
+          "node_id": "0013",
+          "title": "Part II Ch. II (pdf 86-92): The Deluge of the Bible",
+          "start_page": 10,
+          "end_page": 10,
+          "summary": "Donnelly sets out the Genesis flood narrative (Genesis 6 to 8) and argues that the antediluvian world of the Bible was Atlantis.",
+          "nodes": []
+        },
+        {
+          "node_id": "0014",
+          "title": "Part II Ch. III (pdf 93-102): The Deluge of the Chaldeans",
+          "start_page": 11,
+          "end_page": 11,
+          "summary": "Two Chaldean flood stories are set out: the shorter one that Berosus took from the temple books of Babylon, and a second, longer version. Donnelly stresses their agreement with Genesis and reads the great water crossing as an ocean.",
+          "nodes": []
+        },
+        {
+          "node_id": "0015",
+          "title": "Part II Ch. IV (pdf 103-115): The Deluge legends of other nations",
+          "start_page": 12,
+          "end_page": 12,
+          "summary": "A collection of flood stories: Aramean (from Hierapolis), Hindu, Iranian, Greek and others. Donnelly argues they point to one catastrophe, and ends by comparing them with an Aztec \"crooked mountain\".",
+          "nodes": []
+        },
+        {
+          "node_id": "0016",
+          "title": "Part II Ch. V: The Deluge Legends Of America (pdf 116-136)",
+          "start_page": 13,
+          "end_page": 14,
+          "summary": "Chapter in two leaves; see the leaves for what each covers.",
+          "nodes": [
+            {
+              "node_id": "0017",
+              "title": "Part II Ch. V (pdf 116-126): The Deluge legends of America (1 of 2): Mexican and Central American flood stories",
+              "start_page": 13,
+              "end_page": 13,
+              "summary": "American flood legends are close to the Biblical and Chaldean ones, says Donnelly, quoting Maury. He reviews Mexican and Central American traditions that look east toward Atlantis for the home of their race.",
+              "nodes": []
+            },
+            {
+              "node_id": "0018",
+              "title": "Part II Ch. V (pdf 127-136): The Deluge legends of America (2 of 2): the rebellion, North American legends and Rafinesque",
+              "start_page": 14,
+              "end_page": 14,
+              "summary": "More American legends, including North American ones, a world-turtle and a rebellious subject race. Donnelly links the rebellion to the Greek Titans, and cites Rafinesque (1836).",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "node_id": "0019",
+          "title": "Part II Ch. VI (pdf 137-146): Some consideration of the Deluge legends: volcanoes, \"fountains of the deep\" and parallels",
+          "start_page": 15,
+          "end_page": 15,
+          "summary": "Donnelly argues that Atlantis, sitting on the volcanic ridge from Iceland to St Helena, must have had volcanoes. He cites mud-and-water floods such as Dominica's Boiling Lake and points out parallels among the legends.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0020",
+      "title": "Part III, The Civilization of the Old World and New Compared",
+      "start_page": 16,
+      "end_page": 27,
+      "summary": "Donnelly compares the arts, religion, customs, alphabets and bronze of the Old World and the New to argue for one source.",
+      "nodes": [
+        {
+          "node_id": "0021",
+          "title": "Part III Ch. I (pdf 147-153): Civilization an inheritance",
+          "start_page": 16,
+          "end_page": 16,
+          "summary": "Donnelly defines material civilisation as accumulated invention and argues that when two civilisations share the same arts, they must have a common source rather than independent invention.",
+          "nodes": []
+        },
+        {
+          "node_id": "0022",
+          "title": "Part III Ch. II: The Identity Of The Civilizations Of The Old World And The New (pdf 154-182)",
+          "start_page": 17,
+          "end_page": 18,
+          "summary": "Chapter in two leaves; see the leaves for what each covers.",
+          "nodes": [
+            {
+              "node_id": "0023",
+              "title": "Part III Ch. II (pdf 154-168): Identity of the civilizations of the Old World and the New (1 of 2): architecture, arts and religion",
+              "start_page": 17,
+              "end_page": 17,
+              "summary": "Starting from Plato's list of Atlantean arts, Donnelly sets Old and New World parallels: architecture, pyramids and mounds, the sciences, religion, and the Mexican fear that the world ends every fifty-two years.",
+              "nodes": []
+            },
+            {
+              "node_id": "0024",
+              "title": "Part III Ch. II (pdf 169-182): Identity of the civilizations of the Old World and the New (2 of 2): customs, sacrifice, weapons, folklore",
+              "start_page": 18,
+              "end_page": 18,
+              "summary": "Further Old-New World parallels: sacrifices, poisoned arrows, canoes, marriage rites and folk tales. Donnelly concludes that the whole correspondence points to one source.",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "node_id": "0025",
+          "title": "Part III Ch. III (pdf 183-188): American evidences of intercourse with Europe or Atlantis",
+          "start_page": 19,
+          "end_page": 19,
+          "summary": "Donnelly lists hints of contact: bearded figures on Central American monuments, eastern-origin traditions and Quetzalcoatl, and a Mexican picture of an elephant.",
+          "nodes": []
+        },
+        {
+          "node_id": "0026",
+          "title": "Part III Ch. IV (pdf 189-200): Corroborating circumstances",
+          "start_page": 20,
+          "end_page": 20,
+          "summary": "A list of further points. Donnelly cites Lenormant and Theopompus on the \"Meropes\" as the people of Atlantis, discusses the word Atlantic and uses names in Central American mythology as support.",
+          "nodes": []
+        },
+        {
+          "node_id": "0027",
+          "title": "Part III Ch. V (pdf 201-215): The question of complexion",
+          "start_page": 21,
+          "end_page": 21,
+          "summary": "Donnelly argues from race characteristics, skin colour and portraits that the world's peoples show a mixture of types, which he links to Atlantean origins.",
+          "nodes": []
+        },
+        {
+          "node_id": "0028",
+          "title": "Part III Ch. VI (pdf 216-231): Genesis contains a history of Atlantis",
+          "start_page": 22,
+          "end_page": 22,
+          "summary": "Donnelly reads Genesis as a compressed history of Atlantis and the Garden of Eden, with the serpent mound at Argyleshire and the one-God belief offered as Atlantean survivals.",
+          "nodes": []
+        },
+        {
+          "node_id": "0029",
+          "title": "Part III Ch. VII: The Origin Of Our Alphabet (pdf 232-254)",
+          "start_page": 23,
+          "end_page": 24,
+          "summary": "Chapter in two leaves; see the leaves for what each covers.",
+          "nodes": [
+            {
+              "node_id": "0030",
+              "title": "Part III Ch. VII (pdf 232-243): The origin of our alphabet (1 of 2): Phoenician letters and the Maya",
+              "start_page": 23,
+              "end_page": 23,
+              "summary": "Donnelly argues that the phonetic alphabet came from an Atlantean source. He compares Phoenician and other letter forms with Maya signs, to show the Maya form is the older.",
+              "nodes": []
+            },
+            {
+              "node_id": "0031",
+              "title": "Part III Ch. VII (pdf 244-254): The origin of our alphabet (2 of 2): letter comparisons and the \"antediluvian world\"",
+              "start_page": 24,
+              "end_page": 24,
+              "summary": "More letter comparisons (Egyptian, Ethiopian, Phoenician, Greek and Roman forms of Q and others) used to argue that the Phoenician alphabet descended from the Maya, and that the alphabet is antediluvian.",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "node_id": "0032",
+          "title": "Part III Ch. VIII: The Bronze Age In Europe (pdf 255-286)",
+          "start_page": 25,
+          "end_page": 26,
+          "summary": "Chapter in two leaves; see the leaves for what each covers.",
+          "nodes": [
+            {
+              "node_id": "0033",
+              "title": "Part III Ch. VIII (pdf 255-270): The Bronze Age in Europe (1 of 2): the three ages and the invention of bronze",
+              "start_page": 25,
+              "end_page": 25,
+              "summary": "Donnelly sets out Europe's Stone, Bronze and Iron Ages and argues that the Bronze Age appeared suddenly, needing the discovery of copper and tin and their alloy.",
+              "nodes": []
+            },
+            {
+              "node_id": "0034",
+              "title": "Part III Ch. VIII (pdf 271-286): The Bronze Age in Europe (2 of 2): Atlantean origin of the bronze implements",
+              "start_page": 26,
+              "end_page": 26,
+              "summary": "Donnelly tests whether Europe's bronze came from the Phoenicians, Greeks, Etruscans or Romans, argues it did not, and points to an older source. The leaf ends as he turns to skull deformation.",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "node_id": "0035",
+          "title": "Part III Ch. IX (pdf 287-293): Artificial deformation of the skull",
+          "start_page": 27,
+          "end_page": 27,
+          "summary": "Donnelly argues that the practice of shaping infant skulls, found in Europe and America, is further proof of ancient connection between the continents.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0036",
+      "title": "Part IV, The Mythologies of the Old World",
+      "start_page": 28,
+      "end_page": 35,
+      "summary": "Donnelly reads myths of the Greeks, Phoenicians and Norse as memories of Atlantean kings, with chapters on the pyramid and the sacred metals.",
+      "nodes": [
+        {
+          "node_id": "0037",
+          "title": "Part IV Ch. I (pdf 294-300): Traditions of Atlantis",
+          "start_page": 28,
+          "end_page": 28,
+          "summary": "Allusions to Atlantis in ancient traditions: Arabian Ad, the Hebrews, the Ethiopians, the Mexicans and Central Americans, which Donnelly reads as memories of \"Ad-lantis\".",
+          "nodes": []
+        },
+        {
+          "node_id": "0038",
+          "title": "Part IV Ch. II: The Kings Of Atlantis Become The Gods Of The Greeks (pdf 301-325)",
+          "start_page": 29,
+          "end_page": 30,
+          "summary": "Chapter in two leaves; see the leaves for what each covers.",
+          "nodes": [
+            {
+              "node_id": "0039",
+              "title": "Part IV Ch. II (pdf 301-313): The kings of Atlantis become the gods of the Greeks (1 of 2)",
+              "start_page": 29,
+              "end_page": 29,
+              "summary": "Starting from Bacon's remark that Greek myth echoes an older people, Donnelly argues that the Greek gods, such as Poseidon and Zeus, were Atlantean kings and heroes.",
+              "nodes": []
+            },
+            {
+              "node_id": "0040",
+              "title": "Part IV Ch. II (pdf 314-325): The kings of Atlantis become the gods of the Greeks (2 of 2): the underworld in the far west",
+              "start_page": 30,
+              "end_page": 30,
+              "summary": "Donnelly reads Pluto's kingdom and the Greek \"under-world\" as the western lands of Atlantis, and sees the Greek myths as a confused history of one empire spanning Europe, Asia, Africa and America.",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "node_id": "0041",
+          "title": "Part IV Ch. III (pdf 326-330): The gods of the Phoenicians also kings of Atlantis",
+          "start_page": 31,
+          "end_page": 31,
+          "summary": "Donnelly argues the Phoenician cosmogony and its gods, such as the Titans, come from the same Atlantean source as the Greek ones.",
+          "nodes": []
+        },
+        {
+          "node_id": "0042",
+          "title": "Part IV Ch. IV (pdf 331-334): The god Odin, Woden or Wotan",
+          "start_page": 32,
+          "end_page": 32,
+          "summary": "The Norse god Odin is likened to Zeus and his home Asgard to Olympus. Donnelly reads him as one of the Atlantean kings made a god, and ties the Norse to peoples of the Near East.",
+          "nodes": []
+        },
+        {
+          "node_id": "0043",
+          "title": "Part IV Ch. V: The Pyramid, The Cross, And The Garden Of Eden (pdf 335-360)",
+          "start_page": 33,
+          "end_page": 34,
+          "summary": "Chapter in two leaves; see the leaves for what each covers.",
+          "nodes": [
+            {
+              "node_id": "0044",
+              "title": "Part IV Ch. V (pdf 335-347): The Pyramid, the Cross and the Garden of Eden (1 of 2): the cross and the sacred symbols",
+              "start_page": 33,
+              "end_page": 33,
+              "summary": "The cross as an ancient sacred sign, and pyramids as Atlantean temple-tombs; Donnelly goes on to the Garden of Eden and the Phoenician figures in Genesis and Sanchoniathon.",
+              "nodes": []
+            },
+            {
+              "node_id": "0045",
+              "title": "Part IV Ch. V (pdf 348-360): The Pyramid, the Cross and the Garden of Eden (2 of 2): Egyptian and American pyramids",
+              "start_page": 34,
+              "end_page": 34,
+              "summary": "Donnelly compares pyramids in Egypt and America, and argues the shared forms are not independent invention but a shared Atlantean origin.",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "node_id": "0046",
+          "title": "Part IV Ch. VI (pdf 361-365): Gold and silver, the sacred metals of Atlantis",
+          "start_page": 35,
+          "end_page": 35,
+          "summary": "Money, gold and silver as sacred metals in ancient cultures. Donnelly argues that the reverence for them is an Atlantean inheritance.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0047",
+      "title": "Part V, The Colonies of Atlantis",
+      "start_page": 36,
+      "end_page": 48,
+      "summary": "Donnelly's account of Atlantean colonies in Mexico, Egypt, the Mississippi Valley, Spain, Peru, Africa and Ireland, and his closing reconstruction.",
+      "nodes": [
+        {
+          "node_id": "0048",
+          "title": "Part V Ch. I (pdf 366-375): The Central American and Mexican colonies",
+          "start_page": 36,
+          "end_page": 36,
+          "summary": "Donnelly argues that the western shores of Atlantis lay near the West Indies, so settlement of Central America and Mexico is natural. He describes Aztec and Maya achievements and their decline.",
+          "nodes": []
+        },
+        {
+          "node_id": "0049",
+          "title": "Part V Ch. II (pdf 376-387): The Egyptian colony",
+          "start_page": 37,
+          "end_page": 37,
+          "summary": "Donnelly argues that Egypt was an Atlantean colony, citing its twelve gods, Phoenician tradition and the long span of time.",
+          "nodes": []
+        },
+        {
+          "node_id": "0050",
+          "title": "Part V Ch. III: The Colonies Of The Mississippi Valley (pdf 388-404)",
+          "start_page": 38,
+          "end_page": 39,
+          "summary": "Chapter in two leaves; see the leaves for what each covers.",
+          "nodes": [
+            {
+              "node_id": "0051",
+              "title": "Part V Ch. III (pdf 388-396): The colonies of the Mississippi Valley (1 of 2): the Mound Builders",
+              "start_page": 38,
+              "end_page": 38,
+              "summary": "Donnelly proposes that a maritime people planted colonies on the Gulf of Mexico and up the Mississippi. He describes the mounds, their builders and relics.",
+              "nodes": []
+            },
+            {
+              "node_id": "0052",
+              "title": "Part V Ch. III (pdf 397-404): The colonies of the Mississippi Valley (2 of 2): Mound Builder relics and signs",
+              "start_page": 39,
+              "end_page": 39,
+              "summary": "More Mound Builder finds, including turned beads and shell work, and the tablets and carved signs Donnelly compares with Old World forms.",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "node_id": "0053",
+          "title": "Part V Ch. IV (pdf 405-407): The Iberian colonies of Atlantis",
+          "start_page": 40,
+          "end_page": 40,
+          "summary": "Donnelly argues that the ancient Iberians of Spain and southern Gaul were from Atlantis and north-west Africa, citing Winchell and the sea-bed ridge that he thinks joined Africa to Atlantis.",
+          "nodes": []
+        },
+        {
+          "node_id": "0054",
+          "title": "Part V Ch. V (pdf 408-421): The Peruvian colony",
+          "start_page": 41,
+          "end_page": 41,
+          "summary": "Donnelly reasons that the Atlantean ridge came close to South America, so Atlanteans could sail up the Amazon and found the Andean nations. He compares Peruvian and Old World customs.",
+          "nodes": []
+        },
+        {
+          "node_id": "0055",
+          "title": "Part V Ch. VI (pdf 422-425): The African colonies",
+          "start_page": 42,
+          "end_page": 42,
+          "summary": "Donnelly argues that African peoples show a mixing of stocks and that dolmen-builders in Africa were Atlantean colonists of three races.",
+          "nodes": []
+        },
+        {
+          "node_id": "0056",
+          "title": "Part V Ch. VII (pdf 426-440): The Irish colonies from Atlantis",
+          "start_page": 43,
+          "end_page": 43,
+          "summary": "Donnelly uses Irish annals, customs and folklore, and likenesses with Hindu practice, to argue that Ireland was settled from Atlantis.",
+          "nodes": []
+        },
+        {
+          "node_id": "0057",
+          "title": "Part V Ch. VIII: The Oldest Son Of Noah (pdf 441-457)",
+          "start_page": 44,
+          "end_page": 45,
+          "summary": "Chapter in two leaves; see the leaves for what each covers.",
+          "nodes": [
+            {
+              "node_id": "0058",
+              "title": "Part V Ch. VIII (pdf 441-449): The oldest son of Noah (1 of 2): Max Müller's three language families",
+              "start_page": 44,
+              "end_page": 44,
+              "summary": "Donnelly takes Max Müller's three language families (Aryan, Semitic, Turanian) and links them to the sons of Noah and Atlantis, citing Chinese flood traditions.",
+              "nodes": []
+            },
+            {
+              "node_id": "0059",
+              "title": "Part V Ch. VIII (pdf 450-457): The oldest son of Noah (2 of 2): Chinese, Chaldean and the three waves from Atlantis",
+              "start_page": 45,
+              "end_page": 45,
+              "summary": "Donnelly cites Terrien de la Couperie on the link between Chinese and Chaldean and concludes that the Turanian, Hamitic and Japhetic peoples came out of Atlantis in successive waves.",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "node_id": "0060",
+          "title": "Part V Ch. IX (pdf 458-473): The antiquity of some of our great inventions",
+          "start_page": 46,
+          "end_page": 46,
+          "summary": "Donnelly argues the mariner's compass, gunpowder and other inventions may be very old, and that behind Egypt, Greece, Chaldea and China stood a great civilisation of which these were fragments.",
+          "nodes": []
+        },
+        {
+          "node_id": "0061",
+          "title": "Part V Ch. X (pdf 474-489): The Aryan colonies from Atlantis",
+          "start_page": 47,
+          "end_page": 47,
+          "summary": "Donnelly argues the Aryan or Japhetic peoples came from Atlantis, tracing the Saturnalia, the Eleusinian mysteries and Poseidon's cults to Atlantean harvest rites.",
+          "nodes": []
+        },
+        {
+          "node_id": "0062",
+          "title": "Part V Ch. XI (pdf 490-504): Atlantis reconstructed",
+          "start_page": 48,
+          "end_page": 48,
+          "summary": "Donnelly's closing summary of the Atlantis he argues for: its customs, plough, domestic animals and arts, and a last reflection on how little we yet know of the past. The last pages are mostly blank.",
+          "nodes": []
+        }
+      ]
+    }
+  ]
+}

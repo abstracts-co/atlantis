@@ -1,0 +1,74 @@
+{
+  "id": "proclus-commentary-timaeus-taylor",
+  "title": "Proclus, Commentary on the Timaeus: the Atlantis passages (English, Thomas Taylor, 1820)",
+  "source": {
+    "url": "https://archive.org/details/proclusontimaeus01procuoft",
+    "publisher": "Internet Archive (University of Toronto scan of Taylor's translation, vol. 1, London 1820)",
+    "date": "1820",
+    "pages": 6,
+    "file": "work/ia/proclusontimaeus01procuoft.txt",
+    "sha256": "732e1a076e2e4484b27059a36ef2810c2d4470c7f5f7ac37f88c6288a83c5eba",
+    "license": "Public domain (Taylor died 1835; 1820 edition)",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "language": "en",
+  "kind": "ancient-text",
+  "summary": "Proclus (5th century CE) is the main ancient commentator on the Atlantis story. He reports Crantor's view that it was history, other readers' allegories, and Marcellus on the islands of the outer sea. In Taylor's Victorian-era English; check against Diehl's Greek for precision.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "Hand-built tree. The passage was cut from the source file by its own section anchors or line range; one leaf per passage, titled with the citation. No language model was used. The OCR is rough in places; Greek words and some names are garbled."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Proclus, Commentary on the Timaeus, on Atlantis (Taylor vol. 1, pp. 64-65): history, fable or image? Crantor and the later readings",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "Proclus lists how earlier readers took the Atlantis story. Crantor, Plato's first interpreter, said it was history and cited Egyptian pillars. Others call it a fable, or an allegory of stars, daemons or souls (Amelius, Origen, Numenius, Porphyry). Iamblichus and Syrianus accept it as history with a wider meaning.",
+      "nodes": []
+    },
+    {
+      "node_id": "0002",
+      "title": "Proclus, Commentary on the Timaeus, on 24e (Taylor vol. 1, pp. 145-147): the Atlantic war as the war of the Olympian gods and the Titans",
+      "start_page": 2,
+      "end_page": 2,
+      "summary": "Proclus reads the war of Athens and Atlantis as an image of a cosmic war: the Athenians stand for Athena and the Olympians, the Atlantics for the Titans and Giants, since Atlas was a Titan. He argues for the wider meaning without denying the history.",
+      "nodes": []
+    },
+    {
+      "node_id": "0003",
+      "title": "Proclus, Commentary on the Timaeus, on 24e-25a (Taylor vol. 1, pp. 148-151): the Atlantic sea as matter; Marcellus on the islands of the outer sea",
+      "start_page": 3,
+      "end_page": 3,
+      "summary": "Proclus takes the Atlantic sea as a sign of matter. He then quotes Marcellus's Ethiopic History: seven islands sacred to Persephone and three huge ones sacred to Pluto, Ammon and Poseidon, whose people kept a memory of a great Atlantic island that once ruled the others.",
+      "nodes": []
+    },
+    {
+      "node_id": "0004",
+      "title": "Proclus, Commentary on the Timaeus, on 25a-25c (Taylor vol. 1, pp. 151-155): the confederation of kings, the Atlantic mountain and the war",
+      "start_page": 4,
+      "end_page": 4,
+      "summary": "Commentary on Plato's \"in this Atlantic island there was a combination of kings\" who ruled the island, other islands and Libya to Egypt. Proclus also mentions the very high Atlantic mountain, and reads the empire and the Athenian resistance as images of cosmic powers while treating the account as an event.",
+      "nodes": []
+    },
+    {
+      "node_id": "0005",
+      "title": "Proclus, Commentary on the Timaeus, on 25c-25d (Taylor vol. 1, pp. 156-158): Athens's pre-eminence, then the sinking in one day and night",
+      "start_page": 5,
+      "end_page": 5,
+      "summary": "Proclus comments word by word on Athens leading the Greeks or standing alone. He then quotes Plato's account of the earthquake and flood that swallowed the Athenian army and Atlantis in one dreadful day and night, leaving the sea impassable, and gives a cosmic reading of the sinking.",
+      "nodes": []
+    },
+    {
+      "node_id": "0006",
+      "title": "Proclus, Commentary on the Timaeus, on 25d (Taylor vol. 1, pp. 159-160): the impassable mud, Tartarus and the Phaedo",
+      "start_page": 6,
+      "end_page": 6,
+      "summary": "Proclus continues his reading of the sunken island. He holds that the powers completing the world reach down to its last parts, leaving an impassable sea of mud that he compares with the mud of the underworld in Plato's Phaedo. Mostly Neoplatonic metaphysics.",
+      "nodes": []
+    }
+  ]
+}

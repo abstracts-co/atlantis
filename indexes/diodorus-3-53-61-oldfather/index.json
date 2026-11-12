@@ -1,0 +1,66 @@
+{
+  "id": "diodorus-3-53-61-oldfather",
+  "title": "Diodorus Siculus, Library of History 3.53-3.61 (English, C. H. Oldfather, Loeb, 1935)",
+  "source": {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/3D*.html",
+    "publisher": "LacusCurtius (Bill Thayer), from the Loeb Classical Library vol. II (1935)",
+    "date": "1935",
+    "pages": 5,
+    "file": "work/lc/dio3D.html",
+    "sha256": "a9de7778a9cb0c6ab357ef722b661e9a41ccafcbb0798a327f904ce3165ac22f",
+    "license": "Public domain (the host states \"The text is in the public domain\"; Loeb 1935, US renewal not checked by me)",
+    "license_url": "https://penelope.uchicago.edu/Thayer/E/HELP/Copyright/home.html"
+  },
+  "language": "en",
+  "kind": "ancient-text",
+  "summary": "Diodorus (1st century BCE) on the \"Atlantians\" of north-west Africa: a people on the ocean shore with their own myths of the gods. A different, mythical Atlas from Plato's Atlantis, but one that later writers drew on.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "Hand-built tree. The passage was cut from the source file by its own section anchors or line range; one leaf per passage, titled with the citation. No language model was used."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Diodorus Siculus 3.53-3.55: the Amazons of western Libya",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "Diodorus reports a tradition of a people on the western edge of Libya ruled by women, who serve as soldiers. Their queen Myrina leads them against the Atlantians, the Gorgons and others, near Lake Tritonis. He gives it as a story told, not as his own finding.",
+      "nodes": []
+    },
+    {
+      "node_id": "0002",
+      "title": "Diodorus Siculus 3.56-3.57: the Atlantians and their myth of the gods",
+      "start_page": 2,
+      "end_page": 2,
+      "summary": "Diodorus describes the Atlantians as a pious, hospitable people on the shore of the ocean, who say the gods were born among them. Their first king Uranus civilised them and ruled the west and north. His forty-five sons include the Titans.",
+      "nodes": []
+    },
+    {
+      "node_id": "0003",
+      "title": "Diodorus Siculus 3.58-3.59: the Great Mother and the story of Attis",
+      "start_page": 3,
+      "end_page": 3,
+      "summary": "A Phrygian variant of the myth of the Great Mother (Cybele): the foundling Cybele, her lover Attis and the king Meion's anger. The passage is background to the Titans story and has no direct bearing on Atlantis.",
+      "nodes": []
+    },
+    {
+      "node_id": "0004",
+      "title": "Diodorus Siculus 3.60: Atlas, Hesperus and the Atlantides",
+      "start_page": 4,
+      "end_page": 4,
+      "summary": "Atlas, a son of Uranus, takes the coast of the ocean, and the Atlantians and Mount Atlas are named for him. He is credited with the doctrine of the sphere. His son Hesperus is snatched away on the mountain and honoured as a star. His daughters, the Atlantides, bear many heroes and become the Pleiades.",
+      "nodes": []
+    },
+    {
+      "node_id": "0005",
+      "title": "Diodorus Siculus 3.61: Cronus, Zeus and the end of the Titans",
+      "start_page": 5,
+      "end_page": 5,
+      "summary": "Cronus marries Rhea and has Zeus the Olympian, who is distinguished from an earlier Cretan Zeus. The later Zeus becomes lord of the whole world. Diodorus closes his summary of what the Atlantians teach about the gods.",
+      "nodes": []
+    }
+  ]
+}

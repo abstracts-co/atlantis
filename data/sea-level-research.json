@@ -1,0 +1,3638 @@
+{
+  "lane": "drowned-lands",
+  "checked": "2026-11-11",
+  "entries": [
+    {
+      "kind": "paper",
+      "who": [
+        "Kurt Lambeck",
+        "Hélène Rouby",
+        "Anthony Purcell",
+        "Yiying Sun",
+        "Malcolm Sambridge"
+      ],
+      "year": 2014,
+      "date": null,
+      "region": {
+        "name": "Global ocean",
+        "bbox": null
+      },
+      "topic": [
+        "sea-level",
+        "glacial-isostatic-adjustment",
+        "last-glacial-maximum",
+        "meltwater-pulse"
+      ],
+      "summary": "Builds a curve of ice-volume equivalent sea level (the sea level you would get if only the change in ice volume mattered) from far-field coral and sediment records, corrected for the way the Earth deforms under ice and water. Puts the low point at about 134 m below today, 29 to 21 thousand years ago, and says the main melt ran from about 16.5 to 8.2 thousand years ago at about 12 m per thousand years on average.",
+      "method": "Far-field sea-level data (Barbados, Sunda Shelf, Tahiti, Huon Peninsula, Great Barrier Reef, East China Sea, Maldives and others) inverted with glacial-isostatic-adjustment models to separate ice volume from local land movement.",
+      "data": [
+        {
+          "name": "Individual esl estimates and denoised series (in the paper and SI Appendix)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217469/",
+          "open": true,
+          "licence": "free PMC copy; licence not read",
+          "in_our_catalogue": null
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "Global (ice-equivalent) sea level reached about -134 m between 29 and 21 thousand years ago.",
+          "status": "peer-reviewed",
+          "evidence": "a slow fall to −134 m from 29 to 21 ka BP with a maximum grounded ice volume of ∼52 × 10 6 km 3 greater than today",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217469/"
+        },
+        {
+          "text": "Meltwater pulse 1A at 14.5 to 14.0 thousand years ago raised sea level at 40 mm per year or more (about 20 m in about 500 years).",
+          "status": "peer-reviewed",
+          "evidence": "the globally averaged rise in sea level of ∼20 m occurs at a rate of ∼40 mm⋅y −1 or greater",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217469/"
+        },
+        {
+          "text": "There is no evidence for a global meltwater pulse 1B at about 11.3 thousand years ago.",
+          "status": "peer-reviewed",
+          "evidence": "no evidence for a global MWP-1B event at ∼11.3 ka BP",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217469/"
+        },
+        {
+          "text": "The commonly cited -125 m is lower in magnitude because it is based on observations not corrected for isostatic effects.",
+          "status": "peer-reviewed",
+          "evidence": "This is greater than the frequently cited −125 m (e.g., 24 , 80 ) that is usually based on observations uncorrected for isostatic effects.",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217469/"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "atlantis",
+        "doggerland",
+        "sundaland",
+        "beringia"
+      ],
+      "overlaps": [
+        {
+          "with": "our-globe-sea-level-presets",
+          "how": "same data"
+        },
+        {
+          "with": "spratt-lisiecki-2016-stack",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "gowan-2021-paleomist",
+          "about": "size of the ice-age sea-level fall",
+          "detail": "Lambeck and others: -130 to -135 m, 53 million km3 of extra ice. PaleoMIST 1.0 (Gowan and others): -116 m, 42.2 million km3. The Gowan paper states both numbers."
+        },
+        {
+          "with": "yokoyama-2018-two-step-lgm",
+          "about": "low point of the ice age",
+          "detail": "Lambeck: -134 m (29 to 21 ka). Yokoyama and others, using glacio-isostatic models on Great Barrier Reef corals: -125 to -130 m at about 20.5 ka."
+        },
+        {
+          "with": "abdul-2016-barbados-mwp1b",
+          "about": "whether meltwater pulse 1B happened",
+          "detail": "Lambeck: none visible in the global composite, only a slightly higher rate (about 16.5 mm per year for 500 years). Abdul and others: a 14 +/- 2 m rise at Barbados from 11.45 to 11.1 ka."
+        },
+        {
+          "with": "liu-2016-mwp1a-amplitude",
+          "about": "size of meltwater pulse 1A",
+          "detail": "Lambeck: about 20 m globally in about 500 years. Liu and others: roughly 8 to 15 m in total."
+        }
+      ],
+      "why_it_matters": "This is the source of our -134 m. Its figure is a global ice-volume number, not the level at any one coast, and it gives rates, not levels, for 14,500 and 11,400 years ago, so our -95 m and -60 m are our own sums and need checking against its supporting data.",
+      "sources": [
+        {
+          "title": "Lambeck and others, PNAS 111(43), 2014 (PMC full text)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217469/"
+        },
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.1073/pnas.1411762111"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Fetched the open PMC copy and read the abstract, the discussion points (i) to (xi) and the reference list. The text gives no table of levels at 14.5 and 11.4 ka; those would come from the paper's SI dataset, which I did not open. The paper uses the term \"esl\"; local relative sea level differs from it, which the paper says itself.",
+      "id": "lambeck-2014-esl",
+      "title": "Sea level and global ice volumes from the Last Glacial Maximum to the Holocene"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Y. Yokoyama",
+        "T. M. Esat",
+        "W. G. Thompson and others"
+      ],
+      "year": 2018,
+      "date": null,
+      "region": {
+        "name": "Great Barrier Reef shelf edge, Australia (site), global result",
+        "bbox": null
+      },
+      "topic": [
+        "sea-level",
+        "last-glacial-maximum",
+        "coral"
+      ],
+      "summary": "Dated fossil corals and coralline algae from the shelf edge of the Great Barrier Reef. Finds relative sea level there fell about 20 m between 21,900 and 20,500 years ago, to -118 m, and uses glacio-isostatic models to turn that into a global low of about -125 to -130 m.",
+      "method": "Radiometric (U-Th and radiocarbon) dating of drilled reef material; glacio-isostatic modelling to get from local relative sea level to global mean sea level.",
+      "data": [
+        {
+          "name": "Supplementary data: radiocarbon and U-Th ages and GMSL used (XLSX on the Nature page)",
+          "url": "https://www.nature.com/articles/s41586-018-0335-4",
+          "open": false,
+          "licence": "Nature (paywalled article; supplementary file link on page)",
+          "in_our_catalogue": null
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "Relative sea level at the Great Barrier Reef shelf edge dropped about 20 m between 21,900 and 20,500 years ago, to -118 m.",
+          "status": "peer-reviewed",
+          "evidence": "sea level at the shelf edge of the Great Barrier Reef dropped by around 20 metres between 21,900 and 20,500 years ago, to −118 metres relative to the modern level",
+          "source": "https://www.nature.com/articles/s41586-018-0335-4"
+        },
+        {
+          "text": "The global low was about -125 to -130 m at about 20,500 years ago.",
+          "status": "peer-reviewed",
+          "evidence": "the Last Glacial Maximum culminated 20,500 years ago in a GMSL low of about −125 to −130 metres",
+          "source": "https://www.nature.com/articles/s41586-018-0335-4"
+        },
+        {
+          "text": "Relative sea level can differ greatly from the global mean.",
+          "status": "peer-reviewed",
+          "evidence": "Relative sea level can be influenced by Earth’s response to regional changes in ice and water loadings and may differ greatly from GMSL.",
+          "source": "https://www.nature.com/articles/s41586-018-0335-4"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "lambeck-2014-esl",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "lambeck-2014-esl",
+          "about": "low point of the ice age",
+          "detail": "Yokoyama: global -125 to -130 m at about 20.5 ka; local -118 m at the Great Barrier Reef. Lambeck: -134 m. The authors give the local figure and the global figure separately, which is the gap our single number hides."
+        }
+      ],
+      "why_it_matters": "A clean statement from the authors that the local sea level at one coast (-118 m) and the global figure (-125 to -130 m) are different quantities; supports labelling our -134 m as a global figure with a likely range of 10 m or more.",
+      "sources": [
+        {
+          "title": "Yokoyama and others, Nature 559, 2018 (abstract page)",
+          "url": "https://www.nature.com/articles/s41586-018-0335-4"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Abstract and reference list read; the full text is behind a paywall.",
+      "id": "yokoyama-2018-two-step-lgm",
+      "title": "Rapid glaciation and a two-step sea level plunge into the Last Glacial Maximum"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "R. M. Spratt",
+        "L. E. Lisiecki"
+      ],
+      "year": 2016,
+      "date": "2016-04-26",
+      "region": {
+        "name": "Global ocean",
+        "bbox": null
+      },
+      "topic": [
+        "sea-level",
+        "oxygen-isotopes",
+        "uncertainty"
+      ],
+      "summary": "Averages seven deep-sea oxygen-isotope sea-level records by principal component analysis into one 430,000-year curve (five records back to 798,000 years). Scales it to a last-ice-age low of -130 m and gives an uncertainty of 9 to 12 m (1 sigma). It is a global curve from sediment cores, not from coasts.",
+      "method": "Principal component analysis of benthic and planktonic isotope-based sea-level reconstructions; scaled to a GIA-corrected coral value at 24 ka and 0 m at 5 ka; bootstrap uncertainty.",
+      "data": [
+        {
+          "name": "Sea level stack (supplement and NOAA/PANGAEA listing on the journal page)",
+          "url": "https://cp.copernicus.org/articles/12/1079/2016/",
+          "open": true,
+          "licence": "CC BY 3.0 (Copernicus; not read on the page)",
+          "in_our_catalogue": null
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "The stack is scaled to -130 m at 24 ka, taken from a GIA-corrected coral compilation.",
+          "status": "peer-reviewed",
+          "evidence": "We scaled the short and long stacks to eustatic sea level using an LGM value of - 130 m at 24 ka based on a GIA-corrected coral compilation (Clark et al., 2009) and a Holocene value of 0 m at 5 ka .",
+          "source": "https://cp.copernicus.org/articles/12/1079/2016/cp-12-1079-2016.xml"
+        },
+        {
+          "text": "GIA models give -130 to -134 m for the ice-age low.",
+          "status": "peer-reviewed",
+          "evidence": "GIA models constrained by these coastal indicators provide robust sea level change estimates of - 130 to - 134 m for the LGM (Clark et al., 2009; Lambeck et al., 2014).",
+          "source": "https://cp.copernicus.org/articles/12/1079/2016/cp-12-1079-2016.xml"
+        },
+        {
+          "text": "Uncertainty of the scaled stack is 9 to 12 m (1 sigma).",
+          "status": "peer-reviewed",
+          "evidence": "Bootstrapping and random sampling yield mean uncertainty estimates of 9–12 m (1 σ ) for the scaled stack.",
+          "source": "https://cp.copernicus.org/articles/12/1079/2016/"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "lambeck-2014-esl",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "Gives an independent -130 m and an honest error bar (9 to 12 m) to put beside our -134 m; the scaling is not independent of Lambeck, since it uses the same coral-based value.",
+      "sources": [
+        {
+          "title": "Spratt and Lisiecki, Climate of the Past 12, 2016",
+          "url": "https://cp.copernicus.org/articles/12/1079/2016/"
+        },
+        {
+          "title": "Full-text XML",
+          "url": "https://cp.copernicus.org/articles/12/1079/2016/cp-12-1079-2016.xml"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Read the abstract and the full-text XML. Not a coast-by-coast reconstruction.",
+      "id": "spratt-lisiecki-2016-stack",
+      "title": "A Late Pleistocene sea level stack"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Richard G. Fairbanks (1989)",
+        "Edouard Bard, Bruno Hamelin, Richard G. Fairbanks (1990)"
+      ],
+      "year": 1989,
+      "date": null,
+      "region": {
+        "name": "Barbados, Caribbean",
+        "bbox": [
+          -59.7,
+          13,
+          -59.4,
+          13.4
+        ]
+      },
+      "topic": [
+        "sea-level",
+        "coral",
+        "meltwater-pulse",
+        "barbados"
+      ],
+      "summary": "Drilled Acropora palmata coral off Barbados and gave the first continuous record of sea level through the last melt. Put the ice-age low at 121 +/- 5 m below present and found two intervals of rapid rise, later called meltwater pulses 1A and 1B. In 1990 Bard, Hamelin and Fairbanks re-dated the corals by uranium-thorium and put the pulses at about 14 and 11 thousand years ago.",
+      "method": "Radiocarbon dating of drilled reef-crest corals (Fairbanks 1989); thermal-ionization U-Th dating (Bard and others 1990).",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Sea level was 121 +/- 5 m below present at the last glacial maximum, with two rapid-rise intervals.",
+          "status": "peer-reviewed",
+          "evidence": "The sea level was 121 ± 5 metres below present level during the last glacial maximum. The deglacial sea level rise was not monotonic; rather, it was marked by two intervals of rapid rise.",
+          "source": "https://www.nature.com/articles/342637a0"
+        },
+        {
+          "text": "U-Th dating confirmed two melt-water surges at about 11 and 14 thousand years BP and moved the start of the last deglaciation 3,000 years earlier.",
+          "status": "peer-reviewed",
+          "evidence": "we conclude that the last deglaciation started 3,000 years earlier than previously thought and confirm that there were two surges in melt water 8 at about 11 kyr and 14 kyr BP (before present)",
+          "source": "https://www.nature.com/articles/346456a0"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [],
+      "contradicts": [
+        {
+          "with": "lambeck-2014-esl",
+          "about": "low point of the ice age",
+          "detail": "Fairbanks 1989: 121 +/- 5 m below present (a Barbados relative figure). Lambeck 2014: -134 m global after isostatic correction, saying -125 m figures are uncorrected."
+        },
+        {
+          "with": "bard-2010-tahiti-mwp1b",
+          "about": "whether meltwater pulse 1B happened",
+          "detail": "Fairbanks 1989 and Bard 1990 (both Barbados): two surges, at about 14 and 11 ka. Bard and others 2010 (Tahiti): no significant discontinuity in the 1B period."
+        }
+      ],
+      "why_it_matters": "The most-cited older coral number (-121 m) and the origin of the \"meltwater pulse\" idea; explains why people quote -120 to -125 m and why those differ from -134 m.",
+      "sources": [
+        {
+          "title": "Fairbanks, Nature 342, 1989 (abstract page)",
+          "url": "https://www.nature.com/articles/342637a0"
+        },
+        {
+          "title": "Bard, Hamelin, Fairbanks, Nature 346, 1990 (abstract page)",
+          "url": "https://www.nature.com/articles/346456a0"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Only the abstract pages were read; both papers are paywalled.  Author names are as cited in the Lambeck 2014 reference list (Fairbanks RG 1989; Bard E, Hamelin B, Fairbanks RG 1990).",
+      "id": "fairbanks-1989-barbados",
+      "title": "A 17,000-year glacio-eustatic sea level record (Barbados corals)"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "P. Deschamps and others"
+      ],
+      "year": 2012,
+      "date": null,
+      "region": {
+        "name": "Tahiti, French Polynesia",
+        "bbox": [
+          -149.7,
+          -17.9,
+          -149.1,
+          -17.4
+        ]
+      },
+      "topic": [
+        "sea-level",
+        "meltwater-pulse",
+        "coral",
+        "tahiti"
+      ],
+      "summary": "Cores drilled offshore Tahiti (IODP Expedition 310) show meltwater pulse 1A started no earlier than 14,650 years ago and ended before 14,310 years ago. The rise at Tahiti was 12 to 22 m, most probably 14 to 18 m, which implies a global rate above 40 mm per year and a Southern Hemisphere source.",
+      "method": "U-Th dated corals from IODP Expedition 310 boreholes off Tahiti.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "MWP-1A began no earlier than 14,650 years ago and ended before 14,310 years ago, with a rise at Tahiti of 12 to 22 m (most probably 14 to 18 m).",
+          "status": "peer-reviewed",
+          "evidence": "MWP-1A started no earlier than 14,650 years ago and ended before 14,310 years ago... the increase in sea level at Tahiti was between 12 and 22 metres, with a most probable value between 14 and 18 metres",
+          "source": "https://www.nature.com/articles/nature10902"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "lambeck-2014-esl",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "liu-2016-mwp1a-amplitude",
+          "about": "size of meltwater pulse 1A",
+          "detail": "Deschamps: 12 to 22 m at Tahiti, 14 to 18 m most probable. Liu and others: 8 to 15 m in total once isostatic adjustment is reassessed."
+        },
+        {
+          "with": "hanebuth-2000-sunda-flooding",
+          "about": "size and timing of meltwater pulse 1A",
+          "detail": "Deschamps: 14,650 to 14,310 years ago, 12 to 22 m. Hanebuth: up to 16 m in 300 years, 14.6 to 14.3 thousand years ago, on the Sunda Shelf."
+        }
+      ],
+      "why_it_matters": "Sets the window for the fast rise our \"14,500 years ago\" preset sits on the edge of: the sea rose 14 to 18 m in under 350 years there, so -95 m is only right on one side of that date.",
+      "sources": [
+        {
+          "title": "Deschamps and others, Nature 483, 2012 (abstract page)",
+          "url": "https://www.nature.com/articles/nature10902"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Abstract read; paywalled.  Authors: cited as \"Deschamps P, et al.\" in Lambeck 2014; the page text I read did not list them.",
+      "id": "deschamps-2012-mwp1a-tahiti",
+      "title": "Ice-sheet collapse and sea-level rise at the Bølling warming 14,600 years ago"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Liu",
+        "Milne",
+        "Kopp",
+        "Clark",
+        "Shennan"
+      ],
+      "year": 2016,
+      "date": null,
+      "region": {
+        "name": "Global ocean",
+        "bbox": null
+      },
+      "topic": [
+        "sea-level",
+        "meltwater-pulse",
+        "glacial-isostatic-adjustment"
+      ],
+      "summary": "Reassesses the sea-level records and the isostatic adjustment for meltwater pulse 1A, about 14,500 years ago. Concludes the total rise was roughly 8 to 15 m, with 0 to 10 m from Antarctica.",
+      "method": "Sea-level fingerprinting with isostatic adjustment applied to existing records.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Sea level rose roughly 8 to 15 m in total in MWP-1A, with 0 to 10 m from the Antarctic ice sheets.",
+          "status": "peer-reviewed",
+          "evidence": "A reassessment of sea-level rise and isostatic adjustment suggests sea level rose roughly 8 to 15 m in total, with 0 to 10 m derived from the Antarctic ice sheets.",
+          "source": "https://doi.org/10.1038/ngeo2616"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "deschamps-2012-mwp1a-tahiti",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "lambeck-2014-esl",
+          "about": "size of meltwater pulse 1A",
+          "detail": "Liu: roughly 8 to 15 m. Lambeck: about 20 m in about 500 years. Deschamps (Tahiti): 12 to 22 m."
+        }
+      ],
+      "why_it_matters": "If the pulse was 8 to 15 m rather than 20 m, the sea level just before it (our \"14,500 years ago\" preset of -95 m) shifts by several metres.",
+      "sources": [
+        {
+          "title": "Liu and others, Nature Geoscience, 2016 (Crossref record with abstract)",
+          "url": "https://doi.org/10.1038/ngeo2616"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Only the one-sentence abstract in the Crossref record was read. Crossref gives year 2015 online; the print year is 2016. I did not open the paper.",
+      "id": "liu-2016-mwp1a-amplitude",
+      "title": "Sea-level constraints on the amplitude and source distribution of Meltwater Pulse 1A"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Till J. J. Hanebuth",
+        "Karl Stattegger",
+        "Pieter M. Grootes"
+      ],
+      "year": 2000,
+      "date": null,
+      "region": {
+        "name": "Sunda Shelf, Southeast Asia",
+        "bbox": [
+          102,
+          -4,
+          108,
+          4
+        ]
+      },
+      "topic": [
+        "sea-level",
+        "sundaland",
+        "meltwater-pulse"
+      ],
+      "summary": "A sea-level record from sediments on the tectonically stable Sunda Shelf covering 21 to 14 thousand years ago, a gap in the coral records. It broadly confirms the coral curves and puts the rise during meltwater pulse 1A at up to 16 m in 300 years (14.6 to 14.3 thousand years ago).",
+      "method": "Radiocarbon-dated sediment and shell material from a siliciclastic system on the shelf.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "The rise during meltwater pulse 1A was as much as 16 m within 300 years (14.6 to 14.3 thousand years ago).",
+          "status": "peer-reviewed",
+          "evidence": "The rise of sea level during meltwater pulse 1A was as much as 16 meters within 300 years (14.6 to 14.3 thousand years ago).",
+          "source": "https://doi.org/10.1126/science.288.5468.1033"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "sundaland"
+      ],
+      "overlaps": [
+        {
+          "with": "sathiamurthy-voris-2006-sunda-maps",
+          "how": "same area"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "deschamps-2012-mwp1a-tahiti",
+          "about": "size and timing of meltwater pulse 1A",
+          "detail": "Hanebuth: up to 16 m in 300 years at 14.6 to 14.3 ka. Deschamps: 12 to 22 m, most probably 14 to 18 m, 14,650 to 14,310 years ago."
+        }
+      ],
+      "why_it_matters": "The Sunda Shelf is the biggest drowned land our globe shows; this is the on-the-spot record for its fastest flooding.",
+      "sources": [
+        {
+          "title": "Hanebuth and others, Science 288, 2000 (Crossref/OpenAlex abstract)",
+          "url": "https://doi.org/10.1126/science.288.5468.1033"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Abstract only. The bbox is the rough core area of the study, not stated in the abstract.",
+      "id": "hanebuth-2000-sunda-flooding",
+      "title": "Rapid Flooding of the Sunda Shelf: A Late-Glacial Sea-Level Record"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "E. Bard",
+        "B. Hamelin",
+        "D. Delanghe-Sabatier"
+      ],
+      "year": 2010,
+      "date": null,
+      "region": {
+        "name": "Tahiti, French Polynesia",
+        "bbox": [
+          -149.7,
+          -17.9,
+          -149.1,
+          -17.4
+        ]
+      },
+      "topic": [
+        "sea-level",
+        "meltwater-pulse",
+        "younger-dryas",
+        "coral"
+      ],
+      "summary": "Three new cores in the Tahiti barrier reef, dated by uranium-thorium, show no significant jump in sea level in the time of meltwater pulse 1B and a slowdown of the rise during the Younger Dryas.",
+      "method": "U-Th dating of shallow-living corals from three onshore cores.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "No significant discontinuity can be detected in the sea-level rise during the MWP-1B period.",
+          "status": "peer-reviewed",
+          "evidence": "No significant discontinuity can be detected in the sea-level rise during the MWP-1B period.",
+          "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1126/science.1180557&format=json&resultType=core"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "lambeck-2014-esl",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "abdul-2016-barbados-mwp1b",
+          "about": "whether meltwater pulse 1B happened",
+          "detail": "Bard 2010 (Tahiti): no discontinuity. Abdul and others 2016 (Barbados): a 14 +/- 2 m step between 11.45 and 11.1 ka."
+        }
+      ],
+      "why_it_matters": "The Tahiti side of the 1B dispute, and the reason our 11,400-year preset follows a smooth rise.",
+      "sources": [
+        {
+          "title": "Bard and others, Science 327, 2010 (Europe PMC record)",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1126/science.1180557&format=json&resultType=core"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Abstract read from Europe PMC; Science page returned 403.",
+      "id": "bard-2010-tahiti-mwp1b",
+      "title": "Deglacial meltwater pulse 1B and Younger Dryas sea levels revisited with boreholes at Tahiti"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Abdul",
+        "Mortlock",
+        "Wright",
+        "Fairbanks",
+        "Bard, Hamelin, Deschamps, Camoin (comment)"
+      ],
+      "year": 2016,
+      "date": null,
+      "region": {
+        "name": "Barbados, Caribbean",
+        "bbox": [
+          -59.7,
+          13,
+          -59.4,
+          13.4
+        ]
+      },
+      "topic": [
+        "sea-level",
+        "meltwater-pulse",
+        "younger-dryas",
+        "disputed"
+      ],
+      "summary": "New U-Th dates on Barbados reef-crest coral give a detailed record from 13.9 to 9 thousand years ago and say meltwater pulse 1B ran from 11.45 to 11.1 ka, a rise of 14 +/- 2 m at up to 40 mm per year. Bard, Hamelin, Deschamps and Camoin replied that the Barbados cores sit on a tectonic feature in a subduction zone and that the coral species may not track rapid rises, and note the Tahiti record has little or no 1B.",
+      "method": "High-precision U-Th dating of Acropora palmata from Barbados cores.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "MWP-1B began by 11.45 ka and ended at 11.1 ka, with sea level rising 14 +/- 2 m at rates up to 40 mm per year.",
+          "status": "disputed",
+          "evidence": "The MWP‐1B event at Barbados is better constrained as beginning by 11.45 kyr B.P. and ending at 11.1 kyr B.P. during which time sea level rose 14 ± 2 m and rates of sea level rise reached 40 mm yr −1",
+          "source": "https://doi.org/10.1002/2015pa002847"
+        },
+        {
+          "text": "The evidence for 1B is not convincing because of tectonics in Barbados, coral depth habits and the glacio-isostatic correction.",
+          "status": "disputed",
+          "evidence": "However, the evidence provided by Abdul et al. and their main conclusions are not convincing as they are affected by the following three main problems",
+          "source": "https://doi.org/10.1002/2016pa002979"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "bard-2010-tahiti-mwp1b",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "lambeck-2014-esl",
+          "about": "whether meltwater pulse 1B happened",
+          "detail": "Abdul: 14 +/- 2 m at Barbados, 11.45 to 11.1 ka. Lambeck: no global 1B. Bard and others (comment): Carlson and Clark (2012) and Lambeck (2014) both conclude 1B is absent or very small at Tahiti."
+        },
+        {
+          "with": "jakobsson-2017-bering-flooding",
+          "about": "role of meltwater pulse 1B",
+          "detail": "Jakobsson and others tie the flooding of the Bering Strait at about 11 cal ka BP to MWP-1b; Lambeck sees no global 1B."
+        }
+      ],
+      "why_it_matters": "The live dispute behind any preset near 11,300 years ago; the honest position is a smooth rise with an open question about a 10 to 15 m step.",
+      "sources": [
+        {
+          "title": "Abdul and others, Paleoceanography, 2016 (Crossref abstract)",
+          "url": "https://doi.org/10.1002/2015pa002847"
+        },
+        {
+          "title": "Bard and others, comment, Paleoceanography, 2016 (Crossref abstract)",
+          "url": "https://doi.org/10.1002/2016pa002979"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Both abstracts read via Crossref. I saw the titles of the authors' reply (Mortlock, Abdul, Wright 2016, doi 10.1002/2016pa003047) but did not read it. Years for the two papers are from Crossref.",
+      "id": "abdul-2016-barbados-mwp1b",
+      "title": "Younger Dryas sea level and meltwater pulse 1B recorded in Barbados reef crest coral Acropora palmata (with the reply by Bard and others)"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Simms",
+        "Lisiecki",
+        "Gebbie",
+        "Whitehouse",
+        "Clark"
+      ],
+      "year": 2019,
+      "date": null,
+      "region": {
+        "name": "Global ocean",
+        "bbox": null
+      },
+      "topic": [
+        "sea-level",
+        "missing-ice",
+        "uncertainty"
+      ],
+      "summary": "Adds up the ice that melted since the ice age and finds it is 18.1 +/- 9.6 m of sea level short of the rise recorded by coral. After ocean expansion and groundwater, 15.6 +/- 9.6 m is still unexplained: either an undiscovered ice reservoir or the ice sheets or isostatic models are wrong.",
+      "method": "Review of the contribution of each ice sheet, ocean thermal expansion and groundwater to post-LGM rise.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "The \"missing ice\" amounts to 18.1 +/- 9.6 m of global sea-level rise.",
+          "status": "peer-reviewed",
+          "evidence": "This “missing ice” amounts to 18.1 ± 9.6 m of global sea-level rise.",
+          "source": "https://doi.org/10.1016/j.quascirev.2018.12.018"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "gowan-2021-paleomist",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "gowan-2021-paleomist",
+          "about": "whether the \"missing ice\" problem exists",
+          "detail": "Simms and others: 18.1 +/- 9.6 m unexplained. Gowan and others: their reconstruction matches far-field records with a -116 m fall, so \"we ... find no basis for the missing ice problem\"."
+        }
+      ],
+      "why_it_matters": "The ice-age low point is a live scientific disagreement of up to about 18 m, not a settled number; our UI should show a range.",
+      "sources": [
+        {
+          "title": "Simms and others, Quaternary Science Reviews, 2019 (Crossref abstract)",
+          "url": "https://doi.org/10.1016/j.quascirev.2018.12.018"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Abstract only.",
+      "id": "simms-2019-missing-ice",
+      "title": "Balancing the last glacial maximum (LGM) sea-level budget"
+    },
+    {
+      "kind": "dataset",
+      "who": [
+        "Evan J. Gowan",
+        "Xu Zhang",
+        "Sara Khosravi",
+        "Alessio Rovere",
+        "Paolo Stocchi",
+        "Anna L. C. Hughes",
+        "Richard Gyllencreutz",
+        "Jan Mangerud",
+        "John Inge Svendsen",
+        "Gerrit Lohmann"
+      ],
+      "year": 2021,
+      "date": null,
+      "region": {
+        "name": "Global ocean",
+        "bbox": null
+      },
+      "topic": [
+        "ice-sheet-reconstruction",
+        "paleotopography",
+        "sea-level",
+        "glacial-isostatic-adjustment"
+      ],
+      "summary": "An ice-sheet history built from geological ice-margin and flow evidence and physics, independent of sea-level and isotope curves. Its largest sea-level fall is -116 m, much less than Lambeck, and it matches far-field records without extra ice. The data release includes paleo-topography and calculated sea-level change at 2,500-year steps for 80,000 years on 1 and 0.25 degree grids, under CC BY 4.0.",
+      "method": "ICESHEET 2.0 builds ice thickness from margins; SELEN calculates glacial isostatic adjustment and sea level; paleotopography is made by adding both to modern topography.",
+      "data": [
+        {
+          "name": "PaleoMIST 1.0: ice thickness, deformation, sea-level change and paleo-topography (NetCDF, 1 and 0.25 degree grids, 2,500-year steps, 3.5 GB)",
+          "url": "https://doi.org/10.1594/PANGAEA.905800",
+          "open": true,
+          "licence": "CC BY 4.0",
+          "in_our_catalogue": null
+        },
+        {
+          "name": "Evaluation reports and calculated sea level",
+          "url": "https://doi.org/10.5281/zenodo.4061594",
+          "open": true,
+          "licence": "not read",
+          "in_our_catalogue": null
+        }
+      ],
+      "code": [
+        "https://github.com/evangowan/icesheet",
+        "https://github.com/evangowan/paleo_sea_level",
+        "https://doi.org/10.5281/zenodo.4311508"
+      ],
+      "claims": [
+        {
+          "text": "PaleoMIST has a maximum ice-volume-equivalent sea-level fall of -116 m and 42.2 million km3 of ice, much less than Lambeck and others (-130 to -135 m, 53 million km3).",
+          "status": "peer-reviewed",
+          "evidence": "Our maximum calculated ice-volume equivalent sea level (ESL) fall (−116 m) and ice volume (42.2 × 10 6 km 3 ) are both substantially less than reported by Lambeck et al. 31 (−130 to −135 m and 53 × 10 6 km 3 , respectively).",
+          "source": "https://www.nature.com/articles/s41467-021-21469-w"
+        },
+        {
+          "text": "In this reconstruction the south and south-east Asian coasts have sea level below the global average at the LGM, which may explain far-field values below -120 m.",
+          "status": "peer-reviewed",
+          "evidence": "An alternative explanation is that the far-field records that show LGM sea-level values below −120 m are not representative of the global average sea level. In our model at the LGM (Fig. 3 ), much of the Southern Hemisphere ocean, as well as coastal regions of southern and southeastern Asia, have calculated sea level below the global average.",
+          "source": "https://www.nature.com/articles/s41467-021-21469-w"
+        },
+        {
+          "text": "The \"missing ice\" gap between far-field sea-level indicators and modelled ice is 8 to 28 m in earlier work.",
+          "status": "peer-reviewed",
+          "evidence": "an apparent 8-28 m discrepancy between far-field sea level indicators and modelled sea level from ice sheet reconstructions",
+          "source": "https://www.nature.com/articles/s41467-021-21469-w"
+        }
+      ],
+      "scale": {
+        "area_km2": null,
+        "sites_or_features": null,
+        "resolution_m": 27800
+      },
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "peltier-ice6g-ice7g-data",
+          "how": "same data"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "lambeck-2014-esl",
+          "about": "size of the ice-age sea-level fall",
+          "detail": "PaleoMIST: -116 m (42.2 million km3). Lambeck and others: -130 to -135 m (53 million km3). The gap is 14 to 19 m and 11 million km3 of ice."
+        },
+        {
+          "with": "simms-2019-missing-ice",
+          "about": "whether the \"missing ice\" problem exists",
+          "detail": "PaleoMIST: no missing ice. Simms and others: 18.1 +/- 9.6 m missing."
+        }
+      ],
+      "why_it_matters": "The only model found so far with open, licensed, ready-made paleo-topography on a 0.25 degree grid and the right to reuse it with credit, so it is the first thing to try for a \"local sea level\" mode; note its 2,500-year steps are coarse for the fast melt.",
+      "sources": [
+        {
+          "title": "Gowan and others, Nature Communications 12, 1199, 2021",
+          "url": "https://www.nature.com/articles/s41467-021-21469-w"
+        },
+        {
+          "title": "PANGAEA dataset record",
+          "url": "https://doi.pangaea.de/10.1594/PANGAEA.905800"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Resolution 27,800 m is my conversion of 0.25 degrees at the equator. The PANGAEA page says the grids are 1 and 0.25 degrees and scripts allow any resolution. I did not download the files.",
+      "id": "gowan-2021-paleomist",
+      "title": "A new global ice sheet reconstruction for the past 80 000 years (PaleoMIST 1.0) and its dataset"
+    },
+    {
+      "kind": "dataset",
+      "who": [
+        "W. R. Peltier",
+        "D. F. Argus",
+        "R. Drummond",
+        "K. Roy"
+      ],
+      "year": 2015,
+      "date": null,
+      "region": {
+        "name": "Global ocean",
+        "bbox": null
+      },
+      "topic": [
+        "paleotopography",
+        "ice-sheet-reconstruction",
+        "glacial-isostatic-adjustment",
+        "netcdf"
+      ],
+      "summary": "NetCDF files on the University of Toronto site with ice thickness and paleo-topography (including bathymetry) on a 1 x 1 degree global grid. ICE-6G_C has 48 time steps listed from 26 to 0 thousand years ago (1 ka steps to 21 ka, then every 0.5 ka); ICE-7G_NA is listed at 0.5 ka steps from 26 ka. A separate file gives ice thickness for 122 ka to present.",
+      "method": "Ice thickness history refined with GPS vertical motion data; sea-level equation solved to get paleo-topography. ICE-6G_D and ICE-7G_NA update the viscosity profile.",
+      "data": [
+        {
+          "name": "ICE-6G_C paleo-topography (Topo, Topo_Diff, orog, sftlf, stgit, stgif), 1 x 1 degree NetCDF, 26.0 to 0.0 ka",
+          "url": "https://www.atmosp.physics.utoronto.ca/~peltier/data.php",
+          "open": true,
+          "licence": "no licence stated; the page asks users to cite the model papers",
+          "in_our_catalogue": null
+        },
+        {
+          "name": "ICE-7G_NA (VM7) paleo-topography, 1 x 1 degree, from 26 ka (e.g. I7G_NA.VM7_1deg.21.nc.gz)",
+          "url": "https://www.atmosp.physics.utoronto.ca/~peltier/data.php",
+          "open": true,
+          "licence": "no licence stated; cite the papers",
+          "in_our_catalogue": null
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "Each ICE-6G_C file covers a 1 x 1 degree global grid and includes topography with bathymetry and the difference from present.",
+          "status": "official",
+          "evidence": "Each file contains information for points on a 1x1 degree global grid. ... Predictions obtained from the model are: topography (Topo), topography difference from present (Topo_Diff)",
+          "source": "https://www.atmosp.physics.utoronto.ca/~peltier/data.php"
+        }
+      ],
+      "scale": {
+        "area_km2": null,
+        "sites_or_features": null,
+        "resolution_m": 111000
+      },
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "disastermap-ice-age-mode",
+          "how": "same data"
+        },
+        {
+          "with": "gowan-2021-paleomist",
+          "how": "same method"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "A 1 degree grid (about 111 km) is far too coarse to move a shoreline directly, but \"Topo_Diff\" can be used as a local correction to a global level: add the model's difference from present to our Terrain Tiles depth.",
+      "sources": [
+        {
+          "title": "Peltier data page, University of Toronto",
+          "url": "https://www.atmosp.physics.utoronto.ca/~peltier/data.php"
+        },
+        {
+          "title": "Peltier, Argus, Drummond, JGR Solid Earth 120, 2015 (ICE-6G_C)",
+          "url": "https://doi.org/10.1002/2014jb011176"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Read the data page and the list of links. ICE-7G_NA is described as a North American update; I did not confirm how far its global fields are updated or whether the files are global. Counted ICE-6G_C time steps from the page text; the resolution is 1 degree stated on the page. No licence text found; do not assume reuse terms. The abstract of the 2015 paper was read and says nothing about the licence.",
+      "id": "peltier-ice6g-ice7g-data",
+      "title": "ICE-6G_C (VM5a) and ICE-7G_NA (VM7) ice thickness and paleo-topography files (Peltier)"
+    },
+    {
+      "kind": "tool",
+      "who": [
+        "a/lost draft (docs/how-it-works.md)"
+      ],
+      "year": 2026,
+      "date": "2026-11-11",
+      "region": {
+        "name": "Global ocean",
+        "bbox": null
+      },
+      "topic": [
+        "our-work",
+        "sea-level",
+        "terrain-tiles"
+      ],
+      "summary": "Our globe lowers the sea by one number for the whole planet: -134 m (Lambeck 2014, ice-age low), about -95 m for 14,500 years ago and about -60 m for 11,400 years ago (our own sums of Lambeck's rates, stated as good to about 5 m). It is applied to Terrain Tiles depth, which is 500 m to 2 km a pixel at sea.",
+      "method": "Flat sea surface at the chosen level over the Terrain Tiles height grid; a short list keeps dry land below sea level (Dead Sea, Death Valley, polders) dry; near-shore depth is the nearest real sounding carried inshore.",
+      "data": [
+        {
+          "name": "AWS Terrain Tiles (terrarium)",
+          "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+          "open": true,
+          "licence": "see sources.json",
+          "in_our_catalogue": "aws-terrain-tiles-terrarium"
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "One level for the whole planet; presets -134, about -95 and about -60 m; the -95 and -60 m are our arithmetic, good to about 5 m.",
+          "status": "self-reported",
+          "evidence": "Adding those up gives about −95 m at 14,500 years ago, before the fastest melt, and about −60 m at 11,400 years ago, near Plato's date for Atlantis. Those two are our arithmetic and are good to about 5 m.",
+          "source": "file:///Users/home/abstracts-drafts/lost/repo/docs/how-it-works.md"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "lambeck-2014-esl",
+          "how": "same data"
+        },
+        {
+          "with": "sea-level-map-vercel",
+          "how": "same claim"
+        },
+        {
+          "with": "disastermap-ice-age-mode",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "sathiamurthy-voris-2006-sunda-maps",
+          "about": "sea level on the Sunda Shelf",
+          "detail": "Ours: -134 / -95 / -60 m. Sathiamurthy and Voris curve for Sunda: -117 m at 21 ka, -85 to -90 m at 14.5 ka, about -45 to -50 m at 11.2 to 11.5 ka. Differences: 17 m, 5 to 10 m, 10 to 15 m."
+        },
+        {
+          "with": "gowan-2021-paleomist",
+          "about": "ice-age low point",
+          "detail": "Ours: -134 m. PaleoMIST: -116 m ice-equivalent."
+        }
+      ],
+      "why_it_matters": "The claim to check: the \"about 5 m\" error on -95 and -60 m is too small if the local sea level is wanted, and the note in how-it-works.md that real coasts fell \"a little less\" than global holds for the Great Barrier Reef and the Sunda Shelf in Lambeck-type models but by 7 to 18 m, and has the opposite sign for south-east Asia in PaleoMIST (see the last section of the .md file).",
+      "sources": [
+        {
+          "title": "a/lost draft, docs/how-it-works.md (read locally)",
+          "url": "file:///Users/home/abstracts-drafts/lost/repo/docs/how-it-works.md"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Our own work; included so the contradictions have an anchor. The -95 m and -60 m values were not re-derived here because Lambeck's esl table is in the SI.",
+      "id": "our-globe-sea-level-presets",
+      "title": "Our globe: one global sea level applied to Terrain Tiles"
+    },
+    {
+      "kind": "tool",
+      "who": [
+        "unknown (site does not name an author on the page I could read)"
+      ],
+      "year": null,
+      "date": null,
+      "region": {
+        "name": "Global ocean",
+        "bbox": null
+      },
+      "topic": [
+        "viewer",
+        "sea-level",
+        "ice-sheets",
+        "globe"
+      ],
+      "summary": "An interactive globe with a time slider, described as showing global sea level, coastlines, ice sheets and proglacial lakes over the past 500,000 years. A 2023 blog post about an earlier version describes 135,000 years and steps of 5,000 years, with an explanation sidebar and a sea-level graph.",
+      "method": "Not read: the site is a JavaScript app and its About, Data and FAQ pages returned the same shell page.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Interactive globe of sea level, coastlines, ice sheets and proglacial lakes over 500,000 years.",
+          "status": "self-reported",
+          "evidence": "An interactive globe of global sea level, coastlines, ice sheets and proglacial lakes over the past 500,000 years, through the Pleistocene and Holocene.",
+          "source": "https://sea-level.vercel.app/"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "our-globe-sea-level-presets",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "Already lets the public drag a slider to lower the sea on a globe; our difference must be detail (real depth, lidar, legends, finds), not the slider.",
+      "sources": [
+        {
+          "title": "Sea Level Map",
+          "url": "https://sea-level.vercel.app/"
+        },
+        {
+          "title": "Google Maps Mania, 2 Nov 2023",
+          "url": "https://googlemapsmania.blogspot.com/2023/11/135000-years-of-changing-sea-levels.html"
+        }
+      ],
+      "confidence": "low",
+      "notes": "Which sea-level curve and which topography it uses is unknown. The blog post (2023) links the same address and says 135,000 years; the live page says 500,000, so the tool has changed.",
+      "id": "sea-level-map-vercel",
+      "title": "Sea Level Map: coastlines and ice sheets over 500,000 years"
+    },
+    {
+      "kind": "platform",
+      "who": [
+        "\"Contact at the Cabin\" (Substack author \"Darren\"); DisasterMap.ca"
+      ],
+      "year": 2026,
+      "date": "2026-04-08",
+      "region": {
+        "name": "Global ocean",
+        "bbox": null
+      },
+      "topic": [
+        "viewer",
+        "sea-level",
+        "ice-sheets",
+        "megaliths",
+        "self-reported"
+      ],
+      "summary": "A web map whose April 2026 update added a slider that \"drains the ocean\" 26,000 years back, using ICE-7G_NA paleo-topography with 48 time slices from the last glacial maximum to present, ice-sheet overlays with thickness, era presets (6 ka, Younger Dryas, 14 ka, LGM, 26 ka), and a note for each of 100,000+ megalithic sites saying whether it was above or below the sea.",
+      "method": "Described as ICE-7G_NA paleo-topography; the site was not opened and the numbers are the author's own.",
+      "data": [
+        {
+          "name": "ICE-7G_NA paleo-topography",
+          "url": "https://www.atmosp.physics.utoronto.ca/~peltier/data.php",
+          "open": true,
+          "licence": "no licence stated",
+          "in_our_catalogue": null
+        },
+        {
+          "name": "Megalithic Portal sites",
+          "url": "https://www.megalithic.co.uk/",
+          "open": null,
+          "licence": null,
+          "in_our_catalogue": null
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "Uses ICE-7G_NA paleo-topography with 48 time slices from the LGM to present, with era presets, and shows whether megalithic sites were under water.",
+          "status": "self-reported",
+          "evidence": "Using ICE-7G_NA paleo-topography data — 48 time slices from the Last Glacial Maximum to present — you can now watch Doggerland rise between Britain and Europe, Beringia connect Alaska to Siberia, and Sundaland emerge from the South China Sea.",
+          "source": "https://contactatthecabin.substack.com/p/disastermap-just-got-a-massive-update"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "our-globe-sea-level-presets",
+          "how": "same claim"
+        },
+        {
+          "with": "peltier-ice6g-ice7g-data",
+          "how": "same data"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "Closest public competitor to our sea-lowering feature, and it already pairs the slider with a \"was this site dry then\" query; it uses a local (model) sea level, which ours does not.",
+      "sources": [
+        {
+          "title": "Contact at the Cabin, \"DisasterMap just got a massive update\", 8 Apr 2026",
+          "url": "https://contactatthecabin.substack.com/p/disastermap-just-got-a-massive-update"
+        }
+      ],
+      "confidence": "low",
+      "notes": "Self-reported post; I read the post but did not open the site, so the accuracy and resolution are unknown. The Peltier page lists ICE-7G_NA as a North America update, so how the global fields were made is unclear. Some features are labelled \"Pro\" in the post.",
+      "id": "disastermap-ice-age-mode",
+      "title": "DisasterMap \"Ice Age Mode\" (ICE-7G_NA paleo-topography, 48 time slices)"
+    },
+    {
+      "kind": "dataset",
+      "who": [
+        "British Geological Survey (work package lead)",
+        "EMODnet Geology partners"
+      ],
+      "year": 2024,
+      "date": "2024-10-29",
+      "region": {
+        "name": "European seas",
+        "bbox": [
+          -27,
+          34,
+          35,
+          68
+        ]
+      },
+      "topic": [
+        "palaeocoastline",
+        "submerged-landscape",
+        "wms",
+        "europe"
+      ],
+      "summary": "A harmonised GIS layer of more than 10,000 features in 26 classes (mapped and modelled palaeocoastlines, submerged forests and peats, freshwater springs, thickness of post-LGM sediment) for European seas. The \"Last Glacial Maximum Landscapes\" layer is a contour set of the base of the post-LGM sediment cover; a companion layer maps its thickness. Both are served as WMS and shapefile.",
+      "method": "Compilation of existing maps, geophysical data, databases and literature, with a four-level confidence rating on each line.",
+      "data": [
+        {
+          "name": "Last Glacial Maximum Landscapes (shapefile and WMS, layer bgs:cp_wp8_last_glacial_maximum)",
+          "url": "https://emodnet.ec.europa.eu/geonetwork/srv/api/records/6720fc72-a004-4922-818e-699c0a010855",
+          "open": true,
+          "licence": "CC BY 4.0",
+          "in_our_catalogue": null
+        },
+        {
+          "name": "EMODnet Geology WMS",
+          "url": "https://drive.emodnet-geology.eu/geoserver/bgs/wms",
+          "open": true,
+          "licence": "CC BY 4.0",
+          "in_our_catalogue": null
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "More than 10,000 features in 26 classes, including mapped and modelled palaeocoastlines, were compiled for the first time across European seas.",
+          "status": "official",
+          "evidence": "More than 10,000 features representing 26 classes of submerged landscape and palaeoenvironmental indicators ranging from mapped and modelled palaeocoastlines, evidence for submerged forests and peats, thickness of post-Last Glacial Maximum sediments and submerged freshwater springs have been collated",
+          "source": "https://emodnet.ec.europa.eu/en/first-harmonised-classification-submerged-landscape-features-and-palaeoenvironmental-indicators-pan"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "splashcos-viewer",
+          "how": "same area"
+        },
+        {
+          "with": "emodnet-bathymetry-wms",
+          "how": "same area"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "Europe-wide, open, CC BY 4.0, WMS: a ready layer of mapped palaeocoastlines and submerged peats and forests to draw over our globe in European seas, with confidence ratings.",
+      "sources": [
+        {
+          "title": "EMODnet product catalogue: Last Glacial Maximum Landscapes",
+          "url": "https://emodnet.ec.europa.eu/geonetwork/srv/api/records/6720fc72-a004-4922-818e-699c0a010855"
+        },
+        {
+          "title": "EMODnet: first harmonised classification of submerged landscape features",
+          "url": "https://emodnet.ec.europa.eu/en/first-harmonised-classification-submerged-landscape-features-and-palaeoenvironmental-indicators-pan"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Catalogue record and news page read. I did not load the WMS or count the features myself; the bbox is the stated spatial extent of the layer in the WMS example. The \"LGM at 18,000 years BP on average\" and four-level confidence scheme are from a search summary of the metadata; I did not see those words on the page.",
+      "id": "emodnet-geology-submerged-landscapes",
+      "title": "EMODnet Geology: submerged landscape features and Last Glacial Maximum landscapes (Europe)"
+    },
+    {
+      "kind": "platform",
+      "who": [
+        "SPLASHCOS COST Action network (Flemming, Harff, Bailey and others)"
+      ],
+      "year": 2020,
+      "date": null,
+      "region": {
+        "name": "European continental shelf",
+        "bbox": null
+      },
+      "topic": [
+        "submerged-prehistory",
+        "atlas",
+        "europe"
+      ],
+      "summary": "A public online database and map of records of known underwater prehistoric finds around Europe, compiled by country by the SPLASHCOS network and described in the open-access book The Archaeology of Europe's Drowned Landscapes (2020). The book's figures use site information from the viewer.",
+      "method": "Each participating nation screened its records and agreed to publish them in the viewer.",
+      "data": [
+        {
+          "name": "SPLASHCOS Viewer",
+          "url": "http://splashcos-viewer.eu/",
+          "open": true,
+          "licence": null,
+          "in_our_catalogue": null
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "The viewer is a publicly available online database and maps with records of all known underwater finds of prehistoric archaeology in Europe.",
+          "status": "self-reported",
+          "evidence": "the compilation of a publicly available online database and maps with records of all known underwater finds of prehistoric archaeology in Europe—the SPLASHCOS Viewer ( http://splashcos-viewer.eu/ ; http://splashcos.maris2.nl/ )",
+          "source": "https://link.springer.com/chapter/10.1007/978-3-030-37367-2_1"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "emodnet-geology-submerged-landscapes",
+          "how": "same area"
+        },
+        {
+          "with": "bailey-2020-drowned-landscapes",
+          "how": "same data"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "The standard list of known drowned prehistoric sites in Europe; check it before claiming a new find on the European shelf, and consider linking to it.",
+      "sources": [
+        {
+          "title": "Bailey and others, introduction and overview, Springer 2020 (open access)",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-030-37367-2_1"
+        }
+      ],
+      "confidence": "low",
+      "notes": "I could not open the viewer: splashcos-viewer.eu failed to resolve from this machine on 2026-11-11, and the tDAR page returned a block page. Whether it is still online, how many records it has and its licence are unknown. EMODnet Human Activities lists a \"Submerged Prehistoric Archeology\" dataset from the project (seen only in a search result).",
+      "id": "splashcos-viewer",
+      "title": "SPLASHCOS Viewer: online atlas of submerged prehistoric finds in Europe"
+    },
+    {
+      "kind": "report",
+      "who": [
+        "Geoff Bailey",
+        "Nena Galanidou",
+        "Hans Peeters",
+        "Hauke Jöns",
+        "Moritz Mennenga (eds)"
+      ],
+      "year": 2020,
+      "date": "2020-04-10",
+      "region": {
+        "name": "European continental shelf",
+        "bbox": null
+      },
+      "topic": [
+        "submerged-prehistory",
+        "book",
+        "sea-level",
+        "europe"
+      ],
+      "summary": "Final volume of the SPLASHCOS network: a regional survey of underwater prehistoric finds on the European shelf, with chapters on methods, sea-level change and management. It states that the earliest dated sites near Scandinavia are about 10,000 years old, and that evidence earlier than about 15,000 years is only in Denmark.",
+      "method": "Country-by-country compilation by SPLASHCOS working groups.",
+      "data": [
+        {
+          "name": "Book (open access)",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-37367-2",
+          "open": true,
+          "licence": "open access (licence not read)",
+          "in_our_catalogue": null
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "The volume completes an international survey compiling and evaluating known underwater material around Europe, deposited at low sea level and drowned by sea-level rise.",
+          "status": "peer-reviewed",
+          "evidence": "This is the final volume of the SPLASHCOS research network and marks the completion of an international and collaborative survey to compile and evaluate the known records of underwater material around Europe’s coastlines",
+          "source": "https://link.springer.com/chapter/10.1007/978-3-030-37367-2_1"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "splashcos-viewer",
+          "how": "same data"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "The reference book for European drowned sites; its regional chapters (North Sea, Britain, Baltic, Mediterranean) are the sources for each local sea-level curve.",
+      "sources": [
+        {
+          "title": "Introduction and overview chapter (open access)",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-030-37367-2_1"
+        },
+        {
+          "title": "Book record (Crossref)",
+          "url": "https://doi.org/10.1007/978-3-030-37367-2"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Read the introduction chapter; did not read the regional chapters.",
+      "id": "bailey-2020-drowned-landscapes",
+      "title": "The Archaeology of Europe's Drowned Landscapes"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Edlic Sathiamurthy",
+        "Harold K. Voris"
+      ],
+      "year": 2006,
+      "date": null,
+      "region": {
+        "name": "Sunda Shelf, Southeast Asia",
+        "bbox": [
+          95,
+          -9,
+          120,
+          8
+        ]
+      },
+      "topic": [
+        "sundaland",
+        "sea-level",
+        "maps",
+        "paleo-lakes"
+      ],
+      "summary": "Colour maps of how the Sunda Shelf flooded as sea level rose from -116 m at the end of the last glacial maximum, built from the 2-minute ETOPO2 grid, plus candidate drowned lakes. A 2020 Zenodo record (CC BY 4.0) gives the sea-level table they used, from -117 m at 21 ka to 0 m at 6 ka.",
+      "method": "Spatial analysis of ETOPO2 to find depressions; maps at sea-level steps taken from published records.",
+      "data": [
+        {
+          "name": "Sea level between 21000 and 450 BP, from Sathiamurthy and Voris 2006 (CSV, 604 bytes)",
+          "url": "https://doi.org/10.5281/zenodo.3929568",
+          "open": true,
+          "licence": "CC BY 4.0",
+          "in_our_catalogue": null
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "Sea level rose from -116 m at the terminal phase of the LGM (21 ka) to a mid-Holocene high of +5 m (4.2 ka).",
+          "status": "peer-reviewed",
+          "evidence": "These depressions were gradually submerged when the sea level began to rise from –116 m below present-day levels (BPL) during the terminal phase of the LGM, 21 thousand years before present (ka BP) to its maximum, +5m above present-day mean sea level (MSL), during the mid-Holocene (4.2 ka BP).",
+          "source": "https://doi.org/10.58837/tnh.6.2.102930"
+        },
+        {
+          "text": "Several large submerged depressions may be paleo-lakes holding sediment from the LGM to the mid-Holocene.",
+          "status": "peer-reviewed",
+          "evidence": "The results of this study identify several large submerged depressions that may contain sediment dated from the LGM to the midHolocene and we recommend that sediment layers be sampled to confirm or disprove the presence of these proposed fresh water paleo-lakes on the Sunda Shelf.",
+          "source": "https://doi.org/10.58837/tnh.6.2.102930"
+        }
+      ],
+      "scale": {
+        "area_km2": 1800000,
+        "sites_or_features": null,
+        "resolution_m": 3700
+      },
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "sundaland"
+      ],
+      "overlaps": [
+        {
+          "with": "hanebuth-2000-sunda-flooding",
+          "how": "same area"
+        },
+        {
+          "with": "our-globe-sea-level-presets",
+          "how": "same area"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "our-globe-sea-level-presets",
+          "about": "sea level on the Sunda Shelf",
+          "detail": "Their table: -117 m at 21 ka (ours -134), -85 and -90 m at 14.5 ka (ours -95), -45 m at 11.2 ka and -50 m at 11.5 ka (ours -60 at 11.4). In our Terrain Tile data that is 35,000 km2 less land at 21 ka and about 165,000 to 320,000 km2 less at 11.4 ka (see \"What our globe gets wrong\")."
+        },
+        {
+          "with": "lambeck-2014-esl",
+          "about": "low point of the ice age on the Sunda Shelf",
+          "detail": "Sathiamurthy and Voris: -116 to -117 m at 21 ka. Lambeck: -134 m global. The gap is the difference between local relative sea level and a global ice-equivalent figure."
+        }
+      ],
+      "why_it_matters": "A ready, open, small table for the largest drowned shelf we show, and a map-making approach that is close to ours; but from 2006 data, so treat it as a check rather than the answer.",
+      "sources": [
+        {
+          "title": "Sathiamurthy and Voris, Tropical Natural History Suppl. 2 (6.2), 2006",
+          "url": "https://doi.org/10.58837/tnh.6.2.102930"
+        },
+        {
+          "title": "Zenodo: sea level table (CC BY 4.0)",
+          "url": "https://doi.org/10.5281/zenodo.3929568"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Abstract and the CSV read. The 1.8 million km2 and the 3.7 km (2 arc-minute) resolution are my numbers: the exposed area from Terrain Tiles at -134 m in the box 95 to 120 E, 9 S to 8 N, and ETOPO2 grid size. The Zenodo parent record is 3929567 and the file is in version 3929568.",
+      "id": "sathiamurthy-voris-2006-sunda-maps",
+      "title": "Maps of Holocene Sea Level Transgression and Submerged Lakes on the Sunda Shelf (and its sea-level table)"
+    },
+    {
+      "kind": "dataset",
+      "who": [
+        "NASA NSIDC DAAC",
+        "Magruder, Parrish, Perry, Swinski, Holwill, Kief, Corcoran"
+      ],
+      "year": 2026,
+      "date": null,
+      "region": {
+        "name": "Global coasts, 88 N to 88 S",
+        "bbox": [
+          -180,
+          -88,
+          180,
+          88
+        ]
+      },
+      "topic": [
+        "bathymetry",
+        "nearshore",
+        "satellite-lidar",
+        "icesat-2"
+      ],
+      "summary": "Refraction-corrected sea-floor and sea-surface heights along ICESat-2 laser tracks, derived from photon data, from 14 October 2018 to present, in HDF5, with uncertainties. It is a set of lines, not a grid, and it only works where the water is clear enough for the green laser to reach the bottom.",
+      "method": "ICESat-2 ATLAS photon data (ATL03) classified into bathymetry photons by a density-based algorithm, corrected for refraction.",
+      "data": [
+        {
+          "name": "ATL24 v2 (DOI 10.5067/ATLAS/ATL24.002), HDF5, WGS 84",
+          "url": "https://nsidc.org/data/atl24",
+          "open": true,
+          "licence": "NASA open data; free Earthdata Login; cite the DOI",
+          "in_our_catalogue": null
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "Global coverage 88 N to 88 S, from 14 October 2018 to present, in HDF5 with refraction-corrected heights and uncertainties.",
+          "status": "official",
+          "evidence": "Temporal Coverage: 14 October 2018 to present ... Spatial Coverage: Northern latitude 88 Southern latitude -88",
+          "source": "https://nsidc.org/data/atl24"
+        }
+      ],
+      "scale": {
+        "area_km2": null,
+        "sites_or_features": null,
+        "resolution_m": null
+      },
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "copernicus-marine-sdb-100m",
+          "how": "same area"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "Real near-shore depth along tracks in clear water; could replace \"nearest sounding carried inshore\" for spot checks, not as a map.",
+      "sources": [
+        {
+          "title": "NSIDC ATL24 v2 page",
+          "url": "https://nsidc.org/data/atl24"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Page says \"Spatial Resolution: Not Specified\". Needs an Earthdata account, which is free. The page says licence terms only as \"cite the dataset\"; I did not read NASA's data-use policy. Handed to seafloor-wrecks for the wider bathymetry picture.",
+      "id": "atl24-icesat2-nearshore-bathymetry",
+      "title": "ATLAS/ICESat-2 L3A Along Track Coastal and Nearshore Bathymetry, Version 2 (ATL24)"
+    },
+    {
+      "kind": "dataset",
+      "who": [
+        "EOMAP (Germany)",
+        "Deltares (Netherlands)",
+        "GGS (Netherlands)",
+        "Copernicus Marine Service"
+      ],
+      "year": 2025,
+      "date": null,
+      "region": {
+        "name": "Global coasts",
+        "bbox": [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      },
+      "topic": [
+        "bathymetry",
+        "nearshore",
+        "satellite-derived",
+        "sentinel-2"
+      ],
+      "summary": "A 100 m resolution global coastal depth product from Sentinel-2, built with three methods: intertidal, physics-based optical (RTE inversion) and wave-kinematics. It covers coastal areas where retrieval is possible, in NetCDF-4, with quality indicators for each method. It warns that it is not for navigation.",
+      "method": "Sentinel-2 imagery; intertidal satellite-derived bathymetry, optical inversion and wave-dispersion depth.",
+      "data": [
+        {
+          "name": "BATHYMETRY_GLO_PHY_COASTAL_L4_MY_016_001 (DOI 10.48670/mds-00364)",
+          "url": "https://data.marine.copernicus.eu/product/BATHYMETRY_GLO_PHY_COASTAL_L4_MY_016_001/description",
+          "open": true,
+          "licence": "Copernicus Marine licence (page links \"Licence\"; not read)",
+          "in_our_catalogue": null
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "A 100 m satellite-derived bathymetry product for the global coastal area where retrieval is possible, from Sentinel-2.",
+          "status": "official",
+          "evidence": "This is a satellite derived bathymetry product covering the global coastal area (where data retrieval is possible), with 100 m resolution, based on Sentinel-2.",
+          "source": "https://data.marine.copernicus.eu/product/BATHYMETRY_GLO_PHY_COASTAL_L4_MY_016_001/description"
+        }
+      ],
+      "scale": {
+        "area_km2": null,
+        "sites_or_features": null,
+        "resolution_m": 100
+      },
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "atl24-icesat2-nearshore-bathymetry",
+          "how": "same area"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "The best candidate for real depth within a few hundred metres of shore on a global grid: 100 m pixels against the 500 m to 2 km we use, though only in clear water and with an accuracy that is still to be read from the quality document.",
+      "sources": [
+        {
+          "title": "Copernicus Marine product page",
+          "url": "https://data.marine.copernicus.eu/product/BATHYMETRY_GLO_PHY_COASTAL_L4_MY_016_001/description"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Product page read (metadata last updated 25 Nov 2025); quality document and licence not read. A search summary described a separate wave-based Sentinel-2 atlas (S2Shores) with RMSE of 6 to 9 m; I did not open it. The \"Update frequency\" field says \"Once\".",
+      "id": "copernicus-marine-sdb-100m",
+      "title": "Global coastal satellite derived bathymetry (static), Copernicus Marine, 100 m"
+    },
+    {
+      "kind": "report",
+      "who": [
+        "this survey (drowned-lands lane)"
+      ],
+      "year": 2026,
+      "date": "2026-11-11",
+      "region": {
+        "name": "North Sea, Sunda Shelf, Persian Gulf, Bering Sea and Chukchi shelf, Bahamas and Florida",
+        "bbox": null
+      },
+      "topic": [
+        "our-work",
+        "terrain-tiles",
+        "sensitivity"
+      ],
+      "summary": "For five regions, the area of sea floor (cells at least 1 m below sea level today) that lies above a given flat sea level, counted on Terrain Tiles zoom 8. Used only to size what a change of sea level does in our own data. Boxes: North Sea 4 W to 9 E, 50 to 61 N; Sunda 95 to 120 E, 9 S to 8 N; Persian Gulf 47 to 58 E, 23.5 to 31 N; Bering 180 to 160 W, 60 to 70 N (east half only); Bahamas and Florida 82.5 to 72 W, 22 to 31 N.",
+      "method": "Decoded zoom-8 terrarium tiles with the draft's tools/png.mjs, counted cells with -1 m >= height > level, weighted by cos(latitude). Not a shoreline length: the shore-length count is unreliable and is not used.",
+      "data": [
+        {
+          "name": "AWS Terrain Tiles (terrarium), zoom 8",
+          "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+          "open": true,
+          "licence": "see sources.json",
+          "in_our_catalogue": "aws-terrain-tiles-terrarium"
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "Area exposed in the tile data at -134 / -116 / -95 / -60 / -45 / -30 / -15 m: North Sea box 533,844 / 492,308 / 437,011 / 320,377 / 258,409 / 140,920 / 56,421 km2.",
+          "status": "self-reported",
+          "evidence": "script output, scratchpad exposure.json",
+          "source": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
+        },
+        {
+          "text": "Sunda box: 1,843,942 / 1,805,865 / 1,722,336 / 1,345,194 / 1,022,916 / 620,266 / 323,199 km2 at the same levels.",
+          "status": "self-reported",
+          "evidence": "script output",
+          "source": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
+        },
+        {
+          "text": "Persian Gulf box: 250,979 / 249,935 / 245,548 / 202,191 / 170,593 / 128,992 / 65,929 km2 at the same levels.",
+          "status": "self-reported",
+          "evidence": "script output",
+          "source": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
+        },
+        {
+          "text": "Bering box (east half): 652,374 / 636,586 / 601,097 / 487,523 / 301,319 km2 at -134 / -116 / -95 / -60 / -45 m. Bahamas and Florida box: 172,145 / 170,104 / 167,379 / 160,741 / 155,562 / 140,153 / 92,220 (at -10) km2 at -134 / -116 / -95 / -60 / -45 / -30 / -10 m.",
+          "status": "self-reported",
+          "evidence": "script output",
+          "source": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
+        }
+      ],
+      "scale": {
+        "area_km2": null,
+        "sites_or_features": 5,
+        "resolution_m": 610
+      },
+      "verified_on_ground": null,
+      "relates_to_legends": [],
+      "overlaps": [],
+      "contradicts": [],
+      "why_it_matters": "Shows where the choice of sea level matters (mid-depth shelf, 20 to 100 m) and where it hardly does (the Persian Gulf and Bahamas at the ice-age low, because they are shallow and the shelf edge is steep).",
+      "sources": [
+        {
+          "title": "AWS Terrain Tiles (tiles fetched 2026-11-11)",
+          "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Terrain Tiles at zoom 8 are about 610 m per pixel at the equator; the sea floor in the data is 500 m to 2 km. Includes any lakes or lowlands that sit below -1 m inside a box. Areas are good to a few percent. The numbers are mine and were not checked against another source. Script: scratchpad exposure.mjs, not part of the repo.",
+      "id": "our-exposure-calculation",
+      "title": "How much sea floor each region shows dry at a given sea level (our calculation from Terrain Tiles)"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Bernhard Weninger",
+        "Rick Schulting",
+        "Marcel Bradtmöller",
+        "Lee Clare",
+        "Mark Collard",
+        "Kevan Edinborough and others"
+      ],
+      "year": 2008,
+      "date": null,
+      "region": {
+        "name": "Southern and central North Sea (Doggerland)",
+        "bbox": [
+          -2,
+          51,
+          9,
+          58
+        ]
+      },
+      "topic": [
+        "doggerland",
+        "tsunami",
+        "sea-level",
+        "mesolithic"
+      ],
+      "summary": "Dates the Storegga Slide tsunami to about 8200 calBP and uses that date to reconstruct North Sea coastlines against rapidly rising sea level. Says the tsunami catastrophically flooded large parts of what remained of Doggerland.",
+      "method": "Calendar dating of the tsunami from radiocarbon; coastline reconstruction from sea-level curves; discussion of effects on Mesolithic people.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Around 8200 calBP large parts of the North Sea shelf (Doggerland) were catastrophically flooded by the Storegga Slide tsunami.",
+          "status": "peer-reviewed",
+          "evidence": "Around 8200 calBP, large parts of the now submerged North Sea continental shelf (‘Doggerland’) were catastrophically flooded by the Storegga Slide tsunami",
+          "source": "https://revije.ff.uni-lj.si/DocumentaPraehistorica/article/download/35.1/1787"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "doggerland"
+      ],
+      "overlaps": [
+        {
+          "with": "gaffney-2020-storegga-doggerland",
+          "how": "same claim"
+        },
+        {
+          "with": "hill-2017-doggerland-tsunami-model",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "hill-2017-doggerland-tsunami-model",
+          "about": "what ended Doggerland",
+          "detail": "Weninger and others: \"catastrophic final flooding\" by the tsunami at about 8200 calBP. Hill and others: Doggerland \"was not as severely affected as previous studies implied\" and was abandoned mainly because of rapid sea-level rise before the tsunami."
+        },
+        {
+          "with": "gaffney-2020-storegga-doggerland",
+          "about": "size of the tsunami effect",
+          "detail": "Weninger: catastrophic. Gaffney and others: effects \"temporary, localized, and mitigated by the dense woodland and topography\"."
+        }
+      ],
+      "why_it_matters": "Gives the date a North Sea shelf was finally cut off (about 8200 calBP); a sea-level slider should land the main submergence near here, which at about -20 to -15 m global is a long way from our 11,400-year preset.",
+      "sources": [
+        {
+          "title": "Weninger and others, Documenta Praehistorica 35, 2008",
+          "url": "https://revije.ff.uni-lj.si/DocumentaPraehistorica/article/download/35.1/1787"
+        },
+        {
+          "title": "Abstract via OpenAlex",
+          "url": "https://doi.org/10.4312/dp.35.1"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Abstract only. The date 8200 calBP is from the abstract; Hill and others give the slide as about 8150 years ago.",
+      "id": "weninger-2008-doggerland-storegga",
+      "title": "The catastrophic final flooding of Doggerland by the Storegga Slide tsunami"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Vincent Gaffney",
+        "Simon Fitch",
+        "Martin R. Bates",
+        "Roselyn Ware",
+        "Tim Kinnaird",
+        "Benjamin Gearey and others (Europe's Lost Frontiers project)"
+      ],
+      "year": 2020,
+      "date": null,
+      "region": {
+        "name": "Southern North Sea, palaeo-river head",
+        "bbox": [
+          1,
+          52,
+          4,
+          55
+        ]
+      },
+      "topic": [
+        "doggerland",
+        "tsunami",
+        "cores",
+        "seismic",
+        "sedaDNA"
+      ],
+      "summary": "Reports the first physical evidence of the Storegga tsunami in the southern North Sea: a deposit at the head of a palaeo-river system found by seismic survey and dated by OSL and radiocarbon, supported by sedimentary ancient DNA. Concludes the impact was temporary and local, softened by dense woodland and the shape of the ground.",
+      "method": "Seismic survey to find the river system; cores analysed for lithology, geochemistry, macro- and microfossils, sedaDNA; OSL and radiocarbon dating.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "The tsunami's effects in the southern North Sea were temporary, localized and mitigated by dense woodland and topography.",
+          "status": "peer-reviewed",
+          "evidence": "these effects were temporary, localized, and mitigated by the dense woodland and topography of the area",
+          "source": "https://doi.org/10.3390/geosciences10070270"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "doggerland"
+      ],
+      "overlaps": [
+        {
+          "with": "weninger-2008-doggerland-storegga",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "weninger-2008-doggerland-storegga",
+          "about": "size of the tsunami effect",
+          "detail": "Gaffney: temporary and local. Weninger: catastrophic final flooding."
+        }
+      ],
+      "why_it_matters": "The Lost Frontiers project is the largest current core and seismic campaign in Doggerland; their data on palaeo-rivers is what a \"real\" Doggerland layer would use. The bbox is approximate.",
+      "sources": [
+        {
+          "title": "Gaffney and others, Geosciences 10(7), 270, 2020 (open access)",
+          "url": "https://doi.org/10.3390/geosciences10070270"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Abstract read. The bbox is a rough box around the southern North Sea study area; the abstract does not give coordinates. I could not reach the Europe's Lost Frontiers website (www.europeslostfrontiers.com did not resolve).",
+      "id": "gaffney-2020-storegga-doggerland",
+      "title": "Multi-Proxy Characterisation of the Storegga Tsunami and Its Impact on the Early Holocene Landscapes of the Southern North Sea"
+    },
+    {
+      "kind": "preprint",
+      "who": [
+        "Jon Hill",
+        "Alexandros Avdis",
+        "Simon L. Mouradian and others"
+      ],
+      "year": 2017,
+      "date": null,
+      "region": {
+        "name": "Southern and central North Sea (Doggerland)",
+        "bbox": [
+          -2,
+          51,
+          9,
+          58
+        ]
+      },
+      "topic": [
+        "doggerland",
+        "tsunami",
+        "model",
+        "sea-level"
+      ],
+      "summary": "Simulates the Storegga tsunami over reconstructed Doggerland, Moray Firth and Shetland. Finds lower inundation than the sediment deposits suggest, and concludes Doggerland was not as badly hit as earlier work implied and was abandoned mainly because of rapid sea-level rise before the tsunami.",
+      "method": "Numerical tsunami model on reconstructed palaeobathymetry.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Doggerland was not as severely affected as previous studies implied; abandonment was primarily caused by rapid sea-level rise before the tsunami.",
+          "status": "preprint",
+          "evidence": "It is suggested therefore that the abandonment of Doggerland was primarily caused by rapid sea level rise prior to the tsunami event.",
+          "source": "https://arxiv.org/abs/1707.05593"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "doggerland"
+      ],
+      "overlaps": [
+        {
+          "with": "gaffney-2020-storegga-doggerland",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "weninger-2008-doggerland-storegga",
+          "about": "what ended Doggerland",
+          "detail": "Hill: sea-level rise first, tsunami second and smaller. Weninger: catastrophic final flooding by the tsunami."
+        }
+      ],
+      "why_it_matters": "Notes that the largest sea-level jumps came just before the slide at about 8150 years ago; a flat -20 m or so is not the whole story there.",
+      "sources": [
+        {
+          "title": "Hill and others, arXiv:1707.05593",
+          "url": "https://arxiv.org/abs/1707.05593"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Abstract page read. Journal version, if any, not checked.",
+      "id": "hill-2017-doggerland-tsunami-model",
+      "title": "Was Doggerland catastrophically flooded by the Mesolithic Storegga tsunami?"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Fraser Sturt",
+        "Duncan Garrow",
+        "Sarah Bradley"
+      ],
+      "year": 2013,
+      "date": null,
+      "region": {
+        "name": "Britain, Ireland and north-west French coast",
+        "bbox": [
+          -12,
+          47,
+          9,
+          62
+        ]
+      },
+      "topic": [
+        "palaeogeography",
+        "sea-level",
+        "inundation",
+        "models"
+      ],
+      "summary": "Builds palaeogeographic models at 500-year steps from 11,000 cal BP to present for Britain, Ireland and the north-west French coast, and uses them to calculate how fast different zones were flooded.",
+      "method": "Glacial-isostatic-adjustment based sea-level models applied to modern bathymetry and topography at 500-year intervals.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "500-year-interval palaeogeographic models from 11000 cal BP to present for Britain, Ireland and the north-west French coast, with rates of inundation by zone.",
+          "status": "peer-reviewed",
+          "evidence": "This paper presents new 500 year interval palaeogeographic models for Britain, Ireland and the North West French coast from 11000 cal. BP to present.",
+          "source": "https://doi.org/10.1016/j.jas.2013.05.023"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "doggerland",
+        "bouldnor-cliff"
+      ],
+      "overlaps": [
+        {
+          "with": "our-globe-sea-level-presets",
+          "how": "same method"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "This is the kind of product we lack: a local sea-level shoreline every 500 years, from GIA modelling; good for Doggerland, Bouldnor Cliff and the Channel. Whether the maps are downloadable was not checked.",
+      "sources": [
+        {
+          "title": "Sturt, Garrow, Bradley, J. Archaeological Science, 2013 (abstract via OpenAlex)",
+          "url": "https://doi.org/10.1016/j.jas.2013.05.023"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Abstract only; no data link seen. Paper is paywalled.",
+      "id": "sturt-2013-nw-europe-palaeogeography",
+      "title": "New models of North West European Holocene palaeogeography and inundation"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Andy R. Emery",
+        "David M. Hodgson",
+        "Natasha Barlow",
+        "Jonathan Carrivick",
+        "Carol Cotterill",
+        "Janet Richardson and others"
+      ],
+      "year": 2020,
+      "date": null,
+      "region": {
+        "name": "Dogger Bank, North Sea (1330 km2 mapped)",
+        "bbox": [
+          1.5,
+          54.2,
+          3.5,
+          55.2
+        ]
+      },
+      "topic": [
+        "doggerland",
+        "seismic",
+        "rivers",
+        "ice-sheet"
+      ],
+      "summary": "Uses high-resolution seismic profiles and cone penetration tests to map a buried river network over 1,330 km2 of Dogger Bank. Shows the ice-sheet margin sat at Dogger Bank about 23 thousand years ago and that rivers formed by ice melt dried up after the ice retreated, followed by a new rainfall-fed network until marine flooding about 8 thousand years ago.",
+      "method": "Seismic reflection and cone penetration test data interpreted for channel networks and sediment fills.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Dogger Bank holds a record from the ice-marginal setting (about 23 ka) to fully marine (about 8 ka), with a channel network over 1330 km2 below shallow marine sediments.",
+          "status": "peer-reviewed",
+          "evidence": "A rare geological archive of climate-driven landscape evolution during the transition from ice-marginal (ca. 23 ka) to a fully submerged marine environment (ca. 8 ka) is preserved at Dogger Bank, in the southern North Sea.",
+          "source": "https://doi.org/10.5194/esurf-8-869-2020"
+        },
+        {
+          "text": "Models of relative sea-level rise suggest inundation of the North Sea basin began around 16 ka.",
+          "status": "peer-reviewed",
+          "evidence": "Models of relative sea-level rise suggest that inundation of the North Sea basin began around 16 ka (Brooks et al., 2011; Kuchar et al., 2012)",
+          "source": "https://esurf.copernicus.org/articles/8/869/2020/"
+        }
+      ],
+      "scale": {
+        "area_km2": 1330,
+        "sites_or_features": null,
+        "resolution_m": null
+      },
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "doggerland"
+      ],
+      "overlaps": [
+        {
+          "with": "gaffney-2020-storegga-doggerland",
+          "how": "same area"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "our-globe-sea-level-presets",
+          "about": "bare land at the ice-age low in the North Sea",
+          "detail": "At -134 m our globe shows the whole North Sea floor as bare ground (534,000 km2 in our box). Emery and others place the ice-sheet margin at Dogger Bank at about 23 ka, so the part of the box north of about 54.5 N (352,000 km2 of it) was under or beside ice, not exposed land."
+        }
+      ],
+      "why_it_matters": "The most direct reason not to read \"-134 m\" as \"walkable land\" in the North Sea: much of it was ice or glacial lake. The bbox is approximate.",
+      "sources": [
+        {
+          "title": "Emery and others, Earth Surface Dynamics 8, 869, 2020 (open access)",
+          "url": "https://esurf.copernicus.org/articles/8/869/2020/"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Read abstract and discussion text. bbox is my approximation of the Dogger Bank block, not in the abstract. The 352,000 km2 figure is from our Terrain Tile count north of 54.5 N, my number.",
+      "id": "emery-2020-dogger-bank-drainage",
+      "title": "Ice sheet and palaeoclimate controls on drainage network evolution: an example from Dogger Bank, North Sea"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Jacob Geersen",
+        "Marcel Bradtmöller",
+        "Jens Schneider von Deimling",
+        "Peter Feldens",
+        "Jens Auer",
+        "Philipp Held and others"
+      ],
+      "year": 2024,
+      "date": null,
+      "region": {
+        "name": "Bay of Mecklenburg, Germany",
+        "bbox": [
+          11.4,
+          54.1,
+          11.8,
+          54.3
+        ]
+      },
+      "topic": [
+        "baltic",
+        "submerged-prehistory",
+        "sonar",
+        "hunting-structure"
+      ],
+      "summary": "A wall of 1,673 stones, each usually under 1 m high, over 971 m at 21 m depth, found with ship and underwater-vehicle sonar at up to centimetre resolution. It runs beside a sunken lake shore (youngest phase dated to 9,143 +/- 36 years) and was probably a reindeer-hunting structure built in the Younger Dryas or early Pre-Boreal.",
+      "method": "Shipborne and AUV hydroacoustic data, sediment samples and optical images; interpretation against glacial transport or ice push as natural causes.",
+      "data": [
+        {
+          "name": "Hydroacoustic and sediment data (see paper data statement)",
+          "url": "https://doi.org/10.1073/pnas.2312008121",
+          "open": null,
+          "licence": null,
+          "in_our_catalogue": null
+        }
+      ],
+      "code": [],
+      "claims": [
+        {
+          "text": "A 971 m long structure of 1,673 stones at 21 m depth, probably used to hunt reindeer in the Younger Dryas or early Pre-Boreal.",
+          "status": "peer-reviewed",
+          "evidence": "The structure is made of 1,673 individual stones which are usually less than 1 m in height, placed side by side over a distance of 971 m in a way that argues against a natural origin by glacial transport or ice push ridges.",
+          "source": "https://doi.org/10.1073/pnas.2312008121"
+        }
+      ],
+      "scale": {
+        "area_km2": null,
+        "sites_or_features": 1673,
+        "resolution_m": 0.01
+      },
+      "verified_on_ground": true,
+      "relates_to_legends": [],
+      "overlaps": [],
+      "contradicts": [],
+      "why_it_matters": "A model of how a sonar-found structure should be reported: instrument resolution, a dated paleo-shore, and a stated test against natural causes. The relevant sea level here is the Baltic's, not the ocean's.",
+      "sources": [
+        {
+          "title": "Geersen and others, PNAS 121(8), e2312008121, 2024 (abstract via OpenAlex)",
+          "url": "https://doi.org/10.1073/pnas.2312008121"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Abstract read via OpenAlex. bbox is approximate: \"10 km north-west of Rerik\" from a search summary.",
+      "id": "geersen-2024-blinkerwall",
+      "title": "A submerged Stone Age hunting architecture from the Western Baltic Sea (the Blinkerwall)"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Oliver Smith",
+        "Garry Momber",
+        "Richard Bates",
+        "Paul Garwood",
+        "Simon Fitch",
+        "Mark Pallen and others"
+      ],
+      "year": 2015,
+      "date": null,
+      "region": {
+        "name": "Bouldnor Cliff, Solent, Isle of Wight",
+        "bbox": [
+          -1.5,
+          50.7,
+          -1.4,
+          50.75
+        ]
+      },
+      "topic": [
+        "bouldnor-cliff",
+        "solent",
+        "sedaDNA",
+        "mesolithic"
+      ],
+      "summary": "Studies a core from the 8,000-year-old site at Bouldnor Cliff, about 11 m under the Solent, and finds ancient DNA of wheat (or a relative of wheat) 2,000 years before the first documented farmers in Britain, and suggests trade came before farming.",
+      "method": "Sedimentary ancient DNA from a core at the submerged site; archaeological context from earlier diver excavations.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "The finds include evidence of wheat (or a relative of wheat) 2000 years before the first documented farmers in Britain.",
+          "status": "peer-reviewed",
+          "evidence": "The finds include evidence of wheat (or a relative of wheat) 2000 years before the first documented farmers in Britain. It seems that trade may have preceded the adoption of farming.",
+          "source": "https://doi.org/10.1126/science.1261278"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": true,
+      "relates_to_legends": [
+        "bouldnor-cliff"
+      ],
+      "overlaps": [
+        {
+          "with": "sturt-2013-nw-europe-palaeogeography",
+          "how": "same area"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "At about 11 m depth, Bouldnor Cliff is a check on the shallow end: our legends file gives -11 m as the site depth, so the sea was at least 11 m lower, which our globe represents but cannot place in time.",
+      "sources": [
+        {
+          "title": "Smith and others, Science, 2015 (Crossref abstract)",
+          "url": "https://doi.org/10.1126/science.1261278"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "The abstract in Crossref is the editor's summary. The 11 m depth is from our legends.json and a search summary of a University of Warwick page; I did not read it on a fetched page. Authors beyond the first six are not listed.",
+      "id": "smith-2015-bouldnor-cliff",
+      "title": "Sedimentary DNA from a submerged site reveals wheat in the British Isles 8000 years ago"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Ehud Galili",
+        "Jonathan Benjamín",
+        "Vered Eshed",
+        "Baruch Rosen",
+        "John McCarthy",
+        "Liora Kolska Horwitz"
+      ],
+      "year": 2019,
+      "date": null,
+      "region": {
+        "name": "Carmel coast, Israel",
+        "bbox": [
+          34.9,
+          32.6,
+          35,
+          32.8
+        ]
+      },
+      "topic": [
+        "atlit-yam",
+        "carmel-coast",
+        "neolithic",
+        "sea-level"
+      ],
+      "summary": "Reports the submerged Neolithic settlement of Tel Hreiz (7500 to 7000 BP) off the Carmel coast and a boulder-built feature more than 100 m long seaward of it, argued to be a seawall built to protect the village from rising sea. The village was eventually inundated and abandoned. Atlit Yam is a nearby, older drowned village on the same coast.",
+      "method": "Underwater excavation, mode of construction and radiometric dating.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "A boulder-built linear feature more than 100 m long seaward of the 7500 to 7000 BP village served as a seawall against Mediterranean sea-level rise.",
+          "status": "peer-reviewed",
+          "evidence": "we demonstrate the feature was contemporary with the inundated Neolithic settlement and conclude that it served as a seawall, built to protect the village against Mediterranean Sea-level rise",
+          "source": "https://doi.org/10.1371/journal.pone.0222560"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": true,
+      "relates_to_legends": [
+        "atlit-yam"
+      ],
+      "overlaps": [],
+      "contradicts": [],
+      "why_it_matters": "A real, dated Eastern Mediterranean case where sea-level rise forced a village to defend and then leave; for Atlit Yam itself I found only a 2025 volume whose abstract I did not read.",
+      "sources": [
+        {
+          "title": "Galili and others, PLOS ONE, e0222560, 2019",
+          "url": "https://doi.org/10.1371/journal.pone.0222560"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "The site is Tel Hreiz, not Atlit Yam. bbox approximate (Carmel coast); not in the abstract. The Atlit Yam depth of 8 to 12 m is from our legends.json.",
+      "id": "galili-2019-tel-hreiz-seawall",
+      "title": "A submerged 7000-year-old village and seawall demonstrate earliest known coastal defence against sea-level rise (Tel Hreiz, Carmel coast)"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Kasih Norman",
+        "Corey J. A. Bradshaw",
+        "Frédérik Saltré",
+        "Chris Clarkson",
+        "Tim Cohen",
+        "Peter Hiscock and others"
+      ],
+      "year": 2024,
+      "date": null,
+      "region": {
+        "name": "Northwest Shelf of Sahul, Australia",
+        "bbox": [
+          118,
+          -21,
+          130,
+          -10
+        ]
+      },
+      "topic": [
+        "sahul",
+        "bathymetry",
+        "sea-level",
+        "palaeogeography",
+        "demography"
+      ],
+      "summary": "Uses high-resolution bathymetry to show the Northwest Shelf was an archipelago in Marine Isotope Stage 4 and a fully exposed shelf with an inland sea next to a large freshwater lake in MIS 2. Models a carrying capacity of 50,000 to 500,000 people at various times, and says two fast rises (MWP-1A and 12 to 9 ka) drowned about half the shelf.",
+      "method": "High-resolution bathymetric data combined with a sea-level curve to map past land; demographic and ecological modelling.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Two rapid rises (14.5 to 14.1 ka and 12 to 9 ka) drowned about 50% of the Northwest Shelf.",
+          "status": "peer-reviewed",
+          "evidence": "Two periods of rapid global sea level rise at 14.5–14.1 ka (Meltwater Pulse 1A), and between 12 ka and 9 ka, resulted in the rapid drowning of ∼50% of the Northwest Shelf.",
+          "source": "https://doi.org/10.1016/j.quascirev.2023.108418"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": false,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "benjamin-2020-murujuga",
+          "how": "same area"
+        },
+        {
+          "with": "our-globe-sea-level-presets",
+          "how": "same method"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "The same recipe we use (a sea-level curve applied to bathymetry), applied to an area of about half a million people-capacity; their sea-level curve and bathymetry source are worth reading for what they correct for.",
+      "sources": [
+        {
+          "title": "Norman and others, Quaternary Science Reviews 324, 108418, 2024 (abstract via OpenAlex)",
+          "url": "https://doi.org/10.1016/j.quascirev.2023.108418"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Abstract read; the 50 to 500 thousand is a model output, not a count. bbox is a rough box for the Northwest Shelf, not in the abstract. The sea-level curve they used was not read. The \"100,000 km2 in 400 years\" quoted in the press was not in the abstract.",
+      "id": "norman-2024-northwest-shelf",
+      "title": "Sea level rise drowned a vast habitable area of north-western Australia driving long-term cultural change"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Jonathan Benjamín",
+        "Michael O'Leary",
+        "Jo McDonald",
+        "Chelsea Wiseman",
+        "John McCarthy",
+        "Emma Beckett and others"
+      ],
+      "year": 2020,
+      "date": null,
+      "region": {
+        "name": "Murujuga (Dampier Archipelago), Western Australia",
+        "bbox": [
+          116.4,
+          -20.8,
+          117.3,
+          -20.3
+        ]
+      },
+      "topic": [
+        "murujuga",
+        "underwater-archaeology",
+        "australia",
+        "remote-sensing"
+      ],
+      "summary": "Reports Australia's first confirmed ancient underwater archaeological sites on the continental shelf: Cape Bruguieres (more than 260 stone artefacts to -2.4 m, no later than 7,000 cal BP) and Flying Foam Passage (a find beside a submerged freshwater spring at -14 m, no later than 8,500 cal BP). The dates are the times the sites were finally covered by the sea.",
+      "method": "Iterative aerial and underwater remote sensing and diver investigation inside a predictive model of the drowned landscape in the 0 to 20 m depth band.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "More than 260 lithic artefacts at Cape Bruguieres, no later than 7000 cal BP; a find at a -14 m freshwater spring at Flying Foam Passage, no later than 8500 cal BP.",
+          "status": "peer-reviewed",
+          "evidence": "Cape Bruguieres, comprising > 260 recorded lithic artefacts at depths down to -2.4 m below sea level, and Flying Foam Passage where the find spot is associated with a submerged freshwater spring at -14 m",
+          "source": "https://doi.org/10.1371/journal.pone.0233912"
+        }
+      ],
+      "scale": {
+        "area_km2": null,
+        "sites_or_features": 260,
+        "resolution_m": null
+      },
+      "verified_on_ground": true,
+      "relates_to_legends": [],
+      "overlaps": [
+        {
+          "with": "norman-2024-northwest-shelf",
+          "how": "same area"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "Corrects the lead in the task: this is PLOS ONE (2020), not PNAS. A \"predictive framework for the 0 to 20 m band\" is the model for how to search near-shore drowned land with real depth data.",
+      "sources": [
+        {
+          "title": "Benjamín and others, PLOS ONE 15(7), e0233912, 2020",
+          "url": "https://doi.org/10.1371/journal.pone.0233912"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Abstract read. bbox is approximate for Murujuga/Dampier Archipelago, not in the abstract. The \"2 million km2 of drowned landscapes\" in Australia is from the abstract.",
+      "id": "benjamin-2020-murujuga",
+      "title": "Aboriginal artefacts on the continental shelf reveal ancient drowned cultural landscapes in northwest Australia"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Jeffrey I. Rose"
+      ],
+      "year": 2010,
+      "date": null,
+      "region": {
+        "name": "Persian Gulf basin",
+        "bbox": [
+          47,
+          23.5,
+          58,
+          31
+        ]
+      },
+      "topic": [
+        "persian-gulf",
+        "gulf-oasis",
+        "refugium",
+        "disputed"
+      ],
+      "summary": "Proposes that when Arabia was dry the exposed floor of the Gulf, watered by the Tigris, Euphrates, Karun and Wadi Batin and by aquifers, was a refuge, and that its flooding pushed people to the coasts. Says the exposed Gulf was at times \"equal ... to the size of Great Britain\".",
+      "method": "Review of palaeoenvironmental, archaeological and genetic evidence plus sea-level reasoning. No survey of the Gulf floor itself.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Reduced sea levels periodically exposed large portions of the Gulf, equal at times to the size of Great Britain.",
+          "status": "disputed",
+          "evidence": "reduced sea levels periodically exposed large portions of the Arabo-Persian Gulf, equal at times to the size of Great Britain",
+          "source": "https://doi.org/10.1086/657397"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": false,
+      "relates_to_legends": [
+        "dilmun"
+      ],
+      "overlaps": [
+        {
+          "with": "lambeck-1996-persian-gulf",
+          "how": "same area"
+        },
+        {
+          "with": "naderi-beni-2024-persian-gulf",
+          "how": "same area"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "naderi-beni-2024-persian-gulf",
+          "about": "date the Gulf flooded",
+          "detail": "Rose: flooding about 8,000 years ago (press summary of his claim, Birmingham, 2010). Naderi Beni and others: flooding of the western Gulf from about 11.5 ka with successive phases at 10.4 and 9.2 ka cal BP and marine conditions about 8.8 ka cal BP."
+        }
+      ],
+      "why_it_matters": "The \"Gulf Oasis\" is the most-cited drowned-land hypothesis in the Middle East; our tile data agree that the lowest sea would dry about 250,000 km2 (about the size of Great Britain), but no site on the floor has been found. Criticism noted in 2010 press, not in a paper I read.",
+      "sources": [
+        {
+          "title": "Rose, Current Anthropology 51(6), 2010 (abstract via OpenAlex)",
+          "url": "https://doi.org/10.1086/657397"
+        },
+        {
+          "title": "University of Birmingham news, \"Lost civilization under Persian Gulf?\", 2010",
+          "url": "https://www.birmingham.ac.uk/news/latest/2010/12/20Dec-LostCivilisation.aspx"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Abstract read; the Birmingham news page and the critics were seen only in a search summary, not opened. The 8,000-year flooding date is from that summary. The Great Britain comparison agrees with our exposure count (250,979 km2 at -134 m).",
+      "id": "rose-2010-gulf-oasis",
+      "title": "New Light on Human Prehistory in the Arabo-Persian Gulf Oasis"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Abdolmajid Naderi Beni",
+        "Guillaume Leduc",
+        "Morteza Djamali",
+        "Arash Sharifi",
+        "Nick Marriner",
+        "Kazuyo Tachikawa and others"
+      ],
+      "year": 2024,
+      "date": null,
+      "region": {
+        "name": "Persian Gulf (two deep sites)",
+        "bbox": [
+          47,
+          23.5,
+          58,
+          31
+        ]
+      },
+      "topic": [
+        "persian-gulf",
+        "cores",
+        "flooding",
+        "holocene"
+      ],
+      "summary": "Three short sediment cores from two deep sites. Inundation of the western Gulf began about 11.5 ka, continued in phases centred on 10.4 and 9.2 ka cal BP, and fully marine conditions were set about 8.8 ka cal BP.",
+      "method": "Sedimentology, pollen and geochemistry on three short cores.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Inundation of the western Persian Gulf started about 11.5 ka BP, with transgression phases at 10.4 and 9.2 ka cal BP and marine conditions about 8.8 ka cal BP.",
+          "status": "peer-reviewed",
+          "evidence": "inundation of the western part of the PG that started from ca. 11.5 ka bp continued with successive prominent phases of transgression centered on 10.4 and 9.2 ka cal bp, and definitive marine conditions were established around 8.8 ka cal bp",
+          "source": "https://doi.org/10.1002/jqs.3614"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "dilmun"
+      ],
+      "overlaps": [
+        {
+          "with": "rose-2010-gulf-oasis",
+          "how": "same area"
+        },
+        {
+          "with": "lambeck-1996-persian-gulf",
+          "how": "same area"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "rose-2010-gulf-oasis",
+          "about": "date the Gulf flooded",
+          "detail": "Naderi Beni: from 11.5 ka, marine by 8.8 ka. Rose: about 8,000 years ago."
+        }
+      ],
+      "why_it_matters": "The newest measured dates for the Gulf flooding, and they are earlier and more drawn-out than the single \"8,000 years ago\" often quoted; a drowned-Gulf preset should be a range of 11.5 to 8.8 ka.",
+      "sources": [
+        {
+          "title": "Naderi Beni and others, J. Quaternary Science, 2024 (OpenAlex abstract)",
+          "url": "https://doi.org/10.1002/jqs.3614"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Abstract read. Only three cores; the paper itself says there is \"a paucity of data\".",
+      "id": "naderi-beni-2024-persian-gulf",
+      "title": "Postglacial flooding and Holocene climate shifts in the Persian Gulf"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Kurt Lambeck"
+      ],
+      "year": 1996,
+      "date": null,
+      "region": {
+        "name": "Persian Gulf",
+        "bbox": [
+          47,
+          23.5,
+          58,
+          31
+        ]
+      },
+      "topic": [
+        "persian-gulf",
+        "shoreline",
+        "glacial-isostatic-adjustment",
+        "palaeoshoreline"
+      ],
+      "summary": "Compares glacio-hydro-isostatic model predictions with observed sea level to build palaeoshorelines of the Gulf. The Strait of Hormuz opened about 14,000 years ago, the central basin flooded about 12,500 years ago and the western basin about 1,000 years later; present shorelines were reached shortly before 6,000 years ago, with sea level 1 to 2 m above present afterwards. Sea-level change in the Gulf varies considerably across the region.",
+      "method": "Glacio-hydro-isostatic modelling checked against observed sea-level data.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Hormuz opened about 14,000 years BP; central basin flooded about 12,500 years ago; western basin about 1,000 years later.",
+          "status": "peer-reviewed",
+          "evidence": "abstract summarised by search engine; abstract not opened",
+          "source": "https://doi.org/10.1016/0012-821X(96)00069-6"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "dilmun"
+      ],
+      "overlaps": [
+        {
+          "with": "naderi-beni-2024-persian-gulf",
+          "how": "same area"
+        }
+      ],
+      "contradicts": [],
+      "why_it_matters": "The only place-specific, model-based shoreline set for the Gulf that I found; tilt within the Gulf is what a single global level cannot show.",
+      "sources": [
+        {
+          "title": "Lambeck, Earth and Planetary Science Letters, 1996 (Crossref record)",
+          "url": "https://doi.org/10.1016/0012-821X(96)00069-6"
+        }
+      ],
+      "confidence": "low",
+      "notes": "The abstract details here come from a search-engine summary, not from a page I opened (Crossref had no abstract; the Scilit page returned a block). Treat the numbers as unverified until the abstract is read.",
+      "id": "lambeck-1996-persian-gulf",
+      "title": "Shoreline reconstructions for the Persian Gulf since the last glacial maximum"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "William B. F. Ryan",
+        "Walter C. Pitman",
+        "Candace O. Major",
+        "K. Shimkus",
+        "V. Moskalenko",
+        "Glenn Jones and others"
+      ],
+      "year": 1997,
+      "date": null,
+      "region": {
+        "name": "Black Sea",
+        "bbox": [
+          27.5,
+          41,
+          41.8,
+          46.6
+        ]
+      },
+      "topic": [
+        "black-sea",
+        "flood-hypothesis",
+        "disputed"
+      ],
+      "summary": "Argues the Black Sea was a freshwater lake with a surface more than 100 m below its outlet until the Mediterranean rose to the Bosporus sill at 7,150 radiocarbon years BP and the water poured in, drowning more than 100,000 km2 of exposed shelf in a catastrophe that may have driven early farmers into Europe. This is the basis of the \"Black Sea flood\" and \"Noah's flood\" popular claim.",
+      "method": "Interpretation of sea-floor and sediment data across the shelf.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Mediterranean water crossed the Bosporus sill at 7,150 yr BP and catastrophically drowned more than 100,000 km2 of exposed Black Sea shelf.",
+          "status": "disputed",
+          "evidence": "saltwater poured through this spillway to refill the lake and submerge, catastrophically, more than 100,000 km2 of its exposed continental shelf",
+          "source": "https://doi.org/10.1016/S0025-3227(97)00007-8"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "noahs-ark"
+      ],
+      "overlaps": [
+        {
+          "with": "yanchilina-2017-black-sea",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "yanchilina-2017-black-sea",
+          "about": "date and speed of the Black Sea shelf flooding",
+          "detail": "Ryan and others: 7,150 radiocarbon years BP (catastrophic). Yanchilina, Ryan and others: shelf submerged at 9,300 calendar years BP, in under 40 years, which supports a rapid flood but about 1,000 or more calendar years earlier than the 1997 date."
+        },
+        {
+          "with": "Görür and others 2001, Marine Geology",
+          "about": "whether there was a catastrophic drowning at all",
+          "detail": "Title of the reply: \"Is the abrupt drowning of the Black Sea shelf at 7150 yr BP a myth?\". Abstract not read."
+        },
+        {
+          "with": "Aksu and others 2002, GSA Today",
+          "about": "direction of flow at the Bosporus",
+          "detail": "Title: \"Persistent Holocene Outflow from the Black Sea to the Eastern Mediterranean Contradicts Noah's Flood Hypothesis\". Abstract not read."
+        }
+      ],
+      "why_it_matters": "The Black Sea is a lake-like basin whose level did not follow the ocean; a global slider should not draw a Black Sea shore. Our how-it-works.md already says lakes and inland seas do not follow the ocean.",
+      "sources": [
+        {
+          "title": "Ryan and others, Marine Geology, 1997 (abstract via OpenAlex)",
+          "url": "https://doi.org/10.1016/S0025-3227(97)00007-8"
+        },
+        {
+          "title": "Görür and others, Marine Geology, 2001 (record only)",
+          "url": "https://doi.org/10.1016/S0025-3227(01)00148-7"
+        },
+        {
+          "title": "Aksu and others, GSA Today, 2002 (record only)",
+          "url": "https://doi.org/10.1130/1052-5173(2002)012<0004:PHOFTB>2.0.CO;2"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Read one abstract and two titles (the replies) only. 7,150 yr BP is in radiocarbon years; the calendar equivalent is older, which narrows the gap with 9,300 cal BP but I did not compute it.",
+      "id": "ryan-1997-black-sea",
+      "title": "An abrupt drowning of the Black Sea shelf"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Anastasia G. Yanchilina",
+        "William B. F. Ryan",
+        "Jerry F. McManus",
+        "Petko Dimitrov",
+        "Dimitar Dimitrov",
+        "Krasimira Slavova and others"
+      ],
+      "year": 2017,
+      "date": null,
+      "region": {
+        "name": "Black Sea shelves of Ukraine, Romania, Bulgaria and Turkey",
+        "bbox": [
+          27.5,
+          41,
+          41.8,
+          46.6
+        ]
+      },
+      "topic": [
+        "black-sea",
+        "flood-hypothesis",
+        "disputed",
+        "strontium"
+      ],
+      "summary": "Cores across four national shelves: strontium isotopes say the shelf was submerged by Mediterranean water at 9,300 calendar years BP, in under 40 years; seismic profiles show an undisturbed drape over dunes, so the shelf was dry; the lake shore may have been beyond 120 m below sea level. A comment by Guillaume Soulet and a reply by the authors followed in 2018.",
+      "method": "Cores, strontium, oxygen, carbon isotopes and radiocarbon on mollusc shells, tuned to U/Th-dated Sofular Cave stalagmites; seismic profiles.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "The Black Sea shelf was submerged at 9300 calendar years BP by Mediterranean water, abruptly, taking under 40 years.",
+          "status": "disputed",
+          "evidence": "Strontium results indicate that the submergence of the Black Sea shelf at 9300 calendar years BP was caused by the ingress of Mediterranean water and was abrupt, taking < 40 years.",
+          "source": "https://doi.org/10.1016/j.margeo.2016.11.001"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "noahs-ark"
+      ],
+      "overlaps": [
+        {
+          "with": "ryan-1997-black-sea",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "ryan-1997-black-sea",
+          "about": "date of the Black Sea shelf flooding",
+          "detail": "9,300 cal BP (2017) versus 7,150 radiocarbon yr BP (1997)."
+        },
+        {
+          "with": "Soulet 2018, Marine Geology comment",
+          "about": "the 2017 interpretation",
+          "detail": "Comment titled \"Comment on 'Compilation of geophysical ... evidence'\" by Guillaume Soulet; reply by Yanchilina, Ryan and McManus the same year. Neither abstract was available."
+        }
+      ],
+      "why_it_matters": "Still an open question: the newest paper by the original authors moves the date by about 1,000 years or more and keeps the \"abrupt\" claim; the lake level of about -120 m is a basin-specific number that should not be a global slider setting.",
+      "sources": [
+        {
+          "title": "Yanchilina and others, Marine Geology, 2017 (OpenAlex abstract)",
+          "url": "https://doi.org/10.1016/j.margeo.2016.11.001"
+        },
+        {
+          "title": "Soulet comment, 2018",
+          "url": "https://doi.org/10.1016/j.margeo.2018.09.007"
+        },
+        {
+          "title": "Yanchilina, Ryan, McManus reply, 2018",
+          "url": "https://doi.org/10.1016/j.margeo.2018.11.006"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "The 2017 abstract was truncated at about 2,000 characters in my read. The comment and reply were not opened.",
+      "id": "yanchilina-2017-black-sea",
+      "title": "Compilation of geophysical, geochronological, and geochemical evidence indicates a rapid Mediterranean-derived submergence of the Black Sea's shelf and subsequent substantial salinification in the early Holocene"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Martin Jakobsson",
+        "Christof Pearce",
+        "Thomas M. Cronin",
+        "Jan Backman",
+        "Leif Anderson",
+        "Natalia Barrientos and others"
+      ],
+      "year": 2017,
+      "date": null,
+      "region": {
+        "name": "Bering Strait and Herald Canyon, Chukchi Sea",
+        "bbox": [
+          -180,
+          63,
+          -160,
+          74
+        ]
+      },
+      "topic": [
+        "beringia",
+        "bering-strait",
+        "sea-level",
+        "meltwater-pulse"
+      ],
+      "summary": "A dated core from Herald Canyon shows a shift from a near-shore to a Pacific-influenced open-marine setting at about 11 cal ka BP, interpreted as the breaching of the Bering Strait (about 53 m deep today) at meltwater pulse 1b, later than earlier estimates inside the Younger Dryas.",
+      "method": "Geophysical mapping and a well-dated sediment core from Herald Canyon.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "The Bering Strait opened at about 11 cal ka BP, corresponding to meltwater pulse 1b, later than several previous studies.",
+          "status": "peer-reviewed",
+          "evidence": "Our results suggest an initial opening at about 11 cal ka BP in the earliest Holocene, which is later than in several previous studies.",
+          "source": "https://doi.org/10.5194/cp-13-991-2017"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "beringia"
+      ],
+      "overlaps": [
+        {
+          "with": "farmer-2022-bering-strait",
+          "how": "same area"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "lambeck-2014-esl",
+          "about": "meltwater pulse 1B and the date the Bering Strait flooded",
+          "detail": "Jakobsson and others: opening about 11 cal ka BP, tied to MWP-1b. Lambeck: no global 1B. Earlier proxy studies cited by Jakobsson put the opening within the Younger Dryas (12.9 to 11.7 cal ka BP)."
+        }
+      ],
+      "why_it_matters": "A dated \"when did the land bridge go\" that our presets can be checked against: the strait is about 53 m deep, so at -60 m (our 11.4 ka preset) about 7 m of land still stands above the water, and at 15 m per thousand years the strait floods about 500 years later, near 10.9 ka: within a few hundred years of Jakobsson's 11 cal ka. Local ice-sheet effects at the strait are not included in that sum.",
+      "sources": [
+        {
+          "title": "Jakobsson and others, Climate of the Past 13, 2017 (OpenAlex abstract)",
+          "url": "https://doi.org/10.5194/cp-13-991-2017"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Abstract read. bbox is an approximation of the Bering Strait to Herald Canyon area.",
+      "id": "jakobsson-2017-bering-flooding",
+      "title": "Post-glacial flooding of the Bering Land Bridge dated to 11 cal ka BP based on new geophysical and sediment records"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Jesse R. Farmer",
+        "Tamara Pico",
+        "Ona M. Underwood",
+        "Rebecca Cleveland Stout",
+        "Julie Granger",
+        "Thomas M. Cronin and others"
+      ],
+      "year": 2022,
+      "date": "2022-12-27",
+      "region": {
+        "name": "Bering Strait",
+        "bbox": [
+          -172,
+          64,
+          -165,
+          67
+        ]
+      },
+      "topic": [
+        "beringia",
+        "bering-strait",
+        "sea-level",
+        "ice-volume"
+      ],
+      "summary": "Uses a geochemical record of Pacific nutrient input to the Arctic to show the Bering Strait was open from at least 46,000 to 35,700 years ago. To match this, a sea-level model needs more than half of the LGM peak ice volume to grow after 46 ka, so the land bridge last formed within about 10,000 years of the LGM.",
+      "method": "Nitrogen-isotope proxy of Pacific input into the Arctic; sea-level model.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "The Bering Strait was flooded from 46 ka until about 35.7 ka; sea-level estimates before the LGM vary by more than 60 m.",
+          "status": "peer-reviewed",
+          "evidence": "we find that the Bering Strait was flooded from the beginning of our records at 46 ka until 35.7 - 2.4 + 3.3 ka",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9910591/"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "beringia"
+      ],
+      "overlaps": [
+        {
+          "with": "jakobsson-2017-bering-flooding",
+          "how": "same area"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "lambeck-2014-esl",
+          "about": "sea level before the LGM",
+          "detail": "Farmer and others: pre-LGM estimates \"vary by > 60 m\" and the strait was open until 35.7 ka. Lambeck: a rapid fall of about 40 m near 30 ka to the -134 m low. The two disagree about when the land bridge first formed."
+        }
+      ],
+      "why_it_matters": "Shows the \"ice-age low\" is a time series with disputed early parts; our globe starts at 21 ka and has nothing earlier, which matters for first-migration claims.",
+      "sources": [
+        {
+          "title": "Farmer and others, PNAS 120(1), e2206742119, 2023 (PMC)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9910591/"
+        }
+      ],
+      "confidence": "high",
+      "notes": "PMC full text read. The article is dated 27 Dec 2022 online and appears in PNAS vol. 120, 2023.",
+      "id": "farmer-2022-bering-strait",
+      "title": "The Bering Strait was flooded 10,000 years before the Last Glacial Maximum"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "John M. O'Shea",
+        "Ashley Lemke",
+        "Elizabeth P. Sonnenburg",
+        "Robert G. Reynolds",
+        "Brian D. Abbott (PNAS 2014)",
+        "Sonnenburg and O'Shea (Geoarchaeology 2016)"
+      ],
+      "year": 2014,
+      "date": null,
+      "region": {
+        "name": "Alpena-Amberley Ridge, Lake Huron",
+        "bbox": [
+          -83.2,
+          44.4,
+          -81,
+          45.4
+        ]
+      },
+      "topic": [
+        "alpena-amberley-ridge",
+        "great-lakes",
+        "lowstand",
+        "caribou"
+      ],
+      "summary": "The ridge under Lake Huron was a dry-land corridor between north-east Michigan and southern Ontario 9,000 years ago; the Drop 45 Drive Lane is the most complex hunting structure found under the Great Lakes. A 2016 study (67 samples over 50 km2) found sphagnum, rooted spruce and tamarack and 8 to 9 thousand year old charcoal on the drowned surface during the Lake Stanley lowstand (about 10 to 8 ka).",
+      "method": "Diver and sonar survey, sediment and core sampling, simulation of hunting.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "About 9,000 years ago the ridge was a dry land corridor connecting Michigan and Ontario; the Drop 45 Drive Lane is the most complex hunting structure found beneath the Great Lakes.",
+          "status": "peer-reviewed",
+          "evidence": "Nine thousand years ago, the Alpena-Amberley Ridge (AAR) beneath modern Lake Huron was a dry land corridor that connected northeast Michigan to southern Ontario.",
+          "source": "https://doi.org/10.1073/pnas.1404404111"
+        }
+      ],
+      "scale": {
+        "area_km2": 50,
+        "sites_or_features": null,
+        "resolution_m": null
+      },
+      "verified_on_ground": true,
+      "relates_to_legends": [
+        "alpena-amberley-ridge"
+      ],
+      "overlaps": [],
+      "contradicts": [],
+      "why_it_matters": "A lake, not the ocean: the lowstand came from lake outlets and isostatic rebound, not from the global sea-level curve, so the ocean slider cannot place it. This is our \"lakes do not follow the ocean\" limit as a real case.",
+      "sources": [
+        {
+          "title": "O'Shea and others, PNAS, 2014 (OpenAlex abstract)",
+          "url": "https://doi.org/10.1073/pnas.1404404111"
+        },
+        {
+          "title": "Sonnenburg and O'Shea, Geoarchaeology, 2016 (Crossref abstract)",
+          "url": "https://doi.org/10.1002/gea.21590"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Abstracts only. The \"who\" list mixes the two papers. bbox is approximate for the ridge and not in the abstract.",
+      "id": "oshea-2014-alpena-amberley",
+      "title": "A 9,000-year-old caribou hunting structure beneath Lake Huron (and the Lake Stanley lowstand follow-up)"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Jessi J. Halligan",
+        "Michael R. Waters",
+        "Angelina Perrotti",
+        "Ivy Owens",
+        "Joshua Feinberg",
+        "Joseph Bourne and others"
+      ],
+      "year": 2016,
+      "date": null,
+      "region": {
+        "name": "Aucilla River, Florida Gulf coast",
+        "bbox": [
+          -83.9,
+          30.1,
+          -83.8,
+          30.2
+        ]
+      },
+      "topic": [
+        "florida",
+        "gulf-of-mexico",
+        "submerged-site",
+        "pre-clovis"
+      ],
+      "summary": "Underwater excavation of a sinkhole in the Aucilla River, Florida, about 9 m deep and about 11.5 km inland of today's Gulf coast, dates stone tools and mastodon remains to 14,550 calendar years BP, the oldest human occupation in the region.",
+      "method": "Scuba excavation, 71 new radiocarbon dates and geoarchaeology (as reported in press coverage).",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Page-Ladson shows occupation of the North American Gulf Coastal Plain at 14,550 B.P.",
+          "status": "peer-reviewed",
+          "evidence": "Page-Ladson, Florida, provides evidence of the oldest human occupation in the North American Gulf Coastal Plain at 14,550 B.P.",
+          "source": "https://doi.org/10.1126/sciadv.1600375"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": true,
+      "relates_to_legends": [],
+      "overlaps": [],
+      "contradicts": [],
+      "why_it_matters": "A Florida site that was dry land at 14,550 years ago when global sea level was about -95 m and the Gulf coast was far out on the shelf; it shows rivers and sinkholes, not the shelf edge, are where the finds are. Depth and distance from the coast are from press reports, not the paper.",
+      "sources": [
+        {
+          "title": "Halligan and others, Science Advances 2(5), 2016 (Crossref)",
+          "url": "https://doi.org/10.1126/sciadv.1600375"
+        }
+      ],
+      "confidence": "low",
+      "notes": "Crossref gave a one-sentence abstract. The 9 m depth and 11.5 km inland come from a search summary of press coverage, not a page I opened. bbox is an approximate box for the Aucilla River near the Gulf coast.",
+      "id": "halligan-2016-page-ladson",
+      "title": "Pre-Clovis occupation 14,550 years ago at the Page-Ladson site, Florida, and the peopling of the Americas"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Blake C. Dyer",
+        "Jacqueline Austermann",
+        "William J. D'Andrea",
+        "Roger C. Creel",
+        "and others"
+      ],
+      "year": 2021,
+      "date": null,
+      "region": {
+        "name": "The Bahamas",
+        "bbox": [
+          -79.5,
+          20.9,
+          -72.7,
+          27.3
+        ]
+      },
+      "topic": [
+        "bahamas",
+        "forebulge",
+        "glacial-isostatic-adjustment",
+        "last-interglacial"
+      ],
+      "summary": "Compares last-interglacial sea-level indicators across the Bahamian islands with Earth-deformation models, because the elevation of those features also records local uplift or subsidence due to the growth and decay of ice sheets. Used here as evidence of how strongly local ice-sheet effects change the apparent height of old sea levels in the Bahamas.",
+      "method": "Field elevations of fossil marine sediments and reefs compared with Earth deformation models.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "The elevations of past sea-level features also record local uplift or subsidence due to the growth and decay of ice sheets.",
+          "status": "peer-reviewed",
+          "evidence": "However, the elevations of these features also record local uplift or subsidence due to the growth and decay of ice sheets since the time of deposition.",
+          "source": "https://doi.org/10.1073/pnas.2026839118"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "atlantis"
+      ],
+      "overlaps": [],
+      "contradicts": [],
+      "why_it_matters": "About the last interglacial (130 to 116 thousand years ago), not the last ice age, so it gives the mechanism for the Bahamas but not an ice-age figure; I did not find a published LGM relative-sea-level number for the Bahamas or Florida.",
+      "sources": [
+        {
+          "title": "Dyer and others, PNAS, 2021 (Crossref significance statement)",
+          "url": "https://doi.org/10.1073/pnas.2026839118"
+        }
+      ],
+      "confidence": "low",
+      "notes": "Only the significance statement was read. The statement that the Bahamas sit on the Laurentide forebulge is from a search summary.",
+      "id": "dyer-2021-bahamas",
+      "title": "Sea-level trends across The Bahamas constrain peak last interglacial ice melt"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "R. B. Firestone",
+        "A. West",
+        "J. P. Kennett",
+        "L. Becker",
+        "T. E. Bunch",
+        "Z. S. Revay and others"
+      ],
+      "year": 2007,
+      "date": null,
+      "region": null,
+      "topic": [
+        "younger-dryas",
+        "impact-hypothesis",
+        "disputed"
+      ],
+      "summary": "Reports a thin layer at about 50 Clovis-age sites in North America, dated about 12.9 ka, with magnetic grains with iridium, microspherules, charcoal, soot, carbon spherules with nanodiamonds and fullerenes with extraterrestrial helium, and argues an impact caused Younger Dryas cooling, extinctions and the end of Clovis. It is the paper that started the Younger Dryas impact hypothesis (YDIH).",
+      "method": "Geochemical and microscopic analysis of sediments from Clovis-age sites and Carolina Bays.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "A thin layer at about 12.9 ka at Clovis-age sites carries seven markers the authors say are evidence of an extraterrestrial impact and biomass burning.",
+          "status": "disputed",
+          "evidence": "all of which are evidence for an ET impact and associated biomass burning at approximately 12.9 ka",
+          "source": "https://doi.org/10.1073/pnas.0706977104"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "atlantis"
+      ],
+      "overlaps": [
+        {
+          "with": "holliday-2023-ydih-refutation",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "paquay-2009-no-ydih-pge",
+          "about": "iridium at the Younger Dryas boundary",
+          "detail": "Firestone and others: layers with iridium-bearing magnetic grains. Paquay and others: \"our results do not reproduce the previously reported elevated Ir concentrations\"."
+        }
+      ],
+      "why_it_matters": "Legend-makers tie Atlantis (Plato's date, about 9600 BCE) to this impact; the impact claim is contested, and it has no connection to where the sea stood.",
+      "sources": [
+        {
+          "title": "Firestone and others, PNAS 104, 2007 (OpenAlex abstract, PMC copy at PMC1994902)",
+          "url": "https://doi.org/10.1073/pnas.0706977104"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Abstract read. The link to Atlantis is through the Younger Dryas date; Plato does not mention an impact.",
+      "id": "firestone-2007-ydih",
+      "title": "Evidence for an extraterrestrial impact 12,900 years ago that contributed to the megafaunal extinctions and the Younger Dryas cooling"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "François S. Paquay",
+        "Steven Goderis",
+        "Greg Ravizza",
+        "Frank Vanhaecke",
+        "Matthew Boyd",
+        "Todd A. Surovell and others"
+      ],
+      "year": 2009,
+      "date": null,
+      "region": null,
+      "topic": [
+        "younger-dryas",
+        "impact-hypothesis",
+        "osmium",
+        "platinum-group"
+      ],
+      "summary": "Measured platinum-group elements, gold and osmium isotopes in matching terrestrial, lake and marine sections and found no iridium anomaly, crustal osmium ratios, and no marine anomaly in the Gulf of California or the Cariaco Basin.",
+      "method": "Geochemistry on sections from North America and one in Belgium.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Results do not reproduce the elevated iridium reported by Firestone and others and show no extraterrestrial platinum-group anomaly.",
+          "status": "peer-reviewed",
+          "evidence": "First, our results do not reproduce the previously reported elevated Ir concentrations.",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2799824/"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "atlantis"
+      ],
+      "overlaps": [
+        {
+          "with": "firestone-2007-ydih",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "firestone-2007-ydih",
+          "about": "iridium at 12.9 ka",
+          "detail": "See entry."
+        }
+      ],
+      "why_it_matters": "The first published reply; a good example of a reply by a different lab on the same layers.",
+      "sources": [
+        {
+          "title": "Paquay and others, PNAS, 2009 (PMC)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2799824/"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Abstract read.",
+      "id": "paquay-2009-no-ydih-pge",
+      "title": "Absence of geochemical evidence for an impact event at the Bølling–Allerød/Younger Dryas transition"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Vance T. Holliday",
+        "Tyrone L. Daulton",
+        "Patrick J. Bartlein",
+        "M. B. Boslough",
+        "Ryan P. Breslawski",
+        "Abigail E. Fisher and others"
+      ],
+      "year": 2023,
+      "date": null,
+      "region": null,
+      "topic": [
+        "younger-dryas",
+        "impact-hypothesis",
+        "review",
+        "disputed"
+      ],
+      "summary": "A very long review arguing the YDIH has no self-consistent scenario, no crater dated to the onset of the Younger Dryas, and that the nano- to microscale evidence (charcoal, spherules, nanodiamonds, platinum) has identification, measurement and interpretation problems and is associated with ordinary terrestrial processes. Sweatman, Powell and West (Airbursts and Cratering Impacts, 2024) call it a \"Gish gallop\" and say the hypothesis stands on more than 50 sites on five continents; Holliday and others replied in Earth-Science Reviews in 2024.",
+      "method": "Review of the impact, geochemical, archaeological and palaeoecological literature.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "No craters have been identified that date to the onset of the Younger Dryas, and most purported indicators are associated with terrestrial processes.",
+          "status": "peer-reviewed",
+          "evidence": "No craters have been identified that date to the onset of the Younger Dryas.",
+          "source": "https://doi.org/10.1016/j.earscirev.2023.104502"
+        },
+        {
+          "text": "The YDIH has been corroborated by scores of articles at more than 50 Younger Dryas boundary sites on five continents (the proponents' reply).",
+          "status": "disputed",
+          "evidence": "it has been corroborated by scores of articles in dozens of peer-reviewed journals based on the discovery of some combination of synchronous nanodiamonds, exotic microspherules and platinum enrichment at more than 50 Younger Dryas boundary sites on five continents",
+          "source": "https://doi.org/10.14293/aci.2024.0007"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "atlantis"
+      ],
+      "overlaps": [
+        {
+          "with": "firestone-2007-ydih",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "sweatman-2024-ydih-rebuttal",
+          "about": "whether the Younger Dryas impact hypothesis is refuted",
+          "detail": "Holliday and others (2023): refuted, with no craters and unreliable markers. Sweatman, Powell and West (2024): \"well established\", with shocked quartz and more than 50 sites. Holliday and others answered in Earth-Science Reviews in 2024 (abstract not available to me)."
+        }
+      ],
+      "why_it_matters": "The standing state of the debate in 2024: still contested by the people on each side; any copy on a/lost that mentions it should say \"disputed\" and not endorse either.",
+      "sources": [
+        {
+          "title": "Holliday and others, Earth-Science Reviews, 2023 (OpenAlex abstract)",
+          "url": "https://doi.org/10.1016/j.earscirev.2023.104502"
+        },
+        {
+          "title": "Holliday and others, 2024 rebuttal (title only)",
+          "url": "https://doi.org/10.1016/j.earscirev.2024.104961"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Abstract read. The abstract in my read was truncated.",
+      "id": "holliday-2023-ydih-refutation",
+      "title": "Comprehensive refutation of the Younger Dryas Impact Hypothesis (YDIH)"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Martin B. Sweatman",
+        "James Lawrence Powell",
+        "Allen West"
+      ],
+      "year": 2024,
+      "date": null,
+      "region": null,
+      "topic": [
+        "younger-dryas",
+        "impact-hypothesis",
+        "rebuttal",
+        "disputed"
+      ],
+      "summary": "A line-by-line reply saying Holliday and others' 96,000-word article gives no new evidence, shows poor understanding of uncertainty in data, and that the hypothesis remains strong, with shocked quartz now added. Published in Airbursts and Cratering Impacts.",
+      "method": "Critical analysis of selected portions of the Holliday article.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "The YDIH has been corroborated at more than 50 Younger Dryas boundary sites on five continents.",
+          "status": "disputed",
+          "evidence": "based on the discovery of some combination of synchronous nanodiamonds, exotic microspherules and platinum enrichment at more than 50 Younger Dryas boundary sites on five continents",
+          "source": "https://doi.org/10.14293/aci.2024.0007"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "atlantis"
+      ],
+      "overlaps": [
+        {
+          "with": "holliday-2023-ydih-refutation",
+          "how": "same claim"
+        }
+      ],
+      "contradicts": [
+        {
+          "with": "holliday-2023-ydih-refutation",
+          "about": "whether the hypothesis is refuted",
+          "detail": "See entry."
+        }
+      ],
+      "why_it_matters": "The proponents' current position as published in 2024; I did not check the journal's review process. For balance cite both sides.",
+      "sources": [
+        {
+          "title": "Sweatman, Powell, West, Airbursts and Cratering Impacts, 2024 (OpenAlex abstract)",
+          "url": "https://doi.org/10.14293/aci.2024.0007"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Abstract read. I did not verify the journal's peer-review process.",
+      "id": "sweatman-2024-ydih-rebuttal",
+      "title": "Rebuttal of Holliday et al.'s Comprehensive Gish Gallop of the Younger Dryas Impact Hypothesis"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Charlotte L. Pearson",
+        "Peter W. Brewer",
+        "David Maughan Brown",
+        "Timothy Heaton",
+        "Gregory Hodgins",
+        "A. J. T. Jull and others",
+        "Sturt W. Manning (2022)"
+      ],
+      "year": 2018,
+      "date": null,
+      "region": {
+        "name": "Santorini (Thera), Greece",
+        "bbox": [
+          25.3,
+          36.3,
+          25.6,
+          36.5
+        ]
+      },
+      "topic": [
+        "thera",
+        "santorini",
+        "dating",
+        "radiocarbon",
+        "tree-rings"
+      ],
+      "summary": "Tree-ring radiocarbon over 1700 to 1500 BCE shows an offset from the standard calibration curve, shifting the radiocarbon date for the Thera eruption toward the 16th century BCE and narrowing the gap with archaeological dating (mid 16th to early 15th century BCE). Manning (2022) combines 14C, stratigraphy and Bayesian models to give 1606 to 1589 BCE (68.3%) or 1609 to 1560 BCE (95.4%), in the Second Intermediate Period in Egypt.",
+      "method": "Annual-resolution radiocarbon series from calendar-dated tree rings; Bayesian chronology (Manning).",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Eruption date range shifts toward the 16th century BCE; radiocarbon had said late 17th to early 16th, archaeology mid 16th to early 15th.",
+          "status": "peer-reviewed",
+          "evidence": "a discrepancy between radiocarbon (late 17th-early 16th century BCE) and archaeological (mid 16th-early 15th century BCE) dating evidence for Thera",
+          "source": "https://doi.org/10.1126/sciadv.aar8241"
+        },
+        {
+          "text": "Revised date 1606 to 1589 BCE (68.3%), 1609 to 1560 BCE (95.4%).",
+          "status": "peer-reviewed",
+          "evidence": "This enables a robust high-resolution dating for the eruption ~1606-1589 BCE (68.3% probability), ~1609-1560 BCE (95.4% probability).",
+          "source": "https://doi.org/10.1371/journal.pone.0274835"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "atlantis"
+      ],
+      "overlaps": [],
+      "contradicts": [
+        {
+          "with": "Archaeological date (mid 16th to early 15th century BCE)",
+          "about": "date of the Thera eruption",
+          "detail": "Radiocarbon and Bayesian work (Manning 2022): 1609 to 1560 BCE at 95%. Older archaeological date: mid 16th to early 15th century BCE, about 1500 BCE. Pearson and others: shifts the radiocarbon range toward the 16th century BCE."
+        }
+      ],
+      "why_it_matters": "Thera is a place for Atlantis and the Minoans, around 3,500 years ago when the sea was already at today's level (within a few metres), so the sea-level slider is not relevant to it; a legend card should state the date range.",
+      "sources": [
+        {
+          "title": "Pearson and others, Science Advances, 2018 (OpenAlex abstract)",
+          "url": "https://doi.org/10.1126/sciadv.aar8241"
+        },
+        {
+          "title": "Manning, PLOS ONE, 2022 (OpenAlex abstract)",
+          "url": "https://doi.org/10.1371/journal.pone.0274835"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Abstracts read. Author names are from OpenAlex. The statement that the sea was within a few metres of today at 3,500 years ago is my reading of Lambeck's \"ocean volumes remained nearly constant\" after about 2.5 ka; not independently checked.",
+      "id": "pearson-2018-thera",
+      "title": "Annual radiocarbon record indicates 16th century BCE date for the Thera eruption (with Manning 2022)"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Marc-André Gutscher",
+        "Jacques Collina-Girard (2001)"
+      ],
+      "year": 2005,
+      "date": null,
+      "region": {
+        "name": "Spartel Bank, Strait of Gibraltar",
+        "bbox": [
+          -6.2,
+          35.8,
+          -5.8,
+          36
+        ]
+      },
+      "topic": [
+        "spartel-bank",
+        "atlantis",
+        "tsunami",
+        "bathymetry"
+      ],
+      "summary": "Collina-Girard (2001, in French) proposed that Plato's Atlantis matches a palaeo-island on Spartel Bank in the Strait of Gibraltar, drowned as the ice-age sea rose. Gutscher (2005) compares Plato's description with new multibeam bathymetry of the island, argues a great earthquake and tsunami (M above 8.5) around 11.6 ka matches the story, and points to an unusually thick turbidite dated about 12 ka in the Gulf of Cadiz. He says the island could have been inhabited then; he later said it could not have been Atlantis because Plato's society was Bronze Age.",
+      "method": "High-resolution bathymetric map of the bank; comparison with Plato; Gulf of Cadiz turbidite record.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "A catastrophic submergence of the Spartel palaeo-island at about 11.6 ka matches a great earthquake and tsunami; a thick turbidite dated about 12 ka may coincide.",
+          "status": "disputed",
+          "evidence": "An unusually thick turbidite dated as ca. 12 ka may coincide with the destructive event in Plato's account.",
+          "source": "https://doi.org/10.1130/g21597ar.1"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "atlantis"
+      ],
+      "overlaps": [],
+      "contradicts": [
+        {
+          "with": "Review in Bryn Mawr Classical Review (as quoted by Wikipedia)",
+          "about": "whether Spartel Bank is Plato's Atlantis",
+          "detail": "Collina-Girard and Gutscher: a candidate. A Bryn Mawr Classical Review review (as quoted on Wikipedia): Collina-Girard \"has certainly succeeded in throwing some light upon some momentous developments in human prehistory ... Just as certainly, however, he has not found Plato's Atlantis.\" I did not read the review."
+        }
+      ],
+      "why_it_matters": "The one Atlantis candidate that is driven by sea level: the bank's summit is now about 56 m under water, so at -60 m (our 11.4 ka preset) it is a rocky islet a few metres high and at -95 m a larger island; our grid cannot resolve a bank of that size.",
+      "sources": [
+        {
+          "title": "Gutscher, Geology, 2005 (Crossref/OpenAlex abstract)",
+          "url": "https://doi.org/10.1130/g21597ar.1"
+        },
+        {
+          "title": "Wikipedia: Spartel Bank (summit depth, reception)",
+          "url": "https://en.wikipedia.org/wiki/Spartel_Bank"
+        },
+        {
+          "title": "Collina-Girard, C. R. Acad. Sci. IIA 333, 2001 (record only)",
+          "url": "https://doi.org/10.1016/s1251-8050(01)01629-9"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Gutscher abstract read; Collina-Girard's abstract not available. The 56 m summit depth is from Wikipedia, which cites the bathymetry; the \"could not have been Atlantis\" remark is from the same page and I did not find Gutscher's own text.",
+      "id": "gutscher-2005-spartel",
+      "title": "Destruction of Atlantis by a great earthquake and tsunami? A geological analysis of the Spartel Bank hypothesis (and Collina-Girard 2001)"
+    },
+    {
+      "kind": "news",
+      "who": [
+        "Rainer W. Kühne (2004 Antiquity)",
+        "Richard Freund and team (2011 television special)"
+      ],
+      "year": 2011,
+      "date": null,
+      "region": {
+        "name": "Doñana National Park, Spain",
+        "bbox": [
+          -6.6,
+          36.9,
+          -6.3,
+          37.2
+        ]
+      },
+      "topic": [
+        "donana",
+        "tartessos",
+        "atlantis",
+        "satellite-image",
+        "tsunami",
+        "disputed"
+      ],
+      "summary": "In 2004 Rainer Kühne published a satellite-image observation of ring-like features in the Guadalquivir marshes as a possible \"Atlantis\" (Antiquity project gallery). In 2011 a US television special reported a Freund-led expedition with ground-penetrating radar, resistivity and magnetometry in Doñana National Park, saying it found a communal oven and canal traces and a tsunami-buried 4,000-year-old civilization. Spanish scientists quoted in the press said they do not \"go in for farfetched interpretations\".",
+      "method": "Satellite imagery; ground-penetrating radar, electrical resistivity tomography and magnetometry (reported in a press article).",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "Researchers said they found proof of a 4,000-year-old civilization buried by a tsunami in the Doñana marshes.",
+          "status": "press",
+          "evidence": "Scientists say they have found proof of a 4,000-year-old civilization that was buried by a tsunami.",
+          "source": "https://www.popsci.com/?p=26604"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": false,
+      "relates_to_legends": [
+        "atlantis",
+        "tartessos"
+      ],
+      "overlaps": [],
+      "contradicts": [
+        {
+          "with": "Juan Villarias-Robles (Spanish anthropologist, via a search summary)",
+          "about": "who led the fieldwork",
+          "detail": "Freund presented the work; Villarias-Robles, who worked on the site, said (in a source I did not fetch) that Freund did not lead the investigations and spent less than a week there."
+        }
+      ],
+      "why_it_matters": "The claim is press and television, with one short Antiquity gallery note behind it; I found no peer-reviewed paper reporting the 2011 results. Treat as unverified.",
+      "sources": [
+        {
+          "title": "Popular Science, \"Scientists Say They May Have Found Lost City of Atlantis Near Spain\", 2011",
+          "url": "https://www.popsci.com/?p=26604"
+        },
+        {
+          "title": "Kühne, Antiquity Project Gallery, 2004 (record only)",
+          "url": "https://doi.org/10.15184/s2978855200905171"
+        }
+      ],
+      "confidence": "low",
+      "notes": "The press page was read; Kühne's note was not opened (Cambridge link failed). The Villarias-Robles criticism comes from a search summary of Spanish-language press, not a fetched page.",
+      "id": "kuhne-2004-donana-atlantis",
+      "title": "A location for \"Atlantis\"? (Kühne 2004) and the 2011 Doñana expedition claim"
+    },
+    {
+      "kind": "paper",
+      "who": [
+        "Guillaume Matton",
+        "Michel Jébrak",
+        "James K. W. Lee"
+      ],
+      "year": 2005,
+      "date": null,
+      "region": {
+        "name": "Richat Structure, Mauritania",
+        "bbox": [
+          -11.6,
+          21,
+          -11.2,
+          21.3
+        ]
+      },
+      "topic": [
+        "richat",
+        "geology",
+        "atlantis",
+        "impact-hypothesis"
+      ],
+      "summary": "Describes the Richat Structure as a dome at least 40 km across with three nested rings and a kilometre-scale breccia, and proposes that it is the surface expression of a Cretaceous alkaline complex with hydrothermal karst at its summit. A 2024 Lithos paper by Abdeina and others on its \"polyphase history\" and igneous origin has the same view of origin.",
+      "method": "Field geology and mineralogy.",
+      "data": [],
+      "code": [],
+      "claims": [
+        {
+          "text": "The Richat structure is the surface expression of a Cretaceous alkaline complex, not an impact crater.",
+          "status": "peer-reviewed",
+          "evidence": "The circular Richat structure and its breccia core thus represent the superficial expression of a Cretaceous alkaline complex with an exceptionally well preserved hydrothermal karst infilling at its summit.",
+          "source": "https://doi.org/10.1130/g21542ar.1"
+        }
+      ],
+      "scale": null,
+      "verified_on_ground": null,
+      "relates_to_legends": [
+        "atlantis"
+      ],
+      "overlaps": [],
+      "contradicts": [],
+      "why_it_matters": "The Richat structure is about 40 km across and roughly 550 km inland of the Atlantic coast at 21 N; sea level has nothing to do with it, which is the strongest argument against its use in a drowned-land context.",
+      "sources": [
+        {
+          "title": "Matton and others, Geology, 2005 (Crossref/OpenAlex abstract)",
+          "url": "https://doi.org/10.1130/g21542ar.1"
+        },
+        {
+          "title": "Abdeina and others, Lithos, 2024 (title only)",
+          "url": "https://doi.org/10.1016/j.lithos.2024.107698"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Abstract read; the 2024 paper's abstract was not available to me, so \"same view of origin\" rests on its title (\"igneous Richat Structure\"). The 550 km figure is my estimate from the structure's coordinates (21.12 N, 11.40 W) and the coast near 17 W, not sourced.",
+      "id": "matton-2005-richat",
+      "title": "Resolving the Richat enigma: Doming and hydrothermal karstification above an alkaline complex"
+    }
+  ],
+  "gaps": [
+    "A published, open, side-by-side check of how far one global sea level misplaces coasts against local (glacial-isostatic) sea level, for the places the public asks about. I found papers that state the local figure for one place (Yokoyama for the Great Barrier Reef, Sathiamurthy and Voris for the Sunda Shelf) but no comparison across places. The sensitivity table in this lane is my own count.",
+    "A downloadable, fine-grid, local-sea-level paleo-topography that covers the last 21,000 years at steps short enough for the fast melt. ICE-6G_C is 1 degree (about 111 km) at 0.5 to 1 ka steps; PaleoMIST is 0.25 degree at 2.5 ka steps. Lambeck's ANU model output: I did not find a download page (not searched thoroughly).",
+    "A survey of the floor of the Persian Gulf. Rose (2010) proposes a \"Gulf Oasis\" from reasoning about sea level and archaeology on the coasts; I found no paper reporting a site on the Gulf floor.",
+    "A peer-reviewed report of the 2011 Doñana \"Atlantis\" expedition. I found a 2004 Antiquity project-gallery note, a 2011 television special and press coverage only.",
+    "A global list of known submerged prehistoric sites. SPLASHCOS covers Europe (and I could not open its viewer); Australia's first confirmed shelf sites were reported only in 2020. I found no list that covers the world.",
+    "A shoreline dataset for the last 21,000 years that carries uncertainty. EMODnet Geology rates confidence per line in Europe; I found nothing similar outside Europe.",
+    "A resolution of the meltwater pulse 1B dispute (Barbados for, Tahiti and the global composite against) and of the size of meltwater pulse 1A (8 to 22 m depending on the study)."
+  ],
+  "data_to_add": [
+    {
+      "name": "PaleoMIST 1.0 paleo-topography and sea-level change",
+      "url": "https://doi.org/10.1594/PANGAEA.905800",
+      "what": "NetCDF, 1 and 0.25 degree grids, 2,500-year steps for 80,000 years; ice thickness, deformation, sea-level change and paleo-topography; scripts for any resolution.",
+      "licence": "CC BY 4.0",
+      "why": "Open, licensed, and gives a local sea-level correction; its ice-age low (-116 m) disagrees with Lambeck, so it is also a way to show a range."
+    },
+    {
+      "name": "ICE-6G_C (VM5a) and ICE-7G_NA (VM7) paleo-topography",
+      "url": "https://www.atmosp.physics.utoronto.ca/~peltier/data.php",
+      "what": "NetCDF, 1 x 1 degree, Topo and Topo_Diff (difference from present) at 0.5 to 1 ka steps from 26 ka; the page lists ICE-6G_C down to 0 ka.",
+      "licence": "No licence text on the page; the page asks users to cite the papers. Ask the author before redistributing.",
+      "why": "The widely used model; Topo_Diff is a ready local correction to add to a global level, at coarse resolution."
+    },
+    {
+      "name": "EMODnet Geology: Last Glacial Maximum Landscapes and post-LGM sediment thickness",
+      "url": "https://emodnet.ec.europa.eu/geonetwork/srv/api/records/6720fc72-a004-4922-818e-699c0a010855",
+      "what": "Shapefile and WMS (layer bgs:cp_wp8_last_glacial_maximum) of contours of the base of the post-LGM sediment cover; part of a compilation of more than 10,000 features including mapped palaeocoastlines.",
+      "licence": "CC BY 4.0",
+      "why": "A ready layer of mapped drowned landscape for European seas, with confidence ratings per line."
+    },
+    {
+      "name": "Sea-level table from Sathiamurthy and Voris 2006",
+      "url": "https://doi.org/10.5281/zenodo.3929568",
+      "what": "CSV, 31 rows: sea level (m) against ka BP for the Sunda Shelf, from -117 m at 21 ka to 0 m at 6 ka.",
+      "licence": "CC BY 4.0",
+      "why": "A small, citable local curve to test against our presets for Sundaland."
+    },
+    {
+      "name": "Lambeck and others 2014: esl time series (SI Appendix)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217469/",
+      "what": "The ice-volume-equivalent sea-level estimates and the denoised series with 95% limits behind Figure 4. I did not open the SI file.",
+      "licence": "not read",
+      "why": "Replace our hand-added -95 m and -60 m with read-off values and their limits."
+    },
+    {
+      "name": "Copernicus Marine: global coastal satellite-derived bathymetry, 100 m",
+      "url": "https://data.marine.copernicus.eu/product/BATHYMETRY_GLO_PHY_COASTAL_L4_MY_016_001/description",
+      "what": "NetCDF-4 100 m grid of coastal depth from Sentinel-2, with quality indicators, global where retrieval is possible.",
+      "licence": "Copernicus Marine licence (not read)",
+      "why": "Replaces \"nearest sounding carried inshore\" in clear shallow water; check accuracy in the quality document first."
+    },
+    {
+      "name": "ICESat-2 ATL24 coastal and nearshore bathymetry v2",
+      "url": "https://nsidc.org/data/atl24",
+      "what": "Along-track refraction-corrected sea-floor and sea-surface heights, HDF5, 88 N to 88 S, from 14 October 2018.",
+      "licence": "NASA open data; free Earthdata Login; cite the DOI 10.5067/ATLAS/ATL24.002",
+      "why": "Real measured depth in clear water to check the globe near shore."
+    },
+    {
+      "name": "SPLASHCOS Viewer",
+      "url": "http://splashcos-viewer.eu/",
+      "what": "Database and map of known European submerged prehistoric finds; viewer did not resolve from this machine on 2026-11-11.",
+      "licence": "unknown",
+      "why": "The standard list of European drowned prehistoric sites; check it is live and its terms before linking."
+    }
+  ],
+  "handoffs": [
+    {
+      "lane": "seafloor-wrecks",
+      "what": "ATL24 and the Copernicus Marine 100 m satellite-derived bathymetry as fixes for near-shore depth; the wider question of GEBCO and Seabed 2030 coverage.",
+      "url": "https://data.marine.copernicus.eu/product/BATHYMETRY_GLO_PHY_COASTAL_L4_MY_016_001/description"
+    },
+    {
+      "lane": "platforms",
+      "what": "Sea Level Map and DisasterMap Ice Age Mode already let the public lower the sea on a globe; SPLASHCOS Viewer is the atlas of European drowned sites.",
+      "url": "https://sea-level.vercel.app/"
+    },
+    {
+      "lane": "platforms",
+      "what": "DisasterMap pairs the slider with 100,000+ megalithic sites and tells the user if a site was above or below the sea; check against their claims and the rules on publishing site locations.",
+      "url": "https://contactatthecabin.substack.com/p/disastermap-just-got-a-massive-update"
+    },
+    {
+      "lane": "auto-detection",
+      "what": "The Blinkerwall was found by chance in sonar and followed up with AUV; the stated test against natural causes (glacial transport, ice push) is a model for any sea-floor detection claim.",
+      "url": "https://doi.org/10.1073/pnas.2312008121"
+    },
+    {
+      "lane": "ai-wave",
+      "what": "The Younger Dryas impact and Doñana \"Atlantis\" claims circulate with Atlantis posts; their literature status is disputed (YDIH) and press-only (Doñana).",
+      "url": "https://doi.org/10.1016/j.earscirev.2023.104502"
+    }
+  ]
+}

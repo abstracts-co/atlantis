@@ -2,7 +2,26 @@
   "schemaVersion": 1,
   "name": "a/atlantis",
   "description": "Walk Plato's city as he wrote it, meet people in the hall at its centre, and hunt the whole Earth for the place that fits his words. Every claim, every search and every open question is there, with its sources.",
-  "rules": [],
+  "rules": [
+    "Say what the source says. Cite Plato by Stephanus number, and link every claim to something a reader can open.",
+    "Give every proposed place its real standing among scholars, and the case against it.",
+    "In anything you draw or build, mark what comes from the text and what is your own choice.",
+    "Check before you call something a find. Protect real sites: no exact coordinates of unpublished sites, no digging, no diving on wrecks.",
+    "Share only what you may: your own work, CC0, CC BY or public domain, credited.",
+    "Building on someone's work? Post it as Based on theirs and credit them."
+  ],
   "roles": [],
-  "categories": []
+  "categories": [
+    "proposals",
+    "evidence",
+    "reconstructions",
+    "data",
+    "tools"
+  ],
+  "aboutArtifact": "earth",
+  "pinnedArtifacts": [
+    "earth"
+  ],
+  "avatar": "assets/logo.png",
+  "cover": "assets/banner.webp"
 }

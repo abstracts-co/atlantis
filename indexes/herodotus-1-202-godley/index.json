@@ -1,0 +1,34 @@
+{
+  "id": "herodotus-1-202-godley",
+  "title": "Herodotus, Histories 1.202-1.203 (English, A. D. Godley, Loeb, 1920)",
+  "source": {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1D*.html",
+    "publisher": "LacusCurtius (Bill Thayer), from the Loeb Classical Library vol. I (1920)",
+    "date": "1920",
+    "pages": 1,
+    "file": "work/lc/Herodotus_1D.html",
+    "sha256": "4cbffa2d4d0e5e80a7bdac66de43f121b99f93b848de25f8ecb7c7431f84d61c",
+    "license": "Public domain (the host states \"The text is in the public domain\"; Loeb 1920)",
+    "license_url": "https://penelope.uchicago.edu/Thayer/E/HELP/Copyright/home.html"
+  },
+  "language": "en",
+  "kind": "ancient-text",
+  "summary": "Herodotus on the Araxes and the Caspian. In 1.202-203 he calls the sea beyond the Pillars of Heracles \"the Atlantic\" and says it and the Red Sea are one sea. The oldest surviving use of \"Atlantic\" for the ocean, a century before Plato.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "Hand-built tree. The passage was cut from the source file by its own section anchors or line range; one leaf per passage, titled with the citation. No language model was used."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Herodotus 1.202-1.203: the Araxes, the Caspian, and the sea \"which they call Atlantic\"",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "Herodotus describes the Araxes, its islands and its mouths, and then the Caspian, a sea by itself. He sets it against the sea the Greeks sail, which he calls \"the Atlantic\" beyond the Pillars of Heracles, and the Red Sea, which he says are one.",
+      "nodes": []
+    }
+  ]
+}

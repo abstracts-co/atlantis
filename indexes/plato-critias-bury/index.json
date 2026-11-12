@@ -1,0 +1,290 @@
+{
+  "id": "plato-critias-bury",
+  "title": "Plato, Critias (English, R. G. Bury, 1929)",
+  "source": {
+    "url": "https://github.com/PerseusDL/canonical-greekLit/blob/7fd4dae30f1d2176c3c6f64c0750f6f39cd972f3/data/tlg0059/tlg032/tlg0059.tlg032.perseus-eng2.xml",
+    "publisher": "Perseus Digital Library, Tufts University (Loeb Classical Library text, Harvard UP and Heinemann)",
+    "date": "1929",
+    "pages": 24,
+    "file": "work/plato/tlg0059.tlg032.perseus-eng2.xml",
+    "sha256": "fa983fba4139d94ebfcfe0ab5c327cbcd5a161e5fb9565fdb5c780f06cfb5791",
+    "license": "Public domain (text of a 1929 translation); Perseus encoding not copied",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "language": "en",
+  "kind": "ancient-text",
+  "summary": "R. G. Bury's English translation of Plato's Critias, the whole unfinished dialogue and the fullest ancient account of Atlantis, with Stephanus references on every leaf and his footnotes. Cite by Stephanus number.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "method": "Hand-built tree. Plain text extracted from the Perseus TEI file (markup dropped; Stephanus milestones kept as [115c] markers; Loeb footnotes kept at the end of each leaf). Leaves are groups of Stephanus sections chosen by subject, titled with the reference range. No language model was used.",
+    "models": []
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Prologue: the plea for indulgence (106a-108d)",
+      "start_page": 1,
+      "end_page": 3,
+      "summary": "Timaeus ends his prayer, Critias asks for indulgence because his subject is mortal men, and Socrates and Hermocrates grant it.",
+      "nodes": [
+        {
+          "node_id": "0002",
+          "title": "Critias 106a-107a: Timaeus ends his prayer and hands over; Critias asks for indulgence",
+          "start_page": 1,
+          "end_page": 1,
+          "summary": "Timaeus prays for the speeches to be sound and hands the next speech to Critias. Critias, who now has to speak of the war between Athens and Atlantis, asks for even more indulgence than Timaeus did.",
+          "nodes": []
+        },
+        {
+          "node_id": "0003",
+          "title": "Critias 107b-108a: why speech about mortals is harder than speech about gods: the painters",
+          "start_page": 2,
+          "end_page": 2,
+          "summary": "Critias argues that listeners judge portraits of gods and landscapes leniently but portraits of people and familiar things harshly, so he must be forgiven for falling short.",
+          "nodes": []
+        },
+        {
+          "node_id": "0004",
+          "title": "Critias 108b-108d: Hermocrates and Socrates grant indulgence and encourage Critias",
+          "start_page": 3,
+          "end_page": 3,
+          "summary": "Socrates and Hermocrates tell Critias to go on, and Critias agrees to begin with the war that the Egyptian priests described to Solon.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0005",
+      "title": "Athens nine thousand years ago (108e-113a)",
+      "start_page": 4,
+      "end_page": 9,
+      "summary": "Critias's account of the primitive Athenians: the war date, the gods' allotment of Attica, the warrior class and the old fertile land.",
+      "nodes": [
+        {
+          "node_id": "0006",
+          "title": "Critias 108e-109a: the war nine thousand years ago between the peoples outside and inside the Pillars of Heracles",
+          "start_page": 4,
+          "end_page": 4,
+          "summary": "Critias recalls that 9,000 years have passed since the war between those living outside the Pillars of Heracles and those inside, and says Athens will be described first, then its enemy.",
+          "nodes": []
+        },
+        {
+          "node_id": "0007",
+          "title": "Critias 109b-109d: the gods divide the earth by lot; Athena and Hephaestus take Attica",
+          "start_page": 5,
+          "end_page": 5,
+          "summary": "The gods took the lands by fair allotment and guided mortals like shepherds. Athena and Hephaestus, alike in nature, received Attica and planted good men there and gave them a constitution.",
+          "nodes": []
+        },
+        {
+          "node_id": "0008",
+          "title": "Critias 109e-110b: disasters erase the memory of the first Athenians; the names that survive",
+          "start_page": 6,
+          "end_page": 6,
+          "summary": "Repeated destruction left later Athenians with only the names of their ancestors and no knowledge of their deeds. Critias says Solon's Egyptian account fills the gap, including the armed image of Athena.",
+          "nodes": []
+        },
+        {
+          "node_id": "0009",
+          "title": "Critias 110c-110e: the warrior class, their way of life and the borders of ancient Attica",
+          "start_page": 7,
+          "end_page": 7,
+          "summary": "The fighting class lived apart on the Acropolis, with common property, simple sustenance and training in war and craft. The land reached to the Isthmus and the high ground, and exceeded other lands in goodness.",
+          "nodes": []
+        },
+        {
+          "node_id": "0010",
+          "title": "Critias 111a-111e: the ancient soil, forests and water of Attica compared with the bare land now",
+          "start_page": 8,
+          "end_page": 8,
+          "summary": "Critias contrasts the rich, wooded Attica of old with its present rocky skeleton, blaming repeated floods that washed the soil away. The old land stored rain in deep soil and fed many springs.",
+          "nodes": []
+        },
+        {
+          "node_id": "0011",
+          "title": "Critias 112a-112e: the old Acropolis, the craftsmen and warriors, and the fame of the Athenians",
+          "start_page": 9,
+          "end_page": 9,
+          "summary": "The ancient Acropolis was larger and housed the warriors with common halls and no gold or silver. The people lived in order and temperance, and their fame spread through Europe and Asia.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0012",
+      "title": "Atlantis: origin and the ten kings (113a-114c)",
+      "start_page": 10,
+      "end_page": 12,
+      "summary": "Poseidon's allotment of Atlantis, the plain and hill, Cleito, the rings, and the ten sons who became the ten kings.",
+      "nodes": [
+        {
+          "node_id": "0013",
+          "title": "Critias 113a-113c: Greek names for barbarians; Poseidon's allotment, the plain and the low hill",
+          "start_page": 10,
+          "end_page": 10,
+          "summary": "Critias explains that Solon translated Egyptian names into Greek. Poseidon received Atlantis; its central plain, said to be fairest and most fertile, lay near a low hill about 50 stades from the middle.",
+          "nodes": []
+        },
+        {
+          "node_id": "0014",
+          "title": "Critias 113d-113e: Cleito, the rings of sea and land, the two springs and the five pairs of twins",
+          "start_page": 11,
+          "end_page": 11,
+          "summary": "Poseidon fell in love with Cleito, fortified her hill with alternate rings, two of land and three of sea, and fed it with a warm and a cold spring. They had five pairs of twin sons, and he divided the island into ten parts.",
+          "nodes": []
+        },
+        {
+          "node_id": "0015",
+          "title": "Critias 114a-114c: the ten kings, Atlas and Gadeirus; rule over other islands and as far as Egypt and Tyrrhenia",
+          "start_page": 12,
+          "end_page": 12,
+          "summary": "The eldest son Atlas gave his name to the island and the Atlantic Sea; his twin Gadeirus held the end near the Pillars of Heracles. The ten dynasties ruled many islands and parts of the Mediterranean as far as Egypt and Tuscany.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0016",
+      "title": "Atlantis: wealth and resources (114d-115b)",
+      "start_page": 13,
+      "end_page": 13,
+      "summary": "What the island produced: metals including orichalcum, timber, animals including elephants, perfumes and fruits.",
+      "nodes": [
+        {
+          "node_id": "0017",
+          "title": "Critias 114d-115b: wealth, orichalcum and metals, timber, elephants, plants and fruits",
+          "start_page": 13,
+          "end_page": 13,
+          "summary": "The kings were extremely rich. The island supplied metals including orichalcum, second only to gold, plus timber, many tame and wild animals including elephants, and an abundance of aromatic plants, grains and fruits.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0018",
+      "title": "Atlantis: the royal city and harbours (115c-117e)",
+      "start_page": 14,
+      "end_page": 18,
+      "summary": "The bridges and canal, the rings and their widths, walls and stone, the temple of Poseidon, springs and baths, buildings and harbours.",
+      "nodes": [
+        {
+          "node_id": "0019",
+          "title": "Critias 115c-115e: the bridges, the canal from the sea and the widths of the rings",
+          "start_page": 14,
+          "end_page": 14,
+          "summary": "The kings bridged the rings of sea and cut a canal from the sea to the outermost ring: three plethra wide, 100 feet deep, 50 stades long. Smaller channels linked the rings; the outer ring was three stades wide, the next two, then one.",
+          "nodes": []
+        },
+        {
+          "node_id": "0020",
+          "title": "Critias 116a-116b: the central island, walls and towers, white, black and red stone, two docks, metal cladding",
+          "start_page": 15,
+          "end_page": 15,
+          "summary": "The central island was five stades across. Walls with towers and gates ringed the island and rings. The stone, quarried on the spot, was white, black and red; two roofed docks were cut from the rock; the walls were clad in brass, tin and orichalcum.",
+          "nodes": []
+        },
+        {
+          "node_id": "0021",
+          "title": "Critias 116c-116e: the palace temple of Cleito and Poseidon, its dimensions and decoration",
+          "start_page": 16,
+          "end_page": 16,
+          "summary": "At the centre stood a golden-walled shrine to Cleito and Poseidon, and the temple of Poseidon one stade long and three plethra wide, covered in silver, gold and orichalcum, with a statue of the god in a chariot and golden statues of the ten kings.",
+          "nodes": []
+        },
+        {
+          "node_id": "0022",
+          "title": "Critias 117a-117b: hot and cold springs, baths and the grove of Poseidon",
+          "start_page": 17,
+          "end_page": 17,
+          "summary": "The warm and cold springs were piped to bathhouses for kings, citizens, women and animals, and the overflow watered the grove of Poseidon.",
+          "nodes": []
+        },
+        {
+          "node_id": "0023",
+          "title": "Critias 117c-117e: gardens, gymnasia, the racecourse, barracks, shipyards, the outer harbour and the outer wall",
+          "start_page": 18,
+          "end_page": 18,
+          "summary": "Each land ring held temples, gardens and exercise grounds; the big ring had a stade-wide racecourse and barracks. Shipyards held triremes, and the outer wall, 50 stades from the largest harbour, was crowded with houses, ships and merchants day and night.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0024",
+      "title": "Atlantis: the great plain (118a-118e)",
+      "start_page": 19,
+      "end_page": 20,
+      "summary": "The shape, size and orientation of the plain, the mountains, the ditch with its dimensions and the canals.",
+      "nodes": [
+        {
+          "node_id": "0025",
+          "title": "Critias 118a-118b: the great plain: 3000 by 2000 stades, facing south and sheltered from the north",
+          "start_page": 19,
+          "end_page": 19,
+          "summary": "Seen from the sea the land rose steeply, but the plain around the city was level and oblong, 3,000 stades along one side and 2,000 stades inland. It faced south and was sheltered from the north winds by famed mountains with villages, lakes and meadows.",
+          "nodes": []
+        },
+        {
+          "node_id": "0026",
+          "title": "Critias 118c-118e: the ditch, its dimensions, the straight canals and two harvests a year",
+          "start_page": 20,
+          "end_page": 20,
+          "summary": "A hand-dug ditch a plethron deep, a stade wide and 10,000 stades long ringed the plain and caught the mountain streams. Straight canals every 100 stades carried timber and crops to the city, and the land gave two harvests, using winter rain and summer irrigation.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0027",
+      "title": "Atlantis: army, government and religion (118e-120d)",
+      "start_page": 21,
+      "end_page": 23,
+      "summary": "The levy of men, chariots and ships, the laws of the ten kings, the pillar of orichalcum and the bull ritual.",
+      "nodes": [
+        {
+          "node_id": "0028",
+          "title": "Critias 119a-119b: the levy: 60,000 allotments, 10,000 chariots and 1,200 ships",
+          "start_page": 21,
+          "end_page": 21,
+          "summary": "The plain was divided into 60,000 allotments each led by one man. The levy per allotment was a share of a chariot, horses, soldiers, slingers and sailors, adding up to 10,000 chariots and crews for 1,200 ships.",
+          "nodes": []
+        },
+        {
+          "node_id": "0029",
+          "title": "Critias 119c-119e: the ten kings' government, the pillar of orichalcum, and the bull hunt in Poseidon's temple",
+          "start_page": 22,
+          "end_page": 22,
+          "summary": "Each king ruled his own district, but relations among them followed the laws written on an orichalcum pillar in Poseidon's temple. They met every fifth or sixth year and hunted bulls with staves and nooses, then slit a captured bull's throat over the pillar.",
+          "nodes": []
+        },
+        {
+          "node_id": "0030",
+          "title": "Critias 120a-120d: oath, libation, night judgement and the laws among the kings",
+          "start_page": 23,
+          "end_page": 23,
+          "summary": "The kings poured a libation of the bull's blood, swore to judge by the laws, and sat in dark robes at night to hear charges. Their laws forbade war between them and required common action against attackers, with leadership kept by the line of Atlas.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0031",
+      "title": "Atlantis: decline and Zeus's decision (120d-121c)",
+      "start_page": 24,
+      "end_page": 24,
+      "summary": "The Atlanteans' virtue, its gradual loss, and the point where the dialogue breaks off.",
+      "nodes": [
+        {
+          "node_id": "0032",
+          "title": "Critias 120d-121c: the virtue and decline of the Atlantean kings; Zeus calls the gods together (text breaks off)",
+          "start_page": 24,
+          "end_page": 24,
+          "summary": "For generations the kings kept their divine nature, scorned wealth and lived in virtue. As the divine portion faded and human nature grew, they became greedy and violent. Zeus assembled the gods to judge them, and the surviving text ends there.",
+          "nodes": []
+        }
+      ]
+    }
+  ]
+}

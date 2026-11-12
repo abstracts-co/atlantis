@@ -1,0 +1,93 @@
+{
+  "id": "hoffmann-2021-late-pleistocene-interpersonal-violence",
+  "title": "New insights on interpersonal violence in the Late Pleistocene based on the Nile valley cemetery of Jebel Sahaba (Crèvecoeur and others, 2021)",
+  "source": {
+    "url": "https://doi.org/10.1038/s41598-021-89386-y",
+    "publisher": "Springer Nature (Scientific Reports)",
+    "date": "2021",
+    "pages": 13,
+    "file": "work/pdf/hoffmann-2021-violence.pdf",
+    "sha256": "cd716933ce9b46e7a29f69dcae336a1d549a2b4c67fdb3d17a9e33971af96142",
+    "license": "CC BY 4.0 (stated in the PDF and on the Nature page)",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "language": "en",
+  "kind": "paper",
+  "summary": "Reanalyses the 61 people buried in the Jebel Sahaba cemetery in the Nile Valley, at the end of the Late Pleistocene, to date and describe the violence they suffered. Evidence for what organised conflict looked like in the world just before and around Plato's date.",
+  "tool": {
+    "name": "PageIndex",
+    "version": "0.5.3",
+    "models": [
+      "claude-code/haiku"
+    ],
+    "method": "PageIndex Flash mode run through Claude Code (claude-code/haiku; doc_id pi-761085ef4ed44f87ad39f8d7f8da0d5c; store in out/pageindex). The tree follows the paper's own headings. I replaced PageIndex's model-written summaries, which contained numbers I could not stand behind, with short summaries of what each section covers, and tidied titles. Text is the PDF text layer by page."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "New insights on interpersonal violence in the Late Pleistocene based on the Nile valley cemetery of Jebel Sahaba",
+      "start_page": 1,
+      "end_page": 13,
+      "summary": "The whole paper: a reanalysis of the 61 people buried at Jebel Sahaba in the Nile Valley to date and describe the violence at the end of the Late Pleistocene.",
+      "nodes": [
+        {
+          "node_id": "0002",
+          "title": "Abstract",
+          "start_page": 1,
+          "end_page": 2,
+          "summary": "The authors' summary of the reanalysis of the Jebel Sahaba cemetery.",
+          "nodes": []
+        },
+        {
+          "node_id": "0003",
+          "title": "Results",
+          "start_page": 2,
+          "end_page": 6,
+          "summary": "The results of the Jebel Sahaba study, with the evidence behind them.",
+          "nodes": []
+        },
+        {
+          "node_id": "0004",
+          "title": "Discussion",
+          "start_page": 6,
+          "end_page": 9,
+          "summary": "What the authors make of the results of the Jebel Sahaba study and how they compare them with other work.",
+          "nodes": []
+        },
+        {
+          "node_id": "0005",
+          "title": "Conclusions",
+          "start_page": 9,
+          "end_page": 9,
+          "summary": "The authors' conclusions from the Jebel Sahaba study.",
+          "nodes": []
+        },
+        {
+          "node_id": "0006",
+          "title": "Materials and methods",
+          "start_page": 9,
+          "end_page": 10,
+          "summary": "Section on materials and methods in the Jebel Sahaba study.",
+          "nodes": []
+        },
+        {
+          "node_id": "0007",
+          "title": "References",
+          "start_page": 10,
+          "end_page": 12,
+          "summary": "The reference list.",
+          "nodes": []
+        },
+        {
+          "node_id": "0008",
+          "title": "Acknowledgements",
+          "start_page": 12,
+          "end_page": 13,
+          "summary": "Thanks and funding notes.",
+          "nodes": []
+        }
+      ]
+    }
+  ]
+}

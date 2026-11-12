@@ -1,0 +1,1078 @@
+{
+ "lane": "evidence/bimini-road",
+ "checked": "2026-11-11",
+ "site": {
+  "id": "bimini-road",
+  "hypothesis_id": "bimini-road",
+  "name": "Bimini Road",
+  "centre": {
+   "lat": 25.7672476,
+   "lon": -79.2779419,
+   "how": "OpenStreetMap node 11160204576 \"Bimini Road\" (a dive-spot mark). It is one of three public points within about 330 m of each other; none is a survey fix, so treat it as good to about 300 m.",
+   "source": "https://www.openstreetmap.org/node/11160204576"
+  },
+  "radius_km": 3,
+  "claimed": {
+   "line": "Divers reported a \"pavement\" of stones off North Bimini in 1968; later writers called it a road, wall or harbour from Atlantis.",
+   "who": "J. Manson Valentine, Jacques Mayol, Robert Angove; later David Zink, Greg Little",
+   "year": 1968,
+   "source": "https://en.wikipedia.org/wiki/Bimini_Road",
+   "evidence": "On September 2, 1968, while diving in 5.5 meters (18 feet) of water off the northwest coast of North Bimini, Joseph Manson Valentine, Jacques Mayol and Robert Angove encountered what they called a \"pavement\"",
+   "kind": "press"
+  },
+  "found": {
+   "line": "Cores show natural beachrock, with 14C ages of about 2,750 to 3,510 years. Plato's date is about 11,500 years ago.",
+   "who": "Eugene Shinn, Marshall McKusick; dates by Univ. of Miami lab",
+   "year": 1980,
+   "source": "https://centerforinquiry.s3.amazonaws.com/wp-content/uploads/sites/29/2004/01/22164702/p38.pdf",
+   "evidence": "When our drill cores showed the older beachrock was identical to that forming on the main swimming beach at Bimini, there was much concern.",
+   "kind": "press"
+  },
+  "needs_sea_level": {
+   "m": -5.5,
+   "when": "about 9600 BCE (Plato's date)",
+   "why": "The stones lie in about 4.6 to 5.5 m of water, so a road built on dry land at Plato's date needs a sea at least that much lower; the sea was far lower then, so this is easily met and is not the weak point.",
+   "source": "https://en.wikipedia.org/wiki/Early_Holocene_sea_level_rise",
+   "evidence": "was a significant jump in sea level by about 60 m (197 ft) during the early Holocene, between about 12,000 and 7,000 years ago"
+  },
+  "best_layers": [
+   "esri-world-imagery",
+   "eox-s2cloudless-2018-2025",
+   "gmrt-wms",
+   "gebco-tid-2024-noaa"
+  ]
+ },
+ "features": [
+  {
+   "id": "road-claimed",
+   "side": "claimed",
+   "kind": "place",
+   "label": "Bimini Road (claimed road or wall)",
+   "who": "J. Manson Valentine and divers, 1968",
+   "year": 1968,
+   "what": "Divers reported a pavement of flat stones in about 5.5 m of water off North Bimini; later writers read it as a road, wall, or harbour breakwater.",
+   "result": "Cores and dates showed jointed natural beachrock (see the core features).",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.2779419,
+     25.7672476
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/node/11160204576",
+    "detail": "OSM node 11160204576, tags historic=archaeological_site, archaeological_site=megalith, name=\"Bimini Road\". Wikipedia gives 25.766967, -79.278826 (94 m away); Wikidata Q2734050 gives 25.765, -79.28 (324 m from OSM). Offshore distance from the OSM shoreline here is about 779 m. All three public points are catalogue marks, not survey fixes. No open published plan of the line was found, so none is good to 20 m.",
+    "error_m": 300
+   },
+   "column": null,
+   "search_id": "bimini-road-discovery-1968",
+   "source": "https://en.wikipedia.org/wiki/Bimini_Road",
+   "evidence": "The Road consists of a 0.8 km (0.50 mi)-long northeast-southwest linear feature composed of roughly rectangular limestone blocks.",
+   "kind_of_source": "press",
+   "confidence": "low",
+   "notes": "Point only. The line itself is not drawn because no open plan with a scale and a position was found. Little says the line is 1,900 feet long and J-shaped; Wikipedia says 0.8 km with a hook at the south-west end."
+  },
+  {
+   "id": "core-shinn-oriented",
+   "side": "checked",
+   "kind": "core",
+   "label": "Shinn's oriented cores in the stones",
+   "who": "Eugene Shinn (USGS) with Peter Tompkins's party",
+   "year": 1976,
+   "what": "Divers drilled cores out of the stones, first two, then a planned set of 17 oriented cores from separate adjacent stones, to see which way the bedding dips.",
+   "result": "Shinn reports the bedding dips toward deep water in every core, as on a beach, and no artefacts were found; Greg Little disputes this reading.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.2779419,
+     25.7672476
+    ]
+   },
+   "position": {
+    "how": "from-description",
+    "source": "https://centerforinquiry.s3.amazonaws.com/wp-content/uploads/sites/29/2004/01/22164702/p38.pdf",
+    "detail": "Shinn gives no coordinates: \"fifteen feet of water\" on the stones off Bimini. Placed at the Road point, so error is the Road point error plus the length of the line.",
+    "error_m": 500
+   },
+   "column": null,
+   "search_id": "bimini-cores-and-dating-1977-1980",
+   "source": "https://centerforinquiry.s3.amazonaws.com/wp-content/uploads/sites/29/2004/01/22164702/p38.pdf",
+   "evidence": "all the cores showed consistent dipping of strata toward the deep water, and distinctive layers of rounded beach pebbles could be traced from one stone to another.",
+   "kind_of_source": "press",
+   "confidence": "low",
+   "notes": "Shinn says \"mid-1970s\"; Calvert prints 1977 as the collection year. Core positions on individual stones are not published in anything open. Little (2007) says of the core reports: \"The initial report clearly indicated that there were great differences between areas of the cores and that they were not, in fact, matched from one stone to the next.\" (proponent site; the original report was not read)."
+  },
+  {
+   "id": "core-shinn-dated",
+   "side": "checked",
+   "kind": "core",
+   "label": "1977 cores dated by radiocarbon",
+   "who": "Eugene Shinn; dated by Univ. of Miami lab (Calvert, Introne, Stipp)",
+   "year": 1977,
+   "what": "Cores from the blocks were dated as whole rock and as separated shell and cement, to find the maximum age of the \"road-like\" formation.",
+   "result": "Seven dates from 2,750 to 3,510 radiocarbon years before present; the shells are older than the cement that binds them, as beachrock should be.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.2779419,
+     25.7672476
+    ]
+   },
+   "position": {
+    "how": "from-description",
+    "source": "https://doi.org/10.1017/s0033822200004239",
+    "detail": "The lab list prints the site as \"26° 0' N, 77° 30' W\" and \"ca 10km from W Bimini shoreline\". That point is in open water about 180 km east of Bimini, so it is a printing error and was not used. Placed at the Road point.",
+    "error_m": 500
+   },
+   "column": [
+    {
+     "from_m": 0.04,
+     "to_m": 0.06,
+     "what": "whole rock, core F(a), UM-1359: 2780 ± 70 14C yr BP",
+     "age": "2780 ± 70 14C yr BP, uncalibrated"
+    },
+    {
+     "from_m": 0.155,
+     "to_m": 0.17,
+     "what": "whole rock, core F(b), UM-1360: 3500 ± 80 14C yr BP",
+     "age": "3500 ± 80 14C yr BP, uncalibrated"
+    },
+    {
+     "from_m": 0.275,
+     "to_m": 0.29,
+     "what": "whole rock, core F(c), UM-1361: 3350 ± 90 14C yr BP",
+     "age": "3350 ± 90 14C yr BP, uncalibrated"
+    },
+    {
+     "from_m": null,
+     "to_m": null,
+     "what": "shells, sample H, UM-1362 (no depth printed)",
+     "age": "3510 ± 70 14C yr BP, uncalibrated"
+    },
+    {
+     "from_m": 0,
+     "to_m": 0.05,
+     "what": "cement, core B, UM-1363",
+     "age": "2750 ± 80 14C yr BP, uncalibrated"
+    },
+    {
+     "from_m": 0.129,
+     "to_m": 0.168,
+     "what": "cement, core B, UM-1364",
+     "age": "2770 ± 80 14C yr BP, uncalibrated"
+    },
+    {
+     "from_m": 0.247,
+     "to_m": 0.298,
+     "what": "cement, core B, UM-1365",
+     "age": "2840 ± 70 14C yr BP, uncalibrated"
+    }
+   ],
+   "search_id": "bimini-cores-and-dating-1977-1980",
+   "source": "https://doi.org/10.1017/s0033822200004239",
+   "evidence": "dated as whole rock and in separated components of shell material and cement, to determine maximum age of \"road-like\" formation.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Depths are cm into the core, shown here in metres. Not calibrated and no marine reservoir correction here. Whether F, H and B are three cores or labels within one is not stated. The page also says \"Cores from blocks ~4.6m\", about 15 ft, as Shinn says. data/searches.json gives UM-1365 as 2770; the printed table has UM-1364 at 2770 and UM-1365 at 2840."
+  },
+  {
+   "id": "shore-north-bimini",
+   "side": "context",
+   "kind": "outline",
+   "label": "North Bimini west shore",
+   "who": "OpenStreetMap contributors",
+   "year": null,
+   "what": "The sandy west shore of North Bimini, which the stones run roughly parallel to; the beach there has modern beachrock forming (Shinn).",
+   "result": null,
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.27994,
+      25.74955
+     ],
+     [
+      -79.27937,
+      25.75036
+     ],
+     [
+      -79.2792,
+      25.75072
+     ],
+     [
+      -79.27871,
+      25.75136
+     ],
+     [
+      -79.27871,
+      25.75142
+     ],
+     [
+      -79.27887,
+      25.75152
+     ],
+     [
+      -79.27869,
+      25.75185
+     ],
+     [
+      -79.27843,
+      25.75199
+     ],
+     [
+      -79.27783,
+      25.75206
+     ],
+     [
+      -79.27772,
+      25.75219
+     ],
+     [
+      -79.27753,
+      25.75261
+     ],
+     [
+      -79.27748,
+      25.75281
+     ],
+     [
+      -79.2777,
+      25.75319
+     ],
+     [
+      -79.27773,
+      25.75345
+     ],
+     [
+      -79.27716,
+      25.75453
+     ],
+     [
+      -79.27701,
+      25.75516
+     ],
+     [
+      -79.27698,
+      25.75548
+     ],
+     [
+      -79.27702,
+      25.75602
+     ],
+     [
+      -79.27722,
+      25.75671
+     ],
+     [
+      -79.27706,
+      25.75675
+     ],
+     [
+      -79.27698,
+      25.75652
+     ],
+     [
+      -79.2767,
+      25.75659
+     ],
+     [
+      -79.27659,
+      25.75634
+     ],
+     [
+      -79.2765,
+      25.75637
+     ],
+     [
+      -79.27645,
+      25.75623
+     ],
+     [
+      -79.27628,
+      25.75637
+     ],
+     [
+      -79.27605,
+      25.75616
+     ],
+     [
+      -79.27572,
+      25.756
+     ],
+     [
+      -79.27539,
+      25.75458
+     ],
+     [
+      -79.27533,
+      25.75455
+     ],
+     [
+      -79.27534,
+      25.754
+     ],
+     [
+      -79.27528,
+      25.75386
+     ],
+     [
+      -79.27534,
+      25.75347
+     ],
+     [
+      -79.27521,
+      25.75339
+     ],
+     [
+      -79.27517,
+      25.75355
+     ],
+     [
+      -79.27515,
+      25.75409
+     ],
+     [
+      -79.27519,
+      25.75429
+     ],
+     [
+      -79.27513,
+      25.75446
+     ],
+     [
+      -79.27518,
+      25.75453
+     ],
+     [
+      -79.2751,
+      25.75467
+     ],
+     [
+      -79.27493,
+      25.75469
+     ],
+     [
+      -79.27451,
+      25.75463
+     ],
+     [
+      -79.27426,
+      25.75455
+     ],
+     [
+      -79.27411,
+      25.75462
+     ],
+     [
+      -79.27389,
+      25.75462
+     ],
+     [
+      -79.27373,
+      25.75452
+     ],
+     [
+      -79.27323,
+      25.75408
+     ],
+     [
+      -79.27291,
+      25.75397
+     ],
+     [
+      -79.27269,
+      25.75366
+     ],
+     [
+      -79.27259,
+      25.75366
+     ],
+     [
+      -79.2726,
+      25.75409
+     ],
+     [
+      -79.27246,
+      25.7543
+     ],
+     [
+      -79.27196,
+      25.75449
+     ],
+     [
+      -79.27197,
+      25.75432
+     ],
+     [
+      -79.27207,
+      25.75422
+     ],
+     [
+      -79.27209,
+      25.75396
+     ],
+     [
+      -79.27222,
+      25.75383
+     ],
+     [
+      -79.27238,
+      25.7538
+     ],
+     [
+      -79.27242,
+      25.75371
+     ],
+     [
+      -79.27222,
+      25.7535
+     ],
+     [
+      -79.27194,
+      25.75357
+     ],
+     [
+      -79.27197,
+      25.7538
+     ],
+     [
+      -79.27183,
+      25.75382
+     ],
+     [
+      -79.27183,
+      25.75464
+     ],
+     [
+      -79.27168,
+      25.75471
+     ],
+     [
+      -79.27113,
+      25.75482
+     ],
+     [
+      -79.27102,
+      25.75508
+     ],
+     [
+      -79.27111,
+      25.75517
+     ],
+     [
+      -79.27127,
+      25.75515
+     ],
+     [
+      -79.27137,
+      25.75497
+     ],
+     [
+      -79.27164,
+      25.75497
+     ],
+     [
+      -79.27172,
+      25.75541
+     ],
+     [
+      -79.27206,
+      25.75576
+     ],
+     [
+      -79.27204,
+      25.75595
+     ],
+     [
+      -79.27214,
+      25.75619
+     ],
+     [
+      -79.27232,
+      25.75621
+     ],
+     [
+      -79.2724,
+      25.75649
+     ],
+     [
+      -79.27217,
+      25.75635
+     ],
+     [
+      -79.27187,
+      25.75642
+     ],
+     [
+      -79.27158,
+      25.75667
+     ],
+     [
+      -79.27158,
+      25.75679
+     ],
+     [
+      -79.27098,
+      25.75683
+     ],
+     [
+      -79.27087,
+      25.75599
+     ],
+     [
+      -79.27091,
+      25.7554
+     ],
+     [
+      -79.27084,
+      25.75538
+     ],
+     [
+      -79.27072,
+      25.75553
+     ],
+     [
+      -79.27023,
+      25.75852
+     ],
+     [
+      -79.27023,
+      25.75977
+     ],
+     [
+      -79.27043,
+      25.75981
+     ],
+     [
+      -79.27042,
+      25.76048
+     ],
+     [
+      -79.27114,
+      25.76073
+     ],
+     [
+      -79.27175,
+      25.76102
+     ],
+     [
+      -79.27194,
+      25.76103
+     ],
+     [
+      -79.27244,
+      25.76093
+     ],
+     [
+      -79.27255,
+      25.76071
+     ],
+     [
+      -79.27262,
+      25.76067
+     ],
+     [
+      -79.27277,
+      25.76067
+     ],
+     [
+      -79.27285,
+      25.76073
+     ],
+     [
+      -79.27298,
+      25.76075
+     ],
+     [
+      -79.27309,
+      25.76067
+     ],
+     [
+      -79.27324,
+      25.76066
+     ],
+     [
+      -79.27337,
+      25.76053
+     ],
+     [
+      -79.27349,
+      25.76053
+     ],
+     [
+      -79.27355,
+      25.76063
+     ],
+     [
+      -79.27349,
+      25.76079
+     ],
+     [
+      -79.27362,
+      25.76091
+     ],
+     [
+      -79.27412,
+      25.76101
+     ],
+     [
+      -79.27414,
+      25.76111
+     ],
+     [
+      -79.27388,
+      25.76127
+     ],
+     [
+      -79.27377,
+      25.76114
+     ],
+     [
+      -79.27363,
+      25.76109
+     ],
+     [
+      -79.27339,
+      25.76078
+     ],
+     [
+      -79.27278,
+      25.76086
+     ],
+     [
+      -79.2727,
+      25.76093
+     ],
+     [
+      -79.27252,
+      25.76133
+     ],
+     [
+      -79.27219,
+      25.76184
+     ],
+     [
+      -79.27195,
+      25.7621
+     ],
+     [
+      -79.2715,
+      25.76245
+     ],
+     [
+      -79.27033,
+      25.76355
+     ],
+     [
+      -79.26984,
+      25.76425
+     ],
+     [
+      -79.26952,
+      25.76406
+     ],
+     [
+      -79.26977,
+      25.76365
+     ],
+     [
+      -79.27027,
+      25.76297
+     ],
+     [
+      -79.27163,
+      25.76162
+     ],
+     [
+      -79.27113,
+      25.76122
+     ],
+     [
+      -79.27109,
+      25.76113
+     ],
+     [
+      -79.27089,
+      25.76103
+     ],
+     [
+      -79.27045,
+      25.76126
+     ],
+     [
+      -79.27002,
+      25.76161
+     ],
+     [
+      -79.26884,
+      25.76328
+     ],
+     [
+      -79.2684,
+      25.76424
+     ],
+     [
+      -79.26799,
+      25.76593
+     ],
+     [
+      -79.26805,
+      25.7668
+     ],
+     [
+      -79.26779,
+      25.76714
+     ],
+     [
+      -79.26728,
+      25.7676
+     ],
+     [
+      -79.26722,
+      25.76786
+     ],
+     [
+      -79.26656,
+      25.76913
+     ],
+     [
+      -79.26631,
+      25.7694
+     ],
+     [
+      -79.26624,
+      25.76955
+     ],
+     [
+      -79.26605,
+      25.76941
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/way/1311637987",
+    "detail": "OSM natural=coastline, ways 1311637987 and the start of 1133276831, simplified to 3 m. Checked by eye against Esri World Imagery (Vantor Vivid, 29 March 2023): it follows the beach edge.",
+    "error_m": 20
+   },
+   "column": null,
+   "search_id": null,
+   "source": "https://centerforinquiry.s3.amazonaws.com/wp-content/uploads/sites/29/2004/01/22164702/p38.pdf",
+   "evidence": "At Bimini and along other Bahamian islands, many swimming beaches are lined with beachrock that is forming today.",
+   "kind_of_source": "press",
+   "confidence": "high",
+   "notes": "The quote is corrected from an OCR slip in the PDF text (\"oilier\"). The OSM data is ODbL."
+  },
+  {
+   "id": "point-wikipedia",
+   "side": "context",
+   "kind": "place",
+   "label": "Wikipedia's position for the Road",
+   "who": "Wikipedia editors",
+   "year": null,
+   "what": "The coordinates printed on the English Wikipedia page for the Bimini Road.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.278826,
+     25.766967
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://en.wikipedia.org/w/api.php?action=query&prop=coordinates&titles=Bimini_Road&format=json",
+    "detail": "25.766967, -79.278826, API fetched 2026-11-11. 94 m from the OSM point.",
+    "error_m": 300
+   },
+   "column": null,
+   "search_id": null,
+   "source": "https://en.wikipedia.org/wiki/Bimini_Road",
+   "evidence": "25.766967",
+   "kind_of_source": "press",
+   "confidence": "low",
+   "notes": "Shown so the viewer can see how far the public points disagree."
+  },
+  {
+   "id": "point-wikidata",
+   "side": "context",
+   "kind": "place",
+   "label": "Wikidata's position for the Road",
+   "who": "Wikidata editors",
+   "year": null,
+   "what": "The coordinates on Wikidata item Q2734050, given to the nearest arc-second.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.28,
+     25.765
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://www.wikidata.org/wiki/Special:EntityData/Q2734050.json",
+    "detail": "P625: latitude 25.765, longitude -79.28, precision 0.000278 deg. 324 m from the OSM point, 248 m from the Wikipedia point.",
+    "error_m": 400
+   },
+   "column": null,
+   "search_id": null,
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q2734050.json",
+   "evidence": "\"latitude\": 25.765",
+   "kind_of_source": "dataset",
+   "confidence": "low",
+   "notes": "The coarsest of the three."
+  }
+ ],
+ "measurements": [
+  {
+   "id": "line-length-wikipedia",
+   "what": "Length of the main line of stones (the Bimini Road)",
+   "value": 0.8,
+   "unit": "km",
+   "plato_claim": "central-island-diameter",
+   "plato_value": "5 stades across, about 925 m at 185 m a stade (Critias 116a)",
+   "source": "https://en.wikipedia.org/wiki/Bimini_Road",
+   "evidence": "The Road consists of a 0.8 km (0.50 mi)-long northeast-southwest linear feature composed of roughly rectangular limestone blocks.",
+   "kind": "press"
+  },
+  {
+   "id": "line-length-little",
+   "what": "Length of the J-shaped line, as a proponent gives it",
+   "value": 580,
+   "unit": "m",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://web.archive.org/web/20080117232952/http://www.mysterious-america.net/bimini2007.html",
+   "evidence": "the discovery of the Bimini Road, which is a 1900-foot long J-shaped formation of stone in shallow water off Bimini",
+   "kind": "proponent-site"
+  },
+  {
+   "id": "block-size",
+   "what": "Horizontal size of the largest blocks",
+   "value": 4,
+   "unit": "m",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://en.wikipedia.org/wiki/Bimini_Road",
+   "evidence": "It consists of stone blocks measuring as much as 3–4 metres (10–13 ft) in horizontal dimensions, with the average size being 2–3 metres (7–10 ft).",
+   "kind": "press"
+  },
+  {
+   "id": "block-thickness-beachrock",
+   "what": "Usual thickness of a beachrock layer, as Shinn describes beachrock in general (not measured at Bimini in that passage)",
+   "value": 0.3,
+   "unit": "m",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://centerforinquiry.s3.amazonaws.com/wp-content/uploads/sites/29/2004/01/22164702/p38.pdf",
+   "evidence": "the rock layers, usually about one-foot thick, crack much like old concrete roads and sidewalks.",
+   "kind": "press"
+  },
+  {
+   "id": "shoreward-lines",
+   "what": "Length of the two shorter lines of stones shoreward of the main line",
+   "value": 60,
+   "unit": "m",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://en.wikipedia.org/wiki/Bimini_Road",
+   "evidence": "The two narrower and shorter, approximately 50 and 60 m (160 and 200 ft)-long linear features lying shoreward of the Bimini Road",
+   "kind": "press"
+  },
+  {
+   "id": "depth-core-site",
+   "what": "Water depth at the cored blocks",
+   "value": 4.6,
+   "unit": "m",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://doi.org/10.1017/s0033822200004239",
+   "evidence": "Cores from blocks -4.6m, oriented parallel to",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "depth-wikipedia",
+   "what": "Water depth over the line, Wikipedia (Shinn says 15 ft, 4.6 m; Shinn and Swart 2005 abstract says 5 to 7 m)",
+   "value": 5.5,
+   "unit": "m",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://en.wikipedia.org/wiki/Bimini_Road",
+   "evidence": "while diving in 5.5 meters (18 feet) of water off the northwest coast of North Bimini",
+   "kind": "press"
+  },
+  {
+   "id": "age-youngest",
+   "what": "Youngest radiocarbon date, on cement in a core (UM-1363)",
+   "value": 2750,
+   "unit": "14C years BP",
+   "plato_claim": "nine-thousand-years",
+   "plato_value": "9,000 years before Solon's time, about 590 BCE, so about 11,500 years before 1950 (our arithmetic) (Timaeus 23e)",
+   "source": "https://doi.org/10.1017/s0033822200004239",
+   "evidence": "UM-1363. B 0 to 5cm, cement 2750 ± 80",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "age-oldest",
+   "what": "Oldest radiocarbon date, on shells in a core (UM-1362)",
+   "value": 3510,
+   "unit": "14C years BP",
+   "plato_claim": "nine-thousand-years",
+   "plato_value": "9,000 years before Solon's time, about 590 BCE, so about 11,500 years before 1950 (our arithmetic) (Timaeus 23e)",
+   "source": "https://doi.org/10.1017/s0033822200004239",
+   "evidence": "UM-1362. H, shells 3510 ± 70",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "age-uth-limestone",
+   "what": "Uranium-thorium date on the older limestone under the stones (Gifford and Ball), which later writers call invalid",
+   "value": 14992,
+   "unit": "years BP",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://en.wikipedia.org/wiki/Bimini_Road",
+   "evidence": "This sample yielded a uranium-thorium date of 14,992±258 BP (7132-19/2).",
+   "kind": "press"
+  }
+ ],
+ "story": [
+  {
+   "step": 1,
+   "side": "claimed",
+   "line": "1968: divers off North Bimini report a \"pavement\" of flat stones in about 5.5 m of water. Edgar Cayce's readings had put Atlantis near Bimini.",
+   "show": [
+    "road-claimed"
+   ],
+   "search_id": "bimini-road-discovery-1968"
+  },
+  {
+   "step": 2,
+   "side": "claimed",
+   "line": "Later writers call it a road, a wall or, for Greg Little, a harbour breakwater with a J-shaped end. No open plan of it was found.",
+   "show": [
+    "road-claimed",
+    "point-wikipedia",
+    "point-wikidata"
+   ],
+   "search_id": null
+  },
+  {
+   "step": 3,
+   "side": "checked",
+   "line": "Mid-1970s: Eugene Shinn's team cores the stones and cuts the cores to see which way the beach bedding dips.",
+   "show": [
+    "core-shinn-oriented",
+    "shore-north-bimini"
+   ],
+   "search_id": "bimini-cores-and-dating-1977-1980"
+  },
+  {
+   "step": 4,
+   "side": "found",
+   "line": "The bedding dips toward deep water, as on the beach next door, and no tools or artefacts turn up. The stones are beachrock.",
+   "show": [
+    "core-shinn-oriented",
+    "shore-north-bimini"
+   ],
+   "search_id": "bimini-cores-and-dating-1977-1980"
+  },
+  {
+   "step": 5,
+   "side": "found",
+   "line": "Seven radiocarbon dates give 2,750 to 3,510 years. Plato puts the sinking about 11,500 years ago.",
+   "show": [
+    "core-shinn-dated"
+   ],
+   "search_id": "bimini-cores-and-dating-1977-1980"
+  },
+  {
+   "step": 6,
+   "side": "checked",
+   "line": "Little replies that the stones lie in tiers with prop stones; geologists reply that jointed beachrock can look like this.",
+   "show": [
+    "road-claimed"
+   ],
+   "search_id": null
+  }
+ ],
+ "not_located": [
+  {
+   "what": "The main line of stones, with its J-shaped south-west hook (start, bend, end)",
+   "why": "No open published plan with a scale and a position. Gifford and Ball 1980 (National Geographic Society Research Reports 12) and Zink 1978 were not open. The line is not drawn.",
+   "source": "https://en.wikipedia.org/wiki/Bimini_Road"
+  },
+  {
+   "what": "The two short lines of stones shoreward of the main line (about 50 and 60 m)",
+   "why": "Lengths only; no position or plan.",
+   "source": "https://en.wikipedia.org/wiki/Bimini_Road"
+  },
+  {
+   "what": "Proctor's Road, a mile-long line of stones west of the Bimini Road near the shore, with five stone circles",
+   "why": "Described by Little (2007); no coordinates or map were published on that page.",
+   "source": "https://web.archive.org/web/20080117232952/http://www.mysterious-america.net/bimini2007.html"
+  },
+  {
+   "what": "\"Paradise Point Pier\", about a mile from the Road",
+   "why": "Described by Little (2007), seen on side-scan; no coordinates.",
+   "source": "https://web.archive.org/web/20080117232952/http://www.mysterious-america.net/bimini2007.html"
+  },
+  {
+   "what": "Greg and Lora Little's June 2007 side-scan sonar images of the Road",
+   "why": "Images not found open; the page gives no coordinates.",
+   "source": "https://web.archive.org/web/20080117232952/http://www.mysterious-america.net/bimini2007.html"
+  },
+  {
+   "what": "Donato's line of rectangles at about 100 ft, a few miles west of Bimini (2006 sonar)",
+   "why": "Little says GPS positions exist but does not print them.",
+   "source": "https://web.archive.org/web/20080117232952/http://www.mysterious-america.net/bimini2007.html"
+  },
+  {
+   "what": "Cylinders (\"columns\") that Harrison 1971 found about two miles from the stones, and Harrison's 2007 boreholes in Bimini Inlet",
+   "why": "Shinn (2004) gives the distance only; the Harrison 2008 paper was not open and is about the inlet, not the Road.",
+   "source": "https://centerforinquiry.s3.amazonaws.com/wp-content/uploads/sites/29/2004/01/22164702/p38.pdf"
+  },
+  {
+   "what": "Paradise Point itself",
+   "why": "No OSM feature or other record of that name was found. An OSM node \"Paradise Beach Bar\" lies at 25.7591, -79.2777.",
+   "source": "https://www.openstreetmap.org/"
+  },
+  {
+   "what": "Individual core holes on single stones",
+   "why": "Shinn gives no positions; Calvert's printed coordinates are wrong.",
+   "source": "https://doi.org/10.1017/s0033822200004239"
+  },
+  {
+   "what": "Present beachrock on the swimming beach that the stones are compared with",
+   "why": "Shinn says it lines Bimini beaches but names no place.",
+   "source": "https://centerforinquiry.s3.amazonaws.com/wp-content/uploads/sites/29/2004/01/22164702/p38.pdf"
+  }
+ ],
+ "handoffs": [
+  {
+   "lane": "searches",
+   "what": "bimini-cores-and-dating entry gives UM-1365 as 2770 ± 80; the printed table has UM-1364 at 2770 and UM-1365 at 2840 ± 70.",
+   "url": "https://doi.org/10.1017/s0033822200004239"
+  },
+  {
+   "lane": "hypotheses",
+   "what": "The proposal sources call the Davaud and Strasser beachrock work 1984; the paper found is Strasser and Davaud 1986, J. Sedimentary Research 56:422-428, doi 10.1306/212f8936-2b24-11d7-8648000102c1865d. \"Cayce 1940\" was not confirmed.",
+   "url": "https://doi.org/10.1306/212f8936-2b24-11d7-8648000102c1865d"
+  },
+  {
+   "lane": "evidence/andros-platform",
+   "what": "Little's \"Andros platform\" and the Andros underwater wall (2007) are described on the same proponent pages.",
+   "url": "https://web.archive.org/web/20090418035555/http://mysterious-america.net/atlantisandros20.html"
+  }
+ ],
+ "not_verified": [
+  "Gifford and Ball 1980, McKusick and Shinn 1980 and Shinn 1978 and 2009 were not read in full (paywalled or not open). The 1980 Nature piece is known here from Crossref and a Christian Science Monitor report; Shinn 2009 only from its chapter headings.",
+  "Harrison 1971 was read as the Nature abstract only; Shinn's account of it (cement columns) is second-hand.",
+  "Strasser and Davaud 1986 was read as the abstract only. Wikipedia's statements that the beachrock was exposed 1,900 to 2,000 years ago and that the U-Th sample is invalid are not checked against the papers.",
+  "No peer-reviewed Bahamas sea-level value for 9600 BCE was reached: the Smithsonian copy of Toscano and Macintyre 2003 was down and Springer, PNAS and PeerJ blocked fetches. The sea-level figure is the Wikipedia early-Holocene summary only.",
+  "Cayce's 1940 reading was not checked; Shinn 2004 gives Cayce's statement as \"in the Bahamas near Bimini\".",
+  "Calibrated ages were not computed.",
+  "Imagery (Esri World Imagery, Vantor Vivid, 29 March 2023, 0.5 m, stated accuracy 5 m, finest real tile z18) shows a dark north-east line with a hook near the OSM point, but the vertices were not recorded and the match to the Road is unconfirmed, so no line is drawn."
+ ]
+}

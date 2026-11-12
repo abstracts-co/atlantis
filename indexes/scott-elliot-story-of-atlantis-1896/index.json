@@ -1,0 +1,154 @@
+{
+  "id": "scott-elliot-story-of-atlantis-1896",
+  "title": "W. Scott-Elliot, The Story of Atlantis (1896)",
+  "source": {
+    "url": "https://www.gutenberg.org/ebooks/21796",
+    "publisher": "Project Gutenberg (ebook #21796; Theosophical Publishing House edition of The Story of Atlantis, first printed 1896)",
+    "date": "1896",
+    "pages": 16,
+    "file": "work/pg/pg21796.txt",
+    "sha256": "863e09195f34a3ad07644572f9a08a84af08ec45bbb77a5b5e3d676f20e5f7da",
+    "license": "Public domain (W. Scott-Elliot died 1930; Project Gutenberg text)",
+    "license_url": "https://www.gutenberg.org/policy/permission.html"
+  },
+  "language": "en",
+  "kind": "book",
+  "summary": "A Theosophical account of Atlantis, its seven \"sub-races\" and colonies, said to be drawn from occult records. It has no evidence a scientist would accept, but it shaped later Atlantis literature. Read as history of an idea, not of a place.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "PageIndex Flash found no layout structure in the scan (82 pages) and Standard mode needs an API model, so I built the tree by hand from the book's own subheadings (the First to Fifth lines of evidence, Political Institutions, Emigrations, Arts and Sciences, Education, Manners and Customs, Religion). No language model was used."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Preface by A. P. Sinnett",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "Sinnett explains that the book's statements come from the occult research of Theosophists, who say they can read the \"memory of Nature\", and presents them as results to be judged by readers.",
+      "nodes": []
+    },
+    {
+      "node_id": "0002",
+      "title": "Introduction: scope of the sketch and the five lines of evidence",
+      "start_page": 2,
+      "end_page": 2,
+      "summary": "Scott-Elliot sets out what the sketch covers: the Fourth or Atlantean Race, over a vast span of years. He lists five lines of evidence: soundings, plants and animals, language and type, religion and architecture, ancient writers and flood legends.",
+      "nodes": []
+    },
+    {
+      "node_id": "0003",
+      "title": "Evidence first: the deep-sea soundings",
+      "start_page": 3,
+      "end_page": 3,
+      "summary": "The first line of evidence is the form of the Atlantic sea-bed as found by deep-sea soundings, read as the remains of the sunken continent.",
+      "nodes": []
+    },
+    {
+      "node_id": "0004",
+      "title": "Evidence second: the distribution of animals and plants",
+      "start_page": 4,
+      "end_page": 4,
+      "summary": "Scott-Elliot argues that identical or related plants and animals on continents far apart show there was land between them, citing Miocene flora.",
+      "nodes": []
+    },
+    {
+      "node_id": "0005",
+      "title": "Evidence third: man, language and ethnological types",
+      "start_page": 5,
+      "end_page": 5,
+      "summary": "Man, language and type: the Basque language standing alone, resemblances between Hebrew and American words, and the red, yellow and other types he says Atlantis held.",
+      "nodes": []
+    },
+    {
+      "node_id": "0006",
+      "title": "Evidence fourth: religion, ritual and architecture in Mexico, Peru and Egypt",
+      "start_page": 6,
+      "end_page": 6,
+      "summary": "Scott-Elliot says the Spanish were struck by likenesses between Mexico, Peru and Egypt in religion, ritual and monuments, and compares the cities and temples of Mexico and Yucatan with Egypt's.",
+      "nodes": []
+    },
+    {
+      "node_id": "0007",
+      "title": "Evidence fifth: ancient writers (Theopompus, Proclus, Plato), Gaulish and American traditions, flood legends",
+      "start_page": 7,
+      "end_page": 7,
+      "summary": "He cites Aelian on Theopompus, Proclus on islands beyond the Pillars of Hercules, Marcellus, an extract from the Critias, Timagenes on the Gauls, the Popol Vuh, and the world's flood legends.",
+      "nodes": []
+    },
+    {
+      "node_id": "0008",
+      "title": "The maps: the land surface a million years ago, and the great submergences",
+      "start_page": 8,
+      "end_page": 8,
+      "summary": "The first map shows the land about a million years ago, with Atlantis at its height before the first submergence, about 800,000 years ago, stretching from near Iceland to about the site of Rio de Janeiro. The leaf also describes the other maps.",
+      "nodes": []
+    },
+    {
+      "node_id": "0009",
+      "title": "The seven sub-races of the Atlanteans: names and origins",
+      "start_page": 9,
+      "end_page": 9,
+      "summary": "Scott-Elliot names seven sub-races, Rmoahal, Tlavatli, Toltec, First Turanian, Original Semite, Akkadian and Mongolian, and describes their origins, including the Tlavatli's island off the west coast.",
+      "nodes": []
+    },
+    {
+      "node_id": "0010",
+      "title": "Political institutions",
+      "start_page": 10,
+      "end_page": 10,
+      "summary": "A broad outline of the political institutions of the Atlantean epochs, seen as a cycle of infancy, youth, maturity and decay for each race. It includes the stronger and quarrelsome Semitic and other rulers.",
+      "nodes": []
+    },
+    {
+      "node_id": "0011",
+      "title": "Emigrations",
+      "start_page": 11,
+      "end_page": 11,
+      "summary": "Three causes of emigration (Turanian colonising, Semites and Akkadians, and pressure of population) and the routes by which Atlantean peoples are said to have reached Asia, Africa, Europe and the Americas.",
+      "nodes": []
+    },
+    {
+      "node_id": "0012",
+      "title": "Arts and sciences",
+      "start_page": 12,
+      "end_page": 12,
+      "summary": "Scott-Elliot says Atlantean achievements, though below the Aryan in most fields, included control and moulding of animal forms, mechanical devices and the early use of explosives. He gives these as results of occult research.",
+      "nodes": []
+    },
+    {
+      "node_id": "0013",
+      "title": "Education",
+      "start_page": 13,
+      "end_page": 13,
+      "summary": "How Atlantean children were educated: Toltec as the universal language of the first map period, state-funded schools and colleges, primary schooling for all and different later training.",
+      "nodes": []
+    },
+    {
+      "node_id": "0014",
+      "title": "Manners and customs",
+      "start_page": 14,
+      "end_page": 14,
+      "summary": "Variety in manners and customs over the epochs: marriage and the relations of the sexes, land holding under the Inca-like rulers, and the councils of agricultural advisers.",
+      "nodes": []
+    },
+    {
+      "node_id": "0015",
+      "title": "Religion",
+      "start_page": 15,
+      "end_page": 15,
+      "summary": "The evolution of religious ideas: simple spiritual aspiration, the sun-disk worship and the blood-stained ritual practised by brutal Turanians.",
+      "nodes": []
+    },
+    {
+      "node_id": "0016",
+      "title": "Closing reflections: the contrast in the Atlantean character and the cycle of race evolution",
+      "start_page": 16,
+      "end_page": 16,
+      "summary": "A closing note on the evolution of the race, the contrast between Atlantean passions and attainments, and the claim that human progress runs in great cycles.",
+      "nodes": []
+    }
+  ]
+}

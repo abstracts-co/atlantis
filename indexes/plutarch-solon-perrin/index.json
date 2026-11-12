@@ -1,0 +1,50 @@
+{
+  "id": "plutarch-solon-perrin",
+  "title": "Plutarch, Life of Solon 26, 31 and 32 (English, Bernadotte Perrin, Loeb, 1914)",
+  "source": {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Solon*.html",
+    "publisher": "LacusCurtius (Bill Thayer), from the Loeb Classical Library, Plutarch's Lives vol. I (1914)",
+    "date": "1914",
+    "pages": 3,
+    "file": "work/lc/Solon.html",
+    "sha256": "898185261f04486711191623d73069acc05794a143a14fd63da06719248d30ee",
+    "license": "Public domain (the host marks the page public domain; Loeb 1914)",
+    "license_url": "https://penelope.uchicago.edu/Thayer/E/HELP/Copyright/home.html"
+  },
+  "language": "en",
+  "kind": "ancient-text",
+  "summary": "Plutarch (about 100 CE) on Solon's Egyptian studies, the unfinished Atlantis poem and Plato's later treatment. The earliest surviving report on how Solon is said to have come by the story.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "Hand-built tree. The passage was cut from the source file by its own section anchors or line range; one leaf per passage, titled with the citation. No language model was used."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Plutarch, Solon 26: Solon in Egypt with the priests of Heliopolis and Sais",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "Plutarch says Solon went to Egypt and studied with the priests Psenophis and Sonchis. From them, as Plato says, he heard the story of the lost Atlantis and tried to put it into Greek verse. The chapter then turns to his stay in Cyprus.",
+      "nodes": []
+    },
+    {
+      "node_id": "0002",
+      "title": "Plutarch, Solon 31: Solon and Peisistratus, and the abandoned Atlantis poem",
+      "start_page": 2,
+      "end_page": 2,
+      "summary": "Mostly about Peisistratus's tyranny and Solon's later years. At 31.3 Plutarch says Solon began a great work on the Atlantis tale, learned from the priests of Sais, and dropped it, not for lack of leisure as Plato says, but from fear of the task in old age.",
+      "nodes": []
+    },
+    {
+      "node_id": "0003",
+      "title": "Plutarch, Solon 32: Plato takes up the Atlantis theme; Solon's death",
+      "start_page": 3,
+      "end_page": 3,
+      "summary": "Plutarch compares Plato's Atlantis to a building site: Plato laid out great porches and courtyards, started late and died before finishing, so the tale is as unfinished as the Olympieion in Athens. The chapter then gives conflicting dates and stories about Solon's death.",
+      "nodes": []
+    }
+  ]
+}

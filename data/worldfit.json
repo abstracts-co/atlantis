@@ -1,0 +1,1285 @@
+{
+ "what": "Every 10 km cell of the Earth scored against the parts of Plato's description that the shape of the land can answer. Made by build/make-worldfit.mjs. A high score says the landscape resembles the description; it does not say anything was built there.",
+ "made": "2026-11-12",
+ "grid": {
+  "zoom": 4,
+  "size": 4096,
+  "projection": "Web Mercator",
+  "cell_km_at_equator": 9.78
+ },
+ "picture": "worldfit.png (and worldfit-2k.png at half size): red = score 0 to 5 for land that sank, 0 elsewhere; green = which clues any land of that date has (1 sank, 2 atlantic, 4 plain, 8 mountains, 16 island); blue = 0 sea then, 1 land then and now, 2 land then and sea now",
+ "clues": [
+  "sank",
+  "atlantic",
+  "plain",
+  "mountains",
+  "island"
+ ],
+ "rules": {
+  "sea_then_m": -50,
+  "plain": {
+   "long_km": 555,
+   "wide_km": 370,
+   "low_ground_max_m_above_today": 150,
+   "share_needed": 0.6
+  },
+  "mountains": {
+   "band_from_km": 185,
+   "band_to_km": 485,
+   "north_mean_at_least_m": 300,
+   "north_minus_south_at_least_m": 200
+  },
+  "island": {
+   "smaller_than_km2": 2500000
+  },
+  "near_old_ice_beyond_lat": 45
+ },
+ "limits": [
+  "One sea level for the whole planet: real coasts differed by ten metres or more, and far more near the old ice sheets.",
+  "No ice is drawn. Places beyond 45 degrees north or south are marked near_old_ice.",
+  "Sea-floor depth here is 10 km a cell: a bank smaller than that is missed.",
+  "Five clues out of the 27 that could be checked. The city itself, its rings, canal and temple, is not something a height grid can find."
+ ],
+ "totals": {
+  "land_that_sank_km2": 10865089,
+  "by_score": [
+   {
+    "score": 1,
+    "km2": 2234818
+   },
+   {
+    "score": 2,
+    "km2": 6332724
+   },
+   {
+    "score": 3,
+    "km2": 2211470
+   },
+   {
+    "score": 4,
+    "km2": 86077
+   },
+   {
+    "score": 5,
+    "km2": 0
+   }
+  ]
+ },
+ "best": [
+  {
+   "lat": 22.91,
+   "lon": -77.51,
+   "km2": 6416,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "plain",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": {
+    "name": "Great Bahama Bank",
+    "km": 83,
+    "source": "https://www.wikidata.org/entity/Q61195647"
+   }
+  },
+  {
+   "lat": 38.46,
+   "lon": -76.26,
+   "km2": 3814,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "plain",
+    "mountains"
+   ],
+   "near_old_ice": false,
+   "near": {
+    "name": "Chesapeake Bay",
+    "km": 135,
+    "source": "https://www.wikidata.org/entity/Q216868"
+   }
+  },
+  {
+   "lat": 39.07,
+   "lon": -75.19,
+   "km2": 2019,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "plain",
+    "mountains"
+   ],
+   "near_old_ice": false,
+   "near": {
+    "name": "Delaware Bay",
+    "km": 3,
+    "source": "https://www.wikidata.org/entity/Q738808"
+   }
+  },
+  {
+   "lat": 5.64,
+   "lon": -10.17,
+   "km2": 474,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": null
+  },
+  {
+   "lat": -24.52,
+   "lon": -45.59,
+   "km2": 396,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": null
+  },
+  {
+   "lat": -24.73,
+   "lon": -45.85,
+   "km2": 395,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": null
+  },
+  {
+   "lat": -23.44,
+   "lon": -44.21,
+   "km2": 322,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": {
+    "name": "off Brazil",
+    "source": "OpenStreetMap Nominatim"
+   }
+  },
+  {
+   "lat": 38.09,
+   "lon": 123.92,
+   "km2": 297,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "plain",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": {
+    "name": "Korea Bay",
+    "km": 101,
+    "source": "https://www.wikidata.org/entity/Q52059"
+   }
+  },
+  {
+   "lat": 38.48,
+   "lon": 123.75,
+   "km2": 235,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "plain",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": {
+    "name": "Korea Bay",
+    "km": 62,
+    "source": "https://www.wikidata.org/entity/Q52059"
+   }
+  },
+  {
+   "lat": 5.48,
+   "lon": -9.89,
+   "km2": 95,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": null
+  },
+  {
+   "lat": 5.22,
+   "lon": -9.71,
+   "km2": 95,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": null
+  },
+  {
+   "lat": 3.73,
+   "lon": 8.48,
+   "km2": 95,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": {
+    "name": "off Equatorial Guinea",
+    "source": "OpenStreetMap Nominatim"
+   }
+  },
+  {
+   "lat": 20.1,
+   "lon": -91.98,
+   "km2": 84,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "plain",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": {
+    "name": "off Mexico",
+    "source": "OpenStreetMap Nominatim"
+   }
+  },
+  {
+   "lat": -21.66,
+   "lon": 13.4,
+   "km2": 83,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": null
+  },
+  {
+   "lat": 22.8,
+   "lon": -78.09,
+   "km2": 81,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "plain",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": {
+    "name": "Great Bahama Bank",
+    "km": 78,
+    "source": "https://www.wikidata.org/entity/Q61195647"
+   }
+  },
+  {
+   "lat": 22.72,
+   "lon": -77.92,
+   "km2": 81,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "plain",
+    "island"
+   ],
+   "near_old_ice": false,
+   "near": {
+    "name": "Great Bahama Bank",
+    "km": 87,
+    "source": "https://www.wikidata.org/entity/Q61195647"
+   }
+  },
+  {
+   "lat": 57.07,
+   "lon": 9.88,
+   "km2": 23172,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "plain",
+    "mountains"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 67.9,
+   "lon": -76.03,
+   "km2": 21253,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "plain",
+    "mountains"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 64.32,
+   "lon": 23.38,
+   "km2": 4907,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "plain",
+    "mountains"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 65.15,
+   "lon": -39.67,
+   "km2": 2214,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 65.94,
+   "lon": -23.97,
+   "km2": 1209,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 49.22,
+   "lon": -61.83,
+   "km2": 980,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 63.9,
+   "lon": -51.73,
+   "km2": 796,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 60.76,
+   "lon": -47.41,
+   "km2": 708,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 62.81,
+   "lon": -50.53,
+   "km2": 700,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 60,
+   "lon": -45.07,
+   "km2": 574,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 65.83,
+   "lon": -36.14,
+   "km2": 513,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 61.96,
+   "lon": -49.66,
+   "km2": 444,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 64.41,
+   "lon": -52.19,
+   "km2": 429,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 62.53,
+   "lon": -42.07,
+   "km2": 407,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 60.39,
+   "lon": -45.62,
+   "km2": 397,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 63.31,
+   "lon": -52.05,
+   "km2": 348,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 63.81,
+   "lon": -52.55,
+   "km2": 336,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 62.49,
+   "lon": 18.31,
+   "km2": 327,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 61.7,
+   "lon": -42.16,
+   "km2": 323,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 60.65,
+   "lon": -46.68,
+   "km2": 322,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 63.32,
+   "lon": -40.96,
+   "km2": 309,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 66.5,
+   "lon": -23,
+   "km2": 305,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 60.38,
+   "lon": -47.8,
+   "km2": 281,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  },
+  {
+   "lat": 66.93,
+   "lon": -33.72,
+   "km2": 250,
+   "km2_scoring_5": 0,
+   "top": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "mountains",
+    "island"
+   ],
+   "near_old_ice": true
+  }
+ ],
+ "places": [
+  {
+   "id": "irish-sea",
+   "name": "Irish Sea plain (Anglesey to the Isle of Man)",
+   "score": 4,
+   "clues": [
+    "sank",
+    "atlantic",
+    "plain",
+    "island"
+   ],
+   "numbers": {
+    "plain_share": 0.63,
+    "north_mean_m": 110,
+    "south_mean_m": 27,
+    "land_piece_km2": 202,
+    "height_m": -48
+   }
+  },
+  {
+   "id": "azores",
+   "name": "Azores Plateau",
+   "score": 3,
+   "clues": [
+    "sank",
+    "atlantic",
+    "island"
+   ],
+   "numbers": {
+    "plain_share": 0.01,
+    "north_mean_m": 0,
+    "south_mean_m": 0,
+    "land_piece_km2": 59,
+    "height_m": -15
+   }
+  },
+  {
+   "id": "bimini-road",
+   "name": "Bimini Road",
+   "score": 3,
+   "clues": [
+    "sank",
+    "atlantic",
+    "island"
+   ],
+   "numbers": {
+    "plain_share": 0.53,
+    "north_mean_m": 5,
+    "south_mean_m": 22,
+    "land_piece_km2": 88478,
+    "height_m": -48
+   }
+  },
+  {
+   "id": "dogger-bank",
+   "name": "Dogger Bank and Silverpit crater",
+   "score": 3,
+   "clues": [
+    "sank",
+    "atlantic",
+    "plain"
+   ],
+   "numbers": {
+    "plain_share": 0.65,
+    "north_mean_m": 61,
+    "south_mean_m": 31,
+    "land_piece_km2": 130515379,
+    "height_m": -29
+   }
+  },
+  {
+   "id": "heligoland",
+   "name": "Heligoland",
+   "score": 3,
+   "clues": [
+    "sank",
+    "atlantic",
+    "plain"
+   ],
+   "numbers": {
+    "plain_share": 1,
+    "north_mean_m": 10,
+    "south_mean_m": 212,
+    "land_piece_km2": 130515379,
+    "height_m": -19
+   }
+  },
+  {
+   "id": "los-atlantes",
+   "name": "Los Atlantes seamount, east of Lanzarote",
+   "score": 3,
+   "clues": [
+    "sank",
+    "atlantic",
+    "island"
+   ],
+   "numbers": {
+    "plain_share": 0.1,
+    "north_mean_m": 0,
+    "south_mean_m": 147,
+    "land_piece_km2": 3609,
+    "height_m": -8
+   }
+  },
+  {
+   "id": "cadiz-gades",
+   "name": "Cádiz (Gadir) and its bay",
+   "score": 2,
+   "clues": [
+    "sank",
+    "atlantic"
+   ],
+   "numbers": {
+    "plain_share": 0.2,
+    "north_mean_m": 470,
+    "south_mean_m": 629,
+    "land_piece_km2": 130515379,
+    "height_m": -14
+   }
+  },
+  {
+   "id": "cyprus-basin",
+   "name": "Cyprus Basin",
+   "score": 2,
+   "clues": [
+    "mountains",
+    "island"
+   ],
+   "numbers": {
+    "plain_share": 0.07,
+    "north_mean_m": 1123,
+    "south_mean_m": 118,
+    "land_piece_km2": 10654,
+    "height_m": 969
+   }
+  },
+  {
+   "id": "donana",
+   "name": "Doñana marshes (Marisma de Hinojos)",
+   "score": 2,
+   "clues": [
+    "sank",
+    "atlantic"
+   ],
+   "numbers": {
+    "plain_share": 0.22,
+    "north_mean_m": 476,
+    "south_mean_m": 468,
+    "land_piece_km2": 130515379,
+    "height_m": -1
+   }
+  },
+  {
+   "id": "greenland",
+   "name": "Greenland and the north Atlantic (La Mothe le Vayer to Dantas)",
+   "score": 2,
+   "clues": [
+    "mountains",
+    "island"
+   ],
+   "numbers": {
+    "plain_share": 0,
+    "north_mean_m": 2827,
+    "south_mean_m": 2348,
+    "land_piece_km2": 2266716,
+    "height_m": 3101
+   }
+  },
+  {
+   "id": "nigeria-ife",
+   "name": "Ife, south-west Nigeria (Frobenius)",
+   "score": 2,
+   "clues": [
+    "atlantic",
+    "mountains"
+   ],
+   "numbers": {
+    "plain_share": 0.42,
+    "north_mean_m": 312,
+    "south_mean_m": 4,
+    "land_piece_km2": 130515379,
+    "height_m": 272
+   }
+  },
+  {
+   "id": "malta",
+   "name": "Malta",
+   "score": 2,
+   "clues": [
+    "sank",
+    "island"
+   ],
+   "numbers": {
+    "plain_share": 0.1,
+    "north_mean_m": 110,
+    "south_mean_m": 75,
+    "land_piece_km2": 753,
+    "height_m": -43
+   }
+  },
+  {
+   "id": "crete",
+   "name": "Minoan Crete (Knossos)",
+   "score": 2,
+   "clues": [
+    "sank",
+    "island"
+   ],
+   "numbers": {
+    "plain_share": 0.08,
+    "north_mean_m": 181,
+    "south_mean_m": 60,
+    "land_piece_km2": 10096,
+    "height_m": -3
+   }
+  },
+  {
+   "id": "sale-chellah",
+   "name": "Salé and Chellah, near Rabat",
+   "score": 2,
+   "clues": [
+    "sank",
+    "atlantic"
+   ],
+   "numbers": {
+    "plain_share": 0.1,
+    "north_mean_m": 139,
+    "south_mean_m": 997,
+    "land_piece_km2": 130515379,
+    "height_m": -41
+   }
+  },
+  {
+   "id": "santorini",
+   "name": "Santorini (Thera)",
+   "score": 2,
+   "clues": [
+    "sank",
+    "island"
+   ],
+   "numbers": {
+    "plain_share": 0.14,
+    "north_mean_m": 167,
+    "south_mean_m": 12,
+    "land_piece_km2": 186,
+    "height_m": -48
+   }
+  },
+  {
+   "id": "cuba-guanahacabibes",
+   "name": "Seabed off Cabo San Antonio, western Cuba",
+   "score": 2,
+   "clues": [
+    "atlantic",
+    "island"
+   ],
+   "numbers": {
+    "plain_share": 0.22,
+    "north_mean_m": 0,
+    "south_mean_m": 0,
+    "land_piece_km2": 158323,
+    "height_m": 13
+   }
+  },
+  {
+   "id": "spartel-bank",
+   "name": "Spartel Bank",
+   "score": 2,
+   "clues": [
+    "sank",
+    "atlantic"
+   ],
+   "numbers": {
+    "plain_share": 0.2,
+    "north_mean_m": 417,
+    "south_mean_m": 806,
+    "land_piece_km2": 130515379,
+    "height_m": -32
+   }
+  },
+  {
+   "id": "americas-early-modern",
+   "name": "The New World (López de Gómara to Bacon)",
+   "score": 2,
+   "clues": [
+    "sank",
+    "atlantic"
+   ],
+   "numbers": {
+    "plain_share": 0.26,
+    "north_mean_m": 28,
+    "south_mean_m": 471,
+    "land_piece_km2": 130515379,
+    "height_m": -3
+   }
+  },
+  {
+   "id": "troy",
+   "name": "Troy (Hisarlık)",
+   "score": 2,
+   "clues": [
+    "sank",
+    "mountains"
+   ],
+   "numbers": {
+    "plain_share": 0.29,
+    "north_mean_m": 334,
+    "south_mean_m": 119,
+    "land_piece_km2": 130515379,
+    "height_m": -1
+   }
+  },
+  {
+   "id": "yucatan-maya",
+   "name": "Yucatán and the Maya (Brasseur, Le Plongeon)",
+   "score": 2,
+   "clues": [
+    "atlantic",
+    "plain"
+   ],
+   "numbers": {
+    "plain_share": 0.83,
+    "north_mean_m": 1,
+    "south_mean_m": 432,
+    "land_piece_km2": 130515379,
+    "height_m": 137
+   }
+  },
+  {
+   "id": "antarctica",
+   "name": "Antarctica",
+   "score": 1,
+   "clues": [
+    "mountains"
+   ],
+   "numbers": {
+    "plain_share": 0,
+    "north_mean_m": 2238,
+    "south_mean_m": 0,
+    "land_piece_km2": 12914659,
+    "height_m": 2584
+   }
+  },
+  {
+   "id": "tunisian-chotts",
+   "name": "Chott el Djerid and the Gulf of Gabès, Tunisia",
+   "score": 1,
+   "clues": [
+    "plain"
+   ],
+   "numbers": {
+    "plain_share": 0.62,
+    "north_mean_m": 307,
+    "south_mean_m": 318,
+    "land_piece_km2": 130515379,
+    "height_m": 15
+   }
+  },
+  {
+   "id": "gamla-uppsala",
+   "name": "Gamla Uppsala (Sweden)",
+   "score": 1,
+   "clues": [
+    "atlantic"
+   ],
+   "numbers": {
+    "plain_share": 0.58,
+    "north_mean_m": 228,
+    "south_mean_m": 52,
+    "land_piece_km2": 130515379,
+    "height_m": 26
+   }
+  },
+  {
+   "id": "helike",
+   "name": "Helike",
+   "score": 1,
+   "clues": [
+    "mountains"
+   ],
+   "numbers": {
+    "plain_share": 0.17,
+    "north_mean_m": 580,
+    "south_mean_m": 17,
+    "land_piece_km2": 130515379,
+    "height_m": 122
+   }
+  },
+  {
+   "id": "hoggar-sahara",
+   "name": "Hoggar (Ahaggar) Mountains, Sahara",
+   "score": 1,
+   "clues": [
+    "mountains"
+   ],
+   "numbers": {
+    "plain_share": 0,
+    "north_mean_m": 736,
+    "south_mean_m": 533,
+    "land_piece_km2": 130515379,
+    "height_m": 2278
+   }
+  },
+  {
+   "id": "lake-copais",
+   "name": "Lake Copais, Boeotia",
+   "score": 1,
+   "clues": [
+    "mountains"
+   ],
+   "numbers": {
+    "plain_share": 0.18,
+    "north_mean_m": 612,
+    "south_mean_m": 25,
+    "land_piece_km2": 130515379,
+    "height_m": 62
+   }
+  },
+  {
+   "id": "sardinia",
+   "name": "Sardinia",
+   "score": 1,
+   "clues": [
+    "island"
+   ],
+   "numbers": {
+    "plain_share": 0.08,
+    "north_mean_m": 201,
+    "south_mean_m": 206,
+    "land_piece_km2": 40663,
+    "height_m": 474
+   }
+  },
+  {
+   "id": "sea-of-azov",
+   "name": "Sea of Azov",
+   "score": 1,
+   "clues": [
+    "plain"
+   ],
+   "numbers": {
+    "plain_share": 0.82,
+    "north_mean_m": 134,
+    "south_mean_m": 104,
+    "land_piece_km2": 130515379,
+    "height_m": -13
+   }
+  },
+  {
+   "id": "souss-massa",
+   "name": "Souss-Massa plain, Morocco",
+   "score": 1,
+   "clues": [
+    "atlantic"
+   ],
+   "numbers": {
+    "plain_share": 0.05,
+    "north_mean_m": 276,
+    "south_mean_m": 403,
+    "land_piece_km2": 130515379,
+    "height_m": 1708
+   }
+  },
+  {
+   "id": "sundaland",
+   "name": "Sundaland and Indonesia",
+   "score": 1,
+   "clues": [
+    "plain"
+   ],
+   "numbers": {
+    "plain_share": 0.89,
+    "north_mean_m": 11,
+    "south_mean_m": 11,
+    "land_piece_km2": 130515379,
+    "height_m": 30
+   }
+  },
+  {
+   "id": "arctic-spitsbergen",
+   "name": "The Arctic and Spitsbergen (Bailly)",
+   "score": 1,
+   "clues": [
+    "island"
+   ],
+   "numbers": {
+    "plain_share": 0.19,
+    "north_mean_m": 1,
+    "south_mean_m": 1,
+    "land_piece_km2": 87230,
+    "height_m": 468
+   }
+  },
+  {
+   "id": "atlas-morocco",
+   "name": "Atlas Mountains and Morocco (Godron, Berlioux, Lagneau)",
+   "score": 0,
+   "clues": [],
+   "numbers": {
+    "plain_share": 0.07,
+    "north_mean_m": 197,
+    "south_mean_m": 451,
+    "land_piece_km2": 130515379,
+    "height_m": 3275
+   }
+  },
+  {
+   "id": "black-sea",
+   "name": "Black Sea (Snake Island and the north-west shelf)",
+   "score": 0,
+   "clues": [],
+   "note": "under water at Plato's date too",
+   "numbers": {
+    "height_m": -2225
+   }
+  },
+  {
+   "id": "ireland",
+   "name": "Ireland",
+   "score": 0,
+   "clues": [],
+   "numbers": {
+    "plain_share": 0.49,
+    "north_mean_m": 71,
+    "south_mean_m": 7,
+    "land_piece_km2": 130515379,
+    "height_m": 38
+   }
+  },
+  {
+   "id": "le-danois-bank",
+   "name": "Le Danois Bank (El Cachucho), Bay of Biscay",
+   "score": 0,
+   "clues": [],
+   "note": "under water at Plato's date too",
+   "numbers": {
+    "height_m": -633
+   }
+  },
+  {
+   "id": "little-sole-bank",
+   "name": "Little Sole Bank and the Celtic Shelf",
+   "score": 0,
+   "clues": [],
+   "note": "under water at Plato's date too",
+   "numbers": {
+    "height_m": -158
+   }
+  },
+  {
+   "id": "bolivian-altiplano",
+   "name": "Pampa Aullagas, Bolivian Altiplano",
+   "score": 0,
+   "clues": [],
+   "numbers": {
+    "plain_share": 0,
+    "north_mean_m": 2080,
+    "south_mean_m": 3334,
+    "land_piece_km2": 130515379,
+    "height_m": 3696
+   }
+  },
+  {
+   "id": "richat",
+   "name": "Richat Structure (Eye of the Sahara)",
+   "score": 0,
+   "clues": [],
+   "numbers": {
+    "plain_share": 0.05,
+    "north_mean_m": 276,
+    "south_mean_m": 229,
+    "land_piece_km2": 130515379,
+    "height_m": 416
+   }
+  },
+  {
+   "id": "tantalis-sipylus",
+   "name": "Tantalis near Mount Sipylus (western Anatolia)",
+   "score": 0,
+   "clues": [],
+   "numbers": {
+    "plain_share": 0.24,
+    "north_mean_m": 190,
+    "south_mean_m": 81,
+    "land_piece_km2": 130515379,
+    "height_m": 794
+   }
+  },
+  {
+   "id": "holy-land",
+   "name": "The Holy Land, Israel and Sinai",
+   "score": 0,
+   "clues": [],
+   "numbers": {
+    "plain_share": 0.15,
+    "north_mean_m": 333,
+    "south_mean_m": 587,
+    "land_piece_km2": 130515379,
+    "height_m": 437
+   }
+  }
+ ]
+}

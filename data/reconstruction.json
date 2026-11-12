@@ -1,0 +1,573 @@
+{
+ "version": 2,
+ "checked": "2026-11-12",
+ "what": "How the 3D city on the globe was built from Plato's Critias: which parts follow the text, with the passage, and which parts are our choices because the text is silent. The code is source/engine/city.js and source/engine/city/. Every mesh in the model names one id from this file.",
+ "text": {
+  "work": "Plato, Critias",
+  "translation": "R. G. Bury, Loeb Classical Library, 1929",
+  "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0180%3Atext%3DCriti.",
+  "checked_against": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0059/tlg032/tlg0059.tlg032.perseus-eng2.xml"
+ },
+ "units": {
+  "stadion_m": 185,
+  "plethron": "one sixth of a stadion",
+  "note": "The stadion is drawn at 185 m. data/plato.json lists the other lengths scholars use; the whole city scales with it."
+ },
+ "from_text": [
+  {
+   "id": "hill",
+   "what": "The city stands on a hill that is low on all sides, about 50 stadia from the sea",
+   "ref": "Critias 113c",
+   "quote": "at a distance of about 50 stades, there stood a mountain that was low on all sides",
+   "param": "hill"
+  },
+  {
+   "id": "rings",
+   "what": "Three rings of sea and two of land round a central hill",
+   "ref": "Critias 113d",
+   "quote": "he made circular belts of sea and land enclosing one another alternately, some greater, some smaller, two being of land and three of sea",
+   "param": "rings"
+  },
+  {
+   "id": "ring-widths",
+   "what": "Ring widths from the centre: water 1, land 2, water 2, land 3, water 3 stadia",
+   "ref": "Critias 115e",
+   "quote": "The greatest of the circles into which a boring was made for the sea was three stades in breadth, and the circle of land next to it was of equal breadth; and of the second pair of circles that of water was two stades in breadth and that of dry land equal again to the preceding one of water; and the circle which ran round the central island itself was of a stade's breadth.",
+   "param": "rings"
+  },
+  {
+   "id": "island",
+   "what": "Central island five stadia across",
+   "ref": "Critias 116a",
+   "quote": "this island, wherein stood the royal palace, was of five stades in diameter",
+   "param": "islandDiameter"
+  },
+  {
+   "id": "island-gardens",
+   "what": "The central island set in order by the god, bearing every kind of food",
+   "ref": "Critias 113e",
+   "quote": "producing out of the earth all kinds of food in plenty"
+  },
+  {
+   "id": "canal",
+   "what": "Canal from the sea to the outer ring: 3 plethra wide, 100 feet deep, 50 stadia long",
+   "ref": "Critias 115d",
+   "quote": "beginning at the sea, they bored a channel right through to the outermost circle, which was three plethra in breadth, one hundred feet in depth, and fifty stades in length",
+   "param": "canalLength, canalWidthPlethra"
+  },
+  {
+   "id": "canal-mouth",
+   "what": "The mouth of the canal on the sea, wide enough for the largest ships",
+   "ref": "Critias 115d",
+   "quote": "they made the entrance to it from the sea like that to a harbor by opening out a mouth large enough for the greatest ships to sail through",
+   "drawn": false,
+   "note": "At the sea, 50 stadia out: beyond the modelled ground. The canal's course is drawn as a line."
+  },
+  {
+   "id": "harbours",
+   "what": "Three harbours: the three rings of water",
+   "ref": "Critias 117d",
+   "quote": "after crossing the three outer harbors"
+  },
+  {
+   "id": "ship-passages",
+   "what": "Roofed passages for one trireme through the rings of land, beside the bridges",
+   "ref": "Critias 115d-e",
+   "quote": "through the circles of land, which divided those of sea, over against the bridges they opened out a channel leading from circle to circle, large enough to give passage to a single trireme; and this they roofed over above so that the sea-way was subterranean"
+  },
+  {
+   "id": "bridges",
+   "what": "Bridges over the rings of water, a plethron wide, with towers and gates",
+   "ref": "Critias 115c, 116a",
+   "quote": "the bridge, which was a plethrum in breadth … and upon the bridges on each side, over against the passages for the sea, they erected towers and gates",
+   "param": "bridgeWidthPlethra"
+  },
+  {
+   "id": "bridge-gates",
+   "what": "Towers and gates on the bridges, on each side, where the sea passes",
+   "ref": "Critias 116a",
+   "quote": "upon the bridges on each side, over against the passages for the sea, they erected towers and gates"
+  },
+  {
+   "id": "ring-walls",
+   "what": "A stone wall round the island, round each ring and along both sides of the bridge",
+   "ref": "Critias 116a",
+   "quote": "Now the island and the circles and the bridge, which was a plethrum in breadth, they encompassed round about, on this side and on that, with a wall of stone"
+  },
+  {
+   "id": "stone",
+   "what": "White, black and red stone, quarried on the spot",
+   "ref": "Critias 116a-b",
+   "quote": "the stone they quarried beneath the central island all round, and from beneath the outer and inner circles, some of it being white, some black and some red"
+  },
+  {
+   "id": "rock-docks",
+   "what": "Two docks cut into the rock",
+   "ref": "Critias 116b",
+   "quote": "while quarrying it they constructed two inner docks, hollowed out and roofed over by the native rock"
+  },
+  {
+   "id": "patterned-buildings",
+   "what": "Buildings of one colour of stone, and buildings patterned in white, black and red",
+   "ref": "Critias 116b",
+   "quote": "of the buildings some they framed of one simple color, in others they wove a pattern of many colors by blending the stones for the sake of ornament",
+   "shape": "ours"
+  },
+  {
+   "id": "walls",
+   "what": "Walls faced with brass (outer ring), tin (inner ring) and orichalcum (citadel)",
+   "ref": "Critias 116b-c",
+   "quote": "they covered with brass, as though with plaster, all the circumference of the wall which surrounded the outermost circle; and that of the inner one they coated with tin; and that which encompassed the acropolis itself with orichalcum which sparkled like fire"
+  },
+  {
+   "id": "wall-brass",
+   "what": "The wall round the outermost ring, covered with brass",
+   "ref": "Critias 116b",
+   "quote": "they covered with brass, as though with plaster, all the circumference of the wall which surrounded the outermost circle"
+  },
+  {
+   "id": "wall-tin",
+   "what": "The wall round the inner ring, coated with tin",
+   "ref": "Critias 116b",
+   "quote": "that of the inner one they coated with tin"
+  },
+  {
+   "id": "wall-orichalcum",
+   "what": "The wall round the acropolis, coated with orichalcum",
+   "ref": "Critias 116b-c",
+   "quote": "that which encompassed the acropolis itself with orichalcum which sparkled like fire"
+  },
+  {
+   "id": "palace",
+   "what": "The royal palace on the central island, enlarged by every king",
+   "ref": "Critias 115c-d",
+   "quote": "they made of it an abode amazing to behold for the magnitude and beauty of its workmanship",
+   "shape": "ours"
+  },
+  {
+   "id": "shrine",
+   "what": "Shrine of Cleito and Poseidon at the centre, inside a wall of gold; kept as holy ground",
+   "ref": "Critias 116c",
+   "quote": "In the center there stood a temple sacred to Cleito and Poseidon, which was reserved as holy ground, and encircled with a wall of gold",
+   "shape": "ours"
+  },
+  {
+   "id": "shrine-wall",
+   "what": "The wall of gold round the shrine of Cleito and Poseidon",
+   "ref": "Critias 116c",
+   "quote": "encircled with a wall of gold"
+  },
+  {
+   "id": "temple",
+   "what": "Temple of Poseidon: a stadion long, 3 plethra wide, silver outside, gold pinnacles",
+   "ref": "Critias 116d",
+   "quote": "the temple of Poseidon himself was a stade in length, three plethra in breadth, and of a height which appeared symmetrical therewith … All the exterior of the temple they coated with silver, save only the pinnacles, and these they coated with gold.",
+   "param": "templeLength, templeWidth"
+  },
+  {
+   "id": "pinnacles",
+   "what": "Gold on the pinnacles of the temple",
+   "ref": "Critias 116d",
+   "quote": "save only the pinnacles, and these they coated with gold"
+  },
+  {
+   "id": "temple-ceiling",
+   "what": "Inside the temple: a ceiling of ivory, varied with gold, silver and orichalcum",
+   "ref": "Critias 116d",
+   "quote": "they made the roof all of ivory in appearance, variegated with gold and silver and orichalcum"
+  },
+  {
+   "id": "temple-interior",
+   "what": "Inside the temple: walls, pillars and floor covered with orichalcum",
+   "ref": "Critias 116d",
+   "quote": "all the rest of the walls and pillars and floors they covered with orichalcum"
+  },
+  {
+   "id": "poseidon",
+   "what": "A gold Poseidon in a chariot with six winged horses, his head touching the roof",
+   "ref": "Critias 116d-e",
+   "quote": "golden statues, one being that of the God standing on a chariot and driving six … winged steeds, his own figure so tall as to touch the ridge of the roof"
+  },
+  {
+   "id": "nereids",
+   "what": "A hundred Nereids on dolphins round him",
+   "ref": "Critias 116e",
+   "quote": "round about him a hundred Nereids on dolphins"
+  },
+  {
+   "id": "votive-inside",
+   "what": "Many other statues inside, given by private men",
+   "ref": "Critias 116e",
+   "quote": "it contained also many other images, the votive offerings of private men",
+   "shape": "ours"
+  },
+  {
+   "id": "pillar",
+   "what": "A pillar of orichalcum inside the temple, with the laws on it",
+   "ref": "Critias 119c-d",
+   "quote": "a pillar of orichalcum, which was placed within the temple of Poseidon in the center of the island"
+  },
+  {
+   "id": "statues",
+   "what": "Gold statues of the kings and their wives round the temple",
+   "ref": "Critias 116e",
+   "quote": "outside, round about the temple, there stood images in gold of all the princes, both themselves and their wives"
+  },
+  {
+   "id": "votive-outside",
+   "what": "Other offerings round the temple, from kings, citizens and subject peoples",
+   "ref": "Critias 116e",
+   "quote": "together with many other votive offerings both of the kings and of private persons",
+   "shape": "ours"
+  },
+  {
+   "id": "altar",
+   "what": "The altar, matching the temple in size and workmanship",
+   "ref": "Critias 117a",
+   "quote": "in respect of its size and its workmanship, harmonized with its surroundings",
+   "shape": "ours"
+  },
+  {
+   "id": "bulls",
+   "what": "Bulls loose in the precinct of Poseidon",
+   "ref": "Critias 119d",
+   "quote": "In the sacred precincts of Poseidon there were bulls at large",
+   "drawn": false,
+   "note": "No animals or people are drawn; see the choice \"no-figures\"."
+  },
+  {
+   "id": "springs",
+   "what": "A hot and a cold spring on the central island, with buildings and trees round them",
+   "ref": "Critias 113e, 117a-b",
+   "quote": "The springs they made use of, one kind being of cold, another of warm water … these they surrounded with buildings and with plantations of trees",
+   "shape": "ours"
+  },
+  {
+   "id": "reservoirs",
+   "what": "Basins round the springs, some open to the sky and some roofed for hot baths in winter",
+   "ref": "Critias 117b",
+   "quote": "they set reservoirs round about, some under the open sky, and others under cover to supply hot baths in the winter",
+   "shape": "ours"
+  },
+  {
+   "id": "baths",
+   "what": "Separate baths for the kings, for citizens, for women, and for horses and beasts of burden",
+   "ref": "Critias 117b",
+   "quote": "they put separate baths for the kings and for the private citizens, besides others for women, and others again for horses and all other beasts of burden",
+   "shape": "ours"
+  },
+  {
+   "id": "grove",
+   "what": "The sacred grove of Poseidon",
+   "ref": "Critias 117b",
+   "quote": "the sacred grove of Poseidon, which contained trees of all kinds that were of marvellous beauty and height"
+  },
+  {
+   "id": "aqueducts",
+   "what": "Channels that carry the spring water to the outer rings by the bridges",
+   "ref": "Critias 117b",
+   "quote": "by means of channels they led the water to the outer circles over against the bridges",
+   "shape": "ours"
+  },
+  {
+   "id": "ring-buildings",
+   "what": "Temples, gardens, exercise grounds and barracks on the rings of land",
+   "ref": "Critias 117c",
+   "quote": "there they had constructed many temples for gods, and many gardens and many exercising grounds … in each of the circular belts of island"
+  },
+  {
+   "id": "ring-temples",
+   "what": "Many temples on each ring of land",
+   "ref": "Critias 117c",
+   "quote": "there they had constructed many temples for gods",
+   "shape": "ours"
+  },
+  {
+   "id": "gardens",
+   "what": "Many gardens on each ring of land",
+   "ref": "Critias 117c",
+   "quote": "and many gardens and many exercising grounds"
+  },
+  {
+   "id": "gymnasia",
+   "what": "Exercise grounds for men on each ring of land",
+   "ref": "Critias 117c",
+   "quote": "many exercising grounds, some for men and some set apart for horses",
+   "shape": "ours"
+  },
+  {
+   "id": "horse-grounds",
+   "what": "Exercise grounds for horses, kept apart, on each ring of land",
+   "ref": "Critias 117c",
+   "quote": "some set apart for horses, in each of the circular belts of island",
+   "shape": "ours"
+  },
+  {
+   "id": "racecourse",
+   "what": "Racecourse a stadion wide, running round the middle of the larger ring",
+   "ref": "Critias 117c",
+   "quote": "in the center of the large island a racecourse laid out for horses, which was a stade in width, while as to length, a strip which ran round the whole circumference",
+   "param": "racecourseWidth"
+  },
+  {
+   "id": "barracks",
+   "what": "Barracks for most of the spearmen on both sides of the racecourse",
+   "ref": "Critias 117c",
+   "quote": "round about it, on this side and on that, were barracks for the greater part of the spearmen",
+   "shape": "ours"
+  },
+  {
+   "id": "guard-house",
+   "what": "The guard house of the more trusted spearmen, on the smaller ring",
+   "ref": "Critias 117c-d",
+   "quote": "was posted in the smaller circle, which was nearer the acropolis",
+   "shape": "ours"
+  },
+  {
+   "id": "guard-dwellings",
+   "what": "Dwellings of the most trusted guards, on the acropolis round the kings",
+   "ref": "Critias 117d",
+   "quote": "had dwellings granted to them within the acropolis round about the persons of the kings",
+   "shape": "ours"
+  },
+  {
+   "id": "shipyards",
+   "what": "Shipyards full of triremes and their gear",
+   "ref": "Critias 117d",
+   "quote": "the shipyards were full of triremes and all the tackling that belongs to triremes",
+   "shape": "ours"
+  },
+  {
+   "id": "merchant-ships",
+   "what": "Merchant ships filling the canal and the largest harbour",
+   "ref": "Critias 117e",
+   "quote": "the sea-way and the largest harbor were filled with ships and merchants coming from all quarters",
+   "shape": "ours"
+  },
+  {
+   "id": "outer-wall",
+   "what": "Outer wall 50 stadia from the largest ring, its ends meeting at the canal's mouth on the sea",
+   "ref": "Critias 117e",
+   "quote": "a wall which began at the sea and ran round in a circle, at a uniform distance of fifty stades from the largest circle and harbor, and its ends converged at the seaward mouth of the channel",
+   "param": "outerWallDistance"
+  },
+  {
+   "id": "houses",
+   "what": "The town inside the outer wall: many houses set close together",
+   "ref": "Critias 117e",
+   "quote": "The whole of this wall had numerous houses built on to it, set close together",
+   "note": "Bury makes the houses line the wall. The Greek is \"touto de pan synoikeito hypo pollon kai pyknon oikeseon\": all of this was settled with many dense dwellings, which Jowett gives as \"The entire area was densely crowded with habitations\". We draw the area filled, after the Greek and Jowett."
+  },
+  {
+   "id": "faces-south",
+   "what": "The sea lies south of the city",
+   "ref": "Critias 118a-b",
+   "quote": "this region, all along the island, faced towards the South and was sheltered from the Northern blasts",
+   "param": "seaBearing"
+  }
+ ],
+ "choices": [
+  {
+   "id": "stadion",
+   "what": "185 m to the stadion",
+   "why": "Plato gives stadia, not metres. Lengths from about 157 m to 192 m are used by scholars. The whole city scales with this number."
+  },
+  {
+   "id": "style",
+   "what": "One style throughout: Greek building forms of Plato's own century (columns, gabled roofs with tiles, ashlar walls with battlements), made strange by the materials the text gives: three colours of stone laid in bands and patterns, and metal skins on walls and temple",
+   "why": "Plato wrote about 360 BCE for Athenian readers and uses Greek building words (teichos, pyrgoi, pylai, neosoikoi, gymnasia, hippodromos, neos). He sets the city 9,000 years earlier and says of the temple that \"there was something of the barbaric in its appearance\" (116d). Rings of wall, each differently coloured and the innermost coated in silver and gold, are what Herodotus (1.98) reports of Ecbatana, the Median capital: a picture of eastern royal splendour his readers knew. So the forms are Greek and the surfaces are the foreign part. This is a drawing of how a Greek reader could have pictured it, not of any real place.",
+   "sources": [
+    {
+     "what": "Herodotus, Histories 1.98, tr. A. D. Godley (1920): the seven ringed walls of Ecbatana, their battlements white, black, purple, blue, orange, silver and gold",
+     "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126%3Abook%3D1%3Achapter%3D98",
+     "read": "2026-11-12"
+    }
+   ]
+  },
+  {
+   "id": "heights",
+   "what": "Heights: banks 8 m above the water with a quay 2 m above it, the hill 24 m above the banks, walls 11 m with towers to 17 m, gate towers 21 m",
+   "why": "The text says only that the lips of the rings stood \"a sufficient height above the level of the sea\" for a roofed ship passage (115e), and gives no wall heights. The banks are as high as a trireme without its mast needs to pass under a roof of rock."
+  },
+  {
+   "id": "walls-both-shores",
+   "what": "Each ring of land has a wall on both shores, set back from the water behind a harbour strip, and both are faced in that ring's metal on the side towards the water",
+   "why": "116a puts the walls round the island, the rings and the bridge \"on this side and on that\"; 116b names one wall per ring for the metal. We wall both shores and face both in that ring's metal."
+  },
+  {
+   "id": "wall-towers",
+   "what": "Towers at intervals along the ring walls, battlements and a walk on top",
+   "why": "Towers and gates are stated only for the bridges (116a). A Greek city wall of Plato's time had towers and a crenellated walk."
+  },
+  {
+   "id": "metal-look",
+   "what": "How the metals look: brass a yellow gold-brown, tin a soft grey-white, orichalcum a red gold \"sparkling like fire\", silver and gold bright; all slightly weathered sheet, with seams",
+   "why": "The text names the metals and says the brass was put on \"as though with plaster\" (116b). Orichalcum is unknown (\"now known only by name\", 114e); a red-gold copper alloy is the usual guess."
+  },
+  {
+   "id": "road-offset",
+   "what": "One straight road from the town to the palace, 96 m east of the canal's line; the roofed ship passages through the rings of land are on the canal's line",
+   "why": "Bridges and ship passages are \"over against\" each other (115e, 116a). Their exact relation is not given. Ships come up the canal and go straight on through the passages; the road and its bridges run beside them."
+  },
+  {
+   "id": "bridge-form",
+   "what": "Bridges of stone on piers with flat spans, a parapet wall each side, the water channel under the roadway",
+   "why": "The text gives only the width, a plethron (116a), the walls on both sides and the towers and gates. Greek bridges of the time were piers with corbelled or lintelled openings; the arch was not in general use."
+  },
+  {
+   "id": "gate-form",
+   "what": "Each bridge end has two towers with a gate between, the gate leaves faced in the ring's metal",
+   "why": "116a states towers and gates, no form."
+  },
+  {
+   "id": "aqueduct-form",
+   "what": "The spring water crosses each bridge in a covered stone channel along the parapet, and falls into basins on the rings",
+   "why": "117b says channels led the water to the outer rings by the bridges (Jowett: \"by aqueducts along the bridges\"). Their form is not given."
+  },
+  {
+   "id": "quays",
+   "what": "A level harbour strip at quay height between the water and the foot of each bank, with mooring posts, storehouses on the merchants' harbour and steps up the banks",
+   "why": "Not described. Harbours \"full of ships\" (117e) need them."
+  },
+  {
+   "id": "rock-dock-place",
+   "what": "The two rock-cut docks open off the innermost ring of water, in the flank of the central island, as two pairs of roofed slips",
+   "why": "116b: two inner docks hollowed out and roofed by the rock, made while quarrying under the island and the rings. The Greek (neosoikous koilous diplous entos) can also be read as double ship sheds. Where they were is not said."
+  },
+  {
+   "id": "ship-sheds",
+   "what": "Rows of roofed ship sheds on slipways along the three inner harbour strips, each 40 m by 7.4 m, in groups of six",
+   "why": "The text has shipyards full of triremes (117d), not their layout. Sheds are sized to the trireme we draw."
+  },
+  {
+   "id": "triremes",
+   "what": "Triremes about 37 m long and 5.5 m in beam, with a ram, three banks of oars, one mast and an upturned stern",
+   "why": "Plato says triremes (115e, 117d) and nothing of their shape. The form follows the Athenian trireme of his own time as rebuilt in the trial ship Olympias.",
+   "sources": [
+    {
+     "what": "Olympias, the reconstruction of an Athenian trireme (built 1985 to 1987 to John Coates's drawings; 170 oars in three banks; bronze ram)",
+     "url": "https://en.wikipedia.org/wiki/Olympias_(trireme)",
+     "read": "2026-11-12"
+    }
+   ]
+  },
+  {
+   "id": "merchantmen",
+   "what": "Round-hulled merchant ships 14 to 24 m long with one square sail",
+   "why": "117e says only \"ships and merchants coming from all quarters\"."
+  },
+  {
+   "id": "temple-form",
+   "what": "Poseidon's temple as a Greek temple with a colonnade all round, on four steps in the three stones, 11 by 22 columns, with a sun disc of gold in each gable",
+   "why": "Plato gives its size and metals and says it looked somewhat barbaric (116d). Its form is not described. A stadion by three plethra (185 by 92.5 m) is far larger than any Greek temple; the columns here are 3.4 m thick and 30 m high."
+  },
+  {
+   "id": "temple-height",
+   "what": "The temple is 41 m to the top of the cornice and 54 m to the ridge",
+   "why": "116d: \"of a height which appeared symmetrical therewith\". We use the proportion of height to width on the front of the Parthenon, 4 to 9.",
+   "sources": [
+    {
+     "what": "Parthenon: a 4:9 proportion in the elevation",
+     "url": "https://en.wikipedia.org/wiki/Parthenon",
+     "read": "2026-11-12"
+    }
+   ]
+  },
+  {
+   "id": "pinnacle-form",
+   "what": "The pinnacles are the ornaments on the ridge ends and corners of the roof (akroteria), as tall finials",
+   "why": "The Greek word is akroteria. Their shape is not given."
+  },
+  {
+   "id": "temple-interior-layout",
+   "what": "Inside: one great room with two rows of pillars, Poseidon's chariot at the far end facing the door, the Nereids in rows down both sides, the pillar of the laws before the statue",
+   "why": "116d-e and 119c-d list what was inside, not where it stood."
+  },
+  {
+   "id": "figure-form",
+   "what": "Statues are drawn as plain, smooth figures without faces or detail",
+   "why": "We will not invent portraits. The text gives their material (gold) and who they are."
+  },
+  {
+   "id": "counts",
+   "what": "Numbers: 60 royal statues round the temple, some 30 other offerings, 24 statues inside, towers, ships, sheds, buildings and trees",
+   "why": "Not given, except 100 Nereids (116e) and 1,200 ships for the whole fleet (119b). Ten kings and their wives over many generations would be more statues than we draw."
+  },
+  {
+   "id": "altar-form",
+   "what": "A long stepped altar of white stone before the east front of the temple, 46 m long",
+   "why": "117a says only that it matched its surroundings in size and workmanship."
+  },
+  {
+   "id": "shrine-form",
+   "what": "The shrine of Cleito and Poseidon is a round building with a ring of columns and an open eye in its roof; the wall of gold is 4.5 m high and has a gate towards the sea",
+   "why": "116c: holy ground, kept closed (abaton), inside a wall of gold. Nothing more: no shape and no size for either. A round building is one of the forms Greek builders used for a holy place. The gate and the open door are ours, because the shrine is used as this community's hall (see \"hall\")."
+  },
+  {
+   "id": "palace-plan",
+   "what": "The palace as ranges of two storeys round courts north of the shrine, with a great hall behind a porch of red columns and a taller hall behind it",
+   "why": "115c-d: each king added to it. No plan is given."
+  },
+  {
+   "id": "baths-layout",
+   "what": "Two round spring houses, two open basins and two roofed ones, three bath buildings round courts and a long trough hall for horses, in the north-east of the island; a stone channel carries the outflow to the grove and to the bridge",
+   "why": "117a-b lists them, without a plan."
+  },
+  {
+   "id": "grove-trees",
+   "what": "The grove: tall cypresses, planes and pines; gardens: olives, fruit trees and vines in rows",
+   "why": "117b: \"trees of all kinds\" of great height and beauty. 115a-b lists the island's fruits. The kinds drawn are Mediterranean, which is a choice."
+  },
+  {
+   "id": "ring-layout",
+   "what": "How the rings of land are laid out: temples in walled precincts, gymnasia as colonnaded courts, horse grounds as fenced paddocks, gardens between, a road round each ring",
+   "why": "117c lists them and puts the racecourse in the middle of the larger ring with barracks on both sides. The rest of the plan is ours."
+  },
+  {
+   "id": "racecourse-form",
+   "what": "The racecourse as a sand track a stadion wide between low stone kerbs, with a ring of marker columns down its middle and stone seats by the road",
+   "why": "117c gives its width and that it ran round the whole ring."
+  },
+  {
+   "id": "house-form",
+   "what": "Houses of one and two storeys in blocks round yards, plastered, with tiled roofs, sixteen avenues leading to the harbour",
+   "why": "Not described."
+  },
+  {
+   "id": "extent",
+   "what": "Only the rings and the town within 2.5 stadia of the harbour are modelled, on made ground that ends in a grass bank; the outer wall and the rest of the canal are drawn as lines over the real land",
+   "why": "The wall is 50 stadia out (117e), so the whole city is about 23 km across. Levelling that much ground would hide the place it stands on."
+  },
+  {
+   "id": "houses-reading",
+   "what": "The town fills the ground inside the outer wall, rather than lining the wall",
+   "why": "Translations differ at 117e: see the entry \"houses\". The modelled band shows the nearest part of it."
+  },
+  {
+   "id": "no-figures",
+   "what": "No people or animals are drawn",
+   "why": "The text has crowds, merchants, spearmen, horses and bulls loose in the precinct (119d). Figures would be invention at every step, and badly drawn ones spoil the scale. Doors, steps, ships and trees give the scale instead."
+  },
+  {
+   "id": "water",
+   "what": "The water in the rings is calm sea water about 30 m deep, clear enough to see the quay foot",
+   "why": "The canal is 100 feet deep (115d). The depth of the rings is not given."
+  },
+  {
+   "id": "plain",
+   "what": "The great plain, its ditch and canals are not modelled",
+   "why": "They are described (118a-e: a plain 3,000 by 2,000 stadia, a ditch a stadion wide and 10,000 stadia long) and are still to do."
+  },
+  {
+   "id": "hall",
+   "what": "The shrine stands open, and inside it is this community's hall: the research on its wall, a globe on its table",
+   "why": "Plato says only that the shrine stood in the centre, was reserved as holy ground, and had a wall of gold round it (116c). He gives it no shape and says nothing of its inside. We made the one closed place in the text the room where the search is shown and people meet. Nothing inside it is from the text."
+  },
+  {
+   "id": "home-site",
+   "what": "When nobody has stood it anywhere, the city stands on the open Atlantic at 35.3°N, 9.9°W, its canal running south",
+   "why": "The text says only that the island lay in front of the Pillars of Heracles, out in the Atlantic (Timaeus 24e). No island is there: the elevation tiles the globe uses put the sea floor at that spot 3,762 m down. The city is set where the words point so that no place anyone has proposed is favoured. It can be stood on any of them instead."
+  }
+ ],
+ "shape_note": "An entry with \"shape\": \"ours\" is stated by Plato, but he gives it no size or form, so everything about how it is drawn is our choice. The page's text-only view draws those pale, together with the choices. An entry with \"drawn\": false is in the text and not in the model."
+}

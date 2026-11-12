@@ -1,0 +1,5231 @@
+{
+ "lane": "evidence/santorini",
+ "checked": "2026-11-11",
+ "site": {
+  "id": "santorini",
+  "hypothesis_id": "santorini",
+  "name": "Santorini (Thera) and its Bronze Age eruption",
+  "centre": {
+   "lat": 36.4045,
+   "lon": 25.3973,
+   "how": "Centroid of Nea Kameni (OpenStreetMap coastline), near the middle of the flooded caldera",
+   "source": "https://www.openstreetmap.org/#map=12/36.4045/25.3973"
+  },
+  "radius_km": 175,
+  "claimed": {
+   "line": "The Bronze Age eruption of Thera is the real event behind Plato's story of an island that sank in a day and night.",
+   "who": "Marinatos 1939; Galanopoulos 1960, 1969; Luce 1969",
+   "year": 1969,
+   "source": "https://www.nybooks.com/articles/1969/12/04/back-to-atlantis/",
+   "evidence": "The explosion, the Atlanticists argue, was “remembered” in a mixed-up way, until Plato brought it back to consciousness in his myth.",
+   "kind": "press"
+  },
+  "found": {
+   "line": "The eruption was real and buried Akrotiri, but dates 8,000 years after Plato's. Nothing ties it to his text.",
+   "who": "Friedrich and others; Pearson and others",
+   "year": 2023,
+   "source": "https://www.nature.com/articles/s41598-023-33696-w",
+   "evidence": "Calibrated results and growth increment counts indicate increased probabilities for a mid-16th century BCE date for the eruption",
+   "kind": "peer-reviewed"
+  },
+  "needs_sea_level": null,
+  "best_layers": [
+   "emodnet-bathymetry-multicolour",
+   "gmrt-wms",
+   "gmrt-point-and-grid",
+   "osm-overpass",
+   "eox-s2cloudless-2016",
+   "aws-terrain-tiles-terrarium",
+   "smithsonian-gvp-volcanoes"
+  ]
+ },
+ "features": [
+  {
+   "id": "ctx-thera",
+   "side": "context",
+   "kind": "outline",
+   "label": "Thera (today)",
+   "who": "OpenStreetMap contributors",
+   "year": 2026,
+   "what": "The main island of the Santorini group today: the eastern and southern part of the caldera rim.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       25.38971,
+       36.34919
+      ],
+      [
+       25.38645,
+       36.34801
+      ],
+      [
+       25.38542,
+       36.34656
+      ],
+      [
+       25.3831,
+       36.34735
+      ],
+      [
+       25.38339,
+       36.34862
+      ],
+      [
+       25.38216,
+       36.35055
+      ],
+      [
+       25.38006,
+       36.35206
+      ],
+      [
+       25.37776,
+       36.35222
+      ],
+      [
+       25.3774,
+       36.35331
+      ],
+      [
+       25.37341,
+       36.35595
+      ],
+      [
+       25.36915,
+       36.35534
+      ],
+      [
+       25.36715,
+       36.35326
+      ],
+      [
+       25.36489,
+       36.35375
+      ],
+      [
+       25.36205,
+       36.35287
+      ],
+      [
+       25.36148,
+       36.35462
+      ],
+      [
+       25.35386,
+       36.3579
+      ],
+      [
+       25.36062,
+       36.35979
+      ],
+      [
+       25.3656,
+       36.36642
+      ],
+      [
+       25.37039,
+       36.36391
+      ],
+      [
+       25.37411,
+       36.36476
+      ],
+      [
+       25.37708,
+       36.36682
+      ],
+      [
+       25.3835,
+       36.36733
+      ],
+      [
+       25.38829,
+       36.36506
+      ],
+      [
+       25.40301,
+       36.36089
+      ],
+      [
+       25.40822,
+       36.3609
+      ],
+      [
+       25.40981,
+       36.3624
+      ],
+      [
+       25.41122,
+       36.36175
+      ],
+      [
+       25.4147,
+       36.3622
+      ],
+      [
+       25.41713,
+       36.36565
+      ],
+      [
+       25.41636,
+       36.36809
+      ],
+      [
+       25.41937,
+       36.36889
+      ],
+      [
+       25.42274,
+       36.37156
+      ],
+      [
+       25.42302,
+       36.37328
+      ],
+      [
+       25.42193,
+       36.37657
+      ],
+      [
+       25.42469,
+       36.37905
+      ],
+      [
+       25.42649,
+       36.38362
+      ],
+      [
+       25.42746,
+       36.38431
+      ],
+      [
+       25.42771,
+       36.38668
+      ],
+      [
+       25.42812,
+       36.38625
+      ],
+      [
+       25.43119,
+       36.38746
+      ],
+      [
+       25.43231,
+       36.3888
+      ],
+      [
+       25.43275,
+       36.39139
+      ],
+      [
+       25.43412,
+       36.39163
+      ],
+      [
+       25.43449,
+       36.39263
+      ],
+      [
+       25.43363,
+       36.39602
+      ],
+      [
+       25.43068,
+       36.40108
+      ],
+      [
+       25.42588,
+       36.40294
+      ],
+      [
+       25.42717,
+       36.40427
+      ],
+      [
+       25.42629,
+       36.40635
+      ],
+      [
+       25.42909,
+       36.41186
+      ],
+      [
+       25.42803,
+       36.41365
+      ],
+      [
+       25.42813,
+       36.41786
+      ],
+      [
+       25.42799,
+       36.41728
+      ],
+      [
+       25.42762,
+       36.41847
+      ],
+      [
+       25.42496,
+       36.41975
+      ],
+      [
+       25.42577,
+       36.42102
+      ],
+      [
+       25.42465,
+       36.42194
+      ],
+      [
+       25.42545,
+       36.42412
+      ],
+      [
+       25.42496,
+       36.42592
+      ],
+      [
+       25.42325,
+       36.42776
+      ],
+      [
+       25.4201,
+       36.42929
+      ],
+      [
+       25.41358,
+       36.4297
+      ],
+      [
+       25.41453,
+       36.43349
+      ],
+      [
+       25.41824,
+       36.43637
+      ],
+      [
+       25.41902,
+       36.43893
+      ],
+      [
+       25.42151,
+       36.43996
+      ],
+      [
+       25.42405,
+       36.44513
+      ],
+      [
+       25.4234,
+       36.44683
+      ],
+      [
+       25.42007,
+       36.45034
+      ],
+      [
+       25.41907,
+       36.45336
+      ],
+      [
+       25.41634,
+       36.4555
+      ],
+      [
+       25.41641,
+       36.45646
+      ],
+      [
+       25.41507,
+       36.457
+      ],
+      [
+       25.41533,
+       36.45836
+      ],
+      [
+       25.41018,
+       36.46058
+      ],
+      [
+       25.3989,
+       36.45735
+      ],
+      [
+       25.3915,
+       36.45909
+      ],
+      [
+       25.38825,
+       36.45834
+      ],
+      [
+       25.38592,
+       36.46027
+      ],
+      [
+       25.38096,
+       36.46049
+      ],
+      [
+       25.37421,
+       36.4596
+      ],
+      [
+       25.37205,
+       36.45791
+      ],
+      [
+       25.37088,
+       36.45811
+      ],
+      [
+       25.37093,
+       36.46026
+      ],
+      [
+       25.36924,
+       36.46089
+      ],
+      [
+       25.36938,
+       36.46386
+      ],
+      [
+       25.36772,
+       36.46571
+      ],
+      [
+       25.36938,
+       36.47219
+      ],
+      [
+       25.38089,
+       36.48036
+      ],
+      [
+       25.38767,
+       36.48221
+      ],
+      [
+       25.39186,
+       36.48017
+      ],
+      [
+       25.41648,
+       36.47572
+      ],
+      [
+       25.42126,
+       36.47336
+      ],
+      [
+       25.42173,
+       36.4738
+      ],
+      [
+       25.42261,
+       36.47283
+      ],
+      [
+       25.42188,
+       36.47062
+      ],
+      [
+       25.42518,
+       36.46785
+      ],
+      [
+       25.42778,
+       36.46179
+      ],
+      [
+       25.42972,
+       36.46
+      ],
+      [
+       25.42934,
+       36.45991
+      ],
+      [
+       25.42908,
+       36.45947
+      ],
+      [
+       25.4297,
+       36.45984
+      ],
+      [
+       25.45295,
+       36.44112
+      ],
+      [
+       25.45317,
+       36.44033
+      ],
+      [
+       25.45276,
+       36.44087
+      ],
+      [
+       25.45246,
+       36.44048
+      ],
+      [
+       25.45349,
+       36.43822
+      ],
+      [
+       25.45736,
+       36.43423
+      ],
+      [
+       25.45764,
+       36.43105
+      ],
+      [
+       25.45994,
+       36.42811
+      ],
+      [
+       25.46568,
+       36.42401
+      ],
+      [
+       25.47023,
+       36.42205
+      ],
+      [
+       25.47129,
+       36.42033
+      ],
+      [
+       25.47561,
+       36.41688
+      ],
+      [
+       25.48249,
+       36.41328
+      ],
+      [
+       25.48428,
+       36.41386
+      ],
+      [
+       25.48519,
+       36.41362
+      ],
+      [
+       25.4835,
+       36.41354
+      ],
+      [
+       25.48333,
+       36.41227
+      ],
+      [
+       25.48393,
+       36.4112
+      ],
+      [
+       25.48442,
+       36.41137
+      ],
+      [
+       25.48538,
+       36.4113
+      ],
+      [
+       25.48378,
+       36.4109
+      ],
+      [
+       25.48412,
+       36.41031
+      ],
+      [
+       25.48459,
+       36.41088
+      ],
+      [
+       25.48606,
+       36.40843
+      ],
+      [
+       25.48756,
+       36.40938
+      ],
+      [
+       25.4862,
+       36.408
+      ],
+      [
+       25.48789,
+       36.40383
+      ],
+      [
+       25.48639,
+       36.39749
+      ],
+      [
+       25.48697,
+       36.39059
+      ],
+      [
+       25.48602,
+       36.38774
+      ],
+      [
+       25.48748,
+       36.38131
+      ],
+      [
+       25.48731,
+       36.37875
+      ],
+      [
+       25.48124,
+       36.36922
+      ],
+      [
+       25.48255,
+       36.36865
+      ],
+      [
+       25.48206,
+       36.36816
+      ],
+      [
+       25.4832,
+       36.36787
+      ],
+      [
+       25.48393,
+       36.36564
+      ],
+      [
+       25.48677,
+       36.36312
+      ],
+      [
+       25.48647,
+       36.36072
+      ],
+      [
+       25.48494,
+       36.36039
+      ],
+      [
+       25.48412,
+       36.35903
+      ],
+      [
+       25.48357,
+       36.35965
+      ],
+      [
+       25.48115,
+       36.35724
+      ],
+      [
+       25.47714,
+       36.35752
+      ],
+      [
+       25.47406,
+       36.35376
+      ],
+      [
+       25.46421,
+       36.34474
+      ],
+      [
+       25.45222,
+       36.33832
+      ],
+      [
+       25.44367,
+       36.33242
+      ],
+      [
+       25.44052,
+       36.33237
+      ],
+      [
+       25.43727,
+       36.33598
+      ],
+      [
+       25.43587,
+       36.33561
+      ],
+      [
+       25.43537,
+       36.33568
+      ],
+      [
+       25.43478,
+       36.3361
+      ],
+      [
+       25.43576,
+       36.33578
+      ],
+      [
+       25.43625,
+       36.33633
+      ],
+      [
+       25.43553,
+       36.33682
+      ],
+      [
+       25.43657,
+       36.33667
+      ],
+      [
+       25.43595,
+       36.33702
+      ],
+      [
+       25.43508,
+       36.33695
+      ],
+      [
+       25.43446,
+       36.33729
+      ],
+      [
+       25.43396,
+       36.33683
+      ],
+      [
+       25.43451,
+       36.33636
+      ],
+      [
+       25.43392,
+       36.33676
+      ],
+      [
+       25.43391,
+       36.33728
+      ],
+      [
+       25.4353,
+       36.33734
+      ],
+      [
+       25.43377,
+       36.33746
+      ],
+      [
+       25.43322,
+       36.33704
+      ],
+      [
+       25.43366,
+       36.3359
+      ],
+      [
+       25.43544,
+       36.33498
+      ],
+      [
+       25.43357,
+       36.33582
+      ],
+      [
+       25.42877,
+       36.34243
+      ],
+      [
+       25.42064,
+       36.3466
+      ],
+      [
+       25.41716,
+       36.34749
+      ],
+      [
+       25.41207,
+       36.34755
+      ],
+      [
+       25.408,
+       36.34921
+      ],
+      [
+       25.40506,
+       36.3485
+      ],
+      [
+       25.39981,
+       36.3494
+      ],
+      [
+       25.39477,
+       36.34674
+      ],
+      [
+       25.39472,
+       36.3483
+      ],
+      [
+       25.39381,
+       36.34894
+      ],
+      [
+       25.38971,
+       36.34919
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://overpass-api.de/api/interpreter",
+    "detail": "OpenStreetMap natural=coastline ways in bbox 25.2,36.25,25.6,36.6, joined into a ring and simplified to about 50 m",
+    "error_m": 50
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "the present-day islands of Thera, Therasia and Aspronisi, which are arranged in a ring around a flooded caldera.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "Coast from OpenStreetMap (Overpass, fetched 2026-11-11); the sentence is from Karatson et al. 2018.",
+   "result": null,
+   "search_id": null
+  },
+  {
+   "id": "ctx-therasia",
+   "side": "context",
+   "kind": "outline",
+   "label": "Therasia (today)",
+   "who": "OpenStreetMap contributors",
+   "year": 2026,
+   "what": "Therasia today: the western part of the caldera rim.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       25.35559,
+       36.44918
+      ],
+      [
+       25.35527,
+       36.44744
+      ],
+      [
+       25.3545,
+       36.44647
+      ],
+      [
+       25.35454,
+       36.44545
+      ],
+      [
+       25.35596,
+       36.44386
+      ],
+      [
+       25.35833,
+       36.44248
+      ],
+      [
+       25.35878,
+       36.44162
+      ],
+      [
+       25.35865,
+       36.43968
+      ],
+      [
+       25.35743,
+       36.43894
+      ],
+      [
+       25.35654,
+       36.43673
+      ],
+      [
+       25.35459,
+       36.43893
+      ],
+      [
+       25.35207,
+       36.43907
+      ],
+      [
+       25.35119,
+       36.43878
+      ],
+      [
+       25.35132,
+       36.43849
+      ],
+      [
+       25.35062,
+       36.43862
+      ],
+      [
+       25.348,
+       36.43649
+      ],
+      [
+       25.34619,
+       36.43286
+      ],
+      [
+       25.34718,
+       36.43059
+      ],
+      [
+       25.34856,
+       36.42922
+      ],
+      [
+       25.35091,
+       36.42789
+      ],
+      [
+       25.35062,
+       36.42639
+      ],
+      [
+       25.34954,
+       36.42514
+      ],
+      [
+       25.35127,
+       36.42296
+      ],
+      [
+       25.35127,
+       36.42109
+      ],
+      [
+       25.34983,
+       36.41846
+      ],
+      [
+       25.34963,
+       36.41648
+      ],
+      [
+       25.35021,
+       36.41562
+      ],
+      [
+       25.35216,
+       36.41473
+      ],
+      [
+       25.35272,
+       36.41157
+      ],
+      [
+       25.35267,
+       36.40847
+      ],
+      [
+       25.35226,
+       36.40841
+      ],
+      [
+       25.35161,
+       36.41003
+      ],
+      [
+       25.35053,
+       36.41081
+      ],
+      [
+       25.34921,
+       36.41141
+      ],
+      [
+       25.34619,
+       36.41176
+      ],
+      [
+       25.34449,
+       36.4134
+      ],
+      [
+       25.33979,
+       36.41474
+      ],
+      [
+       25.33885,
+       36.41589
+      ],
+      [
+       25.33655,
+       36.41703
+      ],
+      [
+       25.33542,
+       36.41897
+      ],
+      [
+       25.33402,
+       36.41976
+      ],
+      [
+       25.33042,
+       36.41974
+      ],
+      [
+       25.32936,
+       36.41871
+      ],
+      [
+       25.32748,
+       36.41973
+      ],
+      [
+       25.32468,
+       36.41928
+      ],
+      [
+       25.32449,
+       36.42042
+      ],
+      [
+       25.32491,
+       36.4208
+      ],
+      [
+       25.32401,
+       36.42469
+      ],
+      [
+       25.32453,
+       36.42581
+      ],
+      [
+       25.32474,
+       36.42854
+      ],
+      [
+       25.32407,
+       36.4316
+      ],
+      [
+       25.32631,
+       36.43523
+      ],
+      [
+       25.32663,
+       36.43656
+      ],
+      [
+       25.32825,
+       36.43847
+      ],
+      [
+       25.3299,
+       36.44246
+      ],
+      [
+       25.33183,
+       36.44452
+      ],
+      [
+       25.33502,
+       36.45388
+      ],
+      [
+       25.33683,
+       36.45636
+      ],
+      [
+       25.33724,
+       36.45773
+      ],
+      [
+       25.34264,
+       36.45948
+      ],
+      [
+       25.34376,
+       36.45943
+      ],
+      [
+       25.34422,
+       36.45856
+      ],
+      [
+       25.34377,
+       36.45696
+      ],
+      [
+       25.34447,
+       36.45532
+      ],
+      [
+       25.34427,
+       36.4541
+      ],
+      [
+       25.3436,
+       36.45397
+      ],
+      [
+       25.34314,
+       36.4531
+      ],
+      [
+       25.34358,
+       36.45215
+      ],
+      [
+       25.34826,
+       36.4504
+      ],
+      [
+       25.35038,
+       36.45073
+      ],
+      [
+       25.35368,
+       36.45046
+      ],
+      [
+       25.35501,
+       36.45009
+      ],
+      [
+       25.35559,
+       36.44918
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://overpass-api.de/api/interpreter",
+    "detail": "OpenStreetMap natural=coastline ways in bbox 25.2,36.25,25.6,36.6, joined into a ring and simplified to about 50 m",
+    "error_m": 50
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "the present-day islands of Thera, Therasia and Aspronisi, which are arranged in a ring around a flooded caldera.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "Coast from OpenStreetMap (Overpass, fetched 2026-11-11); the sentence is from Karatson et al. 2018.",
+   "result": null,
+   "search_id": null
+  },
+  {
+   "id": "ctx-aspronisi",
+   "side": "context",
+   "kind": "outline",
+   "label": "Aspronisi (today)",
+   "who": "OpenStreetMap contributors",
+   "year": 2026,
+   "what": "Aspronisi today: a small rock between Thera and Therasia, in the old south-west gap of the rim.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       25.34772,
+       36.38234
+      ],
+      [
+       25.34703,
+       36.38218
+      ],
+      [
+       25.34659,
+       36.38195
+      ],
+      [
+       25.34649,
+       36.38205
+      ],
+      [
+       25.34637,
+       36.38192
+      ],
+      [
+       25.34635,
+       36.38201
+      ],
+      [
+       25.34622,
+       36.38204
+      ],
+      [
+       25.34606,
+       36.38187
+      ],
+      [
+       25.34608,
+       36.38205
+      ],
+      [
+       25.346,
+       36.38199
+      ],
+      [
+       25.3458,
+       36.38205
+      ],
+      [
+       25.3455,
+       36.382
+      ],
+      [
+       25.34505,
+       36.38231
+      ],
+      [
+       25.3447,
+       36.38233
+      ],
+      [
+       25.34468,
+       36.38245
+      ],
+      [
+       25.34498,
+       36.38345
+      ],
+      [
+       25.34509,
+       36.38351
+      ],
+      [
+       25.3452,
+       36.38339
+      ],
+      [
+       25.34551,
+       36.38392
+      ],
+      [
+       25.34575,
+       36.38407
+      ],
+      [
+       25.34599,
+       36.38406
+      ],
+      [
+       25.34583,
+       36.38425
+      ],
+      [
+       25.34599,
+       36.38436
+      ],
+      [
+       25.34668,
+       36.38433
+      ],
+      [
+       25.34702,
+       36.38449
+      ],
+      [
+       25.34705,
+       36.38435
+      ],
+      [
+       25.34722,
+       36.38433
+      ],
+      [
+       25.34729,
+       36.38457
+      ],
+      [
+       25.34788,
+       36.38449
+      ],
+      [
+       25.34809,
+       36.38454
+      ],
+      [
+       25.34826,
+       36.38484
+      ],
+      [
+       25.34841,
+       36.38482
+      ],
+      [
+       25.34874,
+       36.38503
+      ],
+      [
+       25.34918,
+       36.38515
+      ],
+      [
+       25.3494,
+       36.38507
+      ],
+      [
+       25.34993,
+       36.38505
+      ],
+      [
+       25.35023,
+       36.38492
+      ],
+      [
+       25.35077,
+       36.38496
+      ],
+      [
+       25.35115,
+       36.38474
+      ],
+      [
+       25.35118,
+       36.38436
+      ],
+      [
+       25.35068,
+       36.38367
+      ],
+      [
+       25.35031,
+       36.38337
+      ],
+      [
+       25.35026,
+       36.38324
+      ],
+      [
+       25.34967,
+       36.38296
+      ],
+      [
+       25.34987,
+       36.38273
+      ],
+      [
+       25.3498,
+       36.38258
+      ],
+      [
+       25.34772,
+       36.38234
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://overpass-api.de/api/interpreter",
+    "detail": "OpenStreetMap natural=coastline ways in bbox 25.2,36.25,25.6,36.6, joined into a ring and simplified to about 50 m",
+    "error_m": 50
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "the present-day islands of Thera, Therasia and Aspronisi, which are arranged in a ring around a flooded caldera.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "Coast from OpenStreetMap (Overpass, fetched 2026-11-11); the sentence is from Karatson et al. 2018.",
+   "result": null,
+   "search_id": null
+  },
+  {
+   "id": "ctx-kameni-nea",
+   "side": "context",
+   "kind": "outline",
+   "label": "Nea Kameni (after 1600 BCE)",
+   "who": "OpenStreetMap contributors",
+   "year": 2026,
+   "what": "A lava island built inside the caldera after the Bronze Age eruption. It did not exist in 1600 BCE.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       25.40748,
+       36.41173
+      ],
+      [
+       25.40888,
+       36.41096
+      ],
+      [
+       25.40872,
+       36.4107
+      ],
+      [
+       25.40951,
+       36.41047
+      ],
+      [
+       25.40955,
+       36.41007
+      ],
+      [
+       25.40924,
+       36.40986
+      ],
+      [
+       25.41005,
+       36.41011
+      ],
+      [
+       25.41058,
+       36.40963
+      ],
+      [
+       25.41061,
+       36.40916
+      ],
+      [
+       25.40951,
+       36.40843
+      ],
+      [
+       25.41018,
+       36.40827
+      ],
+      [
+       25.41044,
+       36.40723
+      ],
+      [
+       25.4097,
+       36.40686
+      ],
+      [
+       25.40873,
+       36.4072
+      ],
+      [
+       25.40999,
+       36.40582
+      ],
+      [
+       25.40837,
+       36.40528
+      ],
+      [
+       25.4075,
+       36.40535
+      ],
+      [
+       25.40863,
+       36.40522
+      ],
+      [
+       25.40956,
+       36.40477
+      ],
+      [
+       25.40978,
+       36.4043
+      ],
+      [
+       25.40962,
+       36.40341
+      ],
+      [
+       25.40894,
+       36.40283
+      ],
+      [
+       25.40853,
+       36.40282
+      ],
+      [
+       25.40778,
+       36.40355
+      ],
+      [
+       25.40672,
+       36.40378
+      ],
+      [
+       25.40645,
+       36.40309
+      ],
+      [
+       25.40554,
+       36.40344
+      ],
+      [
+       25.40589,
+       36.40298
+      ],
+      [
+       25.40577,
+       36.40243
+      ],
+      [
+       25.40637,
+       36.40219
+      ],
+      [
+       25.40581,
+       36.40167
+      ],
+      [
+       25.40622,
+       36.40098
+      ],
+      [
+       25.40466,
+       36.40023
+      ],
+      [
+       25.4048,
+       36.39969
+      ],
+      [
+       25.40564,
+       36.40013
+      ],
+      [
+       25.40624,
+       36.39974
+      ],
+      [
+       25.40565,
+       36.39903
+      ],
+      [
+       25.40634,
+       36.39865
+      ],
+      [
+       25.40545,
+       36.39789
+      ],
+      [
+       25.40571,
+       36.39695
+      ],
+      [
+       25.40554,
+       36.39665
+      ],
+      [
+       25.40378,
+       36.39706
+      ],
+      [
+       25.40375,
+       36.39654
+      ],
+      [
+       25.40314,
+       36.39631
+      ],
+      [
+       25.40179,
+       36.397
+      ],
+      [
+       25.40125,
+       36.3965
+      ],
+      [
+       25.40059,
+       36.39641
+      ],
+      [
+       25.40014,
+       36.39697
+      ],
+      [
+       25.40042,
+       36.39739
+      ],
+      [
+       25.40039,
+       36.39747
+      ],
+      [
+       25.40006,
+       36.39749
+      ],
+      [
+       25.40014,
+       36.3965
+      ],
+      [
+       25.39913,
+       36.39672
+      ],
+      [
+       25.39871,
+       36.39741
+      ],
+      [
+       25.39792,
+       36.39679
+      ],
+      [
+       25.39743,
+       36.39592
+      ],
+      [
+       25.39607,
+       36.39605
+      ],
+      [
+       25.39699,
+       36.39443
+      ],
+      [
+       25.39666,
+       36.39445
+      ],
+      [
+       25.39627,
+       36.39389
+      ],
+      [
+       25.39504,
+       36.39463
+      ],
+      [
+       25.39309,
+       36.3943
+      ],
+      [
+       25.39212,
+       36.39558
+      ],
+      [
+       25.39028,
+       36.39544
+      ],
+      [
+       25.38966,
+       36.39572
+      ],
+      [
+       25.38854,
+       36.39669
+      ],
+      [
+       25.38891,
+       36.39704
+      ],
+      [
+       25.38883,
+       36.39733
+      ],
+      [
+       25.38762,
+       36.39775
+      ],
+      [
+       25.38743,
+       36.39837
+      ],
+      [
+       25.38642,
+       36.39881
+      ],
+      [
+       25.38664,
+       36.40017
+      ],
+      [
+       25.38753,
+       36.40068
+      ],
+      [
+       25.38852,
+       36.40087
+      ],
+      [
+       25.39031,
+       36.40037
+      ],
+      [
+       25.38906,
+       36.4009
+      ],
+      [
+       25.38795,
+       36.40184
+      ],
+      [
+       25.38724,
+       36.40315
+      ],
+      [
+       25.38615,
+       36.40251
+      ],
+      [
+       25.38599,
+       36.40339
+      ],
+      [
+       25.38638,
+       36.40488
+      ],
+      [
+       25.38601,
+       36.40534
+      ],
+      [
+       25.38652,
+       36.40595
+      ],
+      [
+       25.38712,
+       36.40602
+      ],
+      [
+       25.38753,
+       36.40547
+      ],
+      [
+       25.38778,
+       36.40598
+      ],
+      [
+       25.38717,
+       36.40627
+      ],
+      [
+       25.38747,
+       36.4071
+      ],
+      [
+       25.38735,
+       36.40764
+      ],
+      [
+       25.38682,
+       36.40807
+      ],
+      [
+       25.38777,
+       36.40866
+      ],
+      [
+       25.38773,
+       36.41013
+      ],
+      [
+       25.38809,
+       36.41064
+      ],
+      [
+       25.38798,
+       36.41197
+      ],
+      [
+       25.38877,
+       36.41234
+      ],
+      [
+       25.38921,
+       36.41392
+      ],
+      [
+       25.39045,
+       36.41531
+      ],
+      [
+       25.39152,
+       36.41566
+      ],
+      [
+       25.39172,
+       36.4154
+      ],
+      [
+       25.39175,
+       36.41455
+      ],
+      [
+       25.39127,
+       36.41352
+      ],
+      [
+       25.39268,
+       36.41291
+      ],
+      [
+       25.39292,
+       36.41235
+      ],
+      [
+       25.39309,
+       36.41258
+      ],
+      [
+       25.39333,
+       36.41126
+      ],
+      [
+       25.39358,
+       36.41203
+      ],
+      [
+       25.39502,
+       36.41222
+      ],
+      [
+       25.39575,
+       36.41294
+      ],
+      [
+       25.39699,
+       36.41284
+      ],
+      [
+       25.39889,
+       36.41318
+      ],
+      [
+       25.3997,
+       36.4128
+      ],
+      [
+       25.40007,
+       36.41221
+      ],
+      [
+       25.40082,
+       36.41238
+      ],
+      [
+       25.40093,
+       36.4117
+      ],
+      [
+       25.40015,
+       36.41073
+      ],
+      [
+       25.40056,
+       36.41039
+      ],
+      [
+       25.40238,
+       36.41009
+      ],
+      [
+       25.40176,
+       36.41134
+      ],
+      [
+       25.40263,
+       36.41205
+      ],
+      [
+       25.40336,
+       36.41162
+      ],
+      [
+       25.40345,
+       36.41054
+      ],
+      [
+       25.40426,
+       36.41055
+      ],
+      [
+       25.40456,
+       36.41086
+      ],
+      [
+       25.40586,
+       36.41115
+      ],
+      [
+       25.40626,
+       36.41105
+      ],
+      [
+       25.40611,
+       36.41077
+      ],
+      [
+       25.40679,
+       36.41069
+      ],
+      [
+       25.40619,
+       36.41128
+      ],
+      [
+       25.40643,
+       36.41188
+      ],
+      [
+       25.40748,
+       36.41173
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://overpass-api.de/api/interpreter",
+    "detail": "OpenStreetMap natural=coastline way, simplified to about 5 m",
+    "error_m": 50
+   },
+   "source": "https://www.nature.com/articles/ncomms13332",
+   "evidence": "Repeated effusive eruptions since the LBA eruption have built up the Kameni Volcano within the resulting caldera",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "Karatson 2018 calls both Kameni islands post-Minoan. Strabo described an eruption in 197 BC (Druitt and others 1999, excerpt only).",
+   "result": null,
+   "search_id": null
+  },
+  {
+   "id": "ctx-kameni-palea",
+   "side": "context",
+   "kind": "outline",
+   "label": "Palea Kameni (after 1600 BCE)",
+   "who": "OpenStreetMap contributors",
+   "year": 2026,
+   "what": "A lava island built inside the caldera after the Bronze Age eruption. It did not exist in 1600 BCE.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       25.38059,
+       36.39886
+      ],
+      [
+       25.38131,
+       36.39963
+      ],
+      [
+       25.38166,
+       36.39962
+      ],
+      [
+       25.38186,
+       36.39922
+      ],
+      [
+       25.38158,
+       36.39844
+      ],
+      [
+       25.38527,
+       36.39653
+      ],
+      [
+       25.38504,
+       36.39615
+      ],
+      [
+       25.38562,
+       36.39558
+      ],
+      [
+       25.38493,
+       36.39514
+      ],
+      [
+       25.38494,
+       36.39475
+      ],
+      [
+       25.38566,
+       36.39353
+      ],
+      [
+       25.3852,
+       36.39283
+      ],
+      [
+       25.38429,
+       36.39248
+      ],
+      [
+       25.38377,
+       36.39256
+      ],
+      [
+       25.38299,
+       36.39424
+      ],
+      [
+       25.38236,
+       36.39369
+      ],
+      [
+       25.38198,
+       36.39272
+      ],
+      [
+       25.38138,
+       36.39243
+      ],
+      [
+       25.3806,
+       36.39326
+      ],
+      [
+       25.38104,
+       36.39385
+      ],
+      [
+       25.3795,
+       36.396
+      ],
+      [
+       25.37757,
+       36.39683
+      ],
+      [
+       25.37647,
+       36.39687
+      ],
+      [
+       25.37653,
+       36.39708
+      ],
+      [
+       25.37594,
+       36.39719
+      ],
+      [
+       25.37571,
+       36.39764
+      ],
+      [
+       25.37467,
+       36.39818
+      ],
+      [
+       25.37248,
+       36.3982
+      ],
+      [
+       25.37196,
+       36.39868
+      ],
+      [
+       25.37239,
+       36.39939
+      ],
+      [
+       25.37274,
+       36.39926
+      ],
+      [
+       25.37415,
+       36.39982
+      ],
+      [
+       25.37435,
+       36.40002
+      ],
+      [
+       25.37409,
+       36.40015
+      ],
+      [
+       25.375,
+       36.40069
+      ],
+      [
+       25.37528,
+       36.40121
+      ],
+      [
+       25.37616,
+       36.40131
+      ],
+      [
+       25.37665,
+       36.40079
+      ],
+      [
+       25.38021,
+       36.40176
+      ],
+      [
+       25.38057,
+       36.40144
+      ],
+      [
+       25.38064,
+       36.40053
+      ],
+      [
+       25.38041,
+       36.39996
+      ],
+      [
+       25.37943,
+       36.39925
+      ],
+      [
+       25.38039,
+       36.39904
+      ],
+      [
+       25.37958,
+       36.39841
+      ],
+      [
+       25.38059,
+       36.39886
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://overpass-api.de/api/interpreter",
+    "detail": "OpenStreetMap natural=coastline way, simplified to about 5 m",
+    "error_m": 50
+   },
+   "source": "https://www.nature.com/articles/ncomms13332",
+   "evidence": "Repeated effusive eruptions since the LBA eruption have built up the Kameni Volcano within the resulting caldera",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "Karatson 2018 calls both Kameni islands post-Minoan. Strabo described an eruption in 197 BC (Druitt and others 1999, excerpt only).",
+   "result": null,
+   "search_id": null
+  },
+  {
+   "id": "ctx-fira",
+   "side": "context",
+   "kind": "place",
+   "label": "Fira (Thira town)",
+   "who": "OpenStreetMap contributors",
+   "year": 2026,
+   "what": "The main town of Santorini, on the caldera cliff.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.43245,
+     36.41492
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/node/1842740533",
+    "detail": "OSM node 1842740533 place=town name=Φηρά",
+    "error_m": 100
+   },
+   "source": "https://www.openstreetmap.org/node/1842740533",
+   "evidence": "place=town; name=Φηρά; name:en=Fira",
+   "kind_of_source": "dataset",
+   "confidence": "high",
+   "result": null,
+   "search_id": null,
+   "notes": ""
+  },
+  {
+   "id": "ctx-kolumbo",
+   "side": "context",
+   "kind": "place",
+   "label": "Kolumbo submarine volcano",
+   "who": "Nomikou and others",
+   "year": 2016,
+   "what": "A submarine volcano about 8 km north-east of Santorini; its crater floor is about 505 m below the sea. It last erupted in 1650 CE.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.4845,
+     36.5271
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/ncomms13332",
+    "detail": "Fig. 1a (PDF page 3): centre of the dark-blue crater; lon from the vector axis labels 25 15 to 25 35 E, lat from 36 20 to 36 30 N. Wikipedia gives 36.5167 N 25.4917 E, which is 1.1 km away",
+    "error_m": 700
+   },
+   "source": "https://en.wikipedia.org/wiki/Kolumbo",
+   "evidence": "Kolumbo (Greek: Κολούμπο) is an active submarine volcano in the Aegean Sea in Greece",
+   "kind_of_source": "press",
+   "confidence": "medium",
+   "notes": "Position from the Nature Communications map; IODP sites U1590 and U1593 say they are 5 km and 8 km north-west of the Kolumbo caldera, which fits this point better than the Wikipedia one.",
+   "result": null,
+   "search_id": null
+  },
+  {
+   "id": "claim-thera",
+   "side": "claimed",
+   "kind": "place",
+   "label": "Santorini as the seed of Atlantis",
+   "who": "Marinatos 1939; Galanopoulos 1960 and 1969; Luce 1969",
+   "year": 1969,
+   "what": "These authors read the Bronze Age eruption of Thera as the real event behind Plato's story of a sunken island.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.3973,
+     36.4045
+    ]
+   },
+   "position": {
+    "how": "from-description",
+    "source": "https://www.nybooks.com/articles/1969/12/04/back-to-atlantis/",
+    "detail": "The proposal names the island, not a spot; the point is the middle of the caldera (centroid of Nea Kameni, OpenStreetMap)",
+    "error_m": 5000
+   },
+   "search_id": "marinatos-volcanic-destruction-1939",
+   "source": "https://www.nybooks.com/articles/1969/12/04/back-to-atlantis/",
+   "evidence": "The explosion, the Atlanticists argue, was “remembered” in a mixed-up way, until Plato brought it back to consciousness in his myth.",
+   "kind_of_source": "press",
+   "confidence": "medium",
+   "notes": "Quote is from Moses Finley, a critic, describing the proposal. Marinatos 1939 (Antiquity 13) is about Minoan Crete; its abstract does not mention Atlantis. The Atlantis link is made by later writers.",
+   "result": null
+  },
+  {
+   "id": "dig-akrotiri",
+   "side": "found",
+   "kind": "dig",
+   "label": "Akrotiri, the buried Bronze Age town",
+   "who": "Spyridon Marinatos, then Christos Doumas",
+   "year": 1967,
+   "what": "Excavated town buried by the eruption. The mapped polygon is the protective roof over the dig.",
+   "result": "A multi-storey town with frescoes was found under pumice and ash. It shows the eruption was real. It says nothing about Plato.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       25.40401,
+       36.35117
+      ],
+      [
+       25.40278,
+       36.35108
+      ],
+      [
+       25.40274,
+       36.35146
+      ],
+      [
+       25.40287,
+       36.35147
+      ],
+      [
+       25.40286,
+       36.35159
+      ],
+      [
+       25.40295,
+       36.3516
+      ],
+      [
+       25.40294,
+       36.35165
+      ],
+      [
+       25.40308,
+       36.35166
+      ],
+      [
+       25.40305,
+       36.35196
+      ],
+      [
+       25.40318,
+       36.35197
+      ],
+      [
+       25.40316,
+       36.3521
+      ],
+      [
+       25.40327,
+       36.35211
+      ],
+      [
+       25.40326,
+       36.35224
+      ],
+      [
+       25.40335,
+       36.35224
+      ],
+      [
+       25.40332,
+       36.35255
+      ],
+      [
+       25.40382,
+       36.35259
+      ],
+      [
+       25.40385,
+       36.35226
+      ],
+      [
+       25.40378,
+       36.35226
+      ],
+      [
+       25.40381,
+       36.35202
+      ],
+      [
+       25.40388,
+       36.35203
+      ],
+      [
+       25.40393,
+       36.35153
+      ],
+      [
+       25.40406,
+       36.35153
+      ],
+      [
+       25.40408,
+       36.35131
+      ],
+      [
+       25.40399,
+       36.35131
+      ],
+      [
+       25.40401,
+       36.35117
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/way/299988161",
+    "detail": "OSM way 299988161 (building=roof, name=Ancient Akrotiri, wikidata Q421232). The roof covers the excavated part; the buried town extends beyond it",
+    "error_m": 30
+   },
+   "search_id": "akrotiri-excavation-1967",
+   "source": "https://en.wikipedia.org/wiki/Akrotiri_(prehistoric_city)",
+   "evidence": "Because of the site being preserved in thick, volcanic debris, Marinatos noted that many of the buildings were preserved to a height of more than a single storey",
+   "kind_of_source": "press",
+   "confidence": "high",
+   "notes": "Footprint is the roof outline in OpenStreetMap, not an official plan; the Greek Ministry of Culture page could not be fetched. Wikipedia gives the centre as 36.35139 N 25.40361 E, inside this polygon."
+  },
+  {
+   "id": "sample-phira-olive",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Olive branch, Phira quarry (2006 dating)",
+   "who": "Friedrich and others",
+   "year": 2006,
+   "what": "An olive branch buried alive in the Minoan pumice was dated by radiocarbon to fix the year of the eruption.",
+   "result": "The outer ring dated to 1627 to 1600 BCE (95.4%). Later work says olive rings may not be yearly, so this date is argued.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.4327,
+     36.4057
+    ]
+   },
+   "position": {
+    "how": "from-description",
+    "source": "https://www.nature.com/articles/s41598-023-33696-w",
+    "detail": "Pearson and others 2023 place it \"at Phira Quarry\" on the caldera wall (Fig. 1b). The point is the centre of the nearest OpenStreetMap quarry polygon (way 377120199), 450 m from the dot on their schematic map",
+    "error_m": 900
+   },
+   "search_id": "thera-eruption-radiocarbon-2006",
+   "source": "https://www.nature.com/articles/s41598-023-33696-w",
+   "evidence": "a sample retrieved from an olive tree (hereafter called the Santorini olive) buried under the > 60-m-thick Minoan pumice layer exposed in the caldera wall at Phira Quarry",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "low",
+   "notes": "Friedrich 2006 (Science 312:548) says only \"on Santorini\"; I could not read its supplement. The quarry is identified from Pearson 2023. Date quote from Friedrich: \"1627–1600 B.C. (2σ, 95% confidence)\"."
+  },
+  {
+   "id": "sample-therasia-olive",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Olive shrub, Therasia (2023 dating)",
+   "who": "Pearson, Sbonias, Tzachili and Heaton",
+   "year": 2023,
+   "what": "A charred olive shrub under the pumice on Therasia was dated as a second test of the eruption date.",
+   "result": "It is slightly younger than the Phira branch and favours a mid-16th century BCE eruption.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.3385,
+     36.3985
+    ]
+   },
+   "position": {
+    "how": "from-description",
+    "source": "https://www.nature.com/articles/s41598-023-33696-w",
+    "detail": "\"near the present day Monastery of Panaghia Koimisis, on the southern-most tip of the island of Therasia\". Point is the south tip of the Therasia coast (OpenStreetMap). Their schematic Fig. 1b dot sits further north, about 1.6 km away",
+    "error_m": 1500
+   },
+   "source": "https://www.nature.com/articles/s41598-023-33696-w",
+   "evidence": "found during excavations near the present day Monastery of Panaghia Koimisis, on the southern-most tip of the island of Therasia",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "low",
+   "notes": "The two position clues disagree (text says southern tip, schematic dot is mid-island). Treat as the Koimisis hill at the south end of Therasia.",
+   "search_id": null
+  },
+  {
+   "id": "dig-palaikastro",
+   "side": "found",
+   "kind": "dig",
+   "label": "Palaikastro, Crete: tsunami deposits",
+   "who": "Hendrik Bruins and others",
+   "year": 2008,
+   "what": "Fieldwork on the Minoan town and its beach cliffs found chaotic layers of ash, building stone and shells, read as a tsunami.",
+   "result": "Run-up of at least 9 m, after the first ash fall. The date matches the eruption. About 155 km from the caldera.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       26.27513,
+       35.19489
+      ],
+      [
+       26.2752,
+       35.19486
+      ],
+      [
+       26.27524,
+       35.19493
+      ],
+      [
+       26.27534,
+       35.19488
+      ],
+      [
+       26.27539,
+       35.1949
+      ],
+      [
+       26.2755,
+       35.19483
+      ],
+      [
+       26.27545,
+       35.19477
+      ],
+      [
+       26.2755,
+       35.19474
+      ],
+      [
+       26.27553,
+       35.19478
+      ],
+      [
+       26.27568,
+       35.19471
+      ],
+      [
+       26.2756,
+       35.19462
+      ],
+      [
+       26.27578,
+       35.19457
+      ],
+      [
+       26.27589,
+       35.19463
+      ],
+      [
+       26.27598,
+       35.19477
+      ],
+      [
+       26.27583,
+       35.19483
+      ],
+      [
+       26.27574,
+       35.19473
+      ],
+      [
+       26.27561,
+       35.1948
+      ],
+      [
+       26.27571,
+       35.19493
+      ],
+      [
+       26.27564,
+       35.19496
+      ],
+      [
+       26.27587,
+       35.19532
+      ],
+      [
+       26.27604,
+       35.19524
+      ],
+      [
+       26.27617,
+       35.19547
+      ],
+      [
+       26.27589,
+       35.19554
+      ],
+      [
+       26.27581,
+       35.19553
+      ],
+      [
+       26.27555,
+       35.19569
+      ],
+      [
+       26.27529,
+       35.19538
+      ],
+      [
+       26.27539,
+       35.1953
+      ],
+      [
+       26.2753,
+       35.19518
+      ],
+      [
+       26.27515,
+       35.19525
+      ],
+      [
+       26.27482,
+       35.19529
+      ],
+      [
+       26.27481,
+       35.19513
+      ],
+      [
+       26.27489,
+       35.1951
+      ],
+      [
+       26.27496,
+       35.19517
+      ],
+      [
+       26.27512,
+       35.19505
+      ],
+      [
+       26.2752,
+       35.19501
+      ],
+      [
+       26.27513,
+       35.19489
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.openstreetmap.org/way/35535089",
+    "detail": "OSM way 35535089 (Roussolakkos, alt name \"Paleokastro Minoan Town\", wikidata Q3443476). The cliff sections were on the East Beach and Promontory a few hundred metres away",
+    "error_m": 500
+   },
+   "source": "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Crete-Cyprus/Palaikastro-Bruins2008.pdf",
+   "evidence": "Field evidence suggests that tsunami waves at Palaikastro were at least 9 m high.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Polygon is the mapped Minoan town, not the exact cliff sections. This feature is about 155 km from the caldera, so the scene needs a wide view or an inset.",
+   "search_id": null
+  },
+  {
+   "id": "core-u1594",
+   "side": "checked",
+   "kind": "core",
+   "label": "IODP U1594: Caldera, south basin",
+   "who": "IODP Expedition 398 (JOIDES Resolution)",
+   "year": 2023,
+   "what": "Drill hole in the southern basin of the flooded caldera, in 291 m of water, to sample the fill laid down after the Bronze Age eruption.",
+   "result": "A single hole to 51.7 m below the sea floor; cores 0 to 50.09 m of unlithified, mostly volcanic sediment.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.41715,
+     36.38895
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1594.pdf",
+    "detail": "Hole U1594A spud position in the site summary, converted from degrees and decimal minutes",
+    "error_m": 30
+   },
+   "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1594.pdf",
+   "evidence": "Site U1594 is located in the southern basin of the Santorini Caldera. It lies at a water depth of 291 meters below sea level (mbsl)",
+   "kind_of_source": "cruise-report",
+   "confidence": "high",
+   "notes": "Preliminary site summary, not peer reviewed; the proceedings chapters returned 403.",
+   "search_id": null
+  },
+  {
+   "id": "core-u1595",
+   "side": "checked",
+   "kind": "core",
+   "label": "IODP U1595: Caldera, south basin",
+   "who": "IODP Expedition 398 (JOIDES Resolution)",
+   "year": 2023,
+   "what": "Drill hole in the southern basin of the flooded caldera, in 292 m of water, to sample the fill laid down after the Bronze Age eruption.",
+   "result": "Three holes to 127.1 m; cores 0 to 126.93 m of unlithified, mostly volcanic sediment.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.40605,
+     36.38159
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1595.pdf",
+    "detail": "Hole U1595A spud position in the site summary, converted from degrees and decimal minutes",
+    "error_m": 30
+   },
+   "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1595.pdf",
+   "evidence": "Site U1595 is located in the southern basin of the Santorini Caldera. It lies at a water depth of 292 meters below sea level (mbsl)",
+   "kind_of_source": "cruise-report",
+   "confidence": "high",
+   "notes": "Preliminary site summary, not peer reviewed; the proceedings chapters returned 403.",
+   "search_id": null
+  },
+  {
+   "id": "core-u1596",
+   "side": "checked",
+   "kind": "core",
+   "label": "IODP U1596: Caldera, north basin",
+   "who": "IODP Expedition 398 (JOIDES Resolution)",
+   "year": 2023,
+   "what": "Drill hole in the northern basin of the flooded caldera, in 382 m of water, to sample the fill laid down after the Bronze Age eruption.",
+   "result": "Two holes; cores 0 to 40.62 m of unlithified, mostly volcanic sediment.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.37522,
+     36.4423
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1596.pdf",
+    "detail": "Hole U1596A spud position in the site summary, converted from degrees and decimal minutes",
+    "error_m": 30
+   },
+   "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1596.pdf",
+   "evidence": "Site U1596 is located in the northern basin of the Santorini Caldera. It lies at a water depth of 382 meters below sea level (mbsl)",
+   "kind_of_source": "cruise-report",
+   "confidence": "high",
+   "notes": "Preliminary site summary, not peer reviewed; the proceedings chapters returned 403.",
+   "search_id": null
+  },
+  {
+   "id": "core-u1597",
+   "side": "checked",
+   "kind": "core",
+   "label": "IODP U1597: Caldera, north basin",
+   "who": "IODP Expedition 398 (JOIDES Resolution)",
+   "year": 2023,
+   "what": "Drill hole in the northern basin of the flooded caldera, in 382 m of water, to sample the fill laid down after the Bronze Age eruption.",
+   "result": "One hole; cores 0 to 42.62 m of unlithified, mostly volcanic sediment.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.37888,
+     36.43749
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1597.pdf",
+    "detail": "Hole U1597A spud position in the site summary, converted from degrees and decimal minutes",
+    "error_m": 30
+   },
+   "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1597.pdf",
+   "evidence": "Site U1597 is located in the northern basin of the Santorini Caldera. It lies at a water depth of 382 meters below sea level (mbsl)",
+   "kind_of_source": "cruise-report",
+   "confidence": "high",
+   "notes": "Preliminary site summary, not peer reviewed; the proceedings chapters returned 403. The site summary prints the longitude as 5°22.7326′E; read as 25°22.7326′E (typo), which agrees with the neighbouring site U1596.",
+   "search_id": null
+  },
+  {
+   "id": "core-u1590",
+   "side": "checked",
+   "kind": "core",
+   "label": "IODP U1590: Kolumbo flank",
+   "who": "IODP Expedition 398 (JOIDES Resolution)",
+   "year": 2023,
+   "what": "Drill hole in 397 m of water, outside the caldera, to catch ash and flows from Santorini and Kolumbo.",
+   "result": "Hole A cored 0 to 91.45 m, mostly ash and lapilli; hole B cored 93 to 627.76 m.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.43981,
+     36.5549
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1590.pdf",
+    "detail": "Hole U1590A spud position in the site summary, converted from degrees and decimal minutes",
+    "error_m": 30
+   },
+   "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1590.pdf",
+   "evidence": "Site U1590 is located 5 km northwest of the submarine Kolumbo caldera on its flank in the Anhydros Basin at a water depth of 397 meters below sea level (mbsl)",
+   "kind_of_source": "cruise-report",
+   "confidence": "high",
+   "notes": "Preliminary site summary, not peer reviewed.",
+   "search_id": null
+  },
+  {
+   "id": "core-u1593",
+   "side": "checked",
+   "kind": "core",
+   "label": "IODP U1593: Kolumbo flank",
+   "who": "IODP Expedition 398 (JOIDES Resolution)",
+   "year": 2023,
+   "what": "Drill hole in 402 m of water, outside the caldera, to catch ash and flows from Santorini and Kolumbo.",
+   "result": "Three holes; cores 0 to 250.89 m of unlithified volcanic and tuffaceous sediment.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.41461,
+     36.57517
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1593.pdf",
+    "detail": "Hole U1593A spud position in the site summary, converted from degrees and decimal minutes",
+    "error_m": 30
+   },
+   "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1593.pdf",
+   "evidence": "Site U1593 is located on the flank of the submarine Kolumbo volcano, 8 km northwest of its caldera in the Anhydros Basin at a water depth of 402 meters below sea level (mbsl)",
+   "kind_of_source": "cruise-report",
+   "confidence": "high",
+   "notes": "Preliminary site summary, not peer reviewed.",
+   "search_id": null
+  },
+  {
+   "id": "core-u1591",
+   "side": "checked",
+   "kind": "core",
+   "label": "IODP U1591: Christiana Basin",
+   "who": "IODP Expedition 398 (JOIDES Resolution)",
+   "year": 2023,
+   "what": "Drill hole in 515 m of water, outside the caldera, to catch ash and flows from Santorini and Kolumbo.",
+   "result": "Three holes; partial stratigraphy from 0 to 902.67 m below the sea floor.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.1501,
+     36.31269
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1591.pdf",
+    "detail": "Hole U1591A spud position in the site summary, converted from degrees and decimal minutes",
+    "error_m": 30
+   },
+   "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1591.pdf",
+   "evidence": "Site U1591 is located ~8 km northwest of Christiana Island and ~20 km southwest of Santorini in a water depth of ~515 meters below sea level (mbsl)",
+   "kind_of_source": "cruise-report",
+   "confidence": "high",
+   "notes": "Preliminary site summary, not peer reviewed.",
+   "search_id": null
+  },
+  {
+   "id": "core-u1598",
+   "side": "checked",
+   "kind": "core",
+   "label": "IODP U1598: Christiana Basin",
+   "who": "IODP Expedition 398 (JOIDES Resolution)",
+   "year": 2023,
+   "what": "Drill hole in 521 m of water, outside the caldera, to catch ash and flows from Santorini and Kolumbo.",
+   "result": "Two holes; stratigraphy from 0 to 95.68 m, mostly volcanic ash, tuff and lapilli with some mud.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.12859,
+     36.3049
+    ]
+   },
+   "position": {
+    "how": "stated-coordinates",
+    "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1598.pdf",
+    "detail": "Hole U1598A spud position in the site summary, converted from degrees and decimal minutes",
+    "error_m": 30
+   },
+   "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1598.pdf",
+   "evidence": "Site U1598 is located ~8 km northwest of Christiana Island and ~20 km southwest of Santorini in a water depth of 521 meters below sea level (mbsl)",
+   "kind_of_source": "cruise-report",
+   "confidence": "high",
+   "notes": "Preliminary site summary, not peer reviewed.",
+   "search_id": null
+  },
+  {
+   "id": "area-nw-strait",
+   "side": "checked",
+   "kind": "survey-area",
+   "label": "NW strait study area (Nomikou 2016)",
+   "who": "Paraskevi Nomikou and others",
+   "year": 2016,
+   "what": "Area of the north-west gap in the caldera rim shown in detailed maps, from multibeam (2001, 2006, 2015) and seismic surveys.",
+   "result": "The strait is a 3 km long, 1 km wide channel cut by the sea rushing in after the eruption.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       25.3247,
+       36.4248
+      ],
+      [
+       25.3954,
+       36.4248
+      ],
+      [
+       25.3954,
+       36.5017
+      ],
+      [
+       25.3247,
+       36.5017
+      ],
+      [
+       25.3247,
+       36.4248
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/ncomms13332",
+    "detail": "Fig. 1a (PDF page 3): orange box edges found by colour; lon and lat from the vector axis labels (25 15 to 25 35 E, 36 20 to 36 30 N)",
+    "error_m": 120
+   },
+   "source": "https://www.nature.com/articles/ncomms13332",
+   "evidence": "Orange box outlines the area of the northwest strait",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "The box marks the map area, not the outline of the ship survey. Multibeam data are available on request only.",
+   "search_id": null
+  },
+  {
+   "id": "track-nw-strait-axis",
+   "side": "checked",
+   "kind": "track",
+   "label": "Seismic line B-B′ along NW strait",
+   "who": "Nomikou and others (R/V Poseidon P338, 2006)",
+   "year": 2006,
+   "what": "Seismic reflection line along the axis of the north-west strait into the north basin.",
+   "result": "Shows the caldera fill in layers 1 to 3 and a channel carved into lava, with no deep faults under the breach.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      25.39499,
+      36.42983
+     ],
+     [
+      25.39461,
+      36.43014
+     ],
+     [
+      25.39441,
+      36.43037
+     ],
+     [
+      25.39364,
+      36.431
+     ],
+     [
+      25.39355,
+      36.43115
+     ],
+     [
+      25.39335,
+      36.43131
+     ],
+     [
+      25.39316,
+      36.43154
+     ],
+     [
+      25.39201,
+      36.43248
+     ],
+     [
+      25.39181,
+      36.43271
+     ],
+     [
+      25.39066,
+      36.43364
+     ],
+     [
+      25.39056,
+      36.43388
+     ],
+     [
+      25.3896,
+      36.43466
+     ],
+     [
+      25.3894,
+      36.43489
+     ],
+     [
+      25.38825,
+      36.43583
+     ],
+     [
+      25.38806,
+      36.43606
+     ],
+     [
+      25.38767,
+      36.43637
+     ],
+     [
+      25.38757,
+      36.43653
+     ],
+     [
+      25.387,
+      36.43699
+     ],
+     [
+      25.3868,
+      36.43723
+     ],
+     [
+      25.38565,
+      36.43816
+     ],
+     [
+      25.38545,
+      36.43839
+     ],
+     [
+      25.38468,
+      36.43902
+     ],
+     [
+      25.38459,
+      36.43917
+     ],
+     [
+      25.38439,
+      36.43933
+     ],
+     [
+      25.3842,
+      36.43956
+     ],
+     [
+      25.38305,
+      36.4405
+     ],
+     [
+      25.38285,
+      36.44073
+     ],
+     [
+      25.38189,
+      36.44151
+     ],
+     [
+      25.38179,
+      36.44174
+     ],
+     [
+      25.38064,
+      36.44268
+     ],
+     [
+      25.38044,
+      36.44291
+     ],
+     [
+      25.37929,
+      36.44385
+     ],
+     [
+      25.37909,
+      36.44408
+     ],
+     [
+      25.3789,
+      36.44424
+     ],
+     [
+      25.37881,
+      36.44439
+     ],
+     [
+      25.37804,
+      36.44502
+     ],
+     [
+      25.37784,
+      36.44525
+     ],
+     [
+      25.37669,
+      36.44618
+     ],
+     [
+      25.37649,
+      36.44642
+     ],
+     [
+      25.37592,
+      36.44688
+     ],
+     [
+      25.37582,
+      36.44704
+     ],
+     [
+      25.37543,
+      36.44735
+     ],
+     [
+      25.37524,
+      36.44758
+     ],
+     [
+      25.37428,
+      36.44836
+     ],
+     [
+      25.37409,
+      36.4486
+     ],
+     [
+      25.37293,
+      36.44953
+     ],
+     [
+      25.37283,
+      36.44977
+     ],
+     [
+      25.37168,
+      36.4507
+     ],
+     [
+      25.37148,
+      36.45093
+     ],
+     [
+      25.37033,
+      36.45187
+     ],
+     [
+      25.37014,
+      36.4521
+     ],
+     [
+      25.36975,
+      36.45241
+     ],
+     [
+      25.36965,
+      36.45257
+     ],
+     [
+      25.36908,
+      36.45304
+     ],
+     [
+      25.36888,
+      36.45327
+     ],
+     [
+      25.36792,
+      36.45405
+     ],
+     [
+      25.36773,
+      36.45428
+     ],
+     [
+      25.36676,
+      36.45506
+     ],
+     [
+      25.36667,
+      36.45522
+     ],
+     [
+      25.36647,
+      36.45545
+     ],
+     [
+      25.36532,
+      36.45639
+     ],
+     [
+      25.36513,
+      36.45662
+     ],
+     [
+      25.36397,
+      36.45755
+     ],
+     [
+      25.36378,
+      36.45779
+     ],
+     [
+      25.36368,
+      36.45794
+     ],
+     [
+      25.36272,
+      36.45872
+     ],
+     [
+      25.36252,
+      36.45896
+     ],
+     [
+      25.36137,
+      36.45989
+     ],
+     [
+      25.36118,
+      36.46012
+     ],
+     [
+      25.36079,
+      36.46044
+     ],
+     [
+      25.36069,
+      36.46059
+     ],
+     [
+      25.36031,
+      36.4609
+     ],
+     [
+      25.36012,
+      36.46114
+     ],
+     [
+      25.35896,
+      36.46207
+     ],
+     [
+      25.35877,
+      36.46231
+     ],
+     [
+      25.3578,
+      36.46308
+     ],
+     [
+      25.35771,
+      36.46324
+     ],
+     [
+      25.35751,
+      36.46347
+     ],
+     [
+      25.35636,
+      36.46441
+     ],
+     [
+      25.35617,
+      36.46464
+     ],
+     [
+      25.35501,
+      36.46558
+     ],
+     [
+      25.35482,
+      36.46581
+     ],
+     [
+      25.35462,
+      36.46597
+     ],
+     [
+      25.35453,
+      36.46612
+     ],
+     [
+      25.35395,
+      36.46659
+     ],
+     [
+      25.35376,
+      36.46682
+     ],
+     [
+      25.3526,
+      36.46776
+     ],
+     [
+      25.35241,
+      36.46799
+     ],
+     [
+      25.35164,
+      36.46861
+     ],
+     [
+      25.35154,
+      36.46877
+     ],
+     [
+      25.35135,
+      36.46892
+     ],
+     [
+      25.35116,
+      36.46916
+     ],
+     [
+      25.35,
+      36.47009
+     ],
+     [
+      25.34981,
+      36.47033
+     ],
+     [
+      25.34865,
+      36.47126
+     ],
+     [
+      25.34855,
+      36.4715
+     ],
+     [
+      25.3474,
+      36.47243
+     ],
+     [
+      25.34721,
+      36.47266
+     ],
+     [
+      25.34624,
+      36.47344
+     ],
+     [
+      25.34605,
+      36.47368
+     ],
+     [
+      25.34547,
+      36.47414
+     ],
+     [
+      25.34538,
+      36.4743
+     ],
+     [
+      25.34499,
+      36.47461
+     ],
+     [
+      25.3448,
+      36.47484
+     ],
+     [
+      25.34364,
+      36.47578
+     ],
+     [
+      25.34345,
+      36.47601
+     ],
+     [
+      25.34249,
+      36.47679
+     ],
+     [
+      25.34239,
+      36.47695
+     ],
+     [
+      25.3422,
+      36.47718
+     ],
+     [
+      25.34104,
+      36.47811
+     ],
+     [
+      25.34085,
+      36.47835
+     ],
+     [
+      25.33988,
+      36.47913
+     ],
+     [
+      25.33969,
+      36.47936
+     ],
+     [
+      25.3395,
+      36.47952
+     ],
+     [
+      25.3394,
+      36.47967
+     ],
+     [
+      25.33863,
+      36.4803
+     ],
+     [
+      25.33844,
+      36.48053
+     ],
+     [
+      25.33728,
+      36.48146
+     ],
+     [
+      25.33709,
+      36.4817
+     ],
+     [
+      25.33632,
+      36.48232
+     ],
+     [
+      25.33622,
+      36.48248
+     ],
+     [
+      25.33603,
+      36.48263
+     ],
+     [
+      25.33584,
+      36.48287
+     ],
+     [
+      25.33468,
+      36.4838
+     ],
+     [
+      25.33449,
+      36.48403
+     ],
+     [
+      25.33353,
+      36.48481
+     ],
+     [
+      25.33333,
+      36.48505
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/ncomms13332",
+    "detail": "Fig. 2a (PDF page 4): dashed line B-B′ taken from the vector drawing; lon and lat from the vector tick marks (25 20 to 25 23 E, 36 26 to 36 30 N)",
+    "error_m": 80
+   },
+   "source": "https://www.nature.com/articles/ncomms13332",
+   "evidence": "Interpreted multi-channel reflection seismic profile along the axis of the NW strait.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "notes": "Methods: \"Multi-channel seismic data were collected during RV POSEIDON cruise P338 in 2006 and during the 'ATLANTIS FOUND' project in 2015.\" The paper does not say which cruise shot this line.",
+   "search_id": null
+  },
+  {
+   "id": "track-nw-strait-cross",
+   "side": "checked",
+   "kind": "track",
+   "label": "Seismic line A-A′ across NW strait",
+   "who": "Nomikou and others",
+   "year": 2016,
+   "what": "Seismic reflection line across the north-west strait.",
+   "result": "Shows a steep U-shaped channel with thin caldera-fill layers on its floor.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      25.33876,
+      36.46887
+     ],
+     [
+      25.34191,
+      36.47009
+     ],
+     [
+      25.3422,
+      36.47017
+     ],
+     [
+      25.34249,
+      36.47033
+     ],
+     [
+      25.34268,
+      36.4704
+     ],
+     [
+      25.34297,
+      36.47048
+     ],
+     [
+      25.34316,
+      36.47064
+     ],
+     [
+      25.34374,
+      36.47079
+     ],
+     [
+      25.34393,
+      36.47095
+     ],
+     [
+      25.34422,
+      36.47103
+     ],
+     [
+      25.34441,
+      36.47111
+     ],
+     [
+      25.3447,
+      36.47126
+     ],
+     [
+      25.34489,
+      36.47134
+     ],
+     [
+      25.34518,
+      36.47142
+     ],
+     [
+      25.34547,
+      36.47157
+     ],
+     [
+      25.34566,
+      36.47165
+     ],
+     [
+      25.34595,
+      36.47173
+     ],
+     [
+      25.34615,
+      36.47181
+     ],
+     [
+      25.34644,
+      36.47196
+     ],
+     [
+      25.34663,
+      36.47204
+     ],
+     [
+      25.34692,
+      36.47212
+     ],
+     [
+      25.34721,
+      36.47227
+     ],
+     [
+      25.3474,
+      36.47235
+     ],
+     [
+      25.34769,
+      36.47243
+     ],
+     [
+      25.34788,
+      36.47259
+     ],
+     [
+      25.34846,
+      36.47274
+     ],
+     [
+      25.34865,
+      36.4729
+     ],
+     [
+      25.34894,
+      36.47298
+     ],
+     [
+      25.34913,
+      36.47305
+     ],
+     [
+      25.34942,
+      36.47321
+     ],
+     [
+      25.34962,
+      36.47329
+     ],
+     [
+      25.3499,
+      36.47336
+     ],
+     [
+      25.35019,
+      36.47352
+     ],
+     [
+      25.35039,
+      36.4736
+     ],
+     [
+      25.35067,
+      36.47368
+     ],
+     [
+      25.35087,
+      36.47375
+     ],
+     [
+      25.35116,
+      36.47391
+     ],
+     [
+      25.35135,
+      36.47399
+     ],
+     [
+      25.35164,
+      36.47407
+     ],
+     [
+      25.35193,
+      36.47422
+     ],
+     [
+      25.35212,
+      36.4743
+     ],
+     [
+      25.35241,
+      36.47438
+     ],
+     [
+      25.3526,
+      36.47453
+     ],
+     [
+      25.35289,
+      36.47461
+     ],
+     [
+      25.35308,
+      36.47469
+     ],
+     [
+      25.35337,
+      36.47484
+     ],
+     [
+      25.35366,
+      36.47492
+     ],
+     [
+      25.35385,
+      36.475
+     ],
+     [
+      25.35414,
+      36.47516
+     ],
+     [
+      25.35434,
+      36.47523
+     ],
+     [
+      25.35491,
+      36.47539
+     ],
+     [
+      25.35511,
+      36.47555
+     ],
+     [
+      25.3554,
+      36.47562
+     ],
+     [
+      25.35559,
+      36.4757
+     ],
+     [
+      25.35588,
+      36.47586
+     ],
+     [
+      25.35607,
+      36.47593
+     ],
+     [
+      25.35636,
+      36.47601
+     ],
+     [
+      25.35665,
+      36.47617
+     ],
+     [
+      25.35684,
+      36.47625
+     ],
+     [
+      25.35713,
+      36.47632
+     ],
+     [
+      25.35732,
+      36.47648
+     ],
+     [
+      25.35761,
+      36.47656
+     ],
+     [
+      25.3578,
+      36.47664
+     ],
+     [
+      25.35809,
+      36.47679
+     ],
+     [
+      25.35838,
+      36.47687
+     ],
+     [
+      25.35857,
+      36.47695
+     ],
+     [
+      25.35886,
+      36.4771
+     ],
+     [
+      25.35906,
+      36.47718
+     ],
+     [
+      25.35963,
+      36.47734
+     ],
+     [
+      25.35983,
+      36.47749
+     ],
+     [
+      25.36012,
+      36.47757
+     ],
+     [
+      25.36031,
+      36.47765
+     ],
+     [
+      25.3606,
+      36.4778
+     ],
+     [
+      25.36079,
+      36.47788
+     ],
+     [
+      25.36108,
+      36.47796
+     ],
+     [
+      25.36137,
+      36.47811
+     ],
+     [
+      25.36156,
+      36.47819
+     ],
+     [
+      25.36185,
+      36.47827
+     ],
+     [
+      25.36204,
+      36.47843
+     ],
+     [
+      25.36233,
+      36.4785
+     ],
+     [
+      25.36252,
+      36.47858
+     ],
+     [
+      25.36281,
+      36.47874
+     ],
+     [
+      25.3631,
+      36.47882
+     ],
+     [
+      25.3633,
+      36.47889
+     ],
+     [
+      25.36358,
+      36.47905
+     ],
+     [
+      25.36378,
+      36.47913
+     ],
+     [
+      25.36436,
+      36.47928
+     ],
+     [
+      25.36455,
+      36.47944
+     ],
+     [
+      25.36484,
+      36.47952
+     ],
+     [
+      25.36503,
+      36.47959
+     ],
+     [
+      25.36532,
+      36.47975
+     ],
+     [
+      25.36551,
+      36.47983
+     ],
+     [
+      25.3658,
+      36.47991
+     ],
+     [
+      25.36609,
+      36.48006
+     ],
+     [
+      25.36628,
+      36.48014
+     ],
+     [
+      25.36657,
+      36.48022
+     ],
+     [
+      25.36676,
+      36.48037
+     ],
+     [
+      25.36705,
+      36.48045
+     ],
+     [
+      25.36725,
+      36.48053
+     ],
+     [
+      25.36753,
+      36.48068
+     ],
+     [
+      25.36782,
+      36.48076
+     ],
+     [
+      25.36802,
+      36.48084
+     ],
+     [
+      25.36831,
+      36.48092
+     ],
+     [
+      25.3685,
+      36.48107
+     ],
+     [
+      25.36908,
+      36.48123
+     ],
+     [
+      25.36927,
+      36.48139
+     ],
+     [
+      25.36956,
+      36.48146
+     ],
+     [
+      25.36975,
+      36.48154
+     ],
+     [
+      25.37004,
+      36.4817
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/ncomms13332",
+    "detail": "Fig. 2a (PDF page 4): dashed line A-A′ from the vector drawing; ticks as for B-B′",
+    "error_m": 80
+   },
+   "source": "https://www.nature.com/articles/ncomms13332",
+   "evidence": "Seismic profile perpendicular to the strait axis, showing caldera-fill stratigraphic units 1 and 2 of ref. 10.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "search_id": null,
+   "notes": ""
+  },
+  {
+   "id": "out-nw-headwall",
+   "side": "found",
+   "kind": "outline",
+   "label": "Headwall of the NW strait",
+   "who": "Nomikou and others",
+   "year": 2016,
+   "what": "The curved scar at the north end of the channel where the sea cut into the caldera wall.",
+   "result": "Read as a fossil \"water chute\": the sea poured into a dry, newly collapsed caldera once the eruption was over.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      25.33435,
+      36.47203
+     ],
+     [
+      25.33266,
+      36.47364
+     ],
+     [
+      25.3315,
+      36.47565
+     ],
+     [
+      25.33152,
+      36.478
+     ],
+     [
+      25.33276,
+      36.4802
+     ],
+     [
+      25.33457,
+      36.48221
+     ],
+     [
+      25.33686,
+      36.48423
+     ],
+     [
+      25.3394,
+      36.48578
+     ],
+     [
+      25.34214,
+      36.48726
+     ],
+     [
+      25.34446,
+      36.4892
+     ],
+     [
+      25.34712,
+      36.4911
+     ],
+     [
+      25.35083,
+      36.49263
+     ],
+     [
+      25.35492,
+      36.49344
+     ],
+     [
+      25.35885,
+      36.49366
+     ],
+     [
+      25.36196,
+      36.49352
+     ],
+     [
+      25.36476,
+      36.49314
+     ],
+     [
+      25.36623,
+      36.49223
+     ],
+     [
+      25.36738,
+      36.49092
+     ],
+     [
+      25.36891,
+      36.48946
+     ],
+     [
+      25.36972,
+      36.48812
+     ],
+     [
+      25.36984,
+      36.48695
+     ],
+     [
+      25.36947,
+      36.48589
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/ncomms13332",
+    "detail": "Fig. 2a (PDF page 4): dotted orange line, vector drawing",
+    "error_m": 80
+   },
+   "source": "https://www.nature.com/articles/ncomms13332",
+   "evidence": "The dotted orange line marks the location of the erosional headwall, the dashed orange line the channel sides",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "search_id": null,
+   "notes": ""
+  },
+  {
+   "id": "out-nw-channel-east",
+   "side": "found",
+   "kind": "outline",
+   "label": "NW strait channel, east side",
+   "who": "Nomikou and others",
+   "year": 2016,
+   "what": "East edge of the submarine channel cut when the sea flooded the caldera.",
+   "result": "The channel is 3 km long and 1 km wide; flooding took less than a couple of days.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      25.35729,
+      36.48192
+     ],
+     [
+      25.35709,
+      36.47882
+     ],
+     [
+      25.3576,
+      36.47628
+     ],
+     [
+      25.35861,
+      36.47401
+     ],
+     [
+      25.35963,
+      36.47211
+     ],
+     [
+      25.3603,
+      36.47028
+     ],
+     [
+      25.36135,
+      36.46909
+     ],
+     [
+      25.3619,
+      36.46776
+     ],
+     [
+      25.36252,
+      36.46689
+     ],
+     [
+      25.36297,
+      36.46589
+     ],
+     [
+      25.36368,
+      36.46412
+     ],
+     [
+      25.36435,
+      36.46249
+     ],
+     [
+      25.36482,
+      36.46135
+     ],
+     [
+      25.36578,
+      36.45973
+     ],
+     [
+      25.36751,
+      36.45774
+     ],
+     [
+      25.36872,
+      36.4564
+     ],
+     [
+      25.36957,
+      36.45521
+     ],
+     [
+      25.3703,
+      36.45386
+     ],
+     [
+      25.37099,
+      36.45254
+     ],
+     [
+      25.37198,
+      36.45136
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/ncomms13332",
+    "detail": "Fig. 2a (PDF page 4): dashed orange line, east side",
+    "error_m": 80
+   },
+   "source": "https://www.nature.com/articles/ncomms13332",
+   "evidence": "The new multi-beam bathymetric data show that the NW strait consists of a 3 km long, 1 km wide, U-shaped, submarine channel with an arcuate headwall",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "search_id": null,
+   "notes": ""
+  },
+  {
+   "id": "out-nw-channel-west",
+   "side": "found",
+   "kind": "outline",
+   "label": "NW strait channel, west side",
+   "who": "Nomikou and others",
+   "year": 2016,
+   "what": "West edge of the submarine channel cut when the sea flooded the caldera.",
+   "result": "Together with the east side it shows the breach was cut after the eruption, not by the collapse.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      25.34251,
+      36.47925
+     ],
+     [
+      25.34407,
+      36.47818
+     ],
+     [
+      25.34525,
+      36.47737
+     ],
+     [
+      25.34627,
+      36.47631
+     ],
+     [
+      25.34671,
+      36.47499
+     ],
+     [
+      25.34692,
+      36.47386
+     ],
+     [
+      25.34775,
+      36.47294
+     ],
+     [
+      25.34874,
+      36.47173
+     ],
+     [
+      25.34913,
+      36.47061
+     ],
+     [
+      25.34945,
+      36.46975
+     ],
+     [
+      25.3501,
+      36.4688
+     ],
+     [
+      25.35092,
+      36.46771
+     ],
+     [
+      25.35177,
+      36.46663
+     ],
+     [
+      25.35213,
+      36.46526
+     ],
+     [
+      25.35177,
+      36.46394
+     ],
+     [
+      25.35195,
+      36.46247
+     ],
+     [
+      25.35256,
+      36.46179
+     ],
+     [
+      25.35295,
+      36.46101
+     ],
+     [
+      25.35382,
+      36.45986
+     ],
+     [
+      25.35465,
+      36.45855
+     ],
+     [
+      25.35544,
+      36.45676
+     ],
+     [
+      25.35682,
+      36.45515
+     ],
+     [
+      25.35831,
+      36.45382
+     ],
+     [
+      25.35973,
+      36.45225
+     ],
+     [
+      25.36147,
+      36.45077
+     ],
+     [
+      25.36334,
+      36.44951
+     ],
+     [
+      25.36485,
+      36.44886
+     ],
+     [
+      25.36621,
+      36.44792
+     ],
+     [
+      25.36734,
+      36.44656
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/ncomms13332",
+    "detail": "Fig. 2a (PDF page 4): dashed orange line, west side",
+    "error_m": 80
+   },
+   "source": "https://www.nature.com/articles/ncomms13332",
+   "evidence": "Inflow of water and associated landsliding cut a deep, 2.0–2.5 km3, submarine channel, thus filling the caldera in less than a couple of days.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "high",
+   "search_id": null,
+   "notes": ""
+  },
+  {
+   "id": "pre-island-druitt1992",
+   "side": "found",
+   "kind": "outline",
+   "label": "Old central island (Druitt 1992)",
+   "who": "Druitt and Francaviglia",
+   "year": 1992,
+   "what": "Lost island in the middle of the pre-eruption lagoon, as drawn in the 1992 model (also Druitt and others 1999).",
+   "result": "Its rocks were found as lumps in the Minoan ash; the old caldera was a shallow lagoon.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       25.41369,
+       36.42893
+      ],
+      [
+       25.40971,
+       36.43054
+      ],
+      [
+       25.39776,
+       36.42974
+      ],
+      [
+       25.38681,
+       36.4257
+      ],
+      [
+       25.38283,
+       36.42248
+      ],
+      [
+       25.37885,
+       36.41522
+      ],
+      [
+       25.37885,
+       36.41199
+      ],
+      [
+       25.36989,
+       36.40554
+      ],
+      [
+       25.36391,
+       36.39908
+      ],
+      [
+       25.36391,
+       36.39586
+      ],
+      [
+       25.3659,
+       36.39263
+      ],
+      [
+       25.37188,
+       36.38779
+      ],
+      [
+       25.37586,
+       36.38618
+      ],
+      [
+       25.38382,
+       36.38698
+      ],
+      [
+       25.38781,
+       36.3886
+      ],
+      [
+       25.39478,
+       36.38779
+      ],
+      [
+       25.40075,
+       36.39102
+      ],
+      [
+       25.40871,
+       36.39263
+      ],
+      [
+       25.41269,
+       36.39586
+      ],
+      [
+       25.41568,
+       36.40715
+      ],
+      [
+       25.42165,
+       36.41602
+      ],
+      [
+       25.42165,
+       36.42086
+      ],
+      [
+       25.41966,
+       36.42409
+      ],
+      [
+       25.41369,
+       36.42893
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/s41598-018-25301-2",
+    "detail": "Karatson 2018 Fig. 1 inset \"Druitt & Francaviglia 1992, Druitt et al. 1999\": inner loop, 16.7 km2; fitted with the Thera, Therasia and Aspronisi coast as control",
+    "error_m": 600
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "refined the likely extension of the pre-Minoan caldera, which may indeed have been restricted to the northern part of the present-day caldera",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "low",
+   "notes": "Outline traced by us from a small schematic inset (Karatson and others 2018, Fig. 1 upper left) and fitted to today's coast by matching the grey island silhouette (overlap 0.78 to 0.80). It is a published model, not a survey. Area 16.7 km2 as traced, about 4.6 km across if round.",
+   "search_id": null
+  },
+  {
+   "id": "pre-lagoon-druitt2014",
+   "side": "found",
+   "kind": "outline",
+   "label": "Old caldera lagoon (Druitt 2014)",
+   "who": "Timothy Druitt",
+   "year": 2014,
+   "what": "Shallow flooded caldera before the eruption, restricted to the north, as drawn in the 2014 model.",
+   "result": "Fits the Minoan ash, which holds stromatolites and shells from a shallow bay.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       25.40602,
+       36.45667
+      ],
+      [
+       25.39108,
+       36.45667
+      ],
+      [
+       25.37515,
+       36.45263
+      ],
+      [
+       25.36221,
+       36.44537
+      ],
+      [
+       25.35724,
+       36.44134
+      ],
+      [
+       25.35425,
+       36.4365
+      ],
+      [
+       25.35425,
+       36.42279
+      ],
+      [
+       25.35724,
+       36.41472
+      ],
+      [
+       25.3652,
+       36.40746
+      ],
+      [
+       25.37615,
+       36.40181
+      ],
+      [
+       25.38411,
+       36.40181
+      ],
+      [
+       25.39208,
+       36.40423
+      ],
+      [
+       25.40502,
+       36.41391
+      ],
+      [
+       25.41199,
+       36.42198
+      ],
+      [
+       25.41498,
+       36.42924
+      ],
+      [
+       25.41697,
+       36.44618
+      ],
+      [
+       25.41298,
+       36.45263
+      ],
+      [
+       25.40602,
+       36.45667
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/s41598-018-25301-2",
+    "detail": "Karatson 2018 Fig. 1 inset \"Druitt 2014\": second loop, 26.1 km2",
+    "error_m": 600
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "refined the likely extension of the pre-Minoan caldera, which may indeed have been restricted to the northern part of the present-day caldera",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "low",
+   "notes": "Outline traced by us from a small schematic inset (Karatson and others 2018, Fig. 1 upper left) and fitted to today's coast by matching the grey island silhouette (overlap 0.78 to 0.80). It is a published model, not a survey. Area 26.1 km2 as traced.",
+   "search_id": null
+  },
+  {
+   "id": "pre-island-druitt2014",
+   "side": "found",
+   "kind": "outline",
+   "label": "Old central island (Druitt 2014)",
+   "who": "Timothy Druitt",
+   "year": 2014,
+   "what": "Lost island (\"Pre-Kameni\") inside the lagoon, as drawn in the 2014 model.",
+   "result": "Lava lumps from it are in the Minoan ash.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       25.40004,
+       36.43892
+      ],
+      [
+       25.39606,
+       36.44215
+      ],
+      [
+       25.38909,
+       36.44376
+      ],
+      [
+       25.37217,
+       36.4365
+      ],
+      [
+       25.3652,
+       36.43085
+      ],
+      [
+       25.36221,
+       36.42601
+      ],
+      [
+       25.36221,
+       36.41956
+      ],
+      [
+       25.3652,
+       36.41714
+      ],
+      [
+       25.37117,
+       36.41552
+      ],
+      [
+       25.3871,
+       36.41633
+      ],
+      [
+       25.39706,
+       36.41956
+      ],
+      [
+       25.40303,
+       36.4244
+      ],
+      [
+       25.40402,
+       36.42682
+      ],
+      [
+       25.40402,
+       36.43247
+      ],
+      [
+       25.40004,
+       36.43892
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/s41598-018-25301-2",
+    "detail": "Karatson 2018 Fig. 1 inset \"Druitt 2014\": innermost loop, 8.5 km2",
+    "error_m": 600
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "a central island referred to as ‘Pre-Kameni’ after the present-day Kameni Islands.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "low",
+   "notes": "Outline traced by us from a small schematic inset (Karatson and others 2018, Fig. 1 upper left) and fitted to today's coast by matching the grey island silhouette (overlap 0.78 to 0.80). It is a published model, not a survey. Area 8.5 km2 as traced, about 3.3 km across if round.",
+   "search_id": null
+  },
+  {
+   "id": "pre-island-athanassas2016",
+   "side": "found",
+   "kind": "outline",
+   "label": "Old central island (Athanassas 2016)",
+   "who": "Athanassas and others",
+   "year": 2016,
+   "what": "Lost island in the north basin, as drawn in the 2016 model built on cosmic-ray dating of the old caldera wall.",
+   "result": "Supports a pre-Minoan caldera, with a ring of water around an island.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       25.40203,
+       36.43766
+      ],
+      [
+       25.39307,
+       36.44492
+      ],
+      [
+       25.3871,
+       36.44492
+      ],
+      [
+       25.38013,
+       36.4425
+      ],
+      [
+       25.37615,
+       36.43927
+      ],
+      [
+       25.37117,
+       36.43766
+      ],
+      [
+       25.36221,
+       36.4304
+      ],
+      [
+       25.35923,
+       36.42475
+      ],
+      [
+       25.35923,
+       36.4191
+      ],
+      [
+       25.36719,
+       36.41507
+      ],
+      [
+       25.38113,
+       36.41507
+      ],
+      [
+       25.39706,
+       36.4191
+      ],
+      [
+       25.40303,
+       36.42394
+      ],
+      [
+       25.40502,
+       36.42717
+      ],
+      [
+       25.40502,
+       36.4312
+      ],
+      [
+       25.40203,
+       36.43766
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/s41598-018-25301-2",
+    "detail": "Karatson 2018 Fig. 1 inset \"Athanassas et al. 2016\": island loop, 9.8 km2",
+    "error_m": 600
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "refined the likely extension of the pre-Minoan caldera, which may indeed have been restricted to the northern part of the present-day caldera",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "low",
+   "notes": "Outline traced by us from a small schematic inset (Karatson and others 2018, Fig. 1 upper left) and fitted to today's coast by matching the grey island silhouette (overlap 0.78 to 0.80). It is a published model, not a survey. Area 9.8 km2 as traced, about 3.5 km across if round. Karatson 2018 gives its volume as 2.2 to 2.5 km3 and its growth start as 20.2 ± 1.0 ka. The outer line of this model is open to the north and was not traced.",
+   "search_id": null
+  },
+  {
+   "id": "sample-minoan-1",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Minoan ash outcrop, unit A+D",
+   "who": "Karatson and others",
+   "year": 2018,
+   "what": "Cliff exposure of the Minoan eruption deposit where lithic (old rock) clasts were counted in photographs.",
+   "result": "Counts of black glassy andesite lumps gave the size of the lost island: 2.2 to 2.5 km3.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.39219,
+     36.36088
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/s41598-018-25301-2",
+    "detail": "Fig. 1 map (main panel): coloured dot(s) for unit(s) A+D; lon and lat from the axis labels 25°20′E to 25°30′E and 36°20′N to 36°25′N, checked by overlaying the OpenStreetMap coast, which agrees to about 150 m",
+    "error_m": 250
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "Santorini: tectonic setting and island map with photo-statistical sampling sites.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Eight of the roughly 30 sites on land are shown; sites within 350 m are merged. Units: A (first pumice fall), D (hot ignimbrite).",
+   "search_id": null
+  },
+  {
+   "id": "sample-minoan-2",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Minoan ash outcrop, unit B",
+   "who": "Karatson and others",
+   "year": 2018,
+   "what": "Cliff exposure of the Minoan eruption deposit where lithic (old rock) clasts were counted in photographs.",
+   "result": "Counts of black glassy andesite lumps gave the size of the lost island: 2.2 to 2.5 km3.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.34052,
+     36.43731
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/s41598-018-25301-2",
+    "detail": "Fig. 1 map (main panel): coloured dot(s) for unit(s) B; lon and lat from the axis labels 25°20′E to 25°30′E and 36°20′N to 36°25′N, checked by overlaying the OpenStreetMap coast, which agrees to about 150 m",
+    "error_m": 250
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "Santorini: tectonic setting and island map with photo-statistical sampling sites.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Eight of the roughly 30 sites on land are shown; sites within 350 m are merged. Units: B (surges).",
+   "search_id": null
+  },
+  {
+   "id": "sample-minoan-3",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Minoan ash outcrop, unit B",
+   "who": "Karatson and others",
+   "year": 2018,
+   "what": "Cliff exposure of the Minoan eruption deposit where lithic (old rock) clasts were counted in photographs.",
+   "result": "Counts of black glassy andesite lumps gave the size of the lost island: 2.2 to 2.5 km3.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.42308,
+     36.37415
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/s41598-018-25301-2",
+    "detail": "Fig. 1 map (main panel): coloured dot(s) for unit(s) B; lon and lat from the axis labels 25°20′E to 25°30′E and 36°20′N to 36°25′N, checked by overlaying the OpenStreetMap coast, which agrees to about 150 m",
+    "error_m": 250
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "Santorini: tectonic setting and island map with photo-statistical sampling sites.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Eight of the roughly 30 sites on land are shown; sites within 350 m are merged. Units: B (surges).",
+   "search_id": null
+  },
+  {
+   "id": "sample-minoan-4",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Minoan ash outcrop, unit C",
+   "who": "Karatson and others",
+   "year": 2018,
+   "what": "Cliff exposure of the Minoan eruption deposit where lithic (old rock) clasts were counted in photographs.",
+   "result": "Counts of black glassy andesite lumps gave the size of the lost island: 2.2 to 2.5 km3.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.43279,
+     36.42932
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/s41598-018-25301-2",
+    "detail": "Fig. 1 map (main panel): coloured dot(s) for unit(s) C; lon and lat from the axis labels 25°20′E to 25°30′E and 36°20′N to 36°25′N, checked by overlaying the OpenStreetMap coast, which agrees to about 150 m",
+    "error_m": 250
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "Santorini: tectonic setting and island map with photo-statistical sampling sites.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Eight of the roughly 30 sites on land are shown; sites within 350 m are merged. Units: C (coarse ignimbrite).",
+   "search_id": null
+  },
+  {
+   "id": "sample-minoan-5",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Minoan ash outcrop, unit C",
+   "who": "Karatson and others",
+   "year": 2018,
+   "what": "Cliff exposure of the Minoan eruption deposit where lithic (old rock) clasts were counted in photographs.",
+   "result": "Counts of black glassy andesite lumps gave the size of the lost island: 2.2 to 2.5 km3.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.34548,
+     36.44297
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/s41598-018-25301-2",
+    "detail": "Fig. 1 map (main panel): coloured dot(s) for unit(s) C; lon and lat from the axis labels 25°20′E to 25°30′E and 36°20′N to 36°25′N, checked by overlaying the OpenStreetMap coast, which agrees to about 150 m",
+    "error_m": 250
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "Santorini: tectonic setting and island map with photo-statistical sampling sites.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Eight of the roughly 30 sites on land are shown; sites within 350 m are merged. Units: C (coarse ignimbrite).",
+   "search_id": null
+  },
+  {
+   "id": "sample-minoan-6",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Minoan ash outcrop, unit D",
+   "who": "Karatson and others",
+   "year": 2018,
+   "what": "Cliff exposure of the Minoan eruption deposit where lithic (old rock) clasts were counted in photographs.",
+   "result": "Counts of black glassy andesite lumps gave the size of the lost island: 2.2 to 2.5 km3.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.47358,
+     36.41744
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/s41598-018-25301-2",
+    "detail": "Fig. 1 map (main panel): coloured dot(s) for unit(s) D; lon and lat from the axis labels 25°20′E to 25°30′E and 36°20′N to 36°25′N, checked by overlaying the OpenStreetMap coast, which agrees to about 150 m",
+    "error_m": 250
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "Santorini: tectonic setting and island map with photo-statistical sampling sites.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Eight of the roughly 30 sites on land are shown; sites within 350 m are merged. Units: D (hot ignimbrite).",
+   "search_id": null
+  },
+  {
+   "id": "sample-minoan-7",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Minoan ash outcrop, unit D",
+   "who": "Karatson and others",
+   "year": 2018,
+   "what": "Cliff exposure of the Minoan eruption deposit where lithic (old rock) clasts were counted in photographs.",
+   "result": "Counts of black glassy andesite lumps gave the size of the lost island: 2.2 to 2.5 km3.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.4289,
+     36.45965
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/s41598-018-25301-2",
+    "detail": "Fig. 1 map (main panel): coloured dot(s) for unit(s) D; lon and lat from the axis labels 25°20′E to 25°30′E and 36°20′N to 36°25′N, checked by overlaying the OpenStreetMap coast, which agrees to about 150 m",
+    "error_m": 250
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "Santorini: tectonic setting and island map with photo-statistical sampling sites.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Eight of the roughly 30 sites on land are shown; sites within 350 m are merged. Units: D (hot ignimbrite).",
+   "search_id": null
+  },
+  {
+   "id": "sample-minoan-8",
+   "side": "checked",
+   "kind": "sample",
+   "label": "Minoan ash outcrop, unit C",
+   "who": "Karatson and others",
+   "year": 2018,
+   "what": "Cliff exposure of the Minoan eruption deposit where lithic (old rock) clasts were counted in photographs.",
+   "result": "Counts of black glassy andesite lumps gave the size of the lost island: 2.2 to 2.5 km3.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.36441,
+     36.36421
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://www.nature.com/articles/s41598-018-25301-2",
+    "detail": "Fig. 1 map (main panel): coloured dot(s) for unit(s) C; lon and lat from the axis labels 25°20′E to 25°30′E and 36°20′N to 36°25′N, checked by overlaying the OpenStreetMap coast, which agrees to about 150 m",
+    "error_m": 250
+   },
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "Santorini: tectonic setting and island map with photo-statistical sampling sites.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Eight of the roughly 30 sites on land are shown; sites within 350 m are merged. Units: C (coarse ignimbrite).",
+   "search_id": null
+  }
+ ],
+ "measurements": [
+  {
+   "id": "date-radiocarbon-friedrich",
+   "what": "Date of the eruption from radiocarbon on the olive branch (outermost ring), 95.4% range",
+   "value": 1613.5,
+   "range": [
+    1627,
+    1600
+   ],
+   "unit": "BCE (midpoint of 1627 to 1600)",
+   "plato_claim": "nine-thousand-years",
+   "plato_value": "9,000 years before the telling, about 9600 BCE (Timaeus 23e; Critias 108e)",
+   "source": "https://www.ltrr.arizona.edu/~tswetnam/CMATE/Friedrich%20et%20al%20Santorini%20548.pdf",
+   "evidence": "we determined the calibrated age range of the outermost ring to 1621–1605 B.C. (1σ, 68% confidence) or 1627–1600 B.C. (2σ, 95% confidence)",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "date-radiocarbon-manning",
+   "what": "Date from Bayesian analysis of radiocarbon across the Aegean (Manning and others 2006)",
+   "value": 1650,
+   "range": [
+    1700,
+    1601
+   ],
+   "unit": "BCE (late 17th century, as the paper words it)",
+   "plato_claim": "nine-thousand-years",
+   "plato_value": "about 9600 BCE",
+   "source": "https://doi.org/10.1126/science.1125682",
+   "evidence": "show that the Santorini (Thera) eruption must have occurred in the late 17th century B.C.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "date-archaeological",
+   "what": "Date from pottery and Egyptian links (archaeological dating), as summarised in 2018",
+   "value": 1500,
+   "range": [
+    1550,
+    1400
+   ],
+   "unit": "BCE (mid 16th to early 15th century)",
+   "plato_claim": "nine-thousand-years",
+   "plato_value": "about 9600 BCE",
+   "source": "https://europepmc.org/article/PMC/PMC6093623",
+   "evidence": "a discrepancy between radiocarbon (late 17th-early 16th century BCE) and archaeological (mid 16th-early 15th century BCE) dating evidence for Thera.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "date-olive-2023",
+   "what": "Date from the 2023 reanalysis of the Phira olive branch, simple ordered sequence, IntCal20, 95.4%",
+   "value": 1566.5,
+   "range": [
+    1593,
+    1540
+   ],
+   "unit": "BCE (72.3% share; the other 23.2% is 1621 to 1598)",
+   "plato_claim": "nine-thousand-years",
+   "plato_value": "about 9600 BCE",
+   "source": "https://www.nature.com/articles/s41598-023-33696-w",
+   "evidence": "the sample died either between 1621 and 1598 BCE (23.2%) or between 1593 and 1540 BCE (72.3%)",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "gap-to-plato",
+   "what": "Years between the eruption (about 1600 BCE) and Plato's date for the sinking (about 9600 BCE)",
+   "value": 8000,
+   "unit": "years (our subtraction)",
+   "plato_claim": "nine-thousand-years",
+   "plato_value": "9,000 years before the telling (Timaeus 23e)",
+   "source": "https://doi.org/10.1126/science.1125087",
+   "evidence": "constrain the eruption date to the range 1627-1600 B.C. with 95.4% probability",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "caldera-size",
+   "what": "Size of the flooded caldera today",
+   "value": 10,
+   "unit": "km long (7 km wide)",
+   "plato_claim": "ring-widths",
+   "plato_value": "Whole city 27 stades across: 5 for the island plus rings of 1, 2, 2, 3 and 3 each side (Critias 115e-116a); about 5.0 km at 185 m a stade",
+   "source": "https://www.nature.com/articles/ncomms13332",
+   "evidence": "The LBA caldera is 10 × 7 km wide, comprises three flat-floored basins around the Kameni edifices",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "pre-island-size",
+   "what": "Width of the lost central island if round, from our trace of the Druitt 2014 and Athanassas 2016 outlines",
+   "value": 3.4,
+   "unit": "km (3.3 to 3.5; 4.6 for the 1992 outline)",
+   "plato_claim": "central-island-diameter",
+   "plato_value": "5 stades across, about 925 m at 185 m a stade (Critias 116a)",
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "a 2.4 km3 Pre-Kameni island (with ideal low dome shape) in the centre of the flooded bay",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "pre-island-volume",
+   "what": "Volume of the lost island (Pre-Kameni)",
+   "value": 2.35,
+   "range": [
+    2.2,
+    2.5
+   ],
+   "unit": "km3",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "constrain the volume of Pre-Kameni to 2.2–2.5 km3.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "eruption-volume-karatson",
+   "what": "Volume of the eruption deposits, bulk and as solid rock (DRE)",
+   "value": 82,
+   "range": [
+    78,
+    86
+   ],
+   "unit": "km3 DRE (117 to 129 km3 bulk)",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "The Minoan eruptive products may comprise up to 117–129 km3 bulk volume, corresponding to 78–86 km3 DRE",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "eruption-volume-nomikou",
+   "what": "Volume of the eruption as given by Nomikou and others",
+   "value": 55,
+   "range": [
+    30,
+    80
+   ],
+   "unit": "km3 DRE",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://www.nature.com/articles/ncomms13332",
+   "evidence": "discharging 30–80 km3 DRE (dense-rock equivalent) of silicic pyroclastic deposits",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "tsunami-palaikastro",
+   "what": "Height the tsunami reached on the Cretan coast at Palaikastro",
+   "value": 9,
+   "unit": "m run-up, at least",
+   "plato_claim": "sank-in-a-day-and-night",
+   "plato_value": "\"violent earthquakes and floods\"; the island sank in a day and night (Timaeus 25c-d)",
+   "source": "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Crete-Cyprus/Palaikastro-Bruins2008.pdf",
+   "evidence": "Field evidence suggests that tsunami waves at Palaikastro were at least 9 m high.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "tsunami-santorini",
+   "what": "Height above sea level of a layer read as a tsunami deposit on Santorini",
+   "value": 11,
+   "range": [
+    10,
+    12
+   ],
+   "unit": "m above sea level",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://www.nature.com/articles/ncomms13332",
+   "evidence": "a sediment layer interpreted as a tsunami deposit on Santorini 10–12 m above sea level",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "flooding-time",
+   "what": "Time for the sea to refill the caldera through the north-west strait",
+   "value": 2,
+   "unit": "days at most",
+   "plato_claim": "sank-in-a-day-and-night",
+   "plato_value": "one day and night (Timaeus 25c-d)",
+   "source": "https://www.nature.com/articles/ncomms13332",
+   "evidence": "thus filling the caldera in less than a couple of days.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "pumice-thickness",
+   "what": "Thickness of the Minoan pumice layer in the caldera wall at Phira",
+   "value": 60,
+   "unit": "m, more than",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://www.nature.com/articles/s41598-023-33696-w",
+   "evidence": "buried under the > 60-m-thick Minoan pumice layer exposed in the caldera wall",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "caldera-depth",
+   "what": "Sea-floor depth at the drill sites in the two caldera basins",
+   "value": 382,
+   "unit": "m in the north basin (291 to 292 m in the south basin)",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1596.pdf",
+   "evidence": "It lies at a water depth of 382 meters below sea level (mbsl)",
+   "kind": "cruise-report"
+  },
+  {
+   "id": "island-area",
+   "what": "Land area of Thera, Therasia and Aspronisi today (polygon area, our calculation from OpenStreetMap)",
+   "value": 85,
+   "unit": "km2",
+   "plato_claim": "larger-than-libya-and-asia",
+   "plato_value": "larger than Libya and Asia put together (Timaeus 24e; Critias 108e)",
+   "source": "https://www.nature.com/articles/s41598-018-25301-2",
+   "evidence": "the present-day islands of Thera, Therasia and Aspronisi, which are arranged in a ring around a flooded caldera.",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "distance-pillars",
+   "what": "Distance from the middle of the caldera to the Strait of Gibraltar (centre point), straight line",
+   "value": 2762,
+   "unit": "km (our calculation)",
+   "plato_claim": "beyond-pillars",
+   "plato_value": "an island \"in front of\" the Pillars of Heracles, outside the strait (Timaeus 24e)",
+   "source": "https://en.wikipedia.org/wiki/Strait_of_Gibraltar",
+   "evidence": "\"wgCoordinates\":{\"lat\":35.95,\"lon\":-5.5}",
+   "kind": "press"
+  },
+  {
+   "id": "distance-palaikastro",
+   "what": "Distance from the middle of the caldera to Palaikastro in eastern Crete",
+   "value": 156,
+   "unit": "km (our calculation)",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://www.openstreetmap.org/way/35535089",
+   "evidence": "OSM way 35535089, Roussolakkos (Paleokastro Minoan Town)",
+   "kind": "dataset"
+  },
+  {
+   "id": "dating-1969",
+   "what": "Eruption date given in 1969 by a critic reviewing Atlantis books, from archaeology",
+   "value": 1512.5,
+   "range": [
+    1525,
+    1500
+   ],
+   "unit": "BCE",
+   "plato_claim": "nine-thousand-years",
+   "plato_value": "about 9600 BCE",
+   "source": "https://www.nybooks.com/articles/1969/12/04/back-to-atlantis/",
+   "evidence": "thus fixing the eruption in the period 1525-1500 B.C.",
+   "kind": "press"
+  }
+ ],
+ "story": [
+  {
+   "step": 1,
+   "side": "claimed",
+   "line": "In 1939 Marinatos tied the end of Minoan palaces to a Thera eruption. Galanopoulos and Luce later said that eruption inspired Plato's sunken island.",
+   "show": [
+    "claim-thera"
+   ],
+   "search_id": "marinatos-volcanic-destruction-1939"
+  },
+  {
+   "step": 2,
+   "side": "checked",
+   "line": "From 1967 Marinatos dug Akrotiri and found a real Bronze Age town under the ash. It proved the eruption but not the Plato link.",
+   "show": [
+    "dig-akrotiri"
+   ],
+   "search_id": "akrotiri-excavation-1967"
+  },
+  {
+   "step": 3,
+   "side": "checked",
+   "line": "Radiocarbon on olive branches from Phira and Therasia dates the eruption to the 17th or 16th century BCE. Plato's date is about 8,000 years earlier.",
+   "show": [
+    "sample-phira-olive",
+    "sample-therasia-olive"
+   ],
+   "search_id": "thera-eruption-radiocarbon-2006"
+  },
+  {
+   "step": 4,
+   "side": "found",
+   "line": "On Crete, about 155 km away, Palaikastro holds a layer read as a tsunami at least 9 m high, laid down just after the first ash.",
+   "show": [
+    "dig-palaikastro"
+   ],
+   "search_id": null
+  },
+  {
+   "step": 5,
+   "side": "found",
+   "line": "Before the eruption the caldera held a shallow lagoon with a central island. Models differ on its shape. It was blown apart; the Kameni islands grew later.",
+   "show": [
+    "pre-island-druitt1992",
+    "pre-lagoon-druitt2014",
+    "pre-island-druitt2014",
+    "pre-island-athanassas2016",
+    "ctx-kameni-nea",
+    "ctx-kameni-palea"
+   ],
+   "search_id": null
+  },
+  {
+   "step": 6,
+   "side": "checked",
+   "line": "Ships mapped the strait and seismic lines show the sea broke in after the eruption and refilled the caldera in under two days.",
+   "show": [
+    "area-nw-strait",
+    "track-nw-strait-axis",
+    "track-nw-strait-cross",
+    "out-nw-headwall",
+    "out-nw-channel-east",
+    "out-nw-channel-west"
+   ],
+   "search_id": null
+  },
+  {
+   "step": 7,
+   "side": "checked",
+   "line": "In 2023 IODP drilled the caldera floor and the sea around it, to read the ash and flows that Santorini and Kolumbo laid down.",
+   "show": [
+    "core-u1594",
+    "core-u1595",
+    "core-u1596",
+    "core-u1597",
+    "core-u1590",
+    "core-u1593",
+    "core-u1591",
+    "core-u1598",
+    "ctx-kolumbo"
+   ],
+   "search_id": null
+  }
+ ],
+ "not_located": [
+  {
+   "what": "Mavor's 1966 Woods Hole survey off Thera (ship, seismic or sonar lines)",
+   "why": "No source I could open gives positions or a track. WHOI's 2021 article and Atlantipedia only say Mavor and others 'found evidence of a Minoan city dating to 1,400 B.C.E.' and cruised the central bay in the ship Chain. Mavor's 1969 book was not read.",
+   "source": "https://www.whoi.edu/news-insights/content/how-a-newly-established-oceanographic-institution-in-woods-hole-searched-for-the-lost-city-of-atlantis/"
+  },
+  {
+   "what": "Galanopoulos's ringed island in the caldera and his factor-of-ten reading of Plato's numbers",
+   "why": "His map of a ring-shaped island is in the 1969 book (Galanopoulos and Bacon), which is not open. Only a secondary summary of the factor-of-ten idea was read (Atlantipedia). Nothing drawn, so nothing is placed.",
+   "source": "https://atlantipedia.ie/samples/tag/a-g-galanopoulos"
+  },
+  {
+   "what": "Marinatos 1939 and Frost 1913 (Minoan Crete)",
+   "why": "Both are about palace destruction layers on Crete, with no Thera positions; only the abstracts were read, and neither abstract names Atlantis in connection with Thera.",
+   "source": "https://doi.org/10.1017/s0003598x00028088"
+  },
+  {
+   "what": "Tsunami layer on Santorini 10 to 12 m above sea level",
+   "why": "Nomikou and others cite it ('ref. 37') but give no place, and I did not read that source.",
+   "source": "https://www.nature.com/articles/ncomms13332"
+  },
+  {
+   "what": "Depth of burial and full extent of the town at Akrotiri",
+   "why": "No number found in sources I could read; the Ministry of Culture page returned no data. Only the roof polygon is placed.",
+   "source": "https://en.wikipedia.org/wiki/Akrotiri_(prehistoric_city)"
+  },
+  {
+   "what": "Heiken and McCoy 1984 southern caldera, Friedrich 1988 and Pichler 1972 outlines",
+   "why": "Drawn in the same small inset but not traced: the first is an open line, and the other two registered poorly to the coast (overlap 0.62 to 0.73). Druitt and others 1999 showed the southern caldera was filled in long before 1600 BCE.",
+   "source": "https://www.nature.com/articles/s41598-018-25301-2"
+  },
+  {
+   "what": "IODP site U1589",
+   "why": "Its summary gives no coordinates in the text I could read (10 km south-west of Amorgos, Anhydros Basin).",
+   "source": "https://iodp.tamu.edu/scienceops/sitesumm/398/398_ss1589.pdf"
+  }
+ ],
+ "handoffs": [
+  {
+   "lane": "data/site-data (santorini)",
+   "what": "Open 58 m sea-floor grid SantoriniArea (HCMR) is the best open picture of the caldera floor; the 5 m Nomikou grids are on request only.",
+   "url": "https://downloads.emodnet-bathymetry.eu/high_resolution/269_SantoriniArea.emo.zip"
+  },
+  {
+   "lane": "evidence/kolumbo or Aegean volcanic field (if one exists)",
+   "what": "Kolumbo 2010 ROV dives and 1650 eruption; IODP 398 Kolumbo sites U1590 and U1593 are here only as flank cores.",
+   "url": "https://en.wikipedia.org/wiki/Kolumbo"
+  },
+  {
+   "lane": "library",
+   "what": "Add Nomikou 2016, Karatson 2018, Pearson 2023 (all open access) and Bruins 2008 to the catalog.",
+   "url": "https://www.nature.com/articles/ncomms13332"
+  }
+ ],
+ "not_verified": [
+  "Druitt and Francaviglia 1992, Athanassas and others 2016, Heiken and McCoy 1984: their papers were not opened; outlines come from Karatson 2018's inset of them.",
+  "Friedrich 2006 supplement (find spot of the olive branch): not read; the quarry is named by Pearson 2023.",
+  "Manning 2006 and Pearson 2018 were read as abstracts only (Crossref, Europe PMC). Cherubini 2014 and Manning 2014 not fetched.",
+  "IODP Proceedings volume 398 chapters returned 403; the preliminary site summaries were used instead and are not peer reviewed.",
+  "Marinatos 1939 postscript by the Antiquity editors is reported by Wikipedia via the shared data file; not read.",
+  "Galanopoulos 1960 and 1969, Luce 1969 and Mavor 1969 books not read.",
+  "Wikipedia says the 2015 to 2019 cruises give 28 to 41 km3 DRE and a tsunami 35 to 150 m high; neither was checked against a paper, so neither is used.",
+  "Greek Ministry of Culture page for Akrotiri not reachable; the Akrotiri outline is from OpenStreetMap."
+ ]
+}

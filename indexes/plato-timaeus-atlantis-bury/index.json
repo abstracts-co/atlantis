@@ -1,0 +1,175 @@
+{
+  "id": "plato-timaeus-atlantis-bury",
+  "title": "Plato, Timaeus 17a-27b, the Atlantis story (English, R. G. Bury, 1929)",
+  "source": {
+    "url": "https://github.com/PerseusDL/canonical-greekLit/blob/7fd4dae30f1d2176c3c6f64c0750f6f39cd972f3/data/tlg0059/tlg031/tlg0059.tlg031.perseus-eng2.xml",
+    "publisher": "Perseus Digital Library, Tufts University (Loeb Classical Library text, Harvard UP and Heinemann)",
+    "date": "1929",
+    "pages": 13,
+    "file": "work/plato/tlg0059.tlg031.perseus-eng2.xml",
+    "sha256": "ca607ac9281d404e101e7cd66f7a02ba16725a68b71cf16197898ae49a9cdb1d",
+    "license": "Public domain (text of a 1929 translation); Perseus encoding not copied",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "language": "en",
+  "kind": "ancient-text",
+  "summary": "R. G. Bury's English translation of Plato's Timaeus from its opening to the end of the Atlantis story: where Solon, the Egyptian priest and Critias first give the Atlantis tale, with Stephanus references on every leaf and his footnotes. Cite by Stephanus number.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "method": "Hand-built tree. Plain text extracted from the Perseus TEI file (markup dropped; Stephanus milestones kept as [115c] markers; Loeb footnotes kept at the end of each leaf). Leaves are groups of Stephanus sections chosen by subject, titled with the reference range. No language model was used.",
+    "models": []
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Opening and the recap of yesterday (17a-19b)",
+      "start_page": 1,
+      "end_page": 2,
+      "summary": "The party assembles and Socrates recapitulates the ideal state of the Republic.",
+      "nodes": [
+        {
+          "node_id": "0002",
+          "title": "Timaeus 17a-17b: the absent fourth guest and the plan for the day",
+          "start_page": 1,
+          "end_page": 1,
+          "summary": "Socrates counts three of his four guests of yesterday; Timaeus says the fourth is ill. The three present agree to supply the missing share of the discourse.",
+          "nodes": []
+        },
+        {
+          "node_id": "0003",
+          "title": "Timaeus 17c-19a: Socrates recaps the ideal state from the Republic: guardians, women and children",
+          "start_page": 2,
+          "end_page": 2,
+          "summary": "Socrates summarises the constitution of the day before: separation of classes, guardians trained in war and philosophy, no private property, shared roles for women, communal child-rearing and selective breeding.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0004",
+      "title": "Socrates's request and Critias's story begins (19b-21d)",
+      "start_page": 3,
+      "end_page": 4,
+      "summary": "Socrates asks to see his state in action; Critias offers a story from Solon.",
+      "nodes": [
+        {
+          "node_id": "0005",
+          "title": "Timaeus 19b-20c: Socrates wants to see the ideal state at war; Timaeus, Critias and Hermocrates agree",
+          "start_page": 3,
+          "end_page": 3,
+          "summary": "Socrates compares his state to beautiful animals at rest and says he wants to see it in motion, at war. Neither poets nor sophists suit the task, but his three guests do, and they agree to give him this feast of words.",
+          "nodes": []
+        },
+        {
+          "node_id": "0006",
+          "title": "Timaeus 20d-21d: Critias introduces his story from Solon and how he first heard it at age ten",
+          "start_page": 4,
+          "end_page": 4,
+          "summary": "Critias offers a true story told to Solon by Egyptian priests and handed down through Dropides and his grandfather. He first heard it as a boy of ten at the festival of Apaturia, when the old Critias recited Solon's verses.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0007",
+      "title": "Solon in Egypt (21e-23e)",
+      "start_page": 5,
+      "end_page": 7,
+      "summary": "Solon at Sais, the priest's rebuke of Greek ignorance of the past, and the Egyptian archive.",
+      "nodes": [
+        {
+          "node_id": "0008",
+          "title": "Timaeus 21e-22b: Sais, the goddess Neith, and the priest's remark that Greeks are always children",
+          "start_page": 5,
+          "end_page": 5,
+          "summary": "Critias describes Sais in the Nile Delta, whose patron goddess is Neith, whom the Greeks call Athena. Solon finds the Greeks ignorant of ancient history, and an old priest tells him that Greeks are always children, with no old knowledge.",
+          "nodes": []
+        },
+        {
+          "node_id": "0009",
+          "title": "Timaeus 22c-23b: periodic destruction of mankind by fire and water; Egypt is spared and keeps the records",
+          "start_page": 6,
+          "end_page": 6,
+          "summary": "The priest explains that humanity is destroyed in turn by fire and water, as in the Phaethon story. Greek highlanders and cities suffer while Egypt, watered from below, is spared and keeps the records. Greeks lose letters and begin again like children.",
+          "nodes": []
+        },
+        {
+          "node_id": "0010",
+          "title": "Timaeus 23c-23e: Athens is older than Egypt: 9,000 years against 8,000",
+          "start_page": 7,
+          "end_page": 7,
+          "summary": "The priest says Athens survived from a seed of people left after the greatest destruction. Athens was founded by the goddess 9,000 years ago, and Sais 1,000 years after, so Egypt's records cover 8,000 years.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0011",
+      "title": "Ancient Athens and the island of Atlantis (24a-25e)",
+      "start_page": 8,
+      "end_page": 10,
+      "summary": "The laws of ancient Athens, then the priest's account of Atlantis, the war and the sinking.",
+      "nodes": [
+        {
+          "node_id": "0012",
+          "title": "Timaeus 24a-24d: the laws of ancient Athens: classes, arms and the goddess's choice of the site",
+          "start_page": 8,
+          "end_page": 8,
+          "summary": "The priest sets out the ancient Athenian order: separate classes of priests, craftsmen, farmers and warriors, shields and spears, a study of the cosmos and medicine. The goddess chose the place because its climate would breed men like herself.",
+          "nodes": []
+        },
+        {
+          "node_id": "0013",
+          "title": "Timaeus 24e-25a: Atlantis opposite the Pillars of Heracles, larger than Libya and Asia, and the way to other islands",
+          "start_page": 9,
+          "end_page": 9,
+          "summary": "The priest names Athens's greatest deed: stopping a mighty host from the Atlantic. Beyond the strait lay an island larger than Libya and Asia together, from which travellers could reach other islands and the opposite continent around the true ocean.",
+          "nodes": []
+        },
+        {
+          "node_id": "0014",
+          "title": "Timaeus 25b-25d: the empire, the war with Athens, and the earthquakes and floods that sank Atlantis",
+          "start_page": 10,
+          "end_page": 10,
+          "summary": "The island's kings ruled Libya to Egypt and Europe to Tyrrhenia, then attacked. Athens led the defence and won. Later, violent earthquakes and floods within one dreadful day and night swallowed the Athenian army and Atlantis, leaving the sea there impassable shoal and mud.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0015",
+      "title": "Critias's recall and the plan of the feast (25e-27b)",
+      "start_page": 11,
+      "end_page": 13,
+      "summary": "How Critias remembered the story, his plan to treat the ancient Athenians as Socrates's ideal citizens, and the order of speakers.",
+      "nodes": [
+        {
+          "node_id": "0016",
+          "title": "Timaeus 25e-26c: Critias recalls how closely the story fits Socrates's ideal state and recovers it overnight",
+          "start_page": 11,
+          "end_page": 11,
+          "summary": "Critias says he was struck by how well Socrates's account matched the priest's. He did not trust his memory, so he went over the story during the night and could recite it clearly again.",
+          "nodes": []
+        },
+        {
+          "node_id": "0017",
+          "title": "Timaeus 26d-26e: the ancient Athenians as the real citizens of Socrates's ideal city",
+          "start_page": 12,
+          "end_page": 12,
+          "summary": "Critias proposes to treat the ideal city as ancient Athens and Socrates's citizens as the real ancestors. Socrates agrees that this story suits the festival of the goddess.",
+          "nodes": []
+        },
+        {
+          "node_id": "0018",
+          "title": "Timaeus 27a-27b: order of speakers: Timaeus on the cosmos, Critias on Athens and Atlantis",
+          "start_page": 13,
+          "end_page": 13,
+          "summary": "Critias sets out the order of the feast: Timaeus speaks from the birth of the universe to the creation of human beings; Critias then takes those people and Solon's account of the old Athenians, and brings them to judgment as citizens.",
+          "nodes": []
+        }
+      ]
+    }
+  ]
+}

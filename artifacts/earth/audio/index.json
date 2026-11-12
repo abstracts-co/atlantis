@@ -1,0 +1,151 @@
+{
+ "what": "The story spoken, and the sound effects, for the globe. Made by build/make-audio.mjs.",
+ "narration": {
+  "477ba9cf": {
+   "file": "story-477ba9cf.mp3",
+   "id": "tale",
+   "text": "It begins with Plato, who has it told as “a tale which, though strange, is certainly true”.",
+   "said": "It begins with Plato, who has it told as “a tale which, though strange, is certainly true”.",
+   "seconds": 7.27
+  },
+  "9ee0fb8e": {
+   "file": "story-9ee0fb8e.mp3",
+   "id": "island",
+   "text": "Beyond the Pillars of Heracles, out in the Atlantic, lay an island “larger than Libya and Asia put together”.",
+   "said": "Beyond the Pillars of Heracles, out in the Atlantic, lay an island “larger than Libya and Asia put together”.",
+   "seconds": 7.59
+  },
+  "f3fc592d": {
+   "file": "story-f3fc592d.mp3",
+   "id": "city",
+   "text": "At its heart stood a city of rings: sea, then land, then sea again. A temple coated with silver. A wall that “sparkled like fire”.",
+   "said": "At its heart stood a city of rings: sea, then land, then sea again. A temple coated with silver. A wall that “sparkled like fire”.",
+   "seconds": 11.34
+  },
+  "2359c097": {
+   "file": "story-2359c097.mp3",
+   "id": "fall",
+   "text": "Then, “in a single day and night of misfortune”, Atlantis “disappeared in the depths of the sea”.",
+   "said": "Then, “in a single day and night of misfortune”, Atlantis “disappeared in the depths of the sea”.",
+   "seconds": 7.37
+  },
+  "c1b5be7e": {
+   "file": "story-c1b5be7e.mp3",
+   "id": "date",
+   "text": "Plato sets this nine thousand years before Solon: about 9600 BCE. That part can be checked.",
+   "said": "Plato sets this nine thousand years before Solon: about 9600 BCE. That part can be checked.",
+   "seconds": 8.68
+  },
+  "cf4d656f": {
+   "file": "story-cf4d656f.mp3",
+   "id": "sank",
+   "text": "The sea stood about 50 m lower then. Since that date, 10.9 million km² of land have gone under. All of it is glowing now.",
+   "said": "The sea stood about 50 metres lower then. Since that date, 10.9 million square kilometres of land have gone under. All of it is glowing now.",
+   "seconds": 10.71
+  },
+  "f15baa91": {
+   "file": "story-f15baa91.mp3",
+   "id": "scored",
+   "text": "We tested every 10 km of it against his words. Nothing on Earth scores 5 of 5. The closest, the Great Bahama Bank, scores 4: a match in the landscape, not a city.",
+   "said": "We tested every 10 kilometres of it against his words. Nothing on Earth scores 5 of 5. The closest, the Great Bahama Bank, scores 4: a match in the landscape, not a city.",
+   "seconds": 13.06
+  },
+  "bfaff9d6": {
+   "file": "story-bfaff9d6.mp3",
+   "id": "search",
+   "text": "People have gone looking since 1679. Of 32 searches on record, 7 were shown wrong, 5 were corrected, and 8 are still open. Not one has found the city.",
+   "said": "People have gone looking since 1679. Of 32 searches on record, 7 were shown wrong, 5 were corrected, and 8 are still open. Not one has found the city.",
+   "seconds": 13.08
+  },
+  "24388c0f": {
+   "file": "story-24388c0f.mp3",
+   "id": "built",
+   "text": "So we built his city as he wrote it, each part tied to a line of his text.",
+   "said": "So we built his city as he wrote it, each part tied to a line of his text.",
+   "seconds": 5.66
+  },
+  "b93b2c45": {
+   "file": "story-b93b2c45.mp3",
+   "id": "hall",
+   "text": "At its centre he put a shrine, “reserved as holy ground, and encircled with a wall of gold”. We opened it. Inside is everything found so far, and everything still unknown.",
+   "said": "At its centre he put a shrine, “reserved as holy ground, and encircled with a wall of gold”. We opened it. Inside is everything found so far, and everything still unknown.",
+   "seconds": 13.31
+  },
+  "420750e6": {
+   "file": "story-420750e6.mp3",
+   "id": "turn",
+   "text": "Walk in. The search is yours now.",
+   "said": "Walk in. The search is yours now.",
+   "seconds": 2.85
+  }
+ },
+ "sfx": {
+  "ping": {
+   "file": "fx-ping.mp3",
+   "prompt": "A single clean submarine sonar ping, deep and resonant, with a long watery echo tail. No music.",
+   "seconds": 3,
+   "loop": false
+  },
+  "lock": {
+   "file": "fx-lock.mp3",
+   "prompt": "A short soft rising two-note chime, glassy and bright, like an instrument locking onto a target. No music, no voice.",
+   "seconds": 1,
+   "loop": false
+  },
+  "tick": {
+   "file": "fx-tick.mp3",
+   "prompt": "One crisp, clearly audible click of a mechanical switch being pressed. Close, dry, loud enough to hear plainly.",
+   "seconds": 0.48,
+   "loop": false
+  },
+  "rise": {
+   "file": "fx-rise.mp3",
+   "prompt": "A deep rumbling swell of sea water rising and flooding slowly over land, a low whoosh that builds then settles. No music.",
+   "seconds": 5,
+   "loop": false
+  },
+  "reveal": {
+   "file": "fx-reveal.mp3",
+   "prompt": "A deep cinematic boom with a long shimmering tail, the moment of a discovery. No melody, no voice.",
+   "seconds": 3.48,
+   "loop": false
+  },
+  "deep": {
+   "file": "fx-deep.mp3",
+   "prompt": "Deep underwater ambience: a slow low hum, distant muffled currents, faint far-off whale-like tones. Calm, continuous, no music.",
+   "seconds": 20,
+   "loop": true
+  },
+  "bed": {
+   "file": "fx-bed.mp3",
+   "prompt": "A slow dark ambient drone, mysterious and ancient: sustained low strings and a soft choir pad. No melody, no percussion, continuous.",
+   "seconds": 22,
+   "loop": true
+  },
+  "step": {
+   "file": "fx-step.mp3",
+   "prompt": "One single soft footstep of a leather sandal on smooth stone paving. Close, dry, quiet. Nothing else.",
+   "seconds": 0.48,
+   "loop": false
+  },
+  "city": {
+   "file": "fx-city.mp3",
+   "prompt": "A calm ancient harbour by the sea on a bright day: gentle water lapping against stone quays, a light steady breeze, a few distant gulls. Continuous, even, no music, no voices, no engines.",
+   "seconds": 22,
+   "loop": true
+  }
+ },
+ "voice": {
+  "name": "George - Warm, Captivating Storyteller",
+  "id": "JBFqnCBsd6RMkjVDRZzb",
+  "model": "eleven_v4",
+  "settings": {
+   "stability": 0.5,
+   "similarity_boost": 0.8,
+   "speed": 0.94
+  },
+  "manner": "[\"JBFqnCBsd6RMkjVDRZzb\",\"eleven_v4\",{\"stability\":0.5,\"similarity_boost\":0.8,\"speed\":0.94}]"
+ },
+ "made": "2026-11-12",
+ "credit": "Narration and sound effects generated with ElevenLabs."
+}

@@ -1,0 +1,98 @@
+{
+  "id": "bacon-new-atlantis-1627",
+  "title": "Francis Bacon, New Atlantis (1627)",
+  "source": {
+    "url": "https://www.gutenberg.org/ebooks/2434",
+    "publisher": "Project Gutenberg (ebook #2434, Michael Pullen and William Fishburne)",
+    "date": "1627",
+    "pages": 9,
+    "file": "work/pg/pg2434.txt",
+    "sha256": "9f65fa73f8c8aebd15b6e4decdd6708a1fb1a4b4c07ab351a3ddf218f2fa31d0",
+    "license": "Public domain (Francis Bacon died 1626; Project Gutenberg text)",
+    "license_url": "https://www.gutenberg.org/policy/permission.html"
+  },
+  "language": "en",
+  "kind": "book",
+  "summary": "Bacon's unfinished utopia of an island, Bensalem, ruled by a scientific foundation. It uses the name Atlantis, and calls America \"the great Atlantis\", but is not a theory about Plato's island. A key source for how the name travelled.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "Hand-built tree from the paragraph sequence of the text: the book has no chapter headings, so sections follow the story. No language model was used."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Introductory note",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "Rawley's and the editor's note on the work, published in 1627 after Bacon's death and left unfinished.",
+      "nodes": []
+    },
+    {
+      "node_id": "0002",
+      "title": "The voyage and arrival at Bensalem",
+      "start_page": 2,
+      "end_page": 2,
+      "summary": "A ship from Peru bound for China and Japan is blown off course, finds an unknown island, and is allowed to land after the crew answers questions and promises.",
+      "nodes": []
+    },
+    {
+      "node_id": "0003",
+      "title": "The Strangers' House, the ark and the letter of St Bartholomew",
+      "start_page": 3,
+      "end_page": 3,
+      "summary": "The crew is housed and cared for. A Christian ark arrives long ago with books and a letter from St Bartholomew, which explains the island's conversion.",
+      "nodes": []
+    },
+    {
+      "node_id": "0004",
+      "title": "The Governor's account: ancient navigation and the great Atlantis",
+      "start_page": 4,
+      "end_page": 4,
+      "summary": "The Governor says the island traded with the world 3,000 years ago and that the great Atlantis (America) flourished, then was destroyed by flood, leaving a thin and rude population.",
+      "nodes": []
+    },
+    {
+      "node_id": "0005",
+      "title": "King Solamona and the founding of Salomon's House",
+      "start_page": 5,
+      "end_page": 5,
+      "summary": "About 1,900 years ago King Solamona closed the island to foreign travel except for fact-finding voyages and founded Salomon's House, a society devoted to natural knowledge.",
+      "nodes": []
+    },
+    {
+      "node_id": "0006",
+      "title": "Life in Bensalem: the Feast of the Family and the laws of marriage",
+      "start_page": 6,
+      "end_page": 6,
+      "summary": "The narrator sees the Feast of the Family, an honour to fathers of thirty descendants, and talks to the Jewish merchant Joabin about Bensalem's chastity and marriage customs.",
+      "nodes": []
+    },
+    {
+      "node_id": "0007",
+      "title": "The Father of Salomon's House",
+      "start_page": 7,
+      "end_page": 7,
+      "summary": "A Father of Salomon's House arrives in procession, and the narrator is chosen to meet him privately.",
+      "nodes": []
+    },
+    {
+      "node_id": "0008",
+      "title": "Salomon's House: the end of the foundation, caves, towers, houses and instruments",
+      "start_page": 8,
+      "end_page": 8,
+      "summary": "The Father describes the aim of the foundation, then its caves, towers, lakes, engines, houses of health, orchards, gardens, workshops, light and sound, and other places of experiment.",
+      "nodes": []
+    },
+    {
+      "node_id": "0009",
+      "title": "Salomon's House: its staff, merchants of light, and ordinances",
+      "start_page": 9,
+      "end_page": 9,
+      "summary": "The Father lists the fellows and their duties, the \"merchants of light\" who travel abroad, and the rites and galleries, then blesses the narrator. The text breaks off.",
+      "nodes": []
+    }
+  ]
+}

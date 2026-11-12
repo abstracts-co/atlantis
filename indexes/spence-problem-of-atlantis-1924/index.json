@@ -1,0 +1,178 @@
+{
+  "id": "spence-problem-of-atlantis-1924",
+  "title": "Lewis Spence, The Problem of Atlantis (1924; second edition 1925)",
+  "source": {
+    "url": "https://archive.org/details/spence-the-problem-of-atlantis",
+    "publisher": "Internet Archive (user upload of the scan; Brentano's, New York, revised second edition, February 1925; first published May 1924)",
+    "date": "1925",
+    "pages": 19,
+    "file": "work/ia/spence.txt",
+    "sha256": "05b4e2b4112b4438419691bcdacbb90bcbebc538017eb78db620152ab0c29a2e",
+    "license": "Public domain (Lewis Spence died 3 March 1955, so UK copyright ended on 31 December 2025; published in 1924 and 1925, so US copyright has expired)",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "language": "en",
+  "kind": "book",
+  "summary": "A leading 1920s case for a real sunken Atlantic continent. It argues from geology, prehistory, myth and Central American and Egyptian archaeology; scholars do not accept the case. Useful for the history of the idea and for Spence's sources.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "Hand-built tree from the book's eighteen chapter headings (the contents page gives the printed page numbers, which are in the titles). Leaves are numbered in order; the text is the OCR of the upload with running heads removed, so OCR errors remain. No language model was used."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Front matter: title page, prefaces and contents",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "Title page of the second edition (Brentano's, New York), the preface to the second edition, the contents and the list of plates.",
+      "nodes": []
+    },
+    {
+      "node_id": "0002",
+      "title": "Ch. I (book pp. 1-10): The Atlantis of Plato",
+      "start_page": 2,
+      "end_page": 2,
+      "summary": "Spence introduces the persistence of the Atlantis legend and retells Plato's account of the island-continent sunk beneath the Atlantic.",
+      "nodes": []
+    },
+    {
+      "node_id": "0003",
+      "title": "Ch. II (book pp. 11-32): Plato's account examined",
+      "start_page": 3,
+      "end_page": 3,
+      "summary": "A critical look at Plato's account, in which Spence argues that earlier writers dismissed it too lightly. He compares the plan of Carthage with the plan of the Atlantean capital.",
+      "nodes": []
+    },
+    {
+      "node_id": "0004",
+      "title": "Ch. III (book pp. 33-45): The evidence from geology",
+      "start_page": 4,
+      "end_page": 4,
+      "summary": "An outline of geological time for non-scientific readers, followed by the geological evidence Spence offers for Atlantis, set in the Tertiary and the Ice Age.",
+      "nodes": []
+    },
+    {
+      "node_id": "0005",
+      "title": "Ch. IV (book pp. 46-56): The biological evidence",
+      "start_page": 5,
+      "end_page": 5,
+      "summary": "Spence says he will use only the biological evidence he thinks fairly supports the Atlantis hypothesis, and admits that much of what is offered is of far less value.",
+      "nodes": []
+    },
+    {
+      "node_id": "0006",
+      "title": "Ch. V (book pp. 57-72): The evidence from pre-history",
+      "start_page": 6,
+      "end_page": 6,
+      "summary": "Spence pictures Atlantis breaking up during the Ice Age and sending successive waves of people into Europe. He ties this to Plato's date of 9,000 years before Solon.",
+      "nodes": []
+    },
+    {
+      "node_id": "0007",
+      "title": "Ch. VI (book pp. 73-82): The third Atlantean invasion",
+      "start_page": 7,
+      "end_page": 7,
+      "summary": "He takes the Azilian-Tardenoisian people, found in Spain and France about 10,000 years ago, as the next invasion after the Cro-Magnons, and follows their remains.",
+      "nodes": []
+    },
+    {
+      "node_id": "0008",
+      "title": "Ch. VII (book pp. 83-91): The evidence from European tradition",
+      "start_page": 8,
+      "end_page": 8,
+      "summary": "European legends of lands that once lay in the Atlantic. Spence says others have collected them and gives a selection.",
+      "nodes": []
+    },
+    {
+      "node_id": "0009",
+      "title": "Ch. VIII (book pp. 92-102): The evidence from American tradition",
+      "start_page": 9,
+      "end_page": 9,
+      "summary": "Spence argues that if western Europe remembered the break-up of an Atlantic continent, American tribes would have echoed it, and turns to their traditions of cataclysm.",
+      "nodes": []
+    },
+    {
+      "node_id": "0010",
+      "title": "Ch. IX (book pp. 103-114): The evidence from American tradition, continued",
+      "start_page": 10,
+      "end_page": 10,
+      "summary": "Continues with American tradition, starting from Mexican water gods such as Tlaloc, whose festivals he reads as memories of a deluge.",
+      "nodes": []
+    },
+    {
+      "node_id": "0011",
+      "title": "Ch. X (book pp. 115-119): The Popol Vuh as an Atlantean record",
+      "start_page": 11,
+      "end_page": 11,
+      "summary": "Spence recalls his early doubts about the American origin of the Popol Vuh and argues that it holds traditions of an Atlantean past.",
+      "nodes": []
+    },
+    {
+      "node_id": "0012",
+      "title": "Ch. XI (book pp. 120-139): The evidence from Central American archaeology",
+      "start_page": 12,
+      "end_page": 12,
+      "summary": "He takes Maya culture as the best picture of civilisation in \"Antilia\", the last sub-continental fragment of Atlantis, and describes the architecture and art that he says link Central America with the Old World.",
+      "nodes": []
+    },
+    {
+      "node_id": "0013",
+      "title": "Ch. XII (book pp. 140-148): The evidence from Central American archaeology, continued",
+      "start_page": 13,
+      "end_page": 13,
+      "summary": "Continues with Maya sculpture and painting, such as the two-headed dragon at Copan, read as figures connected with cataclysm or the sea.",
+      "nodes": []
+    },
+    {
+      "node_id": "0014",
+      "title": "Ch. XIII (book pp. 149-162): The evidence from Egypt",
+      "start_page": 14,
+      "end_page": 14,
+      "summary": "Spence takes up the debated theory that Egyptian civilisation had an Atlantean origin and confines himself to evidence that he says links Egypt with the Atlantic world.",
+      "nodes": []
+    },
+    {
+      "node_id": "0015",
+      "title": "Ch. XIV (book pp. 163-181): Egyptian and American comparisons in the light of Atlantean research",
+      "start_page": 15,
+      "end_page": 15,
+      "summary": "He sets out the resemblances between Egyptian and American civilisations, citing the school of Professor G. Elliot Smith, and says they spring from one source.",
+      "nodes": []
+    },
+    {
+      "node_id": "0016",
+      "title": "Ch. XV (book pp. 182-196): The evidence from old Peru",
+      "start_page": 16,
+      "end_page": 16,
+      "summary": "Spence describes the architectural remains scattered over the western slope of the Peruvian Andes, among the most remarkable produced by the aboriginal American race, and their place in his argument.",
+      "nodes": []
+    },
+    {
+      "node_id": "0017",
+      "title": "Ch. XVI (book pp. 197-210): The geography and topography of Atlantis",
+      "start_page": 17,
+      "end_page": 17,
+      "summary": "Spence argues that the plan of the Atlantean capital was copied far and wide, and reconstructs the geography and topography of Atlantis.",
+      "nodes": []
+    },
+    {
+      "node_id": "0018",
+      "title": "Ch. XVII (book pp. 211-226): The Flood",
+      "start_page": 18,
+      "end_page": 18,
+      "summary": "Spence reviews the main flood accounts, Biblical and pagan, and asks whether they preserve a memory of the cataclysm that destroyed Atlantis.",
+      "nodes": []
+    },
+    {
+      "node_id": "0019",
+      "title": "Ch. XVIII (book pp. 227-232): Conclusion",
+      "start_page": 19,
+      "end_page": 19,
+      "summary": "Spence attempts to reconstruct life in Atlantis, admits that enthusiasm has at times outrun caution, and ends by calling the work the beginning of a quest for the bones of Atlantis.",
+      "nodes": []
+    }
+  ]
+}

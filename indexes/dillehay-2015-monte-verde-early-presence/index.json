@@ -1,0 +1,150 @@
+{
+  "id": "dillehay-2015-monte-verde-early-presence",
+  "title": "New Archaeological Evidence for an Early Human Presence at Monte Verde, Chile (Dillehay and others, 2015)",
+  "source": {
+    "url": "https://doi.org/10.1371/journal.pone.0141923",
+    "publisher": "Public Library of Science",
+    "date": "2015",
+    "pages": 27,
+    "file": "work/pdf/dillehay-2015-monte-verde.pdf",
+    "sha256": "e6fd29ba9498443141d59365a60112c0a6285577b4adc24e04c8448ec68a1fc5",
+    "license": "CC BY 4.0 (stated in the PDF; the PLoS ONE page links the 4.0 deed)",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "language": "en",
+  "kind": "paper",
+  "summary": "Presents new archaeological evidence for an early human presence at Monte Verde in Chile, in the long debate over when and how people first reached the Americas. Context for the world lane on who was where.",
+  "tool": {
+    "name": "PageIndex",
+    "version": "0.5.3",
+    "models": [
+      "claude-code/haiku"
+    ],
+    "method": "PageIndex Flash mode run through Claude Code (claude-code/haiku; doc_id pi-9165e485de694c1d969cdea12d716d36; store in out/pageindex). The tree follows the paper's own headings. I replaced PageIndex's model-written summaries, which contained numbers I could not stand behind, with short summaries of what each section covers, and tidied titles. Text is the PDF text layer by page."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Monte Verde (Dillehay and others 2015): the whole paper",
+      "start_page": 1,
+      "end_page": 24,
+      "summary": "The whole Monte Verde paper: new archaeological evidence for an early human presence at the site in Chile, set in the debate over when people first reached the Americas.",
+      "nodes": [
+        {
+          "node_id": "0002",
+          "title": "Abstract",
+          "start_page": 1,
+          "end_page": 2,
+          "summary": "The whole Monte Verde paper: new archaeological evidence for an early human presence at the site in Chile, set in the debate over when people first reached the Americas.",
+          "nodes": []
+        },
+        {
+          "node_id": "0003",
+          "title": "Introduction",
+          "start_page": 2,
+          "end_page": 5,
+          "summary": "Sets out the question and earlier work behind the Monte Verde study.",
+          "nodes": []
+        },
+        {
+          "node_id": "0004",
+          "title": "Materials and Methods",
+          "start_page": 5,
+          "end_page": 10,
+          "summary": "How the Monte Verde study was done: samples, measurements and analysis.",
+          "nodes": []
+        },
+        {
+          "node_id": "0005",
+          "title": "Chronology",
+          "start_page": 11,
+          "end_page": 14,
+          "summary": "Section on chronology in the Monte Verde study.",
+          "nodes": []
+        },
+        {
+          "node_id": "0006",
+          "title": "Material Remains",
+          "start_page": 14,
+          "end_page": 20,
+          "summary": "Section on material remains in the Monte Verde study.",
+          "nodes": [
+            {
+              "node_id": "0007",
+              "title": "Lithic assemblages",
+              "start_page": 14,
+              "end_page": 18,
+              "summary": "Section on lithic assemblages in the Monte Verde study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0008",
+              "title": "Burned features",
+              "start_page": 19,
+              "end_page": 19,
+              "summary": "Section on burned features in the Monte Verde study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0009",
+              "title": "Faunal remains",
+              "start_page": 19,
+              "end_page": 20,
+              "summary": "Section on faunal remains in the Monte Verde study.",
+              "nodes": []
+            },
+            {
+              "node_id": "0010",
+              "title": "Paleobotany",
+              "start_page": 20,
+              "end_page": 20,
+              "summary": "Section on paleobotany in the Monte Verde study.",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "node_id": "0011",
+          "title": "Discussion",
+          "start_page": 21,
+          "end_page": 21,
+          "summary": "What the authors make of the results of the Monte Verde study and how they compare them with other work.",
+          "nodes": []
+        },
+        {
+          "node_id": "0012",
+          "title": "Conclusion",
+          "start_page": 21,
+          "end_page": 23,
+          "summary": "The authors' conclusions from the Monte Verde study.",
+          "nodes": []
+        },
+        {
+          "node_id": "0013",
+          "title": "Supporting Information",
+          "start_page": 23,
+          "end_page": 24,
+          "summary": "Lists the supporting files and supplementary figures.",
+          "nodes": []
+        },
+        {
+          "node_id": "0014",
+          "title": "Monte Verde Tephra Strata, Figures, Supplements, Acknowledgments, and Author Contributions",
+          "start_page": 24,
+          "end_page": 24,
+          "summary": "Section on monte verde tephra strata, figures, supplements, acknowledgments, and author contributions in the Monte Verde study.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0015",
+      "title": "References",
+      "start_page": 25,
+      "end_page": 27,
+      "summary": "The reference list.",
+      "nodes": []
+    }
+  ]
+}

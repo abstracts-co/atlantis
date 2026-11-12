@@ -1,0 +1,125 @@
+{
+  "id": "frisch-2012-zooplankton-colonization-donana-ponds",
+  "title": "Strong Spatial Influence on Colonization Rates in a Pioneer Zooplankton Metacommunity (Frisch and others, 2012)",
+  "source": {
+    "url": "https://doi.org/10.1371/journal.pone.0040205",
+    "publisher": "Public Library of Science",
+    "date": "2012",
+    "pages": 10,
+    "file": "work/pdf/frisch-2012-zooplankton.pdf",
+    "sha256": "56aed3c35d6c5673c344d498f7c63609e63833ff01421b279ccd16b70ff7f209",
+    "license": "CC BY (Creative Commons Attribution License, as stated in the PDF and on the PLoS ONE page)",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "language": "en",
+  "kind": "paper",
+  "summary": "Measures how quickly zooplankton colonised 96 experimental ponds dug in 2004-2005 on the Caracoles estate in Doñana. The searches lane uses it to show that some oval \"circles\" in satellite photos are research ponds.",
+  "tool": {
+    "name": "PageIndex",
+    "version": "0.5.3",
+    "models": [
+      "claude-code/haiku"
+    ],
+    "method": "PageIndex Flash mode run through Claude Code (claude-code/haiku; doc_id pi-4f34296522b74bcb9527c7b064fcf6af; store in out/pageindex). The tree follows the paper's own headings. I replaced PageIndex's model-written summaries, which contained numbers I could not stand behind, with short summaries of what each section covers, and tidied titles. Text is the PDF text layer by page."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Abstract",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "The authors' summary: how quickly zooplankton colonised newly dug temporary ponds in the Doñana wetland restoration area, and how far space and local conditions explain it.",
+      "nodes": []
+    },
+    {
+      "node_id": "0002",
+      "title": "Introduction",
+      "start_page": 1,
+      "end_page": 2,
+      "summary": "Sets out the question and earlier work behind the Doñana pond colonisation study.",
+      "nodes": []
+    },
+    {
+      "node_id": "0003",
+      "title": "Materials and Methods",
+      "start_page": 2,
+      "end_page": 5,
+      "summary": "How the Doñana pond colonisation study was done: samples, measurements and analysis.",
+      "nodes": [
+        {
+          "node_id": "0004",
+          "title": "Experimental Ponds and Reference Ponds",
+          "start_page": 2,
+          "end_page": 3,
+          "summary": "Method: experimental ponds and reference ponds, as used in the Doñana pond colonisation study.",
+          "nodes": []
+        },
+        {
+          "node_id": "0005",
+          "title": "Sampling and Faunal Analysis",
+          "start_page": 3,
+          "end_page": 4,
+          "summary": "Method: sampling and faunal analysis, as used in the Doñana pond colonisation study.",
+          "nodes": []
+        },
+        {
+          "node_id": "0006",
+          "title": "Zooplankton Colonization Rates in Experimental and Reference Ponds",
+          "start_page": 4,
+          "end_page": 4,
+          "summary": "Method: zooplankton colonization rates in experimental and reference ponds, as used in the Doñana pond colonisation study.",
+          "nodes": []
+        },
+        {
+          "node_id": "0007",
+          "title": "Variation Partitioning",
+          "start_page": 4,
+          "end_page": 5,
+          "summary": "Method: variation partitioning, as used in the Doñana pond colonisation study.",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "node_id": "0008",
+      "title": "Results",
+      "start_page": 5,
+      "end_page": 7,
+      "summary": "The results of the Doñana pond colonisation study, with the evidence behind them.",
+      "nodes": []
+    },
+    {
+      "node_id": "0009",
+      "title": "Discussion",
+      "start_page": 7,
+      "end_page": 8,
+      "summary": "What the authors make of the results of the Doñana pond colonisation study and how they compare them with other work.",
+      "nodes": []
+    },
+    {
+      "node_id": "0010",
+      "title": "Supporting Information",
+      "start_page": 8,
+      "end_page": 9,
+      "summary": "Lists the supporting files and supplementary figures.",
+      "nodes": []
+    },
+    {
+      "node_id": "0011",
+      "title": "Supplementary figures, PCNM spatial maps, environmental variables, species list, and acknowledgments for pond zooplankton colonization study",
+      "start_page": 9,
+      "end_page": 9,
+      "summary": "Lists the supporting files and supplementary figures.",
+      "nodes": []
+    },
+    {
+      "node_id": "0012",
+      "title": "Author Contributions",
+      "start_page": 9,
+      "end_page": 10,
+      "summary": "Who designed, carried out and wrote the work.",
+      "nodes": []
+    }
+  ]
+}

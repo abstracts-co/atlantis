@@ -1,0 +1,34 @@
+{
+  "id": "pliny-nh-2-204-206-latin",
+  "title": "Pliny the Elder, Natural History 2.204-2.206 (Latin, C. Mayhoff, 1906)",
+  "source": {
+    "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Pliny_the_Elder/2*.html",
+    "publisher": "LacusCurtius (Bill Thayer), Latin text of Mayhoff's Teubner edition (1906)",
+    "date": "1906",
+    "pages": 1,
+    "file": "work/lc/L_Roman_Texts_Pliny_the_Elder_2_.html",
+    "sha256": "42f8050a36f843e65902a183248a1ac427bc0294a1e0d99c6312245aaed952bb",
+    "license": "Public domain (Latin text of a 1906 edition; the host marks the page public domain)",
+    "license_url": "https://penelope.uchicago.edu/Thayer/E/HELP/Copyright/home.html"
+  },
+  "language": "en",
+  "kind": "ancient-text",
+  "summary": "The Latin of Pliny's section on lands the sea has taken away. In 2.205 he says the sea took lands \"first of all where the Atlantic is, if we believe Plato\". The older English chapter numbers are 2.90-2.92 (Bostock and Riley). Latin only: no clean public-domain English text was available.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "Hand-built tree. The passage was cut from the source file by its own section anchors or line range; one leaf per passage, titled with the citation. No language model was used."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Pliny, Natural History 2.204-2.206 (older numbering 2.90-92): islands made and lost; lands taken by the sea \"if we believe Plato\"",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "Pliny lists islands nature has split off or joined to the mainland. In 2.205 he says the sea took away land \"first of all where the Atlantic is, if we believe Plato\", over a vast area, then lists drowned lands, then Helike and Bura in the Gulf of Corinth.",
+      "nodes": []
+    }
+  ]
+}

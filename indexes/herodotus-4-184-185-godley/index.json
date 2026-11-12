@@ -1,0 +1,42 @@
+{
+  "id": "herodotus-4-184-185-godley",
+  "title": "Herodotus, Histories 4.184-4.185 (English, A. D. Godley, Loeb, 1921)",
+  "source": {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/4G*.html",
+    "publisher": "LacusCurtius (Bill Thayer), from the Loeb Classical Library vol. II (1921)",
+    "date": "1921",
+    "pages": 2,
+    "file": "work/lc/E_Roman_Texts_Herodotus_4G_.html",
+    "sha256": "3a2d4e19f20946370c76548af624ba8cf79f6cab109e8fe3d58bfe403626e02b",
+    "license": "Public domain (the host states \"The text is in the public domain\"; Loeb 1921)",
+    "license_url": "https://penelope.uchicago.edu/Thayer/E/HELP/Copyright/home.html"
+  },
+  "language": "en",
+  "kind": "ancient-text",
+  "summary": "Herodotus (5th century BCE) on the Atlantes of north-west Africa, who take their name from Mount Atlas, the \"pillar of heaven\". A real people and a real mountain, long before Plato; often confused with Atlantis.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "Hand-built tree. The passage was cut from the source file by its own section anchors or line range; one leaf per passage, titled with the citation. No language model was used."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Herodotus 4.184: the Atarantes and Mount Atlas, whose people are the Atlantes",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "After the Garamantes come the Atarantes, who have no personal names, then a salt hill and the Atlas mountain, slender, round and cloud-capped. The people there, called Atlantes after the mountain, are said to eat no living thing and to see no dreams.",
+      "nodes": []
+    },
+    {
+      "node_id": "0002",
+      "title": "Herodotus 4.185: the ridge of salt hills to the Pillars of Heracles",
+      "start_page": 2,
+      "end_page": 2,
+      "summary": "Herodotus says he can name the peoples of the ridge as far as the Atlantes and knows that the ridge reaches the Pillars of Heracles and beyond. He describes the salt-block houses and the rainless region of Libya beyond.",
+      "nodes": []
+    }
+  ]
+}

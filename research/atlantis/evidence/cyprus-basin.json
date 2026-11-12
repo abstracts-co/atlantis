@@ -1,0 +1,899 @@
+{
+ "lane": "evidence/cyprus-basin",
+ "checked": "2026-11-11",
+ "site": {
+  "id": "cyprus-basin",
+  "hypothesis_id": "cyprus-basin",
+  "name": "Sea bed south-east of Cyprus (Sarmast, 2004)",
+  "centre": {
+   "lat": 34.75,
+   "lon": 34.6,
+   "how": "Rounded mid-point of the digitised BLAC survey outline, which also holds the area Sarmast describes. Not a feature.",
+   "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf"
+  },
+  "radius_km": 220,
+  "claimed": {
+   "line": "Sarmast said sonar showed a walled hill and 2 to 3 km walls, 1.5 km down, about 80 km south-east of Cyprus.",
+   "who": "Robert Sarmast",
+   "year": 2004,
+   "source": "https://www.nbcnews.com/news/amp/wbna6489620",
+   "evidence": "Deep-water sonar scanning had indicated human-made structures on a submerged hill, including a 2-mile-long (3-kilometer-long) wall, a walled hill summit and deep trenches, he said.",
+   "kind": "press"
+  },
+  "found": {
+   "line": "Ships mapped this sea bed in 2003 and read the hills as salt, mud-volcano and fault features; a 2009 paper is reported to reject the walls.",
+   "who": "Benkhelil, Hubscher and others",
+   "year": 2005,
+   "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+   "evidence": "complex surface deformation with small hills and linear depressions interpreted as due to the interaction between halokinetics, mud-diapirism and tectonics",
+   "kind": "peer-reviewed"
+  },
+  "needs_sea_level": {
+   "m": -1650,
+   "when": "within the last 11,000 years, as Sarmast dates the flood (between 10,000 and 30,000 BC in one report)",
+   "why": "Sarmast's own model draws the 'island' at 1,650 m below today's sea, so the Mediterranean would have had to be dry in human times.",
+   "source": "http://web.archive.org/web/20030808164902/http://discoveryofatlantis.com:80/800/3d_model.htm",
+   "evidence": "Model #2 shows the area at -1650 meters (almost one mile below today's water level), depicting the island as it would have appeared before the great flood that submerged Atlantis."
+  },
+  "best_layers": [
+   "emodnet-bathymetry-multicolour",
+   "gmrt-wms",
+   "gmrt-point-and-grid",
+   "noaa-ncei-multibeam-mosaic",
+   "emodnet-highres-outlines",
+   "gebco-tid-2024-noaa"
+  ]
+ },
+ "features": [
+  {
+   "id": "sarmast-claimed-site",
+   "side": "claimed",
+   "kind": "place",
+   "label": "Sarmast's claimed 'Atlantis' site",
+   "who": "Robert Sarmast",
+   "year": 2004,
+   "what": "Where Sarmast said his sonar found a walled hill and walls: about 80 km off the south-east coast of Cyprus, 1.5 km down.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     34.7007,
+     34.4494,
+     -1500
+    ]
+   },
+   "position": {
+    "how": "from-description",
+    "source": "https://www.nbcnews.com/news/amp/wbna6489620",
+    "detail": "Only words: '50 miles (80 kilometers) off the southeast coast of Cyprus', 'between Cyprus and Syria', 1.5 km deep. No coordinates were published in any source I could open. Point is 80 km from Cape Greco (OSM node 34.9597 N, 34.0838 E) on a south-east bearing (135 degrees). Reuters of 13 Nov 2004 says 70 miles (about 113 km) 'off the eastern coast of Cyprus toward Syria'. GMRT depth at this point is 1,828 m, so the 1.5 km depth fits a point a little to the east or south-east of it.",
+    "error_m": 40000
+   },
+   "column": null,
+   "search_id": "sarmast-cyprus-sonar-2004",
+   "source": "https://www.nbcnews.com/news/amp/wbna6489620",
+   "evidence": "led a team of explorers 50 miles (80 kilometers) off the southeast coast of Cyprus earlier this month. Deep-water sonar scanning had indicated human-made structures on a submerged hill",
+   "kind_of_source": "press",
+   "confidence": "low",
+   "notes": "The announced position is a description, not a fix. The Cyprus Mail (copy on Sarmast's site) says a Cyprus group gave a remote viewer 'Sarmast's co-ordinates', so Sarmast did have a position; I found it published nowhere. Keep the circle large."
+  },
+  {
+   "id": "blac-2003-survey",
+   "side": "checked",
+   "kind": "survey-area",
+   "label": "French BLAC survey, Oct-Nov 2003",
+   "who": "Benkhelil, Hubscher, Maillard, Tahchi and others (R/V Le Suroit)",
+   "year": 2003,
+   "what": "A ship mapped about 20,000 square km of sea bed between Cyprus and Syria with a multibeam echo-sounder and shot seismic lines on 88 tracks.",
+   "result": "The map shows the Larnaca-Latakia plateau, the Central domain at about 1,500 m, the Levantine basin at about 2,000 m and the Latakia Ridge; hills here are read as salt, mud-diapir and fault features.",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       34.8224,
+       35.8272
+      ],
+      [
+       34.757,
+       35.6151
+      ],
+      [
+       34.5421,
+       35.4956
+      ],
+      [
+       34.5327,
+       35.4609
+      ],
+      [
+       34.2336,
+       35.3182
+      ],
+      [
+       34.2944,
+       35.0019
+      ],
+      [
+       34.2383,
+       34.9749
+      ],
+      [
+       34.229,
+       34.8862
+      ],
+      [
+       34.0888,
+       34.8438
+      ],
+      [
+       34.0748,
+       34.813
+      ],
+      [
+       34.014,
+       34.7821
+      ],
+      [
+       33.7336,
+       34.7744
+      ],
+      [
+       33.7103,
+       34.7165
+      ],
+      [
+       33.6589,
+       34.7011
+      ],
+      [
+       33.6402,
+       34.6703
+      ],
+      [
+       33.6542,
+       34.57
+      ],
+      [
+       33.6542,
+       34.5623
+      ],
+      [
+       33.7009,
+       34.3193
+      ],
+      [
+       33.7477,
+       34.3078
+      ],
+      [
+       33.7477,
+       34.1458
+      ],
+      [
+       34.3131,
+       33.818
+      ],
+      [
+       34.4065,
+       33.845
+      ],
+      [
+       34.4065,
+       33.9298
+      ],
+      [
+       34.5374,
+       34.0725
+      ],
+      [
+       34.743,
+       34.4003
+      ],
+      [
+       34.9486,
+       34.5661
+      ],
+      [
+       35.0654,
+       34.5816
+      ],
+      [
+       35.2103,
+       34.7127
+      ],
+      [
+       35.3411,
+       34.7937
+      ],
+      [
+       35.4813,
+       34.9672
+      ],
+      [
+       35.5514,
+       34.9981
+      ],
+      [
+       35.5701,
+       35.0366
+      ],
+      [
+       35.757,
+       35.0405
+      ],
+      [
+       35.7617,
+       35.0598
+      ],
+      [
+       35.7617,
+       35.1948
+      ],
+      [
+       35.785,
+       35.2603
+      ],
+      [
+       35.7804,
+       35.4107
+      ],
+      [
+       35.6308,
+       35.5071
+      ],
+      [
+       35.5981,
+       35.5534
+      ],
+      [
+       35.5794,
+       35.6383
+      ],
+      [
+       35.6916,
+       35.8272
+      ],
+      [
+       34.8224,
+       35.8272
+      ]
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+    "detail": "Outline of the coloured bathymetry in Fig. 2 (bathymetric map with E 34 deg to 36 deg and N 34 deg to 35 deg 30 min ticks). Control: the five tick marks on each edge, checked against Beirut, Tripoli, Tartus, Larnaca and Latakia, which fall within 3 to 9 pixels (about 1 to 4 km) of their true positions. The thin strip running south from the Latakia Ridge is left out.",
+    "error_m": 4000
+   },
+   "column": null,
+   "search_id": null,
+   "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+   "evidence": "the BLAC cruise aboard the R/V Le Suroît (October–November 2003) was designed to investigate an area of 20 000 km 2 between Cyprus and the margin of Syria, using a Simrad EM300 multibeam system",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Dates 29 Oct to 16 Nov 2003 (French text). The paper does not mention Sarmast. Cyprus Mail (20 Nov 2004) quotes a German physicist and two colleagues who say they 'surveyed the same area last year'; Hubscher is a BLAC co-author but no source I read names the speakers. The outline is the whole mapped area, so it includes ground far from the claimed site."
+  },
+  {
+   "id": "blac-profile-09",
+   "side": "checked",
+   "kind": "track",
+   "label": "Profile 09 (BLAC seismic line)",
+   "who": "BLAC team (R/V Le Suroit)",
+   "year": 2003,
+   "what": "Crosses the outer deformation front between the Cyprus Basin and the Levantine basin.",
+   "result": "Fig. 3a: the outer deformation front rises between the Cyprus Basin (north-west) and the Levantine basin (south-east); salt (evaporites) lies under a thin Plio-Quaternary layer in the basin.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      34.0093,
+      34.5793
+     ],
+     [
+      34.0981,
+      34.209
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+    "detail": "Ends of the white line labelled Profil 09 in Fig. 2 (bathymetric map with E 34 deg to 36 deg and N 34 deg to 35 deg 30 min ticks). Control: the five tick marks on each edge, checked against Beirut, Tripoli, Tartus, Larnaca and Latakia, which fall within 3 to 9 pixels (about 1 to 4 km) of their true positions.",
+    "error_m": 2500
+   },
+   "column": null,
+   "search_id": null,
+   "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+   "evidence": "Fig. 3. Seismic reflection profiles across the eastern branch of the Cyprus Arc. PQ: Pliocene-Quaternary, V: mud diapir, RS: salt ridge. See Fig. 2 for the location of the profiles.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Shown on the map as a straight line; the paper prints no coordinates."
+  },
+  {
+   "id": "blac-profile-14",
+   "side": "checked",
+   "kind": "track",
+   "label": "Profile 14 (BLAC seismic line)",
+   "who": "BLAC team (R/V Le Suroit)",
+   "year": 2003,
+   "what": "Crosses the outer deformation front and the Levantine basin to the south-east.",
+   "result": "Fig. 3b: a narrow ridge at the outer front, then flat Levantine basin sediments (Plio-Quaternary) over salt with salt ridges (RS).",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      34.2458,
+      34.5368
+     ],
+     [
+      34.3336,
+      34.1805
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+    "detail": "Ends of the white line labelled Profil 14 in Fig. 2 (bathymetric map with E 34 deg to 36 deg and N 34 deg to 35 deg 30 min ticks). Control: the five tick marks on each edge, checked against Beirut, Tripoli, Tartus, Larnaca and Latakia, which fall within 3 to 9 pixels (about 1 to 4 km) of their true positions.",
+    "error_m": 2500
+   },
+   "column": null,
+   "search_id": null,
+   "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+   "evidence": "Fig. 3. Seismic reflection profiles across the eastern branch of the Cyprus Arc. PQ: Pliocene-Quaternary, V: mud diapir, RS: salt ridge. See Fig. 2 for the location of the profiles.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Shown on the map as a straight line; the paper prints no coordinates."
+  },
+  {
+   "id": "blac-profile-20",
+   "side": "checked",
+   "kind": "track",
+   "label": "Profile 20 (BLAC seismic line)",
+   "who": "BLAC team (R/V Le Suroit)",
+   "year": 2003,
+   "what": "Runs from the Larnaca-Latakia plateau across the Central domain to the Levantine basin.",
+   "result": "Fig. 3c shows a mud diapir (V) rising through the Central domain's sediments and salt ridges at the outer front.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      34.4467,
+      34.9094
+     ],
+     [
+      34.586,
+      34.3016
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+    "detail": "Ends of the white line labelled Profil 20 in Fig. 2 (bathymetric map with E 34 deg to 36 deg and N 34 deg to 35 deg 30 min ticks). Control: the five tick marks on each edge, checked against Beirut, Tripoli, Tartus, Larnaca and Latakia, which fall within 3 to 9 pixels (about 1 to 4 km) of their true positions.",
+    "error_m": 2500
+   },
+   "column": null,
+   "search_id": null,
+   "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+   "evidence": "Fig. 3. Seismic reflection profiles across the eastern branch of the Cyprus Arc. PQ: Pliocene-Quaternary, V: mud diapir, RS: salt ridge. See Fig. 2 for the location of the profiles.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Shown on the map as a straight line; the paper prints no coordinates. Profile 20 passes about 13 km from the point where Sarmast's site is described, which is well inside the 40 km uncertainty of that point; nothing says Sarmast's hill is on this line."
+  },
+  {
+   "id": "blac-profile-59",
+   "side": "checked",
+   "kind": "track",
+   "label": "Profile 59 (BLAC seismic line)",
+   "who": "BLAC team (R/V Le Suroit)",
+   "year": 2003,
+   "what": "Crosses the Latakia Ridge.",
+   "result": "Fig. 3d: the Latakia Ridge is a faulted high with older (pre-Messinian) rock under a thin cover.",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      35.4505,
+      35.4902
+     ],
+     [
+      35.5654,
+      35.4867
+     ],
+     [
+      35.6607,
+      35.3914
+     ]
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+    "detail": "Ends of the white line labelled Profil 59 in Fig. 2 (bathymetric map with E 34 deg to 36 deg and N 34 deg to 35 deg 30 min ticks). Control: the five tick marks on each edge, checked against Beirut, Tripoli, Tartus, Larnaca and Latakia, which fall within 3 to 9 pixels (about 1 to 4 km) of their true positions.",
+    "error_m": 2500
+   },
+   "column": null,
+   "search_id": null,
+   "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+   "evidence": "Fig. 3. Seismic reflection profiles across the eastern branch of the Cyprus Arc. PQ: Pliocene-Quaternary, V: mud diapir, RS: salt ridge. See Fig. 2 for the location of the profiles.",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "Shown on the map as a straight line; the paper prints no coordinates. The line has a bend, as drawn in the figure."
+  },
+  {
+   "id": "odp-160-965",
+   "side": "checked",
+   "kind": "core",
+   "label": "ODP Site 965, Eratosthenes Seamount",
+   "who": "ODP Leg 160 (JOIDES Resolution)",
+   "year": 1995,
+   "what": "Drilled and cored 250 m of sea bed in 1,507 m of water on the northern slope of the Eratosthenes Seamount.",
+   "result": "The top 23 m is marine nannofossil mud of Pleistocene to early Pliocene age; below it the rock is no older than about 6 million years. No dry-land deposits were reported in the preliminary report.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     32.7131,
+     33.918,
+     -1507
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://doi.org/10.1594/PANGAEA.272115",
+    "detail": "PANGAEA 272115, Hole/Core summary of ODP Site 160-965: latitude 33.918, longitude 32.7131, elevation -1507 m",
+    "error_m": 200
+   },
+   "column": [
+    {
+     "from_m": 0,
+     "to_m": 23,
+     "what": "nannofossil mud and ooze with sapropels, bioturbated",
+     "age": "Pleistocene to late early Pliocene (nannofossils, foraminifers)"
+    },
+    {
+     "from_m": 23,
+     "to_m": 250.4,
+     "what": "sparsely fossiliferous sediment and limestone",
+     "age": "provisionally no older than 6 Ma (late Miocene), nannofossils"
+    }
+   ],
+   "search_id": null,
+   "source": "https://www-odp.tamu.edu/publications/prelim/160PREL.TXT",
+   "evidence": "Unit I (0-23 mbsf) comprises 23 m of unconsolidated, extensively bioturbated nannofossil muds and nannofossil oozes, with sporadic sapropels and sapropelic layers.",
+   "kind_of_source": "cruise-report",
+   "confidence": "high",
+   "notes": "About 207 km west-south-west of the described Sarmast point, on a seamount, not in the Cyprus Basin. Its sea-floor depth (1,506.6 m in the report) happens to be close to Sarmast's 1.5 km. Wikipedia cites Sites 963, 965 and 966 for the date the basin last dried; I read the report for 965 and 966 only."
+  },
+  {
+   "id": "odp-160-966",
+   "side": "checked",
+   "kind": "core",
+   "label": "ODP Site 966, Eratosthenes Seamount",
+   "who": "ODP Leg 160 (JOIDES Resolution)",
+   "year": 1995,
+   "what": "Drilled and cored the sea bed in 926 m of water on the northern margin of the Eratosthenes Seamount plateau.",
+   "result": "The top 66 m is marine nannofossil ooze with more than 90 sapropel layers.",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     32.7014,
+     33.7964,
+     -926
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://doi.org/10.1594/PANGAEA.254462",
+    "detail": "PANGAEA 254462, Core/Section summary of ODP Hole 160-966C: latitude 33.7964, longitude 32.7014, elevation -926 m",
+    "error_m": 200
+   },
+   "column": [
+    {
+     "from_m": 0,
+     "to_m": 66,
+     "what": "greenish-gray to olive-green nannofossil ooze with more than 90 sapropel layers",
+     "age": "Plio-Quaternary"
+    }
+   ],
+   "search_id": null,
+   "source": "https://www-odp.tamu.edu/publications/prelim/160PREL.TXT",
+   "evidence": "Within Unit I, more than 90 discrete sapropels and sapropelic layers were identified.",
+   "kind_of_source": "cruise-report",
+   "confidence": "high",
+   "notes": "Unit I age is Plio-Quaternary as the report states the Plio-Quaternary succession was the objective here; I read no exact age for the unit."
+  },
+  {
+   "id": "cape-greco",
+   "side": "context",
+   "kind": "place",
+   "label": "Cape Greco (Cyprus)",
+   "who": "Wikidata",
+   "year": 2026,
+   "what": "The south-eastern cape of Cyprus, the nearest land to the claimed site.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     34.0167,
+     35.0
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.wikidata.org/wiki/Q1672526",
+    "detail": "Wikidata Q1672526, P625, precision 1 arc minute. OSM puts the cape node 8 km to the south-east at 34.9597 N, 34.0838 E.",
+    "error_m": 9000
+   },
+   "column": null,
+   "search_id": null,
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q1672526.json",
+   "evidence": "latitude 35, longitude 34.016666666667, precision 0.016666666666667",
+   "kind_of_source": "dataset",
+   "confidence": "high",
+   "notes": "The Wikidata point is coarse; use as a label only."
+  },
+  {
+   "id": "eratosthenes-seamount",
+   "side": "context",
+   "kind": "place",
+   "label": "Eratosthenes Seamount",
+   "who": "Wikidata",
+   "year": 2026,
+   "what": "A seamount south of Cyprus that has its own Atlantis claims; ODP Leg 160 drilled it.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     32.6667,
+     33.6667
+    ]
+   },
+   "position": {
+    "how": "from-dataset",
+    "source": "https://www.wikidata.org/wiki/Q1152200",
+    "detail": "Wikidata Q1152200, P625: 33.6667 N, 32.6667 E",
+    "error_m": 10000
+   },
+   "column": null,
+   "search_id": null,
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q1152200.json",
+   "evidence": "latitude 33.666666666667, longitude 32.666666666667",
+   "kind_of_source": "dataset",
+   "confidence": "high",
+   "notes": "Centre of a large feature; the drill sites are on its northern slope."
+  },
+  {
+   "id": "cyprus-basin",
+   "side": "context",
+   "kind": "place",
+   "label": "Cyprus Basin",
+   "who": "BLAC team",
+   "year": 2005,
+   "what": "A round depression of the sea bed, filled with thick young sediment, south-east of Cape Greco.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     34.028,
+     34.6973
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+    "detail": "Centre of the label 'Bassin de Chypre' and the light-blue depression beside it in Fig. 2 (bathymetric map with E 34 deg to 36 deg and N 34 deg to 35 deg 30 min ticks). Control: the five tick marks on each edge, checked against Beirut, Tripoli, Tartus, Larnaca and Latakia, which fall within 3 to 9 pixels (about 1 to 4 km) of their true positions.",
+    "error_m": 6000
+   },
+   "column": null,
+   "search_id": null,
+   "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+   "evidence": "the Cyprus basin, a synform filled with thick Plio-Quaternary sediments",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "A label position read off a small map; use as a name tag only."
+  },
+  {
+   "id": "hecataeus-rise",
+   "side": "context",
+   "kind": "place",
+   "label": "Hecataeus Rise",
+   "who": "BLAC team",
+   "year": 2005,
+   "what": "A raised, rough part of the sea bed at the western end of the Central domain.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     33.9112,
+     34.543
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+    "detail": "Centre of the yellow high labelled 'Monts Hecataeus' in Fig. 2 (bathymetric map with E 34 deg to 36 deg and N 34 deg to 35 deg 30 min ticks). Control: the five tick marks on each edge, checked against Beirut, Tripoli, Tartus, Larnaca and Latakia, which fall within 3 to 9 pixels (about 1 to 4 km) of their true positions.",
+    "error_m": 6000
+   },
+   "column": null,
+   "search_id": null,
+   "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+   "evidence": "the Hecataeus Rise is a structural high cut by sub-vertical faults bounding tilted blocks",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "A label position read off a small map; use as a name tag only."
+  },
+  {
+   "id": "latakia-ridge",
+   "side": "context",
+   "kind": "place",
+   "label": "Latakia Ridge",
+   "who": "BLAC team",
+   "year": 2005,
+   "what": "A shallow ridge, rising to about 150 m below the sea, at the north-east end of the surveyed area.",
+   "result": null,
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.6636,
+     35.4261
+    ]
+   },
+   "position": {
+    "how": "digitised-from-figure",
+    "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+    "detail": "Centre of the the red (shallowest, 150 m) part of the ridge labelled 'ride de Lattakie' in Fig. 2 (bathymetric map with E 34 deg to 36 deg and N 34 deg to 35 deg 30 min ticks). Control: the five tick marks on each edge, checked against Beirut, Tripoli, Tartus, Larnaca and Latakia, which fall within 3 to 9 pixels (about 1 to 4 km) of their true positions.",
+    "error_m": 6000
+   },
+   "column": null,
+   "search_id": null,
+   "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+   "evidence": "the Latakia Ridge, a shallow high rising up to −150 m below sea-level",
+   "kind_of_source": "peer-reviewed",
+   "confidence": "medium",
+   "notes": "A label position read off a small map; use as a name tag only."
+  }
+ ],
+ "measurements": [
+  {
+   "id": "claimed-depth",
+   "what": "Depth of the sea bed at Sarmast's claimed site, as he announced it",
+   "value": 1500,
+   "unit": "m",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://www.nbcnews.com/news/amp/wbna6489620",
+   "evidence": "lying a mile (1.5 kilometers) beneath sea level between Cyprus and Syria",
+   "kind": "press"
+  },
+  {
+   "id": "gmrt-depth-at-described-point",
+   "what": "Sea-bed depth today at the point 80 km south-east of Cape Greco (measured, GMRT grid)",
+   "value": 1828,
+   "unit": "m",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://www.gmrt.org/services/PointServer?latitude=34.4494&longitude=34.7007&format=json",
+   "evidence": "\"longitude\":\"34.7007\",\"latitude\":\"34.4494\",\"elevation\":\"-1828\"",
+   "kind": "dataset"
+  },
+  {
+   "id": "central-domain-depth",
+   "what": "Average depth of the Central domain of the Cyprus Arc, the band of sea bed between the plateau and the deep basin",
+   "value": 1500,
+   "unit": "m",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+   "evidence": "The Central domain is a 30-km wide curved rise, with an average depth of 1500 m",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "time-since-dry",
+   "what": "How long ago the Mediterranean was last refilled after drying out (Zanclean flood)",
+   "value": 5330000,
+   "unit": "years",
+   "plato_claim": "nine-thousand-years",
+   "plato_value": "9,000 years before the telling (Timaeus 23e; Critias 108e)",
+   "source": "https://www.nature.com/articles/nature08555",
+   "evidence": "The Atlantic waters found a way through the present Gibraltar Strait and rapidly refilled the Mediterranean 5.33 million years ago in an event known as the Zanclean flood",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "sediment-over-salt",
+   "what": "Depth of the strong reflector that marks the top of the Messinian salt under the sea floor of the Levantine basin",
+   "value": 500,
+   "unit": "m",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+   "evidence": "a strong reflector, at about 500 m below the sea-floor in the Levantine basin",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "salt-thickness",
+   "what": "Average thickness of the Messinian salt in a study area covering the eastern Levant Basin and the collision zone east of Cyprus",
+   "value": 1.5,
+   "unit": "km",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/6368/1/Dissertation.pdf",
+   "evidence": "the study area is composed of averagely 1.5 km thick Messinian evaporites which",
+   "kind": "peer-reviewed"
+  },
+  {
+   "id": "claimed-wall-length",
+   "what": "Length of the longer 'wall' Sarmast announced on the hill",
+   "value": 3,
+   "unit": "km",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://www.nbcnews.com/news/amp/wbna6489620",
+   "evidence": "including a 2-mile-long (3-kilometer-long) wall, a walled hill summit and deep trenches",
+   "kind": "press"
+  },
+  {
+   "id": "claimed-wall-length-bbc",
+   "what": "Length of each of the two 'walls' as the BBC reported them (two straight walls)",
+   "value": 2,
+   "unit": "km",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "http://web.archive.org/web/20041209085611/http://www.discoveryofatlantis.com:80/800/articles/bbc.htm",
+   "evidence": "including two straight, 2-km (1.25 mile) long walls on a hill",
+   "kind": "press"
+  },
+  {
+   "id": "claimed-hill-diameter",
+   "what": "Diameter of Sarmast's 'Acropolis hill', from his own list of matches with Plato",
+   "value": 4.8,
+   "unit": "km",
+   "plato_claim": "ring-widths",
+   "plato_value": "Rings of 3, 3, 2, 2 and 1 stades around an island of 5 stades: 5 + 2 x (1 + 2 + 2 + 3 + 3) = 27 stades across, about 5.0 km at 185 m a stade (Critias 115e-116a; the sum is arithmetic)",
+   "source": "http://web.archive.org/web/20040507212127/http://www.discoveryofatlantis.com:80/800/press_blueprint.htm",
+   "evidence": "The diameter of the Acropolis hill was roughly 3 miles (27 stades).",
+   "kind": "proponent-site"
+  },
+  {
+   "id": "distance-to-pillars",
+   "what": "Distance from the described site to the Strait of Gibraltar (computed by me from the point and Wikidata's coordinates for the strait, 35.9739 N, 5.5161 W)",
+   "value": 3630,
+   "unit": "km",
+   "plato_claim": "beyond-pillars",
+   "plato_value": "The island lay in front of the Pillars of Heracles (Timaeus 24e; Critias 108e); no distance given",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q36124.json",
+   "evidence": "Strait of Gibraltar, Wikidata Q36124, P625 latitude 35.97388888888889, longitude -5.516111111111111",
+   "kind": "dataset"
+  },
+  {
+   "id": "blac-area",
+   "what": "Area of sea bed mapped by the 2003 BLAC cruise",
+   "value": 20000,
+   "unit": "km2",
+   "plato_claim": null,
+   "plato_value": null,
+   "source": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf",
+   "evidence": "designed to investigate an area of 20 000 km 2 between Cyprus and the margin of Syria",
+   "kind": "peer-reviewed"
+  }
+ ],
+ "story": [
+  {
+   "step": 1,
+   "side": "claimed",
+   "line": "In 2003 Robert Sarmast's book 'Discovery of Atlantis' put the city on the sea bed south-east of Cyprus, a mile down.",
+   "show": [
+    "sarmast-claimed-site"
+   ],
+   "search_id": "sarmast-cyprus-sonar-2004"
+  },
+  {
+   "step": 2,
+   "side": "checked",
+   "line": "In Oct and Nov 2003 a French research ship mapped 20,000 square km of this sea bed and shot seismic lines across it.",
+   "show": [
+    "blac-2003-survey",
+    "blac-profile-09",
+    "blac-profile-14",
+    "blac-profile-20",
+    "blac-profile-59"
+   ],
+   "search_id": null
+  },
+  {
+   "step": 3,
+   "side": "claimed",
+   "line": "In Nov 2004 Sarmast sailed from Limassol for six days of sonar and announced a walled hill with walls 2 to 3 km long.",
+   "show": [
+    "sarmast-claimed-site"
+   ],
+   "search_id": "sarmast-cyprus-sonar-2004"
+  },
+  {
+   "step": 4,
+   "side": "checked",
+   "line": "Within days, geologists said it was an old mud volcano and that they had surveyed the same area the year before.",
+   "show": [
+    "blac-2003-survey",
+    "blac-profile-20"
+   ],
+   "search_id": "sarmast-cyprus-sonar-2004"
+  },
+  {
+   "step": 5,
+   "side": "found",
+   "line": "The survey papers read these hills as salt folds, mud volcanoes and faults; a 2009 paper is reported to find no walls.",
+   "show": [
+    "blac-2003-survey",
+    "cyprus-basin",
+    "blac-profile-20"
+   ],
+   "search_id": "hubscher-cyprus-basin-salt-tectonics-2009"
+  },
+  {
+   "step": 6,
+   "side": "found",
+   "line": "Drill cores 200 km west show deep-sea mud, and the Mediterranean last refilled 5.33 million years ago, long before people.",
+   "show": [
+    "odp-160-965",
+    "odp-160-966",
+    "eratosthenes-seamount"
+   ],
+   "search_id": null
+  }
+ ],
+ "not_located": [
+  {
+   "what": "Sarmast's 'Acropolis Hill', its two walls (2 or 3 km) and the trenches, as he drew them",
+   "why": "He published only 3D models, animations and one image, none with a latitude and longitude or a scale bar that I could open; the announced position is a verbal description.",
+   "source": "https://www.nbcnews.com/news/amp/wbna6489620"
+  },
+  {
+   "what": "The ship track and sonar box of the November 2004 expedition (vessel Flying Enterprise, six days)",
+   "why": "No positions printed in the news reports or on the expedition pages I read.",
+   "source": "http://web.archive.org/web/20041117131300/http://www.discoveryofatlantis.com:80/800/articles/cyprus_mail1.htm"
+  },
+  {
+   "what": "The 'Atlantis capsule' put on the sea bed on 30 April 2004 at the 'Atlantis site'",
+   "why": "The Aquatec page gives a depth (1,600 m) but no coordinates.",
+   "source": "http://web.archive.org/web/20041012151448fw_/http://www.aquatec-innerspace.com/aioatlantismedianews.htm"
+  },
+  {
+   "what": "Seismic lines and multibeam tracks of Hubscher and others' 2009 paper (the 2003 Le Suroit BLAC data and, as one search result put it, a 2004 R/V Pelagia cruise called SAGA)",
+   "why": "The paper is behind a paywall and its map figures could not be read; only the open BLAC paper (2005) was digitised.",
+   "source": "https://doi.org/10.1016/j.tecto.2008.08.019"
+  },
+  {
+   "what": "The History Channel seismic profile said to show the walls as natural landforms",
+   "why": "Only seen as a one-line description on Wikipedia; no position.",
+   "source": "https://en.wikipedia.org/wiki/Location_hypotheses_of_Atlantis"
+  }
+ ],
+ "handoffs": [
+  {
+   "lane": "searches",
+   "what": "Add the 2003 BLAC cruise (R/V Le Suroit, 29 Oct to 16 Nov 2003, Simrad EM300, 88 profiles) as a search; Benkhelil and others 2005 is open and gives dates and area.",
+   "url": "https://comptes-rendus.academie-sciences.fr/geoscience/item/10.1016/j.crte.2005.05.002.pdf"
+  },
+  {
+   "lane": "sources",
+   "what": "Ifremer's cruise page for BLAC and its navigation file, or the EMODnet/SISMER survey outline (a SISMER survey 38467 is noted in site-data.json at nearby points), would replace my hand-digitised outline.",
+   "url": "https://campagnes.flotteoceanographique.fr/"
+  },
+  {
+   "lane": "evidence/eratosthenes",
+   "what": "ODP Leg 160 Sites 965 to 968 on the Eratosthenes Seamount are given here as context only; the seamount has its own Atlantis claims.",
+   "url": "https://www-odp.tamu.edu/publications/prelim/160PREL.TXT"
+  }
+ ],
+ "not_verified": [
+  "The text of Hubscher and others 2009 (Tectonophysics 470, 173-182): ScienceDirect and ResearchGate blocked scripts and Crossref, Unpaywall, OpenAlex and Semantic Scholar hold no abstract. What it says about the Atlantis claim comes only from Wikipedia ('demonstrated that the features which Sarmast interprets to be Atlantis consist only of a natural compressional fold caused by local salt tectonics and a slide scar'). I could not tell whether the paper itself mentions Sarmast.",
+  "That the German physicist quoted by the Cyprus Mail is Hubscher: the article does not name him. The National Center for Public Policy Research page names Huebscher, but it is an opinion source and I did not fetch it.",
+  "A research cruise called SAGA on R/V Pelagia in 2004 and its 600 m streamer: stated in a search-tool summary of the ScienceDirect page that I could not open myself.",
+  "The 2006 follow-up: Sarmast's own updates page (Feb to May 2006) says a second expedition 'may also happen this spring/summer season depending on the availability of funds'; I found no record that it took place.",
+  "The original BBC and CNN pages: the BBC text is read from the copy on Sarmast's own site (Wayback Machine, Dec 2004), not from bbc.co.uk.",
+  "John Hall and others on Levant bathymetry, Maillard and others 2011 on the Latakia Ridge, EMODnet survey outlines for the Cyprus Basin, and replies by Michael Hall or other Cypriot geologists: not fetched or not found.",
+  "GMRT and the EMODnet tiles were not checked for survey outlines; the depth figure is one GMRT point query."
+ ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "cosmas-christian-topography-12-mccrindle",
+  "title": "Cosmas Indicopleustes, Christian Topography 12 (English, J. W. McCrindle, 1897)",
+  "source": {
+    "url": "https://archive.org/details/christiantopogra00cosm",
+    "publisher": "Internet Archive (scan of McCrindle's Hakluyt Society translation, 1897)",
+    "date": "1897",
+    "pages": 2,
+    "file": "work/ia/christiantopogra00cosm.txt",
+    "sha256": "7b1af842a65ea96ad85a3fbfea4ee16cd661c1468cdd28362cf04573b03a6b95",
+    "license": "Public domain (McCrindle died 1913; 1897 edition)",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "language": "en",
+  "kind": "ancient-text",
+  "summary": "Cosmas (6th century CE), a Christian geographer, mentions Atlantis as a borrowing from Moses. He credits \"Timaeus\" (really Plato's Critias) with the island, says its ten kings came from the earth beyond the Ocean and calls the story an invention to explain an island nobody could point out.",
+  "tool": {
+    "name": "hand-built (PageIndex format)",
+    "version": "",
+    "models": [],
+    "method": "Hand-built tree. The passage was cut from the source file by its own section anchors or line range; one leaf per passage, titled with the citation. No language model was used."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Cosmas Indicopleustes, Christian Topography 12 (McCrindle pp. 376-377; Montfaucon p. 341): \"Timaeus\" and the island Atlantis",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "Cosmas says the philosopher \"Timaeus\" describes the earth ringed by the Ocean and, to the west toward Gadeira, an enormous island Atlantis. Ten kings with mercenaries conquered Europe and Asia, then lost to the Athenians, and the island was submerged by God. He thinks this borrows from Moses.",
+      "nodes": []
+    },
+    {
+      "node_id": "0002",
+      "title": "Cosmas Indicopleustes, Christian Topography 12 (McCrindle p. 380; Montfaucon p. 343): Atlantis as an invention",
+      "start_page": 2,
+      "end_page": 2,
+      "summary": "Cosmas repeats that \"Timaeus\" recast the story of ten kings: they came from the earth beyond the Ocean into Atlantis, which sank. He calls it a manifest invention, because the author could not point out the island and so said God had put it under the sea.",
+      "nodes": []
+    }
+  ]
+}

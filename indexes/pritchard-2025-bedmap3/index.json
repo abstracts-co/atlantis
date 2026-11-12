@@ -1,0 +1,209 @@
+{
+  "id": "pritchard-2025-bedmap3",
+  "title": "Bedmap3 updated ice bed, surface and thickness gridded datasets for Antarctica (Pritchard and others, 2025)",
+  "source": {
+    "url": "https://doi.org/10.1038/s41597-025-04672-y",
+    "publisher": "Springer Nature (Scientific Data)",
+    "date": "2025",
+    "pages": 20,
+    "file": "work/pdf/bedmap3-2025.pdf",
+    "sha256": "8c987a27064fd30b5ddbf80537439fd728c915d83287dcf2c0956e7dab4b4c26",
+    "license": "CC BY 4.0 (stated in the PDF and on the Nature page)",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "language": "en",
+  "kind": "paper",
+  "summary": "Describes Bedmap3, a gridded set of ice thickness, bed and surface elevation for Antarctica. It is the data behind any claim about what lies under the ice, including the Antarctic Atlantis idea.",
+  "tool": {
+    "name": "PageIndex",
+    "version": "0.5.3",
+    "models": [
+      "claude-code/haiku"
+    ],
+    "method": "PageIndex Flash mode run through Claude Code (claude-code/haiku; doc_id pi-94154f8270d54192bee4a8877425057a; store in out/pageindex). The tree follows the paper's own headings. I replaced PageIndex's model-written summaries, which contained numbers I could not stand behind, with short summaries of what each section covers, and tidied titles. Text is the PDF text layer by page."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Bedmap3 updated ice bed, surface and thickness gridded datasets for Antarctica",
+      "start_page": 1,
+      "end_page": 20,
+      "summary": "The whole data descriptor: Bedmap3, gridded surface elevation, ice thickness and bed elevation for Antarctica south of 60 degrees south, built from many new surveys.",
+      "nodes": [
+        {
+          "node_id": "0002",
+          "title": "Background & Summary",
+          "start_page": 1,
+          "end_page": 2,
+          "summary": "Sets out the question and earlier work behind Bedmap3.",
+          "nodes": []
+        },
+        {
+          "node_id": "0003",
+          "title": "Methods",
+          "start_page": 2,
+          "end_page": 11,
+          "summary": "How the Bedmap3 grids were made: geoid and projection, masks, ice thickness, surface and bed.",
+          "nodes": [
+            {
+              "node_id": "0004",
+              "title": "Geoid, projection, and grid cell size.",
+              "start_page": 2,
+              "end_page": 2,
+              "summary": "Method: geoid, projection, and grid cell size, as used in Bedmap3.",
+              "nodes": []
+            },
+            {
+              "node_id": "0005",
+              "title": "Masks of grounded ice, transient grounded ice, floating ice shelf and rock.",
+              "start_page": 2,
+              "end_page": 3,
+              "summary": "Method: masks of grounded ice, transient grounded ice, floating ice shelf and rock, as used in Bedmap3.",
+              "nodes": []
+            },
+            {
+              "node_id": "0006",
+              "title": "Ice thickness data and gridding.",
+              "start_page": 3,
+              "end_page": 7,
+              "summary": "Method: ice thickness data and gridding, as used in Bedmap3.",
+              "nodes": [
+                {
+                  "node_id": "0007",
+                  "title": "Filtering and weighting of survey data.",
+                  "start_page": 3,
+                  "end_page": 4,
+                  "summary": "Method: filtering and weighting of survey data, as used in Bedmap3.",
+                  "nodes": []
+                },
+                {
+                  "node_id": "0008",
+                  "title": "Ice shelf thickness.",
+                  "start_page": 4,
+                  "end_page": 5,
+                  "summary": "Method: ice shelf thickness, as used in Bedmap3.",
+                  "nodes": []
+                },
+                {
+                  "node_id": "0009",
+                  "title": "Synthetic ice thickness data: Glen’s flow law for ‘thin ice’.",
+                  "start_page": 5,
+                  "end_page": 6,
+                  "summary": "Method: synthetic ice thickness data: glen’s flow law for ‘thin ice’, as used in Bedmap3.",
+                  "nodes": []
+                },
+                {
+                  "node_id": "0010",
+                  "title": "Synthetic ice thickness constraints and trough streamlines for Antarctic Bedmap3 interpolation",
+                  "start_page": 6,
+                  "end_page": 6,
+                  "summary": "Method: synthetic ice thickness constraints and trough streamlines for antarctic bedmap3 interpolation, as used in Bedmap3.",
+                  "nodes": []
+                },
+                {
+                  "node_id": "0011",
+                  "title": "Interpolation of the ice thickness grid.",
+                  "start_page": 6,
+                  "end_page": 7,
+                  "summary": "Method: interpolation of the ice thickness grid, as used in Bedmap3.",
+                  "nodes": []
+                }
+              ]
+            },
+            {
+              "node_id": "0012",
+              "title": "Surface elevation.",
+              "start_page": 7,
+              "end_page": 8,
+              "summary": "Method: surface elevation, as used in Bedmap3.",
+              "nodes": []
+            },
+            {
+              "node_id": "0013",
+              "title": "Bed topography.",
+              "start_page": 8,
+              "end_page": 11,
+              "summary": "Method: bed topography, as used in Bedmap3.",
+              "nodes": []
+            },
+            {
+              "node_id": "0014",
+              "title": "Bedmap3 Coastal Merging, Timestamps, and Comparison to Earlier Products",
+              "start_page": 11,
+              "end_page": 11,
+              "summary": "Method: bedmap3 coastal merging, timestamps, and comparison to earlier products, as used in Bedmap3.",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "node_id": "0015",
+          "title": "Data Records",
+          "start_page": 11,
+          "end_page": 11,
+          "summary": "Section on data records in Bedmap3.",
+          "nodes": []
+        },
+        {
+          "node_id": "0016",
+          "title": "Technical Validation",
+          "start_page": 11,
+          "end_page": 18,
+          "summary": "Section on technical validation in Bedmap3.",
+          "nodes": [
+            {
+              "node_id": "0017",
+              "title": "Quality control checks.",
+              "start_page": 11,
+              "end_page": 12,
+              "summary": "Validation: quality control checks, in Bedmap3.",
+              "nodes": []
+            },
+            {
+              "node_id": "0018",
+              "title": "Uncertainty estimates.",
+              "start_page": 12,
+              "end_page": 18,
+              "summary": "Validation: uncertainty estimates, in Bedmap3.",
+              "nodes": [
+                {
+                  "node_id": "0019",
+                  "title": "Surface DEM uncertainty.",
+                  "start_page": 12,
+                  "end_page": 13,
+                  "summary": "Validation: surface dem uncertainty, in Bedmap3.",
+                  "nodes": []
+                },
+                {
+                  "node_id": "0020",
+                  "title": "Ice thickness uncertainty.",
+                  "start_page": 13,
+                  "end_page": 16,
+                  "summary": "Validation: ice thickness uncertainty, in Bedmap3.",
+                  "nodes": []
+                },
+                {
+                  "node_id": "0021",
+                  "title": "Bed topography uncertainty.",
+                  "start_page": 16,
+                  "end_page": 18,
+                  "summary": "Validation: bed topography uncertainty, in Bedmap3.",
+                  "nodes": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "node_id": "0022",
+          "title": "Acknowledgements",
+          "start_page": 18,
+          "end_page": 20,
+          "summary": "Thanks and funding notes.",
+          "nodes": []
+        }
+      ]
+    }
+  ]
+}

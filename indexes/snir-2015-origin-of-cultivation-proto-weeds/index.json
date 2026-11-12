@@ -1,0 +1,84 @@
+{
+  "id": "snir-2015-origin-of-cultivation-proto-weeds",
+  "title": "The Origin of Cultivation and Proto-Weeds, Long Before Neolithic Farming (Snir and others, 2015)",
+  "source": {
+    "url": "https://doi.org/10.1371/journal.pone.0131422",
+    "publisher": "Public Library of Science",
+    "date": "2015",
+    "pages": 12,
+    "file": "work/pdf/snir-2015-proto-weeds.pdf",
+    "sha256": "8dde1abdeb7974b873dfc5f844d9c302e61d12d11019dca8b71125a0a78498ec",
+    "license": "CC BY 4.0 (stated in the PDF; the PLoS ONE page links the 4.0 deed)",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "language": "en",
+  "kind": "paper",
+  "summary": "Finds weeds and seeds in a 23,000-year-old site on the Sea of Galilee, arguing that people began cultivating long before the Neolithic. Context for the world lane on early farming.",
+  "tool": {
+    "name": "PageIndex",
+    "version": "0.5.3",
+    "models": [
+      "claude-code/haiku"
+    ],
+    "method": "PageIndex Flash mode run through Claude Code (claude-code/haiku; doc_id pi-84daae6f0ea64219a1f6e59e91b92bc1; store in out/pageindex). The tree follows the paper's own headings. I replaced PageIndex's model-written summaries, which contained numbers I could not stand behind, with short summaries of what each section covers, and tidied titles. Text is the PDF text layer by page."
+  },
+  "built": "2026-11-11",
+  "tree": [
+    {
+      "node_id": "0001",
+      "title": "Abstract",
+      "start_page": 1,
+      "end_page": 1,
+      "summary": "The authors' summary: weed-like \"proto-weeds\" and small-scale trial cultivation found at Ohalo II, a 23,000-year-old hunter-gatherer camp on the Sea of Galilee shore.",
+      "nodes": []
+    },
+    {
+      "node_id": "0002",
+      "title": "Introduction",
+      "start_page": 1,
+      "end_page": 2,
+      "summary": "Sets out the question and earlier work behind the Ohalo II study.",
+      "nodes": []
+    },
+    {
+      "node_id": "0003",
+      "title": "Materials and Methods",
+      "start_page": 2,
+      "end_page": 3,
+      "summary": "How the Ohalo II study was done: samples, measurements and analysis.",
+      "nodes": []
+    },
+    {
+      "node_id": "0004",
+      "title": "Results and Discussion",
+      "start_page": 3,
+      "end_page": 7,
+      "summary": "The results of the Ohalo II study, with the evidence behind them.",
+      "nodes": []
+    },
+    {
+      "node_id": "0005",
+      "title": "Conclusions",
+      "start_page": 7,
+      "end_page": 8,
+      "summary": "The authors' conclusions from the Ohalo II study.",
+      "nodes": []
+    },
+    {
+      "node_id": "0006",
+      "title": "Ohalo II Supporting Information, Acknowledgments, and Author Contributions",
+      "start_page": 9,
+      "end_page": 9,
+      "summary": "Lists the supporting files and supplementary figures.",
+      "nodes": []
+    },
+    {
+      "node_id": "0007",
+      "title": "References",
+      "start_page": 9,
+      "end_page": 12,
+      "summary": "The reference list.",
+      "nodes": []
+    }
+  ]
+}

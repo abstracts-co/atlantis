@@ -1,0 +1,16 @@
+{
+  "name": "lost-globe",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build/bundle.mjs",
+    "serve": "node build/serve.mjs"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "playwright-core": "1.65.0"
+  }
+}
