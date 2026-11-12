@@ -460,16 +460,21 @@ const FEATURES = {
   meet: async (page, step) => {
     // Three people in one browser, and a stand-in for the Abstracts room on this machine (source/build/room-relay.mjs).
     const relay = async (seats, mode) => { const port = await freePort(); const child = spawn('node', [`${ROOT}build/room-relay.mjs`, String(port), String(seats), ...(mode ? [mode] : [])], { stdio: 'ignore' }); for (let i = 0; i < 40; i++) { if (await fetch(`http://127.0.0.1:${port}/`).then((r) => r.ok).catch(() => false)) break; await new Promise((r) => setTimeout(r, 100)); } return { port, child }; };
-    const visit = async (port, name) => { const p = await page.context().newPage(); await p.goto(`${read(STATE).url}?room=${encodeURIComponent(`ws://127.0.0.1:${port}/rooms/atlantis/earth/HALL22`)}&as=${name}&hall=1`, { waitUntil: 'load' }); await p.waitForFunction(() => globalThis.world?.globe.ready && globalThis.ui?.walk.on, null, { timeout: 30000 }); return p; };
+    const visit = async (port, name) => { const p = await page.context().newPage(); await p.goto(`${read(STATE).url}?room=${encodeURIComponent(`ws://127.0.0.1:${port}/rooms/atlantis/earth/HALL22`)}&as=${name}&hall=1`, { waitUntil: 'load' }); await p.waitForFunction(() => globalThis.world?.globe.ready && globalThis.ui?.walk.on, null, { timeout: 30000 }); await p.click('#meet [data-act="mt-start"]'); return p; };
     const joined = (p, n) => p.waitForFunction((n) => ui.meet.state.state === 'on' && ui.meet.state.members.size === n, n, { timeout: 8000 }).then(() => true, () => false);
     // Alone and signed out (no room to join here): the city is still walked, and nothing about meeting is shown.
     await page.click('#intro [data-act="enter"]'); await page.waitForTimeout(900);
-    step('outside abstracts.co the city is still walked, and one button says where people meet', await page.evaluate(() => ui.walk.on && ui.meet.state.state === 'elsewhere' && /Meet people on abstracts\.co/.test(document.querySelector('#meet a.btn')?.textContent ?? '') && /abstracts\.co\/a\/atlantis\?a_hall=1/.test(document.querySelector('#meet a.btn').href)));
+    step('nothing is joined or asked on arrival: multiplayer waits for one button', await page.evaluate(() => ui.walk.on && ui.meet.state.state === 'elsewhere' && !ui.meet.state.socket && document.querySelector('#meet [data-act="mt-start"]')?.textContent === 'Multiplayer'));
     const big = await relay(2), pages = [];
     try {
       const ada = await visit(big.port, 'Ada'); pages.push(ada);
       const ben = await visit(big.port, 'Ben'); pages.push(ben);
       step('two people in the hall are in one room', (await joined(ada, 1)) && (await joined(ben, 1)));
+      const fire = await ada.evaluate(() => ui.hall.state.brazier.fire.visible);
+      await ada.evaluate(() => ui.walk.use(ui.walk.state.hotspots.find((h) => h.id === 'multiplayer'))); await ada.waitForTimeout(400);
+      const out = await ada.evaluate(() => ({ state: ui.meet.state.state, fire: ui.hall.state.brazier.fire.visible }));
+      await ada.evaluate(() => ui.walk.use(ui.walk.state.hotspots.find((h) => h.id === 'multiplayer'))); await joined(ada, 1); await ada.waitForTimeout(300);
+      step('the brazier in the hall burns while multiplayer is on, and pressing it turns multiplayer off and on', fire && out.state === 'off' && !out.fire && (await ada.evaluate(() => ui.hall.state.brazier.fire.visible)));
     step('who else is here shows at the top, as a face and a count', await ada.evaluate(() => !document.querySelector('#here').hidden && document.querySelector('#here b')?.textContent === '2'));
       await ben.evaluate(() => ui.walk.enter({ x: 4, y: -9, look: [0, 0] })); await ada.evaluate(() => ui.walk.enter({ x: -4, y: -12, look: [4, -9] })); await ada.waitForTimeout(1500);
       const seen = await ada.evaluate(() => { const p = [...ui.meet.state.members.values()][0]; return { name: p.name, x: p.x, y: p.y, shown: p.fig.visible && !!p.fig.parent, tag: document.querySelector('#people .person span')?.textContent, tagOn: getComputedStyle(document.querySelector('#people .person')).display !== 'none' }; });

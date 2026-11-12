@@ -715,6 +715,8 @@ export const startUI = (world, data) => {
   walk = startWalk(ctx);
   hall = startHall(ctx, { A, H, walk });
   meet = startMeet(ctx, { walk });
+  ctx.multiplayer = () => meet.choose();
+  ctx.multiplayerOn = () => meet.state.state === 'on';
   ctx.walkOn = () => walk.on;
   ctx.leaveWalk = () => { if (walk.on) walk.leave(false); };
   ctx.onWalk = (on) => { if (on && st.sheet) setSheet(null); cityBar.sync(); drawTag(); };

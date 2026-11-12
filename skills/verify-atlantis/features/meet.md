@@ -5,7 +5,7 @@ People in the city at the same time see each other as figures with names, can wr
 ## Sub-features
 
 - `alone` the city is always walked without an account. Signed out on abstracts.co, one button says `Sign in`. Anywhere else, one button says `Meet people on abstracts.co` and opens the hall there.
-- `join` signed in means in the room as soon as the page opens, wherever on the page: no button. Who else is here shows at the top right, as faces and a count. (Until abstracts.co stops asking, the site shows its own one-time "wants to know it's you" sheet first.)
+- `choose` nothing is joined and nothing is asked when the page opens. Multiplayer starts when the visitor chooses it: the bronze brazier just inside the hall's door, or the `Multiplayer` button while walking. Signed out, that signs them in; outside abstracts.co, it opens the page there. The brazier burns while multiplayer is on; pressing it again leaves. Who else is here shows at the top right, as faces and a count.
 - `figures` everyone else in the room stands where they stand and turns as they turn, with their name over their head.
 - `text` a line typed in the bar at the bottom left is read by the whole room. `T` or `/` puts the cursor there.
 - `voice` the microphone button starts voice: a call with each of the nearest people who also have voice on, eight at most, louder as they come nearer. Press it again to mute.
@@ -13,8 +13,7 @@ People in the city at the same time see each other as figures with names, can wr
 
 ## How to get to it (user POV)
 
-- Open the page on abstracts.co, signed in.
-- Signed out, press `Sign in`.
+- On abstracts.co, walk into the hall and press the brazier, or press `Multiplayer` at the lower left while walking.
 
 ## Driving it with verify.mjs
 

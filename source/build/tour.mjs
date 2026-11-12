@@ -50,7 +50,9 @@ if (!storyOnly) {
 // Someone else is in the hall already.
 const other = await context.newPage();
 await other.goto(`${url}${url.includes('?') ? '&' : '?'}${room}&as=Ben&hall=1`, { waitUntil: 'load' });
-await other.waitForFunction(() => globalThis.ui?.walk.on && ui.meet.state.state === 'on', null, { timeout: 30000 }).catch(() => {});
+await other.waitForFunction(() => globalThis.ui?.walk.on, null, { timeout: 30000 }).catch(() => {});
+await other.click('#meet [data-act="mt-start"]').catch(() => {});
+await other.waitForFunction(() => ui.meet.state.state === 'on', null, { timeout: 15000 }).catch(() => {});
 await other.evaluate(() => ui.walk.enter({ x: 6.5, y: 3, look: [0, -14] })).catch(() => {});
 await hold('KeyW', 9300);                                                  // through the gate and the door, to the table
 await wait(500);

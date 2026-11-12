@@ -232,6 +232,21 @@ Done when: ${t.done_when}` : `Read data/open.json and show me the open tasks, gr
     const spin = new THREE.Group(), tip = new THREE.Group();
     spin.add(ball); tip.add(spin); tip.rotation.y = 0.41; tip.position.set(hl.globe.x, hl.globe.y, hl.globe.z);
     group.add(tip);
+    // A bronze brazier on a tripod, just inside the door on the left. Pressing it turns multiplayer on or off; its fire burns while it is on.
+    { const hl0 = city.city.hall, bx = -5.2, by = -(hl0.RI - 4.2), z = hl0.floor, bronze = new THREE.MeshStandardMaterial({ color: 0x8a5a2b, metalness: 0.85, roughness: 0.35 });
+      const br = new THREE.Group(); br.position.set(bx, by, z);
+      for (let i = 0; i < 3; i++) { const a = (i / 3) * Math.PI * 2, leg = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.07, 1.5, 6), bronze); leg.position.set(Math.cos(a) * 0.32, Math.sin(a) * 0.32, 0.72); leg.rotation.set(Math.sin(a) * 0.22, -Math.cos(a) * 0.22, 0, 'ZYX'); leg.rotation.x = Math.PI / 2 + Math.sin(a) * 0.22; leg.rotation.y = -Math.cos(a) * 0.22; br.add(leg); }
+      const bowl = new THREE.Mesh(new THREE.SphereGeometry(0.55, 24, 12, 0, Math.PI * 2, Math.PI / 2, Math.PI / 2), bronze); bowl.rotation.x = Math.PI / 2; bowl.position.z = 1.55; bowl.material.side = THREE.DoubleSide; br.add(bowl);
+      const rim = new THREE.Mesh(new THREE.TorusGeometry(0.55, 0.045, 8, 32), bronze); rim.position.z = 1.55; br.add(rim);
+      // The fire: a bed of embers and a cluster of soft tongues of flame, with a glow round them.
+      const fire = new THREE.Group(); fire.position.z = 1.5;
+      const flame = (r, h, c, x, y) => { const f = new THREE.Mesh(new THREE.ConeGeometry(r, h, 12), new THREE.MeshBasicMaterial({ color: new THREE.Color(c).multiplyScalar(1.8), transparent: true, opacity: 0.8, depthWrite: false, blending: THREE.AdditiveBlending })); f.rotation.x = Math.PI / 2; f.position.set(x, y, h / 2 + 0.05); return f; };
+      for (const [r, h, c, x, y] of [[0.3, 0.55, 0xff6a10, 0, 0], [0.2, 0.7, 0xff8c2a, 0.16, 0.08], [0.2, 0.62, 0xff8c2a, -0.15, 0.1], [0.18, 0.5, 0xff7a1a, 0.02, -0.18], [0.11, 0.48, 0xffe08a, 0.02, 0.02]]) fire.add(flame(r, h, c, x, y));
+      const glowTex = (() => { const c = document.createElement('canvas'); c.width = c.height = 64; const g = c.getContext('2d'), gr = g.createRadialGradient(32, 32, 0, 32, 32, 32); gr.addColorStop(0, 'rgba(255,170,80,0.9)'); gr.addColorStop(1, 'rgba(255,120,40,0)'); g.fillStyle = gr; g.fillRect(0, 0, 64, 64); return new THREE.CanvasTexture(c); })();
+      const glow = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending })); glow.scale.set(1.6, 1.6, 1); glow.position.z = 0.4; fire.add(glow);
+      const embers = new THREE.Mesh(new THREE.CircleGeometry(0.52, 24), new THREE.MeshBasicMaterial({ color: new THREE.Color(0x3a1a0a) })); embers.position.z = 1.5; br.add(embers, fire);
+      group.add(br); s.brazier = { group: br, fire, embers, at: { x: bx, y: by, z: z + 1.6 } };
+    }
     s.globe = { ball, tex, painted: !!H?.state.ready }; s.spin = spin;
     return group;
   };
@@ -245,6 +260,7 @@ Done when: ${t.done_when}` : `Read data/open.json and show me the open tasks, gr
         const hl = city.city.hall;
         walk.hotspots.length = 0;
         for (const b of s.boards) walk.hotspots.push({ id: b.id, x: b.at.x, y: b.at.y, z: b.at.z, reach: 15, size: b.at.w, label: b.label, act: () => show(b.id) });
+        { const b = s.brazier.at; walk.hotspots.push({ id: 'multiplayer', x: b.x, y: b.y, z: b.z, reach: 9, size: 1.8, get label() { return ctx.multiplayerOn?.() ? 'Leave multiplayer' : 'Multiplayer'; }, act: () => ctx.multiplayer?.() }); }
         walk.hotspots.push({ id: 'globe', x: hl.globe.x, y: hl.globe.y, z: hl.globe.z, reach: 13, size: hl.globe.r * 2.4, label: 'Open the globe', act: () => ctx.openGlobe?.() });
       }
     }
@@ -252,6 +268,8 @@ Done when: ${t.done_when}` : `Read data/open.json and show me the open tasks, gr
     // The score map arrives a moment after the page: paint the globe again when it has.
     if (s.globe && !s.globe.painted && H?.state.ready) { s.globe.tex.image = globeMap(); s.globe.tex.needsUpdate = true; s.globe.painted = true; world.stamp++; }
     // It turns slowly, and starts with the Atlantic towards the door.
+    // The fire burns, and flickers, while multiplayer is on.
+    if (s.brazier) { const on = !!ctx.multiplayerOn?.(); s.brazier.fire.visible = on; s.brazier.embers.material.color.setHex(on ? 0xff5a1a : 0x3a1a0a); if (on && walk.on) { const t = world.time; s.brazier.fire.scale.set(1 + Math.sin(t * 11) * 0.06, 1 + Math.cos(t * 9) * 0.06, 1 + Math.sin(t * 7.3) * 0.12); world.stamp++; } }
     if (walk.on && Math.hypot(walk.state.x, walk.state.y) < city.city.hall.RG) { s.spin.rotation.z = ATLANTIC + (world.time - (s.since ??= world.time)) * 0.05; world.stamp++; }
   };
   return { sync, show, boards, promptFor, state: s, counts: { work: work.length, openSearches: openSearches.length, unscored: unscored.length, lost: lost.length } };

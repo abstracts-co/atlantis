@@ -31,8 +31,7 @@ export const startMeet = (ctx, { walk }) => {
       el.dataset.state = m.state;
       el.innerHTML = m.state === 'on'
         ? `<div class="mt-log" id="mt-log"></div><form class="mt-say" id="mt-say"><input id="mt-text" maxlength="${LONGEST}" placeholder="Message" autocomplete="off" enterkeyhint="send" aria-label="Write to the room"><button class="mt-mic" id="mt-mic" type="button" data-act="mt-voice">${MIC}</button><span class="mt-n" id="mt-n"></span></form>`
-        : m.state === 'signed-out' ? '<button class="btn glass" data-act="mt-signin">Sign in</button>'
-        : m.state === 'elsewhere' ? `<a class="btn glass" href="https://abstracts.co/a/${esc(ctx.data.open?.community ?? 'atlantis')}?a_hall=1" target="_blank" rel="noopener">Meet people on abstracts.co</a>`
+        : ['signed-out', 'off', 'elsewhere'].includes(m.state) ? '<button class="btn glass" data-act="mt-start">Multiplayer</button>'
         : m.state === 'full' ? '<span class="mt-state">Rooms are full</span>'
         : '';
     }
@@ -146,7 +145,7 @@ export const startMeet = (ctx, { walk }) => {
       else if (d.rtc) signal(f.from, d.rtc);
     } else if (f.t === 'error' && f.code === 'invalid' && m.batch) m.batch = false;
   };
-  const leave = () => { const ws = m.socket; m.socket = null; ws?.close(1000); for (const id of [...m.members.keys()]) drop(id); voiceOff(); if (m.state === 'on' || m.state === 'joining') m.state = 'ask'; draw(); };
+  const leave = () => { const ws = m.socket; m.socket = null; ws?.close(1000); for (const id of [...m.members.keys()]) drop(id); voiceOff(); if (m.state === 'on' || m.state === 'joining') m.state = 'off'; m.drawn = null; draw(); };
   const say = (text) => {
     const t = text.trim().slice(0, LONGEST), now = performance.now();
     if (!t || m.state !== 'on') return false;
@@ -264,27 +263,28 @@ export const startMeet = (ctx, { walk }) => {
 
   // ---------- starting ----------
   // On foot: join if this member has already said yes to this artifact; otherwise offer it.
-  // Called once the page around this one has said who is here. Signed in means in the room, from the first moment,
-  // wherever on the page they are: the page around asks them once, by itself, whether this page may know it's them.
-  const arrive = async () => {
+  // Called once the page around this one has said who is here. Nothing is joined and nothing is asked: multiplayer
+  // waits until the visitor chooses it (the brazier in the hall, or the button while walking).
+  const arrive = () => {
     if (m.state === 'on' || m.state === 'joining') return;
-    if (dev) return join();
-    // Outside abstracts.co nobody can be met: one button says where people are.
-    if (!embedded) { m.state = 'elsewhere'; return draw(); }
-    const host = st.host;
-    if (!host) { m.state = 'off'; return draw(); }
-    if (!host.signedIn) { m.state = 'signed-out'; return draw(); }
+    m.state = !embedded && !dev ? 'elsewhere' : st.host && !st.host.signedIn && !dev ? 'signed-out' : 'off';
+    draw();
+  };
+  // Choosing multiplayer: signed out, sign in; outside abstracts.co, go there; signed in, join (or leave, if in).
+  const choose = () => {
+    if (m.state === 'on' || m.state === 'joining') return leave(true);
+    if (m.state === 'signed-out') return bridge('signIn').catch(() => toast('Sign-in is not answering'));
+    if (m.state === 'elsewhere') return open(`https://abstracts.co/a/${ctx.data.open?.community ?? 'atlantis'}?a_hall=1`, '_blank', 'noopener');
     m.tries = 0;
-    await join(true);
-    if (m.state === 'ask') { m.state = 'off'; draw(); }   // said "Not now" to the site: unseen, and nothing keeps asking
+    join(true).then(() => { if (m.state === 'ask') { m.state = 'off'; draw(); } });
   };
   el.addEventListener('click', (e) => {
     const act = e.target.closest('[data-act]')?.dataset.act;
-    if (act === 'mt-signin') bridge('signIn').catch(() => toast('Sign-in is not answering'));
+    if (act === 'mt-start') choose();
     else if (act === 'mt-join') join(true);
     else if (act === 'mt-voice') { if (!V.on) voiceOn(); else if (V.stream) mute(); else voiceOff(); }
   });
   el.addEventListener('submit', (e) => { e.preventDefault(); const i = $('#mt-text'); if (i && say(i.value)) { i.value = ''; i.blur(); } });
   addEventListener('keydown', (e) => { if (walk.on && m.state === 'on' && (e.code === 'KeyT' || e.code === 'Slash') && !e.target.closest?.('input, textarea')) { $('#mt-text')?.focus(); e.preventDefault(); } if (e.code === 'Escape' && e.target.id === 'mt-text') e.target.blur(); });
-  return { tick, arrive, leave, join, say, voiceOn, voiceOff, mute, state: m, get count() { return m.members.size; } };
+  return { tick, arrive, choose, leave, join, say, voiceOn, voiceOff, mute, state: m, get count() { return m.members.size; } };
 };

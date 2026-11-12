@@ -67,13 +67,14 @@ export const startWalk = (ctx) => {
   // ---------- what is in front of the walker ----------
   const find = () => {
     const [fx, fy] = forward(), cp = Math.cos(w.pitch), d = [fx * cp, fy * cp, Math.sin(w.pitch)], e = eye();
-    let best = null, score = 0.9;
+    let best = null, near = Infinity;
     for (const h of w.hotspots) {
       const v = [h.x - e[0], h.y - e[1], h.z - e[2]], dist = Math.hypot(v[0], v[1], v[2]);
       if (dist > h.reach || dist < 0.3) continue;
       // Wide things (a panel on the wall) are easier to aim at than their middle alone.
       const dot = (v[0] * d[0] + v[1] * d[1] + v[2] * d[2]) / dist, need = Math.cos(Math.min(0.75, Math.atan2((h.size ?? 1.5) / 2, dist) + 0.1));
-      if (dot > need && dot - need + 1 > score) { best = h; score = dot - need + 1; }
+      // Of the things in the line of sight, the nearest: a brazier in front of a board is the brazier.
+      if (dot > need && dist < near) { best = h; near = dist; }
     }
     return best;
   };
@@ -141,11 +142,11 @@ export const startWalk = (ctx) => {
     const air = name === 'The hall' ? 'hall' : 'city';
     if (air !== w.place) { w.place = air; ctx.sound?.air(air); ctx.onWalkPlace?.(air); }
     el.classList.toggle('in-hall', air === 'hall');
-    const hot = find();
-    if (hot !== w.hot) {
-      w.hot = hot;
+    const hot = find(), label = hot?.label ?? '';
+    if (hot !== w.hot || label !== w.hotLabel) {
+      w.hot = hot; w.hotLabel = label;
       hint.hidden = !hot;
-      if (hot) hint.innerHTML = `<span>${ctx.esc(hot.label)}</span>`;
+      if (hot) hint.innerHTML = `<span>${ctx.esc(label)}</span>`;
     }
   };
 
