@@ -31,10 +31,8 @@ export const startMeet = (ctx, { walk }) => {
       el.dataset.state = m.state;
       el.innerHTML = m.state === 'on'
         ? `<div class="mt-log" id="mt-log"></div><form class="mt-say" id="mt-say"><input id="mt-text" maxlength="${LONGEST}" placeholder="Message" autocomplete="off" enterkeyhint="send" aria-label="Write to the room"><button class="mt-mic" id="mt-mic" type="button" data-act="mt-voice">${MIC}</button><span class="mt-n" id="mt-n"></span></form>`
-        : m.state === 'signed-out' ? '<button class="btn glass" data-act="mt-signin">Sign in to meet people</button>'
-        : m.state === 'ask' ? '<button class="btn glass" data-act="mt-join">Meet people</button>'
+        : m.state === 'signed-out' ? '<button class="btn glass" data-act="mt-signin">Sign in</button>'
         : m.state === 'elsewhere' ? `<a class="btn glass" href="https://abstracts.co/a/${esc(ctx.data.open?.community ?? 'atlantis')}?a_hall=1" target="_blank" rel="noopener">Meet people on abstracts.co</a>`
-        : m.state === 'joining' ? '<button class="btn glass" data-act="mt-join">Meet people</button>'
         : m.state === 'full' ? '<span class="mt-state">Rooms are full</span>'
         : '';
     }
@@ -48,6 +46,18 @@ export const startMeet = (ctx, { walk }) => {
       n.textContent = `${m.members.size + 1} here`;
     }
     el.hidden = !el.innerHTML || !walk.on;
+  };
+  // Who else is here, in the top bar, wherever on the page: their faces, and how many.
+  const hereEl = $('#here');
+  let hereKey = '';
+  const drawHere = () => {
+    const list = [...m.members.values()], key = m.state === 'on' ? list.map((p) => p.id).join(',') : '';
+    if (key === hereKey) return;
+    hereKey = key;
+    hereEl.hidden = !key;
+    if (!key) return;
+    hereEl.setAttribute('aria-label', `${list.length + 1} here: ${[m.me?.name, ...list.map((p) => p.name)].filter(Boolean).join(', ')}`);
+    hereEl.innerHTML = `${list.slice(0, 3).map((p) => (p.avatar ? `<img src="${esc(p.avatar)}" alt="">` : `<i style="background:hsl(${hue(p.id)} 55% 55%)">${esc((p.name || '?')[0].toUpperCase())}</i>`)).join('')}<b>${list.length + 1}</b>`;
   };
   const line = (name, text, mine = false) => { m.lines.push({ name, text, mine }); if (m.lines.length > 40) m.lines.shift(); draw(); };
 
@@ -69,7 +79,7 @@ export const startMeet = (ctx, { walk }) => {
   const label = (p) => { const d = document.createElement('div'); d.className = 'person'; d.innerHTML = `<i></i><span>${esc(p.name)}</span>`; people.append(d); return d; };
   const add = (who) => {
     if (!who?.id || who.id === m.me?.id || m.members.has(who.id)) return m.members.get(who?.id);
-    const p = { id: who.id, name: who.name || who.username || 'Someone', username: who.username, x: 0, y: 0, dir: 0, tx: null, ty: 0, tdir: 0, voice: false, talking: 0, seen: 0, fig: figure(who.id), tag: null };
+    const p = { id: who.id, name: who.name || who.username || 'Someone', username: who.username, avatar: who.avatar ?? null, x: 0, y: 0, dir: 0, tx: null, ty: 0, tdir: 0, voice: false, talking: 0, seen: 0, fig: figure(who.id), tag: null };
     p.fig.visible = false; p.tag = label(p);
     m.group?.add(p.fig);
     m.members.set(who.id, p);
@@ -94,8 +104,9 @@ export const startMeet = (ctx, { walk }) => {
     if (m.state === 'joining') { if (asked) m.wantAsk = true; return; }
     m.state = 'joining'; draw();
     try {
-      if (!dev && asked) await bridge('viewer');   // the page around this one asks the member, once: "… wants to know it's you"
-      const t = await token();
+      // Signed in is enough to be in the room. A site that still wants the member's yes first ("… wants to know it's
+      // you") refuses with 'denied': then, and only then, it is asked for, once.
+      const t = await token().catch(async (e) => { if (dev || e?.code !== 'denied') throw e; await bridge('viewer'); return token(); });
       m.ice = t.ice ?? []; m.seats = t.seats ?? 8;
       const ws = m.socket = new WebSocket(`${t.url}?token=${encodeURIComponent(t.token)}`);
       ws.onmessage = (e) => { let f; try { f = JSON.parse(e.data); } catch { return; } hear(f); };
@@ -105,10 +116,10 @@ export const startMeet = (ctx, { walk }) => {
         for (const id of [...m.members.keys()]) drop(id);
         if (e.code === 4003 && m.room < ROOMS.length - 1) { m.room++; m.state = 'off'; return join(); }   // full: the next room
         if (e.code === 4003) { m.state = 'full'; return draw(); }
-        if (e.code === 4001) { m.state = 'ask'; toast('You joined from somewhere else'); return draw(); }
+        if (e.code === 4001) { m.state = 'off'; return draw(); }   // this member opened the page somewhere else: that copy is the one in the room
         // Anything else: a new token and back in, a few times, with a longer wait each time.
         m.state = 'off';
-        if (walk.on && m.tries++ < 5) setTimeout(() => { if (walk.on && m.state === 'off') join(); }, 1500 * m.tries); else { m.state = 'ask'; draw(); }
+        if (m.tries++ < 6) setTimeout(() => { if (m.state === 'off') join(); }, 1500 * m.tries); else draw();
       };
     } catch (e) {
       m.state = e?.code === 'signed_out' ? 'signed-out' : e?.code === 'unsupported' ? 'off' : 'ask';
@@ -199,7 +210,8 @@ export const startMeet = (ctx, { walk }) => {
     // The figures live in the city's own group, so they stand where the city stands.
     const g = city.city?.group ?? null;
     if (g !== m.on) { m.on = g; if (g) { m.group = new THREE.Group(); m.group.name = 'people'; g.add(m.group); for (const p of m.members.values()) m.group.add(p.fig); } else m.group = null; }
-    if (!walk.on) { if (m.state === 'on' || m.state === 'joining') leave(); if (!el.hidden) { el.hidden = true; people.hidden = true; } return; }
+    drawHere();
+    if (!walk.on) { if (!el.hidden) { el.hidden = true; people.hidden = true; } return; }
     people.hidden = false;
     if (el.hidden) draw();
     const w = walk.state, now = performance.now();
@@ -252,6 +264,8 @@ export const startMeet = (ctx, { walk }) => {
 
   // ---------- starting ----------
   // On foot: join if this member has already said yes to this artifact; otherwise offer it.
+  // Called once the page around this one has said who is here. Signed in means in the room, from the first moment,
+  // wherever on the page they are: the page around asks them once, by itself, whether this page may know it's them.
   const arrive = async () => {
     if (m.state === 'on' || m.state === 'joining') return;
     if (dev) return join();
@@ -260,9 +274,9 @@ export const startMeet = (ctx, { walk }) => {
     const host = st.host;
     if (!host) { m.state = 'off'; return draw(); }
     if (!host.signedIn) { m.state = 'signed-out'; return draw(); }
-    m.state = 'ask'; draw();
     m.tries = 0;
-    await join(false);   // silent: works only when they have already agreed once
+    await join(true);
+    if (m.state === 'ask') { m.state = 'off'; draw(); }   // said "Not now" to the site: unseen, and nothing keeps asking
   };
   el.addEventListener('click', (e) => {
     const act = e.target.closest('[data-act]')?.dataset.act;

@@ -717,7 +717,7 @@ export const startUI = (world, data) => {
   meet = startMeet(ctx, { walk });
   ctx.walkOn = () => walk.on;
   ctx.leaveWalk = () => { if (walk.on) walk.leave(false); };
-  ctx.onWalk = (on) => { if (on) { meet.arrive(); if (st.sheet) setSheet(null); } else meet.leave(); cityBar.sync(); drawTag(); };
+  ctx.onWalk = (on) => { if (on && st.sheet) setSheet(null); cityBar.sync(); drawTag(); };
   // at: 'gate' (before the wall of gold, looking in) or 'hall' (just inside the door). keep: the story is still telling its last line.
   ctx.walkPan = (v) => { walk.state.pan = v; };
   ctx.enterCity = (at = 'gate', keep = false, how = {}) => {
@@ -777,7 +777,7 @@ export const startUI = (world, data) => {
     if ((p.walk || p.hall) && A) ctx.enterCity(p.hall ? 'hall' : 'gate');
   };
   apply(Object.fromEntries(new URLSearchParams(location.search)));
-  hello().then((h) => { st.host = h; if (h?.launch && Object.keys(h.launch).length) apply(h.launch); });
+  hello().then((h) => { st.host = h; if (h?.launch && Object.keys(h.launch).length) apply(h.launch); meet?.arrive(); });
   if (atlantis) { $('#intro h1').textContent = 'Atlantis'; $('#intro [data-act="start"]').textContent = H ? 'Famous claims' : 'Explore the places'; }
   $('#intro [data-act="hunt"]').hidden = !H;
   if (H) $('#intro [data-act="tour"]').textContent = 'Watch the story';

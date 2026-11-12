@@ -470,6 +470,7 @@ const FEATURES = {
       const ada = await visit(big.port, 'Ada'); pages.push(ada);
       const ben = await visit(big.port, 'Ben'); pages.push(ben);
       step('two people in the hall are in one room', (await joined(ada, 1)) && (await joined(ben, 1)));
+    step('who else is here shows at the top, as a face and a count', await ada.evaluate(() => !document.querySelector('#here').hidden && document.querySelector('#here b')?.textContent === '2'));
       await ben.evaluate(() => ui.walk.enter({ x: 4, y: -9, look: [0, 0] })); await ada.evaluate(() => ui.walk.enter({ x: -4, y: -12, look: [4, -9] })); await ada.waitForTimeout(1500);
       const seen = await ada.evaluate(() => { const p = [...ui.meet.state.members.values()][0]; return { name: p.name, x: p.x, y: p.y, shown: p.fig.visible && !!p.fig.parent, tag: document.querySelector('#people .person span')?.textContent, tagOn: getComputedStyle(document.querySelector('#people .person')).display !== 'none' }; });
       step('each sees the other as a figure with a name, where they stand', seen.shown && seen.name === 'Ben' && seen.tag === 'Ben' && seen.tagOn && Math.hypot(seen.x - 4, seen.y + 9) < 0.6, `Ben at ${seen.x.toFixed(1)}, ${seen.y.toFixed(1)}`);
